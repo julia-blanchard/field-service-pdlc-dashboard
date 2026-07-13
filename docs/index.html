@@ -7238,8 +7238,52 @@
         // View toggles (Execution)
         document.querySelectorAll('.view-toggle:not(.allocations-view-btn)').forEach(btn => {
             btn.addEventListener('click', function() {
+                const view = this.getAttribute('data-view');
                 document.querySelectorAll('.view-toggle:not(.allocations-view-btn)').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
+
+                // Switch between Programs/Projects/Epics view
+                const allProgramRows = document.querySelectorAll('#execution-view .program-row');
+
+                if (view === 'program') {
+                    // Programs view: show program rows, collapse all
+                    allProgramRows.forEach(row => {
+                        row.style.display = '';
+                        row.classList.remove('expanded');
+                        const header = row.querySelector('.program-header');
+                        if (header) header.classList.remove('expanded');
+                    });
+                } else if (view === 'project') {
+                    // Projects view: expand all programs, show projects
+                    allProgramRows.forEach(row => {
+                        row.style.display = '';
+                        row.classList.add('expanded');
+                        const header = row.querySelector('.program-header');
+                        if (header) header.classList.add('expanded');
+
+                        // Collapse all projects
+                        row.querySelectorAll('.project-container').forEach(proj => {
+                            proj.classList.remove('expanded');
+                            const projHeader = proj.querySelector('.project-header');
+                            if (projHeader) projHeader.classList.remove('expanded');
+                        });
+                    });
+                } else if (view === 'epic') {
+                    // Epics view: expand everything
+                    allProgramRows.forEach(row => {
+                        row.style.display = '';
+                        row.classList.add('expanded');
+                        const header = row.querySelector('.program-header');
+                        if (header) header.classList.add('expanded');
+
+                        // Expand all projects to show epics
+                        row.querySelectorAll('.project-container').forEach(proj => {
+                            proj.classList.add('expanded');
+                            const projHeader = proj.querySelector('.project-header');
+                            if (projHeader) projHeader.classList.add('expanded');
+                        });
+                    });
+                }
             });
         });
 

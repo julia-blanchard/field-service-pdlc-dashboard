@@ -411,18 +411,24 @@
     <script>
         async function loadData() {
             try {
+                console.log('Starting data load...');
                 const response = await fetch('execution_data.json');
+                console.log('Fetch response:', response.status);
                 const data = await response.json();
+                console.log('Data loaded, programs:', data.programs.length);
                 renderDashboard(data);
+                console.log('Dashboard rendered');
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('content').innerHTML = '<div class="loading">Error loading data. Please check console.</div>';
+                document.getElementById('content').innerHTML = '<div class="loading">Error loading data: ' + error.message + '</div>';
             }
         }
 
         function renderDashboard(data) {
-            const content = document.getElementById('content');
-            const lastUpdated = document.getElementById('last-updated');
+            try {
+                console.log('renderDashboard called with data:', data);
+                const content = document.getElementById('content');
+                const lastUpdated = document.getElementById('last-updated');
 
             if (data.last_updated) {
                 const date = new Date(data.last_updated);
@@ -523,6 +529,11 @@
             });
 
             content.innerHTML = html;
+                console.log('HTML set successfully');
+            } catch (error) {
+                console.error('Error in renderDashboard:', error);
+                document.getElementById('content').innerHTML = '<div class="loading">Error rendering: ' + error.message + '</div>';
+            }
         }
 
         function renderStatRow(label, count, total, color) {

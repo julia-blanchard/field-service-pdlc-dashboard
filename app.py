@@ -881,6 +881,70 @@ def refresh_execution_data():
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
 
+@app.route('/api/validate-pbd', methods=['POST'])
+def validate_pbd():
+    """
+    Validate a PBD document using the /validate-pbd skill
+    Requires Claude Code with Google Workspace MCP
+
+    Request body:
+    {
+        "program_id": "sheet_123",
+        "pbd_url": "https://docs.google.com/document/d/.../edit"
+    }
+
+    Response:
+    {
+        "success": true,
+        "validation_status": "PASS" | "PASS WITH WARNINGS" | "FAIL",
+        "completion": 85,
+        "report_url": "validation_reports/Program_Name.html"
+    }
+    """
+    try:
+        import subprocess
+        data = request.get_json()
+
+        if not data or 'pbd_url' not in data:
+            return jsonify({"success": False, "error": "Missing pbd_url parameter"}), 400
+
+        pbd_url = data['pbd_url']
+        program_id = data.get('program_id', 'unknown')
+
+        # Run PBD validation script (requires Claude Code + MCP)
+        script_path = os.path.join(os.path.dirname(__file__), 'validate_pbd_real.py')
+        result = subprocess.run(
+            ['python3', script_path, pbd_url],
+            capture_output=True,
+            text=True,
+            timeout=120
+        )
+
+        if result.returncode == 0:
+            # Parse validation results from stdout
+            import json as json_lib
+            try:
+                validation_result = json_lib.loads(result.stdout)
+
+                # Update phase_1_programs.json with new validation results
+                # (Implementation would merge results into existing JSON)
+
+                return jsonify({
+                    "success": True,
+                    "validation_status": validation_result.get('status', 'UNKNOWN'),
+                    "completion": validation_result.get('completion', 0),
+                    "report_url": validation_result.get('report_url', '')
+                })
+            except json_lib.JSONDecodeError:
+                return jsonify({"success": False, "error": "Could not parse validation results"}), 500
+        else:
+            return jsonify({"success": False, "error": result.stderr}), 500
+
+    except subprocess.TimeoutExpired:
+        return jsonify({"success": False, "error": "Validation timeout - PBD may be too large"}), 500
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
 @app.route('/health')
 def health():
     """Health check endpoint"""

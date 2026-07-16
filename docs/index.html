@@ -5112,10 +5112,22 @@
                         <div style="margin-bottom: 12px;">
                             <span style="display: inline-block; font-size: 13px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">264 Field Service Mobile</span>
                         </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
                         <div class="program-meta">
                             
                             <div class="meta-item">
                                 <span class="meta-label">PM:</span> Kara Carreri
+                            </div>
+                            
+                            
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> Oleg Bivol
                             </div>
                             
                         </div>
@@ -5158,10 +5170,22 @@
                         <div style="margin-bottom: 12px;">
                             <span style="display: inline-block; font-size: 13px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">264 Field Service Mobile</span>
                         </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
                         <div class="program-meta">
                             
                             <div class="meta-item">
                                 <span class="meta-label">PM:</span> Sharon Adler
+                            </div>
+                            
+                            
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> Prashanth Moorthy
                             </div>
                             
                         </div>
@@ -5182,11 +5206,19 @@
                         <div style="margin-bottom: 12px;">
                             <span style="display: inline-block; font-size: 13px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">264 Field Service Mobile</span>
                         </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
                         <div class="program-meta">
                             
                             <div class="meta-item">
                                 <span class="meta-label">PM:</span> Sharon Adler
                             </div>
+                            
                             
                         </div>
                     </div>
@@ -5264,11 +5296,19 @@
                         <div style="margin-bottom: 12px;">
                             <span style="display: inline-block; font-size: 13px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">264 Field Service Scheduling & Optimization</span>
                         </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
                         <div class="program-meta">
                             
                             <div class="meta-item">
                                 <span class="meta-label">PM:</span> Amit Mizrahi
                             </div>
+                            
                             
                         </div>
                     </div>
@@ -5436,6 +5476,13 @@
                         <div style="margin-bottom: 12px;">
                             <span style="display: inline-block; font-size: 13px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">264 Field Service Mobile</span>
                         </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
                         <div class="program-meta">
                             
                         </div>
@@ -5538,6 +5585,13 @@
                         <div style="margin-bottom: 12px;">
                             <span style="display: inline-block; font-size: 13px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">264 Field Service Scheduling & Optimization</span>
                         </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
                         <div class="program-meta">
                             
                             <div class="meta-item">
@@ -5562,6 +5616,13 @@
                         <div style="margin-bottom: 12px;">
                             <span style="display: inline-block; font-size: 13px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">264 Field Service Scheduling & Optimization</span>
                         </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
                         <div class="program-meta">
                             
                             <div class="meta-item">
@@ -27829,6 +27890,49 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                 clearInterval(autoRefreshTimer);
             }
         });
+
+        // PBD Re-validation Function (requires Heroku backend)
+        async function revalidatePBD(programId, pbdUrl) {
+            if (!programId || !pbdUrl) {
+                alert('Missing program ID or PBD URL');
+                return;
+            }
+
+            // Show loading state
+            const button = event.target;
+            const originalText = button.innerHTML;
+            button.innerHTML = '⏳ Validating...';
+            button.disabled = true;
+
+            try {
+                const response = await fetch('/api/validate-pbd', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        program_id: programId,
+                        pbd_url: pbdUrl
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert(`Validation complete!\n\nStatus: ${result.validation_status}\nCompletion: ${result.completion}%\n\nRefreshing page...`);
+                    location.reload();
+                } else {
+                    alert(`Validation failed: ${result.error}`);
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }
+            } catch (error) {
+                console.error('Validation error:', error);
+                alert('Validation failed. This feature requires Heroku deployment with backend API.');
+                button.innerHTML = originalText;
+                button.disabled = false;
+            }
+        }
     </script>
 </body>
 </html>

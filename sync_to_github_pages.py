@@ -155,6 +155,7 @@ actual_phase_2_count = sum(1 for p in all_programs if p.get('phase') == '2')
 
 # Render template
 html = template.render(
+    static_site=True,
     programs=all_programs,
     portfolios=portfolios,
     phase_0_count=actual_phase_0_count,

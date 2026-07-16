@@ -462,6 +462,7 @@ def index():
     programs_by_capacity = sorted(programs_by_capacity, key=lambda p: p['june_delivered'] + p['july_committed'], reverse=True)
 
     return render_template('field_service_dynamic.html',
+                           static_site=False,
                            programs=all_programs,
                            portfolios=portfolios,
                            phase_0_count=phase_0_count,

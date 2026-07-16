@@ -197,7 +197,11 @@
       "cx_lead": "",
       "health": "Unknown",
       "target_release": "",
-      "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=A16"
+      "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=A16",
+      "pbd_url": "https://docs.google.com/document/d/1ABC_EXAMPLE_DEMO/edit",
+      "validation_status": "PASS WITH WARNINGS",
+      "completion": 85,
+      "report_url": "validation_reports/Headless_360_Demo_Report.html"
     },
     {
       "name": "Creation of Data Capture Form Skill Via Natural Language",

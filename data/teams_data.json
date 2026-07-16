@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T19:22:47.445610",
+  "last_updated": "2026-07-16T10:36:35.105664",
   "teams": [
     {
       "name": "FSL - Asset - 360",
@@ -228,9 +228,9 @@
     },
     {
       "name": "SFS Setup Experience",
-      "filled": 3,
+      "filled": 4,
       "non_filled": 0,
-      "total": 3,
+      "total": 4,
       "portfolios": [
         "264 Field Service Foundations"
       ]

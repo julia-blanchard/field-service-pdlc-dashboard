@@ -51,42 +51,80 @@ def extract_latest_comment(comments_text):
 # Register as Jinja2 filter
 app.jinja_env.filters['latest_comment'] = extract_latest_comment
 
+def format_month_header(month_str):
+    """Convert YYYY-MM to 'Month YYYY' format"""
+    if not month_str or month_str == 'no-date':
+        return 'Release Month N/A'
+
+    try:
+        from datetime import datetime
+        date_obj = datetime.strptime(month_str, '%Y-%m')
+        return date_obj.strftime('%B %Y')  # "June 2026"
+    except:
+        return month_str
+
+app.jinja_env.filters['format_month'] = format_month_header
+
 def map_release_to_freeze_month(release_number):
     """
-    Map Salesforce release numbers to their freeze months
-    Based on Core App Major Release Schedule
+    Map Salesforce release numbers (including patches) to their ship month
+    Based on Patch Deployment Schedule spreadsheet
 
-    Release pattern:
-    - 262: Freeze in April 2026
-    - 264: Freeze in August 2026
-    - 266: Freeze in December 2026
-    - 268: Freeze in April 2027
+    This matches Service Cloud's approach: filter epics by when they ship (like End Date),
+    which for Field Service means using the scheduled_build patch version
 
-    Handles patch releases (e.g., "264.6", "264.patch") by extracting major release number
+    Examples:
+    - 262.9: June 2026 (ships week of Jun 08)
+    - 264.3: August 2026 (ships week of Aug 24)
+    - 264.5: September 2026 (ships week of Sep 21)
     """
     if not release_number:
         return None
 
-    # Extract major release number from patches (264.6 -> 264, 264.patch -> 264)
-    release_str = str(release_number).split('.')[0].split('patch')[0]
-
-    if not release_str.isdigit():
+    release_str = str(release_number).strip()
+    if not release_str or release_str == '-':
         return None
 
-    release_num = int(release_str)
+    # Patch-to-month mapping from Patch Deployment Schedule
+    # 262 patches
+    if release_str == '262': return '2026-04'  # Apr 06
+    if release_str in ['262.1', '262.2', '262.3']: return '2026-04'  # Apr 13-27
+    if release_str in ['262.4', '262.5', '262.6', '262.7']: return '2026-05'  # May 04-25
+    if release_str in ['262.8', '262.9', '262.10']: return '2026-06'  # Jun 01-15
+    if release_str in ['262.11', '262.12']: return '2026-07'  # Jun 29 - Jul 13
+    if release_str in ['262.13', '262.14', '262.15', '262.16']: return '2026-08'  # Aug 03-24
 
-    base_release = 262
-    base_year = 2026
-    base_month = 4  # April freeze for 262
+    # 264 patches
+    if release_str == '264': return '2026-08'  # Aug 03
+    if release_str == '264.1': return '2026-08'  # Aug 10
+    if release_str == '264.2': return '2026-08'  # Aug 17
+    if release_str == '264.3': return '2026-08'  # Aug 24
+    if release_str == '264.4': return '2026-08'  # Aug 31 (actually Aug 31 but still August)
+    if release_str in ['264.5', '264.6']: return '2026-09'  # Sep 21, Sep 28
+    if release_str in ['264.7', '264.8', '264.9', '264.10']: return '2026-10'  # Oct 05-26
+    if release_str in ['264.11', '264.12', '264.13']: return '2026-11'  # Nov 02-16
+    if release_str in ['264.14', '264.15', '264.16']: return '2026-12'  # Nov 30 - Dec 14
+    if release_str == '264.17': return '2027-01'  # Jan 04
 
-    releases_diff = (release_num - base_release) // 2
+    # 266 patches (from 264 tab references)
+    if release_str == '266': return '2026-12'  # Dec 07
 
-    # Each release is 4 months apart (April, August, December pattern)
-    months_offset = releases_diff * 4
+    # Handle generic "patch" suffix
+    if '.patch' in release_str:
+        base = release_str.split('.patch')[0]
+        return map_release_to_freeze_month(base)
 
-    freeze_date = datetime(base_year, base_month, 1) + relativedelta(months=months_offset)
+    # Fallback for unknown releases - try to infer from major release number
+    try:
+        major = int(release_str.split('.')[0])
+        if major == 262: return '2026-04'
+        if major == 264: return '2026-08'
+        if major == 266: return '2026-12'
+        if major == 268: return '2027-04'
+    except (ValueError, IndexError):
+        pass
 
-    return freeze_date.strftime('%Y-%m')
+    return None
 
 def fetch_phase_0_from_file():
     """Fetch Phase 0 programs from local JSON file"""
@@ -316,6 +354,106 @@ def index():
 
     # Keep execution_programs separate (unmodified) for stats and execution tab
     execution_programs = exec_data.get('programs', [])
+
+    # Load team→Product Owner and team→Dev Lead mappings
+    team_data_file = os.path.join(os.path.dirname(__file__), 'data', 'team_product_owners.json')
+    team_po_map = {}
+    team_dev_lead_map = {}
+    try:
+        with open(team_data_file, 'r') as f:
+            team_data = json.load(f)
+            team_po_map = team_data.get('team_product_owners', {})
+            team_dev_lead_map = team_data.get('team_dev_leads', {})
+    except:
+        pass
+
+    # Add scheduled month to each epic based on scheduled_build
+    # Also group epics by month within each project
+    # Derive Product Owner AND Dev Lead from ALL teams contributing to each project
+    # Extract target release from program name
+    from collections import defaultdict
+    import re
+    for prog in execution_programs:
+        # Set program target_release to the LATEST scheduled_build across all epics
+        # This represents when the program will actually be complete (when last epic ships)
+        latest_build = None
+        latest_build_num = 0
+
+        for proj in prog.get('projects', []):
+            for epic in proj.get('epics', []):
+                scheduled_build = epic.get('scheduled_build', '')
+                if scheduled_build and scheduled_build != '-':
+                    # Extract numeric part (e.g., "264.3" -> 264.3)
+                    try:
+                        build_match = re.search(r'(\d+)\.?(\d*)', scheduled_build)
+                        if build_match:
+                            major = int(build_match.group(1))
+                            minor = int(build_match.group(2)) if build_match.group(2) else 0
+                            build_num = major + (minor / 100)  # 264.3 -> 264.03 for comparison
+                            if build_num > latest_build_num:
+                                latest_build_num = build_num
+                                latest_build = scheduled_build
+                    except:
+                        pass
+
+        if latest_build:
+            prog['target_release'] = latest_build
+        elif not prog.get('target_release'):
+            # Fallback: extract from program name
+            match = re.search(r'\[(\d{3})\]', prog.get('name', ''))
+            if match:
+                prog['target_release'] = match.group(1)
+
+        for proj in prog.get('projects', []):
+            # Collect ALL unique teams and derive both PO and Dev Lead from team records
+            all_product_owners = set()
+            all_dev_leads = set()
+
+            for epic in proj.get('epics', []):
+                team_name = epic.get('team', '')
+                if team_name and team_name != '-':
+                    # Look up Product Owner for this team
+                    po = team_po_map.get(team_name, '')
+                    if po:
+                        all_product_owners.add(po)
+
+                    # Look up Dev Lead (Engineering Manager) for this team
+                    dev_lead = team_dev_lead_map.get(team_name, '')
+                    if dev_lead:
+                        all_dev_leads.add(dev_lead)
+
+            # Always populate from team data (handles both single-team and multi-team projects)
+            if all_product_owners:
+                proj['product_owner'] = ', '.join(sorted(all_product_owners))
+
+            if all_dev_leads:
+                proj['dev_lead'] = ', '.join(sorted(all_dev_leads))
+
+            # Add scheduled_month to each epic
+            for epic in proj.get('epics', []):
+                scheduled_build = epic.get('scheduled_build', '')
+                if scheduled_build and scheduled_build != '-':
+                    scheduled_month = map_release_to_freeze_month(scheduled_build)
+                    epic['scheduled_month'] = scheduled_month if scheduled_month else 'no-date'
+                else:
+                    epic['scheduled_month'] = 'no-date'
+
+            # Group epics by month for display
+            epics_by_month = defaultdict(list)
+            for epic in proj.get('epics', []):
+                month = epic.get('scheduled_month', 'no-date')
+                epics_by_month[month].append(epic)
+
+            # Convert to sorted list of (month, epics) tuples
+            # Sort months chronologically, with 'no-date' at the end
+            sorted_months = sorted(
+                [m for m in epics_by_month.keys() if m != 'no-date']
+            )
+            if 'no-date' in epics_by_month:
+                sorted_months.append('no-date')
+
+            proj['epics_by_month'] = [(month, epics_by_month[month]) for month in sorted_months]
+
     # Make a copy for phase_2 that we can normalize without affecting execution_programs
     import copy
     phase_2_programs = copy.deepcopy(exec_data.get('programs', []))

@@ -2797,15 +2797,15 @@
                 <label class="filter-label-exec">MONTH</label>
                 <div class="filter-pills">
                     <button class="filter-pill month-pill active" data-month="all" tabindex="-1">All Months</button>
-                    
+
                     <button class="filter-pill month-pill" data-month="2026-06" tabindex="-1">June</button>
-                    
+
                     <button class="filter-pill month-pill" data-month="2026-07" tabindex="-1">July</button>
-                    
+
                     <button class="filter-pill month-pill" data-month="2026-08" tabindex="-1">August</button>
-                    
+
                     <button class="filter-pill month-pill" data-month="2026-09" tabindex="-1">September</button>
-                    
+
                 </div>
             </div>
         </div>
@@ -2946,7 +2946,8 @@
                         </div>
                         {% endif %}
 
-                        <!-- PBD Links -->
+                        <!-- PBD Links - HIDDEN per user request -->
+                        {% if false %}
                         {% if program.pbd_url or program.report_url %}
                         <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
                             {% if program.pbd_url %}
@@ -2960,6 +2961,7 @@
                             </a>
                             {% endif %}
                         </div>
+                        {% endif %}
                         {% endif %}
 
                         <div class="program-meta">
@@ -3032,7 +3034,8 @@
                         </div>
                         {% endif %}
 
-                        <!-- PBD Links -->
+                        <!-- PBD Links - HIDDEN per user request -->
+                        {% if false %}
                         {% if program.pbd_url or program.report_url %}
                         <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
                             {% if program.pbd_url %}
@@ -3052,6 +3055,7 @@
                             </button>
                             {% endif %}
                         </div>
+                        {% endif %}
                         {% endif %}
 
                         <div class="program-meta">
@@ -3202,10 +3206,10 @@
         <!-- Stats Cards -->
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 32px;">
             <!-- Programs Card -->
-            <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="programs">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                     <div style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">PROGRAMS</div>
-                    <div style="font-size: 32px; font-weight: 700; color: #1e293b;">{{ total_execution_programs }}</div>
+                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b;">{{ total_execution_programs }}</div>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; align-items: center; gap: 12px;">
@@ -3248,10 +3252,10 @@
             </div>
 
             <!-- Projects Card -->
-            <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="projects">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                     <div style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">PROJECTS</div>
-                    <div style="font-size: 32px; font-weight: 700; color: #1e293b;">{{ total_projects }}</div>
+                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b;">{{ total_projects }}</div>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; align-items: center; gap: 12px;">
@@ -3294,10 +3298,10 @@
             </div>
 
             <!-- Epics Card -->
-            <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="epics">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                     <div style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">EPICS</div>
-                    <div style="font-size: 32px; font-weight: 700; color: #1e293b;">{{ total_epics }}</div>
+                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b;">{{ total_epics }}</div>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; align-items: center; gap: 12px;">
@@ -3343,7 +3347,7 @@
     <!-- Field Service Program Rows -->
     {% for program in execution_programs %}
     <!-- Program Row -->
-    <div class="program-row" data-program-id="{{ program.id }}" data-portfolio="{{ program.portfolio }}">
+    <div class="program-row" data-program-id="{{ program.id }}" data-portfolio="{{ program.portfolio }}" data-health="{{ program.health if program.health else 'Unknown' }}">
         <div class="program-header" onclick="toggleProgram(this)">
             <div class="expand-icon">▶</div>
             <div class="program-content">
@@ -3363,7 +3367,7 @@
                     {% endif %}
 
                     <span style="color: #9ca3af; margin: 0 4px;">|</span>
-                    <span class="program-meta-badge count-badge">🎯 {{ program.projects|length }} Project{{ 's' if program.projects|length != 1 else '' }}</span>
+                    <span class="program-meta-badge count-badge">📦 {{ program.projects|length }} Project{{ 's' if program.projects|length != 1 else '' }}</span>
                     <span style="color: #9ca3af; margin: 0 4px;">|</span>
                     {% if program.health_status and program.health_status != 'N/A' %}
                     <span class="program-badge badge-{{ program.health_status|lower|replace(' ', '-') }}">{{ program.health_status }}</span>
@@ -3377,7 +3381,7 @@
         <!-- Projects Container -->
         <div class="projects-container">
             {% for project in program.projects %}
-            <div class="project-container" data-project-health="{{ (project.health_status|lower|replace(' ', '-')) if project.health_status and project.health_status != 'N/A' else 'not-started' }}">
+            <div class="project-container" data-project-health="{{ (project.health_status|lower|replace(' ', '-')) if project.health_status and project.health_status != 'N/A' else 'not-started' }}" data-health="{{ project.health_status if project.health_status else 'Unknown' }}">
                 <div class="project-header" onclick="toggleProject(this)">
                     <div class="project-expand-icon">▶</div>
                     <div class="project-icon">📦</div>
@@ -3433,27 +3437,94 @@
                     </div>
                 </div>
                 <div class="epics-container">
-                    {% for epic in project.epics %}
-                    <div class="epic-row epic-card-health-{{ epic.health|lower|replace(' ', '-') }}">
-                        <span class="epic-name">
-                            {% if epic.id %}
-                            <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/{{ epic.id }}/view"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;"
-                               onclick="event.stopPropagation();">
+                    {% if project.epics_by_month %}
+                        {% for month, epics in project.epics_by_month %}
+                        <div class="month-header" data-month="{{ month }}" style="padding: 8px 12px; margin: 12px 0 8px 0; background: #f1f5f9; border-left: 3px solid #3b82f6; font-size: 12px; font-weight: 600; color: #475569;">
+                            {{ month|format_month }}
+                        </div>
+                            {% for epic in epics %}
+                            <div class="epic-row epic-card-health-{{ epic.health|lower|replace(' ', '-') }}" data-scheduled-month="{{ epic.scheduled_month if epic.scheduled_month else 'no-date' }}" data-scheduled-build="{{ epic.scheduled_build if epic.scheduled_build else '-' }}" data-health="{{ epic.health_status if epic.health_status else (epic.health if epic.health else 'Unknown') }}">
+                                <span class="epic-name">
+                                    {% if epic.id %}
+                                    <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/{{ epic.id }}/view"
+                                       target="_blank"
+                                       style="color: inherit; text-decoration: none; cursor: pointer;"
+                                       onclick="event.stopPropagation();">
+                                        {{ epic.name }}
+                                    </a>
+                                    {% else %}
+                                    {{ epic.name }}
+                                    {% endif %}
+                                </span>
+                                <div style="display: flex; align-items: center; gap: 16px; margin-left: auto; font-size: 11px; color: #64748b;">
+                                    {% if epic.scheduled_build and epic.scheduled_build != '-' %}
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        {{ epic.scheduled_build }}
+                                    </span>
+                                    {% endif %}
+                                    {% if epic.team %}
+                                    <span><strong>Team:</strong> {{ epic.team }}</span>
+                                    {% endif %}
+                                    {% if epic.last_modified %}
+                                    <span><strong>Last Modified:</strong> {{ epic.last_modified }}</span>
+                                    {% endif %}
+                                </div>
+                                {% if epic.health_status and epic.health_status != 'N/A' %}
+                                <span class="epic-badge badge-{{ epic.health_status|lower|replace(' ', '-') }}" style="margin-left: 12px;">{{ epic.health_status }}</span>
+                                {% else %}
+                                <span class="epic-badge badge-not-started" style="margin-left: 12px;">Not Started</span>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        {% endfor %}
+                    {% else %}
+                        {% for epic in project.epics %}
+                        <div class="epic-row epic-card-health-{{ epic.health|lower|replace(' ', '-') }}" data-scheduled-month="{{ epic.scheduled_month if epic.scheduled_month else 'no-date' }}" data-scheduled-build="{{ epic.scheduled_build if epic.scheduled_build else '-' }}" data-health="{{ epic.health_status if epic.health_status else (epic.health if epic.health else 'Unknown') }}">
+                            <span class="epic-name">
+                                {% if epic.id %}
+                                <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/{{ epic.id }}/view"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;"
+                                   onclick="event.stopPropagation();">
+                                    {{ epic.name }}
+                                </a>
+                                {% else %}
                                 {{ epic.name }}
-                            </a>
+                                {% endif %}
+                            </span>
+                            <div style="display: flex; align-items: center; gap: 16px; margin-left: auto; font-size: 11px; color: #64748b;">
+                                {% if epic.scheduled_build and epic.scheduled_build != '-' %}
+                                <span style="display: flex; align-items: center; gap: 4px;">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    {{ epic.scheduled_build }}
+                                </span>
+                                {% endif %}
+                                {% if epic.team %}
+                                <span><strong>Team:</strong> {{ epic.team }}</span>
+                                {% endif %}
+                                {% if epic.last_modified %}
+                                <span><strong>Last Modified:</strong> {{ epic.last_modified }}</span>
+                                {% endif %}
+                            </div>
+                            {% if epic.health_status and epic.health_status != 'N/A' %}
+                            <span class="epic-badge badge-{{ epic.health_status|lower|replace(' ', '-') }}" style="margin-left: 12px;">{{ epic.health_status }}</span>
                             {% else %}
-                            {{ epic.name }}
+                            <span class="epic-badge badge-not-started" style="margin-left: 12px;">Not Started</span>
                             {% endif %}
-                        </span>
-                        {% if epic.health_status and epic.health_status != 'N/A' %}
-                        <span class="epic-badge badge-{{ epic.health_status|lower|replace(' ', '-') }}">{{ epic.health_status }}</span>
-                        {% else %}
-                        <span class="epic-badge badge-not-started">Not Started</span>
-                        {% endif %}
-                    </div>
-                    {% endfor %}
+                        </div>
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
@@ -14551,7 +14622,7 @@
                                                 {% endif %}
                                             </div>
                                             {% if program_lookup.get(program) and program_lookup[program].get('portfolio') %}
-                                            <div style="color: #94a3b8; font-size: 10.5px; font-weight: 400; font-style: normal; display: block; line-height: 1.3;">{{ program_lookup[program]['portfolio'] }}</div>
+                                            <div style="color: #94a3b8; font-size: 12px; font-weight: 400; font-style: normal; display: block; line-height: 1.3;">{{ program_lookup[program]['portfolio'] }}</div>
                                             {% endif %}
                                         </td>
                                         <td style="text-align: center; padding: 8px 16px; vertical-align: top;"></td>
@@ -15491,15 +15562,22 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                     const selectedMonth = this.dataset.month;
 
                     if (selectedMonth === 'all') {
-                        // Show all programs, projects, month columns (BUT RESPECT PORTFOLIO FILTER)
+                        // Show all programs, projects, epics (BUT RESPECT PORTFOLIO FILTER)
                         document.querySelectorAll('#execution-view .program-row').forEach(p => {
                             const portfolio = p.getAttribute('data-portfolio');
                             const matchesPortfolio = selectedPortfolios.size === 0 || selectedPortfolios.has(portfolio);
                             p.style.display = matchesPortfolio ? '' : 'none';
                         });
                         document.querySelectorAll('#execution-view .project-container').forEach(p => p.style.display = '');
-                        document.querySelectorAll('.month-column').forEach(c => c.style.display = '');
+                        document.querySelectorAll('.epic-row').forEach(e => e.style.display = '');
+                        document.querySelectorAll('.month-header').forEach(h => h.style.display = '');
+
+                        // Recalculate stat cards for all visible items
+                        recalculateStatCards();
                     } else {
+                        // selectedMonth is already in YYYY-MM format (2026-06, 2026-07, etc.)
+                        const targetMonth = selectedMonth;
+
                         // AUTO-SWITCH TO EPIC VIEW
                         document.querySelectorAll('.view-toggle').forEach(t => t.classList.remove('active'));
                         document.querySelector('.view-toggle[data-view="epic"]').classList.add('active');
@@ -15511,61 +15589,209 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                             if (header) header.classList.add('expanded');
                         });
 
-                        document.querySelectorAll('#execution-view .project-row').forEach(row => {
+                        document.querySelectorAll('#execution-view .project-container').forEach(row => {
                             row.classList.add('expanded');
                             const header = row.querySelector('.project-header');
                             if (header) header.classList.add('expanded');
                         });
 
-                        // 1. Find all epics in the selected month (by end_date ONLY)
+                        // 1. Find all epics in the selected month
+                        // Matches Service Cloud approach: filter epics by their ship month
+                        // For Field Service: scheduled_build patch -> ship month via map_release_to_freeze_month()
                         const epicsInMonth = [];
-                        document.querySelectorAll('.month-column').forEach(col => {
-                            if (col.dataset.month === selectedMonth) {
-                                col.querySelectorAll('.epic-card').forEach(epic => {
-                                    epicsInMonth.push(epic);
-                                });
+                        document.querySelectorAll('.epic-row').forEach(epic => {
+                            const epicMonth = epic.getAttribute('data-scheduled-month');
+                            if (epicMonth === targetMonth) {
+                                epicsInMonth.push(epic);
+                                epic.style.display = '';
+                            } else {
+                                epic.style.display = 'none';
                             }
                         });
 
-                        // 2. Get parent projects that have epics in this month
+                        // 2. Hide month headers that don't match the selected month OR have no visible epics
+                        document.querySelectorAll('.month-header').forEach(header => {
+                            const headerMonth = header.getAttribute('data-month');
+
+                            // If filtering to a specific month, only show that month's header
+                            if (headerMonth !== targetMonth) {
+                                header.style.display = 'none';
+                            } else {
+                                // Check if this header has any visible epics after it
+                                let nextElement = header.nextElementSibling;
+                                let hasVisibleEpics = false;
+
+                                while (nextElement && !nextElement.classList.contains('month-header')) {
+                                    if (nextElement.classList.contains('epic-row') && nextElement.style.display !== 'none') {
+                                        hasVisibleEpics = true;
+                                        break;
+                                    }
+                                    nextElement = nextElement.nextElementSibling;
+                                }
+
+                                header.style.display = hasVisibleEpics ? '' : 'none';
+                            }
+                        });
+
+                        // 3. Get parent projects that have epics in this month
                         const projectsWithEpics = new Set();
                         epicsInMonth.forEach(epic => {
-                            const project = epic.closest('.project-row');
+                            const project = epic.closest('.project-container');
                             if (project) projectsWithEpics.add(project);
                         });
 
-                        // 3. Get parent programs that have projects with epics in this month
+                        // 4. Get parent programs that have projects with epics in this month
                         const programsWithEpics = new Set();
                         projectsWithEpics.forEach(project => {
                             const program = project.closest('.program-row');
                             if (program) programsWithEpics.add(program);
                         });
 
-                        // 4. Hide programs that don't have epics in this month (RESPECT PORTFOLIO FILTER)
+                        // 5. Hide programs that don't have epics in this month (RESPECT PORTFOLIO FILTER)
                         document.querySelectorAll('#execution-view .program-row').forEach(program => {
                             const hasEpicsInMonth = programsWithEpics.has(program);
-
-                            // Check if portfolio filter is active
                             const programPortfolio = program.getAttribute('data-portfolio');
                             const matchesPortfolio = selectedPortfolios.size === 0 || selectedPortfolios.has(programPortfolio);
 
-                            // Show ONLY if has epics in month AND matches portfolio filter
                             program.style.display = (hasEpicsInMonth && matchesPortfolio) ? '' : 'none';
                         });
 
-                        // 5. Hide projects that don't have epics in this month
-                        document.querySelectorAll('#execution-view .project-row').forEach(project => {
+                        // 6. Hide projects that don't have epics in this month
+                        document.querySelectorAll('#execution-view .project-container').forEach(project => {
                             project.style.display = projectsWithEpics.has(project) ? '' : 'none';
                         });
 
-                        // 6. Hide all month columns except the selected month
-                        document.querySelectorAll('.month-column').forEach(col => {
-                            col.style.display = col.dataset.month === selectedMonth ? '' : 'none';
-                        });
+                        // Recalculate stat cards based on visible items only
+                        recalculateStatCards();
                     }
                 });
             });
         });
+
+        // Recalculate stat cards based on visible items only
+        function recalculateStatCards() {
+            // Count visible programs by health status
+            const programCounts = {not_assigned: 0, not_started: 0, on_track: 0, watch: 0, blocked: 0, completed: 0};
+            document.querySelectorAll('#execution-view .program-row').forEach(prog => {
+                if (prog.style.display !== 'none') {
+                    const health = prog.getAttribute('data-health') || 'unknown';
+                    const healthLower = health.toLowerCase();
+                    if (healthLower.includes('on track')) {
+                        programCounts.on_track++;
+                    } else if (healthLower.includes('watch')) {
+                        programCounts.watch++;
+                    } else if (healthLower.includes('blocked')) {
+                        programCounts.blocked++;
+                    } else if (healthLower.includes('not started')) {
+                        programCounts.not_started++;
+                    } else if (healthLower.includes('completed') || healthLower.includes('complete')) {
+                        programCounts.completed++;
+                    } else {
+                        programCounts.not_assigned++;
+                    }
+                }
+            });
+
+            // Count visible projects by health status
+            const projectCounts = {not_assigned: 0, not_started: 0, on_track: 0, watch: 0, blocked: 0, completed: 0};
+            document.querySelectorAll('#execution-view .project-container').forEach(proj => {
+                if (proj.style.display !== 'none') {
+                    const health = proj.getAttribute('data-health') || 'unknown';
+                    const healthLower = health.toLowerCase();
+                    if (healthLower.includes('on track')) {
+                        projectCounts.on_track++;
+                    } else if (healthLower.includes('watch')) {
+                        projectCounts.watch++;
+                    } else if (healthLower.includes('blocked')) {
+                        projectCounts.blocked++;
+                    } else if (healthLower.includes('not started')) {
+                        projectCounts.not_started++;
+                    } else if (healthLower.includes('completed') || healthLower.includes('complete')) {
+                        projectCounts.completed++;
+                    } else {
+                        projectCounts.not_assigned++;
+                    }
+                }
+            });
+
+            // Count visible epics by health status
+            const epicCounts = {not_assigned: 0, not_started: 0, on_track: 0, watch: 0, blocked: 0, completed: 0};
+            document.querySelectorAll('#execution-view .epic-row').forEach(epic => {
+                if (epic.style.display !== 'none') {
+                    const health = epic.getAttribute('data-health') || 'unknown';
+                    const healthLower = health.toLowerCase();
+                    if (healthLower.includes('on track')) {
+                        epicCounts.on_track++;
+                    } else if (healthLower.includes('watch')) {
+                        epicCounts.watch++;
+                    } else if (healthLower.includes('blocked')) {
+                        epicCounts.blocked++;
+                    } else if (healthLower.includes('not started')) {
+                        epicCounts.not_started++;
+                    } else if (healthLower.includes('completed') || healthLower.includes('complete')) {
+                        epicCounts.completed++;
+                    } else {
+                        epicCounts.not_assigned++;
+                    }
+                }
+            });
+
+            // Update Programs stat card
+            const programTotal = Object.values(programCounts).reduce((a, b) => a + b, 0);
+            document.querySelector('[data-card="programs"] .text-3xl').textContent = programTotal;
+            updateStatRow('programs', 'not_assigned', programCounts.not_assigned, programTotal);
+            updateStatRow('programs', 'not_started', programCounts.not_started, programTotal);
+            updateStatRow('programs', 'on_track', programCounts.on_track, programTotal);
+            updateStatRow('programs', 'watch', programCounts.watch, programTotal);
+            updateStatRow('programs', 'blocked', programCounts.blocked, programTotal);
+            updateStatRow('programs', 'completed', programCounts.completed, programTotal);
+
+            // Update Projects stat card
+            const projectTotal = Object.values(projectCounts).reduce((a, b) => a + b, 0);
+            document.querySelector('[data-card="projects"] .text-3xl').textContent = projectTotal;
+            updateStatRow('projects', 'not_assigned', projectCounts.not_assigned, projectTotal);
+            updateStatRow('projects', 'not_started', projectCounts.not_started, projectTotal);
+            updateStatRow('projects', 'on_track', projectCounts.on_track, projectTotal);
+            updateStatRow('projects', 'watch', projectCounts.watch, projectTotal);
+            updateStatRow('projects', 'blocked', projectCounts.blocked, projectTotal);
+            updateStatRow('projects', 'completed', projectCounts.completed, projectTotal);
+
+            // Update Epics stat card
+            const epicTotal = Object.values(epicCounts).reduce((a, b) => a + b, 0);
+            document.querySelector('[data-card="epics"] .text-3xl').textContent = epicTotal;
+            updateStatRow('epics', 'not_assigned', epicCounts.not_assigned, epicTotal);
+            updateStatRow('epics', 'not_started', epicCounts.not_started, epicTotal);
+            updateStatRow('epics', 'on_track', epicCounts.on_track, epicTotal);
+            updateStatRow('epics', 'watch', epicCounts.watch, epicTotal);
+            updateStatRow('epics', 'blocked', epicCounts.blocked, epicTotal);
+            updateStatRow('epics', 'completed', epicCounts.completed, epicTotal);
+        }
+
+        function updateStatRow(cardType, status, count, total) {
+            const card = document.querySelector(`[data-card="${cardType}"]`);
+            if (!card) return;
+
+            const rows = card.querySelectorAll('[style*="display: flex"]');
+            const statusMap = {
+                'not_assigned': 0,
+                'not_started': 1,
+                'on_track': 2,
+                'watch': 3,
+                'blocked': 4,
+                'completed': 5
+            };
+
+            const rowIndex = statusMap[status];
+            if (rowIndex !== undefined && rows[rowIndex]) {
+                const row = rows[rowIndex];
+                const percentage = total > 0 ? Math.round((count / total) * 100) : 0;
+                const percentDiv = row.querySelector('[style*="color: #94a3b8"]');
+                const countDiv = row.querySelector('[style*="min-width: 32px"]');
+
+                if (percentDiv) percentDiv.textContent = `${percentage}%`;
+                if (countDiv) countDiv.textContent = count;
+            }
+        }
 
         function switchView(viewName) {
             // Hide all views

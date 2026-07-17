@@ -1074,7 +1074,7 @@ def milestones():
 
 @app.route('/api/refresh', methods=['GET', 'POST'])
 def refresh_all_data():
-    """Refresh all dashboard data (execution + teams)"""
+    """Refresh all dashboard data (execution + teams + team mappings)"""
     try:
         import subprocess
         base_dir = os.path.dirname(__file__)
@@ -1098,11 +1098,20 @@ def refresh_all_data():
             'output': teams_result.stdout if teams_result.returncode == 0 else teams_result.stderr
         })
 
+        # Fetch team Product Owners and Dev Leads
+        team_po_script = os.path.join(base_dir, 'fetch_team_product_owners.py')
+        team_po_result = subprocess.run(['python3', team_po_script], capture_output=True, text=True, timeout=120)
+        results.append({
+            'script': 'team_product_owners',
+            'success': team_po_result.returncode == 0,
+            'output': team_po_result.stdout if team_po_result.returncode == 0 else team_po_result.stderr
+        })
+
         # Check if all succeeded
         all_success = all(r['success'] for r in results)
 
         if all_success:
-            return jsonify({"success": True, "message": "All data refreshed successfully", "details": results})
+            return jsonify({"success": True, "message": "All data refreshed successfully (Note: Phase 0 Google Sheet data not auto-refreshed)", "details": results})
         else:
             return jsonify({"success": False, "message": "Some refreshes failed", "details": results}), 207
 

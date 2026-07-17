@@ -15404,6 +15404,16 @@ document.getElementById('program-search').addEventListener('input', (e) => {
 
                     const selectedStatus = this.getAttribute('data-status');
 
+                    // Map filter status to badge class (e.g., "on-watch" -> "watch")
+                    const statusToBadge = {
+                        'on-track': 'on-track',
+                        'on-watch': 'watch',
+                        'not-started': 'not-started',
+                        'blocked': 'blocked',
+                        'completed': 'completed'
+                    };
+                    const badgeStatus = statusToBadge[selectedStatus] || selectedStatus;
+
                     // Check which view is active
                     const activeView = document.querySelector('.view-toggle.active');
                     const viewType = activeView ? activeView.dataset.view : 'epic';
@@ -15424,7 +15434,7 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                             // PROGRAMS VIEW: Filter ONLY by program health
                             document.querySelectorAll('#execution-view .program-row').forEach(program => {
                                 const badge = program.querySelector('.program-badge');
-                                const matchesStatus = badge && badge.classList.contains('badge-' + selectedStatus);
+                                const matchesStatus = badge && badge.classList.contains('badge-' + badgeStatus);
                                 const portfolio = program.getAttribute('data-portfolio');
                                 const matchesPortfolio = selectedPortfolios.size === 0 || selectedPortfolios.has(portfolio);
 
@@ -15439,7 +15449,7 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                             const matchingProjects = new Set();
                             document.querySelectorAll('#execution-view .project-container').forEach(project => {
                                 const projectHealth = project.dataset.projectHealth;
-                                if (projectHealth === selectedStatus) {
+                                if (projectHealth === badgeStatus) {
                                     matchingProjects.add(project);
                                 }
                             });

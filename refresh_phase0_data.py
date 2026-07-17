@@ -45,6 +45,7 @@ def parse_sheet_data(sheet_data_text):
 
             portfolio = row_data[0] if len(row_data) > 0 else ""
             stage = row_data[3] if len(row_data) > 3 else ""
+            initiative = row_data[4] if len(row_data) > 4 else ""
             feature = row_data[8] if len(row_data) > 8 else ""
             status = row_data[16] if len(row_data) > 16 else ""
             pm_lead = row_data[17] if len(row_data) > 17 else ""
@@ -53,8 +54,12 @@ def parse_sheet_data(sheet_data_text):
             ux_lead = row_data[20] if len(row_data) > 20 else ""
             cx_lead = row_data[21] if len(row_data) > 21 else ""
 
-            # Only include Phase 0 items (PM Backlog or Prototyping stages)
-            if not feature or ("PM Backlog" not in stage and "Prototyping" not in stage and "Ready for Review" not in stage):
+            # Use Initiative as fallback if Feature is empty
+            display_name = feature if feature else initiative
+
+            # Only include Phase 0 and Phase 1 items (PM Backlog, Prototyping, Ready for Review)
+            # Must have either a Feature or Initiative
+            if not display_name or ("PM Backlog" not in stage and "Prototyping" not in stage and "Ready for Review" not in stage):
                 continue
 
             # Normalize portfolio name to match dashboard format
@@ -65,21 +70,33 @@ def parse_sheet_data(sheet_data_text):
                     portfolio = "264 Field Service Mobile"
                 elif portfolio == "Workforce Scheduling":
                     portfolio = "264 Field Service Workforce Scheduling"
+                elif "Scheduling" in portfolio:
+                    portfolio = "264 Field Service Scheduling & Optimization"
                 elif portfolio:
                     portfolio = f"264 Field Service {portfolio}"
 
-            # Determine subcolumn based on stage
-            subcolumn = "backlog"
-            if "Prototyping" in stage:
+            # Determine phase and subcolumn based on stage
+            # PM Backlog (Phase 0) → Phase 0 Backlog
+            # Prototyping → Phase 1 Column 1
+            # Ready for Review → Phase 1 Column 2
+            if "PM Backlog" in stage:
+                phase = "0"
+                subcolumn = "backlog"
+            elif "Prototyping" in stage:
+                phase = "1"
                 subcolumn = "prototyping"
             elif "Ready for Review" in stage:
+                phase = "1"
                 subcolumn = "ready_for_review"
+            else:
+                phase = "0"
+                subcolumn = "backlog"
 
             program = {
-                "name": feature,
-                "full_name": feature,
+                "name": display_name,
+                "full_name": display_name,
                 "id": f"sheet_{row_num}",
-                "phase": "0",
+                "phase": phase,
                 "subcolumn": subcolumn,
                 "portfolio": portfolio or "TBD",
                 "stage": stage,

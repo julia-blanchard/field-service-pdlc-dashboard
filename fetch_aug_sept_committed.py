@@ -12,7 +12,27 @@ from collections import defaultdict
 
 SCRIPT_DIR = Path(__file__).parent
 DATA_FILE = SCRIPT_DIR / "data" / "teams_data.json"
+EXEC_DATA_FILE = SCRIPT_DIR / "data" / "execution_data.json"
 TARGET_ORG = "org62"
+
+def build_epic_to_program_map():
+    """Build lookup: epic_name -> program_name from execution data"""
+    epic_to_program = {}
+    try:
+        with open(EXEC_DATA_FILE, 'r') as f:
+            exec_data = json.load(f)
+        for program in exec_data.get('programs', []):
+            program_name = program.get('name', 'Unknown')
+            for project in program.get('projects', []):
+                for epic in project.get('epics', []):
+                    epic_name = epic.get('name')
+                    if epic_name:
+                        epic_to_program[epic_name] = program_name
+        print(f"✅ Built epic → program map with {len(epic_to_program)} epics")
+        return epic_to_program
+    except Exception as e:
+        print(f"⚠️  Could not load execution data: {e}")
+        return {}
 
 def run_soql(query):
     """Execute SOQL query"""
@@ -24,7 +44,10 @@ def run_soql(query):
     data = json.loads(result.stdout)
     return data.get('result', {}).get('records', [])
 
-# Step 1: Load the 28 active team names from the roster data
+# Step 1: Build epic → program mapping
+epic_to_program = build_epic_to_program_map()
+
+# Step 2: Load the 28 active team names from the roster data
 print("🔄 Loading active Field Service teams from roster...")
 with open(DATA_FILE, 'r') as f:
     teams_data = json.load(f)
@@ -56,7 +79,7 @@ for month_num, month_name in [('08', 'August'), ('09', 'September')]:
     print(f"\n🔄 Querying work items committed for {month_name} 2026...")
 
     work_query = f"""
-    SELECT Id, Name, Scrum_Team__c, Story_Points__c, Status__c, Sprint_Timeframe__c
+    SELECT Id, Name, Scrum_Team__c, Story_Points__c, Status__c, Sprint_Timeframe__c, Epic__r.Name
     FROM ADM_Work__c
     WHERE Sprint_Timeframe__c LIKE '2026.{month_num}%'
       AND Scrum_Team__c IN ('{team_ids_str}')
@@ -68,17 +91,25 @@ for month_num, month_name in [('08', 'August'), ('09', 'September')]:
     work_items = run_soql(work_query)
     print(f"✅ Found {len(work_items)} work items committed for {month_name} 2026")
 
-    # Aggregate by team
-    team_committed = defaultdict(lambda: {'points': 0, 'work_items': 0})
+    # Aggregate by team AND by program
+    team_committed = defaultdict(lambda: {'points': 0, 'work_items': 0, 'by_program': defaultdict(float)})
 
     for item in work_items:
         team_id = item.get('Scrum_Team__c')
         story_points = item.get('Story_Points__c', 0) or 0
+        epic_name = item.get('Epic__r', {}).get('Name') if item.get('Epic__r') else None
 
         if team_id in team_name_map:
             team_name = team_name_map[team_id]
             team_committed[team_name]['points'] += story_points
             team_committed[team_name]['work_items'] += 1
+
+            # Map to program via epic name
+            if epic_name and epic_name in epic_to_program:
+                program_name = epic_to_program[epic_name]
+                team_committed[team_name]['by_program'][program_name] += story_points
+            else:
+                team_committed[team_name]['by_program']['Unmapped'] += story_points
 
     # Update teams data
     month_lower = month_name.lower()
@@ -96,9 +127,11 @@ for month_num, month_name in [('08', 'August'), ('09', 'September')]:
         if team_name in team_committed:
             team[field_name] = round(team_committed[team_name]['points'], 1)
             team[count_field] = team_committed[team_name]['work_items']
+            team[f'{month_lower}_committed_by_program'] = dict(team_committed[team_name]['by_program'])
         else:
             team[field_name] = 0
             team[count_field] = 0
+            team[f'{month_lower}_committed_by_program'] = {}
 
     # Print summary
     print(f"\n📊 Capacity Committed - {month_name} 2026:")

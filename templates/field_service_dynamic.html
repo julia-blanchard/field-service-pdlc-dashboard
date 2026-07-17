@@ -14518,8 +14518,8 @@
                                     <col style="width: auto;">
                                     <col style="width: auto;">
                                 </colgroup>
-                                {% if team.june_delivered_by_program or team.july_committed_by_program %}
-                                    {% set all_programs = (team.june_delivered_by_program.keys() | list + team.july_committed_by_program.keys() | list) | unique | sort %}
+                                {% if team.june_delivered_by_program or team.july_committed_by_program or team.august_committed_by_program or team.september_committed_by_program %}
+                                    {% set all_programs = (team.june_delivered_by_program.keys() | list + team.july_committed_by_program.keys() | list + team.august_committed_by_program.keys() | list + team.september_committed_by_program.keys() | list) | unique | sort %}
                                     {% for program in all_programs %}
                                     <tr style="border-bottom: 1px solid #f1f5f9;">
                                         <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #64748b; font-style: italic;">
@@ -14527,34 +14527,20 @@
                                         </td>
                                         <td style="padding: 8px 16px;"></td>
                                         <td style="text-align: center; padding: 8px 16px;"></td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #059669; border-left: 2px solid #0ea5e9;">
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; border-left: 2px solid #0ea5e9;">
                                             {{ team.june_delivered_by_program.get(program, 0) if team.june_delivered_by_program.get(program, 0) > 0 else '—' }}
                                         </td>
                                         <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb;">
                                             {{ team.july_committed_by_program.get(program, 0) if team.july_committed_by_program.get(program, 0) > 0 else '—' }}
                                         </td>
-                                        <td style="text-align: center; padding: 8px 16px;"></td>
-                                        <td style="text-align: center; padding: 8px 16px;"></td>
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb;">
+                                            {{ team.august_committed_by_program.get(program, 0) if team.august_committed_by_program.get(program, 0) > 0 else '—' }}
+                                        </td>
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb;">
+                                            {{ team.september_committed_by_program.get(program, 0) if team.september_committed_by_program.get(program, 0) > 0 else '—' }}
+                                        </td>
                                     </tr>
                                     {% endfor %}
-
-                                    {% if team.june_delivered_unmapped > 0 or team.july_committed_unmapped > 0 %}
-                                    <tr style="border-bottom: 1px solid #f1f5f9;">
-                                        <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #94a3b8; font-style: italic;">
-                                            [Unmapped]
-                                        </td>
-                                        <td style="padding: 8px 16px;"></td>
-                                        <td style="text-align: center; padding: 8px 16px;"></td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #94a3b8; border-left: 2px solid #0ea5e9;">
-                                            {{ team.june_delivered_unmapped if team.june_delivered_unmapped > 0 else '—' }}
-                                        </td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #94a3b8;">
-                                            {{ team.july_committed_unmapped if team.july_committed_unmapped > 0 else '—' }}
-                                        </td>
-                                        <td style="text-align: center; padding: 8px 16px;"></td>
-                                        <td style="text-align: center; padding: 8px 16px;"></td>
-                                    </tr>
-                                    {% endif %}
                                 {% else %}
                                 <tr>
                                     <td colspan="7" style="padding: 16px 48px; font-size: 13px; color: #94a3b8; font-style: italic;">

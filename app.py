@@ -415,6 +415,10 @@ def index():
         if health_val.lower() in ['unknown', '', '-', 'none']:
             prog['health'] = 'Not Assigned'
 
+        health_status_val = str(prog.get('health_status', '')).strip()
+        if health_status_val.lower() in ['unknown', '', '-', 'none']:
+            prog['health_status'] = 'Not Assigned'
+
         # Also normalize health for all projects and epics
         for proj in prog.get('projects', []):
             proj_health = str(proj.get('health_status', '')).strip()
@@ -541,6 +545,10 @@ def index():
         health_val = str(prog.get('health', '')).strip()
         if health_val.lower() in ['unknown', '', '-', 'none']:
             prog['health'] = 'Not Assigned'
+
+        health_status_val = str(prog.get('health_status', '')).strip()
+        if health_status_val.lower() in ['unknown', '', '-', 'none']:
+            prog['health_status'] = 'Not Assigned'
 
         # Also normalize health for all projects and epics
         for proj in prog.get('projects', []):

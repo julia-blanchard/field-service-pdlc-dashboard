@@ -30,22 +30,15 @@ def generate_static_site():
         shutil.rmtree(data_dst)
     shutil.copytree(data_src, data_dst)
 
-    # Copy validation reports
-    reports_src = Path(__file__).parent / "validation_reports"
-    reports_dst = OUTPUT_DIR / "validation_reports"
-    if reports_dst.exists():
-        shutil.rmtree(reports_dst)
-    shutil.copytree(reports_src, reports_dst)
-
     with app.test_client() as client:
-        # Generate execution dashboard as index
-        print("Generating index.html (execution dashboard)...")
-        response = client.get('/execution-final')
+        # Generate Field Service dashboard as index
+        print("Generating index.html (Field Service execution dashboard)...")
+        response = client.get('/')
         with open(OUTPUT_DIR / "index.html", 'wb') as f:
             f.write(response.data)
 
         print(f"✅ Static site generated in {OUTPUT_DIR}")
-        print(f"   - index.html (execution dashboard)")
+        print(f"   - index.html (Field Service dashboard)")
         print(f"   - static/ (CSS, JS, images)")
         print(f"   - data/ (JSON data files)")
 

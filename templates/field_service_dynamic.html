@@ -584,7 +584,7 @@
         }
 
         .program-name a {
-            color: #2563eb;
+            color: #0176D3;
             text-decoration: underline;
             cursor: pointer;
         }
@@ -1002,7 +1002,7 @@
 
         .filter-pill[data-status="completed"] {
             background: #dbeafe;
-            color: #2563eb;
+            color: #0176D3;
             border-color: #3b82f6;
         }
 
@@ -1246,7 +1246,7 @@
 
         .badge-completed {
             background: #dbeafe;
-            color: #2563eb;
+            color: #0176D3;
         }
 
         .badge-not-started {
@@ -1321,7 +1321,7 @@
         }
 
         .project-name a {
-            color: #2563eb;
+            color: #0176D3;
             text-decoration: underline;
             cursor: pointer;
         }
@@ -1468,7 +1468,7 @@
         }
 
         .epic-name a {
-            color: #2563eb;
+            color: #0176D3;
             text-decoration: underline;
             cursor: pointer;
         }
@@ -2526,7 +2526,7 @@
 
         .status-completed {
             background: #dbeafe;
-            color: #2563eb;
+            color: #0176D3;
         }
 
         .epic-name {
@@ -14460,7 +14460,7 @@
                 <tbody>
                     {% for team in teams %}
                     <!-- Team summary row -->
-                    <tr class="team-row team-summary-row" data-team="{{ team.name }}" style="background: #f8fafc; border-top: 2px solid #e5e7eb; cursor: pointer;" onclick="toggleTeamBreakdown('{{ team.name }}')">
+                    <tr class="team-row team-summary-row" data-team="{{ team.name }}" data-filled="{{ team.filled }}" data-non-filled="{{ team.non_filled }}" style="background: #f8fafc; border-top: 2px solid #e5e7eb; cursor: pointer;" onclick="toggleTeamBreakdown('{{ team.name }}')">
                         <td style="padding: 12px 8px; font-size: 14px; font-weight: 600; color: #1e293b;">
                             <span class="team-expand-icon" id="expand-{{ team.name | replace(' ', '-') | replace(':', '') }}" style="display: inline-block; width: 18px; margin-right: 4px; font-size: 16px; color: #9ca3af; transition: transform 0.2s;">▸</span>
                             <span style="margin-left: 2px;">{{ team.name }}</span>
@@ -14527,9 +14527,9 @@
                                                 {% if program_lookup.get(program) and program_lookup[program].get('id') %}
                                                 <a href="https://gus.lightning.force.com/lightning/r/ADM_Product_Tag__c/{{ program_lookup[program]['id'] }}/view"
                                                    target="_blank"
-                                                   style="color: #2563eb; text-decoration: none; font-weight: 500; display: block;">{{ program }}</a>
+                                                   style="color: #0176D3; text-decoration: none; font-weight: 500; display: block;">{{ program }}</a>
                                                 {% else %}
-                                                <span style="color: #2563eb; font-weight: 500; display: block;">{{ program }}</span>
+                                                <span style="color: #0176D3; font-weight: 500; display: block;">{{ program }}</span>
                                                 {% endif %}
                                             </div>
                                             {% if program_lookup.get(program) and program_lookup[program].get('portfolio') %}
@@ -14540,13 +14540,13 @@
                                         <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; vertical-align: top;">
                                             {{ team.june_delivered_by_program.get(program, 0) if team.june_delivered_by_program.get(program, 0) > 0 else '—' }}
                                         </td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                             {{ team.july_committed_by_program.get(program, 0) if team.july_committed_by_program.get(program, 0) > 0 else '—' }}
                                         </td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                             {{ team.august_committed_by_program.get(program, 0) if team.august_committed_by_program.get(program, 0) > 0 else '—' }}
                                         </td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                             {{ team.september_committed_by_program.get(program, 0) if team.september_committed_by_program.get(program, 0) > 0 else '—' }}
                                         </td>
                                     </tr>
@@ -14561,13 +14561,13 @@
                                         <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; vertical-align: top;">
                                             {{ team.june_delivered_unmapped if team.june_delivered_unmapped > 0 else '—' }}
                                         </td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                             {{ team.july_committed_unmapped if team.july_committed_unmapped > 0 else '—' }}
                                         </td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                             {{ team.august_committed_unmapped if team.august_committed_unmapped > 0 else '—' }}
                                         </td>
-                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                             {{ team.september_committed_unmapped if team.september_committed_unmapped > 0 else '—' }}
                                         </td>
                                     </tr>
@@ -14591,8 +14591,8 @@
         <div id="by-program-view" style="padding: 0px; display: none;">
             <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
                 <colgroup>
-                    <col style="width: 450px;">
-                    <col style="width: 170px;">
+                    <col style="width: 340px;">
+                    <col style="width: 120px;">
                     <col style="width: auto;">
                     <col style="width: auto;">
                     <col style="width: auto;">
@@ -14601,7 +14601,7 @@
                 <thead>
                     <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
                         <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Program</th>
-                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Teams Contributing</th>
+                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Teams</th>
                         <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Capacity Delivered - June 2026</th>
                         <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Capacity Committed - July 2026</th>
                         <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Capacity Planned - August 2026</th>
@@ -14612,23 +14612,38 @@
                     {% for program in programs_by_capacity %}
                     <!-- Program summary row -->
                     <tr class="program-row program-summary-row" data-program="{{ program.name }}" style="background: #f8fafc; border-top: 2px solid #e5e7eb; cursor: pointer;" onclick="toggleProgramBreakdown('{{ program.name }}')">
-                        <td style="padding: 12px 8px; font-size: 14px; font-weight: 600; color: #1e293b;">
-                            <span class="program-expand-icon" id="expand-program-{{ loop.index }}" style="display: inline-block; width: 18px; margin-right: 4px; font-size: 16px; color: #9ca3af; transition: transform 0.2s;">▸</span>
-                            <span style="margin-left: 2px;">{{ program.name }}</span>
+                        <td style="padding: 12px 8px; font-size: 14px; font-weight: 600; color: #1e293b; vertical-align: top;">
+                            <div style="display: flex; align-items: flex-start; gap: 4px;">
+                                <span class="program-expand-icon" id="expand-program-{{ loop.index }}" style="flex-shrink: 0; width: 18px; font-size: 16px; color: #9ca3af; transition: transform 0.2s;">▸</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="display: block; margin-bottom: 2px;">
+                                        {% if program_lookup.get(program.name) and program_lookup[program.name].get('id') %}
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Product_Tag__c/{{ program_lookup[program.name]['id'] }}/view"
+                                           target="_blank"
+                                           style="color: #0176D3; text-decoration: none; font-weight: 600; display: block;">{{ program.name }}</a>
+                                        {% else %}
+                                        <span style="color: #0176D3; font-weight: 600; display: block;">{{ program.name }}</span>
+                                        {% endif %}
+                                    </div>
+                                    {% if program_lookup.get(program.name) and program_lookup[program.name].get('portfolio') %}
+                                    <div style="color: #94a3b8; font-size: 10.5px; font-weight: 400; display: block; line-height: 1.3;">{{ program_lookup[program.name]['portfolio'] }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
                         </td>
-                        <td style="padding: 12px 16px; font-size: 13px; color: #475569;">
-                            {{ program.teams|length }} team{{ 's' if program.teams|length != 1 else '' }}
+                        <td style="padding: 12px 16px; font-size: 13px; color: #475569; text-align: center; vertical-align: top;">
+                            {{ program.teams|length }}
                         </td>
-                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #059669; font-weight: 600;">
+                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #059669; font-weight: 600; vertical-align: top;">
                             {{ program.june_delivered|round(1) if program.june_delivered else '—' }}
                         </td>
-                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #2563eb; font-weight: 600;">
+                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #0176D3; font-weight: 600; vertical-align: top;">
                             {{ program.july_committed|round(1) if program.july_committed else '—' }}
                         </td>
-                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #2563eb; font-weight: 600;">
+                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #0176D3; font-weight: 600; vertical-align: top;">
                             {{ program.august_planned|round(1) if program.august_planned else '—' }}
                         </td>
-                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #2563eb; font-weight: 600;">
+                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #0176D3; font-weight: 600; vertical-align: top;">
                             {{ program.september_planned|round(1) if program.september_planned else '—' }}
                         </td>
                     </tr>
@@ -14638,8 +14653,8 @@
                         <td colspan="6" style="padding: 0; background: #ffffff;">
                             <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                                 <colgroup>
-                                    <col style="width: 450px;">
-                                    <col style="width: 170px;">
+                                    <col style="width: 340px;">
+                                    <col style="width: 120px;">
                                     <col style="width: auto;">
                                     <col style="width: auto;">
                                     <col style="width: auto;">
@@ -14647,20 +14662,20 @@
                                 </colgroup>
                                 {% for team in program.teams %}
                                 <tr style="border-bottom: 1px solid #f1f5f9;">
-                                    <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #64748b; font-style: italic;">
+                                    <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #64748b; font-style: italic; vertical-align: top;">
                                         {{ team.name }}
                                     </td>
-                                    <td style="padding: 8px 16px;"></td>
-                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #059669;">
+                                    <td style="padding: 8px 16px; vertical-align: top;"></td>
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #059669; vertical-align: top;">
                                         {{ team.june_delivered|round(1) if team.june_delivered else '—' }}
                                     </td>
-                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb;">
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                         {{ team.july_committed|round(1) if team.july_committed else '—' }}
                                     </td>
-                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb;">
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                         {{ team.august_planned|round(1) if team.august_planned else '—' }}
                                     </td>
-                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb;">
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #0176D3; vertical-align: top;">
                                         {{ team.september_planned|round(1) if team.september_planned else '—' }}
                                     </td>
                                 </tr>

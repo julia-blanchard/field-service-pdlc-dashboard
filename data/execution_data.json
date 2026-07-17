@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17T09:09:34.873611",
+  "last_updated": "2026-07-17T11:33:26.473409",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -199,7 +199,7 @@
               "owner": "Denina Walker",
               "team": "SFS Quality Enablement",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -227,7 +227,7 @@
               "owner": "Denina Walker",
               "team": "SFS Quality Enablement",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -317,7 +317,7 @@
           "product_owner": "",
           "dev_lead": "Adi Sharet",
           "target": "264",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "On Track",
           "epics": [
             {
@@ -330,7 +330,7 @@
               "owner": "Adi Sharet",
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -553,7 +553,7 @@
               "owner": "Sandeep Agrawal",
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -694,7 +694,7 @@
               "owner": "Nitasha Walia",
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             },
@@ -722,7 +722,7 @@
               "owner": "Paul Chan",
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             },
@@ -800,7 +800,7 @@
               "owner": "Steve Thistle",
               "team": "SFS Mobile Comms and Search",
               "scheduled_build": "-",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -901,7 +901,7 @@
           "product_owner": "",
           "dev_lead": "Shay Gozansky",
           "target": "262.8",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "On Track",
           "epics": [
             {
@@ -914,7 +914,7 @@
               "owner": "Shay Gozansky",
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "262.8",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -981,7 +981,7 @@
               "owner": "Avi Inbar",
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -1243,7 +1243,7 @@
               "owner": "Ohad Barak",
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -1356,7 +1356,7 @@
               "owner": "Navneet Gehlot",
               "team": "MomentumForce",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-"
             },
@@ -1370,7 +1370,7 @@
               "owner": "Orelie Fridler",
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -1474,7 +1474,7 @@
           "product_owner": "Yulia Libster",
           "dev_lead": "Gal Asraf",
           "target": "264.3",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "Not Started",
           "epics": [
             {
@@ -1487,7 +1487,7 @@
               "owner": "Gal Asraf",
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "264.3",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -1611,7 +1611,7 @@
               "owner": "Lilach Talbi",
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -1625,7 +1625,7 @@
               "owner": "Gal Asraf",
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "264.7",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -1651,7 +1651,7 @@
           "product_owner": "Yulia Libster",
           "dev_lead": "Gal Asraf",
           "target": "264.3",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "Not Started",
           "epics": [
             {
@@ -1664,7 +1664,7 @@
               "owner": "Gal Asraf",
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "264.3",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -1696,7 +1696,7 @@
           "product_owner": "Yulia Libster",
           "dev_lead": "Lilach Talbi",
           "target": "264.3",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "On Track",
           "epics": [
             {
@@ -1709,7 +1709,7 @@
               "owner": "Lilach Talbi",
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.3",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -1903,7 +1903,7 @@
               "owner": "Mor Cohen",
               "team": "Optimization Engineering",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             }
@@ -1957,7 +1957,7 @@
           "product_owner": "",
           "dev_lead": "Niv Garber",
           "target": "262.11",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "On Track",
           "epics": [
             {
@@ -1970,7 +1970,7 @@
               "owner": "Niv Garber",
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "262.11",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -2021,7 +2021,7 @@
           "product_owner": "",
           "dev_lead": "Sigal Shapira",
           "target": "262.13",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "On Track",
           "epics": [
             {
@@ -2034,7 +2034,7 @@
               "owner": "Sigal Shapira",
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "262.13",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -2204,7 +2204,7 @@
               "owner": "Sigal Shapira",
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -2294,7 +2294,7 @@
           "product_owner": "",
           "dev_lead": "Avi Inbar",
           "target": "262.11",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "On Track",
           "epics": [
             {
@@ -2307,7 +2307,7 @@
               "owner": "Avi Inbar",
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "262.11",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -2410,7 +2410,7 @@
               "owner": "Reshma Dixit",
               "team": "FSL - Core - Foundations",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -2692,7 +2692,7 @@
               "owner": "Kritica Mantri",
               "team": "SFS Core Scheduler",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -2862,7 +2862,7 @@
               "owner": "Aashim Tarika",
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "-",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -2890,7 +2890,7 @@
               "owner": "Siddharth Mathur",
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "-",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -2918,7 +2918,7 @@
               "owner": "Siddharth Mathur",
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "-",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3256,7 +3256,7 @@
               "owner": "Vinay Bayya",
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3270,7 +3270,7 @@
               "owner": "Vinay Bayya",
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3474,7 +3474,7 @@
               "owner": "Ruchika Pashine",
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3488,7 +3488,7 @@
               "owner": "Ruchika Pashine",
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3516,7 +3516,7 @@
               "owner": "Ruchika Pashine",
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3667,7 +3667,7 @@
               "owner": "Vartika Vaish",
               "team": "Team-WFM-Foundation",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             },
@@ -3681,7 +3681,7 @@
               "owner": "Mike Cliffe",
               "team": "Team-WFM-Foundation",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3695,7 +3695,7 @@
               "owner": "Mike Cliffe",
               "team": "Team-WFM-Foundation",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3723,7 +3723,7 @@
               "owner": "Mike Cliffe",
               "team": "Team-WFM-Foundation",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -3776,7 +3776,7 @@
               "owner": "Itay Sagiv",
               "team": "Optimization Engineering",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3883,7 +3883,7 @@
           "product_owner": "Itay Sagiv",
           "dev_lead": "Itay Sagiv",
           "target": "264",
-          "last_modified": "2026-07-16",
+          "last_modified": "2026-07-17",
           "health_status": "On Track",
           "epics": [
             {
@@ -3896,7 +3896,7 @@
               "owner": "Itay Sagiv",
               "team": "FSL - Resource - Scheduling Hawks",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3966,7 +3966,7 @@
               "owner": "Itay Sagiv",
               "team": "FSL - Resource - Scheduling Hawks",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             },
@@ -4008,7 +4008,7 @@
               "owner": "Eviatar Yosef",
               "team": "FSL - Resource - Scheduling Hawks",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -4145,7 +4145,7 @@
               "owner": "Ruchika Pashine",
               "team": "Team-WFM-Capacity-Planning",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -4335,7 +4335,7 @@
               "owner": "VARSHA CHALAMALASETTY",
               "team": "Team-WFM-Workloads-Forecasting",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -4363,7 +4363,7 @@
               "owner": "VARSHA CHALAMALASETTY",
               "team": "Team-WFM-Workloads-Forecasting",
               "scheduled_build": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-07-17",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },

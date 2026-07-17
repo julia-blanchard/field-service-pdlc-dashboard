@@ -461,6 +461,36 @@ def index():
             else:
                 existing_team['july_committed'] += points
 
+        # August committed by program
+        for program, points in team.get('august_committed_by_program', {}).items():
+            program_capacity[program]['august_planned'] += points
+            existing_team = next((t for t in program_capacity[program]['teams'] if t['name'] == team_name), None)
+            if not existing_team:
+                program_capacity[program]['teams'].append({
+                    'name': team_name,
+                    'june_delivered': 0,
+                    'july_committed': 0,
+                    'august_planned': points,
+                    'september_planned': 0
+                })
+            else:
+                existing_team['august_planned'] += points
+
+        # September committed by program
+        for program, points in team.get('september_committed_by_program', {}).items():
+            program_capacity[program]['september_planned'] += points
+            existing_team = next((t for t in program_capacity[program]['teams'] if t['name'] == team_name), None)
+            if not existing_team:
+                program_capacity[program]['teams'].append({
+                    'name': team_name,
+                    'june_delivered': 0,
+                    'july_committed': 0,
+                    'august_planned': 0,
+                    'september_planned': points
+                })
+            else:
+                existing_team['september_planned'] += points
+
     # Convert to list and sort by total capacity
     programs_by_capacity = [
         {

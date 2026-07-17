@@ -2932,6 +2932,8 @@
 
                         <!-- PBD Validation Status (if available) -->
                         {% if program.validation_status %}
+                        <!-- Validation status - HIDDEN per user request -->
+                        {% if false %}
                         <div style="margin-bottom: 12px;">
                             {% if program.validation_status == 'PASS' %}
                             <span class="status-badge" style="background: #dcfce7; color: #166534;">✅ {{ program.validation_status }}</span>
@@ -2944,6 +2946,7 @@
                             <span style="font-size: 0.85em; color: #6b7280; margin-left: 8px;">{{ program.completion }}% complete</span>
                             {% endif %}
                         </div>
+                        {% endif %}
                         {% endif %}
 
                         <!-- PBD Links - HIDDEN per user request -->
@@ -3020,6 +3023,8 @@
 
                         <!-- PBD Validation Status (if available) -->
                         {% if program.validation_status %}
+                        <!-- Validation status - HIDDEN per user request -->
+                        {% if false %}
                         <div style="margin-bottom: 12px;">
                             {% if program.validation_status == 'PASS' %}
                             <span class="status-badge" style="background: #dcfce7; color: #166534;">✅ {{ program.validation_status }}</span>
@@ -3032,6 +3037,7 @@
                             <span style="font-size: 0.85em; color: #6b7280; margin-left: 8px;">{{ program.completion }}% complete</span>
                             {% endif %}
                         </div>
+                        {% endif %}
                         {% endif %}
 
                         <!-- PBD Links - HIDDEN per user request -->

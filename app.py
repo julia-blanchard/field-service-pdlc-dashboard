@@ -54,7 +54,7 @@ app.jinja_env.filters['latest_comment'] = extract_latest_comment
 def format_month_header(month_str):
     """Convert YYYY-MM to 'Month YYYY' format"""
     if not month_str or month_str == 'no-date':
-        return 'Release Month N/A'
+        return 'Release Month Not Assigned'
 
     try:
         from datetime import datetime

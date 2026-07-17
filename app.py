@@ -522,7 +522,7 @@ def execution_final():
         exec_data = {'programs': [], 'last_updated': None}
 
     programs = exec_data.get('programs', [])
-    last_updated = exec_data.get('last_updated')
+    last_updated = exec_data.get('last_updated') or teams_data.get('last_updated')
 
     # Calculate program stats
     total_programs = len(programs)
@@ -694,7 +694,7 @@ def execution_v2():
         exec_data = {'programs': [], 'last_updated': None}
 
     programs = exec_data.get('programs', [])
-    last_updated = exec_data.get('last_updated')
+    last_updated = exec_data.get('last_updated') or teams_data.get('last_updated')
 
     # Calculate program stats
     total_programs = len(programs)

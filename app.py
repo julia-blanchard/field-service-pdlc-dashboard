@@ -292,6 +292,20 @@ def index():
     except:
         teams = []
 
+    # Transform teams data field names for template compatibility
+    for team in teams:
+        # Rename capacity fields to match template expectations
+        team['june_delivered'] = team.get('capacity_delivered_june', 0)
+        team['july_committed'] = team.get('capacity_committed_july', 0)
+        team['august_committed'] = team.get('capacity_committed_august', 0)
+        team['september_committed'] = team.get('capacity_committed_september', 0)
+
+        # Calculate capacity limits (assume 24 PD per person per month as default)
+        team['june_capacity_limit'] = team.get('total', 0) * 24
+        team['july_capacity_limit'] = team.get('total', 0) * 24
+        team['august_capacity_limit'] = team.get('total', 0) * 24
+        team['september_capacity_limit'] = team.get('total', 0) * 24
+
     # Keep execution_programs separate (unmodified) for stats and execution tab
     execution_programs = exec_data.get('programs', [])
     # Make a copy for phase_2 that we can normalize without affecting execution_programs

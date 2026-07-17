@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="48" height="48">
-  <!-- Field Service location pin icon -->
-  <defs>
-    <linearGradient id="fieldServiceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1589EE;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0B5CAB;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <!-- Location pin shape -->
-  <path d="M50,10 C35,10 25,20 25,35 C25,50 50,80 50,80 C50,80 75,50 75,35 C75,20 65,10 50,10 Z"
-        fill="url(#fieldServiceGradient)" stroke="#fff" stroke-width="2"/>
-  <!-- Inner circle -->
-  <circle cx="50" cy="35" r="10" fill="#fff"/>
-  <!-- Tool/wrench symbol -->
-  <path d="M48,32 L48,38 M52,32 L52,38 M45,35 L55,35"
-        stroke="#1589EE" stroke-width="2" stroke-linecap="round"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{fill:#fe7298;}.cls-2{fill:#fff;}.cls-3{fill:#8a033e;}.cls-4{fill:#e3066a;}</style></defs><path class="cls-4" d="M31.41,46.405C16.61,41.559,7.212,30.378,10.53,14.048c-2.378,3.246-3.753,7.069-3.753,11.165,0,5.449,2.429,10.419,6.424,14.183v.065c5.935,5.854,11.365,12.218,16.217,19.023l.557.577c1.133,1.172,3.011,1.172,4.144,0l.013-.014c2.735-3.875,5.663-7.602,8.758-11.182-3.758.237-7.648-.205-11.48-1.459Z"/><path class="cls-1" d="M50.734,39.456c4.033-3.771,6.489-8.765,6.489-14.244,0-11.749-11.293-21.273-25.223-21.273-9.074,0-17.026,4.043-21.47,10.109-3.319,16.331,6.08,27.512,20.88,32.358,3.832,1.255,7.721,1.696,11.48,1.459,2.506-2.898,5.118-5.701,7.844-8.39v-.018Z"/><circle class="cls-3" cx="32" cy="26.786" r="10.502"/><path class="cls-2" d="M51.204,18.287c-1.21-6.071-7.094-10.014-13.141-8.809-.84.167-.772,1.256.04,1.53,4.398,1.483,8.305,4.226,11.209,7.886.72.908,2.118.529,1.892-.607Z"/></svg>

@@ -33,7 +33,7 @@ def generate_static_site():
     with app.test_client() as client:
         # Generate Field Service dashboard as index
         print("Generating index.html (Field Service execution dashboard)...")
-        response = client.get('/')
+        response = client.get('/?static_site=true')
         with open(OUTPUT_DIR / "index.html", 'wb') as f:
             f.write(response.data)
 

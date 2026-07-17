@@ -411,8 +411,19 @@ def index():
                 prog['target_release'] = '264'
 
         # Normalize health status: Unknown → Not Assigned
-        if prog.get('health', '').lower() in ['unknown', '', '-']:
+        health_val = str(prog.get('health', '')).strip()
+        if health_val.lower() in ['unknown', '', '-', 'none']:
             prog['health'] = 'Not Assigned'
+
+        # Also normalize health for all projects and epics
+        for proj in prog.get('projects', []):
+            proj_health = str(proj.get('health_status', '')).strip()
+            if proj_health.lower() in ['unknown', '', '-', 'none']:
+                proj['health_status'] = 'Not Assigned'
+            for epic in proj.get('epics', []):
+                epic_health = str(epic.get('health', '')).strip()
+                if epic_health.lower() in ['unknown', '', '-', 'none']:
+                    epic['health'] = 'Not Assigned'
 
         # Map portfolio to TPM (Technical Program Manager)
         portfolio = prog.get('portfolio', '')
@@ -527,8 +538,19 @@ def index():
                 prog['target_release'] = '264'
 
         # Normalize health status: Unknown → Not Assigned
-        if prog.get('health', '').lower() in ['unknown', '', '-']:
+        health_val = str(prog.get('health', '')).strip()
+        if health_val.lower() in ['unknown', '', '-', 'none']:
             prog['health'] = 'Not Assigned'
+
+        # Also normalize health for all projects and epics
+        for proj in prog.get('projects', []):
+            proj_health = str(proj.get('health_status', '')).strip()
+            if proj_health.lower() in ['unknown', '', '-', 'none']:
+                proj['health_status'] = 'Not Assigned'
+            for epic in proj.get('epics', []):
+                epic_health = str(epic.get('health', '')).strip()
+                if epic_health.lower() in ['unknown', '', '-', 'none']:
+                    epic['health'] = 'Not Assigned'
 
         # Map portfolio to TPM (Technical Program Manager)
         portfolio = prog.get('portfolio', '')

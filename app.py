@@ -329,6 +329,9 @@ def index():
     except:
         exec_data = {'programs': [], 'last_updated': None}
 
+    # Extract last_updated timestamp (prefer execution data, fallback to phase_0)
+    last_updated = exec_data.get('last_updated') or phase_0_updated
+
     # Load teams data from GUS
     teams_file = os.path.join(os.path.dirname(__file__), 'data', 'teams_data.json')
     try:
@@ -759,7 +762,8 @@ def index():
                            total_filled=total_filled,
                            total_non_filled=total_non_filled,
                            programs_by_capacity=programs_by_capacity,
-                           program_lookup=program_lookup)
+                           program_lookup=program_lookup,
+                           last_updated=last_updated)
 
 @app.route('/api/programs')
 def api_programs():

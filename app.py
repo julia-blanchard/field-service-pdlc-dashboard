@@ -1147,7 +1147,11 @@ def refresh_all_data():
         all_success = all(r['success'] for r in results)
 
         if all_success:
-            return jsonify({"success": True, "message": "All data refreshed successfully (Note: Phase 0 Google Sheet data not auto-refreshed)", "details": results})
+            return jsonify({
+                "success": True,
+                "message": "GUS data refreshed successfully. To update Phase 0 Google Sheet data, ask Claude Code: 'Update Phase 0 data from the Google Sheet'",
+                "details": results
+            })
         else:
             return jsonify({"success": False, "message": "Some refreshes failed", "details": results}), 207
 

@@ -410,6 +410,10 @@ def index():
                 # Final fallback: default to 264 for current work
                 prog['target_release'] = '264'
 
+        # Normalize health status: Unknown → Not Assigned
+        if prog.get('health', '').lower() in ['unknown', '', '-']:
+            prog['health'] = 'Not Assigned'
+
         # Map portfolio to TPM (Technical Program Manager)
         portfolio = prog.get('portfolio', '')
         if 'Mobile' in portfolio:
@@ -521,6 +525,10 @@ def index():
             else:
                 # Final fallback: default to 264 for current work
                 prog['target_release'] = '264'
+
+        # Normalize health status: Unknown → Not Assigned
+        if prog.get('health', '').lower() in ['unknown', '', '-']:
+            prog['health'] = 'Not Assigned'
 
         # Map portfolio to TPM (Technical Program Manager)
         portfolio = prog.get('portfolio', '')

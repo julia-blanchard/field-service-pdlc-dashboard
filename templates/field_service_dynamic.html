@@ -14560,7 +14560,7 @@
                 <tbody>
                     {% for team in teams %}
                     <!-- Team summary row -->
-                    <tr class="team-row team-summary-row" data-team="{{ team.name }}" data-filled="{{ team.filled }}" data-non-filled="{{ team.non_filled }}" style="background: #f8fafc; border-top: 2px solid #e5e7eb; cursor: pointer;" onclick="toggleTeamBreakdown('{{ team.name }}')">
+                    <tr class="team-row team-summary-row" data-team="{{ team.name }}" data-filled="{{ team.filled }}" data-non-filled="{{ team.non_filled }}" data-portfolios="{{ team.portfolios|join(',') }}" style="background: #f8fafc; border-top: 2px solid #e5e7eb; cursor: pointer;" onclick="toggleTeamBreakdown('{{ team.name }}')">
                         <td style="padding: 12px 8px; font-size: 14px; font-weight: 600; color: #1e293b;">
                             <span class="team-expand-icon" id="expand-{{ team.name | replace(' ', '-') | replace(':', '') }}" style="display: inline-block; width: 18px; margin-right: 4px; font-size: 16px; color: #9ca3af; transition: transform 0.2s;">▸</span>
                             <span style="margin-left: 2px;">{{ team.name }}</span>

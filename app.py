@@ -576,6 +576,20 @@ def index():
 
     # Don't normalize execution_programs - they already have correct portfolio values from GUS
 
+    # Normalize Phase 0 portfolio names to match execution format
+    # "Mobile" → "264 Field Service Mobile", etc.
+    portfolio_mapping = {
+        'Mobile': '264 Field Service Mobile',
+        'Foundations': '264 Field Service Foundations',
+        'Scheduling & Optimization': '264 Field Service Scheduling & Optimization',
+        'Workforce Scheduling': '264 Field Service Workforce Scheduling'
+    }
+
+    for prog in phase_0_programs:
+        raw_portfolio = prog.get('portfolio', '')
+        if raw_portfolio in portfolio_mapping:
+            prog['portfolio'] = portfolio_mapping[raw_portfolio]
+
     # Get unique portfolios from execution programs - Field Service portfolios + UWM exception
     portfolios = sorted(set(
         p.get('portfolio', '')

@@ -6,7 +6,8 @@ Converts Flask template to static HTML with embedded JSON data
 import json
 import os
 import sys
-from jinja2 import Template
+from datetime import datetime
+from jinja2 import Environment, FileSystemLoader
 
 # Load data files with error handling
 try:
@@ -37,11 +38,22 @@ except Exception as e:
     print(f"Warning: Could not load teams_data.json: {e}")
     teams_data = {'teams': []}
 
-# Load the template
-with open('templates/field_service_dynamic.html', 'r') as f:
-    template_content = f.read()
+# Define custom Jinja2 filter (same as app.py)
+def format_month_header(month_str):
+    """Convert YYYY-MM to 'Month YYYY' format"""
+    if not month_str or month_str == 'no-date':
+        return 'Release Month Not Assigned'
 
-template = Template(template_content)
+    try:
+        date_obj = datetime.strptime(month_str, '%Y-%m')
+        return date_obj.strftime('%B %Y')  # "June 2026"
+    except:
+        return month_str
+
+# Create Jinja2 environment with custom filter
+env = Environment(loader=FileSystemLoader('templates'))
+env.filters['format_month'] = format_month_header
+template = env.get_template('field_service_dynamic.html')
 
 # Prepare data for template
 execution_programs = exec_data.get('programs', [])

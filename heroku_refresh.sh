@@ -1,0 +1,41 @@
+#!/bin/bash
+# Heroku Scheduler job to refresh GUS data
+# Runs Mon-Fri at 9 AM and 2 PM Pacific
+
+set -e
+
+echo "Starting Heroku data refresh at $(date)"
+
+# Authenticate with Salesforce using SFDX_AUTH_URL from config var
+if [ -n "$SFDX_AUTH_URL" ]; then
+    echo "Authenticating with Salesforce..."
+    echo "$SFDX_AUTH_URL" > sfdx_auth.txt
+    sf org login sfdx-url --sfdx-url-file sfdx_auth.txt --alias org62 --set-default
+    rm sfdx_auth.txt
+    echo "✓ Authenticated"
+else
+    echo "ERROR: SFDX_AUTH_URL not set in Heroku config vars"
+    exit 1
+fi
+
+# Fetch execution data
+echo "Fetching execution data..."
+python3 fetch_execution_data.py
+if [ $? -eq 0 ]; then
+    echo "✓ Execution data fetched"
+else
+    echo "ERROR: Failed to fetch execution data"
+    exit 1
+fi
+
+# Fetch teams data
+echo "Fetching teams data..."
+python3 fetch_teams_data.py
+if [ $? -eq 0 ]; then
+    echo "✓ Teams data fetched"
+else
+    echo "WARNING: Failed to fetch teams data, continuing with cached"
+fi
+
+echo "Data refresh complete at $(date)"
+echo "Latest data will be served by the Flask app on next request"

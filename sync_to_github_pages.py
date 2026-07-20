@@ -213,7 +213,8 @@ html = template.render(
     total_filled=total_filled,
     total_non_filled=total_non_filled,
     programs_by_capacity=[],
-    program_lookup=program_lookup
+    program_lookup=program_lookup,
+    last_updated=exec_data.get('last_updated')
 )
 
 # Write to docs/index.html

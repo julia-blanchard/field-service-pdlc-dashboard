@@ -66,7 +66,8 @@ june_query = f"""
 SELECT Id, Name, Scrum_Team__c, Story_Points__c,
        Epic__r.Id, Epic__r.Name, Epic__r.Health__c,
        Epic__r.Scheduled_Build__r.Name, Epic__r.LastModifiedDate,
-       Epic__r.Project__r.Name, Epic__r.Owner.Name
+       Epic__r.Project__r.Name, Epic__r.Owner.Name,
+       Assignee__r.Name, Subject__c, Status__c
 FROM ADM_Work__c
 WHERE First_Time_In_Progress__c >= 2026-06-01T00:00:00Z
   AND Closed_On__c >= 2026-06-01T00:00:00Z
@@ -123,9 +124,19 @@ for item in june_items:
             june_unmapped_by_team[team_name][epic_id]['epic_health'] = epic_health
             june_unmapped_by_team[team_name][epic_id]['epic_owner'] = epic_owner
             june_unmapped_by_team[team_name][epic_id]['story_points'] += points
+
+            # Get work item assignee and subject
+            assignee_obj = item.get('Assignee__r')
+            assignee_name = assignee_obj.get('Name', '-') if assignee_obj else '-'
+            subject = item.get('Subject__c', '')
+            status = item.get('Status__c', 'Unknown')
+
             june_unmapped_by_team[team_name][epic_id]['work_items'].append({
                 'id': item.get('Id', ''),
                 'name': item.get('Name', ''),
+                'subject': subject,
+                'assignee': assignee_name,
+                'status': status,
                 'points': points
             })
 
@@ -135,7 +146,8 @@ july_query = f"""
 SELECT Id, Name, Scrum_Team__c, Story_Points__c,
        Epic__r.Id, Epic__r.Name, Epic__r.Health__c,
        Epic__r.Scheduled_Build__r.Name, Epic__r.LastModifiedDate,
-       Epic__r.Project__r.Name, Epic__r.Owner.Name
+       Epic__r.Project__r.Name, Epic__r.Owner.Name,
+       Assignee__r.Name, Subject__c, Status__c
 FROM ADM_Work__c
 WHERE Sprint_Timeframe__c LIKE '2026.07%'
   AND Scrum_Team__c IN ('{team_ids_str}')
@@ -187,9 +199,19 @@ for item in july_items:
             july_unmapped_by_team[team_name][epic_id]['epic_health'] = epic_health
             july_unmapped_by_team[team_name][epic_id]['epic_owner'] = epic_owner
             july_unmapped_by_team[team_name][epic_id]['story_points'] += points
+
+            # Get work item assignee and subject
+            assignee_obj = item.get('Assignee__r')
+            assignee_name = assignee_obj.get('Name', '-') if assignee_obj else '-'
+            subject = item.get('Subject__c', '')
+            status = item.get('Status__c', 'Unknown')
+
             july_unmapped_by_team[team_name][epic_id]['work_items'].append({
                 'id': item.get('Id', ''),
                 'name': item.get('Name', ''),
+                'subject': subject,
+                'assignee': assignee_name,
+                'status': status,
                 'points': points
             })
 

@@ -38,6 +38,46 @@ def sf_data_query(query):
         print(f"Error executing query: {e}")
         return []
 
+def fetch_epics_with_recent_activity(epic_ids):
+    """
+    Batch query to find which epics have work items with Closed_On__c since 2026-01-01.
+    Returns a set of epic IDs that have recent activity.
+    Much faster than querying each epic individually.
+    """
+    if not epic_ids:
+        return set()
+
+    # Query in batches of 200
+    all_active_epic_ids = set()
+    batch_size = 200
+
+    print(f"Checking work activity for {len(epic_ids)} epics...")
+
+    for i in range(0, len(epic_ids), batch_size):
+        batch = epic_ids[i:i+batch_size]
+        ids_str = "', '".join(batch)
+
+        query = f"""
+        SELECT Epic__c
+        FROM ADM_Work__c
+        WHERE Epic__c IN ('{ids_str}')
+          AND Closed_On__c >= 2026-01-01T00:00:00Z
+        GROUP BY Epic__c
+        """
+
+        try:
+            records = sf_data_query(query)
+            batch_active = {r['Epic__c'] for r in records if r.get('Epic__c')}
+            all_active_epic_ids.update(batch_active)
+            print(f"  Batch {i//batch_size + 1}/{(len(epic_ids)-1)//batch_size + 1}: {len(batch_active)} epics with activity")
+        except Exception as e:
+            print(f"Warning: Could not check work activity for batch: {e}")
+            # On error, assume all epics in batch are active
+            all_active_epic_ids.update(batch)
+
+    print(f"Found {len(all_active_epic_ids)} epics with work activity since 2026-01-01")
+    return all_active_epic_ids
+
 def load_project_to_program_mapping():
     """Load project->program mapping from execution_data.json"""
     execution_file = Path(__file__).parent / 'data' / 'execution_data.json'
@@ -201,7 +241,9 @@ def filter_for_unallocated(all_epics):
     # Load active teams
     active_teams = load_active_teams()
 
-    unallocated = []
+    # First pass: collect epic IDs that pass initial filters
+    candidate_epic_ids = []
+    epic_by_id = {}
 
     for epic in all_epics:
         # Filter to only active teams
@@ -223,6 +265,27 @@ def filter_for_unallocated(all_epics):
         last_modified = epic.get('last_modified', '')
         if last_modified and last_modified < '2026-01-01':
             continue
+
+        epic_id = epic.get('id', '')
+        if epic_id:
+            candidate_epic_ids.append(epic_id)
+            epic_by_id[epic_id] = epic
+
+    # Batch query for work activity (much faster than per-epic queries)
+    active_epic_ids = fetch_epics_with_recent_activity(candidate_epic_ids)
+
+    unallocated = []
+
+    for epic_id in candidate_epic_ids:
+        epic = epic_by_id[epic_id]
+
+        # Filter out epics with no actual work activity (story point burndown) in 2026
+        # This catches old epics that got system updates but no real work
+        if epic_id not in active_epic_ids:
+            print(f"  Skipping {epic.get('name', '')} - no work activity since 2026-01-01")
+            continue
+
+        last_modified = epic.get('last_modified', '')
 
         # Filter out epics not modified in 6+ months UNLESS they have 264+ in the title
         six_months_ago = '2026-01-20'

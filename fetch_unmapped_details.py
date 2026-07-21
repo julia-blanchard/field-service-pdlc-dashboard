@@ -6,6 +6,7 @@ Shows which specific epics are contributing to the "Unmapped" capacity.
 
 import json
 import subprocess
+import os
 from pathlib import Path
 from collections import defaultdict
 
@@ -13,7 +14,7 @@ SCRIPT_DIR = Path(__file__).parent
 TEAMS_FILE = SCRIPT_DIR / "data" / "teams_data.json"
 EXECUTION_FILE = SCRIPT_DIR / "data" / "execution_data.json"
 OUTPUT_FILE = SCRIPT_DIR / "data" / "unmapped_details.json"
-TARGET_ORG = "org62"
+TARGET_ORG = os.getenv("TARGET_ORG", "org62")  # Use env var or default to org62
 
 def run_soql(query):
     """Execute SOQL query"""

@@ -7,6 +7,7 @@ Shows: Programs -> Projects -> Epics with health information
 
 import json
 import subprocess
+import os
 from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
@@ -14,7 +15,7 @@ from collections import defaultdict
 SCRIPT_DIR = Path(__file__).parent
 DATA_FILE = SCRIPT_DIR / "data" / "execution_data.json"
 REPORT_ID = "00OEE000002tswH2AQ"  # Field Service report
-TARGET_ORG = "org62"
+TARGET_ORG = os.getenv("TARGET_ORG", "org62")  # Use env var or default to org62
 
 def fetch_execution_report():
     """Fetch execution report from GUS with extended metadata"""

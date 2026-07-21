@@ -7,17 +7,18 @@ set -e  # Exit on error
 
 echo "$(date): Starting Heroku scheduled update..."
 
-# Authenticate with Salesforce using stored credentials
+# Authenticate with Salesforce using stored OAuth URL
+# This is more secure than password+token and works with SSO
 echo "$(date): Authenticating with Salesforce..."
-echo "$SF_PASSWORD$SF_SECURITY_TOKEN" | sf org login password \
-    --username "$SF_USERNAME" \
-    --instance-url https://login.salesforce.com \
-    --set-default-dev-hub \
-    --set-default \
-    --alias gus_heroku
-
-# Set target org for scripts
-export TARGET_ORG="gus_heroku"
+if [ -n "$SFDX_AUTH_URL" ]; then
+    echo "$SFDX_AUTH_URL" > /tmp/auth.txt
+    sf org login sfdx-url --sfdx-url-file /tmp/auth.txt --alias gus_heroku --set-default
+    rm /tmp/auth.txt
+    export TARGET_ORG="gus_heroku"
+else
+    echo "ERROR: SFDX_AUTH_URL not set in Heroku config vars"
+    exit 1
+fi
 
 # Fetch all data
 echo "$(date): Fetching execution data..."

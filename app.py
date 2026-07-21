@@ -15,7 +15,7 @@ import time
 app = Flask(__name__, static_folder='static')
 
 # Feature flags - control what's visible in each environment
-SHOW_ORPHANED_TAB = os.getenv('SHOW_ORPHANED_TAB', 'true').lower() == 'true'
+SHOW_ORPHANED_TAB = os.getenv('SHOW_ORPHANED_TAB', 'false').lower() == 'true'
 
 # Cache busting
 @app.context_processor

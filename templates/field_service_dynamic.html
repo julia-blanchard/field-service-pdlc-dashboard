@@ -3371,6 +3371,7 @@
         </div>
 
         <!-- Needs Attention Banner -->
+        {% if show_hygiene_features %}
         <div id="hygiene-banner" style="display: none; background: #fef3c7; border-left: 4px solid #f59e0b; padding: 16px 20px; border-radius: 8px; margin-bottom: 24px;">
             <div style="display: flex; align-items: center; gap: 12px;">
                 <span style="font-size: 20px;">⚠️</span>
@@ -3384,6 +3385,7 @@
                 </div>
             </div>
         </div>
+        {% endif %}
 
     <!-- Field Service Program Rows -->
     {% for program in execution_programs %}
@@ -16533,6 +16535,10 @@ document.getElementById('program-search').addEventListener('input', (e) => {
 
         // Get hygiene badges HTML for an epic
         function getHygieneBadges(epicName) {
+            // Check if hygiene features are enabled
+            const hygieneEnabled = {{ 'true' if show_hygiene_features else 'false' }};
+            if (!hygieneEnabled) return '';
+
             if (!hygieneData || !hygieneData.epics) return '';
 
             const epicIssues = hygieneData.epics.find(e => e.epic_name_key === epicName.trim());

@@ -46,5 +46,14 @@ else
     echo "WARNING: Failed to fetch teams data, continuing with cached"
 fi
 
+# Fetch unmapped details (for Allocations tab)
+echo "Fetching unmapped details..."
+python3 fetch_unmapped_details.py
+if [ $? -eq 0 ]; then
+    echo "✓ Unmapped details fetched"
+else
+    echo "WARNING: Failed to fetch unmapped details, continuing with cached"
+fi
+
 echo "Data refresh complete at $(date)"
 echo "Latest data will be served by the Flask app on next request"

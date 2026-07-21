@@ -16545,17 +16545,26 @@ document.getElementById('program-search').addEventListener('input', (e) => {
             const badges = [];
             const issues = epicIssues.issues;
 
-            if (issues.includes('missing_scheduled_build')) {
-                badges.push('<span style="background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500;">📅 No Release</span>');
+            // Group planning issues into one amber badge with warning triangle
+            const planningLabels = {
+                'missing_scheduled_build': 'Scheduled Build',
+                'missing_priority': 'Priority',
+                'missing_story_points': 'Person Day Allocation'
+            };
+
+            const planningIssues = issues.filter(i => planningLabels[i]);
+            if (planningIssues.length > 0) {
+                const missingItems = planningIssues.map(i => planningLabels[i]).join(', ');
+                badges.push(`<span style="background: #f59e0b; color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 6px; white-space: nowrap;">⚠️ Missing: ${missingItems}</span>`);
             }
-            if (issues.includes('missing_priority')) {
-                badges.push('<span style="background: #dbeafe; color: #1e40af; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500;">⭐ No Priority</span>');
-            }
+
+            // Individual badges for other issues
             if (issues.includes('missing_owner')) {
-                badges.push('<span style="background: #fce7f3; color: #9f1239; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500;">👤 No Owner</span>');
+                badges.push(`<span style="background: #3b82f6; color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 6px; white-space: nowrap;">👤 Missing: Owner</span>`);
             }
+
             if (issues.includes('blocked_no_comments')) {
-                badges.push('<span style="background: #fee2e2; color: #991b1b; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500;">🚫 Blocked (no notes)</span>');
+                badges.push(`<span style="background: #ef4444; color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 6px; white-space: nowrap;">🚫 Missing: Health Comments</span>`);
             }
 
             return badges.join('');

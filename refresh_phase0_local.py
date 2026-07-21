@@ -1,25 +1,23 @@
 #!/usr/bin/env python3
 """
-Fetch Phase 0 and Phase 1 data from Google Sheets using MCP tool
-Consolidates both fetch and parse logic into one script
+Refresh Phase 0/1 data - to be called only from Claude Code session with MCP access
+This script is NOT meant to run standalone or from cron
 """
 
 import json
-import subprocess
+import sys
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 SCRIPT_DIR = Path(__file__).parent
 JSON_FILE = SCRIPT_DIR / "data" / "phase_0_programs.json"
-SHEET_ID = "1cie8l3W71Bkbncp5Yk3VIIiB3YHApKvRTENj1iwlpi4"
 
-# No row cap - fetch entire sheet
-SHEET_RANGE = "'FS PDLC'!A:Z"
-
-# Column mappings (0-indexed)
+# Column mappings from "Phase 0 & Phase 1 Priorites" sheet (0-indexed)
 COLUMNS = {
     'portfolio': 0,      # Column A
+    'theme': 1,          # Column B
+    'tier': 2,           # Column C
     'stage': 3,          # Column D
     'initiative': 4,     # Column E
     'feature': 8,        # Column I
@@ -31,38 +29,6 @@ COLUMNS = {
     'cx_lead': 21        # Column V
 }
 
-def fetch_sheet_data():
-    """Use Claude Code MCP tool to fetch Google Sheet data"""
-    print("🔄 Fetching Phase 0/1 data from Google Sheet...")
-    print(f"   Sheet ID: {SHEET_ID}")
-    print(f"   Range: {SHEET_RANGE} (no row limit)")
-
-    try:
-        result = subprocess.run(
-            ['claude', 'mcp', 'call', 'google-workspace-readonly', 'read_sheet_values',
-             '--spreadsheet_id', SHEET_ID,
-             '--range_name', SHEET_RANGE],
-            capture_output=True,
-            text=True,
-            timeout=60  # Increased timeout for larger sheets
-        )
-
-        if result.returncode != 0:
-            print(f"❌ Error calling MCP tool: {result.stderr}")
-            return None
-
-        return result.stdout
-
-    except FileNotFoundError:
-        print("❌ Claude Code CLI not found. This script requires Claude Code with MCP tools.")
-        return None
-    except subprocess.TimeoutExpired:
-        print("❌ Timeout fetching Google Sheet data")
-        return None
-    except Exception as e:
-        print(f"❌ Error: {e}")
-        return None
-
 def get_cell_value(row_data, column_name):
     """Safely get cell value by column name"""
     col_index = COLUMNS.get(column_name)
@@ -70,16 +36,17 @@ def get_cell_value(row_data, column_name):
         return ""
     return row_data[col_index] if len(row_data) > col_index else ""
 
-def parse_sheet_data(sheet_data_text):
+def parse_mcp_output(mcp_output):
     """
-    Parse Google Sheets data from MCP read_sheet_values output
-    Includes Phase 0 (PM Backlog) and Phase 1 (Prototyping, Ready for Review)
+    Parse MCP read_sheet_values output format:
+    Row  1: ['col1', 'col2', ...]
+    Row  2: ['col1', 'col2', ...]
     """
     programs = []
     skipped_rows = 0
     total_rows = 0
 
-    lines = sheet_data_text.strip().split('\n')
+    lines = mcp_output.strip().split('\n')
 
     for line in lines:
         if not line.startswith('Row '):
@@ -88,8 +55,9 @@ def parse_sheet_data(sheet_data_text):
         total_rows += 1
 
         try:
-            row_num_part, data_part = line.split(': ', 1)
-            row_num = int(row_num_part.replace('Row', '').strip())
+            # Parse "Row  N: ['val1', 'val2', ...]"
+            row_part, data_part = line.split(': ', 1)
+            row_num = int(row_part.replace('Row', '').strip())
 
             # Skip header rows (1-3)
             if row_num < 4:
@@ -97,7 +65,7 @@ def parse_sheet_data(sheet_data_text):
                 continue
 
             # Parse the list
-            row_data = eval(data_part)  # Safe here since we control the input
+            row_data = eval(data_part)  # Safe since MCP output is controlled
 
             # Get values using column mappings
             portfolio = get_cell_value(row_data, 'portfolio')
@@ -111,16 +79,15 @@ def parse_sheet_data(sheet_data_text):
             ux_lead = get_cell_value(row_data, 'ux_lead')
             cx_lead = get_cell_value(row_data, 'cx_lead')
 
-            # Use Initiative as fallback if Feature is empty
+            # Use Feature if available, else Initiative
             display_name = feature if feature else initiative
 
-            # Only include Phase 0 and Phase 1 items
-            # Must have either a Feature or Initiative
+            # Must have either Feature or Initiative
             if not display_name:
                 skipped_rows += 1
                 continue
 
-            # Check if row is in Phase 0 or Phase 1
+            # Only include Phase 0 and Phase 1 items
             is_phase_0_or_1 = any(s in stage for s in ['PM Backlog', 'Prototyping', 'Ready for Review'])
             if not is_phase_0_or_1:
                 skipped_rows += 1
@@ -132,9 +99,7 @@ def parse_sheet_data(sheet_data_text):
                     portfolio = "264 Field Service Foundations"
                 elif portfolio == "Mobile":
                     portfolio = "264 Field Service Mobile"
-                elif portfolio == "Workforce Scheduling":
-                    portfolio = "264 Field Service Workforce Scheduling"
-                elif "Scheduling" in portfolio:
+                elif "Scheduling" in portfolio or "Optimization" in portfolio:
                     portfolio = "264 Field Service Scheduling & Optimization"
                 elif portfolio:
                     portfolio = f"264 Field Service {portfolio}"
@@ -173,7 +138,7 @@ def parse_sheet_data(sheet_data_text):
             programs.append(program)
 
         except Exception as e:
-            print(f"Warning: Could not parse row {row_num}: {e}")
+            print(f"Warning: Could not parse row {row_num}: {e}", file=sys.stderr)
             skipped_rows += 1
             continue
 
@@ -189,6 +154,8 @@ def save_programs(programs):
         pt_time = datetime.now(ZoneInfo("America/Los_Angeles"))
         data = {
             "last_updated": pt_time.isoformat(),
+            "source": "Google Sheets",
+            "sheet_id": "1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c",
             "programs": programs
         }
 
@@ -219,30 +186,30 @@ def save_programs(programs):
 
         return True
     except Exception as e:
-        print(f"❌ Error writing JSON file: {e}")
+        print(f"❌ Error writing JSON file: {e}", file=sys.stderr)
         return False
 
 def main():
-    """Main function"""
+    """Read MCP output from stdin and update phase_0_programs.json"""
     print("=" * 70)
-    print("Phase 0 & Phase 1 Google Sheet Refresh")
+    print("Phase 0 & Phase 1 Data Refresh (MCP mode)")
     print("=" * 70)
+    print("📖 Reading MCP output from stdin...")
 
-    sheet_data = fetch_sheet_data()
+    mcp_output = sys.stdin.read()
 
-    if not sheet_data:
-        print("❌ Failed to fetch Google Sheet data")
+    if not mcp_output.strip():
+        print("❌ No input received from stdin", file=sys.stderr)
         return 1
 
-    programs = parse_sheet_data(sheet_data)
+    programs = parse_mcp_output(mcp_output)
 
     if programs:
         success = save_programs(programs)
         return 0 if success else 1
     else:
-        print("❌ No Phase 0/1 programs found in sheet")
+        print("❌ No Phase 0/1 programs found in sheet", file=sys.stderr)
         return 1
 
 if __name__ == "__main__":
-    import sys
     sys.exit(main())

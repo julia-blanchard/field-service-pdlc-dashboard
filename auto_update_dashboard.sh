@@ -80,6 +80,11 @@ if ! retry_command "/usr/bin/python3 fetch_teams_data.py" "Fetching teams data";
     echo "$(date): Teams fetch failed, continuing with cached data"
 fi
 
+# Note: Phase 0/1 data from Google Sheets requires manual refresh via Claude Code MCP tools
+# To refresh: Ask Claude "Please fetch Phase 0 and Phase 1 data from the Google Sheet"
+# The script fetch_phase0_from_sheets.py requires interactive Claude session with MCP access
+echo "$(date): Using cached Phase 0/1 data (requires manual refresh via Claude Code)"
+
 # Rebuild GitHub Pages static site
 echo "$(date): Rebuilding static site..."
 if ! /usr/bin/python3 sync_to_github_pages.py; then

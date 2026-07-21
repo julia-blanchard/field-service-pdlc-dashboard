@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T14:06:50.430453",
+  "last_updated": "2026-07-21T15:38:53.294609",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -263,7 +263,7 @@
           "id": "a1kEE00000Uu5yHYAR",
           "product_owner": "",
           "dev_lead": "Steve Thistle",
-          "target": "262",
+          "target": "264",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -572,27 +572,6 @@
               "path_to_green": "-"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "264 Field Service: Trust",
-      "id": "a1fEE0000003BBqYAM",
-      "portfolio": "264 Field Service Mobile",
-      "health": "Watch",
-      "health_status": "Watch",
-      "program_manager": "",
-      "target_release": "",
-      "projects": [
-        {
-          "name": "-",
-          "id": null,
-          "product_owner": "",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
         }
       ]
     },
@@ -914,7 +893,7 @@
           "id": "a1kEE00000X4FNFYA3",
           "product_owner": "",
           "dev_lead": "Shay Gozansky",
-          "target": "262.8",
+          "target": "264",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -1139,36 +1118,6 @@
           ]
         },
         {
-          "name": "FS 264: S&O Trust: Customer Data Shapes",
-          "id": "a1kEE00000X4FLdYAN",
-          "product_owner": "",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        },
-        {
-          "name": "FS 264: S&O Trust: Developer Experience & DoD Debt",
-          "id": "a1kEE00000X4FALYA3",
-          "product_owner": "",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        },
-        {
-          "name": "FS 264: S&O Trust: Hammer Testing",
-          "id": "a1kEE00000X4FBxYAN",
-          "product_owner": "",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        },
-        {
           "name": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
           "id": "a1kEE00000X4FDZYA3",
           "product_owner": "",
@@ -1314,16 +1263,6 @@
           ]
         },
         {
-          "name": "FS 264: S&O Trust: Scale",
-          "id": "a1kEE00000X4FFBYA3",
-          "product_owner": "",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        },
-        {
           "name": "FS 264: S&O Trust: Security and Compliance",
           "id": "a1kEE00000X4FGnYAN",
           "product_owner": "",
@@ -1439,37 +1378,6 @@
               "path_to_green": "-"
             }
           ]
-        },
-        {
-          "name": "FS 264: S&O: Min hours objectice",
-          "id": "a1kEE00000TnoW1YAJ",
-          "product_owner": "Dori Nahmias",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        }
-      ]
-    },
-    {
-      "name": "FS 264: S&O: Unified Scheduling",
-      "id": "a1fEE00000036X7YAI",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "health": "Unknown",
-      "health_status": "Unknown",
-      "program_manager": "",
-      "target_release": "",
-      "projects": [
-        {
-          "name": "-",
-          "id": null,
-          "product_owner": "",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
         }
       ]
     },
@@ -1533,16 +1441,6 @@
           ]
         },
         {
-          "name": "FS 264: S&O: DC2 setup in GO - Cont'",
-          "id": "a1kEE00000Tno2zYAB",
-          "product_owner": "Yulia Libster",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        },
-        {
           "name": "FS 264: S&O: Expandability for Scheduling Actions (single and bulk)",
           "id": "a1kEE00000TnnzlYAB",
           "product_owner": "Yulia Libster",
@@ -1597,7 +1495,7 @@
           "id": "a1kEE00000TnnrhYAB",
           "product_owner": "Yulia Libster",
           "dev_lead": "Lilach Talbi",
-          "target": "264.4",
+          "target": "264",
           "last_modified": "2026-06-30",
           "health_status": "On Track",
           "epics": [
@@ -1685,26 +1583,6 @@
           ]
         },
         {
-          "name": "FS 264: S&O: Layout Customization (compact/Comfy/List on the side)",
-          "id": "a1kEE00000TnnuvYAB",
-          "product_owner": "Yulia Libster",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        },
-        {
-          "name": "FS 264: S&O: List View Migration",
-          "id": "a1kEE00000Xak69YAB",
-          "product_owner": "Yulia Libster",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        },
-        {
           "name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
           "id": "a1kEE00000TnnmrYAB",
           "product_owner": "Yulia Libster",
@@ -1748,7 +1626,7 @@
           "id": "a1kEE00000TnnoTYAR",
           "product_owner": "Yulia Libster",
           "dev_lead": "Lilach Talbi",
-          "target": "264.3",
+          "target": "264",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -1834,16 +1712,6 @@
               "path_to_green": "-"
             }
           ]
-        },
-        {
-          "name": "FS 264: S&O: Support Custom Object Display on the Map",
-          "id": "a1kEE00000Tno1NYAR",
-          "product_owner": "Yulia Libster",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
         }
       ]
     },
@@ -1922,37 +1790,6 @@
               "path_to_green": "-"
             }
           ]
-        },
-        {
-          "name": "FS 264: S&O: Customer Success - Multi Day Optimization",
-          "id": "a1kEE00000XZjwvYAD",
-          "product_owner": "Dori Nahmias",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
-        }
-      ]
-    },
-    {
-      "name": "FS 264: S&O: Intelligent Routing",
-      "id": "a1fEE0000003lQbYAI",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "health": "Unknown",
-      "health_status": "Unknown",
-      "program_manager": "",
-      "target_release": "",
-      "projects": [
-        {
-          "name": "-",
-          "id": null,
-          "product_owner": "",
-          "dev_lead": "",
-          "target": "",
-          "last_modified": "",
-          "health_status": "Not Started",
-          "epics": []
         }
       ]
     },
@@ -1970,7 +1807,7 @@
           "id": "a1kEE00000Tno4bYAB",
           "product_owner": "",
           "dev_lead": "Niv Garber",
-          "target": "262.11",
+          "target": "262.8",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -2162,7 +1999,7 @@
           "id": "a1kEE00000TnoEHYAZ",
           "product_owner": "",
           "dev_lead": "Gal Asraf",
-          "target": "264.7",
+          "target": "264",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -2229,7 +2066,7 @@
           "id": "a1kEE00000TnoB3YAJ",
           "product_owner": "",
           "dev_lead": "Niv Garber",
-          "target": "264.patch",
+          "target": "264",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -2307,7 +2144,7 @@
           "id": "a1kEE00000TnnriYAB",
           "product_owner": "",
           "dev_lead": "Avi Inbar",
-          "target": "262.11",
+          "target": "264",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -2396,7 +2233,7 @@
           "id": "a1kEE00000VSAH7YAP",
           "product_owner": "",
           "dev_lead": "Hiromichi Cho",
-          "target": "262",
+          "target": "264",
           "last_modified": "2026-07-14",
           "health_status": "On Track",
           "epics": [
@@ -3116,7 +2953,7 @@
           "id": "a1kEE00000XOro9YAD",
           "product_owner": "Tushar Sharma",
           "dev_lead": "Vinay Bayya",
-          "target": "264",
+          "target": "266",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -3323,7 +3160,7 @@
           "id": "a1kEE00000XRfaLYAT",
           "product_owner": "Tushar Sharma",
           "dev_lead": "Hiromichi Cho",
-          "target": "264",
+          "target": "266",
           "last_modified": "2026-07-21",
           "health_status": "On Track",
           "epics": [
@@ -3390,7 +3227,7 @@
           "id": "a1kEE00000XOrjJYAT",
           "product_owner": "Ruchika Pashine",
           "dev_lead": "Ruchika Pashine",
-          "target": "264",
+          "target": "266",
           "last_modified": "2026-07-21",
           "health_status": "Blocked",
           "epics": [
@@ -3748,7 +3585,7 @@
           "id": "a1kEE00000XOrkvYAD",
           "product_owner": "Itay Sagiv",
           "dev_lead": "Itay Sagiv",
-          "target": "264",
+          "target": "266",
           "last_modified": "2026-06-28",
           "health_status": "On Track",
           "epics": [
@@ -3896,7 +3733,7 @@
           "id": "a1kEE00000XOrmXYAT",
           "product_owner": "Itay Sagiv",
           "dev_lead": "Itay Sagiv",
-          "target": "264",
+          "target": "266",
           "last_modified": "2026-07-20",
           "health_status": "On Track",
           "epics": [

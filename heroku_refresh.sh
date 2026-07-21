@@ -55,5 +55,14 @@ else
     echo "WARNING: Failed to fetch unmapped details, continuing with cached"
 fi
 
+# Analyze hygiene issues (for Needs Attention feature)
+echo "Analyzing hygiene issues..."
+python3 analyze_hygiene.py
+if [ $? -eq 0 ]; then
+    echo "✓ Hygiene analysis complete"
+else
+    echo "WARNING: Failed to analyze hygiene, continuing with cached"
+fi
+
 echo "Data refresh complete at $(date)"
 echo "Latest data will be served by the Flask app on next request"

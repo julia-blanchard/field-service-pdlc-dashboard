@@ -91,6 +91,31 @@ june_unmapped_by_team = defaultdict(lambda: defaultdict(lambda: {
     'work_items': []
 }))
 
+def should_include_epic(epic):
+    """Filter out pre-264 releases and ancient epics"""
+    if not epic:
+        return True  # Include work items with no epic (teams need to assign)
+
+    # Check scheduled build
+    scheduled_build_obj = epic.get('Scheduled_Build__r')
+    if scheduled_build_obj:
+        build_name = scheduled_build_obj.get('Name', '')
+        if build_name and build_name != '-':
+            # Exclude anything that's clearly pre-264
+            if build_name.startswith(('234', '236', '238', '240', '242', '244', '246',
+                                     '248', '250', '252', '254', '256', '258', '260', '262')):
+                return False
+
+    # Check last modified date - exclude anything not touched in 2026
+    last_modified = epic.get('LastModifiedDate', '')
+    if last_modified:
+        # LastModifiedDate format: 2026-07-21T...
+        year = last_modified.split('-')[0] if last_modified else ''
+        if year and year < '2026':
+            return False
+
+    return True
+
 for item in june_items:
     team_id = item.get('Scrum_Team__c')
     points = item.get('Story_Points__c', 0) or 0
@@ -102,8 +127,8 @@ for item in june_items:
     if team_id in team_name_map:
         team_name = team_name_map[team_id]
 
-        # Only include if unmapped (no project assigned)
-        if not project_name:
+        # Only include if unmapped (no project assigned) AND epic is 264+ or recent
+        if not project_name and should_include_epic(epic):
             if epic:
                 epic_id = epic.get('Id', 'unknown')
                 epic_name = epic.get('Name', 'Unknown Epic')
@@ -180,7 +205,7 @@ for item in july_items:
     if team_id in team_name_map:
         team_name = team_name_map[team_id]
 
-        if not project_name:
+        if not project_name and should_include_epic(epic):
             if epic:
                 epic_id = epic.get('Id', 'unknown')
                 epic_name = epic.get('Name', 'Unknown Epic')

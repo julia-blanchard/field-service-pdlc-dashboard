@@ -165,8 +165,7 @@ def parse_report_data(report_data):
                     if not project_ref['dev_lead'] and owner_name and owner_name != '-':
                         project_ref['dev_lead'] = owner_name
 
-                    if not project_ref['target'] and scheduled_build and scheduled_build != '-':
-                        project_ref['target'] = scheduled_build
+                    # Note: target will be computed as MAX of epic scheduled builds after all epics are collected
 
                     if not project_ref['last_modified'] and last_modified:
                         project_ref['last_modified'] = last_modified
@@ -227,14 +226,95 @@ def parse_report_data(report_data):
                 project_health = 'Not Started'
 
             project_data['health_status'] = project_health
-            program['projects'].append(project_data)
+
+            # Calculate project target as MAX of epic scheduled builds
+            epic_builds = [e['scheduled_build'] for e in project_data['epics']
+                          if e.get('scheduled_build') and e['scheduled_build'] != '-']
+            if epic_builds:
+                # Get the maximum build number (handles both numeric like '264' and strings)
+                try:
+                    # Try numeric comparison first
+                    max_build = str(max([int(b) for b in epic_builds if b.isdigit()]))
+                except (ValueError, TypeError):
+                    # Fall back to string comparison
+                    max_build = max(epic_builds)
+                project_data['target'] = max_build
+            # If no epic builds, target remains whatever was set (possibly empty)
+
+            # Only add projects that have epics
+            if len(project_data['epics']) > 0:
+                program['projects'].append(project_data)
 
         programs.append(program)
+
+    # Filter out programs with no projects after empty project removal
+    programs = [p for p in programs if len(p['projects']) > 0]
 
     return {
         'last_updated': datetime.now().isoformat(),
         'programs': programs
     }
+
+def enrich_with_epic_ids(structured_data):
+    """Query GUS to get epic IDs by name"""
+    print("🔍 Enriching epic data with IDs from GUS...")
+
+    # Collect all epic names
+    epic_names = []
+    for program in structured_data['programs']:
+        for project in program['projects']:
+            for epic in project['epics']:
+                if epic['name'] and epic['name'] != '-':
+                    epic_names.append(epic['name'])
+
+    if not epic_names:
+        print("   No epics to enrich")
+        return structured_data
+
+    print(f"   Found {len(epic_names)} epics to look up")
+
+    # Query epic IDs in smaller batches (SOQL has character limits)
+    epic_id_map = {}
+    batch_size = 50  # Reduced batch size to avoid SOQL length limits
+
+    for i in range(0, len(epic_names), batch_size):
+        batch = epic_names[i:i + batch_size]
+        # Escape single quotes and backslashes in epic names for SOQL
+        escaped_names = [name.replace("\\", "\\\\").replace("'", "\\'") for name in batch]
+        names_list = "','".join(escaped_names)
+
+        query = f"SELECT Id, Name FROM ADM_Epic__c WHERE Name IN ('{names_list}')"
+
+        try:
+            result = subprocess.run(
+                ['sf', 'data', 'query', '--query', query, '--target-org', TARGET_ORG, '--json'],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+
+            data = json.loads(result.stdout)
+            records = data.get('result', {}).get('records', [])
+
+            for record in records:
+                epic_id_map[record['Name']] = record['Id']
+
+        except Exception as e:
+            print(f"   Warning: Failed to query batch {i//batch_size + 1}: {e}")
+            # Continue to next batch instead of failing entirely
+            continue
+
+    print(f"   ✓ Found IDs for {len(epic_id_map)} epics")
+
+    # Update epic IDs in structured data
+    for program in structured_data['programs']:
+        for project in program['projects']:
+            for epic in project['epics']:
+                epic_name = epic['name']
+                if epic_name in epic_id_map:
+                    epic['id'] = epic_id_map[epic_name]
+
+    return structured_data
 
 def main():
     """Main function to fetch and save execution data"""
@@ -248,6 +328,9 @@ def main():
 
     # Parse into structured format
     structured_data = parse_report_data(report_data)
+
+    # Enrich with epic IDs from GUS
+    structured_data = enrich_with_epic_ids(structured_data)
 
     # Save to JSON file
     DATA_FILE.parent.mkdir(exist_ok=True)

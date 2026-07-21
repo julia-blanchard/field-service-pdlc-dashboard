@@ -1363,23 +1363,6 @@
         ]
       },
       {
-        "epic_id": "a3QEE000002LJo52AG",
-        "epic_name": "262 SFS Regression",
-        "epic_health": "Not Started",
-        "epic_owner": "Yoni Moseri",
-        "story_points": 3,
-        "work_items": [
-          {
-            "id": "a07EE00002YiLhZYAV",
-            "name": "W-22197630",
-            "subject": "[Android][iOS][Bug] T-15721585: [Android][iOS] Data Capture: Service Reports on forms are primed",
-            "assignee": "Itzik Hershkovitz",
-            "status": "Not a bug",
-            "points": 3
-          }
-        ]
-      },
-      {
         "epic_id": "a3QEE000002Miyv2AC",
         "epic_name": "264 SFS Mobile - SFS Widget",
         "epic_health": "Not Started",
@@ -1892,31 +1875,6 @@
             "name": "W-23216541",
             "subject": "[Android][AGX] Add AgxRuntimeCoordinator orchestration + screen runtime impls",
             "assignee": "Marko Katziv",
-            "status": "Closed",
-            "points": 3
-          }
-        ]
-      },
-      {
-        "epic_id": "a3QEE0000022V1l2AE",
-        "epic_name": "262 [AGX Pilot] - Offline Engine",
-        "epic_health": "On Track",
-        "epic_owner": "Will Carpenter",
-        "story_points": 6,
-        "work_items": [
-          {
-            "id": "a07EE00002b1KwXYAU",
-            "name": "W-22702422",
-            "subject": "[OfflineEngine] Empty outputs from screen flow when using assignment node",
-            "assignee": "Arnav Mendiratta",
-            "status": "Closed",
-            "points": 3
-          },
-          {
-            "id": "a07EE00002bJSPhYAO",
-            "name": "W-22783348",
-            "subject": "[OfflineEngine] Sometimes got engine error on finish call for interactive step",
-            "assignee": "Roman Ivaniv",
             "status": "Closed",
             "points": 3
           }
@@ -2700,31 +2658,6 @@
             "assignee": "Naishal Patel",
             "status": "Closed",
             "points": 1
-          }
-        ]
-      },
-      {
-        "epic_id": "a3QEE000001Dvsj2AC",
-        "epic_name": "254 SFS Mobile Services - Trust: Maintenance & Compliance",
-        "epic_health": "Completed",
-        "epic_owner": "Nigel Menger",
-        "story_points": 4,
-        "work_items": [
-          {
-            "id": "a07EE00002cMi79YAC",
-            "name": "W-23025630",
-            "subject": "[Android] Performance Priming doesn't load ObjectInfo for briefcase entities with zero matching records",
-            "assignee": "Kim Le",
-            "status": "Closed",
-            "points": 2
-          },
-          {
-            "id": "a07EE00002cNDM9YAO",
-            "name": "W-23025588",
-            "subject": "[iOS] Performance Priming doesn't load ObjectInfo for briefcase entities with zero matching records",
-            "assignee": "Kim Le",
-            "status": "Closed",
-            "points": 2
           }
         ]
       },
@@ -6480,7 +6413,7 @@
         "epic_name": "[No Epic]",
         "epic_health": "Unknown",
         "epic_owner": "-",
-        "story_points": 14,
+        "story_points": 11,
         "work_items": [
           {
             "id": "a07EE00002excfpYAA",
@@ -6529,14 +6462,6 @@
             "assignee": "Nathan Slonim",
             "status": "New",
             "points": 1
-          },
-          {
-            "id": "a07EE00002fEnH2YAK",
-            "name": "W-23510113",
-            "subject": "Rewind \u2014 enable text selection + widen conversation column, then relocate repo to sfs-claude-plugins",
-            "assignee": "Ronit Shoshani",
-            "status": "In Progress",
-            "points": 3
           }
         ]
       }
@@ -6703,7 +6628,7 @@
         "epic_name": "264 [Hyperforce][Performance Priming] Stability & Resiliency",
         "epic_health": "Not Started",
         "epic_owner": "Nigel Menger",
-        "story_points": 7,
+        "story_points": 8,
         "work_items": [
           {
             "id": "a07EE00002fFKOIYA4",
@@ -6722,11 +6647,11 @@
             "points": 2
           },
           {
-            "id": "a07EE00002cd8BxYAI",
-            "name": "W-23089455",
-            "subject": "Enable the Clear Priming Data SFMP action once the rollback exception is approved",
+            "id": "a07EE00002fN3XfYAK",
+            "name": "W-23527165",
+            "subject": "Retry SOQL queries that fail with INVALID_FIELD during briefcase/permset propagation",
             "assignee": "Nigel Menger",
-            "status": "In Progress",
+            "status": "Ready for Review",
             "points": 1
           },
           {
@@ -6736,6 +6661,14 @@
             "assignee": "SFS Mobile Services Team User",
             "status": "Triaged",
             "points": 2
+          },
+          {
+            "id": "a07EE00002cd8BxYAI",
+            "name": "W-23089455",
+            "subject": "Enable the Clear Priming Data SFMP action once the rollback exception is approved",
+            "assignee": "Nigel Menger",
+            "status": "Fixed",
+            "points": 1
           }
         ]
       },
@@ -6897,6 +6830,31 @@
         ]
       },
       {
+        "epic_id": "a3QEE000002L9gf2AC",
+        "epic_name": "264 [Hyperforce][Performance Priming]- Trust: On Call Duty and Pager Alerts",
+        "epic_health": "Not Started",
+        "epic_owner": "Nigel Menger",
+        "story_points": 10,
+        "work_items": [
+          {
+            "id": "a07EE00002eMx6lYAC",
+            "name": "W-23389342",
+            "subject": "On Call 07a",
+            "assignee": "Nigel Menger",
+            "status": "In Progress",
+            "points": 5
+          },
+          {
+            "id": "a07EE00002fMsHdYAK",
+            "name": "W-23527965",
+            "subject": "On Call 07b",
+            "assignee": "Danny Wilson",
+            "status": "Triaged",
+            "points": 5
+          }
+        ]
+      },
+      {
         "epic_id": "a3QEE00000205pl2AA",
         "epic_name": "264 [Hyperforce][Performance Priming] Trust: Operational Productivity",
         "epic_health": "Not Started",
@@ -6926,23 +6884,6 @@
             "assignee": "SFS Mobile Services Team User",
             "status": "Waiting",
             "points": 1
-          }
-        ]
-      },
-      {
-        "epic_id": "a3QEE000002L9gf2AC",
-        "epic_name": "264 [Hyperforce][Performance Priming]- Trust: On Call Duty and Pager Alerts",
-        "epic_health": "Not Started",
-        "epic_owner": "Nigel Menger",
-        "story_points": 5,
-        "work_items": [
-          {
-            "id": "a07EE00002eMx6lYAC",
-            "name": "W-23389342",
-            "subject": "On Call 07a",
-            "assignee": "Nigel Menger",
-            "status": "Triaged",
-            "points": 5
           }
         ]
       },
@@ -7060,23 +7001,6 @@
             "subject": "Test Sweeper Bug for FSL - Foundation - Atlas-ui-mobile-workforce-management-components/modules/schedule_management/shiftInterfaceDataProcessor/__tests__/shiftInterfaceDataProcessor.test.ts",
             "assignee": "Manisha Chaurasia",
             "status": "Pending Release",
-            "points": 1
-          }
-        ]
-      },
-      {
-        "epic_id": "a3QEE000002CH8n2AG",
-        "epic_name": "Schedule Manager 266 Potential",
-        "epic_health": "On Track",
-        "epic_owner": "Ruchika Pashine",
-        "story_points": 1,
-        "work_items": [
-          {
-            "id": "a07EE00002cduZvYAI",
-            "name": "W-23092963",
-            "subject": "[Unassigned Shift Popover] Labels capstone",
-            "assignee": "Avani Jindal",
-            "status": "Fixed",
             "points": 1
           }
         ]
@@ -7281,20 +7205,29 @@
         ]
       },
       {
+        "epic_id": "a3QEE00000239nB2AQ",
+        "epic_name": "264 SFS Mobile Platform DX - Android Platform Support",
+        "epic_health": "On Track",
+        "epic_owner": "Riley MacDonald",
+        "story_points": 4,
+        "work_items": [
+          {
+            "id": "a07EE00002ZAWSzYAP",
+            "name": "W-22308682",
+            "subject": "[Android][API 36] Update targetSdkVersion to 36",
+            "assignee": "Andre Dion",
+            "status": "Ready for Review",
+            "points": 4
+          }
+        ]
+      },
+      {
         "epic_id": "a3QEE000001uC9B2AU",
         "epic_name": "SFS Mobile Platform DX - Patterns Backburner",
         "epic_health": "Not Started",
         "epic_owner": "Riley MacDonald",
         "story_points": 19,
         "work_items": [
-          {
-            "id": "a07EE00002dAQUWYA4",
-            "name": "W-23182328",
-            "subject": "[iOS] Migrate single-argument onChange(of:) to the two-parameter closure",
-            "assignee": "Thomas Myrden",
-            "status": "Ready for Review",
-            "points": 1
-          },
           {
             "id": "a07EE00002dAscpYAC",
             "name": "W-23182330",
@@ -7350,23 +7283,14 @@
             "assignee": "Thomas Myrden",
             "status": "Fixed",
             "points": 1
-          }
-        ]
-      },
-      {
-        "epic_id": "a3QEE00000239nB2AQ",
-        "epic_name": "264 SFS Mobile Platform DX - Android Platform Support",
-        "epic_health": "On Track",
-        "epic_owner": "Riley MacDonald",
-        "story_points": 4,
-        "work_items": [
+          },
           {
-            "id": "a07EE00002ZAWSzYAP",
-            "name": "W-22308682",
-            "subject": "[Android][API 36] Update targetSdkVersion to 36",
-            "assignee": "Andre Dion",
-            "status": "In Progress",
-            "points": 4
+            "id": "a07EE00002dAQUWYA4",
+            "name": "W-23182328",
+            "subject": "[iOS] Migrate single-argument onChange(of:) to the two-parameter closure",
+            "assignee": "Thomas Myrden",
+            "status": "Fixed",
+            "points": 1
           }
         ]
       },
@@ -7463,19 +7387,19 @@
             "points": 3
           },
           {
-            "id": "a07EE00002eGnMcYAK",
-            "name": "W-23370248",
-            "subject": "(Android)Test and review Optimistic emit enablement for WOO.",
-            "assignee": "Keerthini Reddy Chimarla",
-            "status": "In Progress",
-            "points": 3
-          },
-          {
             "id": "a07EE00002aOJoZYAW",
             "name": "W-22565692",
             "subject": "Auomatically set links for simulator builds when new beta is deployed.",
             "assignee": "Brian Criscuolo",
             "status": "Triaged",
+            "points": 3
+          },
+          {
+            "id": "a07EE00002eGnMcYAK",
+            "name": "W-23370248",
+            "subject": "(Android)Test and review Optimistic emit enablement for WOO.",
+            "assignee": "Keerthini Reddy Chimarla",
+            "status": "Fixed",
             "points": 3
           },
           {
@@ -7690,6 +7614,39 @@
         ]
       },
       {
+        "epic_id": "a3QEE000002Cg7B2AS",
+        "epic_name": "264 SFS Frontline AI - [M2.7] Observability Excellence",
+        "epic_health": "On Track",
+        "epic_owner": "Paul Chan",
+        "story_points": 4,
+        "work_items": [
+          {
+            "id": "a07EE00002fMpqZYAS",
+            "name": "W-23529911",
+            "subject": "[Android] Add log statements for exceptions in WgsGenApi (Pre-Work Brief) API call",
+            "assignee": "SFS Frontline AI Team User",
+            "status": "New",
+            "points": 1
+          },
+          {
+            "id": "a07EE00002fN8hkYAC",
+            "name": "W-23530400",
+            "subject": "[iOS] Add log statements for exceptions in WgsGenApi (Pre-Work Brief) API call",
+            "assignee": "SFS Frontline AI Team User",
+            "status": "New",
+            "points": 1
+          },
+          {
+            "id": "a07EE00002fI6o7YAC",
+            "name": "W-23518834",
+            "subject": "Update production alert duration/token thresholds to agreed SLAs (2026-07-20 review)",
+            "assignee": "Naveen Vasu",
+            "status": "Fixed",
+            "points": 2
+          }
+        ]
+      },
+      {
         "epic_id": "a3QEE000002Vlnt2AC",
         "epic_name": "264 SFS Frontline AI - Orgfarm Template Internal Tools",
         "epic_health": "On Track",
@@ -7697,17 +7654,17 @@
         "story_points": 10,
         "work_items": [
           {
-            "id": "a07EE00002eIWfjYAG",
-            "name": "W-23376350",
-            "subject": "[Testing Infra] [Farm Config] Add minimum config for Frontline AI org type - SFS Mobile",
+            "id": "a07EE00002eIWnoYAG",
+            "name": "W-23376351",
+            "subject": "[Testing Infra] [Farm Config] Add Field Service Frontline AI postprocessor config",
             "assignee": "Kenna Nyuga-Galega",
             "status": "Ready for Review",
             "points": 2
           },
           {
-            "id": "a07EE00002eIWnoYAG",
-            "name": "W-23376351",
-            "subject": "[Testing Infra] [Farm Config] Add Field Service Frontline AI postprocessor config",
+            "id": "a07EE00002eIX7DYAW",
+            "name": "W-23376352",
+            "subject": "[Testing Infra] [Farm Config] Frontline AI user setup, licensing and perms",
             "assignee": "Kenna Nyuga-Galega",
             "status": "In Progress",
             "points": 2
@@ -7729,11 +7686,11 @@
             "points": 2
           },
           {
-            "id": "a07EE00002eIX7DYAW",
-            "name": "W-23376352",
-            "subject": "[Testing Infra] [Farm Config] Frontline AI user setup, licensing and perms",
+            "id": "a07EE00002eIWfjYAG",
+            "name": "W-23376350",
+            "subject": "[Testing Infra] [Farm Config] Add minimum config for Frontline AI org type - SFS Mobile",
             "assignee": "Kenna Nyuga-Galega",
-            "status": "Triaged",
+            "status": "Fixed",
             "points": 2
           }
         ]
@@ -7752,6 +7709,31 @@
             "assignee": "Manushi Talwar",
             "status": "In Progress",
             "points": 3
+          }
+        ]
+      },
+      {
+        "epic_id": "a3QEE000002T91x2AC",
+        "epic_name": "264 SFS Frontline AI - [iOS] Felix Exploration with Agentforce",
+        "epic_health": "Not Started",
+        "epic_owner": "Nitasha Walia",
+        "story_points": 2,
+        "work_items": [
+          {
+            "id": "a07EE00002fIOQBYA4",
+            "name": "W-23519911",
+            "subject": "[Felix] Job details card in chat view",
+            "assignee": "Hao Guan",
+            "status": "In Progress",
+            "points": 1
+          },
+          {
+            "id": "a07EE00002fNzS8YAK",
+            "name": "W-23529821",
+            "subject": "[Felix] Voice-to-Form Open Form Launcher Card",
+            "assignee": "Hao Guan",
+            "status": "In Progress",
+            "points": 1
           }
         ]
       },
@@ -7799,23 +7781,6 @@
       }
     ],
     "FSL - Resource - Scheduling Intelligence": [
-      {
-        "epic_id": "a3QEE000001s6Cj2AI",
-        "epic_name": "* [262][Trust][CORE Automations - FIT Tests]",
-        "epic_health": "On Track",
-        "epic_owner": "Yonatan Bar-Yehuda",
-        "story_points": 5,
-        "work_items": [
-          {
-            "id": "a07EE00002VPcHiYAL",
-            "name": "W-21366335",
-            "subject": "CORE Automations - Downloading the Repo and following the instructions in GIT",
-            "assignee": "Irad Ben Dosa",
-            "status": "New",
-            "points": 5
-          }
-        ]
-      },
       {
         "epic_id": "a3QEE000002Sj7V2AS",
         "epic_name": "264 SFS [Trust] Feature Toggle Cleanup",
@@ -8390,7 +8355,7 @@
             "name": "W-23426014",
             "subject": "RecordTypeId / RecordType spanning fields return blank in offline Data Capture flows (Work Order) \u2014 missing \"RecordType\" dataType mapping",
             "assignee": "Nir Mekin",
-            "status": "In Progress",
+            "status": "Ready for Review",
             "points": 2
           },
           {
@@ -8465,7 +8430,7 @@
         "epic_name": "[No Epic]",
         "epic_health": "Unknown",
         "epic_owner": "-",
-        "story_points": 8,
+        "story_points": 9,
         "work_items": [
           {
             "id": "a07EE00002e0vxYYAQ",
@@ -8490,6 +8455,14 @@
             "assignee": "Mor Cohen H.",
             "status": "New",
             "points": 2
+          },
+          {
+            "id": "a07EE00002fNpb1YAC",
+            "name": "W-23529600",
+            "subject": "Create test-only Gater gate com.salesforce.fieldservice.emergencyNotification (Emergency Pulse)",
+            "assignee": "Nir Mekin",
+            "status": "New",
+            "points": 1
           }
         ]
       },
@@ -8706,19 +8679,19 @@
             "points": 2
           },
           {
+            "id": "a07EE00002ctgitYAA",
+            "name": "W-23138703",
+            "subject": "[Q2 Integration Test][Android] AgxStageStepsViewModel",
+            "assignee": "Dana Bergman",
+            "status": "Ready for Review",
+            "points": 2
+          },
+          {
             "id": "a07EE00002eh5RSYAY",
             "name": "W-23439538",
             "subject": "[Unit tests] Add the missing unit test \u2014 GISLegendViewModel.swift",
             "assignee": "Adar Tzeiri",
             "status": "Ready for Review",
-            "points": 2
-          },
-          {
-            "id": "a07EE00002ctgitYAA",
-            "name": "W-23138703",
-            "subject": "[Q2 Integration Test][Android] AgxStageStepsViewModel",
-            "assignee": "Dana Bergman",
-            "status": "In Progress",
             "points": 2
           }
         ]
@@ -9225,20 +9198,20 @@
             "points": 3
           },
           {
-            "id": "a07EE00002fA2YKYA0",
-            "name": "W-23515348",
-            "subject": "License & Permission | Rename InBusinessScheduling/OnSiteSchedulingEnabled/WorkforceSchedulingUserAccess + FWM settings (PL/SQL limit)",
-            "assignee": "Rohit Gambhir",
-            "status": "New",
-            "points": 3
-          },
-          {
             "id": "a07EE00002edDBpYAM",
             "name": "W-23425538",
             "subject": "License & Permission | Reuse Guest and Community seats for the Experience Cloud add-on",
             "assignee": "Rohit Gambhir",
-            "status": "In Progress",
+            "status": "Ready for Review",
             "points": 1
+          },
+          {
+            "id": "a07EE00002fA2YKYA0",
+            "name": "W-23515348",
+            "subject": "License & Permission | Rename InBusinessScheduling/OnSiteSchedulingEnabled/WorkforceSchedulingUserAccess + FWM settings (PL/SQL limit)",
+            "assignee": "Rohit Gambhir",
+            "status": "Ready for Review",
+            "points": 3
           }
         ]
       }
@@ -9857,6 +9830,23 @@
             "points": 2
           }
         ]
+      },
+      {
+        "epic_id": "no-epic",
+        "epic_name": "[No Epic]",
+        "epic_health": "Unknown",
+        "epic_owner": "-",
+        "story_points": 2,
+        "work_items": [
+          {
+            "id": "a07EE00002cEZLvYAO",
+            "name": "W-22992339",
+            "subject": "Test sales.setup.home.impl.suite.tests.SetupDiscoveryFeatureDependencyTest.testEnableFeatureWhenMissingOnlyFeatureDependencyPermsAndPrefs$field-service-agentforce-dispatcher is failing.",
+            "assignee": "Jesse Saunders",
+            "status": "In Progress",
+            "points": 2
+          }
+        ]
       }
     ],
     "SFS Mobile - Quality": [
@@ -9942,7 +9932,7 @@
             "name": "W-23512720",
             "subject": "[AGX][iOS] Create PDF item stuck in in-progress \u2014 Data Capture Form List & Service Document cards never show completed state without manual refresh",
             "assignee": "Eliran Sharabi",
-            "status": "In Progress",
+            "status": "Ready for Review",
             "points": 3
           }
         ]
@@ -10132,18 +10122,18 @@
             "points": 2
           },
           {
-            "id": "a07EE00002evSfgYAE",
-            "name": "W-23471144",
-            "subject": "[Android][AGX] Wire per-field SObject types in the flow argument serializer (navigate/update)",
-            "assignee": "Marko Katziv",
-            "status": "Ready for Review",
-            "points": 2
-          },
-          {
             "id": "a07EE00002fFGCTYA4",
             "name": "W-23511999",
             "subject": "[Android][AGX] View Schedule button on guided-work completion card navigates to record Overview instead of Schedule",
             "assignee": "Sagi Ravid",
+            "status": "QA In Progress",
+            "points": 2
+          },
+          {
+            "id": "a07EE00002evSfgYAE",
+            "name": "W-23471144",
+            "subject": "[Android][AGX] Wire per-field SObject types in the flow argument serializer (navigate/update)",
+            "assignee": "Marko Katziv",
             "status": "Ready for Review",
             "points": 2
           },

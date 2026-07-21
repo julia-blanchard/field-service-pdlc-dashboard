@@ -1,0 +1,382 @@
+{
+  "inactive_owners": [
+    "Tushar Sharma",
+    "Arvind Tiwari",
+    "Rahul Mehta",
+    "Gilad Katz",
+    "Sohail Ahmed Mohammed",
+    "Sunny Kumar",
+    "Andy Funston",
+    "Siddharth Mathur",
+    "Hiromichi Cho",
+    "Marina Furen",
+    "Karthik Shankar",
+    "Kim Le",
+    "Jordan Maples",
+    "Ajay Gupta",
+    "Ricky Shum",
+    "Zhengkang Liu"
+  ],
+  "inactive_owned_epics": [
+    {
+      "id": "a3QB000000014jZMAQ",
+      "name": "SFS [Trust] Asset 360 Engineering Trust Backlog",
+      "owner": "Arvind Tiwari",
+      "team": "FSL - Asset - 360",
+      "story_points": 44.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000002LkzZ2AS",
+      "name": "264 SFS [Core Foundations] Technical Trust",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Core - Foundations",
+      "story_points": 0.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000002KjcX2AS",
+      "name": "266 [FSL - Foundation - Apps] Place Holder",
+      "owner": "Siddharth Mathur",
+      "team": "FSL - Foundation - Apps",
+      "story_points": 200.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000002XO7F2AW",
+      "name": "266 [FSL - Foundation - Apps] Unified API feature Parity",
+      "owner": "Siddharth Mathur",
+      "team": "FSL - Foundation - Apps",
+      "story_points": 0.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000001btJV2AY",
+      "name": "260 AGX Core Flow Completion",
+      "owner": "Siddharth Mathur",
+      "team": "FSL - Foundation - Apps",
+      "story_points": 92.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000002Ln6D2AS",
+      "name": "266 [FSL - Foundation - Apps] Guest User Experience",
+      "owner": "Siddharth Mathur",
+      "team": "FSL - Foundation - Apps",
+      "story_points": 0.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000002Vypx2AC",
+      "name": "264 SFS [OI] Capacity Planning GA Readiness",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 17.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000001oayz2AA",
+      "name": "266 SFS [Operations Intelligence]  Papercuts & Customer Asks",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 13.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000001ob2D2AQ",
+      "name": "266 SFS [Operations Intelligence] Field Service Operations Trust",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 60.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE0000025BL32AM",
+      "name": "264 SFS [Operations Intelligence] Technical Trust",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 63.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QB0000000H4T5MAK",
+      "name": "Backlog SFS [RE] Expense Management",
+      "owner": "Tushar Sharma",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 1.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QB0000000H4TAMA0",
+      "name": "Backlog SFS [RE] Timesheet Management",
+      "owner": "Tushar Sharma",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 0.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000002ENy52AG",
+      "name": "264 SFS [Operations Intelligence] ZBB",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 7.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000000jsaX2AQ",
+      "name": "SFS [RE] Technical Trust",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 7.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QB000000093hiMAA",
+      "name": "MP Governor Limit and Sharing",
+      "owner": "Tushar Sharma",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 4.0,
+      "health": "On Hold"
+    },
+    {
+      "id": "a3QB00000005o2BMAQ",
+      "name": "Backlog SFS [RM] RFC/RFCR Enhancements",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 0.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000000ZlnF2AS",
+      "name": "Backlog SFS [RM] Gantt UI 2.0",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 20.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE0000018phV2AQ",
+      "name": "Backlog SFS [Operations Intelligence] Backlog Operations Home - CRMA",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 3.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QB00000005fwBMAQ",
+      "name": "Backlog SFS [RM] Shift",
+      "owner": "Tushar Sharma",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 23.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE0000004B892AE",
+      "name": "Backlog SFS [RM] Technical Trust",
+      "owner": "Hiromichi Cho",
+      "team": "FSL - Operations - Intelligence",
+      "story_points": 28.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QB00000005nFzMAI",
+      "name": "SERVICE APPOINTMENT BACKLOG",
+      "owner": "Karthik Shankar",
+      "team": "SFS Core Scheduler",
+      "story_points": 5.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000002GNPJ2A4",
+      "name": "262 [SFS mobile assets] Regression",
+      "owner": "Sunny Kumar",
+      "team": "SFS Mobile Assets",
+      "story_points": 33.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE0000022JYT2A2",
+      "name": "262 - SFS Mobile - C&S - Data SDK Support",
+      "owner": "Sohail Ahmed Mohammed",
+      "team": "SFS Mobile Comms and Search",
+      "story_points": 96.0,
+      "health": "Watch"
+    },
+    {
+      "id": "a3QEE000001wOnl2AE",
+      "name": "[SFS MCX][Data Capture] Enable Data Capture on Desktop",
+      "owner": "Gilad Katz",
+      "team": "SFS Mobile Core Experience",
+      "story_points": 57.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000001oOjJ2AU",
+      "name": "[SFS MCX][Data Capture] Builder Experience Improvement",
+      "owner": "Gilad Katz",
+      "team": "SFS Mobile Core Experience",
+      "story_points": 11.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000001ntxF2AQ",
+      "name": "260 SFS Mobile - Spikes for 260",
+      "owner": "Marina Furen",
+      "team": "SFS Mobile Location and DC",
+      "story_points": 69.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE0000029Amz2AE",
+      "name": "262 SFS Mobile Offline Extensibility - Trust",
+      "owner": "Ajay Gupta",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 79.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE0000015zqH2AQ",
+      "name": "SFS Mobile - [MOE] Observability Backlog",
+      "owner": "Kim Le",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 66.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000001qnP32AI",
+      "name": "262 SFS Mobile Offline Extensibility - Removing 2-step SOQL loader",
+      "owner": "Kim Le",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 19.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000000RBPB2A4",
+      "name": "SFS Mobile - XPlatform Holding Cell",
+      "owner": "Ricky Shum",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 0.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QB00000009BkoMAE",
+      "name": "Xplatform Trust Backlog",
+      "owner": "Andy Funston",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 101.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000000uJ9d2AE",
+      "name": "SFS Mobile Offline Extensibility - Custom Navigation",
+      "owner": "Ricky Shum",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 5.0,
+      "health": "On Hold"
+    },
+    {
+      "id": "a3QEE000000uJ812AE",
+      "name": "SFS Mobile Offline Extensibility - Notifications",
+      "owner": "Ricky Shum",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 2.0,
+      "health": "On Hold"
+    },
+    {
+      "id": "a3QEE000000kKdF2AU",
+      "name": "SFS Mobile - MOE High Volume Priming - Forced Priming",
+      "owner": "Jordan Maples",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 0.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000000S0Y92AK",
+      "name": "248 SFS Mobile - MOE Support for Time field type",
+      "owner": "Kim Le",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 21.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000000KJo52AG",
+      "name": "24? SFS Mobile - Codebase Health and Cleanup",
+      "owner": "Jordan Maples",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 7.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000001qaej2AA",
+      "name": "260 - CSP Error Reporting and Handling",
+      "owner": "Jordan Maples",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 69.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE0000025bqb2AA",
+      "name": "262 SFS MOE - User Cache Purging Recommendation",
+      "owner": "Kim Le",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 3.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE0000021fWD2AY",
+      "name": "262 SFS Mobile Offline Extensibility - Testing & usability improvements",
+      "owner": "Ajay Gupta",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 15.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE0000021fXp2AI",
+      "name": "262 SFS Mobile Offline Extensibility - Priming Improvements",
+      "owner": "Ajay Gupta",
+      "team": "SFS Mobile Offline Extensibility",
+      "story_points": 15.0,
+      "health": "On Track"
+    },
+    {
+      "id": "a3QEE000001P9cD2AS",
+      "name": "266 [Hyperforce][Performance Priming] Global deployment / migration strategy",
+      "owner": "Ricky Shum",
+      "team": "SFS Mobile Services",
+      "story_points": 33.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000002NNij2AG",
+      "name": "264 [Core] - Trust: On Call Duty and Pager Alerts",
+      "owner": "Zhengkang Liu",
+      "team": "SFS Mobile Services",
+      "story_points": 26.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE0000023kLJ2AY",
+      "name": "262 - SFS Mobile - MS - [AGX]  Flow Builder",
+      "owner": "Ajay Gupta",
+      "team": "SFS Mobile Services",
+      "story_points": 0.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000002V7wv2AC",
+      "name": "[266] [Trust] Error Handling in Go Features",
+      "owner": "Rahul Mehta",
+      "team": "SFS Setup Experience",
+      "story_points": 5.0,
+      "health": "Not Started"
+    },
+    {
+      "id": "a3QEE000002HRFZ2A4",
+      "name": "[264] SFS Setup Experiences Trust",
+      "owner": "Rahul Mehta",
+      "team": "SFS Setup Experience",
+      "story_points": 78.0,
+      "health": "On Track"
+    }
+  ]
+}

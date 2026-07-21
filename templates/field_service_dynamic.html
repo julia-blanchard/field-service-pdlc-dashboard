@@ -2827,6 +2827,18 @@
                 </div>
             </div>
         </div>
+
+        <!-- Orphaned filters (only show in Orphaned view) -->
+        <div id="orphaned-filters-inline" style="display: none;">
+            <!-- View Toggles (By Team | By Release) -->
+            <div class="filter-group-exec">
+                <label class="filter-label-exec">VIEW</label>
+                <div class="view-toggles">
+                    <button class="view-toggle orphaned-view-btn active" data-view="by-team" onclick="switchOrphanedView('by-team')" tabindex="-1">By Team</button>
+                    <button class="view-toggle orphaned-view-btn" data-view="by-release" onclick="switchOrphanedView('by-release')" tabindex="-1">By Release</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Overview Content -->
@@ -14793,13 +14805,6 @@
 
     <!-- Orphaned Content -->
     <div id="orphaned-view" class="view-content" style="display: none;">
-        <div style="margin-bottom: 20px;">
-            <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 16px;">
-                <button id="orphaned-by-team-btn" class="view-toggle active" onclick="switchOrphanedView('by-team')">By Team</button>
-                <button id="orphaned-by-release-btn" class="view-toggle" onclick="switchOrphanedView('by-release')">By Release</button>
-            </div>
-        </div>
-
         <!-- By Team View -->
         <div id="orphaned-by-team" style="display: block;">
             <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
@@ -16034,6 +16039,26 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                 allocationsFilters.style.display = viewName === 'allocations' ? 'contents' : 'none';
             }
 
+            // Show/hide orphaned filters
+            const orphanedFilters = document.getElementById('orphaned-filters-inline');
+            if (orphanedFilters) {
+                orphanedFilters.style.display = viewName === 'orphaned' ? 'contents' : 'none';
+            }
+
+            // Grey out portfolio filter in Orphaned view (orphaned epics have no portfolio by definition)
+            const portfolioButton = document.getElementById('portfolio-button');
+            if (portfolioButton) {
+                if (viewName === 'orphaned') {
+                    portfolioButton.style.opacity = '0.3';
+                    portfolioButton.style.cursor = 'not-allowed';
+                    portfolioButton.style.pointerEvents = 'none';
+                } else {
+                    portfolioButton.style.opacity = '1';
+                    portfolioButton.style.cursor = 'pointer';
+                    portfolioButton.style.pointerEvents = 'auto';
+                }
+            }
+
             // Load orphaned data when switching to orphaned view
             if (viewName === 'orphaned' && !window.orphanedDataLoaded) {
                 loadOrphanedData();
@@ -16060,9 +16085,13 @@ document.getElementById('program-search').addEventListener('input', (e) => {
         }
 
         function switchOrphanedView(viewType) {
-            // Update button states
-            document.getElementById('orphaned-by-team-btn').classList.toggle('active', viewType === 'by-team');
-            document.getElementById('orphaned-by-release-btn').classList.toggle('active', viewType === 'by-release');
+            // Update filter bar button states
+            document.querySelectorAll('.orphaned-view-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.view === viewType) {
+                    btn.classList.add('active');
+                }
+            });
 
             // Show/hide views
             document.getElementById('orphaned-by-team').style.display = viewType === 'by-team' ? 'block' : 'none';
@@ -16097,7 +16126,7 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                 html += `
                     <tr style="background: #f8fafc; border-top: 2px solid #e5e7eb;">
                         <td colspan="4" style="padding: 12px 16px; font-size: 14px; font-weight: 600; color: #1e293b;">
-                            ${teamGroup.team}
+                            ${teamGroup.name}
                         </td>
                         <td style="text-align: center; padding: 12px 16px; font-size: 14px; font-weight: 600; color: #1e293b;">
                             ${teamGroup.total_capacity} PD
@@ -16149,10 +16178,10 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                 html += `
                     <tr style="background: #f8fafc; border-top: 2px solid #e5e7eb;">
                         <td colspan="4" style="padding: 12px 16px; font-size: 14px; font-weight: 600; color: #1e293b;">
-                            Release ${releaseGroup.release || 'Unscheduled'}
+                            Release ${releaseGroup.name || 'Unscheduled'}
                         </td>
                         <td style="text-align: center; padding: 12px 16px; font-size: 14px; font-weight: 600; color: #1e293b;">
-                            ${releaseGroup.epic_count} epics
+                            ${releaseGroup.epic_count} epics (${releaseGroup.orphaned_capacity} PD)
                         </td>
                     </tr>
                 `;

@@ -15063,12 +15063,12 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                                             epic.work_items && epic.work_items.length > 0 ?
                                                 `<a href="https://gus.lightning.force.com/lightning/r/ADM_Work__c/${epic.work_items[0].id}/view"
                                                    target="_blank"
-                                                   style="color: #dc2626; text-decoration: none;">
-                                                    ${epic.epic_name}
+                                                   style="color: #2563eb; text-decoration: none;">
+                                                    [Work Item] ${epic.work_items[0].name}
                                                 </a>
-                                                <span style="color: #94a3b8; font-size: 11px; font-style: italic;"> (Work items without epic assignment)</span>` :
-                                                `<span style="color: #dc2626; font-weight: 500;">${epic.epic_name}</span>
-                                                 <span style="color: #94a3b8; font-size: 11px; font-style: italic;"> (Work items without epic assignment)</span>`
+                                                <span style="color: #94a3b8; font-size: 11px; font-style: italic;"> (No epic assignment)</span>` :
+                                                `<span style="color: #2563eb; font-weight: 500;">[Work Item]</span>
+                                                 <span style="color: #94a3b8; font-size: 11px; font-style: italic;"> (No epic assignment)</span>`
                                         }
                                     </div>
                                     <div style="font-size: 11px; color: #94a3b8;">

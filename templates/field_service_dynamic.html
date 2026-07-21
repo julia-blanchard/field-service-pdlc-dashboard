@@ -16351,9 +16351,12 @@ document.getElementById('program-search').addEventListener('input', (e) => {
 
                     html += `
                         <tr id="breakdown-release-${sanitizedRelease}" style="display: none; border-bottom: 1px solid #f1f5f9;">
-                            <td style="text-align: left; padding: 8px 16px 8px 48px;">
+                            <td style="text-align: center; padding: 8px 16px;">
+                                <span style="background: #2563eb; color: white; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600;">
+                                    ${release.name}
+                                </span>
                             </td>
-                            <td style="padding: 8px 16px; font-size: 13px; color: #64748b;">
+                            <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #64748b;">
                                 <div style="font-weight: 500; margin-bottom: 2px;">
                                     <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
                                         ${epic.name}

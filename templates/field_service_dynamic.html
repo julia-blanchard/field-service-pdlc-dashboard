@@ -1343,7 +1343,7 @@
             gap: 8px;
             flex-wrap: wrap;
             font-size: 12px;
-            color: #6b7280;
+            color: #64748b;
             font-weight: 400;
             line-height: 1.5;
             margin-top: 4px;
@@ -1356,8 +1356,8 @@
         }
 
         .project-meta-label {
-            font-weight: 500;
-            color: #9ca3af;
+            font-weight: 600;
+            color: #64748b;
         }
 
         .project-health-badge {
@@ -1375,7 +1375,7 @@
 
         /* Project Container (Pillbox Style) */
         .project-container {
-            margin-bottom: 8px;
+            margin: 0 0 8px 24px;
             background: #f9fafb;
             border: 1px solid #e5e7eb;
             border-radius: 8px;
@@ -2754,7 +2754,7 @@
         <button class="nav-button" onclick="switchView('execution')" tabindex="-1">Execution</button>
         <button class="nav-button" onclick="switchView('allocations')" tabindex="-1">Allocations</button>
         {% if show_orphaned_tab %}
-        <button class="nav-button" onclick="switchView('orphaned')" tabindex="-1">Orphaned</button>
+        <button class="nav-button" onclick="switchView('orphaned')" tabindex="-1">Unallocated</button>
         {% endif %}
     </div>
 
@@ -2834,7 +2834,7 @@
             </div>
         </div>
 
-        <!-- Orphaned filters (only show in Orphaned view) -->
+        <!-- Unallocated filters (only show in Unallocated view) -->
         <div id="orphaned-filters-inline" style="display: none;">
             <!-- View Toggles (By Team | By Release) -->
             <div class="filter-group-exec">
@@ -3398,7 +3398,7 @@
         <div class="program-header" onclick="toggleProgram(this)">
             <div class="expand-icon">▶</div>
             <div class="program-content">
-                <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px;">
+                <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 4px;">
                     <a href="https://gus.lightning.force.com/lightning/r/PPM_Program__c/{{ program.id }}/view"
                        target="_blank"
                        class="program-name-link"
@@ -14865,7 +14865,7 @@
     {% if show_orphaned_tab %}
     <!-- Orphaned Epics Content -->
     <div id="orphaned-view" class="view-content">
-        <h2 style="font-size: 24px; font-weight: 600; color: #e2e8f0; margin-bottom: 8px;">Orphaned Epics</h2>
+        <h2 style="font-size: 24px; font-weight: 600; color: #e2e8f0; margin-bottom: 8px;">Unallocated Epics</h2>
         <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
             Epics missing program or project assignments (264+ releases only). These require PM/leadership intervention to properly nest in the portfolio hierarchy.
         </p>

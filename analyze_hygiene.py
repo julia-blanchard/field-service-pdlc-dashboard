@@ -37,6 +37,10 @@ def check_epic_hygiene(epic):
     if health in ['Blocked', 'On Hold'] and (not comments or comments in ['-', '', 'null']):
         issues.append('blocked_no_comments')
 
+    # Missing planned release
+    if not epic.get('planned_release') or epic.get('planned_release') in ['-', '', 'null']:
+        issues.append('missing_planned_release')
+
     return issues
 
 def analyze_execution_data():
@@ -114,7 +118,8 @@ def analyze_execution_data():
             'missing_scheduled_build': issue_counts['missing_scheduled_build'],
             'missing_priority': issue_counts['missing_priority'],
             'missing_owner': issue_counts['missing_owner'],
-            'blocked_no_comments': issue_counts['blocked_no_comments']
+            'blocked_no_comments': issue_counts['blocked_no_comments'],
+            'missing_planned_release': issue_counts['missing_planned_release']
         }
     }
 

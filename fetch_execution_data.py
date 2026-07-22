@@ -191,6 +191,7 @@ def parse_report_data(report_data):
                             'owner': owner_name,
                             'team': team_name,
                             'scheduled_build': scheduled_build,
+                            'planned_release': planned_release,
                             'last_modified': last_modified,
                             'loc': loc,
                             'path_to_green': path_to_green

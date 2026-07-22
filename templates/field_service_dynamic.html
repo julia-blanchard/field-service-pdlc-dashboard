@@ -3377,7 +3377,7 @@
                 <span style="font-size: 20px;">⚠️</span>
                 <div style="flex: 1;">
                     <div style="font-weight: 600; color: #92400e; font-size: 14px; margin-bottom: 4px;">
-                        <span id="hygiene-count">0</span> epics need attention
+                        <span id="hygiene-count">0</span> Epics Need Attention
                     </div>
                     <div style="color: #78350f; font-size: 12px;">
                         Missing data or requiring updates • <a href="#" onclick="toggleHygieneFilter(); return false;" style="color: #d97706; text-decoration: underline;">Filter view</a>
@@ -16508,7 +16508,7 @@ document.getElementById('program-search').addEventListener('input', (e) => {
                 // Render badges on all epic rows
                 renderHygieneBadges();
 
-                console.log(`Loaded hygiene data: ${count} epics need attention`);
+                console.log(`Loaded hygiene data: ${count} Epics Need Attention`);
             } catch (error) {
                 console.error('Failed to load hygiene data:', error);
             }
@@ -16551,6 +16551,7 @@ document.getElementById('program-search').addEventListener('input', (e) => {
             const planningLabels = {
                 'missing_scheduled_build': 'Scheduled Build',
                 'missing_priority': 'Priority',
+                'missing_planned_release': 'Planned Release',
                 'missing_story_points': 'Person Day Allocation'
             };
 

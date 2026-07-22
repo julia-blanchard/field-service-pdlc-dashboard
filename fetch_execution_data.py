@@ -257,8 +257,8 @@ def parse_report_data(report_data):
     }
 
 def enrich_with_epic_ids(structured_data):
-    """Query GUS to get epic IDs by name"""
-    print("🔍 Enriching epic data with IDs from GUS...")
+    """Query GUS to get epic IDs and planned releases by name"""
+    print("🔍 Enriching epic data with IDs and planned releases from GUS...")
 
     # Collect all epic names
     epic_names = []
@@ -274,8 +274,8 @@ def enrich_with_epic_ids(structured_data):
 
     print(f"   Found {len(epic_names)} epics to look up")
 
-    # Query epic IDs in smaller batches (SOQL has character limits)
-    epic_id_map = {}
+    # Query epic IDs and planned releases in smaller batches (SOQL has character limits)
+    epic_data_map = {}
     batch_size = 50  # Reduced batch size to avoid SOQL length limits
 
     for i in range(0, len(epic_names), batch_size):
@@ -284,7 +284,7 @@ def enrich_with_epic_ids(structured_data):
         escaped_names = [name.replace("\\", "\\\\").replace("'", "\\'") for name in batch]
         names_list = "','".join(escaped_names)
 
-        query = f"SELECT Id, Name FROM ADM_Epic__c WHERE Name IN ('{names_list}')"
+        query = f"SELECT Id, Name, Planned_Release__r.Name FROM ADM_Epic__c WHERE Name IN ('{names_list}')"
 
         try:
             result = subprocess.run(
@@ -298,22 +298,30 @@ def enrich_with_epic_ids(structured_data):
             records = data.get('result', {}).get('records', [])
 
             for record in records:
-                epic_id_map[record['Name']] = record['Id']
+                epic_data_map[record['Name']] = {
+                    'id': record['Id'],
+                    'planned_release': record.get('Planned_Release__r', {}).get('Name', '-') if record.get('Planned_Release__r') else '-'
+                }
 
         except Exception as e:
             print(f"   Warning: Failed to query batch {i//batch_size + 1}: {e}")
             # Continue to next batch instead of failing entirely
             continue
 
-    print(f"   ✓ Found IDs for {len(epic_id_map)} epics")
+    print(f"   ✓ Found data for {len(epic_data_map)} epics")
 
-    # Update epic IDs in structured data
+    # Update epic IDs and planned releases in structured data
+    enriched_count = 0
     for program in structured_data['programs']:
         for project in program['projects']:
             for epic in project['epics']:
                 epic_name = epic['name']
-                if epic_name in epic_id_map:
-                    epic['id'] = epic_id_map[epic_name]
+                if epic_name in epic_data_map:
+                    epic['id'] = epic_data_map[epic_name]['id']
+                    epic['planned_release'] = epic_data_map[epic_name]['planned_release']
+                    enriched_count += 1
+
+    print(f"   ✓ Enriched {enriched_count} epics with planned release data")
 
     return structured_data
 

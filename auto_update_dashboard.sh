@@ -80,6 +80,12 @@ if ! retry_command "/usr/bin/python3 fetch_teams_data.py" "Fetching teams data";
     echo "$(date): Teams fetch failed, continuing with cached data"
 fi
 
+# Analyze hygiene issues (non-critical, can continue without)
+echo "$(date): Analyzing hygiene issues..."
+if ! /usr/bin/python3 analyze_hygiene.py; then
+    echo "$(date): Hygiene analysis failed, continuing with cached data"
+fi
+
 # Note: Phase 0/1 data from Google Sheets requires manual refresh via Claude Code MCP tools
 # To refresh: Ask Claude "Please fetch Phase 0 and Phase 1 data from the Google Sheet"
 # The script fetch_phase0_from_sheets.py requires interactive Claude session with MCP access

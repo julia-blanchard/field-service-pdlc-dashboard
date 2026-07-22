@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 242,
-    "teams_affected": 31,
+    "total_epics_needing_attention": 146,
+    "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
       "missing_scheduled_build": 51,
       "missing_priority": 103,
       "missing_owner": 0,
       "blocked_no_comments": 3,
-      "missing_planned_release": 242
+      "missing_planned_release": 65
     }
   },
   "epics": [
@@ -44,8 +44,7 @@
       "portfolio": "264 Field Service Foundations",
       "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -62,8 +61,7 @@
       "portfolio": "264 Field Service Foundations",
       "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -80,8 +78,7 @@
       "portfolio": "264 Field Service Foundations",
       "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -98,8 +95,7 @@
       "portfolio": "264 Field Service Foundations",
       "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -116,8 +112,7 @@
       "portfolio": "264 Field Service Foundations",
       "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -134,8 +129,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 SFS Quality Enablement",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -153,8 +147,7 @@
       "project": "264 SFS Quality Enablement",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -172,8 +165,7 @@
       "project": "264 SFS Quality Enablement",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -190,8 +182,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 SFS Quality Enablement",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -208,8 +199,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 SFS Quality Enablement",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -226,8 +216,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 SFS Quality Enablement",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -244,8 +233,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 SFS Quality Enablement",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -262,8 +250,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 AGX",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -280,8 +267,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 AGX",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -298,8 +284,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 AGX",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -316,8 +301,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 AGX",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -334,8 +318,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Data Capture Enhancements",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -352,25 +335,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Data Capture Enhancements",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000001qDrp2AE",
-      "epic_name": "264 [Core] Enable PSS Data Hierarchy for Performance Priming",
-      "epic_name_key": "264 [Core] Enable PSS Data Hierarchy for Performance Priming",
-      "team": "SFS Mobile Services",
-      "owner": "Aditya Maniar",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "3",
-      "story_points": 0,
-      "program": "264 Field Service: Workforce Scheduling on Mobile",
-      "portfolio": "264 Field Service Mobile",
-      "project": "264 Performance Priming Enhancements",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -387,8 +352,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Pre-Work Brief Template",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -405,8 +369,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Push Notification Enhancements",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -424,8 +387,7 @@
       "project": "264 Push Notification Enhancements",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -460,8 +422,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Push Notification Enhancements",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -478,8 +439,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Push Notification Enhancements",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -497,8 +457,7 @@
       "project": "264 Schedule List Flexibility",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -516,8 +475,7 @@
       "project": "264 Schedule List Flexibility",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -535,8 +493,7 @@
       "project": "264 Service Document Enhancements",
       "issues": [
         "missing_priority",
-        "blocked_no_comments",
-        "missing_planned_release"
+        "blocked_no_comments"
       ]
     },
     {
@@ -554,8 +511,7 @@
       "project": "264 Service Document Enhancements",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -572,8 +528,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -608,8 +563,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -644,8 +598,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -662,8 +615,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -680,8 +632,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -698,8 +649,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -716,8 +666,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -752,8 +701,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -770,8 +718,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 KONE: Phase 1",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -788,8 +735,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 KONE: Phase 1",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -806,8 +752,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 KONE: Phase 1",
       "issues": [
-        "missing_scheduled_build",
-        "missing_planned_release"
+        "missing_scheduled_build"
       ]
     },
     {
@@ -824,8 +769,7 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Customer Enhancements",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -843,8 +787,7 @@
       "project": "264 Customer Enhancements",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -867,40 +810,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002JR3N2AW",
-      "epic_name": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
-      "epic_name_key": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Shay Gozansky",
-      "health": "On Track",
-      "scheduled_build": "262.8",
-      "priority": "15",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K1Zt2AK",
-      "epic_name": "[264] SFS Orcas General trust",
-      "epic_name_key": "[264] SFS Orcas General trust",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Shay Gozansky",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "5",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002LcIr2AK",
       "epic_name": "[264][SFS][LS] Send error back to service if fetching a file fails",
       "epic_name_key": "[264][SFS][LS] Send error back to service if fetching a file fails",
@@ -914,8 +823,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Application Production Support",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -932,93 +840,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Application Production Support",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002MN6T2AW",
-      "epic_name": "[264] SFS [AF] [Trust] Adoption",
-      "epic_name_key": "[264] SFS [AF] [Trust] Adoption",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "48",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKhZ2AW",
-      "epic_name": "[264] SFS [ESO] [TRUST] Serivce Support",
-      "epic_name_key": "[264] SFS [ESO] [TRUST] Serivce Support",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "1",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKjB2AW",
-      "epic_name": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
-      "epic_name_key": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "30",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKcj2AG",
-      "epic_name": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
-      "epic_name_key": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "5",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K1I92AK",
-      "epic_name": "* [264][Trust][Scheduling Intelligence]",
-      "epic_name_key": "* [264][Trust][Scheduling Intelligence]",
-      "team": "FSL - Resource - Scheduling Intelligence",
-      "owner": "Yonatan Bar-Yehuda",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "1",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1035,195 +857,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Application Production Support",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JoZR2A0",
-      "epic_name": "*[8.3.1][264] Hackathon/Demo Days",
-      "epic_name_key": "*[8.3.1][264] Hackathon/Demo Days",
-      "team": "MomentumForce",
-      "owner": "Bhuvnesh Mehra",
-      "health": "Not Started",
-      "scheduled_build": "264",
-      "priority": "590",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GRKr2AO",
-      "epic_name": "* 264 SFS [Trust] - On call duty",
-      "epic_name_key": "* 264 SFS [Trust] - On call duty",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Orelie Fridler",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "10",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GRW92AO",
-      "epic_name": "* 264 SFS [Trust] - Patch and Merge",
-      "epic_name_key": "* 264 SFS [Trust] - Patch and Merge",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Lev Gorelik",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "15",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Application Production Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GRUX2A4",
-      "epic_name": "* 264 SFS [Trust] - Zero Incidents initiative",
-      "epic_name_key": "* 264 SFS [Trust] - Zero Incidents initiative",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Ohad Barak",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "25",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Availability",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JoXp2AK",
-      "epic_name": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
-      "epic_name_key": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
-      "team": "MomentumForce",
-      "owner": "Bhuvnesh Mehra",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "280",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K0ab2AC",
-      "epic_name": "* [1.16.5][264][PBS] Daily On-Call Support",
-      "epic_name_key": "* [1.16.5][264][PBS] Daily On-Call Support",
-      "team": "MomentumForce",
-      "owner": "Bhuvnesh Mehra",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "540",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K0dp2AC",
-      "epic_name": "* [1.16.5][264][PBS] Infrastructure Maintenance",
-      "epic_name_key": "* [1.16.5][264][PBS] Infrastructure Maintenance",
-      "team": "MomentumForce",
-      "owner": "Bhuvnesh Mehra",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "120",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Jocf2AC",
-      "epic_name": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
-      "epic_name_key": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
-      "team": "MomentumForce",
-      "owner": "Bhuvnesh Mehra",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "100",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Job32AC",
-      "epic_name": "* [1.16.5][264][SFS] Daily On-Call Support",
-      "epic_name_key": "* [1.16.5][264][SFS] Daily On-Call Support",
-      "team": "MomentumForce",
-      "owner": "Bhuvnesh Mehra",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "600",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GRZN2A4",
-      "epic_name": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
-      "epic_name_key": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Ohad Barak",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "20",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GRMT2A4",
-      "epic_name": "* 264 SFS [Trust] - Technical Debt",
-      "epic_name_key": "* 264 SFS [Trust] - Technical Debt",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Orelie Fridler",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "45",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Modernize and Simplify the Technology Stack",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1240,76 +874,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Observability",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JoUb2AK",
-      "epic_name": "*[1.16.11][264] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
-      "epic_name_key": "*[1.16.11][264] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
-      "team": "MomentumForce",
-      "owner": "Bhuvnesh Mehra",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "690",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Security and Compliance",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002KIin2AG",
-      "epic_name": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q1 & Q2 QAR",
-      "epic_name_key": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q1 & Q2 QAR",
-      "team": "MomentumForce",
-      "owner": "Navneet Gehlot",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "190",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Security and Compliance",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002KIxJ2AW",
-      "epic_name": "* [8.9.8] [264] [FSE][FSL][V8]-CTS LRP Epic",
-      "epic_name_key": "* [8.9.8] [264] [FSE][FSL][V8]-CTS LRP Epic",
-      "team": "MomentumForce",
-      "owner": "Navneet Gehlot",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "620",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Security and Compliance",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GRO52AO",
-      "epic_name": "* 264 SFS [Trust] - Vulnerability issues",
-      "epic_name_key": "* 264 SFS [Trust] - Vulnerability issues",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Orelie Fridler",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "5",
-      "story_points": 0,
-      "program": "FS 264: S&O Trust",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O Trust: Security and Compliance",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1364,23 +929,6 @@
       "project": "FS 264: S&O: Bundled Work",
       "issues": [
         "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKeL2AW",
-      "epic_name": "[264] SFS [TRUST] DC2 UI custom actions",
-      "epic_name_key": "[264] SFS [TRUST] DC2 UI custom actions",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Completed",
-      "scheduled_build": "262.8",
-      "priority": "4",
-      "story_points": 0,
-      "program": "FS 264: S&O: The New Scheduling Console",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Custom Actions",
-      "issues": [
         "missing_planned_release"
       ]
     },
@@ -1615,8 +1163,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O: Multi-Stage Work",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1633,42 +1180,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O: Run RSO as Simulation",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GVOT2A4",
-      "epic_name": "264 SFS Customer Success - AB/TI multi-day appointments - 1 month horizon",
-      "epic_name_key": "264 SFS Customer Success - AB/TI multi-day appointments - 1 month horizon",
-      "team": "Optimization Engineering",
-      "owner": "Dori Nahmias",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "20",
-      "story_points": 0,
-      "program": "FS 264: S&O: S&O Customer Success",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002TmmT2AS",
-      "epic_name": "264 SFS Customer Success - AB/TI multi-day appointments - 3 month horizon",
-      "epic_name_key": "264 SFS Customer Success - AB/TI multi-day appointments - 3 month horizon",
-      "team": "Optimization Engineering",
-      "owner": "Mor Cohen",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "20",
-      "story_points": 0,
-      "program": "FS 264: S&O: S&O Customer Success",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1685,42 +1197,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002NBmQ2AW",
-      "epic_name": "264 SFS Customer Success - MDW for BGO (Vestas)",
-      "epic_name_key": "264 SFS Customer Success - MDW for BGO (Vestas)",
-      "team": "Optimization Engineering",
-      "owner": "Mor Cohen",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "60",
-      "story_points": 0,
-      "program": "FS 264: S&O: S&O Customer Success",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GSon2AG",
-      "epic_name": "[264] SFS [AF] Agentforce Scheduling Outreach",
-      "epic_name_key": "[264] SFS [AF] Agentforce Scheduling Outreach",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Niv Garber",
-      "health": "On Track",
-      "scheduled_build": "262.11",
-      "priority": "20",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1737,8 +1214,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1756,25 +1232,7 @@
       "project": "FS 264: S&O: Agentforce Email (Inbound + Outbound)",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GQlN2AW",
-      "epic_name": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
-      "epic_name_key": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Sigal Shapira",
-      "health": "On Track",
-      "scheduled_build": "262.13",
-      "priority": "25",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - Day of service notification",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -1792,74 +1250,6 @@
       "project": "FS 264: S&O: Agentforce Scheduling - Fill Gaps",
       "issues": [
         "missing_scheduled_build",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKZV2A4",
-      "epic_name": "[264] SFS [AF] Guest user legacy",
-      "epic_name_key": "[264] SFS [AF] Guest user legacy",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Completed",
-      "scheduled_build": "262.8",
-      "priority": "8",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - Legacy Agents (Guest & Employee & Voice)",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Qf1Z2AS",
-      "epic_name": "[264] SFS [AF] - SFS Agentforce legacy Voice blueprint",
-      "epic_name_key": "[264] SFS [AF] - SFS Agentforce legacy Voice blueprint",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Completed",
-      "scheduled_build": "262.11",
-      "priority": "9",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - Legacy Agents (Guest & Employee & Voice)",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002MN1d2AG",
-      "epic_name": "[264] SFS [AF] [TRUST] Employee migration to agent script",
-      "epic_name_key": "[264] SFS [AF] [TRUST] Employee migration to agent script",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Unknown",
-      "scheduled_build": "262.11",
-      "priority": "25",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - NGA Agents (Guest & Employee & Voice)",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKb72AG",
-      "epic_name": "[264] SFS [AF] NGA Guest",
-      "epic_name_key": "[264] SFS [AF] NGA Guest",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Completed",
-      "scheduled_build": "262.10",
-      "priority": "11",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - NGA Agents (Guest & Employee & Voice)",
-      "issues": [
         "missing_planned_release"
       ]
     },
@@ -1882,40 +1272,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002GKHl2AO",
-      "epic_name": "[264] SFS [AF] Transparency - Core Logic",
-      "epic_name_key": "[264] SFS [AF] Transparency - Core Logic",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Sigal Shapira",
-      "health": "On Track",
-      "scheduled_build": "264.patch",
-      "priority": "15",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GQVF2A4",
-      "epic_name": "[264] SFS [AF] Transparency - Engine",
-      "epic_name_key": "[264] SFS [AF] Transparency - Engine",
-      "team": "Optimization Engineering",
-      "owner": "Sigal Shapira",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "20",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002GLFR2A4",
       "epic_name": "[264] SFS [AF] Transparency - O2 Service",
       "epic_name_key": "[264] SFS [AF] Transparency - O2 Service",
@@ -1929,42 +1285,7 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GSqP2AW",
-      "epic_name": "[264] SFS Unified Scheduling Agent",
-      "epic_name_key": "[264] SFS Unified Scheduling Agent",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Niv Garber",
-      "health": "On Track",
-      "scheduled_build": "264.patch",
-      "priority": "40",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - Unified Experience",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002N3th2AC",
-      "epic_name": "[264] SFS Unified Scheduling Agent HLD",
-      "epic_name_key": "[264] SFS Unified Scheduling Agent HLD",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Shay Gozansky",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "30",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Scheduling - Unified Experience",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2004,40 +1325,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002MNBJ2A4",
-      "epic_name": "[264] SFS [AF] - SFS Agentforce Voice - Inbound",
-      "epic_name_key": "[264] SFS [AF] - SFS Agentforce Voice - Inbound",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "On Track",
-      "scheduled_build": "262.11",
-      "priority": "10",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Voice (Inbound + Outbound)",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002PHhF2AW",
-      "epic_name": "[264] SFS [AF] - SFS Agentforce Voice -  Outbound",
-      "epic_name_key": "[264] SFS [AF] - SFS Agentforce Voice -  Outbound",
-      "team": "FSL - Foundation - Corecodiles",
-      "owner": "Avi Inbar",
-      "health": "Not Started",
-      "scheduled_build": "264",
-      "priority": "32",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Voice (Inbound + Outbound)",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002GT052AG",
       "epic_name": "Voice-Enabled Natural Field Service Agent - Inbound",
       "epic_name_key": "Voice-Enabled Natural Field Service Agent - Inbound",
@@ -2052,25 +1339,7 @@
       "project": "FS 264: S&O: Agentforce Voice (Inbound + Outbound)",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002ObYL2A0",
-      "epic_name": "[264] SFS [AF] SPIKE - New Workspace ADX",
-      "epic_name_key": "[264] SFS [AF] SPIKE - New Workspace ADX",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Shay Gozansky",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "16",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: New Workspace ADX",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2142,8 +1411,7 @@
       "project": "264 Scheduling Flows",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2161,8 +1429,7 @@
       "project": "264 Scheduling Flows",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2180,8 +1447,7 @@
       "project": "264 Scheduling Flows",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2199,8 +1465,7 @@
       "project": "264 Scheduling Flows",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2218,8 +1483,7 @@
       "project": "264 Scheduling Flows",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2236,8 +1500,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2254,8 +1517,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2272,8 +1534,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2290,8 +1551,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2308,8 +1568,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2326,8 +1585,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2344,8 +1602,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2363,8 +1620,7 @@
       "project": "264 Operations Console",
       "issues": [
         "missing_priority",
-        "blocked_no_comments",
-        "missing_planned_release"
+        "blocked_no_comments"
       ]
     },
     {
@@ -2381,8 +1637,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2399,8 +1654,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2417,8 +1671,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2454,59 +1707,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Operations Console",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002HMqz2AG",
-      "epic_name": "Release 264: PSS-FS: Operations Console - List View",
-      "epic_name_key": "Release 264: PSS-FS: Operations Console - List View",
-      "team": "Missionforce-Samurais",
-      "owner": "Hemal Thakkar",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "2",
-      "story_points": 0,
-      "program": "264 Operations Console",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Operations Console",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Q9hd2AC",
-      "epic_name": "Release 264: PSS-FS: Operations Console - Map View",
-      "epic_name_key": "Release 264: PSS-FS: Operations Console - Map View",
-      "team": "Missionforce-Samurais",
-      "owner": "Hemal Thakkar",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "2",
-      "story_points": 0,
-      "program": "264 Operations Console",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Operations Console",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002VCLV2A4",
-      "epic_name": "Release 264: PSS-FS: Operations Console - RSO Activity Tracker",
-      "epic_name_key": "Release 264: PSS-FS: Operations Console - RSO Activity Tracker",
-      "team": "Missionforce-Samurais",
-      "owner": "Hemal Thakkar",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "2",
-      "story_points": 0,
-      "program": "264 Operations Console",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Operations Console",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2523,8 +1724,7 @@
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Onsite Scheduling",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2542,8 +1742,7 @@
       "project": "264 Onsite Scheduling",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2561,8 +1760,7 @@
       "project": "264 Infield & Onsite Hybrid",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2580,8 +1778,7 @@
       "project": "264 Infield & Onsite Hybrid",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2599,8 +1796,7 @@
       "project": "264 Infield & Onsite Hybrid",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2618,8 +1814,7 @@
       "project": "264 Infield & Onsite Hybrid",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2637,8 +1832,7 @@
       "project": "264 Infield & Onsite Hybrid",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2656,25 +1850,7 @@
       "project": "264 Infield & Onsite Hybrid",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K7Yr2AK",
-      "epic_name": "264 SFS [Unified Scheduling] - Setting setup - Unified Integration",
-      "epic_name_key": "264 SFS [Unified Scheduling] - Setting setup - Unified Integration",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "11",
-      "story_points": 0,
-      "program": "264 Infield & Onsite Hybrid",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield & Onsite Hybrid",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2697,91 +1873,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002K7NZ2A0",
-      "epic_name": "264 SFS [Unified Scheduling] - Cancel and Unschedule API Integration",
-      "epic_name_key": "264 SFS [Unified Scheduling] - Cancel and Unschedule API Integration",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "7",
-      "story_points": 0,
-      "program": "264 Infield",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K7H72AK",
-      "epic_name": "264 SFS [Unified Scheduling] - Check Rules Unified API Integration",
-      "epic_name_key": "264 SFS [Unified Scheduling] - Check Rules Unified API Integration",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "6",
-      "story_points": 0,
-      "program": "264 Infield",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K7KL2A0",
-      "epic_name": "264 SFS [Unified Scheduling] - D&D Unified Integration",
-      "epic_name_key": "264 SFS [Unified Scheduling] - D&D Unified Integration",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "4",
-      "story_points": 0,
-      "program": "264 Infield",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K7SP2A0",
-      "epic_name": "264 SFS [Unified Scheduling] - Get Candidates and Appointment Booking In-Memory",
-      "epic_name_key": "264 SFS [Unified Scheduling] - Get Candidates and Appointment Booking In-Memory",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "2",
-      "story_points": 0,
-      "program": "264 Infield",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002W3hZ2AS",
-      "epic_name": "264 SFS [Unified Scheduling] - In Field Licensing",
-      "epic_name_key": "264 SFS [Unified Scheduling] - In Field Licensing",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Siddharth Mathur",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "7",
-      "story_points": 0,
-      "program": "264 Infield",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002Wsov2AC",
       "epic_name": "264 SFS [Unified Scheduling] - MP2Core Unified Enhancements",
       "epic_name_key": "264 SFS [Unified Scheduling] - MP2Core Unified Enhancements",
@@ -2790,40 +1881,6 @@
       "health": "On Track",
       "scheduled_build": "264",
       "priority": "8",
-      "story_points": 0,
-      "program": "264 Infield",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K7Vd2AK",
-      "epic_name": "264 SFS [Unified Scheduling] - MP2Core Unified Infrastructure Enhancements",
-      "epic_name_key": "264 SFS [Unified Scheduling] - MP2Core Unified Infrastructure Enhancements",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "8",
-      "story_points": 0,
-      "program": "264 Infield",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Infield",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002K7Ij2AK",
-      "epic_name": "264 SFS [Unified Scheduling] - Optimization Unified API Integration",
-      "epic_name_key": "264 SFS [Unified Scheduling] - Optimization Unified API Integration",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "3",
       "story_points": 0,
       "program": "264 Infield",
       "portfolio": "264 Field Service Workforce Scheduling",
@@ -2846,76 +1903,7 @@
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] Mobile Worker Experience",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE00000292r32AA",
-      "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management",
-      "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management",
-      "team": "SFS - WFM - Worker - Experience",
-      "owner": "Carla Ferreira",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "5",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] Mobile Worker Experience",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Ria52AC",
-      "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management - July Release",
-      "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management - July Release",
-      "team": "SFS - WFM - Worker - Experience",
-      "owner": "Vinay Bayya",
-      "health": "Not Started",
-      "scheduled_build": "262.12",
-      "priority": "5",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] Mobile Worker Experience",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002PdRd2AK",
-      "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management - June Release",
-      "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management - June Release",
-      "team": "SFS - WFM - Worker - Experience",
-      "owner": "Vinay Bayya",
-      "health": "Completed",
-      "scheduled_build": "262.9",
-      "priority": "5",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] Mobile Worker Experience",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002N0xR2AS",
-      "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management - May Release",
-      "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management - May Release",
-      "team": "SFS - WFM - Worker - Experience",
-      "owner": "Carla Ferreira",
-      "health": "Completed",
-      "scheduled_build": "262.4",
-      "priority": "5",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] Mobile Worker Experience",
-      "issues": [
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -2987,23 +1975,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE0000022PPN2A2",
-      "epic_name": "264 UWM Worker Engagement Experience: Notifications",
-      "epic_name_key": "264 UWM Worker Engagement Experience: Notifications",
-      "team": "SFS - WFM - Worker - Experience",
-      "owner": "Sindhubala Ulavapalli",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "52",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] Mobile Worker Experience",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002LGrp2AG",
       "epic_name": "264 UWM Worker Engagement Experience: Slack Native Experience",
       "epic_name_key": "264 UWM Worker Engagement Experience: Slack Native Experience",
@@ -3017,8 +1988,7 @@
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] Mobile Worker Experience",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -3035,8 +2005,7 @@
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] Mobile Worker Experience",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -3160,8 +2129,7 @@
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] SFS Schedule Management",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -3408,227 +2376,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002QWEP2A4",
-      "epic_name": "[264] [UWM] [DC] Aggregation of Workloads in Data Cloud",
-      "epic_name_key": "[264] [UWM] [DC] Aggregation of Workloads in Data Cloud",
-      "team": "Team-WFM-Foundation",
-      "owner": "Taniya Ghosh",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "52",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002VurB2AS",
-      "epic_name": "[264] [UWM] [DC] Move Historic Work on Data Cloud",
-      "epic_name_key": "[264] [UWM] [DC] Move Historic Work on Data Cloud",
-      "team": "Team-WFM-Foundation",
-      "owner": "Bata Chadraa",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "53",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002OZMr2AO",
-      "epic_name": "[264][UWM][Stretch] - UWM Intraday",
-      "epic_name_key": "[264][UWM][Stretch] - UWM Intraday",
-      "team": "Team-WFM-Foundation",
-      "owner": "Bata Chadraa",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "51",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Ij5Z2AS",
-      "epic_name": "264 - 15/30 min Interval Support",
-      "epic_name_key": "264 - 15/30 min Interval Support",
-      "team": "Team-WFM-Foundation",
-      "owner": "Lavanya Piramanayagam",
-      "health": "Not Started",
-      "scheduled_build": "264",
-      "priority": "50",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002P6dl2AC",
-      "epic_name": "264 - Advanced Planning",
-      "epic_name_key": "264 - Advanced Planning",
-      "team": "Team-WFM-Foundation",
-      "owner": "Vartika Vaish",
-      "health": "Unknown",
-      "scheduled_build": "264",
-      "priority": "50",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002ISUX2A4",
-      "epic_name": "264 Omni-Widget Activities",
-      "epic_name_key": "264 Omni-Widget Activities",
-      "team": "Team-WFM-Foundation",
-      "owner": "Mike Cliffe",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "3",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002ISO52AO",
-      "epic_name": "264 Real-Time Adherence",
-      "epic_name_key": "264 Real-Time Adherence",
-      "team": "Team-WFM-Foundation",
-      "owner": "Mike Cliffe",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "4",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000001ySSH2A2",
-      "epic_name": "264 UWM - UWM Intraday",
-      "epic_name_key": "264 UWM - UWM Intraday",
-      "team": "Team-WFM-Foundation",
-      "owner": "Jenny(Wei-Chen) Wang",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "6",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002ISW92AO",
-      "epic_name": "264 WFM & MWM Setup in Salesforce Go",
-      "epic_name_key": "264 WFM & MWM Setup in Salesforce Go",
-      "team": "Team-WFM-Foundation",
-      "owner": "Mike Cliffe",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "5",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Foundations",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002NCKH2A4",
-      "epic_name": "[264] UWM S&O Engine: Multi-breaks",
-      "epic_name_key": "[264] UWM S&O Engine: Multi-breaks",
-      "team": "Optimization Engineering",
-      "owner": "Itay Sagiv",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "40",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Optimization Engineering",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002NDOP2A4",
-      "epic_name": "[264] UWM S&O Engine: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-      "epic_name_key": "[264] UWM S&O Engine: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-      "team": "Optimization Engineering",
-      "owner": "Itay Sagiv",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "55",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Optimization Engineering",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002NCH32AO",
-      "epic_name": "[264] UWM S&O Engine: Shift constraints",
-      "epic_name_key": "[264] UWM S&O Engine: Shift constraints",
-      "team": "Optimization Engineering",
-      "owner": "Itay Sagiv",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "20",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Optimization Engineering",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002NCIf2AO",
-      "epic_name": "[264] UWM S&O Engine: Shift Creation+Assignment Optimization (Fixed Templates)",
-      "epic_name_key": "[264] UWM S&O Engine: Shift Creation+Assignment Optimization (Fixed Templates)",
-      "team": "Optimization Engineering",
-      "owner": "Itay Sagiv",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "30",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Optimization Engineering",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002V4xR2AS",
       "epic_name": "[266] UWM S&O Engine: Shift-Gap Estimate (Unassigned Resource)",
       "epic_name_key": "[266] UWM S&O Engine: Shift-Gap Estimate (Unassigned Resource)",
@@ -3647,23 +2394,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002MpVl2AK",
-      "epic_name": "264 SFS [Infra] WEM Project",
-      "epic_name_key": "264 SFS [Infra] WEM Project",
-      "team": "Optimization Engineering",
-      "owner": "Josh Honeycutt",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "20",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Optimization Engineering",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002BlIb2AK",
       "epic_name": "[262] UWM S&O M1: High-Performance GetCandidate & Bulk Optimization",
       "epic_name_key": "[262] UWM S&O M1: High-Performance GetCandidate & Bulk Optimization",
@@ -3677,8 +2407,7 @@
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] UWM S&O",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
+        "missing_priority"
       ]
     },
     {
@@ -3720,295 +2449,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002GKPp2AO",
-      "epic_name": "[264] [ATL] UWM S&O Service: Multi-breaks and break rules",
-      "epic_name_key": "[264] [ATL] UWM S&O Service: Multi-breaks and break rules",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "40",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKKz2AO",
-      "epic_name": "[264] [ATL] UWM S&O Service: New Rules & Objectives & Shift constraints",
-      "epic_name_key": "[264] [ATL] UWM S&O Service: New Rules & Objectives & Shift constraints",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "20",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKMb2AO",
-      "epic_name": "[264] [BTL] UWM S&O Service: Check rules API",
-      "epic_name_key": "[264] [BTL] UWM S&O Service: Check rules API",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "Not Started",
-      "scheduled_build": "266",
-      "priority": "70",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKOD2A4",
-      "epic_name": "[264] [BTL] UWM S&O Service: Single & Bulk shift assignment",
-      "epic_name_key": "[264] [BTL] UWM S&O Service: Single & Bulk shift assignment",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "Not Started",
-      "scheduled_build": "266",
-      "priority": "80",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002NCLt2AO",
-      "epic_name": "[264] UWM S&O Engine: 15m intervals",
-      "epic_name_key": "[264] UWM S&O Engine: 15m intervals",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "50",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002NDJZ2A4",
-      "epic_name": "[264] UWM S&O Service: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-      "epic_name_key": "[264] UWM S&O Service: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "55",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKRR2A4",
-      "epic_name": "[264] UWM S&O Service: Shift assignment optimization",
-      "epic_name_key": "[264] UWM S&O Service: Shift assignment optimization",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "60",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002GKUf2AO",
-      "epic_name": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Dynamic Template)",
-      "epic_name_key": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Dynamic Template)",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Itay Sagiv",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "90",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002N3yX2AS",
-      "epic_name": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Fixed Templates)",
-      "epic_name_key": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Fixed Templates)",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Eviatar Yosef",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "30",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002V4nl2AC",
-      "epic_name": "[264] UWM S&O Service: Technical Debt",
-      "epic_name_key": "[264] UWM S&O Service: Technical Debt",
-      "team": "FSL - Resource - Scheduling Hawks",
-      "owner": "Eviatar Yosef",
-      "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "100",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Scheduling-Hawks",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002TAUH2A4",
-      "epic_name": "[264] [PFT] Telemetry for Capacity Planning",
-      "epic_name_key": "[264] [PFT] Telemetry for Capacity Planning",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Ruchika Pashine",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "8",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002QWHd2AO",
-      "epic_name": "[264] [UWM] [DC] Capacity Planning in Data Cloud",
-      "epic_name_key": "[264] [UWM] [DC] Capacity Planning in Data Cloud",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Taniya Ghosh",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "53",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Mkvt2AC",
-      "epic_name": "15/30 min interval support for Capacity Plan",
-      "epic_name_key": "15/30 min interval support for Capacity Plan",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Ruchika Pashine",
-      "health": "Not Started",
-      "scheduled_build": "264",
-      "priority": "51",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Jt9J2AS",
-      "epic_name": "Calculate Capacity Plan for Skill Based Flow and include channel dimension.",
-      "epic_name_key": "Calculate Capacity Plan for Skill Based Flow and include channel dimension.",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Ruchika Pashine",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "4",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JlEz2AK",
-      "epic_name": "Multi Dimensional support during CP creation",
-      "epic_name_key": "Multi Dimensional support during CP creation",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Ruchika Pashine",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "1",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Jsef2AC",
-      "epic_name": "Revamp Capacity plan detail to include channel and support for Skill calculation",
-      "epic_name_key": "Revamp Capacity plan detail to include channel and support for Skill calculation",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Ruchika Pashine",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "3",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JldB2AS",
-      "epic_name": "Skill Group to Job Profile Translation",
-      "epic_name_key": "Skill Group to Job Profile Translation",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Ruchika Pashine",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "2",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002PYa12AG",
       "epic_name": "Trust Work for Capacity Planning Team",
       "epic_name_key": "Trust Work for Capacity Planning Team",
@@ -4021,23 +2461,6 @@
       "program": "[264] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] WFM Capacity Planning",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002QWG12AO",
-      "epic_name": "[264] [UWM] [DC] Forecasting in Data Cloud",
-      "epic_name_key": "[264] [UWM] [DC] Forecasting in Data Cloud",
-      "team": "Team-WFM-ML-Foundations",
-      "owner": "Taniya Ghosh",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "52",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM-ML-Foundations",
       "issues": [
         "missing_planned_release"
       ]
@@ -4146,142 +2569,6 @@
         "missing_priority",
         "missing_planned_release"
       ]
-    },
-    {
-      "epic_id": "a3QEE000002Kl012AC",
-      "epic_name": "[264] 15 & 30-Minute Interval Support",
-      "epic_name_key": "[264] 15 & 30-Minute Interval Support",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "Not Started",
-      "scheduled_build": "264",
-      "priority": "100",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Jd1J2AS",
-      "epic_name": "[264] Auto Creation of Skill Groups",
-      "epic_name_key": "[264] Auto Creation of Skill Groups",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "3",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Jx3F2AS",
-      "epic_name": "[264] Display Forecast Accuracy",
-      "epic_name_key": "[264] Display Forecast Accuracy",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "Not Started",
-      "scheduled_build": "264",
-      "priority": "50",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002L0Th2AK",
-      "epic_name": "[264] Enhanced Forecast Creation - Omni Queues/Skills + Channels, FS, and MWM",
-      "epic_name_key": "[264] Enhanced Forecast Creation - Omni Queues/Skills + Channels, FS, and MWM",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "6",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Jmvp2AC",
-      "epic_name": "[264] Enhanced Workload Creation - Omni Queues/Skills + Channels, FS, and MWM",
-      "epic_name_key": "[264] Enhanced Workload Creation - Omni Queues/Skills + Channels, FS, and MWM",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "5",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Jwoj2AC",
-      "epic_name": "[264] Forecasting - Moirai Integration Support and Enhanced Workloads Support",
-      "epic_name_key": "[264] Forecasting - Moirai Integration Support and Enhanced Workloads Support",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "1",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JmFt2AK",
-      "epic_name": "[264] List View of Skill Groups",
-      "epic_name_key": "[264] List View of Skill Groups",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "2",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JdCb2AK",
-      "epic_name": "[264] Manually Add/Edit/Delete Skill Group",
-      "epic_name_key": "[264] Manually Add/Edit/Delete Skill Group",
-      "team": "Team-WFM-Workloads-Forecasting",
-      "owner": "VARSHA CHALAMALASETTY",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "4",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_planned_release"
-      ]
     }
   ],
   "by_team": [
@@ -4348,8 +2635,7 @@
           "project": "264 Scheduling Flows",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4367,8 +2653,7 @@
           "project": "264 Scheduling Flows",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4386,8 +2671,7 @@
           "project": "264 Scheduling Flows",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4405,8 +2689,7 @@
           "project": "264 Scheduling Flows",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4424,8 +2707,7 @@
           "project": "264 Scheduling Flows",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
@@ -4508,8 +2790,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Onsite Scheduling",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4527,8 +2808,7 @@
           "project": "264 Onsite Scheduling",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4546,8 +2826,7 @@
           "project": "264 Infield & Onsite Hybrid",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4565,8 +2844,7 @@
           "project": "264 Infield & Onsite Hybrid",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4584,8 +2862,7 @@
           "project": "264 Infield & Onsite Hybrid",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4603,8 +2880,7 @@
           "project": "264 Infield & Onsite Hybrid",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4622,8 +2898,7 @@
           "project": "264 Infield & Onsite Hybrid",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4641,8 +2916,7 @@
           "project": "264 Infield & Onsite Hybrid",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
@@ -4665,8 +2939,7 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] SFS Schedule Management",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -4916,93 +3189,8 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 13,
+      "epic_count": 1,
       "epics": [
-        {
-          "epic_id": "a3QEE000002MN6T2AW",
-          "epic_name": "[264] SFS [AF] [Trust] Adoption",
-          "epic_name_key": "[264] SFS [AF] [Trust] Adoption",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "48",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKhZ2AW",
-          "epic_name": "[264] SFS [ESO] [TRUST] Serivce Support",
-          "epic_name_key": "[264] SFS [ESO] [TRUST] Serivce Support",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "1",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKjB2AW",
-          "epic_name": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
-          "epic_name_key": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "30",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKcj2AG",
-          "epic_name": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
-          "epic_name_key": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "5",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKeL2AW",
-          "epic_name": "[264] SFS [TRUST] DC2 UI custom actions",
-          "epic_name_key": "[264] SFS [TRUST] DC2 UI custom actions",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Completed",
-          "scheduled_build": "262.8",
-          "priority": "4",
-          "story_points": 0,
-          "program": "FS 264: S&O: The New Scheduling Console",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Custom Actions",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
         {
           "epic_id": "a3QEE000002GSNN2A4",
           "epic_name": "[264] SFS [AF] Agentforce scheduling  - Fill Gaps (Stretch Demo)",
@@ -5018,125 +3206,6 @@
           "project": "FS 264: S&O: Agentforce Scheduling - Fill Gaps",
           "issues": [
             "missing_scheduled_build",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKZV2A4",
-          "epic_name": "[264] SFS [AF] Guest user legacy",
-          "epic_name_key": "[264] SFS [AF] Guest user legacy",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Completed",
-          "scheduled_build": "262.8",
-          "priority": "8",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - Legacy Agents (Guest & Employee & Voice)",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Qf1Z2AS",
-          "epic_name": "[264] SFS [AF] - SFS Agentforce legacy Voice blueprint",
-          "epic_name_key": "[264] SFS [AF] - SFS Agentforce legacy Voice blueprint",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Completed",
-          "scheduled_build": "262.11",
-          "priority": "9",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - Legacy Agents (Guest & Employee & Voice)",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002MN1d2AG",
-          "epic_name": "[264] SFS [AF] [TRUST] Employee migration to agent script",
-          "epic_name_key": "[264] SFS [AF] [TRUST] Employee migration to agent script",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Unknown",
-          "scheduled_build": "262.11",
-          "priority": "25",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - NGA Agents (Guest & Employee & Voice)",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKb72AG",
-          "epic_name": "[264] SFS [AF] NGA Guest",
-          "epic_name_key": "[264] SFS [AF] NGA Guest",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Completed",
-          "scheduled_build": "262.10",
-          "priority": "11",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - NGA Agents (Guest & Employee & Voice)",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKHl2AO",
-          "epic_name": "[264] SFS [AF] Transparency - Core Logic",
-          "epic_name_key": "[264] SFS [AF] Transparency - Core Logic",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Sigal Shapira",
-          "health": "On Track",
-          "scheduled_build": "264.patch",
-          "priority": "15",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002MNBJ2A4",
-          "epic_name": "[264] SFS [AF] - SFS Agentforce Voice - Inbound",
-          "epic_name_key": "[264] SFS [AF] - SFS Agentforce Voice - Inbound",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "On Track",
-          "scheduled_build": "262.11",
-          "priority": "10",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Voice (Inbound + Outbound)",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002PHhF2AW",
-          "epic_name": "[264] SFS [AF] - SFS Agentforce Voice -  Outbound",
-          "epic_name_key": "[264] SFS [AF] - SFS Agentforce Voice -  Outbound",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Avi Inbar",
-          "health": "Not Started",
-          "scheduled_build": "264",
-          "priority": "32",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Voice (Inbound + Outbound)",
-          "issues": [
             "missing_planned_release"
           ]
         }
@@ -5355,7 +3424,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Hawks",
-      "epic_count": 13,
+      "epic_count": 3,
       "epics": [
         {
           "epic_id": "a3QEE000002GStd2AG",
@@ -5372,8 +3441,7 @@
           "project": "FS 264: S&O: Agentforce Email (Inbound + Outbound)",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5410,185 +3478,14 @@
           "project": "FS 264: S&O: Agentforce Voice (Inbound + Outbound)",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKPp2AO",
-          "epic_name": "[264] [ATL] UWM S&O Service: Multi-breaks and break rules",
-          "epic_name_key": "[264] [ATL] UWM S&O Service: Multi-breaks and break rules",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "40",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKKz2AO",
-          "epic_name": "[264] [ATL] UWM S&O Service: New Rules & Objectives & Shift constraints",
-          "epic_name_key": "[264] [ATL] UWM S&O Service: New Rules & Objectives & Shift constraints",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "20",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKMb2AO",
-          "epic_name": "[264] [BTL] UWM S&O Service: Check rules API",
-          "epic_name_key": "[264] [BTL] UWM S&O Service: Check rules API",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": "70",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKOD2A4",
-          "epic_name": "[264] [BTL] UWM S&O Service: Single & Bulk shift assignment",
-          "epic_name_key": "[264] [BTL] UWM S&O Service: Single & Bulk shift assignment",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": "80",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002NCLt2AO",
-          "epic_name": "[264] UWM S&O Engine: 15m intervals",
-          "epic_name_key": "[264] UWM S&O Engine: 15m intervals",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "50",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002NDJZ2A4",
-          "epic_name": "[264] UWM S&O Service: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-          "epic_name_key": "[264] UWM S&O Service: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "55",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKRR2A4",
-          "epic_name": "[264] UWM S&O Service: Shift assignment optimization",
-          "epic_name_key": "[264] UWM S&O Service: Shift assignment optimization",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "60",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GKUf2AO",
-          "epic_name": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Dynamic Template)",
-          "epic_name_key": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Dynamic Template)",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Itay Sagiv",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "90",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002N3yX2AS",
-          "epic_name": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Fixed Templates)",
-          "epic_name_key": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Fixed Templates)",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Eviatar Yosef",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "30",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002V4nl2AC",
-          "epic_name": "[264] UWM S&O Service: Technical Debt",
-          "epic_name_key": "[264] UWM S&O Service: Technical Debt",
-          "team": "FSL - Resource - Scheduling Hawks",
-          "owner": "Eviatar Yosef",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "100",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Scheduling-Hawks",
-          "issues": [
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
     },
     {
       "name": "FSL - Resource - Scheduling Intelligence",
-      "epic_count": 12,
+      "epic_count": 11,
       "epics": [
         {
           "epic_id": "a3QEE000002LcIr2AK",
@@ -5604,8 +3501,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Application Production Support",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5622,25 +3518,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Application Production Support",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K1I92AK",
-          "epic_name": "* [264][Trust][Scheduling Intelligence]",
-          "epic_name_key": "* [264][Trust][Scheduling Intelligence]",
-          "team": "FSL - Resource - Scheduling Intelligence",
-          "owner": "Yonatan Bar-Yehuda",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "1",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5657,8 +3535,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Application Production Support",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5675,8 +3552,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Observability",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5729,8 +3605,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O: Multi-Stage Work",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5747,8 +3622,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O: Run RSO as Simulation",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5765,8 +3639,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5783,8 +3656,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -5808,110 +3680,8 @@
     },
     {
       "name": "FSL - Resource - Scheduling Orcas",
-      "epic_count": 8,
+      "epic_count": 1,
       "epics": [
-        {
-          "epic_id": "a3QEE000002JR3N2AW",
-          "epic_name": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
-          "epic_name_key": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Shay Gozansky",
-          "health": "On Track",
-          "scheduled_build": "262.8",
-          "priority": "15",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K1Zt2AK",
-          "epic_name": "[264] SFS Orcas General trust",
-          "epic_name_key": "[264] SFS Orcas General trust",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Shay Gozansky",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "5",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GSon2AG",
-          "epic_name": "[264] SFS [AF] Agentforce Scheduling Outreach",
-          "epic_name_key": "[264] SFS [AF] Agentforce Scheduling Outreach",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Niv Garber",
-          "health": "On Track",
-          "scheduled_build": "262.11",
-          "priority": "20",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GQlN2AW",
-          "epic_name": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
-          "epic_name_key": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Sigal Shapira",
-          "health": "On Track",
-          "scheduled_build": "262.13",
-          "priority": "25",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - Day of service notification",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GSqP2AW",
-          "epic_name": "[264] SFS Unified Scheduling Agent",
-          "epic_name_key": "[264] SFS Unified Scheduling Agent",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Niv Garber",
-          "health": "On Track",
-          "scheduled_build": "264.patch",
-          "priority": "40",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - Unified Experience",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002N3th2AC",
-          "epic_name": "[264] SFS Unified Scheduling Agent HLD",
-          "epic_name_key": "[264] SFS Unified Scheduling Agent HLD",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Shay Gozansky",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "30",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - Unified Experience",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
         {
           "epic_id": "a3QEE000002MN9h2AG",
           "epic_name": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
@@ -5925,267 +3695,6 @@
           "program": "FS 264: S&O: Agentic S&O",
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O: Agentforce Setup (Outbound)",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ObYL2A0",
-          "epic_name": "[264] SFS [AF] SPIKE - New Workspace ADX",
-          "epic_name_key": "[264] SFS [AF] SPIKE - New Workspace ADX",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Shay Gozansky",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "16",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: New Workspace ADX",
-          "issues": [
-            "missing_planned_release"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "FSL - Resource - Scheduling Platform",
-      "epic_count": 14,
-      "epics": [
-        {
-          "epic_id": "a3QEE000002GRKr2AO",
-          "epic_name": "* 264 SFS [Trust] - On call duty",
-          "epic_name_key": "* 264 SFS [Trust] - On call duty",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Orelie Fridler",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "10",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GRW92AO",
-          "epic_name": "* 264 SFS [Trust] - Patch and Merge",
-          "epic_name_key": "* 264 SFS [Trust] - Patch and Merge",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Lev Gorelik",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "15",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GRUX2A4",
-          "epic_name": "* 264 SFS [Trust] - Zero Incidents initiative",
-          "epic_name_key": "* 264 SFS [Trust] - Zero Incidents initiative",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Ohad Barak",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "25",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Availability",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GRZN2A4",
-          "epic_name": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
-          "epic_name_key": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Ohad Barak",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "20",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GRMT2A4",
-          "epic_name": "* 264 SFS [Trust] - Technical Debt",
-          "epic_name_key": "* 264 SFS [Trust] - Technical Debt",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Orelie Fridler",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "45",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Modernize and Simplify the Technology Stack",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GRO52AO",
-          "epic_name": "* 264 SFS [Trust] - Vulnerability issues",
-          "epic_name_key": "* 264 SFS [Trust] - Vulnerability issues",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Orelie Fridler",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "5",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Security and Compliance",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K7Yr2AK",
-          "epic_name": "264 SFS [Unified Scheduling] - Setting setup - Unified Integration",
-          "epic_name_key": "264 SFS [Unified Scheduling] - Setting setup - Unified Integration",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "11",
-          "story_points": 0,
-          "program": "264 Infield & Onsite Hybrid",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield & Onsite Hybrid",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K7NZ2A0",
-          "epic_name": "264 SFS [Unified Scheduling] - Cancel and Unschedule API Integration",
-          "epic_name_key": "264 SFS [Unified Scheduling] - Cancel and Unschedule API Integration",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "7",
-          "story_points": 0,
-          "program": "264 Infield",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K7H72AK",
-          "epic_name": "264 SFS [Unified Scheduling] - Check Rules Unified API Integration",
-          "epic_name_key": "264 SFS [Unified Scheduling] - Check Rules Unified API Integration",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "6",
-          "story_points": 0,
-          "program": "264 Infield",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K7KL2A0",
-          "epic_name": "264 SFS [Unified Scheduling] - D&D Unified Integration",
-          "epic_name_key": "264 SFS [Unified Scheduling] - D&D Unified Integration",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "4",
-          "story_points": 0,
-          "program": "264 Infield",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K7SP2A0",
-          "epic_name": "264 SFS [Unified Scheduling] - Get Candidates and Appointment Booking In-Memory",
-          "epic_name_key": "264 SFS [Unified Scheduling] - Get Candidates and Appointment Booking In-Memory",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "2",
-          "story_points": 0,
-          "program": "264 Infield",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002W3hZ2AS",
-          "epic_name": "264 SFS [Unified Scheduling] - In Field Licensing",
-          "epic_name_key": "264 SFS [Unified Scheduling] - In Field Licensing",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Siddharth Mathur",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "7",
-          "story_points": 0,
-          "program": "264 Infield",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K7Vd2AK",
-          "epic_name": "264 SFS [Unified Scheduling] - MP2Core Unified Infrastructure Enhancements",
-          "epic_name_key": "264 SFS [Unified Scheduling] - MP2Core Unified Infrastructure Enhancements",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "8",
-          "story_points": 0,
-          "program": "264 Infield",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K7Ij2AK",
-          "epic_name": "264 SFS [Unified Scheduling] - Optimization Unified API Integration",
-          "epic_name_key": "264 SFS [Unified Scheduling] - Optimization Unified API Integration",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "3",
-          "story_points": 0,
-          "program": "264 Infield",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Infield",
           "issues": [
             "missing_planned_release"
           ]
@@ -6318,8 +3827,7 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -6344,7 +3852,7 @@
     },
     {
       "name": "Missionforce-Samurais",
-      "epic_count": 4,
+      "epic_count": 1,
       "epics": [
         {
           "epic_id": "a3QEE000002MY8L2AW",
@@ -6360,225 +3868,14 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002HMqz2AG",
-          "epic_name": "Release 264: PSS-FS: Operations Console - List View",
-          "epic_name_key": "Release 264: PSS-FS: Operations Console - List View",
-          "team": "Missionforce-Samurais",
-          "owner": "Hemal Thakkar",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "2",
-          "story_points": 0,
-          "program": "264 Operations Console",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Operations Console",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Q9hd2AC",
-          "epic_name": "Release 264: PSS-FS: Operations Console - Map View",
-          "epic_name_key": "Release 264: PSS-FS: Operations Console - Map View",
-          "team": "Missionforce-Samurais",
-          "owner": "Hemal Thakkar",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "2",
-          "story_points": 0,
-          "program": "264 Operations Console",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Operations Console",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002VCLV2A4",
-          "epic_name": "Release 264: PSS-FS: Operations Console - RSO Activity Tracker",
-          "epic_name_key": "Release 264: PSS-FS: Operations Console - RSO Activity Tracker",
-          "team": "Missionforce-Samurais",
-          "owner": "Hemal Thakkar",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "2",
-          "story_points": 0,
-          "program": "264 Operations Console",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Operations Console",
-          "issues": [
-            "missing_planned_release"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "MomentumForce",
-      "epic_count": 9,
-      "epics": [
-        {
-          "epic_id": "a3QEE000002JoZR2A0",
-          "epic_name": "*[8.3.1][264] Hackathon/Demo Days",
-          "epic_name_key": "*[8.3.1][264] Hackathon/Demo Days",
-          "team": "MomentumForce",
-          "owner": "Bhuvnesh Mehra",
-          "health": "Not Started",
-          "scheduled_build": "264",
-          "priority": "590",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Application Production Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002JoXp2AK",
-          "epic_name": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
-          "epic_name_key": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
-          "team": "MomentumForce",
-          "owner": "Bhuvnesh Mehra",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "280",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K0ab2AC",
-          "epic_name": "* [1.16.5][264][PBS] Daily On-Call Support",
-          "epic_name_key": "* [1.16.5][264][PBS] Daily On-Call Support",
-          "team": "MomentumForce",
-          "owner": "Bhuvnesh Mehra",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "540",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002K0dp2AC",
-          "epic_name": "* [1.16.5][264][PBS] Infrastructure Maintenance",
-          "epic_name_key": "* [1.16.5][264][PBS] Infrastructure Maintenance",
-          "team": "MomentumForce",
-          "owner": "Bhuvnesh Mehra",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "120",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Jocf2AC",
-          "epic_name": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
-          "epic_name_key": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
-          "team": "MomentumForce",
-          "owner": "Bhuvnesh Mehra",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "100",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Job32AC",
-          "epic_name": "* [1.16.5][264][SFS] Daily On-Call Support",
-          "epic_name_key": "* [1.16.5][264][SFS] Daily On-Call Support",
-          "team": "MomentumForce",
-          "owner": "Bhuvnesh Mehra",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "600",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002JoUb2AK",
-          "epic_name": "*[1.16.11][264] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
-          "epic_name_key": "*[1.16.11][264] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
-          "team": "MomentumForce",
-          "owner": "Bhuvnesh Mehra",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "690",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Security and Compliance",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002KIin2AG",
-          "epic_name": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q1 & Q2 QAR",
-          "epic_name_key": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q1 & Q2 QAR",
-          "team": "MomentumForce",
-          "owner": "Navneet Gehlot",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "190",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Security and Compliance",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002KIxJ2AW",
-          "epic_name": "* [8.9.8] [264] [FSE][FSL][V8]-CTS LRP Epic",
-          "epic_name_key": "* [8.9.8] [264] [FSE][FSL][V8]-CTS LRP Epic",
-          "team": "MomentumForce",
-          "owner": "Navneet Gehlot",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "620",
-          "story_points": 0,
-          "program": "FS 264: S&O Trust",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O Trust: Security and Compliance",
-          "issues": [
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
     },
     {
       "name": "Optimization Engineering",
-      "epic_count": 12,
+      "epic_count": 3,
       "epics": [
         {
           "epic_id": "a3QEE000002GVrV2AW",
@@ -6596,142 +3893,6 @@
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GVOT2A4",
-          "epic_name": "264 SFS Customer Success - AB/TI multi-day appointments - 1 month horizon",
-          "epic_name_key": "264 SFS Customer Success - AB/TI multi-day appointments - 1 month horizon",
-          "team": "Optimization Engineering",
-          "owner": "Dori Nahmias",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "20",
-          "story_points": 0,
-          "program": "FS 264: S&O: S&O Customer Success",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002TmmT2AS",
-          "epic_name": "264 SFS Customer Success - AB/TI multi-day appointments - 3 month horizon",
-          "epic_name_key": "264 SFS Customer Success - AB/TI multi-day appointments - 3 month horizon",
-          "team": "Optimization Engineering",
-          "owner": "Mor Cohen",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "20",
-          "story_points": 0,
-          "program": "FS 264: S&O: S&O Customer Success",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002NBmQ2AW",
-          "epic_name": "264 SFS Customer Success - MDW for BGO (Vestas)",
-          "epic_name_key": "264 SFS Customer Success - MDW for BGO (Vestas)",
-          "team": "Optimization Engineering",
-          "owner": "Mor Cohen",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "60",
-          "story_points": 0,
-          "program": "FS 264: S&O: S&O Customer Success",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002GQVF2A4",
-          "epic_name": "[264] SFS [AF] Transparency - Engine",
-          "epic_name_key": "[264] SFS [AF] Transparency - Engine",
-          "team": "Optimization Engineering",
-          "owner": "Sigal Shapira",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "20",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002NCKH2A4",
-          "epic_name": "[264] UWM S&O Engine: Multi-breaks",
-          "epic_name_key": "[264] UWM S&O Engine: Multi-breaks",
-          "team": "Optimization Engineering",
-          "owner": "Itay Sagiv",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "40",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Optimization Engineering",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002NDOP2A4",
-          "epic_name": "[264] UWM S&O Engine: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-          "epic_name_key": "[264] UWM S&O Engine: NFR from 5000 to 100,000 activities + Quality + Benchmark",
-          "team": "Optimization Engineering",
-          "owner": "Itay Sagiv",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "55",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Optimization Engineering",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002NCH32AO",
-          "epic_name": "[264] UWM S&O Engine: Shift constraints",
-          "epic_name_key": "[264] UWM S&O Engine: Shift constraints",
-          "team": "Optimization Engineering",
-          "owner": "Itay Sagiv",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "20",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Optimization Engineering",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002NCIf2AO",
-          "epic_name": "[264] UWM S&O Engine: Shift Creation+Assignment Optimization (Fixed Templates)",
-          "epic_name_key": "[264] UWM S&O Engine: Shift Creation+Assignment Optimization (Fixed Templates)",
-          "team": "Optimization Engineering",
-          "owner": "Itay Sagiv",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "30",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Optimization Engineering",
-          "issues": [
             "missing_planned_release"
           ]
         },
@@ -6754,23 +3915,6 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002MpVl2AK",
-          "epic_name": "264 SFS [Infra] WEM Project",
-          "epic_name_key": "264 SFS [Infra] WEM Project",
-          "team": "Optimization Engineering",
-          "owner": "Josh Honeycutt",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "20",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Optimization Engineering",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002BlIb2AK",
           "epic_name": "[262] UWM S&O M1: High-Performance GetCandidate & Bulk Optimization",
           "epic_name_key": "[262] UWM S&O M1: High-Performance GetCandidate & Bulk Optimization",
@@ -6784,15 +3928,14 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] UWM S&O",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
     },
     {
       "name": "SFS - WFM - Worker - Experience",
-      "epic_count": 14,
+      "epic_count": 9,
       "epics": [
         {
           "epic_id": "a3QEE000002LDCP2A4",
@@ -6808,76 +3951,7 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] Mobile Worker Experience",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE00000292r32AA",
-          "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management",
-          "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management",
-          "team": "SFS - WFM - Worker - Experience",
-          "owner": "Carla Ferreira",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "5",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] Mobile Worker Experience",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Ria52AC",
-          "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management - July Release",
-          "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management - July Release",
-          "team": "SFS - WFM - Worker - Experience",
-          "owner": "Vinay Bayya",
-          "health": "Not Started",
-          "scheduled_build": "262.12",
-          "priority": "5",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] Mobile Worker Experience",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002PdRd2AK",
-          "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management - June Release",
-          "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management - June Release",
-          "team": "SFS - WFM - Worker - Experience",
-          "owner": "Vinay Bayya",
-          "health": "Completed",
-          "scheduled_build": "262.9",
-          "priority": "5",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] Mobile Worker Experience",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002N0xR2AS",
-          "epic_name": "264 UWM Worker Engagement Experience: Agentic Shift Management - May Release",
-          "epic_name_key": "264 UWM Worker Engagement Experience: Agentic Shift Management - May Release",
-          "team": "SFS - WFM - Worker - Experience",
-          "owner": "Carla Ferreira",
-          "health": "Completed",
-          "scheduled_build": "262.4",
-          "priority": "5",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] Mobile Worker Experience",
-          "issues": [
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -6949,23 +4023,6 @@
           ]
         },
         {
-          "epic_id": "a3QEE0000022PPN2A2",
-          "epic_name": "264 UWM Worker Engagement Experience: Notifications",
-          "epic_name_key": "264 UWM Worker Engagement Experience: Notifications",
-          "team": "SFS - WFM - Worker - Experience",
-          "owner": "Sindhubala Ulavapalli",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "52",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] Mobile Worker Experience",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002LGrp2AG",
           "epic_name": "264 UWM Worker Engagement Experience: Slack Native Experience",
           "epic_name_key": "264 UWM Worker Engagement Experience: Slack Native Experience",
@@ -6979,8 +4036,7 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] Mobile Worker Experience",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -6997,8 +4053,7 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] Mobile Worker Experience",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7056,8 +4111,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7074,8 +4128,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7092,8 +4145,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7110,8 +4162,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7128,8 +4179,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7146,8 +4196,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7164,8 +4213,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7183,8 +4231,7 @@
           "project": "264 Operations Console",
           "issues": [
             "missing_priority",
-            "blocked_no_comments",
-            "missing_planned_release"
+            "blocked_no_comments"
           ]
         },
         {
@@ -7201,8 +4248,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7219,8 +4265,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7237,8 +4282,7 @@
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7280,8 +4324,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Pre-Work Brief Template",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7298,8 +4341,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7334,8 +4376,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7370,8 +4411,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7388,8 +4428,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7406,8 +4445,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7424,8 +4462,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7442,8 +4479,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7478,8 +4514,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         }
       ]
@@ -7502,8 +4537,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 AGX",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7520,8 +4554,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 AGX",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7538,8 +4571,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 AGX",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7556,8 +4588,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 AGX",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7592,8 +4623,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Push Notification Enhancements",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7610,8 +4640,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Push Notification Enhancements",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
@@ -7635,8 +4664,7 @@
           "project": "264 Push Notification Enhancements",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7654,8 +4682,7 @@
           "project": "264 Service Document Enhancements",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7673,8 +4700,7 @@
           "project": "264 Customer Enhancements",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
@@ -7697,8 +4723,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 KONE: Phase 1",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7715,8 +4740,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 KONE: Phase 1",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7733,8 +4757,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 KONE: Phase 1",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         }
       ]
@@ -7757,8 +4780,7 @@
           "portfolio": "264 Field Service Foundations",
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -7775,8 +4797,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Data Capture Enhancements",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7793,8 +4814,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Data Capture Enhancements",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7811,8 +4831,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Push Notification Enhancements",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7830,8 +4849,7 @@
           "project": "264 Service Document Enhancements",
           "issues": [
             "missing_priority",
-            "blocked_no_comments",
-            "missing_planned_release"
+            "blocked_no_comments"
           ]
         },
         {
@@ -7848,8 +4866,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Customer Enhancements",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7892,8 +4909,7 @@
           "project": "264 Schedule List Flexibility",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7911,8 +4927,7 @@
           "project": "264 Schedule List Flexibility",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -7938,7 +4953,7 @@
     },
     {
       "name": "SFS Mobile Services",
-      "epic_count": 2,
+      "epic_count": 1,
       "epics": [
         {
           "epic_id": "a3QEE000002WtbJ2AS",
@@ -7954,25 +4969,7 @@
           "portfolio": "264 Field Service Foundations",
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000001qDrp2AE",
-          "epic_name": "264 [Core] Enable PSS Data Hierarchy for Performance Priming",
-          "epic_name_key": "264 [Core] Enable PSS Data Hierarchy for Performance Priming",
-          "team": "SFS Mobile Services",
-          "owner": "Aditya Maniar",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "3",
-          "story_points": 0,
-          "program": "264 Field Service: Workforce Scheduling on Mobile",
-          "portfolio": "264 Field Service Mobile",
-          "project": "264 Performance Priming Enhancements",
-          "issues": [
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         }
       ]
@@ -7995,8 +4992,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 SFS Quality Enablement",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -8014,8 +5010,7 @@
           "project": "264 SFS Quality Enablement",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -8033,8 +5028,7 @@
           "project": "264 SFS Quality Enablement",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -8051,8 +5045,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 SFS Quality Enablement",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -8069,8 +5062,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 SFS Quality Enablement",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -8087,8 +5079,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 SFS Quality Enablement",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         },
         {
@@ -8105,8 +5096,7 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 SFS Quality Enablement",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
+            "missing_priority"
           ]
         }
       ]
@@ -8129,8 +5119,7 @@
           "portfolio": "264 Field Service Foundations",
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -8147,8 +5136,7 @@
           "portfolio": "264 Field Service Foundations",
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         },
         {
@@ -8165,135 +5153,15 @@
           "portfolio": "264 Field Service Foundations",
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
-            "missing_scheduled_build",
-            "missing_planned_release"
+            "missing_scheduled_build"
           ]
         }
       ]
     },
     {
       "name": "Team-WFM-Capacity-Planning",
-      "epic_count": 8,
+      "epic_count": 1,
       "epics": [
-        {
-          "epic_id": "a3QEE000002TAUH2A4",
-          "epic_name": "[264] [PFT] Telemetry for Capacity Planning",
-          "epic_name_key": "[264] [PFT] Telemetry for Capacity Planning",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Ruchika Pashine",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "8",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Capacity Planning",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002QWHd2AO",
-          "epic_name": "[264] [UWM] [DC] Capacity Planning in Data Cloud",
-          "epic_name_key": "[264] [UWM] [DC] Capacity Planning in Data Cloud",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Taniya Ghosh",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "53",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Capacity Planning",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Mkvt2AC",
-          "epic_name": "15/30 min interval support for Capacity Plan",
-          "epic_name_key": "15/30 min interval support for Capacity Plan",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Ruchika Pashine",
-          "health": "Not Started",
-          "scheduled_build": "264",
-          "priority": "51",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Capacity Planning",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Jt9J2AS",
-          "epic_name": "Calculate Capacity Plan for Skill Based Flow and include channel dimension.",
-          "epic_name_key": "Calculate Capacity Plan for Skill Based Flow and include channel dimension.",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Ruchika Pashine",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "4",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Capacity Planning",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002JlEz2AK",
-          "epic_name": "Multi Dimensional support during CP creation",
-          "epic_name_key": "Multi Dimensional support during CP creation",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Ruchika Pashine",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "1",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Capacity Planning",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Jsef2AC",
-          "epic_name": "Revamp Capacity plan detail to include channel and support for Skill calculation",
-          "epic_name_key": "Revamp Capacity plan detail to include channel and support for Skill calculation",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Ruchika Pashine",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "3",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Capacity Planning",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002JldB2AS",
-          "epic_name": "Skill Group to Job Profile Translation",
-          "epic_name_key": "Skill Group to Job Profile Translation",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Ruchika Pashine",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "2",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Capacity Planning",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
         {
           "epic_id": "a3QEE000002PYa12AG",
           "epic_name": "Trust Work for Capacity Planning Team",
@@ -8314,185 +5182,9 @@
       ]
     },
     {
-      "name": "Team-WFM-Foundation",
-      "epic_count": 9,
-      "epics": [
-        {
-          "epic_id": "a3QEE000002QWEP2A4",
-          "epic_name": "[264] [UWM] [DC] Aggregation of Workloads in Data Cloud",
-          "epic_name_key": "[264] [UWM] [DC] Aggregation of Workloads in Data Cloud",
-          "team": "Team-WFM-Foundation",
-          "owner": "Taniya Ghosh",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "52",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002VurB2AS",
-          "epic_name": "[264] [UWM] [DC] Move Historic Work on Data Cloud",
-          "epic_name_key": "[264] [UWM] [DC] Move Historic Work on Data Cloud",
-          "team": "Team-WFM-Foundation",
-          "owner": "Bata Chadraa",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "53",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002OZMr2AO",
-          "epic_name": "[264][UWM][Stretch] - UWM Intraday",
-          "epic_name_key": "[264][UWM][Stretch] - UWM Intraday",
-          "team": "Team-WFM-Foundation",
-          "owner": "Bata Chadraa",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "51",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Ij5Z2AS",
-          "epic_name": "264 - 15/30 min Interval Support",
-          "epic_name_key": "264 - 15/30 min Interval Support",
-          "team": "Team-WFM-Foundation",
-          "owner": "Lavanya Piramanayagam",
-          "health": "Not Started",
-          "scheduled_build": "264",
-          "priority": "50",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002P6dl2AC",
-          "epic_name": "264 - Advanced Planning",
-          "epic_name_key": "264 - Advanced Planning",
-          "team": "Team-WFM-Foundation",
-          "owner": "Vartika Vaish",
-          "health": "Unknown",
-          "scheduled_build": "264",
-          "priority": "50",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ISUX2A4",
-          "epic_name": "264 Omni-Widget Activities",
-          "epic_name_key": "264 Omni-Widget Activities",
-          "team": "Team-WFM-Foundation",
-          "owner": "Mike Cliffe",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "3",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ISO52AO",
-          "epic_name": "264 Real-Time Adherence",
-          "epic_name_key": "264 Real-Time Adherence",
-          "team": "Team-WFM-Foundation",
-          "owner": "Mike Cliffe",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "4",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000001ySSH2A2",
-          "epic_name": "264 UWM - UWM Intraday",
-          "epic_name_key": "264 UWM - UWM Intraday",
-          "team": "Team-WFM-Foundation",
-          "owner": "Jenny(Wei-Chen) Wang",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "6",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ISW92AO",
-          "epic_name": "264 WFM & MWM Setup in Salesforce Go",
-          "epic_name_key": "264 WFM & MWM Setup in Salesforce Go",
-          "team": "Team-WFM-Foundation",
-          "owner": "Mike Cliffe",
-          "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "5",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        }
-      ]
-    },
-    {
       "name": "Team-WFM-ML-Foundations",
-      "epic_count": 5,
+      "epic_count": 4,
       "epics": [
-        {
-          "epic_id": "a3QEE000002QWG12AO",
-          "epic_name": "[264] [UWM] [DC] Forecasting in Data Cloud",
-          "epic_name_key": "[264] [UWM] [DC] Forecasting in Data Cloud",
-          "team": "Team-WFM-ML-Foundations",
-          "owner": "Taniya Ghosh",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "52",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM-ML-Foundations",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
         {
           "epic_id": "a3QEE000002KARt2AO",
           "epic_name": "[264] Analysis: Conversational Forecasting & Anomaly Detection using MoiraiAgent",
@@ -8566,7 +5258,7 @@
     },
     {
       "name": "Team-WFM-Workloads-Forecasting",
-      "epic_count": 10,
+      "epic_count": 2,
       "epics": [
         {
           "epic_id": "a3QEE000002TojR2AS",
@@ -8601,142 +5293,6 @@
           "project": "[264] WFM Workloads Forecasting",
           "issues": [
             "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Kl012AC",
-          "epic_name": "[264] 15 & 30-Minute Interval Support",
-          "epic_name_key": "[264] 15 & 30-Minute Interval Support",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "Not Started",
-          "scheduled_build": "264",
-          "priority": "100",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Jd1J2AS",
-          "epic_name": "[264] Auto Creation of Skill Groups",
-          "epic_name_key": "[264] Auto Creation of Skill Groups",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "3",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Jx3F2AS",
-          "epic_name": "[264] Display Forecast Accuracy",
-          "epic_name_key": "[264] Display Forecast Accuracy",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "Not Started",
-          "scheduled_build": "264",
-          "priority": "50",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002L0Th2AK",
-          "epic_name": "[264] Enhanced Forecast Creation - Omni Queues/Skills + Channels, FS, and MWM",
-          "epic_name_key": "[264] Enhanced Forecast Creation - Omni Queues/Skills + Channels, FS, and MWM",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "6",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Jmvp2AC",
-          "epic_name": "[264] Enhanced Workload Creation - Omni Queues/Skills + Channels, FS, and MWM",
-          "epic_name_key": "[264] Enhanced Workload Creation - Omni Queues/Skills + Channels, FS, and MWM",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "5",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Jwoj2AC",
-          "epic_name": "[264] Forecasting - Moirai Integration Support and Enhanced Workloads Support",
-          "epic_name_key": "[264] Forecasting - Moirai Integration Support and Enhanced Workloads Support",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "1",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002JmFt2AK",
-          "epic_name": "[264] List View of Skill Groups",
-          "epic_name_key": "[264] List View of Skill Groups",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "2",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002JdCb2AK",
-          "epic_name": "[264] Manually Add/Edit/Delete Skill Group",
-          "epic_name_key": "[264] Manually Add/Edit/Delete Skill Group",
-          "team": "Team-WFM-Workloads-Forecasting",
-          "owner": "VARSHA CHALAMALASETTY",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "4",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] WFM Workloads Forecasting",
-          "issues": [
             "missing_planned_release"
           ]
         }

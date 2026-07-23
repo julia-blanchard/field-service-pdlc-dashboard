@@ -1,0 +1,777 @@
+{
+  "all_closed": [
+    {
+      "id": "a3QEE000002Izwj2AC",
+      "name": "[264 SFS Asset Team] Trust Initiatives",
+      "team": "FSL - Asset - 360",
+      "health": "On Track",
+      "story_points": 4.0,
+      "work_items_total": 7,
+      "scheduled_build": "264"
+    },
+    {
+      "id": "a3QEE000001srBd2AI",
+      "name": "[260 SFS Asset Team] Trust Initiatives",
+      "team": "FSL - Asset - 360",
+      "health": "On Track",
+      "story_points": 88.0,
+      "work_items_total": 52,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001btJV2AY",
+      "name": "260 AGX Core Flow Completion",
+      "team": "FSL - Foundation - Apps",
+      "health": "On Track",
+      "story_points": 92.0,
+      "work_items_total": 18,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002Id9p2AC",
+      "name": "MWM GA Readiness",
+      "team": "FSL - Foundation - Atlas",
+      "health": "On Track",
+      "story_points": 15.0,
+      "work_items_total": 6,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QB0000000H4T5MAK",
+      "name": "Backlog SFS [RE] Expense Management",
+      "team": "FSL - Operations - Intelligence",
+      "health": "Not Started",
+      "story_points": 1.0,
+      "work_items_total": 1,
+      "scheduled_build": "Backlog"
+    },
+    {
+      "id": "a3QEE000002ENy52AG",
+      "name": "264 SFS [Operations Intelligence] ZBB",
+      "team": "FSL - Operations - Intelligence",
+      "health": "On Track",
+      "story_points": 7.0,
+      "work_items_total": 4,
+      "scheduled_build": "264"
+    },
+    {
+      "id": "a3QEE000000jsaX2AQ",
+      "name": "SFS [RE] Technical Trust",
+      "team": "FSL - Operations - Intelligence",
+      "health": "Not Started",
+      "story_points": 7.0,
+      "work_items_total": 24,
+      "scheduled_build": "Backlog"
+    },
+    {
+      "id": "a3QB000000093hiMAA",
+      "name": "MP Governor Limit and Sharing",
+      "team": "FSL - Operations - Intelligence",
+      "health": "On Hold",
+      "story_points": 4.0,
+      "work_items_total": 9,
+      "scheduled_build": "Backlog"
+    },
+    {
+      "id": "a3QB00000005o2BMAQ",
+      "name": "Backlog SFS [RM] RFC/RFCR Enhancements",
+      "team": "FSL - Operations - Intelligence",
+      "health": "Not Started",
+      "story_points": 0.0,
+      "work_items_total": 9,
+      "scheduled_build": "Backlog"
+    },
+    {
+      "id": "a3QEE000000ZlnF2AS",
+      "name": "Backlog SFS [RM] Gantt UI 2.0",
+      "team": "FSL - Operations - Intelligence",
+      "health": "Not Started",
+      "story_points": 20.0,
+      "work_items_total": 16,
+      "scheduled_build": "Backlog"
+    },
+    {
+      "id": "a3QEE000002N3vJ2AS",
+      "name": "[264] [TRUST] Push Readiness for DC2",
+      "team": "FSL - Resource - Scheduling Hawks",
+      "health": "Watch",
+      "story_points": 2.0,
+      "work_items_total": 1,
+      "scheduled_build": "264"
+    },
+    {
+      "id": "a3QEE000002GKUf2AO",
+      "name": "[264] UWM S&O Service: Shift Creation+Assignment Optimization (Dynamic Template)",
+      "team": "FSL - Resource - Scheduling Hawks",
+      "health": "On Track",
+      "story_points": 19.0,
+      "work_items_total": 10,
+      "scheduled_build": "264"
+    },
+    {
+      "id": "a3QEE000002GKRR2A4",
+      "name": "[264] UWM S&O Service: Shift assignment optimization",
+      "team": "FSL - Resource - Scheduling Hawks",
+      "health": "On Track",
+      "story_points": 108.0,
+      "work_items_total": 28,
+      "scheduled_build": "264"
+    },
+    {
+      "id": "a3QEE000000SOXF2A4",
+      "name": "Parallel Pagination",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "health": "On Track",
+      "story_points": 27.0,
+      "work_items_total": 7,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001uEZB2A2",
+      "name": "[260] [SFS][O2]Dynamic Scaling",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "health": "Not Started",
+      "story_points": 67.0,
+      "work_items_total": 23,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000r4K12AI",
+      "name": "250 SFS [Trust]  -  Improve UDL Retry and Error",
+      "team": "FSL - Resource - Scheduling Platform",
+      "health": "On Hold",
+      "story_points": 3.0,
+      "work_items_total": 1,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002IiFx2AK",
+      "name": "264 UWM Worker Engagement Experience: Calendar Enhancements",
+      "team": "SFS - WFM - Worker - Experience",
+      "health": "On Track",
+      "story_points": 108.0,
+      "work_items_total": 36,
+      "scheduled_build": "264"
+    },
+    {
+      "id": "a3QB00000005nFzMAI",
+      "name": "SERVICE APPOINTMENT BACKLOG",
+      "team": "SFS Core Scheduler",
+      "health": "Not Started",
+      "story_points": 5.0,
+      "work_items_total": 1,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002Cg7B2AS",
+      "name": "264 SFS Frontline AI - [M2.7] Observability Excellence",
+      "team": "SFS Frontline AI",
+      "health": "On Track",
+      "story_points": 62.0,
+      "work_items_total": 40,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002V9In2AK",
+      "name": "264 SFS Frontline AI - Automation Improvement",
+      "team": "SFS Frontline AI",
+      "health": "On Track",
+      "story_points": 20.0,
+      "work_items_total": 12,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002BdMf2AK",
+      "name": "262 SFS Frontline AI - Agentforce entity validation",
+      "team": "SFS Frontline AI",
+      "health": "On Track",
+      "story_points": 7.0,
+      "work_items_total": 5,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QB0000000LF0bMAG",
+      "name": "FSL Online Docs",
+      "team": "SFS Frontline AI",
+      "health": "On Track",
+      "story_points": 3.0,
+      "work_items_total": 9,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002P3eH2AS",
+      "name": "Agentic Setup for Guided Experience (AGX)",
+      "team": "SFS Mobile AGX",
+      "health": "Not Started",
+      "story_points": 7.0,
+      "work_items_total": 3,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE0000020SSz2AM",
+      "name": "260 [SFS mobile assets] Regression",
+      "team": "SFS Mobile Assets",
+      "health": "On Track",
+      "story_points": 26.0,
+      "work_items_total": 6,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000dcmz2AA",
+      "name": "SFS Mobile - R&A - [Trust][Stretch]Trust",
+      "team": "SFS Mobile Comms and Search",
+      "health": "On Track",
+      "story_points": 20.0,
+      "work_items_total": 8,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001iYGj2AM",
+      "name": "Mobile Coms & Search - SentOS",
+      "team": "SFS Mobile Comms and Search",
+      "health": "Not Started",
+      "story_points": 19.0,
+      "work_items_total": 11,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE0000022JYT2A2",
+      "name": "262 - SFS Mobile - C&S - Data SDK Support",
+      "team": "SFS Mobile Comms and Search",
+      "health": "Watch",
+      "story_points": 96.0,
+      "work_items_total": 32,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE0000021un02AA",
+      "name": "262 SFS Mobile C&S - Maps Mobile Support",
+      "team": "SFS Mobile Comms and Search",
+      "health": "On Track",
+      "story_points": 22.0,
+      "work_items_total": 9,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002Miyv2AC",
+      "name": "264 SFS Mobile - SFS Widget",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 16.0,
+      "work_items_total": 5,
+      "scheduled_build": "SFS.iOS.264.0"
+    },
+    {
+      "id": "a3QEE000002TByD2AW",
+      "name": "Hide Not Applicable Action on Work Steps - Field Service Mobile (iOS & Android)",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 23.0,
+      "work_items_total": 15,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002Jgtd2AC",
+      "name": "264 SFS Work Plans Enhancements - SFS Mobile Location & DC",
+      "team": "SFS Mobile Location and DC",
+      "health": "On Track",
+      "story_points": 10.0,
+      "work_items_total": 6,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001b2lR2AQ",
+      "name": "SFS Mobile - [Android] Integrate Google Assistant App Actions",
+      "team": "SFS Mobile Location and DC",
+      "health": "On Track",
+      "story_points": 16.0,
+      "work_items_total": 6,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000xKCP2A2",
+      "name": "250 SFS Mobile - [Feature] AR Measurements[Strech]",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 17.0,
+      "work_items_total": 7,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000ckoD2AQ",
+      "name": "246 SFS Mobile- LBA enhancement for GA",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 9.0,
+      "work_items_total": 3,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000QVrN2AW",
+      "name": "244 SFS Regression",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 0.0,
+      "work_items_total": 1,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002QAKL2A4",
+      "name": "SFS Location and DC - NPS Trust Improvement",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 0.0,
+      "work_items_total": 2,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001RjLR2A0",
+      "name": "SFS Mobile - R&A - RCA - W-17461161",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 9.0,
+      "work_items_total": 6,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002OBAr2AO",
+      "name": "264 SFS Mobile - GISMaps Audit Remediation",
+      "team": "SFS Mobile Location and DC",
+      "health": "Not Started",
+      "story_points": 26.0,
+      "work_items_total": 14,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000XCnB2AW",
+      "name": "SFS Mobile - MOE Lightning Integration",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 15.0,
+      "work_items_total": 11,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000nhwf2AA",
+      "name": "SFS Mobile - HVB leftover",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": null,
+      "story_points": 26.0,
+      "work_items_total": 18,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE0000016Dhx2AE",
+      "name": "SFS Mobile Offline Extensibility - Custom nav schema migration",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 31.0,
+      "work_items_total": 9,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QB00000009BkoMAE",
+      "name": "Xplatform Trust Backlog",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 101.0,
+      "work_items_total": 57,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QB00000001AspMAE",
+      "name": "SFS XPlatform Flow Trust",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 9.0,
+      "work_items_total": 10,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000nhlN2AQ",
+      "name": "SFS Mobile - Offline Extensibility Trust",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 155.0,
+      "work_items_total": 112,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001W1hx2AC",
+      "name": "MOE Spiking Backlog",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 0.0,
+      "work_items_total": 1,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000uJ9d2AE",
+      "name": "SFS Mobile Offline Extensibility - Custom Navigation",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "On Hold",
+      "story_points": 5.0,
+      "work_items_total": 3,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000uJ812AE",
+      "name": "SFS Mobile Offline Extensibility - Notifications",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "On Hold",
+      "story_points": 2.0,
+      "work_items_total": 2,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000kKdF2AU",
+      "name": "SFS Mobile - MOE High Volume Priming - Forced Priming",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 0.0,
+      "work_items_total": 5,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000Wp0z2AC",
+      "name": "SFS Mobile - XPlatform 011y Metrics",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 4.0,
+      "work_items_total": 3,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000S0Y92AK",
+      "name": "248 SFS Mobile - MOE Support for Time field type",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 21.0,
+      "work_items_total": 4,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000000KJo52AG",
+      "name": "24? SFS Mobile - Codebase Health and Cleanup",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 7.0,
+      "work_items_total": 47,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QAH00000005hP2AQ",
+      "name": "24? SFS Mobile - XPlatform Feed and Knowledge Priming",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 42.0,
+      "work_items_total": 10,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001qaej2AA",
+      "name": "260 - CSP Error Reporting and Handling",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 69.0,
+      "work_items_total": 15,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001q0rN2AQ",
+      "name": "260 - [iOS][Android] Observability Support for Advanced Data Sync (ADS)",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 9.0,
+      "work_items_total": 3,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE0000025bqb2AA",
+      "name": "262 SFS MOE - User Cache Purging Recommendation",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 3.0,
+      "work_items_total": 7,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000001zXg12AE",
+      "name": "262 SFS MOE - LDS Index Creation via Custom Attributes",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "Not Started",
+      "story_points": 18.0,
+      "work_items_total": 3,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE0000021fWD2AY",
+      "name": "262 SFS Mobile Offline Extensibility - Testing & usability improvements",
+      "team": "SFS Mobile Offline Extensibility",
+      "health": "On Track",
+      "story_points": 15.0,
+      "work_items_total": 4,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE00000267wv2AA",
+      "name": "262 SFS Mobile Platform DX - Flows UI Replacement",
+      "team": "SFS Mobile Platform DX",
+      "health": "On Track",
+      "story_points": 64.0,
+      "work_items_total": 16,
+      "scheduled_build": "-"
+    },
+    {
+      "id": "a3QEE000002MTv32AG",
+      "name": "264 [Hyperforce][Performance Priming] AGX Metadata Priming",
+      "team": "SFS Mobile Services",
+      "health": "Not Started",
+      "story_points": 46.0,
+      "work_items_total": 4,
+      "scheduled_build": "264"
+    }
+  ],
+  "no_work": [
+    {
+      "id": "a3QEE000002CT0H2AW",
+      "name": "Interactions experience enhancements",
+      "team": "FSL - Asset - 360",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002XO7F2AW",
+      "name": "266 [FSL - Foundation - Apps] Unified API feature Parity",
+      "team": "FSL - Foundation - Apps",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002Ln6D2AS",
+      "name": "266 [FSL - Foundation - Apps] Guest User Experience",
+      "team": "FSL - Foundation - Apps",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002Vcz72AC",
+      "name": "[266 Atlas] TDs and Trust",
+      "team": "FSL - Foundation - Atlas",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002Kn0D2AS",
+      "name": "Q4 Testing for 264",
+      "team": "FSL - Foundation - Atlas",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE0000022KPh2AM",
+      "name": "Agentforce Actions & Insights",
+      "team": "FSL - Foundation - Atlas",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002TAZ72AO",
+      "name": "[264][Scheduling Console] Run RSO as Simulation",
+      "team": "FSL - Resource - Dispatch Console",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE0000023xon2AA",
+      "name": "262 New Dispatch Experience - UX & Product enhancements",
+      "team": "FSL - Resource - Dispatch Console",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002GKOD2A4",
+      "name": "[264] [BTL] UWM S&O Service: Single & Bulk shift assignment",
+      "team": "FSL - Resource - Scheduling Hawks",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002GKMb2AO",
+      "name": "[264] [BTL] UWM S&O Service: Check rules API",
+      "team": "FSL - Resource - Scheduling Hawks",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002WsqX2AS",
+      "name": "264 SFS Appointment Booking Grading (264 Unified Scheduling)",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002X3sP2AS",
+      "name": "266 SFS Frontline AI - [Android] Agentforce Voice Close Caption Support",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002X3qn2AC",
+      "name": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002VnuX2AS",
+      "name": "264 SFS Frontline AI ----- Ready to Start -----",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002VlmH2AS",
+      "name": "264 SFS Frontline AI - [iOS] Multi-Modal support via LLM Gateway 2.0",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002VlSw2AK",
+      "name": "264 SFS Frontline AI - [Android] Multi-Modal support via LLM Gateway 2.0",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002Vnw92AC",
+      "name": "264 SFS Frontline AI - Not Ready",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002MV0n2AG",
+      "name": "[262][SFS Frontline AI] On-Device LLM Model Download & Management - iOS",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002MV2P2AW",
+      "name": "[262][SFS Frontline AI] On-Device LLM Model Download & Management - Android",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002MUzB2AW",
+      "name": "[262][SFS Frontline AI] Offline Voice to Form - Android Pilot",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002IxQH2A0",
+      "name": "264 SFS Frontline AI - Milestone 3 (7/20)",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002IxN32AK",
+      "name": "264 SFS Frontline AI - Milestone 2 (6/20)",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002D9lt2AC",
+      "name": "264 SFS Frontline AI - Milestone 1 (5/20)",
+      "team": "SFS Frontline AI",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE0000026La52AE",
+      "name": "[AGX Android Pilot] Android Priming - Metadata",
+      "team": "SFS Mobile AGX",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002FZM52AO",
+      "name": "Notifications Priority",
+      "team": "SFS Mobile Assets",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002KnwH2AS",
+      "name": "264 - SFS Mobile - C&S - Release automation",
+      "team": "SFS Mobile Comms and Search",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002VUtV2AW",
+      "name": "Core: Emergency-Dispatch Notification tier signal (264, Android + iOS)",
+      "team": "SFS Mobile Core Experience",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002VSbZ2AW",
+      "name": "[266][SFS MCX][Trust] Remove MET Code",
+      "team": "SFS Mobile Core Experience",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002VPPB2A4",
+      "name": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+      "team": "SFS Mobile Core Experience",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002Fwwz2AC",
+      "name": "[264][SFS MCX][Data Capture] Performance Priming Improvment",
+      "team": "SFS Mobile Core Experience",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002VSdB2AW",
+      "name": "266 SFS Mobile - [Trust] Remove MET Code - SFS Mobile Location & DC",
+      "team": "SFS Mobile Location and DC",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002GULx2AO",
+      "name": "266 SFS Mobile Feature Enhancements - SFS Mobile Location & DC",
+      "team": "SFS Mobile Location and DC",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002GUDt2AO",
+      "name": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+      "team": "SFS Mobile Location and DC",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002ViTR2A0",
+      "name": "264 SFS Mobile Platform DX - Direct2LDS",
+      "team": "SFS Mobile Platform DX",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002ODPZ2A4",
+      "name": "264 SFS Mobile Platform DX - User Journey Alerting",
+      "team": "SFS Mobile Platform DX",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002NzOD2A0",
+      "name": "266 SFS Mobile Platform DX - iOS Platform Support",
+      "team": "SFS Mobile Platform DX",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002L36b2AC",
+      "name": "Login Success Rate to 99%",
+      "team": "SFS Mobile Platform DX",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002MU9Z2AW",
+      "name": "[Hyperforce][Performance Priming] Q4 HARR Performance Testing Gaps",
+      "team": "SFS Mobile Services",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE000002Fm3B2AS",
+      "name": "Performance Priming EPIC \u2013 PSS Offline Support via Briefcase",
+      "team": "SFS Mobile Services",
+      "story_points": 0.0
+    },
+    {
+      "id": "a3QEE0000023kLJ2AY",
+      "name": "262 - SFS Mobile - MS - [AGX]  Flow Builder",
+      "team": "SFS Mobile Services",
+      "story_points": 0.0
+    }
+  ]
+}

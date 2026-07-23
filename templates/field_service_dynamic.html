@@ -15120,7 +15120,10 @@ if (programSearch) {
                     });
 
                     if (epic.epic_id !== 'no-epic') {
-                        // Regular epic - just show epic name and points
+                        // Regular epic - show epic name with status badge if available
+                        const epicStatusBadge = epic.epic_status ?
+                            ` | <span style="background: #64748b; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${epic.epic_status}</span>` : '';
+
                         epicsHtml += `
                             <tr class="breakdown-unmapped-${sanitizedTeamName}" style="border-bottom: 1px solid #f1f5f9;">
                                 <td style="padding: 8px 16px 8px 64px; font-size: 12px; vertical-align: top;">
@@ -15128,7 +15131,7 @@ if (programSearch) {
                                        target="_blank"
                                        style="color: #0176D3; text-decoration: none;">
                                         ${epic.epic_name}
-                                    </a>
+                                    </a>${epicStatusBadge}
                                 </td>
                                 <td style="text-align: center; padding: 8px 16px; vertical-align: top;"></td>
                                 <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; vertical-align: top;">
@@ -15146,10 +15149,19 @@ if (programSearch) {
                             </tr>
                         `;
                     } else {
-                        // No epic - show individual work items
+                        // No epic - show individual work items with status badge
                         epic.work_items.forEach(wi => {
-                            const wiId = wi.work_item_name.replace('W-', '');
+                            const wiId = wi.work_item_id || wi.work_item_name.replace('W-', '');  // Use work_item_id if available
                             const monthColumn = wi.month === 'June' ? 0 : wi.month === 'July' ? 1 : wi.month === 'August' ? 2 : 3;
+
+                            // Status badge with color coding
+                            const statusColor = wi.status === 'Closed' ? '#10b981' :
+                                              wi.status === 'In Progress' ? '#3b82f6' :
+                                              wi.status === 'QA In Progress' ? '#8b5cf6' :
+                                              wi.status === 'Triaged' ? '#f59e0b' :
+                                              wi.status === 'New' ? '#94a3b8' : '#64748b';
+                            const statusBadge = wi.status ?
+                                ` | <span style="background: ${statusColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${wi.status}</span>` : '';
 
                             epicsHtml += `
                                 <tr class="breakdown-unmapped-${sanitizedTeamName}" style="border-bottom: 1px solid #f1f5f9;">
@@ -15158,8 +15170,8 @@ if (programSearch) {
                                            target="_blank"
                                            style="color: #0176D3; text-decoration: none;">
                                             ${wi.work_item_name}
-                                        </a>
-                                        <div style="color: #94a3b8; font-size: 11px; font-style: italic; margin-top: 2px;">(No epic assignment)</div>
+                                        </a>${statusBadge}
+                                        <div style="color: #94a3b8; font-size: 11px; font-style: italic; margin-top: 2px;">(No epic assignment) | Assigned to: ${wi.assignee || '-'}</div>
                                     </td>
                                     <td style="text-align: center; padding: 8px 16px; vertical-align: top;"></td>
                                     <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; vertical-align: top;">

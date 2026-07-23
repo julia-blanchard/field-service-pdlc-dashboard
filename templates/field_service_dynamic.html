@@ -15121,8 +15121,13 @@ if (programSearch) {
 
                     if (epic.epic_id !== 'no-epic') {
                         // Regular epic - show epic name with status badge if available
+                        const epicStatusColor = epic.epic_status === 'On Track' ? '#10b981' :
+                                              epic.epic_status === 'Watch' ? '#f59e0b' :
+                                              epic.epic_status === 'Blocked' ? '#dc2626' :
+                                              epic.epic_status === 'Completed' ? '#60a5fa' :
+                                              epic.epic_status === 'Not Started' ? '#94a3b8' : '#64748b';
                         const epicStatusBadge = epic.epic_status ?
-                            ` | <span style="background: #64748b; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${epic.epic_status}</span>` : '';
+                            ` | <span style="background: ${epicStatusColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${epic.epic_status}</span>` : '';
 
                         epicsHtml += `
                             <tr class="breakdown-unmapped-${sanitizedTeamName}" style="border-bottom: 1px solid #f1f5f9;">
@@ -15155,11 +15160,12 @@ if (programSearch) {
                             const monthColumn = wi.month === 'June' ? 0 : wi.month === 'July' ? 1 : wi.month === 'August' ? 2 : 3;
 
                             // Status badge with color coding
-                            const statusColor = wi.status === 'Closed' ? '#10b981' :
-                                              wi.status === 'In Progress' ? '#3b82f6' :
-                                              wi.status === 'QA In Progress' ? '#8b5cf6' :
-                                              wi.status === 'Triaged' ? '#f59e0b' :
-                                              wi.status === 'New' ? '#94a3b8' : '#64748b';
+                            const statusColor = wi.status === 'Closed' ? '#6b21a8' :  // dark purple
+                                              wi.status === 'Complete' ? '#60a5fa' :  // light blue
+                                              wi.status === 'In Progress' ? '#10b981' :  // green
+                                              wi.status === 'QA In Progress' ? '#8b5cf6' :  // purple
+                                              wi.status === 'Triaged' ? '#f59e0b' :  // orange
+                                              wi.status === 'New' ? '#2563eb' : '#64748b';  // blue font color
                             const statusBadge = wi.status ?
                                 ` | <span style="background: ${statusColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${wi.status}</span>` : '';
 

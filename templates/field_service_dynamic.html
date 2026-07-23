@@ -15111,7 +15111,7 @@ if (programSearch) {
                     return;
                 }
 
-                // Render epic groups (each epic gets one row showing its work items)
+                // Render epic groups
                 epicGroups.forEach(epic => {
                     // Calculate points by month
                     const pointsByMonth = {June: 0, July: 0, August: 0, September: 0};
@@ -15119,44 +15119,65 @@ if (programSearch) {
                         pointsByMonth[wi.month] = (pointsByMonth[wi.month] || 0) + wi.story_points;
                     });
 
-                    // Build work items list for tooltip/details
-                    const workItemsList = epic.work_items.map(wi => {
-                        const wiId = wi.work_item_name.replace('W-', '');
-                        return `<a href="https://gus.lightning.force.com/lightning/r/ADM_Work__c/${wiId}/view" target="_blank" style="color: #0176D3;">${wi.work_item_name}</a> (${wi.story_points} pts, ${wi.month})`;
-                    }).join('<br>');
+                    if (epic.epic_id !== 'no-epic') {
+                        // Regular epic - just show epic name and points
+                        epicsHtml += `
+                            <tr class="breakdown-unmapped-${sanitizedTeamName}" style="border-bottom: 1px solid #f1f5f9;">
+                                <td style="padding: 8px 16px 8px 64px; font-size: 12px; vertical-align: top;">
+                                    <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/${epic.epic_id}/view"
+                                       target="_blank"
+                                       style="color: #0176D3; text-decoration: none;">
+                                        ${epic.epic_name}
+                                    </a>
+                                </td>
+                                <td style="text-align: center; padding: 8px 16px; vertical-align: top;"></td>
+                                <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; vertical-align: top;">
+                                    ${pointsByMonth.June > 0 ? pointsByMonth.June : '—'}
+                                </td>
+                                <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                    ${pointsByMonth.July > 0 ? pointsByMonth.July : '—'}
+                                </td>
+                                <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                    ${pointsByMonth.August > 0 ? pointsByMonth.August : '—'}
+                                </td>
+                                <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                    ${pointsByMonth.September > 0 ? pointsByMonth.September : '—'}
+                                </td>
+                            </tr>
+                        `;
+                    } else {
+                        // No epic - show individual work items
+                        epic.work_items.forEach(wi => {
+                            const wiId = wi.work_item_name.replace('W-', '');
+                            const monthColumn = wi.month === 'June' ? 0 : wi.month === 'July' ? 1 : wi.month === 'August' ? 2 : 3;
 
-                    epicsHtml += `
-                        <tr class="breakdown-unmapped-${sanitizedTeamName}" style="border-bottom: 1px solid #f1f5f9;">
-                            <td style="padding: 8px 16px 8px 64px; font-size: 12px; vertical-align: top;">
-                                <div style="font-weight: 500; margin-bottom: 2px; line-height: 1.3;">
-                                    ${epic.epic_id !== 'no-epic' ?
-                                        `<a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/${epic.epic_id}/view"
+                            epicsHtml += `
+                                <tr class="breakdown-unmapped-${sanitizedTeamName}" style="border-bottom: 1px solid #f1f5f9;">
+                                    <td style="padding: 8px 16px 8px 64px; font-size: 12px; vertical-align: top;">
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Work__c/${wiId}/view"
                                            target="_blank"
                                            style="color: #0176D3; text-decoration: none;">
-                                            ${epic.epic_name}
-                                        </a>` :
-                                        `<span style="color: #64748b; font-style: italic;">${epic.epic_name}</span>`
-                                    }
-                                </div>
-                                <div style="font-size: 11px; color: #94a3b8; margin-top: 2px;">
-                                    ${epic.work_items.length} work item${epic.work_items.length > 1 ? 's' : ''}: ${workItemsList}
-                                </div>
-                            </td>
-                            <td style="text-align: center; padding: 8px 16px; vertical-align: top;"></td>
-                            <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; vertical-align: top;">
-                                ${pointsByMonth.June > 0 ? pointsByMonth.June : '—'}
-                            </td>
-                            <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
-                                ${pointsByMonth.July > 0 ? pointsByMonth.July : '—'}
-                            </td>
-                            <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
-                                ${pointsByMonth.August > 0 ? pointsByMonth.August : '—'}
-                            </td>
-                            <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
-                                ${pointsByMonth.September > 0 ? pointsByMonth.September : '—'}
-                            </td>
-                        </tr>
-                    `;
+                                            ${wi.work_item_name}
+                                        </a>
+                                        <div style="color: #94a3b8; font-size: 11px; font-style: italic; margin-top: 2px;">(No epic assignment)</div>
+                                    </td>
+                                    <td style="text-align: center; padding: 8px 16px; vertical-align: top;"></td>
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #64748b; vertical-align: top;">
+                                        ${monthColumn === 0 ? wi.story_points : '—'}
+                                    </td>
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        ${monthColumn === 1 ? wi.story_points : '—'}
+                                    </td>
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        ${monthColumn === 2 ? wi.story_points : '—'}
+                                    </td>
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #2563eb; vertical-align: top;">
+                                        ${monthColumn === 3 ? wi.story_points : '—'}
+                                    </td>
+                                </tr>
+                            `;
+                        });
+                    }
                 });
 
                 // Insert breakdown rows after the unmapped row

@@ -15678,9 +15678,9 @@ if (programSearch) {
                             const header = row.querySelector('.program-header');
                             if (header) header.classList.remove('expanded');
                         });
-                        document.querySelectorAll('#execution-view .project-row').forEach(row => {
-                            row.classList.remove('expanded');
-                            const header = row.querySelector('.project-header');
+                        document.querySelectorAll('#execution-view .project-container').forEach(container => {
+                            container.classList.remove('expanded');
+                            const header = container.querySelector('.project-header');
                             if (header) header.classList.remove('expanded');
                         });
 
@@ -15691,9 +15691,9 @@ if (programSearch) {
                             const header = row.querySelector('.program-header');
                             if (header) header.classList.add('expanded');
                         });
-                        document.querySelectorAll('#execution-view .project-row').forEach(row => {
-                            row.classList.remove('expanded');
-                            const header = row.querySelector('.project-header');
+                        document.querySelectorAll('#execution-view .project-container').forEach(container => {
+                            container.classList.remove('expanded');
+                            const header = container.querySelector('.project-header');
                             if (header) header.classList.remove('expanded');
                         });
 
@@ -15704,9 +15704,9 @@ if (programSearch) {
                             const header = row.querySelector('.program-header');
                             if (header) header.classList.add('expanded');
                         });
-                        document.querySelectorAll('#execution-view .project-row').forEach(row => {
-                            row.classList.add('expanded');
-                            const header = row.querySelector('.project-header');
+                        document.querySelectorAll('#execution-view .project-container').forEach(container => {
+                            container.classList.add('expanded');
+                            const header = container.querySelector('.project-header');
                             if (header) header.classList.add('expanded');
                         });
                     } else if (selectedView === 'by-program') {

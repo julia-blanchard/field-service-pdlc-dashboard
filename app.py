@@ -638,10 +638,13 @@ def index():
             prog['portfolio'] = portfolio_mapping[raw_portfolio]
 
     # Get unique portfolios from execution programs - Field Service portfolios + UWM exception
+    # Filter out past releases (262, 260, etc) to keep overview forward-looking on 264/266
     portfolios = sorted(set(
         p.get('portfolio', '')
         for p in execution_programs
-        if p.get('portfolio') and ('Field Service' in p.get('portfolio', '') or 'UWM' in p.get('portfolio', ''))
+        if p.get('portfolio')
+        and ('Field Service' in p.get('portfolio', '') or 'UWM' in p.get('portfolio', ''))
+        and not any(old_release in p.get('portfolio', '') for old_release in ['262', '260', '258', '256'])
     ))
 
     # Filter phase_0_programs to only include Field Service portfolios
@@ -1355,8 +1358,54 @@ def api_orphaned():
     """API endpoint for orphaned epics data (missing program/project)"""
     try:
         file_path = os.path.join(os.path.dirname(__file__), 'data', 'unallocated_data.json')
+        teams_path = os.path.join(os.path.dirname(__file__), 'data', 'teams_data.json')
+
         with open(file_path, 'r') as f:
             data = json.load(f)
+
+        with open(teams_path, 'r') as f:
+            teams_data = json.load(f)
+
+        # Build team name -> manager mapping
+        team_managers = {}
+        for team in teams_data.get('teams', []):
+            team_managers[team['name']] = {
+                'engineering_manager': team.get('engineering_manager', ''),
+                'product_owner': team.get('product_owner', '')
+            }
+
+        # Add manager data to by_team grouping and create by_em/by_pm groupings
+        by_em = {}
+        by_pm = {}
+
+        for team_group in data.get('by_team', []):
+            team_name = team_group.get('name', '')
+            managers = team_managers.get(team_name, {})
+            team_group['engineering_manager'] = managers.get('engineering_manager', '')
+            team_group['product_owner'] = managers.get('product_owner', '')
+
+            em = team_group.get('engineering_manager', '') or 'Unassigned'
+            pm = team_group.get('product_owner', '') or 'Unassigned'
+
+            if em not in by_em:
+                by_em[em] = {'name': em, 'epics': [], 'orphaned_capacity': 0}
+            if pm not in by_pm:
+                by_pm[pm] = {'name': pm, 'epics': [], 'orphaned_capacity': 0}
+
+            # Add team name to each epic and aggregate to manager groupings
+            for epic in team_group.get('epics', []):
+                # Ensure epic has team field
+                if 'team' not in epic:
+                    epic['team'] = team_name
+
+                by_em[em]['epics'].append(epic)
+                by_em[em]['orphaned_capacity'] += epic.get('story_points', 0)
+                by_pm[pm]['epics'].append(epic)
+                by_pm[pm]['orphaned_capacity'] += epic.get('story_points', 0)
+
+        data['by_em'] = sorted(by_em.values(), key=lambda x: x['name'])
+        data['by_pm'] = sorted(by_pm.values(), key=lambda x: x['name'])
+
         return jsonify(data)
     except Exception as e:
         print(f"Error loading orphaned data: {e}", flush=True)
@@ -1365,7 +1414,8 @@ def api_orphaned():
             'summary': {},
             'epics': [],
             'by_team': [],
-            'by_release': []
+            'by_em': [],
+            'by_pm': []
         })
 
 @app.route('/api/unmapped-details')

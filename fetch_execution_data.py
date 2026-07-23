@@ -377,7 +377,7 @@ def fetch_262_projects():
     query = f"""
     SELECT Epic__r.Project__r.Id, Epic__r.Project__r.Name,
            Epic__r.Project__r.Program__r.Name, Epic__r.Project__r.Program__r.Id,
-           Epic__r.Project__r.Program__r.Portfolio__c,
+           Epic__r.Project__r.Program__r.Portfolio__r.Name,
            Epic__r.Scheduled_Build__r.Name
     FROM ADM_Work__c
     WHERE Epic__r.Scheduled_Build__r.Name LIKE '262%'
@@ -447,7 +447,8 @@ def merge_262_projects(structured_data, projects_262):
         project_name = proj_record.get('Name', '')
         project_id = proj_record.get('Id', '')
         scheduled_build = proj_record.get('Scheduled_Build__r', {}).get('Name', '')
-        portfolio = proj_record.get('Program__r', {}).get('Portfolio__c', 'Unknown')
+        portfolio_ref = proj_record.get('Program__r', {}).get('Portfolio__r')
+        portfolio = portfolio_ref.get('Name', 'Unknown') if portfolio_ref else 'Unknown'
 
         # Check if program exists
         if program_name not in programs_map:

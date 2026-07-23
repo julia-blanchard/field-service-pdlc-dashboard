@@ -2853,12 +2853,13 @@
 
         <!-- Orphaned Work filters (only show in Orphaned Work view) -->
         <div id="orphaned-filters-inline" style="display: none;">
-            <!-- View Toggles (By Team | By Release) -->
+            <!-- View Toggles (By Team | By Engineering Manager | By Product Manager) -->
             <div class="filter-group-exec">
                 <label class="filter-label-exec">VIEW</label>
                 <div class="view-toggles">
                     <button class="view-toggle orphaned-view-btn active" data-view="by-team" onclick="switchOrphanedView('by-team')" tabindex="-1">By Team</button>
-                    <button class="view-toggle orphaned-view-btn" data-view="by-release" onclick="switchOrphanedView('by-release')" tabindex="-1">By Release</button>
+                    <button class="view-toggle orphaned-view-btn" data-view="by-em" onclick="switchOrphanedView('by-em')" tabindex="-1">By Engineering Manager</button>
+                    <button class="view-toggle orphaned-view-btn" data-view="by-pm" onclick="switchOrphanedView('by-pm')" tabindex="-1">By Product Manager</button>
                 </div>
             </div>
         </div>
@@ -14930,24 +14931,47 @@
             </table>
         </div>
 
-        <!-- By Release View -->
-        <div id="orphaned-by-release" style="display: none;">
+        <!-- By Engineering Manager View -->
+        <div id="orphaned-by-em" style="display: none;">
             <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
                 <colgroup>
-                    <col style="width: 15%;">
                     <col style="width: 50%;">
                     <col style="width: 15%;">
-                    <col style="width: 20%;">
+                    <col style="width: 18%;">
+                    <col style="width: 17%;">
                 </colgroup>
                 <thead>
                     <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
-                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Release</th>
-                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Epic</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Engineering Manager / Epic</th>
                         <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Epics</th>
                         <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Capacity (PD)</th>
+                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Release</th>
                     </tr>
                 </thead>
-                <tbody id="orphaned-release-tbody">
+                <tbody id="orphaned-em-tbody">
+                    <tr><td colspan="4" style="padding: 40px; text-align: center; color: #94a3b8;">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- By Product Manager View -->
+        <div id="orphaned-by-pm" style="display: none;">
+            <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
+                <colgroup>
+                    <col style="width: 50%;">
+                    <col style="width: 15%;">
+                    <col style="width: 18%;">
+                    <col style="width: 17%;">
+                </colgroup>
+                <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Product Manager / Epic</th>
+                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Epics</th>
+                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Capacity (PD)</th>
+                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Release</th>
+                    </tr>
+                </thead>
+                <tbody id="orphaned-pm-tbody">
                     <tr><td colspan="4" style="padding: 40px; text-align: center; color: #94a3b8;">Loading...</td></tr>
                 </tbody>
             </table>
@@ -16282,7 +16306,8 @@ if (programSearch) {
 
             // Show/hide views
             document.getElementById('orphaned-by-team').style.display = viewType === 'by-team' ? 'block' : 'none';
-            document.getElementById('orphaned-by-release').style.display = viewType === 'by-release' ? 'block' : 'none';
+            document.getElementById('orphaned-by-em').style.display = viewType === 'by-em' ? 'block' : 'none';
+            document.getElementById('orphaned-by-pm').style.display = viewType === 'by-pm' ? 'block' : 'none';
 
             // Render the selected view
             if (orphanedData) {
@@ -16305,8 +16330,10 @@ if (programSearch) {
 
             if (viewType === 'by-team') {
                 renderOrphanedByTeam();
-            } else {
-                renderOrphanedByRelease();
+            } else if (viewType === 'by-em') {
+                renderOrphanedByEM();
+            } else if (viewType === 'by-pm') {
+                renderOrphanedByPM();
             }
         }
 
@@ -16397,55 +16424,50 @@ if (programSearch) {
             }
         }
 
-        function renderOrphanedByRelease() {
-            const tbody = document.getElementById('orphaned-release-tbody');
-            if (!orphanedData.by_release || orphanedData.by_release.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5" style="padding: 40px; text-align: center; color: #94a3b8;">No orphaned epics found</td></tr>';
+        function renderOrphanedByEM() {
+            const tbody = document.getElementById('orphaned-em-tbody');
+            if (!orphanedData.by_em || orphanedData.by_em.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" style="padding: 40px; text-align: center; color: #94a3b8;">No orphaned epics found</td></tr>';
                 return;
             }
 
             let html = '';
-            orphanedData.by_release.forEach(release => {
-                if (!release.epics || release.epics.length === 0) return;
+            orphanedData.by_em.forEach((manager, index) => {
+                if (!manager.epics || manager.epics.length === 0) return;
 
-                const sanitizedRelease = release.name.replace(/[^a-zA-Z0-9]/g, '-');
+                const sanitizedName = manager.name.replace(/[^a-zA-Z0-9]/g, '-');
 
-                // Release summary row (collapsed by default)
+                // Manager summary row (collapsed by default)
                 html += `
-                    <tr class="release-row" data-release="${sanitizedRelease}" style="background: #f8fafc; border-bottom: 1px solid #e5e7eb; cursor: pointer;" onclick="toggleOrphanedReleaseBreakdown('${sanitizedRelease}')">
+                    <tr class="em-row" data-em="${sanitizedName}" style="background: #f8fafc; border-bottom: 1px solid #e5e7eb; cursor: pointer;" onclick="toggleOrphanedEMBreakdown('${sanitizedName}')">
                         <td style="padding: 12px 16px;">
-                            <span style="background: #2563eb; color: white; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; white-space: nowrap;">
-                                ${release.name}
-                            </span>
-                        </td>
-                        <td style="padding: 12px 16px;">
-                            <span style="font-weight: 600; color: #1e293b; font-size: 14px; display: inline-flex; align-items: center;">
-                                <svg id="icon-release-${sanitizedRelease}" style="width: 16px; height: 16px; margin-right: 8px; transition: transform 0.2s;" viewBox="0 0 20 20" fill="currentColor">
+                            <span style="font-weight: 600; font-size: 15px; color: #1e293b; display: inline-flex; align-items: center;">
+                                <svg id="icon-em-${sanitizedName}" style="width: 16px; height: 16px; margin-right: 8px; transition: transform 0.2s;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                                 </svg>
-                                ${release.epics.length} orphaned ${release.epics.length === 1 ? 'epic' : 'epics'}
+                                ${manager.name}
                             </span>
                         </td>
                         <td style="text-align: center; padding: 12px 16px;">
-                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 14px; font-weight: 600;">
-                                ${release.epics.length}
+                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 15px; font-weight: 600;">
+                                ${manager.epics.length}
                             </span>
                         </td>
                         <td style="text-align: center; padding: 12px 16px; font-size: 14px; color: #d97706; font-weight: 600;">
-                            ${Math.round(release.orphaned_capacity || 0)}
+                            ${Math.round(manager.orphaned_capacity || 0)}
                         </td>
+                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #64748b;">—</td>
                     </tr>
                 `;
 
                 // Epic details (collapsed by default)
-                release.epics.forEach((epic, epicIndex) => {
+                manager.epics.forEach((epic, epicIndex) => {
                     const healthColor = epic.health === 'On Track' ? '#10b981' :
                                       epic.health === 'Watch' ? '#f59e0b' :
                                       epic.health === 'Blocked' ? '#dc2626' : '#94a3b8';
 
                     html += `
-                        <tr class="breakdown-release-${sanitizedRelease}" style="display: none; border-bottom: 1px solid #f1f5f9;">
-                            <td style="padding: 8px 16px;"></td>
+                        <tr class="breakdown-em-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
                             <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #64748b;">
                                 <div style="font-weight: 500; margin-bottom: 2px;">
                                     <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
@@ -16460,6 +16482,9 @@ if (programSearch) {
                             <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #d97706; font-weight: 600;">
                                 ${Math.round(epic.story_points || 0)}
                             </td>
+                            <td style="text-align: center; padding: 8px 16px; font-size: 11px; color: #64748b;">
+                                ${epic.scheduled_build || '-'}
+                            </td>
                         </tr>
                     `;
                 });
@@ -16468,9 +16493,95 @@ if (programSearch) {
             tbody.innerHTML = html;
         }
 
-        function toggleOrphanedReleaseBreakdown(releaseName) {
-            const icon = document.getElementById(`icon-release-${releaseName}`);
-            const breakdownRows = document.querySelectorAll(`.breakdown-release-${releaseName}`);
+        function renderOrphanedByPM() {
+            const tbody = document.getElementById('orphaned-pm-tbody');
+            if (!orphanedData.by_pm || orphanedData.by_pm.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" style="padding: 40px; text-align: center; color: #94a3b8;">No orphaned epics found</td></tr>';
+                return;
+            }
+
+            let html = '';
+            orphanedData.by_pm.forEach((manager, index) => {
+                if (!manager.epics || manager.epics.length === 0) return;
+
+                const sanitizedName = manager.name.replace(/[^a-zA-Z0-9]/g, '-');
+
+                // Manager summary row (collapsed by default)
+                html += `
+                    <tr class="pm-row" data-pm="${sanitizedName}" style="background: #f8fafc; border-bottom: 1px solid #e5e7eb; cursor: pointer;" onclick="toggleOrphanedPMBreakdown('${sanitizedName}')">
+                        <td style="padding: 12px 16px;">
+                            <span style="font-weight: 600; font-size: 15px; color: #1e293b; display: inline-flex; align-items: center;">
+                                <svg id="icon-pm-${sanitizedName}" style="width: 16px; height: 16px; margin-right: 8px; transition: transform 0.2s;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                ${manager.name}
+                            </span>
+                        </td>
+                        <td style="text-align: center; padding: 12px 16px;">
+                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 15px; font-weight: 600;">
+                                ${manager.epics.length}
+                            </span>
+                        </td>
+                        <td style="text-align: center; padding: 12px 16px; font-size: 14px; color: #d97706; font-weight: 600;">
+                            ${Math.round(manager.orphaned_capacity || 0)}
+                        </td>
+                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #64748b;">—</td>
+                    </tr>
+                `;
+
+                // Epic details (collapsed by default)
+                manager.epics.forEach((epic, epicIndex) => {
+                    const healthColor = epic.health === 'On Track' ? '#10b981' :
+                                      epic.health === 'Watch' ? '#f59e0b' :
+                                      epic.health === 'Blocked' ? '#dc2626' : '#94a3b8';
+
+                    html += `
+                        <tr class="breakdown-pm-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #64748b;">
+                                <div style="font-weight: 500; margin-bottom: 2px;">
+                                    <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
+                                        ${epic.name}
+                                    </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${epic.health}</span>
+                                </div>
+                                <div style="font-size: 11px; color: #94a3b8;">
+                                    Team: ${epic.team} | Owner: ${epic.owner}
+                                </div>
+                            </td>
+                            <td style="text-align: center; padding: 8px 16px;"></td>
+                            <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: #d97706; font-weight: 600;">
+                                ${Math.round(epic.story_points || 0)}
+                            </td>
+                            <td style="text-align: center; padding: 8px 16px; font-size: 11px; color: #64748b;">
+                                ${epic.scheduled_build || '-'}
+                            </td>
+                        </tr>
+                    `;
+                });
+            });
+
+            tbody.innerHTML = html;
+        }
+
+        function toggleOrphanedEMBreakdown(managerName) {
+            const icon = document.getElementById(`icon-em-${managerName}`);
+            const breakdownRows = document.querySelectorAll(`.breakdown-em-${managerName}`);
+
+            if (breakdownRows.length > 0) {
+                const isExpanded = breakdownRows[0].style.display !== 'none';
+                breakdownRows.forEach(row => {
+                    row.style.display = isExpanded ? 'none' : 'table-row';
+                });
+
+                // Rotate icon
+                if (icon) {
+                    icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(90deg)';
+                }
+            }
+        }
+
+        function toggleOrphanedPMBreakdown(managerName) {
+            const icon = document.getElementById(`icon-pm-${managerName}`);
+            const breakdownRows = document.querySelectorAll(`.breakdown-pm-${managerName}`);
 
             if (breakdownRows.length > 0) {
                 const isExpanded = breakdownRows[0].style.display !== 'none';

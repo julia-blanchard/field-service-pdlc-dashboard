@@ -28,6 +28,36 @@ def run_soql(query):
     data = json.loads(result.stdout)
     return data.get('result', {}).get('records', [])
 
+def fetch_team_managers(team_names):
+    """Fetch engineering manager and product owner for each team"""
+    print("🔍 Fetching team managers from GUS...")
+    name_conditions = " OR ".join([f"Name = '{name}'" for name in team_names])
+    query = f"""
+    SELECT Name, Engineering_Manager__r.Name, Product_Owner__r.Name
+    FROM ADM_Scrum_Team__c
+    WHERE {name_conditions}
+    """
+    records = run_soql(query)
+
+    team_managers = {}
+    for record in records:
+        team_name = record.get('Name', '')
+        em_obj = record.get('Engineering_Manager__r', {})
+        po_obj = record.get('Product_Owner__r', {})
+        em_name = em_obj.get('Name', '') if em_obj else ''
+        po_name = po_obj.get('Name', '') if po_obj else ''
+        team_managers[team_name] = {
+            'engineering_manager': em_name.title() if em_name else '',
+            'product_owner': po_name.title() if po_name else ''
+        }
+
+    print(f"✅ Fetched manager data for {len(team_managers)} teams")
+    # Debug: print first team
+    if team_managers:
+        first_team = list(team_managers.keys())[0]
+        print(f"   Sample: {first_team} -> EM: {team_managers[first_team]['engineering_manager']}, PO: {team_managers[first_team]['product_owner']}")
+    return team_managers
+
 # Load execution data to get program-project mappings
 print("🔄 Loading execution data...")
 with open(EXECUTION_FILE, 'r') as f:
@@ -49,6 +79,9 @@ with open(TEAMS_FILE, 'r') as f:
     teams_data = json.load(f)
 
 active_team_names = [team['name'] for team in teams_data['teams']]
+
+# Fetch team managers
+team_managers = fetch_team_managers(active_team_names)
 
 # Get scrum team IDs
 print("🔄 Fetching scrum team IDs...")
@@ -366,6 +399,13 @@ for team in teams_data['teams']:
     team['september_committed_unmapped'] = september_unmapped_val
     team['capacity_committed_september'] = sum(september_by_prog.values()) + september_unmapped_val
     team['work_items_committed_september'] = len([i for i in september_items if team_name_map.get(i.get('Scrum_Team__c')) == team_name])
+
+    # Add manager data
+    managers = team_managers.get(team_name, {})
+    team['engineering_manager'] = managers.get('engineering_manager', '')
+    team['product_owner'] = managers.get('product_owner', '')
+    if team_name == "FSL - Asset - 360":
+        print(f"   Debug: Setting {team_name} -> EM: {team['engineering_manager']}, PO: {team['product_owner']}")
 
 # Save updated data
 with open(TEAMS_FILE, 'w') as f:

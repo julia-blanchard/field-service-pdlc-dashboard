@@ -163,7 +163,7 @@ for team in teams:
     team_name = team['name']
     if team_name in existing_teams_map:
         existing_team = existing_teams_map[team_name]
-        # Preserve all capacity-related fields
+        # Preserve all capacity-related fields and manager data
         capacity_fields = [
             'capacity_delivered_june', 'work_items_closed_june',
             'capacity_committed_july', 'work_items_committed_july',
@@ -172,7 +172,8 @@ for team in teams:
             'june_delivered_by_program', 'june_delivered_unmapped',
             'july_committed_by_program', 'july_committed_unmapped',
             'august_committed_by_program', 'august_committed_unmapped',
-            'september_committed_by_program', 'september_committed_unmapped'
+            'september_committed_by_program', 'september_committed_unmapped',
+            'engineering_manager', 'product_owner'
         ]
         for field in capacity_fields:
             if field in existing_team:

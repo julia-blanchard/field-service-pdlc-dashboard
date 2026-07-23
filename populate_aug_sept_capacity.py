@@ -607,13 +607,37 @@ for item in september_items:
                 'month': 'September'
             })
 
-# Convert to final structure
+# Helper function to extract build number for sorting
+def extract_build_number(epic_data):
+    """Extract numeric build for sorting: 262, 264, 266, then no-epic last"""
+    if epic_data['epic_id'] == 'no-epic':
+        return 999  # Sort no-epic to the end
+
+    # Get first work item's scheduled_build to determine epic's release
+    if epic_data['work_items']:
+        build = epic_data['work_items'][0]['scheduled_build']
+        if build and build != '-':
+            # Extract base number (262, 264, 266, etc.)
+            try:
+                # Handle formats like "262", "264.0", "266.1"
+                base = build.split('.')[0]
+                return int(base)
+            except (ValueError, IndexError):
+                return 500  # Unknown builds sort after known but before no-epic
+
+    return 500  # Default for epics with no build info
+
+# Convert to final structure with sorting
 unmapped_details = {}
 for team_name, epics in unmapped_by_team_epic.items():
-    unmapped_details[team_name] = []
+    epic_list = []
     for epic_key, epic_data in epics.items():
         epic_data['months'] = list(epic_data['months'])  # Convert set to list for JSON
-        unmapped_details[team_name].append(epic_data)
+        epic_list.append(epic_data)
+
+    # Sort: 262 → 264 → 266 → unknown → no-epic
+    epic_list.sort(key=extract_build_number)
+    unmapped_details[team_name] = epic_list
 
 # Save unmapped details
 with open(UNMAPPED_DETAILS_FILE, 'w') as f:

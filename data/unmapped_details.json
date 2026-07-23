@@ -6172,8 +6172,8 @@
         }
       ],
       "months": [
-        "September",
         "July",
+        "September",
         "June"
       ]
     }
@@ -10205,7 +10205,7 @@
           "sprint_name": "No Sprint",
           "story_points": 10,
           "assignee": "Paul Chan",
-          "status": "New",
+          "status": "Never",
           "month": "August"
         }
       ],
@@ -28138,8 +28138,8 @@
         }
       ],
       "months": [
-        "September",
         "July",
+        "September",
         "June"
       ]
     },

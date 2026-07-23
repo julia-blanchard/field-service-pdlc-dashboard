@@ -78,6 +78,8 @@ WHERE Closed_On__c >= 2026-06-01T00:00:00Z
   AND Closed_On__c < 2026-07-01T00:00:00Z
   AND Scrum_Team__c IN ('{team_ids_str}')
   AND Story_Points__c != null
+  AND Epic__r.Name != 'Test Failure Sweeper'
+  AND Epic__r.Scheduled_Build__r.Name != 'Never'
 LIMIT 50000
 """
 
@@ -105,6 +107,8 @@ WHERE Sprint__r.Start_Date__c >= 2026-07-01
   AND Sprint__r.Start_Date__c < 2026-08-01
   AND Scrum_Team__c IN ('{team_ids_str}')
   AND Story_Points__c != null
+  AND Epic__r.Name != 'Test Failure Sweeper'
+  AND Epic__r.Scheduled_Build__r.Name != 'Never'
 LIMIT 50000
 """
 
@@ -134,6 +138,8 @@ WHERE Sprint__r.Start_Date__c >= 2026-08-01
   AND Sprint__r.Start_Date__c < 2026-09-01
   AND Scrum_Team__c IN ('{team_ids_str}')
   AND Story_Points__c != null
+  AND Epic__r.Name != 'Test Failure Sweeper'
+  AND Epic__r.Scheduled_Build__r.Name != 'Never'
 LIMIT 50000
 """
 
@@ -152,6 +158,8 @@ WHERE Epic__r.Scheduled_Build__r.Name IN ('264', '264.0', '264.1', '264.2', '264
   AND Sprint__c = null
   AND Scrum_Team__c IN ('{team_ids_str}')
   AND Story_Points__c != null
+  AND Epic__r.Name != 'Test Failure Sweeper'
+  AND Epic__r.Scheduled_Build__r.Name != 'Never'
 LIMIT 50000
 """
 
@@ -190,6 +198,8 @@ WHERE Sprint__r.Start_Date__c >= 2026-09-01
   AND Sprint__r.Start_Date__c < 2026-10-01
   AND Scrum_Team__c IN ('{team_ids_str}')
   AND Story_Points__c != null
+  AND Epic__r.Name != 'Test Failure Sweeper'
+  AND Epic__r.Scheduled_Build__r.Name != 'Never'
 LIMIT 50000
 """
 
@@ -208,6 +218,8 @@ WHERE Epic__r.Scheduled_Build__r.Name IN ('264.5', '264.6', '266', '266.0', '266
   AND Sprint__c = null
   AND Scrum_Team__c IN ('{team_ids_str}')
   AND Story_Points__c != null
+  AND Epic__r.Name != 'Test Failure Sweeper'
+  AND Epic__r.Scheduled_Build__r.Name != 'Never'
 LIMIT 50000
 """
 

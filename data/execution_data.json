@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T16:12:31.590573",
+  "last_updated": "2026-07-23T16:20:26.273478",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -620,7 +620,7 @@
           "product_owner": "",
           "dev_lead": "Nitasha Walia",
           "target": "",
-          "last_modified": "2026-06-25",
+          "last_modified": "2026-07-23",
           "health_status": "On Track",
           "epics": [
             {
@@ -634,7 +634,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "264 SFS Frontline AI",
-              "last_modified": "2026-06-25",
+              "last_modified": "2026-07-23",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             },
@@ -649,7 +649,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "-",
-              "last_modified": "2026-07-09",
+              "last_modified": "2026-07-23",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-"
             },
@@ -679,7 +679,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "-",
-              "last_modified": "2026-07-09",
+              "last_modified": "2026-07-23",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-"
             },
@@ -709,7 +709,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "264 SFS Frontline AI",
-              "last_modified": "2026-06-25",
+              "last_modified": "2026-07-23",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             },

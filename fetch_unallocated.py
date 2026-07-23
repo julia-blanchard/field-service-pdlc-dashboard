@@ -279,17 +279,24 @@ def filter_for_unallocated(all_epics):
     for epic_id in candidate_epic_ids:
         epic = epic_by_id[epic_id]
 
-        # Filter out epics with no actual work activity (story point burndown) in 2026
-        # This catches old epics that got system updates but no real work
-        if epic_id not in active_epic_ids:
-            print(f"  Skipping {epic.get('name', '')} - no work activity since 2026-01-01")
-            continue
-
+        scheduled_build = epic.get('scheduled_build', '-')
         last_modified = epic.get('last_modified', '')
+        epic_name = epic.get('name', '')
+
+        # Include epics with EITHER:
+        # 1. Work activity since 2026 (Closed_On__c >= 2026-01-01) OR
+        # 2. Scheduled for 264+/266+ releases (scheduled_build field) OR
+        # 3. Epic name starts with 264/266/268/270/272 (common naming convention)
+        has_future_release = (
+            (scheduled_build and scheduled_build not in ['-', '', 'Backlog'] and any(scheduled_build.startswith(x) for x in ['264', '266', '268', '270', '272']))
+            or any(epic_name.startswith(x) for x in ['264', '266', '268', '270', '272'])
+        )
+
+        if epic_id not in active_epic_ids and not has_future_release:
+            continue
 
         # Filter out epics not modified in 6+ months UNLESS they have 264+ in the title
         six_months_ago = '2026-01-20'
-        epic_name = epic.get('name', '')
         import re
 
         if last_modified and last_modified < six_months_ago:
@@ -304,7 +311,6 @@ def filter_for_unallocated(all_epics):
         if re.search(old_release_pattern, epic_name):
             continue  # Skip epics with old release numbers in name
 
-        scheduled_build = epic.get('scheduled_build', '-')
         program_name = epic.get('program_name', '')
         project_name = epic.get('project_name', '')
 

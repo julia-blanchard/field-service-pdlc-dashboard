@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T12:24:00.256357",
+  "last_updated": "2026-07-23T12:33:07.230512",
   "teams": [
     {
       "name": "FSL - Asset - 360",
@@ -25,9 +25,13 @@
         "264 Scheduling Flows": 170.0
       },
       "july_committed_unmapped": 11.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 8.0
+      },
       "august_committed_unmapped": 8.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 6.0
+      },
       "september_committed_unmapped": 6.0
     },
     {
@@ -111,9 +115,13 @@
       "june_delivered_unmapped": 30.0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 18.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 13.0
+      },
       "august_committed_unmapped": 13.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 110.0
+      },
       "september_committed_unmapped": 110.0
     },
     {
@@ -175,10 +183,13 @@
       },
       "july_committed_unmapped": 25.0,
       "august_committed_by_program": {
-        "[264] Mobile Insights GA": 89.0
+        "[264] Mobile Insights GA": 89.0,
+        "Orphaned": 70.0
       },
       "august_committed_unmapped": 70.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 88.0
+      },
       "september_committed_unmapped": 88.0
     },
     {
@@ -208,7 +219,8 @@
       "july_committed_unmapped": 17.0,
       "august_committed_by_program": {
         "FS 264: S&O Trust": 9.0,
-        "FS 264: S&O: The New Scheduling Console": 61.0
+        "FS 264: S&O: The New Scheduling Console": 61.0,
+        "Orphaned": 165.0
       },
       "august_committed_unmapped": 165.0,
       "september_committed_by_program": {},
@@ -235,7 +247,9 @@
       "june_delivered_unmapped": 48.0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 21.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 6.0
+      },
       "august_committed_unmapped": 6.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -276,7 +290,8 @@
         "FS 264: S&O: S&O Customer Success": 7.0,
         "FS 264: S&O: Workforce Labor Optimization": 15.0,
         "FS 264: S&O: The New Scheduling Console": 63.0,
-        "264 Infield": 9.0
+        "264 Infield": 9.0,
+        "Orphaned": 54.0
       },
       "august_committed_unmapped": 54.0,
       "september_committed_by_program": {},
@@ -347,10 +362,13 @@
       "august_committed_by_program": {
         "FS 264: S&O Trust": 297.0,
         "264 Infield": 249.0,
-        "264 Infield & Onsite Hybrid": 16.0
+        "264 Infield & Onsite Hybrid": 16.0,
+        "Orphaned": 81.0
       },
       "august_committed_unmapped": 81.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 21.0
+      },
       "september_committed_unmapped": 21.0
     },
     {
@@ -378,7 +396,8 @@
       },
       "july_committed_unmapped": 49.0,
       "august_committed_by_program": {
-        "FS 264: S&O Trust": 391.5
+        "FS 264: S&O Trust": 391.5,
+        "Orphaned": 343.5
       },
       "august_committed_unmapped": 343.5,
       "september_committed_by_program": {},
@@ -413,7 +432,8 @@
       "july_committed_unmapped": 27.0,
       "august_committed_by_program": {
         "FS 264: S&O: Agentic S&O": 112.5,
-        "FS 264: S&O: S&O Customer Success": 108.0
+        "FS 264: S&O: S&O Customer Success": 108.0,
+        "Orphaned": 255.0
       },
       "august_committed_unmapped": 255.0,
       "september_committed_by_program": {},
@@ -469,10 +489,13 @@
       },
       "july_committed_unmapped": 6.0,
       "august_committed_by_program": {
-        "264 Operations Console": 600.0
+        "264 Operations Console": 600.0,
+        "Orphaned": 144.0
       },
       "august_committed_unmapped": 144.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 22.0
+      },
       "september_committed_unmapped": 22.0
     },
     {
@@ -500,9 +523,13 @@
         "264 Field Service: Mobile Agentic AI": 6.0
       },
       "july_committed_unmapped": 41.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 19.0
+      },
       "august_committed_unmapped": 19.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 1.0
+      },
       "september_committed_unmapped": 1.0
     },
     {
@@ -531,7 +558,8 @@
       },
       "july_committed_unmapped": 67.0,
       "august_committed_by_program": {
-        "264 Field Service: Workforce Scheduling on Mobile": 237.0
+        "264 Field Service: Workforce Scheduling on Mobile": 237.0,
+        "Orphaned": 72.0
       },
       "august_committed_unmapped": 72.0,
       "september_committed_by_program": {},
@@ -562,7 +590,9 @@
         "264 Field Service: Customer Trust": 3.0
       },
       "july_committed_unmapped": 98.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 156.0
+      },
       "august_committed_unmapped": 156.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -626,7 +656,8 @@
       "july_committed_unmapped": 53.0,
       "august_committed_by_program": {
         "264 Field Service: Workforce Scheduling on Mobile": 132.0,
-        "264 Field Service: Customer Trust": 7.0
+        "264 Field Service: Customer Trust": 7.0,
+        "Orphaned": 155.0
       },
       "august_committed_unmapped": 155.0,
       "september_committed_by_program": {},
@@ -655,7 +686,9 @@
       "june_delivered_unmapped": 127.0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 42.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 318.0
+      },
       "august_committed_unmapped": 318.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -680,7 +713,9 @@
       "june_delivered_unmapped": 0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 3.0
+      },
       "august_committed_unmapped": 3.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -730,7 +765,9 @@
       "june_delivered_unmapped": 0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 3.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 3.0
+      },
       "august_committed_unmapped": 3.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -761,10 +798,13 @@
       },
       "july_committed_unmapped": 90.0,
       "august_committed_by_program": {
-        "264 Field Service: Workforce Scheduling on Mobile": 112.0
+        "264 Field Service: Workforce Scheduling on Mobile": 112.0,
+        "Orphaned": 941.0
       },
       "august_committed_unmapped": 941.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 283.0
+      },
       "september_committed_unmapped": 283.0
     },
     {
@@ -789,9 +829,13 @@
         "[264] Field Service: Headless (aka Project Codey)": 5.0
       },
       "july_committed_unmapped": 22.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 128.0
+      },
       "august_committed_unmapped": 128.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 5.0
+      },
       "september_committed_unmapped": 5.0
     },
     {
@@ -814,9 +858,13 @@
       "june_delivered_unmapped": 70.0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 2.0,
-      "august_committed_by_program": {},
+      "august_committed_by_program": {
+        "Orphaned": 290.0
+      },
       "august_committed_unmapped": 290.0,
-      "september_committed_by_program": {},
+      "september_committed_by_program": {
+        "Orphaned": 558.0
+      },
       "september_committed_unmapped": 558.0
     },
     {

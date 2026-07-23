@@ -12,6 +12,7 @@ from collections import defaultdict
 SCRIPT_DIR = Path(__file__).parent
 TEAMS_FILE = SCRIPT_DIR / "data" / "teams_data.json"
 EXECUTION_FILE = SCRIPT_DIR / "data" / "execution_data.json"
+UNMAPPED_DETAILS_FILE = SCRIPT_DIR / "data" / "unmapped_details.json"
 TARGET_ORG = "org62"
 
 def run_soql(query):
@@ -67,7 +68,7 @@ team_ids_str = "', '".join(team_ids)
 print("\n🔄 Finding August work items (264, 264.1, 264.2, 264.3, 264.4) for Field Service teams...")
 august_items_query = f"""
 SELECT Id, Name, Scrum_Team__c, Story_Points__c, Epic__c,
-       Epic__r.Scheduled_Build__r.Name, Epic__r.Project__r.Name
+       Epic__r.Name, Epic__r.Scheduled_Build__r.Name, Epic__r.Project__r.Name
 FROM ADM_Work__c
 WHERE Epic__r.Scheduled_Build__r.Name IN ('264', '264.0', '264.1', '264.2', '264.3', '264.4')
   AND Scrum_Team__c IN ('{team_ids_str}')
@@ -116,7 +117,7 @@ for item in august_items:
 print("\n🔄 Finding September work items (264.4, 264.5, 264.6 + 266) for Field Service teams...")
 september_items_query = f"""
 SELECT Id, Name, Scrum_Team__c, Story_Points__c, Epic__c,
-       Epic__r.Scheduled_Build__r.Name, Epic__r.Project__r.Name
+       Epic__r.Name, Epic__r.Scheduled_Build__r.Name, Epic__r.Project__r.Name
 FROM ADM_Work__c
 WHERE Epic__r.Scheduled_Build__r.Name IN ('264.4', '264.5', '264.6', '266', '266.0', '266.1')
   AND Scrum_Team__c IN ('{team_ids_str}')
@@ -168,18 +169,26 @@ for team in teams_data['teams']:
     august_by_prog = dict(august_team_program.get(team_name, {}))
     august_unmapped_val = august_unmapped.get(team_name, 0)
 
+    # Add unmapped capacity as "Orphaned" program
+    if august_unmapped_val > 0:
+        august_by_prog['Orphaned'] = august_unmapped_val
+
     team['august_committed_by_program'] = august_by_prog
     team['august_committed_unmapped'] = august_unmapped_val
-    team['capacity_committed_august'] = sum(august_by_prog.values()) + august_unmapped_val
+    team['capacity_committed_august'] = sum(august_by_prog.values())
     team['work_items_committed_august'] = len([i for i in august_items if team_name_map.get(i.get('Scrum_Team__c')) == team_name])
 
     # September committed by program
     september_by_prog = dict(september_team_program.get(team_name, {}))
     september_unmapped_val = september_unmapped.get(team_name, 0)
 
+    # Add unmapped capacity as "Orphaned" program
+    if september_unmapped_val > 0:
+        september_by_prog['Orphaned'] = september_unmapped_val
+
     team['september_committed_by_program'] = september_by_prog
     team['september_committed_unmapped'] = september_unmapped_val
-    team['capacity_committed_september'] = sum(september_by_prog.values()) + september_unmapped_val
+    team['capacity_committed_september'] = sum(september_by_prog.values())
     team['work_items_committed_september'] = len([i for i in september_items if team_name_map.get(i.get('Scrum_Team__c')) == team_name])
 
 # Save updated data
@@ -212,3 +221,60 @@ total_september_unmapped = sum(september_unmapped.values())
 print(f"  [Unmapped]: {total_september_unmapped:.1f} points")
 
 print(f"\n✅ Updated {TEAMS_FILE}")
+
+# Build unmapped work item details for UI expansion
+print("\n🔄 Building unmapped work item details...")
+unmapped_details = defaultdict(list)
+
+# Add August unmapped work items
+for item in august_items:
+    team_id = item.get('Scrum_Team__c')
+    epic_id = item.get('Epic__c')
+
+    if team_id in team_name_map:
+        team_name = team_name_map[team_id]
+        project_name = august_epic_to_project.get(epic_id)
+
+        # Only include items without project assignment (orphaned)
+        if not project_name:
+            epic_name = item.get('Epic__r', {}).get('Name', 'Unknown Epic')
+            build = item.get('Epic__r', {}).get('Scheduled_Build__r', {}).get('Name', 'Unknown')
+
+            unmapped_details[team_name].append({
+                'work_item_name': item.get('Name', ''),
+                'epic_name': epic_name,
+                'epic_id': epic_id,
+                'scheduled_build': build,
+                'story_points': item.get('Story_Points__c', 0),
+                'month': 'August'
+            })
+
+# Add September unmapped work items
+for item in september_items:
+    team_id = item.get('Scrum_Team__c')
+    epic_id = item.get('Epic__c')
+
+    if team_id in team_name_map:
+        team_name = team_name_map[team_id]
+        project_name = september_epic_to_project.get(epic_id)
+
+        # Only include items without project assignment (orphaned)
+        if not project_name:
+            epic_name = item.get('Epic__r', {}).get('Name', 'Unknown Epic')
+            build = item.get('Epic__r', {}).get('Scheduled_Build__r', {}).get('Name', 'Unknown')
+
+            unmapped_details[team_name].append({
+                'work_item_name': item.get('Name', ''),
+                'epic_name': epic_name,
+                'epic_id': epic_id,
+                'scheduled_build': build,
+                'story_points': item.get('Story_Points__c', 0),
+                'month': 'September'
+            })
+
+# Save unmapped details
+with open(UNMAPPED_DETAILS_FILE, 'w') as f:
+    json.dump(dict(unmapped_details), f, indent=2)
+
+total_unmapped_items = sum(len(items) for items in unmapped_details.values())
+print(f"✅ Saved {total_unmapped_items} unmapped work items across {len(unmapped_details)} teams to {UNMAPPED_DETAILS_FILE}")

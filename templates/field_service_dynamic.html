@@ -15108,6 +15108,23 @@ if (programSearch) {
                 // Check if we found any epic groups
                 if (!epicGroups || epicGroups.length === 0) {
                     console.log('No unmapped epic groups found for team:', originalTeamName);
+
+                    // Insert a message row instead
+                    const messageHtml = `
+                        <tr class="breakdown-unmapped-${sanitizedTeamName}" style="border-bottom: 1px solid #f1f5f9;">
+                            <td colspan="6" style="padding: 12px 16px 12px 64px; font-size: 12px; color: #94a3b8; font-style: italic; text-align: center;">
+                                No itemized details available for August/September
+                            </td>
+                        </tr>
+                    `;
+
+                    const unmappedRow = expandIcon.closest('tr');
+                    unmappedRow.insertAdjacentHTML('afterend', messageHtml);
+
+                    // Expand the icon
+                    expandIcon.style.transform = 'rotate(90deg)';
+                    expandIcon.textContent = '▾';
+
                     return;
                 }
 

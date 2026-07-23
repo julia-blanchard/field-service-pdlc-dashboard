@@ -478,7 +478,7 @@ def index():
                     epic['health'] = 'Not Assigned'
 
         # Map portfolio to TPM (Technical Program Manager)
-        portfolio = prog.get('portfolio', '')
+        portfolio = prog.get('portfolio', '') or ''
         if 'Mobile' in portfolio:
             prog['program_manager'] = 'Julia Blanchard'
         elif 'Foundations' in portfolio or 'UWM' in portfolio:
@@ -609,7 +609,7 @@ def index():
                     epic['health'] = 'Not Assigned'
 
         # Map portfolio to TPM (Technical Program Manager)
-        portfolio = prog.get('portfolio', '')
+        portfolio = prog.get('portfolio', '') or ''
         if 'Mobile' in portfolio:
             prog['program_manager'] = 'Julia Blanchard'
         elif 'Foundations' in portfolio or 'UWM' in portfolio:

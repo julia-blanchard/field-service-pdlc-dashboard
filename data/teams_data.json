@@ -25,13 +25,9 @@
         "264 Scheduling Flows": 170.0
       },
       "july_committed_unmapped": 11.0,
-      "august_committed_by_program": {
-        "Orphaned": 2.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 2.0,
-      "september_committed_by_program": {
-        "Orphaned": 6.0
-      },
+      "september_committed_by_program": {},
       "september_committed_unmapped": 6.0
     },
     {
@@ -90,9 +86,7 @@
         "264 Infield & Onsite Hybrid": 55.0
       },
       "july_committed_unmapped": 41.0,
-      "august_committed_by_program": {
-        "Orphaned": 2.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 2.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -118,13 +112,11 @@
       "july_committed_by_program": {},
       "july_committed_unmapped": 18.0,
       "august_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 132.0,
-        "Orphaned": 43.0
+        "[264] Unified Workforce Management (UWM)": 132.0
       },
       "august_committed_unmapped": 43.0,
       "september_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 43.0,
-        "Orphaned": 74.0
+        "[264] Unified Workforce Management (UWM)": 43.0
       },
       "september_committed_unmapped": 74.0
     },
@@ -188,13 +180,11 @@
       "july_committed_unmapped": 25.0,
       "august_committed_by_program": {
         "[264] Mobile Insights GA": 16.0,
-        "[264] Unified Workforce Management (UWM)": 26.0,
-        "Orphaned": 17.0
+        "[264] Unified Workforce Management (UWM)": 26.0
       },
       "august_committed_unmapped": 17.0,
       "september_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 82.0,
-        "Orphaned": 79.0
+        "[264] Unified Workforce Management (UWM)": 82.0
       },
       "september_committed_unmapped": 79.0
     },
@@ -223,9 +213,7 @@
         "FS 264: S&O: The New Scheduling Console": 23.0
       },
       "july_committed_unmapped": 17.0,
-      "august_committed_by_program": {
-        "Orphaned": 91.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 91.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -252,8 +240,7 @@
       "july_committed_by_program": {},
       "july_committed_unmapped": 21.0,
       "august_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 31.0,
-        "Orphaned": 59.0
+        "[264] Unified Workforce Management (UWM)": 31.0
       },
       "august_committed_unmapped": 59.0,
       "september_committed_by_program": {},
@@ -291,8 +278,7 @@
       "july_committed_unmapped": 25.0,
       "august_committed_by_program": {
         "FS 264: S&O: Workforce Labor Optimization": 15.0,
-        "FS 264: S&O Trust": 9.0,
-        "Orphaned": 1.0
+        "FS 264: S&O Trust": 9.0
       },
       "august_committed_unmapped": 1.0,
       "september_committed_by_program": {},
@@ -362,13 +348,10 @@
       "july_committed_unmapped": 5.0,
       "august_committed_by_program": {
         "FS 264: S&O Trust": 40.0,
-        "264 Infield": 22.0,
-        "Orphaned": 40.0
+        "264 Infield": 22.0
       },
       "august_committed_unmapped": 40.0,
-      "september_committed_by_program": {
-        "Orphaned": 21.0
-      },
+      "september_committed_by_program": {},
       "september_committed_unmapped": 21.0
     },
     {
@@ -396,8 +379,7 @@
       },
       "july_committed_unmapped": 49.0,
       "august_committed_by_program": {
-        "FS 264: S&O Trust": 73.5,
-        "Orphaned": 60.0
+        "FS 264: S&O Trust": 73.5
       },
       "august_committed_unmapped": 60.0,
       "september_committed_by_program": {},
@@ -431,8 +413,7 @@
       },
       "july_committed_unmapped": 27.0,
       "august_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 2.0,
-        "Orphaned": 30.0
+        "[264] Unified Workforce Management (UWM)": 2.0
       },
       "august_committed_unmapped": 30.0,
       "september_committed_by_program": {},
@@ -458,9 +439,7 @@
       "june_delivered_unmapped": 3.0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 4.0,
-      "august_committed_by_program": {
-        "Orphaned": 5.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 5.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -490,13 +469,10 @@
       },
       "july_committed_unmapped": 6.0,
       "august_committed_by_program": {
-        "264 Operations Console": 122.0,
-        "Orphaned": 146.0
+        "264 Operations Console": 122.0
       },
       "august_committed_unmapped": 146.0,
-      "september_committed_by_program": {
-        "Orphaned": 5.0
-      },
+      "september_committed_by_program": {},
       "september_committed_unmapped": 5.0
     },
     {
@@ -524,9 +500,7 @@
         "264 Field Service: Mobile Agentic AI": 6.0
       },
       "july_committed_unmapped": 41.0,
-      "august_committed_by_program": {
-        "Orphaned": 54.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 54.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -557,8 +531,7 @@
       },
       "july_committed_unmapped": 67.0,
       "august_committed_by_program": {
-        "264 Field Service: Workforce Scheduling on Mobile": 99.0,
-        "Orphaned": 34.0
+        "264 Field Service: Workforce Scheduling on Mobile": 99.0
       },
       "august_committed_unmapped": 34.0,
       "september_committed_by_program": {},
@@ -589,9 +562,7 @@
         "264 Field Service: Customer Trust": 3.0
       },
       "july_committed_unmapped": 98.0,
-      "august_committed_by_program": {
-        "Orphaned": 20.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 20.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -654,8 +625,7 @@
       },
       "july_committed_unmapped": 53.0,
       "august_committed_by_program": {
-        "264 Field Service: Workforce Scheduling on Mobile": 22.0,
-        "Orphaned": 86.0
+        "264 Field Service: Workforce Scheduling on Mobile": 22.0
       },
       "august_committed_unmapped": 86.0,
       "september_committed_by_program": {},
@@ -684,9 +654,7 @@
       "june_delivered_unmapped": 127.0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 42.0,
-      "august_committed_by_program": {
-        "Orphaned": 55.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 55.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -736,9 +704,7 @@
       "june_delivered_unmapped": 79.0,
       "july_committed_by_program": {},
       "july_committed_unmapped": 66.0,
-      "august_committed_by_program": {
-        "Orphaned": 28.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 28.0,
       "september_committed_by_program": {},
       "september_committed_unmapped": 0
@@ -794,13 +760,10 @@
       },
       "july_committed_unmapped": 90.0,
       "august_committed_by_program": {
-        "264 Field Service: Workforce Scheduling on Mobile": 43.0,
-        "Orphaned": 382.0
+        "264 Field Service: Workforce Scheduling on Mobile": 43.0
       },
       "august_committed_unmapped": 382.0,
-      "september_committed_by_program": {
-        "Orphaned": 283.0
-      },
+      "september_committed_by_program": {},
       "september_committed_unmapped": 283.0
     },
     {
@@ -825,13 +788,9 @@
         "[264] Field Service: Headless (aka Project Codey)": 5.0
       },
       "july_committed_unmapped": 22.0,
-      "august_committed_by_program": {
-        "Orphaned": 39.0
-      },
+      "august_committed_by_program": {},
       "august_committed_unmapped": 39.0,
-      "september_committed_by_program": {
-        "Orphaned": 5.0
-      },
+      "september_committed_by_program": {},
       "september_committed_unmapped": 5.0
     },
     {
@@ -855,13 +814,11 @@
       "july_committed_by_program": {},
       "july_committed_unmapped": 2.0,
       "august_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 184.0,
-        "Orphaned": 271.0
+        "[264] Unified Workforce Management (UWM)": 184.0
       },
       "august_committed_unmapped": 271.0,
       "september_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 8.0,
-        "Orphaned": 530.0
+        "[264] Unified Workforce Management (UWM)": 8.0
       },
       "september_committed_unmapped": 530.0
     },

@@ -219,26 +219,18 @@ for team in teams_data['teams']:
     august_by_prog = dict(august_team_program.get(team_name, {}))
     august_unmapped_val = august_unmapped.get(team_name, 0)
 
-    # Add unmapped capacity as "Orphaned" program
-    if august_unmapped_val > 0:
-        august_by_prog['Orphaned'] = august_unmapped_val
-
     team['august_committed_by_program'] = august_by_prog
     team['august_committed_unmapped'] = august_unmapped_val
-    team['capacity_committed_august'] = sum(august_by_prog.values())
+    team['capacity_committed_august'] = sum(august_by_prog.values()) + august_unmapped_val
     team['work_items_committed_august'] = len([i for i in august_items if team_name_map.get(i.get('Scrum_Team__c')) == team_name])
 
     # September committed by program
     september_by_prog = dict(september_team_program.get(team_name, {}))
     september_unmapped_val = september_unmapped.get(team_name, 0)
 
-    # Add unmapped capacity as "Orphaned" program
-    if september_unmapped_val > 0:
-        september_by_prog['Orphaned'] = september_unmapped_val
-
     team['september_committed_by_program'] = september_by_prog
     team['september_committed_unmapped'] = september_unmapped_val
-    team['capacity_committed_september'] = sum(september_by_prog.values())
+    team['capacity_committed_september'] = sum(september_by_prog.values()) + september_unmapped_val
     team['work_items_committed_september'] = len([i for i in september_items if team_name_map.get(i.get('Scrum_Team__c')) == team_name])
 
 # Save updated data

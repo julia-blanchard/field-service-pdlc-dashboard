@@ -16219,7 +16219,10 @@ document.getElementById('program-search').addEventListener('input', (e) => {
 
         async function loadOrphanedData() {
             try {
-                const response = await fetch('/api/orphaned');
+                // Try static JSON first (for GitHub Pages), fallback to API
+                const endpoint = window.location.hostname.includes('github.io') ?
+                    'data/unallocated_data.json' : '/api/orphaned';
+                const response = await fetch(endpoint);
                 orphanedData = await response.json();
                 window.orphanedDataLoaded = true;
 

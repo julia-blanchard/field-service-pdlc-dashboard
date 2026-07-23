@@ -4,7 +4,7 @@
       "epic_id": "no-epic",
       "epic_name": "[No Epic Assignment]",
       "epic_status": null,
-      "story_points": 162,
+      "story_points": 160,
       "work_items": [
         {
           "work_item_name": "W-22794768",
@@ -715,16 +715,6 @@
           "assignee": "Naor Alkobi",
           "status": "Closed",
           "month": "July"
-        },
-        {
-          "work_item_name": "W-23503859",
-          "work_item_id": "a07EE00002fCQhOYAW",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07b-FSL - Resource - Scheduling Hawks",
-          "story_points": 2,
-          "assignee": "Naor Alkobi",
-          "status": "Duplicate",
-          "month": "July"
         }
       ],
       "months": [
@@ -980,8 +970,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -1263,8 +1253,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -1346,8 +1336,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -1399,7 +1389,7 @@
       "epic_id": "a3QEE00000207ht2AA",
       "epic_name": "264 [Hyperforce][Performance Priming] Stability & Resiliency",
       "epic_status": "Not Started",
-      "story_points": 70,
+      "story_points": 66,
       "work_items": [
         {
           "work_item_name": "W-19747895",
@@ -1579,16 +1569,6 @@
           "story_points": 1,
           "assignee": "Nigel Menger",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22934204",
-          "work_item_id": "a07EE00002bxkE5YAI",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06b-SFS Mobile Services",
-          "story_points": 2,
-          "assignee": "Nigel Menger",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -1782,16 +1762,6 @@
           "month": "August"
         },
         {
-          "work_item_name": "W-20109579",
-          "work_item_id": "a07EE00002OaPG8YAN",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 2,
-          "assignee": "Nigel Menger",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
           "work_item_name": "W-20401131",
           "work_item_id": "a07EE00002QUoNlYAL",
           "scheduled_build": "264",
@@ -1853,8 +1823,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -1862,7 +1832,7 @@
       "epic_id": "a3QEE0000020Dtl2AE",
       "epic_name": "264 [Core] Trust - Direct Cx Impacting Bug, Bug, Problem Detection, Mandate",
       "epic_status": "Not Started",
-      "story_points": 106,
+      "story_points": 97,
       "work_items": [
         {
           "work_item_name": "W-20438869",
@@ -1872,26 +1842,6 @@
           "story_points": 3,
           "assignee": "Naishal Patel",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22287356",
-          "work_item_id": "a07EE00002Z5JtiYAF",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06a-SFS Mobile Services",
-          "story_points": 1,
-          "assignee": "Anshul Rawat",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22517353",
-          "work_item_id": "a07EE00002a8gXPYAY",
-          "scheduled_build": "264",
-          "sprint_name": "2026.05b-SFS Mobile Services",
-          "story_points": 2,
-          "assignee": "Zhengkang Liu",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -1982,36 +1932,6 @@
           "story_points": 1,
           "assignee": "Faith Zhang",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22312151",
-          "work_item_id": "a07EE00002ZApmQYAT",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06a-SFS Mobile Services",
-          "story_points": 2,
-          "assignee": "Man Kit Yau",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22753506",
-          "work_item_id": "a07EE00002bDrGMYA0",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06a-SFS Mobile Services",
-          "story_points": 2,
-          "assignee": "Man Kit Yau",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22801559",
-          "work_item_id": "a07EE00002bOMPGYA4",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06a-SFS Mobile Services",
-          "story_points": 2,
-          "assignee": "Man Kit Yau",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -2346,8 +2266,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -2355,7 +2275,7 @@
       "epic_id": "no-epic",
       "epic_name": "[No Epic Assignment]",
       "epic_status": null,
-      "story_points": 27,
+      "story_points": 22,
       "work_items": [
         {
           "work_item_name": "W-21569975",
@@ -2395,16 +2315,6 @@
           "story_points": 2,
           "assignee": "Kim Le",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22964484",
-          "work_item_id": "a07EE00002c5uXUYAY",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 5,
-          "assignee": "Nigel Menger",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -2804,8 +2714,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -2966,8 +2876,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -3119,8 +3029,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -3159,7 +3069,7 @@
       "epic_id": "a3QEE000001rmdp2AA",
       "epic_name": "264 [Hyperforce][Performance Priming] Support PSS and deploy to Gov Cloud",
       "epic_status": "Not Started",
-      "story_points": 53,
+      "story_points": 51,
       "work_items": [
         {
           "work_item_name": "W-23077667",
@@ -3392,26 +3302,6 @@
           "month": "August"
         },
         {
-          "work_item_name": "W-21510771",
-          "work_item_id": "a07EE00002VzdbQYAR",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 1,
-          "assignee": "Nigel Menger",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
-          "work_item_name": "W-21510788",
-          "work_item_id": "a07EE00002VzfepYAB",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 1,
-          "assignee": "Nigel Menger",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
           "work_item_name": "W-21510669",
           "work_item_id": "a07EE00002Vzh8PYAR",
           "scheduled_build": "264",
@@ -3503,8 +3393,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -3556,8 +3446,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -3670,8 +3560,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -3679,7 +3569,7 @@
       "epic_id": "a3QEE0000024ChN2AU",
       "epic_name": "264 [Hyperforce][Performance Priming] Trust: Maintenance & Compliance",
       "epic_status": "Not Started",
-      "story_points": 26,
+      "story_points": 25,
       "work_items": [
         {
           "work_item_name": "W-22563197",
@@ -3709,16 +3599,6 @@
           "story_points": 3,
           "assignee": "Nigel Menger",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-21085915",
-          "work_item_id": "a07EE00002Toq5LYAR",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06a-SFS Mobile Services",
-          "story_points": 1,
-          "assignee": "Nigel Menger",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -3863,8 +3743,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -3896,8 +3776,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -3958,8 +3838,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -4261,8 +4141,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -4477,18 +4357,8 @@
       "epic_id": "a3QEE00000130e12AA",
       "epic_name": "266 [Hyperforce][Performance Priming] - Files Priming",
       "epic_status": "Not Started",
-      "story_points": 13,
+      "story_points": 10,
       "work_items": [
-        {
-          "work_item_name": "W-18796838",
-          "work_item_id": "a07EE00002GG1ODYA1",
-          "scheduled_build": "266",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Raghav Abboy",
-          "status": "Duplicate",
-          "month": "September"
-        },
         {
           "work_item_name": "W-19317031",
           "work_item_id": "a07EE00002K22lJYAR",
@@ -4508,7 +4378,7 @@
       "epic_id": "a3QEE000001P9cD2AS",
       "epic_name": "266 [Hyperforce][Performance Priming] Global deployment / migration strategy",
       "epic_status": "Not Started",
-      "story_points": 33,
+      "story_points": 28,
       "work_items": [
         {
           "work_item_name": "W-15206995",
@@ -4518,16 +4388,6 @@
           "story_points": 2,
           "assignee": "Danny Wilson",
           "status": "Triaged",
-          "month": "September"
-        },
-        {
-          "work_item_name": "W-15921963",
-          "work_item_id": "a07EE00001tS0jMYAS",
-          "scheduled_build": "266",
-          "sprint_name": "No Sprint",
-          "story_points": 5,
-          "assignee": "Naishal Patel",
-          "status": "Duplicate",
           "month": "September"
         },
         {
@@ -5798,8 +5658,8 @@
         }
       ],
       "months": [
-        "June",
         "September",
+        "June",
         "July"
       ]
     }
@@ -5933,7 +5793,7 @@
       "epic_id": "a3QEE000002JIHp2AO",
       "epic_name": "264 SFS Mobile Platform DX - Auth Innovation and Maintenance",
       "epic_status": "Not Started",
-      "story_points": 31,
+      "story_points": 25,
       "work_items": [
         {
           "work_item_name": "W-22844075",
@@ -5986,16 +5846,6 @@
           "month": "June"
         },
         {
-          "work_item_name": "W-22602052",
-          "work_item_id": "a07EE00002aanTBYAY",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
           "work_item_name": "W-22452333",
           "work_item_id": "a07EE00002Zs1QMYAZ",
           "scheduled_build": "264",
@@ -6026,16 +5876,6 @@
           "month": "July"
         },
         {
-          "work_item_name": "W-22602052",
-          "work_item_id": "a07EE00002aanTBYAY",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
           "work_item_name": "W-23370982",
           "work_item_id": "a07EE00002eFEWOYA4",
           "scheduled_build": "264",
@@ -6057,8 +5897,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -6208,7 +6048,7 @@
       "epic_id": "a3QEE00000245cf2AA",
       "epic_name": "264 SFS Mobile Platform DX - iOS Platform Support",
       "epic_status": "Not Started",
-      "story_points": 42,
+      "story_points": 36,
       "work_items": [
         {
           "work_item_name": "W-23139270",
@@ -6218,16 +6058,6 @@
           "story_points": 1,
           "assignee": "Thomas Myrden",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-21195794",
-          "work_item_id": "a07EE00002ULmzBYAT",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Srijan Bhatia",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -6311,16 +6141,6 @@
           "month": "June"
         },
         {
-          "work_item_name": "W-22678476",
-          "work_item_id": "a07EE00002avKL3YAM",
-          "scheduled_build": "-",
-          "sprint_name": "2026.06b-SFS Mobile Platform DX",
-          "story_points": 3,
-          "assignee": "Thomas Myrden",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
           "work_item_name": "W-23501256",
           "work_item_id": "a07EE00002fB127YAC",
           "scheduled_build": "-",
@@ -6400,7 +6220,7 @@
       "epic_id": "a3QEE000002GWXR2A4",
       "epic_name": "264 SFS Mobile Platform DX - Quality Framework",
       "epic_status": "Not Started",
-      "story_points": 63,
+      "story_points": 52,
       "work_items": [
         {
           "work_item_name": "W-23140442",
@@ -6633,46 +6453,6 @@
           "month": "August"
         },
         {
-          "work_item_name": "W-22106063",
-          "work_item_id": "a07EE00002YMP5VYAX",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Andrew Shand",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
-          "work_item_name": "W-22106035",
-          "work_item_id": "a07EE00002YMgfyYAD",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Andrew Shand",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
-          "work_item_name": "W-22106005",
-          "work_item_id": "a07EE00002YMnULYA1",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Andrew Shand",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
-          "work_item_name": "W-22137935",
-          "work_item_id": "a07EE00002YVyQJYA1",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 2,
-          "assignee": "Joel Harmon",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
           "work_item_name": "W-22901567",
           "work_item_id": "a07EE00002bjyBrYAI",
           "scheduled_build": "264",
@@ -6694,37 +6474,16 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JJ7R2AW",
-      "epic_name": "266 SFS Mobile Platform DX - Android Platform Support",
-      "epic_status": "Not Started",
-      "story_points": 2,
-      "work_items": [
-        {
-          "work_item_name": "W-20258929",
-          "work_item_id": "a07EE00002Pf8cFYAR",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 2,
-          "assignee": "Neil Parsons",
-          "status": "Duplicate",
-          "month": "June"
-        }
-      ],
-      "months": [
-        "June"
       ]
     },
     {
       "epic_id": "a3QEE000001rjxh2AA",
       "epic_name": "264 SFS Mobile Platform DX - Data Layer Direct2LDS for Records",
       "epic_status": "Not Started",
-      "story_points": 13,
+      "story_points": 3,
       "work_items": [
         {
           "work_item_name": "W-16447812",
@@ -6734,26 +6493,6 @@
           "story_points": 3,
           "assignee": "Neil Parsons",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-16447815",
-          "work_item_id": "a07EE00001yYm4KYAS",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 5,
-          "assignee": "Neil Parsons",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-16447816",
-          "work_item_id": "a07EE00001yYm4LYAS",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 5,
-          "assignee": "Neil Parsons",
-          "status": "Duplicate",
           "month": "June"
         }
       ],
@@ -7620,247 +7359,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002T0LF2A0",
-      "epic_name": "Automate MSDK Upgrade Regression Suite (TS-1083432) with Maestro",
-      "epic_status": "Not Started",
-      "story_points": 0,
-      "work_items": [
-        {
-          "work_item_name": "W-23025516",
-          "work_item_id": "a07EE00002cMjEjYAK",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025517",
-          "work_item_id": "a07EE00002cMjEkYAK",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025518",
-          "work_item_id": "a07EE00002cMjElYAK",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025463",
-          "work_item_id": "a07EE00002cMuBSYA0",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025467",
-          "work_item_id": "a07EE00002cMuBWYA0",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025450",
-          "work_item_id": "a07EE00002cN55FYAS",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025451",
-          "work_item_id": "a07EE00002cN55GYAS",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025452",
-          "work_item_id": "a07EE00002cN55HYAS",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025454",
-          "work_item_id": "a07EE00002cN55JYAS",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025438",
-          "work_item_id": "a07EE00002cNEg8YAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025439",
-          "work_item_id": "a07EE00002cNEg9YAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025440",
-          "work_item_id": "a07EE00002cNEgAYAW",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025561",
-          "work_item_id": "a07EE00002cNEhpYAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025562",
-          "work_item_id": "a07EE00002cNEhqYAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025563",
-          "work_item_id": "a07EE00002cNEhrYAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025564",
-          "work_item_id": "a07EE00002cNEhsYAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025566",
-          "work_item_id": "a07EE00002cNEhuYAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025567",
-          "work_item_id": "a07EE00002cNEhvYAG",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025508",
-          "work_item_id": "a07EE00002cNFVwYAO",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025509",
-          "work_item_id": "a07EE00002cNFVxYAO",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025511",
-          "work_item_id": "a07EE00002cNFVzYAO",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025512",
-          "work_item_id": "a07EE00002cNFW0YAO",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23025514",
-          "work_item_id": "a07EE00002cNFW2YAO",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 0,
-          "assignee": "Amisha Goyal",
-          "status": "Duplicate",
-          "month": "June"
-        }
-      ],
-      "months": [
-        "June"
-      ]
-    },
-    {
       "epic_id": "a3QEE0000021BI12AM",
       "epic_name": "264 SFS Mobile Platform DX - Release Process and Improvements",
       "epic_status": "Not Started",
@@ -7929,7 +7427,7 @@
       "epic_id": "no-epic",
       "epic_name": "[No Epic Assignment]",
       "epic_status": null,
-      "story_points": 58,
+      "story_points": 53,
       "work_items": [
         {
           "work_item_name": "W-21200257",
@@ -8029,26 +7527,6 @@
           "story_points": 1,
           "assignee": "Thomas Myrden",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22420183",
-          "work_item_id": "a07EE00002ZdwqcYAB",
-          "scheduled_build": "-",
-          "sprint_name": "2026.06a-SFS Mobile Comms and Search",
-          "story_points": 2,
-          "assignee": "Keerthini Reddy Chimarla",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23069144",
-          "work_item_id": "a07EE00002cXCRlYAO",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07a-SFS Mobile Comms and Search",
-          "story_points": 3,
-          "assignee": "Jenny Kravetsky",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -8603,7 +8081,7 @@
       "epic_id": "a3QEE000002CjY52AK",
       "epic_name": "264 SFS Frontline AI - [M2.7] Mobile Unplanned Trust",
       "epic_status": "On Track",
-      "story_points": 42,
+      "story_points": 40,
       "work_items": [
         {
           "work_item_name": "W-20448828",
@@ -8713,16 +8191,6 @@
           "story_points": 1,
           "assignee": "Denina Walker",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22343796",
-          "work_item_id": "a07EE00002ZJ9u8YAD",
-          "scheduled_build": "-",
-          "sprint_name": "2026.06b-SFS Frontline AI",
-          "story_points": 1,
-          "assignee": "Vishal Gupta",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -8884,16 +8352,6 @@
           "assignee": "Shivani Varambally",
           "status": "Closed",
           "month": "June"
-        },
-        {
-          "work_item_name": "W-23276690",
-          "work_item_id": "a07EE00002dgh6mYAA",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07a-SFS Frontline AI",
-          "story_points": 1,
-          "assignee": "Shreyaa Sridhar",
-          "status": "Triaged",
-          "month": "July"
         },
         {
           "work_item_name": "W-23073428",
@@ -9687,6 +9145,37 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002SxTp2AK",
+      "epic_name": "266 SFS Frontline AI - [M2.7] Mobile Trust",
+      "epic_status": "Not Started",
+      "story_points": 3,
+      "work_items": [
+        {
+          "work_item_name": "W-23276690",
+          "work_item_id": "a07EE00002dgh6mYAA",
+          "scheduled_build": "-",
+          "sprint_name": "2026.07a-SFS Frontline AI",
+          "story_points": 1,
+          "assignee": "Shreyaa Sridhar",
+          "status": "Triaged",
+          "month": "July"
+        },
+        {
+          "work_item_name": "W-23547597",
+          "work_item_id": "a07EE00002fUbePYAS",
+          "scheduled_build": "-",
+          "sprint_name": "2026.07a-SFS Frontline AI",
+          "story_points": 2,
+          "assignee": "Karthick Raghavan",
+          "status": "Triaged",
+          "month": "July"
+        }
+      ],
+      "months": [
+        "July"
+      ]
+    },
+    {
       "epic_id": "a3QEE0000022kYf2AI",
       "epic_name": "264 SFS Frontline AI - Guided Troubleshooting GA",
       "epic_status": "Not Started",
@@ -9985,27 +9474,6 @@
           "story_points": 3,
           "assignee": "Manushi Talwar",
           "status": "In Progress",
-          "month": "July"
-        }
-      ],
-      "months": [
-        "July"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002SxTp2AK",
-      "epic_name": "266 SFS Frontline AI - [M2.7] Mobile Trust",
-      "epic_status": "Not Started",
-      "story_points": 2,
-      "work_items": [
-        {
-          "work_item_name": "W-23547597",
-          "work_item_id": "a07EE00002fUbePYAS",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07a-SFS Frontline AI",
-          "story_points": 2,
-          "assignee": "Karthick Raghavan",
-          "status": "Triaged",
           "month": "July"
         }
       ],
@@ -10809,8 +10277,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -11053,8 +10521,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -11469,7 +10937,7 @@
       "epic_id": "a3QEE000002JTrZ2AW",
       "epic_name": "*[264] QuantumForce - Brainforce - Automation",
       "epic_status": "On Track",
-      "story_points": 119,
+      "story_points": 114,
       "work_items": [
         {
           "work_item_name": "W-22982855",
@@ -12182,16 +11650,6 @@
           "month": "June"
         },
         {
-          "work_item_name": "W-23119088",
-          "work_item_id": "a07EE00002cn5BKYAY",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06b- QuantumForce",
-          "story_points": 2,
-          "assignee": "Miriam Sallach",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
           "work_item_name": "W-23019480",
           "work_item_id": "a07EE00002cKxQAYA0",
           "scheduled_build": "264",
@@ -12389,16 +11847,6 @@
           "story_points": 3,
           "assignee": "Chava Ben Shem",
           "status": "Closed",
-          "month": "July"
-        },
-        {
-          "work_item_name": "W-23539425",
-          "work_item_id": "a07EE00002fTWLyYAO",
-          "scheduled_build": "264",
-          "sprint_name": "2026.07b- QuantumForce",
-          "story_points": 3,
-          "assignee": "Chava Ben Shem",
-          "status": "Duplicate",
           "month": "July"
         }
       ],
@@ -13086,8 +12534,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -13249,8 +12697,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -13766,8 +13214,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -14352,8 +13800,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -14425,8 +13873,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -14509,7 +13957,7 @@
       "epic_id": "a3QEE000001u4tB2AQ",
       "epic_name": "[SFS MCX][Trust] Trust Backlog",
       "epic_status": "Not Started",
-      "story_points": 58,
+      "story_points": 55,
       "work_items": [
         {
           "work_item_name": "W-17266286",
@@ -14539,16 +13987,6 @@
           "story_points": 2,
           "assignee": "Nir Mekin",
           "status": "Closed",
-          "month": "July"
-        },
-        {
-          "work_item_name": "W-21346609",
-          "work_item_id": "a07EE00002VINt0YAH",
-          "scheduled_build": "264",
-          "sprint_name": "2026.07a-SFS Mobile Core Experience",
-          "story_points": 1,
-          "assignee": "Maya Shavin",
-          "status": "Duplicate",
           "month": "July"
         },
         {
@@ -14689,16 +14127,6 @@
           "story_points": 1,
           "assignee": "Maya Shavin",
           "status": "New",
-          "month": "August"
-        },
-        {
-          "work_item_name": "W-19453127",
-          "work_item_id": "a07EE00002KtaknYAB",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 2,
-          "assignee": "Denina Walker",
-          "status": "Duplicate",
           "month": "August"
         },
         {
@@ -14843,8 +14271,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -15599,7 +15027,7 @@
       "epic_id": "a3QEE000001ntE52AI",
       "epic_name": "[264][SFS MCX][Trust] Offline Engine Availability Bugs",
       "epic_status": "Not Started",
-      "story_points": 8,
+      "story_points": 5,
       "work_items": [
         {
           "work_item_name": "W-23182342",
@@ -15620,21 +15048,11 @@
           "assignee": "Karin Lackrif",
           "status": "New",
           "month": "August"
-        },
-        {
-          "work_item_name": "W-20103190",
-          "work_item_id": "a07EE00002OXKscYAH",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Maya Shavin",
-          "status": "Duplicate",
-          "month": "August"
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -16029,7 +15447,7 @@
       "epic_id": "a3QEE0000020oLR2AY",
       "epic_name": "264 SFS Mobile - [MIT][Trust] SFS Planned Trust Enhancements",
       "epic_status": "Not Started",
-      "story_points": 131,
+      "story_points": 126,
       "work_items": [
         {
           "work_item_name": "W-20442846",
@@ -16289,26 +15707,6 @@
           "story_points": 1,
           "assignee": "Eliran Sharabi",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22996178",
-          "work_item_id": "a07EE00002cFf7aYAC",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06b-SFS Location and DC",
-          "story_points": 3,
-          "assignee": "Dana Bergman",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23226093",
-          "work_item_id": "a07EE00002dQ3TNYA0",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 1,
-          "assignee": "Eliran Sharabi",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -16652,16 +16050,6 @@
           "month": "August"
         },
         {
-          "work_item_name": "W-23226093",
-          "work_item_id": "a07EE00002dQ3TNYA0",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 1,
-          "assignee": "Eliran Sharabi",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
           "work_item_name": "W-23225113",
           "work_item_id": "a07EE00002dQ3hPYAS",
           "scheduled_build": "264",
@@ -16693,8 +16081,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -17111,68 +16499,6 @@
       ]
     },
     {
-      "epic_id": "no-epic",
-      "epic_name": "[No Epic Assignment]",
-      "epic_status": null,
-      "story_points": 9,
-      "work_items": [
-        {
-          "work_item_name": "W-23227050",
-          "work_item_id": "a07EE00002dQOIzYAO",
-          "scheduled_build": "-",
-          "sprint_name": "No Sprint",
-          "story_points": 1,
-          "assignee": "Jenny Kravetsky",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22790844",
-          "work_item_id": "a07EE00002bLrG5YAK",
-          "scheduled_build": "-",
-          "sprint_name": "2026.05b-SFS Location and DC",
-          "story_points": 2,
-          "assignee": "Sagi Ravid",
-          "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23248122",
-          "work_item_id": "a07EE00002dWpxjYAC",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07a-SFS Location and DC",
-          "story_points": 1,
-          "assignee": "Sagi Ravid",
-          "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22661838",
-          "work_item_id": "a07EE00002apO1bYAE",
-          "scheduled_build": "-",
-          "sprint_name": "2026.05b-SFS Location and DC",
-          "story_points": 3,
-          "assignee": "Bhanu Prasad",
-          "status": "Closed - Doc/Usability",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-23138706",
-          "work_item_id": "a07EE00002ctkBOYAY",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07b-SFS Location and DC",
-          "story_points": 2,
-          "assignee": "Dana Bergman",
-          "status": "Duplicate",
-          "month": "July"
-        }
-      ],
-      "months": [
-        "June",
-        "July"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002LJo52AG",
       "epic_name": "262 SFS Regression",
       "epic_status": "Not Started",
@@ -17541,6 +16867,47 @@
       ]
     },
     {
+      "epic_id": "no-epic",
+      "epic_name": "[No Epic Assignment]",
+      "epic_status": null,
+      "story_points": 6,
+      "work_items": [
+        {
+          "work_item_name": "W-22790844",
+          "work_item_id": "a07EE00002bLrG5YAK",
+          "scheduled_build": "-",
+          "sprint_name": "2026.05b-SFS Location and DC",
+          "story_points": 2,
+          "assignee": "Sagi Ravid",
+          "status": "Closed",
+          "month": "June"
+        },
+        {
+          "work_item_name": "W-23248122",
+          "work_item_id": "a07EE00002dWpxjYAC",
+          "scheduled_build": "-",
+          "sprint_name": "2026.07a-SFS Location and DC",
+          "story_points": 1,
+          "assignee": "Sagi Ravid",
+          "status": "Closed",
+          "month": "June"
+        },
+        {
+          "work_item_name": "W-22661838",
+          "work_item_id": "a07EE00002apO1bYAE",
+          "scheduled_build": "-",
+          "sprint_name": "2026.05b-SFS Location and DC",
+          "story_points": 3,
+          "assignee": "Bhanu Prasad",
+          "status": "Closed - Doc/Usability",
+          "month": "June"
+        }
+      ],
+      "months": [
+        "June"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002GU2b2AG",
       "epic_name": "264 SFS Mobile - [TRUST] FSE Support",
       "epic_status": "Not Started",
@@ -17568,8 +16935,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -17620,7 +16987,7 @@
       "epic_id": "no-epic",
       "epic_name": "[No Epic Assignment]",
       "epic_status": null,
-      "story_points": 17,
+      "story_points": 16,
       "work_items": [
         {
           "work_item_name": "W-22664212",
@@ -17740,16 +17107,6 @@
           "story_points": 1,
           "assignee": "Nir Grande",
           "status": "Closed",
-          "month": "July"
-        },
-        {
-          "work_item_name": "W-23344295",
-          "work_item_id": "a07EE00002e8QjuYAE",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07b-FSL - Foundation - Corecodiles",
-          "story_points": 1,
-          "assignee": "Tomer Tzobel",
-          "status": "Duplicate",
           "month": "July"
         }
       ],
@@ -18168,8 +17525,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -18241,15 +17598,15 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
       "epic_id": "a3QEE000002MpXN2A0",
       "epic_name": "264 SFS [Infra] Availability - splitting jobs by job type",
       "epic_status": "On Track",
-      "story_points": 30,
+      "story_points": 24,
       "work_items": [
         {
           "work_item_name": "W-22260045",
@@ -18349,36 +17706,6 @@
           "story_points": 1,
           "assignee": "Josh Honeycutt",
           "status": "Closed",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22260064",
-          "work_item_id": "a07EE00002YzIFVYA3",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06b-Optimization Engineering",
-          "story_points": 2,
-          "assignee": "Josh Honeycutt",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22260247",
-          "work_item_id": "a07EE00002YzRC1YAN",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06b-Optimization Engineering",
-          "story_points": 2,
-          "assignee": "Josh Honeycutt",
-          "status": "Duplicate",
-          "month": "June"
-        },
-        {
-          "work_item_name": "W-22972464",
-          "work_item_id": "a07EE00002c7VOrYAM",
-          "scheduled_build": "264",
-          "sprint_name": "2026.06b-Optimization Engineering",
-          "story_points": 2,
-          "assignee": "Josh Honeycutt",
-          "status": "Duplicate",
           "month": "June"
         },
         {
@@ -18941,7 +18268,7 @@
       "epic_id": "a3QEE000002N8Bp2AK",
       "epic_name": "264 SFS - Intelligent Routing and GIS",
       "epic_status": "On Track",
-      "story_points": 20,
+      "story_points": 18,
       "work_items": [
         {
           "work_item_name": "W-22495524",
@@ -19032,21 +18359,10 @@
           "assignee": "Dylan Mistry",
           "status": "Closed",
           "month": "July"
-        },
-        {
-          "work_item_name": "W-22469754",
-          "work_item_id": "a07EE00002ZveQbYAJ",
-          "scheduled_build": "264",
-          "sprint_name": "2026.09a-Optimization Engineering",
-          "story_points": 2,
-          "assignee": "Dylan Mistry",
-          "status": "Duplicate",
-          "month": "August"
         }
       ],
       "months": [
         "June",
-        "August",
         "July"
       ]
     },
@@ -19989,8 +19305,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -20243,15 +19559,15 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
       "epic_id": "a3QEE000002GKWH2A4",
       "epic_name": "* 264 SFS [Trust]  - mTLS Migration",
       "epic_status": "On Track",
-      "story_points": 39,
+      "story_points": 37,
       "work_items": [
         {
           "work_item_name": "W-22708490",
@@ -20384,16 +19700,6 @@
           "month": "July"
         },
         {
-          "work_item_name": "W-21798947",
-          "work_item_id": "a07EE00002X8Z3BYAV",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 2,
-          "assignee": "Lev Gorelik",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
           "work_item_name": "W-23473728",
           "work_item_id": "a07EE00002exWnKYAU",
           "scheduled_build": "264",
@@ -20405,8 +19711,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -21717,7 +21023,7 @@
       "epic_id": "a3QEE000002FiIv2AK",
       "epic_name": "[264][SFS Mobile Assets] ZBB Bugs",
       "epic_status": "Not Started",
-      "story_points": 23,
+      "story_points": 21,
       "work_items": [
         {
           "work_item_name": "W-19756832",
@@ -21808,21 +21114,10 @@
           "assignee": "Vaishali Jaiswal",
           "status": "Closed - New Bug Logged",
           "month": "June"
-        },
-        {
-          "work_item_name": "W-19005031",
-          "work_item_id": "a07EE00002HsqtRYAR",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07a-SFS Mobile Assets",
-          "story_points": 2,
-          "assignee": "Andre Dion",
-          "status": "Duplicate",
-          "month": "July"
         }
       ],
       "months": [
-        "June",
-        "July"
+        "June"
       ]
     },
     {
@@ -23198,7 +22493,7 @@
       "epic_id": "a3QEE000002RIcP2AW",
       "epic_name": "[264]Mobile Flows Observability \u2014 Metrics, Alerts & Playbook",
       "epic_status": "Not Started",
-      "story_points": 24,
+      "story_points": 21,
       "work_items": [
         {
           "work_item_name": "W-22767919",
@@ -23268,16 +22563,6 @@
           "story_points": 3,
           "assignee": "Sandeep Agrawal",
           "status": "Fixed",
-          "month": "July"
-        },
-        {
-          "work_item_name": "W-22767914",
-          "work_item_id": "a07EE00002bGYukYAG",
-          "scheduled_build": "-",
-          "sprint_name": "2026.07a-SFS Mobile Assets",
-          "story_points": 3,
-          "assignee": "Sandeep Agrawal",
-          "status": "Duplicate",
           "month": "July"
         }
       ],
@@ -24047,8 +23332,8 @@
         }
       ],
       "months": [
-        "June",
-        "September"
+        "September",
+        "June"
       ]
     },
     {
@@ -24179,8 +23464,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },
@@ -24242,9 +23527,9 @@
         }
       ],
       "months": [
-        "June",
         "September",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -24652,30 +23937,9 @@
         }
       ],
       "months": [
-        "June",
         "September",
+        "June",
         "July"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002MY6j2AG",
-      "epic_name": "[DUPLICATE] 264: PSS-FS: Operations Console: Activity Tracker",
-      "epic_status": "Not Started",
-      "story_points": 5,
-      "work_items": [
-        {
-          "work_item_name": "W-22213324",
-          "work_item_id": "a07EE00002Ym66cYAB",
-          "scheduled_build": "-",
-          "sprint_name": "2026.04b [SP1]- SFS Core Scheduler",
-          "story_points": 5,
-          "assignee": "Kritica Mantri",
-          "status": "Duplicate",
-          "month": "June"
-        }
-      ],
-      "months": [
-        "June"
       ]
     },
     {
@@ -24970,7 +24234,7 @@
       "epic_id": "a3QEE0000021mKn2AI",
       "epic_name": "[264] [Trust] Error Handling in Go Features",
       "epic_status": "On Track",
-      "story_points": 30,
+      "story_points": 24,
       "work_items": [
         {
           "work_item_name": "W-20451304",
@@ -25061,41 +24325,10 @@
           "assignee": "Rahul Mehta",
           "status": "Closed",
           "month": "July"
-        },
-        {
-          "work_item_name": "W-21220902",
-          "work_item_id": "a07EE00002UVaGLYA1",
-          "scheduled_build": "264",
-          "sprint_name": "2026.07a-SFS Setup Experience",
-          "story_points": 2,
-          "assignee": "Pauli Peralta",
-          "status": "Duplicate",
-          "month": "July"
-        },
-        {
-          "work_item_name": "W-21981172",
-          "work_item_id": "a07EE00002XshrHYAR",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Rahul Mehta",
-          "status": "Duplicate",
-          "month": "August"
-        },
-        {
-          "work_item_name": "W-22010420",
-          "work_item_id": "a07EE00002Y2ZuqYAF",
-          "scheduled_build": "264",
-          "sprint_name": "No Sprint",
-          "story_points": 1,
-          "assignee": "Bryan Sugiarto",
-          "status": "Duplicate",
-          "month": "August"
         }
       ],
       "months": [
         "June",
-        "August",
         "July"
       ]
     },
@@ -25823,8 +25056,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -26065,8 +25298,8 @@
         }
       ],
       "months": [
-        "June",
-        "August"
+        "August",
+        "June"
       ]
     },
     {
@@ -26260,7 +25493,7 @@
       "epic_id": "a3QEE0000021mnp2AA",
       "epic_name": "266 UWM Worker Engagement Experience: Transfer Shifts",
       "epic_status": "Not Started",
-      "story_points": 113,
+      "story_points": 106,
       "work_items": [
         {
           "work_item_name": "W-20479807",
@@ -26293,16 +25526,6 @@
           "month": "September"
         },
         {
-          "work_item_name": "W-20483552",
-          "work_item_id": "a07EE00002QtHP6YAN",
-          "scheduled_build": "266",
-          "sprint_name": "No Sprint",
-          "story_points": 2,
-          "assignee": "Yi-Chin Chang",
-          "status": "Duplicate",
-          "month": "September"
-        },
-        {
           "work_item_name": "W-20483597",
           "work_item_id": "a07EE00002QtIGRYA3",
           "scheduled_build": "266",
@@ -26310,16 +25533,6 @@
           "story_points": 5,
           "assignee": "Yi-Chin Chang",
           "status": "New",
-          "month": "September"
-        },
-        {
-          "work_item_name": "W-20483575",
-          "work_item_id": "a07EE00002QtJ5yYAF",
-          "scheduled_build": "266",
-          "sprint_name": "No Sprint",
-          "story_points": 2,
-          "assignee": "Yi-Chin Chang",
-          "status": "Duplicate",
           "month": "September"
         },
         {
@@ -26470,16 +25683,6 @@
           "story_points": 3,
           "assignee": "Yi-Chin Chang",
           "status": "New",
-          "month": "September"
-        },
-        {
-          "work_item_name": "W-20483577",
-          "work_item_id": "a07EE00002QtXRqYAN",
-          "scheduled_build": "266",
-          "sprint_name": "No Sprint",
-          "story_points": 3,
-          "assignee": "Yi-Chin Chang",
-          "status": "Duplicate",
           "month": "September"
         },
         {
@@ -27606,8 +26809,8 @@
         }
       ],
       "months": [
-        "June",
         "August",
+        "June",
         "July"
       ]
     },

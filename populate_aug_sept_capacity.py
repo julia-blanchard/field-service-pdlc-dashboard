@@ -264,14 +264,20 @@ print(f"  [Unmapped]: {total_september_unmapped:.1f} points")
 
 print(f"\n✅ Updated {TEAMS_FILE}")
 
-# Build unmapped work item details for UI expansion
-print("\n🔄 Building unmapped work item details...")
-unmapped_details = defaultdict(list)
+# Build unmapped work item details grouped by epic for UI expansion
+print("\n🔄 Building unmapped work item details grouped by epic...")
+unmapped_by_team_epic = defaultdict(lambda: defaultdict(lambda: {
+    'epic_id': None,
+    'epic_name': None,
+    'story_points': 0,
+    'work_items': [],
+    'months': set()
+}))
 
 # Add August unmapped work items
 for item in august_items:
     team_id = item.get('Scrum_Team__c')
-    epic_id = item.get('Epic__c')
+    epic_id = item.get('Epic__c') or 'no-epic'
 
     if team_id in team_name_map:
         team_name = team_name_map[team_id]
@@ -279,16 +285,24 @@ for item in august_items:
 
         # Only include items without project assignment (orphaned)
         if not project_name or project_name not in project_to_program:
-            epic_name = item.get('Epic__r', {}).get('Name', 'Unknown Epic') if item.get('Epic__r') else 'Unknown Epic'
+            epic_name = item.get('Epic__r', {}).get('Name', '[No Epic Assignment]') if item.get('Epic__r') else '[No Epic Assignment]'
             epic_build = item.get('Epic__r', {}).get('Scheduled_Build__r') if item.get('Epic__r') else None
             build = epic_build.get('Name', '-') if epic_build else '-'
             sprint_info = item.get('Sprint__r')
             sprint_name = sprint_info.get('Name', 'No Sprint') if sprint_info else 'No Sprint'
 
-            unmapped_details[team_name].append({
+            epic_key = epic_id if epic_id != 'no-epic' else 'no-epic'
+            epic_group = unmapped_by_team_epic[team_name][epic_key]
+
+            if not epic_group['epic_id']:
+                epic_group['epic_id'] = epic_id if epic_id != 'no-epic' else 'no-epic'
+                epic_group['epic_name'] = epic_name
+
+            epic_group['story_points'] += item.get('Story_Points__c', 0)
+            epic_group['months'].add('August')
+            epic_group['work_items'].append({
                 'work_item_name': item.get('Name', ''),
-                'epic_name': epic_name,
-                'epic_id': epic_id,
+                'work_item_id': item.get('Id', ''),
                 'scheduled_build': build,
                 'sprint_name': sprint_name,
                 'story_points': item.get('Story_Points__c', 0),
@@ -298,7 +312,7 @@ for item in august_items:
 # Add September unmapped work items
 for item in september_items:
     team_id = item.get('Scrum_Team__c')
-    epic_id = item.get('Epic__c')
+    epic_id = item.get('Epic__c') or 'no-epic'
 
     if team_id in team_name_map:
         team_name = team_name_map[team_id]
@@ -306,25 +320,42 @@ for item in september_items:
 
         # Only include items without project assignment (orphaned)
         if not project_name or project_name not in project_to_program:
-            epic_name = item.get('Epic__r', {}).get('Name', 'Unknown Epic') if item.get('Epic__r') else 'Unknown Epic'
+            epic_name = item.get('Epic__r', {}).get('Name', '[No Epic Assignment]') if item.get('Epic__r') else '[No Epic Assignment]'
             epic_build = item.get('Epic__r', {}).get('Scheduled_Build__r') if item.get('Epic__r') else None
             build = epic_build.get('Name', '-') if epic_build else '-'
             sprint_info = item.get('Sprint__r')
             sprint_name = sprint_info.get('Name', 'No Sprint') if sprint_info else 'No Sprint'
 
-            unmapped_details[team_name].append({
+            epic_key = epic_id if epic_id != 'no-epic' else 'no-epic'
+            epic_group = unmapped_by_team_epic[team_name][epic_key]
+
+            if not epic_group['epic_id']:
+                epic_group['epic_id'] = epic_id if epic_id != 'no-epic' else 'no-epic'
+                epic_group['epic_name'] = epic_name
+
+            epic_group['story_points'] += item.get('Story_Points__c', 0)
+            epic_group['months'].add('September')
+            epic_group['work_items'].append({
                 'work_item_name': item.get('Name', ''),
-                'epic_name': epic_name,
-                'epic_id': epic_id,
+                'work_item_id': item.get('Id', ''),
                 'scheduled_build': build,
                 'sprint_name': sprint_name,
                 'story_points': item.get('Story_Points__c', 0),
                 'month': 'September'
             })
 
+# Convert to final structure
+unmapped_details = {}
+for team_name, epics in unmapped_by_team_epic.items():
+    unmapped_details[team_name] = []
+    for epic_key, epic_data in epics.items():
+        epic_data['months'] = list(epic_data['months'])  # Convert set to list for JSON
+        unmapped_details[team_name].append(epic_data)
+
 # Save unmapped details
 with open(UNMAPPED_DETAILS_FILE, 'w') as f:
-    json.dump(dict(unmapped_details), f, indent=2)
+    json.dump(unmapped_details, f, indent=2)
 
-total_unmapped_items = sum(len(items) for items in unmapped_details.values())
-print(f"✅ Saved {total_unmapped_items} unmapped work items across {len(unmapped_details)} teams to {UNMAPPED_DETAILS_FILE}")
+total_epics = sum(len(epics) for epics in unmapped_details.values())
+total_work_items = sum(len(epic['work_items']) for epics in unmapped_details.values() for epic in epics)
+print(f"✅ Saved {total_epics} epic groups with {total_work_items} work items across {len(unmapped_details)} teams to {UNMAPPED_DETAILS_FILE}")

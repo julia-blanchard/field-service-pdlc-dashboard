@@ -63,39 +63,33 @@ print(f"✅ Found {len(scrum_teams)} teams")
 
 team_ids_str = "', '".join(team_ids)
 
-# Query August epics - 264.0 through 264.4 (August patches per release schedule)
-print("\n🔄 Finding August epics (264, 264.1, 264.2, 264.3, 264.4)...")
-august_epics_query = f"""
-SELECT Id, Name, Scheduled_Build__r.Name, Project__r.Name
-FROM ADM_Epic__c
-WHERE Scheduled_Build__r.Name IN ('264', '264.0', '264.1', '264.2', '264.3', '264.4')
-LIMIT 5000
+# Query August work items directly (264.0 through 264.4) for Field Service teams only
+print("\n🔄 Finding August work items (264, 264.1, 264.2, 264.3, 264.4) for Field Service teams...")
+august_items_query = f"""
+SELECT Id, Name, Scrum_Team__c, Story_Points__c, Epic__c,
+       Epic__r.Scheduled_Build__r.Name, Epic__r.Project__r.Name
+FROM ADM_Work__c
+WHERE Epic__r.Scheduled_Build__r.Name IN ('264', '264.0', '264.1', '264.2', '264.3', '264.4')
+  AND Scrum_Team__c IN ('{team_ids_str}')
+  AND Story_Points__c != null
+LIMIT 50000
 """
 
-august_epics = run_soql(august_epics_query)
-august_epic_ids = [e['Id'] for e in august_epics]
-august_epic_to_project = {e['Id']: e.get('Project__r', {}).get('Name') if e.get('Project__r') else None for e in august_epics}
+august_items = run_soql(august_items_query)
+print(f"✅ Found {len(august_items)} August work items for Field Service teams")
 
-print(f"✅ Found {len(august_epics)} August epics")
+# Build epic-to-project mapping from work items
+august_epic_to_project = {}
+august_epic_ids = set()
+for item in august_items:
+    epic_id = item.get('Epic__c')
+    if epic_id:
+        august_epic_ids.add(epic_id)
+        if epic_id not in august_epic_to_project:
+            project = item.get('Epic__r', {}).get('Project__r', {}).get('Name') if item.get('Epic__r', {}).get('Project__r') else None
+            august_epic_to_project[epic_id] = project
 
-# Query work items for these epics (batch if needed due to query length limits)
-august_items = []
-if august_epic_ids:
-    BATCH_SIZE = 100  # Salesforce query length limit
-    for i in range(0, len(august_epic_ids), BATCH_SIZE):
-        batch = august_epic_ids[i:i+BATCH_SIZE]
-        august_epic_ids_str = "', '".join(batch)
-        august_query = f"""
-        SELECT Id, Name, Scrum_Team__c, Story_Points__c, Epic__c
-        FROM ADM_Work__c
-        WHERE Epic__c IN ('{august_epic_ids_str}')
-          AND Scrum_Team__c IN ('{team_ids_str}')
-          AND Story_Points__c != null
-        LIMIT 50000
-        """
-        batch_items = run_soql(august_query)
-        august_items.extend(batch_items)
-    print(f"✅ Found {len(august_items)} August work items")
+print(f"✅ Found {len(august_epic_ids)} unique August epics")
 
 # Aggregate by team + program
 august_team_program = defaultdict(lambda: defaultdict(float))
@@ -118,40 +112,33 @@ for item in august_items:
             # Unmapped (no project assignment)
             august_unmapped[team_name] += points
 
-# Query September epics (264.4, 264.5, 264.6 patches + early 266)
-print("\n🔄 Finding September epics (264.4, 264.5, 264.6 + 266 work)...")
-september_epics_query = f"""
-SELECT Id, Name, Scheduled_Build__r.Name, Project__r.Name
-FROM ADM_Epic__c
-WHERE Scheduled_Build__r.Name IN ('264.4', '264.5', '264.6', '266', '266.0', '266.1')
-LIMIT 5000
+# Query September work items directly (264.4, 264.5, 264.6 + 266) for Field Service teams only
+print("\n🔄 Finding September work items (264.4, 264.5, 264.6 + 266) for Field Service teams...")
+september_items_query = f"""
+SELECT Id, Name, Scrum_Team__c, Story_Points__c, Epic__c,
+       Epic__r.Scheduled_Build__r.Name, Epic__r.Project__r.Name
+FROM ADM_Work__c
+WHERE Epic__r.Scheduled_Build__r.Name IN ('264.4', '264.5', '264.6', '266', '266.0', '266.1')
+  AND Scrum_Team__c IN ('{team_ids_str}')
+  AND Story_Points__c != null
+LIMIT 50000
 """
 
-september_epics = run_soql(september_epics_query)
-september_epic_ids = [e['Id'] for e in september_epics]
-september_epic_to_project = {e['Id']: e.get('Project__r', {}).get('Name') if e.get('Project__r') else None for e in september_epics}
+september_items = run_soql(september_items_query)
+print(f"✅ Found {len(september_items)} September work items for Field Service teams")
 
-print(f"✅ Found {len(september_epics)} September epics")
+# Build epic-to-project mapping from work items
+september_epic_to_project = {}
+september_epic_ids = set()
+for item in september_items:
+    epic_id = item.get('Epic__c')
+    if epic_id:
+        september_epic_ids.add(epic_id)
+        if epic_id not in september_epic_to_project:
+            project = item.get('Epic__r', {}).get('Project__r', {}).get('Name') if item.get('Epic__r', {}).get('Project__r') else None
+            september_epic_to_project[epic_id] = project
 
-# Query work items for these epics (batch if needed due to query length limits)
-september_items = []
-if september_epic_ids:
-    BATCH_SIZE = 100  # Salesforce query length limit
-    for i in range(0, len(september_epic_ids), BATCH_SIZE):
-        batch = september_epic_ids[i:i+BATCH_SIZE]
-        september_epic_ids_str = "', '".join(batch)
-        september_query = f"""
-        SELECT Id, Name, Scrum_Team__c, Story_Points__c, Epic__c
-        FROM ADM_Work__c
-        WHERE Epic__c IN ('{september_epic_ids_str}')
-          AND Scrum_Team__c IN ('{team_ids_str}')
-          AND Story_Points__c != null
-        LIMIT 50000
-        """
-        batch_items = run_soql(september_query)
-        september_items.extend(batch_items)
-        print(f"   Batch {i//BATCH_SIZE + 1}: {len(batch_items)} items")
-    print(f"✅ Found {len(september_items)} September work items total")
+print(f"✅ Found {len(september_epic_ids)} unique September epics")
 
 september_team_program = defaultdict(lambda: defaultdict(float))
 september_unmapped = defaultdict(float)

@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 145,
+    "total_epics_needing_attention": 144,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
       "missing_scheduled_build": 50,
-      "missing_priority": 102,
+      "missing_priority": 101,
       "missing_owner": 0,
-      "blocked_no_comments": 2,
-      "missing_planned_release": 65
+      "blocked_no_comments": 1,
+      "missing_planned_release": 64
     }
   },
   "epics": [
@@ -254,23 +254,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE0000022V4z2AE",
-      "epic_name": "264 [Workforce Scheduling GA] iOS Priming - Metadata",
-      "epic_name_key": "264 [Workforce Scheduling GA] iOS Priming - Metadata",
-      "team": "SFS Mobile AGX",
-      "owner": "Will Carpenter",
-      "health": "On Track",
-      "scheduled_build": "264",
-      "priority": "-",
-      "story_points": 0,
-      "program": "264 Field Service: Workforce Scheduling on Mobile",
-      "portfolio": "264 Field Service Mobile",
-      "project": "264 AGX",
-      "issues": [
-        "missing_priority"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002Fc8f2AC",
       "epic_name": "264 [Workforce Scheduling GA] Job Home Overview Customization (JHOC)",
       "epic_name_key": "264 [Workforce Scheduling GA] Job Home Overview Customization (JHOC)",
@@ -293,6 +276,23 @@
       "epic_name_key": "264 [Workforce Scheduling GA] Offline Engine",
       "team": "SFS Mobile AGX",
       "owner": "Raghav Abboy",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE0000022V4z2AE",
+      "epic_name": "264 [Workforce Scheduling GA] Priming - Metadata",
+      "epic_name_key": "264 [Workforce Scheduling GA] Priming - Metadata",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
       "health": "On Track",
       "scheduled_build": "264",
       "priority": "-",
@@ -466,7 +466,7 @@
       "epic_name_key": "264 SFS Mobile [Unified Scheduling] Schedule View Map Enhancement",
       "team": "SFS Mobile Location and DC",
       "owner": "Sharon Adler",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -476,24 +476,6 @@
       "issues": [
         "missing_scheduled_build",
         "missing_priority"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002FhzZ2AS",
-      "epic_name": "[264][SFS MCX][Mobile for Industries] Service Document Enhancements",
-      "epic_name_key": "[264][SFS MCX][Mobile for Industries] Service Document Enhancements",
-      "team": "SFS Mobile Core Experience",
-      "owner": "Adi Sharet",
-      "health": "Blocked",
-      "scheduled_build": "264",
-      "priority": "-",
-      "story_points": 0,
-      "program": "264 Field Service: Workforce Scheduling on Mobile",
-      "portfolio": "264 Field Service Mobile",
-      "project": "264 Service Document Enhancements",
-      "issues": [
-        "missing_priority",
-        "blocked_no_comments"
       ]
     },
     {
@@ -511,6 +493,23 @@
       "project": "264 Service Document Enhancements",
       "issues": [
         "missing_scheduled_build",
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002FhzZ2AS",
+      "epic_name": "[266][SFS MCX][Mobile for Industries] Service Document Enhancements",
+      "epic_name_key": "[266][SFS MCX][Mobile for Industries] Service Document Enhancements",
+      "team": "SFS Mobile Core Experience",
+      "owner": "Adi Sharet",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Service Document Enhancements",
+      "issues": [
         "missing_priority"
       ]
     },
@@ -957,7 +956,7 @@
       "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Gal Asraf",
       "health": "Not Started",
-      "scheduled_build": "264.3",
+      "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
       "program": "FS 264: S&O: The New Scheduling Console",
@@ -974,7 +973,7 @@
       "epic_name_key": "[264][Scheduling Console] Adjust Appt/Absence Duration & D&D Snap-In",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "On Track",
+      "health": "Unknown",
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
@@ -1474,7 +1473,7 @@
       "epic_name_key": "[264 Unified Scheduling] Visits Scheduling",
       "team": "FSL - Asset - 360",
       "owner": "Sri Ram Bathina",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -1611,7 +1610,7 @@
       "epic_name_key": "264: PSS-FS: Operations Console: Push Service",
       "team": "SFS Core Scheduler",
       "owner": "Kritica Mantri",
-      "health": "Watch",
+      "health": "Unknown",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -1893,7 +1892,7 @@
       "epic_name_key": "264 UWM Worker Engagement Experience: Calendar Enhancements",
       "team": "SFS - WFM - Worker - Experience",
       "owner": "Vinay Bayya",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "1",
       "story_points": 0,
@@ -2357,24 +2356,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002V4xR2AS",
-      "epic_name": "[266] UWM S&O Engine: Shift-Gap Estimate (Unassigned Resource)",
-      "epic_name_key": "[266] UWM S&O Engine: Shift-Gap Estimate (Unassigned Resource)",
-      "team": "Optimization Engineering",
-      "owner": "Gil Laufer",
-      "health": "Not Started",
-      "scheduled_build": "266",
-      "priority": "-",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] UWM Optimization Engineering",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002BlIb2AK",
       "epic_name": "[262] UWM S&O M1: High-Performance GetCandidate & Bulk Optimization",
       "epic_name_key": "[262] UWM S&O M1: High-Performance GetCandidate & Bulk Optimization",
@@ -2679,7 +2660,7 @@
           "epic_name_key": "[264 Unified Scheduling] Visits Scheduling",
           "team": "FSL - Asset - 360",
           "owner": "Sri Ram Bathina",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -3280,7 +3261,7 @@
           "epic_name_key": "[264][Scheduling Console] Adjust Appt/Absence Duration & D&D Snap-In",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "On Track",
+          "health": "Unknown",
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
@@ -3711,7 +3692,7 @@
           "team": "FSL - Talpiot - Dispatch Console",
           "owner": "Gal Asraf",
           "health": "Not Started",
-          "scheduled_build": "264.3",
+          "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
           "program": "FS 264: S&O: The New Scheduling Console",
@@ -3838,7 +3819,7 @@
     },
     {
       "name": "Optimization Engineering",
-      "epic_count": 3,
+      "epic_count": 2,
       "epics": [
         {
           "epic_id": "a3QEE000002GVrV2AW",
@@ -3855,24 +3836,6 @@
           "project": "FS 264: S&O: Max hours rule",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002V4xR2AS",
-          "epic_name": "[266] UWM S&O Engine: Shift-Gap Estimate (Unassigned Resource)",
-          "epic_name_key": "[266] UWM S&O Engine: Shift-Gap Estimate (Unassigned Resource)",
-          "team": "Optimization Engineering",
-          "owner": "Gil Laufer",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": "-",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] UWM Optimization Engineering",
-          "issues": [
             "missing_priority",
             "missing_planned_release"
           ]
@@ -3923,7 +3886,7 @@
           "epic_name_key": "264 UWM Worker Engagement Experience: Calendar Enhancements",
           "team": "SFS - WFM - Worker - Experience",
           "owner": "Vinay Bayya",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "1",
           "story_points": 0,
@@ -4185,7 +4148,7 @@
           "epic_name_key": "264: PSS-FS: Operations Console: Push Service",
           "team": "SFS Core Scheduler",
           "owner": "Kritica Mantri",
-          "health": "Watch",
+          "health": "Unknown",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -4503,23 +4466,6 @@
           ]
         },
         {
-          "epic_id": "a3QEE0000022V4z2AE",
-          "epic_name": "264 [Workforce Scheduling GA] iOS Priming - Metadata",
-          "epic_name_key": "264 [Workforce Scheduling GA] iOS Priming - Metadata",
-          "team": "SFS Mobile AGX",
-          "owner": "Will Carpenter",
-          "health": "On Track",
-          "scheduled_build": "264",
-          "priority": "-",
-          "story_points": 0,
-          "program": "264 Field Service: Workforce Scheduling on Mobile",
-          "portfolio": "264 Field Service Mobile",
-          "project": "264 AGX",
-          "issues": [
-            "missing_priority"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002Fc8f2AC",
           "epic_name": "264 [Workforce Scheduling GA] Job Home Overview Customization (JHOC)",
           "epic_name_key": "264 [Workforce Scheduling GA] Job Home Overview Customization (JHOC)",
@@ -4542,6 +4488,23 @@
           "epic_name_key": "264 [Workforce Scheduling GA] Offline Engine",
           "team": "SFS Mobile AGX",
           "owner": "Raghav Abboy",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE0000022V4z2AE",
+          "epic_name": "264 [Workforce Scheduling GA] Priming - Metadata",
+          "epic_name_key": "264 [Workforce Scheduling GA] Priming - Metadata",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
           "health": "On Track",
           "scheduled_build": "264",
           "priority": "-",
@@ -4798,20 +4761,19 @@
         },
         {
           "epic_id": "a3QEE000002FhzZ2AS",
-          "epic_name": "[264][SFS MCX][Mobile for Industries] Service Document Enhancements",
-          "epic_name_key": "[264][SFS MCX][Mobile for Industries] Service Document Enhancements",
+          "epic_name": "[266][SFS MCX][Mobile for Industries] Service Document Enhancements",
+          "epic_name_key": "[266][SFS MCX][Mobile for Industries] Service Document Enhancements",
           "team": "SFS Mobile Core Experience",
           "owner": "Adi Sharet",
-          "health": "Blocked",
-          "scheduled_build": "264",
+          "health": "On Track",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "264 Field Service: Workforce Scheduling on Mobile",
           "portfolio": "264 Field Service Mobile",
           "project": "264 Service Document Enhancements",
           "issues": [
-            "missing_priority",
-            "blocked_no_comments"
+            "missing_priority"
           ]
         },
         {
@@ -4880,7 +4842,7 @@
           "epic_name_key": "264 SFS Mobile [Unified Scheduling] Schedule View Map Enhancement",
           "team": "SFS Mobile Location and DC",
           "owner": "Sharon Adler",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,

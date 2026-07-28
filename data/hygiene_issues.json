@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_epics_needing_attention": 144,
+    "total_epics_needing_attention": 143,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
@@ -8,7 +8,7 @@
       "missing_priority": 101,
       "missing_owner": 0,
       "blocked_no_comments": 1,
-      "missing_planned_release": 64
+      "missing_planned_release": 63
     }
   },
   "epics": [
@@ -2060,13 +2060,13 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002LYGr2AO",
-      "epic_name": "264 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
-      "epic_name_key": "264 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
+      "epic_id": "a3QEE000002Jxw52AC",
+      "epic_name": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
+      "epic_name_key": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
       "team": "FSL - Operations - Intelligence",
       "owner": "Nafeez Salma Chittoor Khader",
-      "health": "Not Started",
-      "scheduled_build": "266",
+      "health": "On Track",
+      "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
       "program": "[264] Unified Workforce Management (UWM)",
@@ -2078,13 +2078,13 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002Jxw52AC",
-      "epic_name": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
-      "epic_name_key": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
+      "epic_id": "a3QEE000002LYGr2AO",
+      "epic_name": "266 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
+      "epic_name_key": "266 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
       "team": "FSL - Operations - Intelligence",
       "owner": "Nafeez Salma Chittoor Khader",
-      "health": "On Track",
-      "scheduled_build": "264",
+      "health": "Not Started",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "[264] Unified Workforce Management (UWM)",
@@ -2110,23 +2110,6 @@
       "project": "[264] SFS Schedule Management",
       "issues": [
         "missing_priority"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002VYDx2AO",
-      "epic_name": "[266] Drag and Drop Actions on the Grid",
-      "epic_name_key": "[266] Drag and Drop Actions on the Grid",
-      "team": "FSL - Foundation - Atlas",
-      "owner": "Xiao Han",
-      "health": "On Track",
-      "scheduled_build": "266",
-      "priority": "0",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] SFS Schedule Management",
-      "issues": [
-        "missing_planned_release"
       ]
     },
     {
@@ -2867,7 +2850,7 @@
     },
     {
       "name": "FSL - Foundation - Atlas",
-      "epic_count": 15,
+      "epic_count": 14,
       "epics": [
         {
           "epic_id": "a3QEE000002TAhB2AW",
@@ -2884,23 +2867,6 @@
           "project": "[264] SFS Schedule Management",
           "issues": [
             "missing_priority"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002VYDx2AO",
-          "epic_name": "[266] Drag and Drop Actions on the Grid",
-          "epic_name_key": "[266] Drag and Drop Actions on the Grid",
-          "team": "FSL - Foundation - Atlas",
-          "owner": "Xiao Han",
-          "health": "On Track",
-          "scheduled_build": "266",
-          "priority": "0",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] SFS Schedule Management",
-          "issues": [
-            "missing_planned_release"
           ]
         },
         {
@@ -3214,13 +3180,13 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002LYGr2AO",
-          "epic_name": "264 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
-          "epic_name_key": "264 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
+          "epic_id": "a3QEE000002Jxw52AC",
+          "epic_name": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
+          "epic_name_key": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
           "team": "FSL - Operations - Intelligence",
           "owner": "Nafeez Salma Chittoor Khader",
-          "health": "Not Started",
-          "scheduled_build": "266",
+          "health": "On Track",
+          "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
           "program": "[264] Unified Workforce Management (UWM)",
@@ -3232,13 +3198,13 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002Jxw52AC",
-          "epic_name": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
-          "epic_name_key": "264 SFS [OI] Scenario Planning Data Model - SFS/FWM",
+          "epic_id": "a3QEE000002LYGr2AO",
+          "epic_name": "266 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
+          "epic_name_key": "266 SFS [OI] Monthly Release - Scenario Planning UI - SFS/FWM",
           "team": "FSL - Operations - Intelligence",
           "owner": "Nafeez Salma Chittoor Khader",
-          "health": "On Track",
-          "scheduled_build": "264",
+          "health": "Not Started",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "[264] Unified Workforce Management (UWM)",

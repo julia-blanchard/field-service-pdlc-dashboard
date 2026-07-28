@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_epics_needing_attention": 143,
+    "total_epics_needing_attention": 145,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
@@ -8,7 +8,7 @@
       "missing_priority": 101,
       "missing_owner": 0,
       "blocked_no_comments": 1,
-      "missing_planned_release": 63
+      "missing_planned_release": 65
     }
   },
   "epics": [
@@ -2113,6 +2113,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002YVLB2A4",
+      "epic_name": "[266] Key Metrics Panel for Schedule Manager",
+      "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Avani Jindal",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "1",
+      "story_points": 0,
+      "program": "[264] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] SFS Schedule Management",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002Fns52AC",
       "epic_name": "264 SPIKEs for Schedule Management",
       "epic_name_key": "264 SPIKEs for Schedule Management",
@@ -2132,8 +2149,8 @@
     },
     {
       "epic_id": "a3QEE000002Jd2v2AC",
-      "epic_name": "Adding Shift Segments template to Shift Templates",
-      "epic_name_key": "Adding Shift Segments template to Shift Templates",
+      "epic_name": "Adding Shift Segments template to Shift Templates (Data Modal Only)",
+      "epic_name_key": "Adding Shift Segments template to Shift Templates (Data Modal Only)",
       "team": "FSL - Foundation - Atlas",
       "owner": "Ruchika Pashine",
       "health": "Not Started",
@@ -2328,6 +2345,23 @@
       "team": "FSL - Foundation - Atlas",
       "owner": "Ruchika Pashine",
       "health": "Unknown",
+      "scheduled_build": "264",
+      "priority": "0",
+      "story_points": 0,
+      "program": "[264] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] SFS Schedule Management",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YUov2AG",
+      "epic_name": "Using Shift Segment Templates in Schedule Manager",
+      "epic_name_key": "Using Shift Segment Templates in Schedule Manager",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Ben Lee",
+      "health": "Not Started",
       "scheduled_build": "264",
       "priority": "0",
       "story_points": 0,
@@ -2850,7 +2884,7 @@
     },
     {
       "name": "FSL - Foundation - Atlas",
-      "epic_count": 14,
+      "epic_count": 16,
       "epics": [
         {
           "epic_id": "a3QEE000002TAhB2AW",
@@ -2867,6 +2901,23 @@
           "project": "[264] SFS Schedule Management",
           "issues": [
             "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YVLB2A4",
+          "epic_name": "[266] Key Metrics Panel for Schedule Manager",
+          "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Avani Jindal",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "1",
+          "story_points": 0,
+          "program": "[264] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] SFS Schedule Management",
+          "issues": [
+            "missing_planned_release"
           ]
         },
         {
@@ -2889,8 +2940,8 @@
         },
         {
           "epic_id": "a3QEE000002Jd2v2AC",
-          "epic_name": "Adding Shift Segments template to Shift Templates",
-          "epic_name_key": "Adding Shift Segments template to Shift Templates",
+          "epic_name": "Adding Shift Segments template to Shift Templates (Data Modal Only)",
+          "epic_name_key": "Adding Shift Segments template to Shift Templates (Data Modal Only)",
           "team": "FSL - Foundation - Atlas",
           "owner": "Ruchika Pashine",
           "health": "Not Started",
@@ -3085,6 +3136,23 @@
           "team": "FSL - Foundation - Atlas",
           "owner": "Ruchika Pashine",
           "health": "Unknown",
+          "scheduled_build": "264",
+          "priority": "0",
+          "story_points": 0,
+          "program": "[264] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] SFS Schedule Management",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YUov2AG",
+          "epic_name": "Using Shift Segment Templates in Schedule Manager",
+          "epic_name_key": "Using Shift Segment Templates in Schedule Manager",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Ben Lee",
+          "health": "Not Started",
           "scheduled_build": "264",
           "priority": "0",
           "story_points": 0,

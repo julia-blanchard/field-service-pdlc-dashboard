@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T07:56:19.557560",
+  "last_updated": "2026-07-28T14:06:56.346933",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -16,7 +16,7 @@
           "product_owner": "",
           "dev_lead": "Vinay Bayya",
           "target": "264",
-          "last_modified": "2026-07-27",
+          "last_modified": "2026-07-28",
           "health_status": "On Track",
           "epics": [
             {
@@ -30,7 +30,7 @@
               "team": "FSL - Operations - Intelligence",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -194,7 +194,7 @@
               "team": "SFS Quality Enablement",
               "scheduled_build": "-",
               "planned_release": "264 SFS Quality Enablement",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -254,7 +254,7 @@
               "team": "SFS Quality Enablement",
               "scheduled_build": "264",
               "planned_release": "264 SFS Quality Enablement",
-              "last_modified": "2026-06-08",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -597,7 +597,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "264 - SFS Mobile Core Experience (MCX)",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -2633,7 +2633,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "264",
               "planned_release": "264 SFS Core Scheduler Release",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3388,8 +3388,8 @@
           "id": "a1kEE00000XOrjJYAT",
           "product_owner": "Ruchika Pashine",
           "dev_lead": "Ruchika Pashine",
-          "target": "264",
-          "last_modified": "2026-07-27",
+          "target": "266",
+          "last_modified": "2026-07-28",
           "health_status": "Blocked",
           "epics": [
             {
@@ -3403,7 +3403,22 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "SC 264 Release - Team-WFM-Capacity-Planning",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
+              "loc": "\ud83d\udfe2 Above the Line",
+              "path_to_green": "-"
+            },
+            {
+              "name": "[266] Key Metrics Panel for Schedule Manager",
+              "id": "a3QEE000002YVLB2A4",
+              "priority": "1",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "-",
+              "owner": "Avani Jindal",
+              "team": "FSL - Foundation - Atlas",
+              "scheduled_build": "266",
+              "planned_release": "-",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3418,12 +3433,12 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
             {
-              "name": "Adding Shift Segments template to Shift Templates",
+              "name": "Adding Shift Segments template to Shift Templates (Data Modal Only)",
               "id": "a3QEE000002Jd2v2AC",
               "priority": "0",
               "health": "Not Started",
@@ -3553,7 +3568,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3568,7 +3583,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3583,7 +3598,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },
@@ -3599,6 +3614,21 @@
               "scheduled_build": "264",
               "planned_release": "-",
               "last_modified": "2026-06-22",
+              "loc": "\ud83d\udfe2 Above the Line",
+              "path_to_green": "-"
+            },
+            {
+              "name": "Using Shift Segment Templates in Schedule Manager",
+              "id": "a3QEE000002YUov2AG",
+              "priority": "0",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "-",
+              "owner": "Ben Lee",
+              "team": "FSL - Foundation - Atlas",
+              "scheduled_build": "264",
+              "planned_release": "-",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             }
@@ -3654,7 +3684,7 @@
               "team": "Team-WFM-Foundation",
               "scheduled_build": "264",
               "planned_release": "SC 264 Release - Team-WFM-Foundation",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-"
             },
@@ -3729,7 +3759,7 @@
               "team": "Team-WFM-Foundation",
               "scheduled_build": "264",
               "planned_release": "SC 264 Release - Team-WFM-Foundation",
-              "last_modified": "2026-07-27",
+              "last_modified": "2026-07-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-"
             },

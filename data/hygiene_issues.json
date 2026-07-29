@@ -5,10 +5,10 @@
     "programs_affected": 19,
     "issue_breakdown": {
       "missing_scheduled_build": 50,
-      "missing_priority": 101,
+      "missing_priority": 102,
       "missing_owner": 0,
-      "blocked_no_comments": 1,
-      "missing_planned_release": 65
+      "blocked_no_comments": 0,
+      "missing_planned_release": 64
     }
   },
   "epics": [
@@ -334,6 +334,23 @@
       "program": "264 Field Service: Workforce Scheduling on Mobile",
       "portfolio": "264 Field Service Mobile",
       "project": "264 Data Capture Enhancements",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000001rmdp2AA",
+      "epic_name": "264 [Hyperforce][Performance Priming] Support PSS and deploy to Gov Cloud",
+      "epic_name_key": "264 [Hyperforce][Performance Priming] Support PSS and deploy to Gov Cloud",
+      "team": "SFS Mobile Services",
+      "owner": "Raghav Abboy",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Performance Priming Enhancements",
       "issues": [
         "missing_priority"
       ]
@@ -1661,7 +1678,7 @@
       "epic_name_key": "264: PSS-FS: Operations Console: User Preference Persistence",
       "team": "SFS Core Scheduler",
       "owner": "Kritica Mantri",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -2178,24 +2195,6 @@
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] SFS Schedule Management",
       "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002JfzB2AS",
-      "epic_name": "Auto Refresh of Gantt",
-      "epic_name_key": "Auto Refresh of Gantt",
-      "team": "FSL - Foundation - Atlas",
-      "owner": "Ruchika Pashine",
-      "health": "Blocked",
-      "scheduled_build": "264",
-      "priority": "0",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] SFS Schedule Management",
-      "issues": [
-        "blocked_no_comments",
         "missing_planned_release"
       ]
     },
@@ -2884,7 +2883,7 @@
     },
     {
       "name": "FSL - Foundation - Atlas",
-      "epic_count": 16,
+      "epic_count": 15,
       "epics": [
         {
           "epic_id": "a3QEE000002TAhB2AW",
@@ -2969,24 +2968,6 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] SFS Schedule Management",
           "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002JfzB2AS",
-          "epic_name": "Auto Refresh of Gantt",
-          "epic_name_key": "Auto Refresh of Gantt",
-          "team": "FSL - Foundation - Atlas",
-          "owner": "Ruchika Pashine",
-          "health": "Blocked",
-          "scheduled_build": "264",
-          "priority": "0",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] SFS Schedule Management",
-          "issues": [
-            "blocked_no_comments",
             "missing_planned_release"
           ]
         },
@@ -4233,7 +4214,7 @@
           "epic_name_key": "264: PSS-FS: Operations Console: User Preference Persistence",
           "team": "SFS Core Scheduler",
           "owner": "Kritica Mantri",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -4911,7 +4892,7 @@
     },
     {
       "name": "SFS Mobile Services",
-      "epic_count": 1,
+      "epic_count": 2,
       "epics": [
         {
           "epic_id": "a3QEE000002WtbJ2AS",
@@ -4928,6 +4909,23 @@
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
             "missing_scheduled_build"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000001rmdp2AA",
+          "epic_name": "264 [Hyperforce][Performance Priming] Support PSS and deploy to Gov Cloud",
+          "epic_name_key": "264 [Hyperforce][Performance Priming] Support PSS and deploy to Gov Cloud",
+          "team": "SFS Mobile Services",
+          "owner": "Raghav Abboy",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Performance Priming Enhancements",
+          "issues": [
+            "missing_priority"
           ]
         }
       ]

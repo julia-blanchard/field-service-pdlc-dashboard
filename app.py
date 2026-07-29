@@ -1425,6 +1425,14 @@ def api_orphaned():
         data['by_em'] = sorted(by_em.values(), key=lambda x: x['name'])
         data['by_pm'] = sorted(by_pm.values(), key=lambda x: x['name'])
 
+        # Also attach recommendations to top-level epics array
+        for epic in data.get('epics', []):
+            epic_id = epic.get('id', '')
+            if epic_id and epic_id in recommendations:
+                epic['recommendations'] = recommendations[epic_id]
+            else:
+                epic['recommendations'] = []
+
         return jsonify(data)
     except Exception as e:
         print(f"Error loading orphaned data: {e}", flush=True)

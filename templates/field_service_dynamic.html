@@ -14910,12 +14910,12 @@
 
         <!-- By Team View -->
         <div id="orphaned-by-team" style="display: block;">
-            <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
+            <table style="width: 100%; max-width: 1600px; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
                 <colgroup>
-                    <col style="width: 73%;">
-                    <col style="width: 9%;">
-                    <col style="width: 9%;">
-                    <col style="width: 9%;">
+                    <col style="width: 81%;">
+                    <col style="width: 5.5%;">
+                    <col style="width: 7.5%;">
+                    <col style="width: 6%;">
                 </colgroup>
                 <thead>
                     <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
@@ -14933,12 +14933,12 @@
 
         <!-- By Engineering Manager View -->
         <div id="orphaned-by-em" style="display: none;">
-            <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
+            <table style="width: 100%; max-width: 1600px; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
                 <colgroup>
-                    <col style="width: 73%;">
-                    <col style="width: 9%;">
-                    <col style="width: 9%;">
-                    <col style="width: 9%;">
+                    <col style="width: 81%;">
+                    <col style="width: 5.5%;">
+                    <col style="width: 7.5%;">
+                    <col style="width: 6%;">
                 </colgroup>
                 <thead>
                     <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
@@ -14956,12 +14956,12 @@
 
         <!-- By Product Manager View -->
         <div id="orphaned-by-pm" style="display: none;">
-            <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
+            <table style="width: 100%; max-width: 1600px; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; table-layout: fixed;">
                 <colgroup>
-                    <col style="width: 73%;">
-                    <col style="width: 9%;">
-                    <col style="width: 9%;">
-                    <col style="width: 9%;">
+                    <col style="width: 81%;">
+                    <col style="width: 5.5%;">
+                    <col style="width: 7.5%;">
+                    <col style="width: 6%;">
                 </colgroup>
                 <thead>
                     <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
@@ -16354,7 +16354,7 @@ if (programSearch) {
                 html += `
                     <tr class="team-row" data-team="${sanitizedName}" style="background: #f8fafc; border-bottom: 1px solid #e5e7eb; cursor: pointer;" onclick="toggleOrphanedTeamBreakdown('${sanitizedName}')">
                         <td style="padding: 12px 8px;">
-                            <span style="font-weight: 600; font-size: 15px; color: #1e293b; display: inline-flex; align-items: center;">
+                            <span style="font-weight: 600; font-size: 14px; color: #1e293b; display: inline-flex; align-items: center;">
                                 <svg id="icon-${sanitizedName}" style="width: 16px; height: 16px; margin-right: 8px; transition: transform 0.2s;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                                 </svg>
@@ -16362,19 +16362,19 @@ if (programSearch) {
                             </span>
                         </td>
                         <td style="text-align: center; padding: 12px 8px;">
-                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 15px; font-weight: 600;">
+                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">
                                 ${team.epics.length}
                             </span>
                         </td>
-                        <td style="text-align: center; padding: 12px 8px; font-size: 14px; color: #d97706; font-weight: 600;">
+                        <td style="text-align: center; padding: 12px 8px; font-size: 12px; color: #d97706; font-weight: 600;">
                             ${Math.round(team.total_capacity || 0)}
                         </td>
                         <td style="text-align: center; padding: 12px 8px; font-size: 13px; color: #64748b;">—</td>
                     </tr>
                 `;
 
-                // Epic details (collapsed by default)
-                team.epics.forEach((epic, epicIndex) => {
+                // Epic details (collapsed by default) - 266 (future release) epics sorted last
+                sortEpicsWithFutureReleaseLast(team.epics).forEach((epic, epicIndex) => {
                     const healthStatus = epic.health || 'Not Assigned';
                     const healthColor = epic.health === 'On Track' ? '#10b981' :
                                       epic.health === 'Watch' ? '#f59e0b' :
@@ -16388,19 +16388,19 @@ if (programSearch) {
 
                     html += `
                         <tr class="breakdown-orphaned-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
-                            <td style="padding: 8px 8px 8px 48px; font-size: 13px; color: #64748b;">
-                                <div style="display: flex; gap: 16px; align-items: flex-start;">
-                                    <div style="flex: 0 0 auto; min-width: 250px;">
+                            <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
+                                <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
                                         <div style="font-weight: 500; margin-bottom: 4px;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
                                                 ${epic.name}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
-                                        <div style="font-size: 11px; color: #64748b;">
+                                        <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             Owner: ${epic.owner}
                                         </div>
                                     </div>
-                                    <div style="flex: 1; min-width: 0;">
+                                    <div style="min-width: 0; max-width: 520px; overflow: hidden; display: flex; justify-content: flex-end;">
                                         ${recommendationHTML}
                                     </div>
                                 </div>
@@ -16420,7 +16420,31 @@ if (programSearch) {
             tbody.innerHTML = html;
         }
 
+        function isFutureReleaseEpic(epic) {
+            return !!(epic.name && epic.name.includes('266'));
+        }
+
+        function sortEpicsWithFutureReleaseLast(epics) {
+            return epics.slice().sort((a, b) => {
+                const aFuture = isFutureReleaseEpic(a) ? 1 : 0;
+                const bFuture = isFutureReleaseEpic(b) ? 1 : 0;
+                return aFuture - bFuture;
+            });
+        }
+
         function generateRecommendationHTML(epic) {
+            if (isFutureReleaseEpic(epic)) {
+                return `
+                    <div style="padding: 6px 10px; background: #FFFDF0; border: 1px solid #F0C050; border-radius: 6px; font-size: 10px; width: 260px; min-width: 260px; max-width: 260px; box-sizing: border-box;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="color: #94a3b8; font-style: italic; font-size: 11px; white-space: normal; overflow-wrap: break-word;">
+                                ⏳ Future Release — project not yet created
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
             if (!epic.recommendations || epic.recommendations.length === 0) {
                 return '';
             }
@@ -16432,16 +16456,13 @@ if (programSearch) {
                                   topRec.confidence === 'medium' ? 'Medium' : 'Low';
             const scorePercent = Math.round(topRec.score * 100);
 
-            // Clean up reasoning - remove "Team match: ...", "Build alignment", since we're already under the team section
-            // Also make "Portfolio:" label bold
-            let cleanedReasoning = topRec.reasoning
-                .replace(/Team match: [^•]+\s*•\s*/, '')  // Remove "Team match: xxx • "
-                .replace(/\s*•\s*Build \d+ alignment/g, '')  // Remove "Build 264 alignment"
-                .replace(/^\s*•\s*/, '')  // Remove leading bullet if it's now first
-                .replace(/Portfolio:/g, '<strong>Portfolio:</strong>');  // Bold Portfolio label
+            // Extract only the Portfolio name - strip team match, build tags, and keyword rationale
+            const portfolioMatch = topRec.reasoning.match(/Portfolio:\s*([^•]+?)\s*(?:•|$)/);
+            const portfolioName = portfolioMatch ? portfolioMatch[1].trim() : (topRec.program_portfolio || '');
+            const confidenceLine = `${scorePercent}% match - ${confidenceText} confidence${portfolioName ? ' | <strong>Portfolio:</strong> ' + portfolioName : ''}`;
 
             return `
-                <div style="padding: 6px 10px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 4px; font-size: 11px; width: 460px; margin-left: auto; margin-right: 0;">
+                <div style="padding: 6px 10px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 4px; font-size: 11px; width: 520px; min-width: 520px; max-width: 520px; box-sizing: border-box;">
                     <div style="display: flex; flex-direction: column;">
                         <div style="margin-bottom: 3px; font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                             ${confidenceIcon} <span style="font-weight: 600;">Recommended Program:</span>
@@ -16449,20 +16470,20 @@ if (programSearch) {
                                 ${topRec.program_name}
                             </a>
                         </div>
-                        <div style="color: #64748b; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                            ${scorePercent}% match - ${confidenceText} confidence${cleanedReasoning ? ' | ' + cleanedReasoning : ''}
+                        <div style="color: #64748b; font-size: 11px; white-space: normal; overflow-wrap: break-word;">
+                            ${confidenceLine}
                         </div>
-                        <div style="display: flex; justify-content: flex-end; gap: 6px; margin-top: 6px;">
+                        <div style="display: flex; justify-content: flex-start; width: auto; gap: 6px; margin-top: 6px; flex-wrap: nowrap;">
                             <button onclick="mapEpicToProgram('${epic.id}', '${topRec.program_id}', '${topRec.program_name.replace(/'/g, "\\'")}', event)"
-                                    style="background: #0176D3; color: white; border: none; padding: 3px 10px; border-radius: 3px; font-size: 10px; cursor: pointer; font-weight: 600; white-space: nowrap;">
+                                    style="background: #0176D3; color: white; border: none; padding: 3px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; font-weight: 600; white-space: nowrap;">
                                 Map It
                             </button>
                             <button onclick="dismissRecommendation('${epic.id}', event)"
-                                    style="background: #e5e7eb; color: #64748b; border: none; padding: 3px 10px; border-radius: 3px; font-size: 10px; cursor: pointer; white-space: nowrap;">
+                                    style="background: #e5e7eb; color: #64748b; border: none; padding: 3px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; white-space: nowrap;">
                                 Not This
                             </button>
                             <button onclick="showAllRecommendations('${epic.id}', event)"
-                                    style="background: #e5e7eb; color: #64748b; border: none; padding: 3px 10px; border-radius: 3px; font-size: 10px; cursor: pointer; white-space: nowrap;">
+                                    style="background: #e5e7eb; color: #64748b; border: none; padding: 3px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; white-space: nowrap;">
                                 Other...
                             </button>
                         </div>
@@ -16505,7 +16526,7 @@ if (programSearch) {
                 html += `
                     <tr class="em-row" data-em="${sanitizedName}" style="background: #f8fafc; border-bottom: 1px solid #e5e7eb; cursor: pointer;" onclick="toggleOrphanedEMBreakdown('${sanitizedName}')">
                         <td style="padding: 12px 8px;">
-                            <span style="font-weight: 600; font-size: 15px; color: #1e293b; display: inline-flex; align-items: center;">
+                            <span style="font-weight: 600; font-size: 14px; color: #1e293b; display: inline-flex; align-items: center;">
                                 <svg id="icon-em-${sanitizedName}" style="width: 16px; height: 16px; margin-right: 8px; transition: transform 0.2s;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                                 </svg>
@@ -16513,19 +16534,19 @@ if (programSearch) {
                             </span>
                         </td>
                         <td style="text-align: center; padding: 12px 8px;">
-                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 15px; font-weight: 600;">
+                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">
                                 ${manager.epics.length}
                             </span>
                         </td>
-                        <td style="text-align: center; padding: 12px 8px; font-size: 14px; color: #d97706; font-weight: 600;">
+                        <td style="text-align: center; padding: 12px 8px; font-size: 12px; color: #d97706; font-weight: 600;">
                             ${Math.round(manager.orphaned_capacity || 0)}
                         </td>
                         <td style="text-align: center; padding: 12px 8px; font-size: 13px; color: #64748b;">—</td>
                     </tr>
                 `;
 
-                // Epic details (collapsed by default)
-                manager.epics.forEach((epic, epicIndex) => {
+                // Epic details (collapsed by default) - 266 (future release) epics sorted last
+                sortEpicsWithFutureReleaseLast(manager.epics).forEach((epic, epicIndex) => {
                     const healthStatus = epic.health || 'Not Assigned';
                     const healthColor = epic.health === 'On Track' ? '#10b981' :
                                       epic.health === 'Watch' ? '#f59e0b' :
@@ -16539,19 +16560,19 @@ if (programSearch) {
 
                     html += `
                         <tr class="breakdown-em-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
-                            <td style="padding: 8px 8px 8px 48px; font-size: 13px; color: #64748b;">
-                                <div style="display: flex; gap: 16px; align-items: flex-start;">
-                                    <div style="flex: 0 0 auto; min-width: 250px;">
+                            <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
+                                <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
                                         <div style="font-weight: 500; margin-bottom: 4px;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
                                                 ${epic.name}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
-                                        <div style="font-size: 11px; color: #64748b;">
+                                        <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             Team: ${epic.team} | Owner: ${epic.owner}
                                         </div>
                                     </div>
-                                    <div style="flex: 1; min-width: 0;">
+                                    <div style="min-width: 0; max-width: 520px; overflow: hidden; display: flex; justify-content: flex-end;">
                                         ${recommendationHTML}
                                     </div>
                                 </div>
@@ -16588,7 +16609,7 @@ if (programSearch) {
                 html += `
                     <tr class="pm-row" data-pm="${sanitizedName}" style="background: #f8fafc; border-bottom: 1px solid #e5e7eb; cursor: pointer;" onclick="toggleOrphanedPMBreakdown('${sanitizedName}')">
                         <td style="padding: 12px 8px;">
-                            <span style="font-weight: 600; font-size: 15px; color: #1e293b; display: inline-flex; align-items: center;">
+                            <span style="font-weight: 600; font-size: 14px; color: #1e293b; display: inline-flex; align-items: center;">
                                 <svg id="icon-pm-${sanitizedName}" style="width: 16px; height: 16px; margin-right: 8px; transition: transform 0.2s;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                                 </svg>
@@ -16596,19 +16617,19 @@ if (programSearch) {
                             </span>
                         </td>
                         <td style="text-align: center; padding: 12px 8px;">
-                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 15px; font-weight: 600;">
+                            <span style="background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">
                                 ${manager.epics.length}
                             </span>
                         </td>
-                        <td style="text-align: center; padding: 12px 8px; font-size: 14px; color: #d97706; font-weight: 600;">
+                        <td style="text-align: center; padding: 12px 8px; font-size: 12px; color: #d97706; font-weight: 600;">
                             ${Math.round(manager.orphaned_capacity || 0)}
                         </td>
                         <td style="text-align: center; padding: 12px 8px; font-size: 13px; color: #64748b;">—</td>
                     </tr>
                 `;
 
-                // Epic details (collapsed by default)
-                manager.epics.forEach((epic, epicIndex) => {
+                // Epic details (collapsed by default) - 266 (future release) epics sorted last
+                sortEpicsWithFutureReleaseLast(manager.epics).forEach((epic, epicIndex) => {
                     const healthStatus = epic.health || 'Not Assigned';
                     const healthColor = epic.health === 'On Track' ? '#10b981' :
                                       epic.health === 'Watch' ? '#f59e0b' :
@@ -16622,19 +16643,19 @@ if (programSearch) {
 
                     html += `
                         <tr class="breakdown-pm-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
-                            <td style="padding: 8px 8px 8px 48px; font-size: 13px; color: #64748b;">
-                                <div style="display: flex; gap: 16px; align-items: flex-start;">
-                                    <div style="flex: 0 0 auto; min-width: 250px;">
+                            <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
+                                <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
                                         <div style="font-weight: 500; margin-bottom: 4px;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
                                                 ${epic.name}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
-                                        <div style="font-size: 11px; color: #64748b;">
+                                        <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             Team: ${epic.team} | Owner: ${epic.owner}
                                         </div>
                                     </div>
-                                    <div style="flex: 1; min-width: 0;">
+                                    <div style="min-width: 0; max-width: 520px; overflow: hidden; display: flex; justify-content: flex-end;">
                                         ${recommendationHTML}
                                     </div>
                                 </div>

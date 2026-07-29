@@ -1359,12 +1359,24 @@ def api_orphaned():
     try:
         file_path = os.path.join(os.path.dirname(__file__), 'data', 'unallocated_data.json')
         teams_path = os.path.join(os.path.dirname(__file__), 'data', 'teams_data.json')
+        recommendations_path = os.path.join(os.path.dirname(__file__), 'data', 'epic_recommendations.json')
 
         with open(file_path, 'r') as f:
             data = json.load(f)
 
         with open(teams_path, 'r') as f:
             teams_data = json.load(f)
+
+        # Load recommendations (optional, may not exist yet)
+        recommendations = {}
+        try:
+            with open(recommendations_path, 'r') as f:
+                rec_data = json.load(f)
+                recommendations = rec_data.get('recommendations', {})
+        except FileNotFoundError:
+            print("No recommendations file found, skipping...", flush=True)
+        except Exception as e:
+            print(f"Warning: Could not load recommendations: {e}", flush=True)
 
         # Build team name -> manager mapping
         team_managers = {}
@@ -1397,6 +1409,13 @@ def api_orphaned():
                 # Ensure epic has team field
                 if 'team' not in epic:
                     epic['team'] = team_name
+
+                # Attach recommendations to epic
+                epic_id = epic.get('id', '')
+                if epic_id and epic_id in recommendations:
+                    epic['recommendations'] = recommendations[epic_id]
+                else:
+                    epic['recommendations'] = []
 
                 by_em[em]['epics'].append(epic)
                 by_em[em]['orphaned_capacity'] += epic.get('story_points', 0)

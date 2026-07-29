@@ -578,5 +578,16 @@ def main():
     print(f"\nBy Team: {len(teams)} teams")
     print(f"By Release: {len(releases)} release groups")
 
+    # Generate recommendations
+    print("\n" + "=" * 60)
+    print("Generating Program Recommendations")
+    print("=" * 60)
+    try:
+        subprocess.run(['python3', 'recommendation_engine.py'], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"⚠️  Warning: Could not generate recommendations: {e}")
+    except Exception as e:
+        print(f"⚠️  Warning: Could not generate recommendations: {e}")
+
 if __name__ == '__main__':
     main()

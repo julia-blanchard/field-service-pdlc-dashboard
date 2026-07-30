@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-29T09:09:15.235725",
+  "last_updated": "2026-07-30T09:09:19.395569",
   "teams": [
     {
       "name": "FSL - Asset - 360",
-      "filled": 9,
+      "filled": 8,
       "non_filled": 0,
-      "total": 9,
+      "total": 8,
       "portfolios": [
         "264 Field Service Workforce Scheduling"
       ],
@@ -840,7 +840,7 @@
         "264 Field Service Mobile"
       ],
       "engineering_manager": "Raghav Abboy",
-      "product_owner": "Nitasha Walia",
+      "product_owner": "Kara Carreri",
       "capacity_delivered_june": 187.0,
       "work_items_closed_june": 64,
       "capacity_committed_july": 155.0,

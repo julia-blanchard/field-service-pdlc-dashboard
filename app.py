@@ -5,9 +5,10 @@ Track programs across Phase 0, 1, 2, 3
 Test deployment to staging
 """
 
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import os
 import json
+import subprocess
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import time
@@ -17,6 +18,7 @@ app = Flask(__name__, static_folder='static')
 # Feature flags - control what's visible in each environment
 SHOW_ORPHANED_TAB = os.getenv('SHOW_ORPHANED_TAB', 'true').lower() == 'true'
 SHOW_HYGIENE_FEATURES = os.getenv('SHOW_HYGIENE_FEATURES', 'true').lower() == 'true'
+SHOW_EPIC_RECOMMENDATIONS = os.getenv('SHOW_EPIC_RECOMMENDATIONS', 'true').lower() == 'true'
 
 # Cache busting
 @app.context_processor
@@ -24,7 +26,8 @@ def inject_cache_buster():
     return dict(
         cache_bust=int(time.time()),
         show_orphaned_tab=SHOW_ORPHANED_TAB,
-        show_hygiene_features=SHOW_HYGIENE_FEATURES
+        show_hygiene_features=SHOW_HYGIENE_FEATURES,
+        show_epic_recommendations=SHOW_EPIC_RECOMMENDATIONS
     )
 
 @app.after_request
@@ -1367,16 +1370,17 @@ def api_orphaned():
         with open(teams_path, 'r') as f:
             teams_data = json.load(f)
 
-        # Load recommendations (optional, may not exist yet)
+        # Load recommendations (optional, may not exist yet, and gated behind SHOW_EPIC_RECOMMENDATIONS)
         recommendations = {}
-        try:
-            with open(recommendations_path, 'r') as f:
-                rec_data = json.load(f)
-                recommendations = rec_data.get('recommendations', {})
-        except FileNotFoundError:
-            print("No recommendations file found, skipping...", flush=True)
-        except Exception as e:
-            print(f"Warning: Could not load recommendations: {e}", flush=True)
+        if SHOW_EPIC_RECOMMENDATIONS:
+            try:
+                with open(recommendations_path, 'r') as f:
+                    rec_data = json.load(f)
+                    recommendations = rec_data.get('recommendations', {})
+            except FileNotFoundError:
+                print("No recommendations file found, skipping...", flush=True)
+            except Exception as e:
+                print(f"Warning: Could not load recommendations: {e}", flush=True)
 
         # Build team name -> manager mapping
         team_managers = {}
@@ -1456,6 +1460,72 @@ def unmapped_details():
     except Exception as e:
         print(f"Error loading unmapped details: {e}", flush=True)
         return jsonify({'error': str(e)}), 500
+
+@app.route('/api/program-projects/<program_id>')
+def program_projects(program_id):
+    """Serve the list of projects under a program, for the Map It project picker"""
+    if not SHOW_EPIC_RECOMMENDATIONS:
+        return jsonify({'error': 'Feature disabled'}), 404
+
+    exec_file = os.path.join(os.path.dirname(__file__), 'data', 'execution_data.json')
+    try:
+        with open(exec_file, 'r') as f:
+            exec_data = json.load(f)
+    except Exception as e:
+        print(f"Error loading execution data: {e}", flush=True)
+        return jsonify({'projects': []}), 500
+
+    for program in exec_data.get('programs', []):
+        if program.get('id') == program_id:
+            projects = [
+                {
+                    'id': project.get('id', ''),
+                    'name': project.get('name', ''),
+                    'health_status': project.get('health_status', ''),
+                    'target': project.get('target', '')
+                }
+                for project in program.get('projects', [])
+            ]
+            return jsonify({'program_name': program.get('name', ''), 'projects': projects})
+
+    return jsonify({'program_name': '', 'projects': []})
+
+@app.route('/api/map-epic-to-project', methods=['POST'])
+def map_epic_to_project():
+    """Set ADM_Epic__c.Project__c via sf CLI. ADM_Epic__c has no Program field -
+    Program is only reachable transitively through PPM_Project__c.Program__c."""
+    if not SHOW_EPIC_RECOMMENDATIONS:
+        return jsonify({'success': False, 'error': 'Feature disabled'}), 404
+
+    body = request.get_json(silent=True) or {}
+    epic_id = body.get('epic_id', '')
+    project_id = body.get('project_id', '')
+
+    if not epic_id or not project_id:
+        return jsonify({'success': False, 'error': 'epic_id and project_id are required'}), 400
+
+    try:
+        result = subprocess.run(
+            ['sf', 'data', 'update', 'record',
+             '--target-org', 'org62',
+             '--sobject', 'ADM_Epic__c',
+             '--record-id', epic_id,
+             '--values', f'Project__c={project_id}',
+             '--json'],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        if result.returncode != 0:
+            print(f"sf data update failed: {result.stderr}", flush=True)
+            return jsonify({'success': False, 'error': result.stderr or result.stdout}), 500
+
+        return jsonify({'success': True})
+    except subprocess.TimeoutExpired:
+        return jsonify({'success': False, 'error': 'Request to GUS timed out'}), 504
+    except Exception as e:
+        print(f"Error updating epic: {e}", flush=True)
+        return jsonify({'success': False, 'error': str(e)}), 500
 
 @app.route('/api/hygiene')
 def hygiene():

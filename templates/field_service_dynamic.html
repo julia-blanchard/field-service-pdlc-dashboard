@@ -16270,6 +16270,7 @@ if (programSearch) {
         }
 
         // Orphaned epics data
+        const epicRecommendationsEnabled = {{ 'true' if show_epic_recommendations else 'false' }};
         let orphanedData = null;
         window.orphanedDataLoaded = false;
 
@@ -16433,6 +16434,10 @@ if (programSearch) {
         }
 
         function generateRecommendationHTML(epic) {
+            if (!epicRecommendationsEnabled) {
+                return '';
+            }
+
             if (isFutureReleaseEpic(epic)) {
                 return `
                     <div style="padding: 6px 10px; background: #FFFDF0; border: 1px solid #F0C050; border-radius: 6px; font-size: 10px; width: 260px; min-width: 260px; max-width: 260px; box-sizing: border-box;">
@@ -16462,7 +16467,7 @@ if (programSearch) {
             const confidenceLine = `${scorePercent}% match - ${confidenceText} confidence${portfolioName ? ' | <strong>Portfolio:</strong> ' + portfolioName : ''}`;
 
             return `
-                <div style="padding: 6px 10px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 4px; font-size: 11px; width: 520px; min-width: 520px; max-width: 520px; box-sizing: border-box;">
+                <div data-epic-id="${epic.id}" style="padding: 6px 10px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 4px; font-size: 11px; width: 520px; min-width: 520px; max-width: 520px; box-sizing: border-box;">
                     <div style="display: flex; flex-direction: column;">
                         <div style="margin-bottom: 3px; font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                             ${confidenceIcon} <span style="font-weight: 600;">Recommended Program:</span>
@@ -16729,43 +16734,153 @@ if (programSearch) {
             }
         }
 
-        function mapEpicToProgram(epicId, programId, programName, event) {
+        // A Program in GUS has no direct Epic relationship - epics link via Epic.Project__c,
+        // and each Project has its own Program__c. So "mapping to a program" really means
+        // picking (or eventually creating) the Project within that program to attach the epic to.
+        async function mapEpicToProgram(epicId, programId, programName, event) {
             if (event) event.stopPropagation();
 
-            if (!confirm(`Map this epic to program:\n\n${programName}\n\nThis will update the epic in GUS.`)) {
+            // Close the "All Recommendations" modal if this was launched from there
+            const parentModal = event && event.target.closest('[style*="z-index: 10000"]');
+            if (parentModal) parentModal.remove();
+
+            const button = event ? event.target : null;
+            const originalText = button ? button.textContent : '';
+            if (button) {
+                button.textContent = 'Loading...';
+                button.disabled = true;
+            }
+
+            let projects = [];
+            try {
+                const response = await fetch(`/api/program-projects/${programId}`);
+                const data = await response.json();
+                projects = data.projects || [];
+            } catch (e) {
+                console.error('Error loading projects for program:', e);
+            }
+
+            if (button) {
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+
+            openProjectPickerModal(epicId, programId, programName, projects);
+        }
+
+        function openProjectPickerModal(epicId, programId, programName, projects) {
+            // Widest program has 11 projects; a 2-column grid of compact cards fits all of them without scrolling.
+            let modalHTML = `
+                <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 10000; display: flex; align-items: center; justify-content: center;" onclick="this.remove()">
+                    <div style="background: white; border-radius: 8px; max-width: 760px; max-height: 90vh; overflow-y: auto; padding: 24px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);" onclick="event.stopPropagation()">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px;">
+                            <div>
+                                <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1e293b;">Choose a Project</h3>
+                                <div style="font-size: 13px; color: #64748b;">
+                                    In program: <strong>${programName}</strong>
+                                </div>
+                            </div>
+                            <button onclick="this.closest('[style*=\\'z-index: 10000\\']').remove()" style="background: none; border: none; font-size: 24px; color: #94a3b8; cursor: pointer; line-height: 1;">&times;</button>
+                        </div>
+                        <div style="font-size: 12px; color: #94a3b8; margin-bottom: 16px;">
+                            Epics link to GUS via Project, not directly to Program. Pick the project this epic belongs to.
+                        </div>
+            `;
+
+            if (projects.length === 0) {
+                modalHTML += `
+                    <div style="padding: 16px; text-align: center; color: #94a3b8; font-size: 13px; border: 1px dashed #e5e7eb; border-radius: 6px;">
+                        No projects found under this program yet.
+                    </div>
+                `;
+            } else {
+                modalHTML += `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">`;
+                projects.forEach(project => {
+                    const safeName = project.name.replace(/'/g, "\\'");
+                    modalHTML += `
+                        <div style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px 10px; display: flex; justify-content: space-between; align-items: center; gap: 8px; min-width: 0;">
+                            <div style="min-width: 0; overflow: hidden;">
+                                <div style="font-weight: 600; color: #1e293b; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${project.name}</div>
+                                <div style="font-size: 10px; color: #64748b; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${project.health_status || 'Not Assigned'}${project.target ? ' • Target: ' + project.target : ''}</div>
+                            </div>
+                            <button onclick="confirmMapEpicToProject('${epicId}', '${project.id}', '${safeName}', '${programId}', '${programName.replace(/'/g, "\\'")}', event)"
+                                    style="background: #0176D3; color: white; border: none; padding: 5px 10px; border-radius: 4px; font-size: 11px; cursor: pointer; font-weight: 600; white-space: nowrap; flex-shrink: 0;">
+                                Select
+                            </button>
+                        </div>
+                    `;
+                });
+                modalHTML += `</div>`;
+            }
+
+            modalHTML += `
+                        <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
+                            <button onclick="this.closest('[style*=\\'z-index: 10000\\']').remove()"
+                                    style="background: #e5e7eb; color: #64748b; border: none; padding: 8px 16px; border-radius: 4px; font-size: 12px; cursor: pointer; width: 100%;">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const modalDiv = document.createElement('div');
+            modalDiv.innerHTML = modalHTML;
+            document.body.appendChild(modalDiv.firstElementChild);
+        }
+
+        async function confirmMapEpicToProject(epicId, projectId, projectName, programId, programName, event) {
+            if (event) event.stopPropagation();
+
+            if (!confirm(`Map this epic to project:\n\n${projectName}\n(Program: ${programName})\n\nThis will update the epic in GUS.`)) {
                 return;
             }
 
-            // Show loading state
             const button = event.target;
             const originalText = button.textContent;
             button.textContent = 'Mapping...';
             button.disabled = true;
 
-            // TODO: Call SF CLI to update epic's Program__c field
-            // For now, show success message and store acceptance
-            setTimeout(() => {
-                alert(`✓ Successfully mapped to: ${programName}\n\n(Note: SF CLI integration pending - this is a UI prototype)`);
+            try {
+                const response = await fetch('/api/map-epic-to-project', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ epic_id: epicId, project_id: projectId })
+                });
+                const result = await response.json();
 
-                // Store acceptance
+                if (!result.success) {
+                    alert(`✗ Failed to map epic in GUS:\n\n${result.error || 'Unknown error'}`);
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    return;
+                }
+
+                alert(`✓ Successfully mapped to project: ${projectName}`);
+
                 const storage = getOrphanedRecommendationStorage();
                 storage[epicId] = {
                     action: 'accepted',
+                    projectId: projectId,
+                    projectName: projectName,
                     programId: programId,
                     programName: programName,
                     timestamp: new Date().toISOString()
                 };
                 saveOrphanedRecommendationStorage(storage);
 
-                // Hide recommendation box
-                const recBox = button.closest('div[style*="background: #f0f9ff"]');
+                const modal = button.closest('[style*="z-index: 10000"]');
+                if (modal) modal.remove();
+
+                const recBox = document.querySelector(`div[data-epic-id="${epicId}"]`);
                 if (recBox) {
                     recBox.style.display = 'none';
                 }
-
+            } catch (e) {
+                alert(`✗ Failed to map epic in GUS:\n\n${e.message}`);
                 button.textContent = originalText;
                 button.disabled = false;
-            }, 500);
+            }
         }
 
         function dismissRecommendation(epicId, event) {
@@ -16849,7 +16964,7 @@ if (programSearch) {
                             ${rec.reasoning}
                         </div>
                         <div style="display: flex; gap: 8px; justify-content: flex-end;">
-                            <button onclick="mapEpicToProgram('${epicId}', '${rec.program_id}', '${rec.program_name.replace(/'/g, "\\'")}', event); this.closest('[style*=\\'z-index: 10000\\']').remove();"
+                            <button onclick="mapEpicToProgram('${epicId}', '${rec.program_id}', '${rec.program_name.replace(/'/g, "\\'")}', event)"
                                     style="background: #0176D3; color: white; border: none; padding: 6px 16px; border-radius: 4px; font-size: 12px; cursor: pointer; font-weight: 600;">
                                 Map to This Program
                             </button>

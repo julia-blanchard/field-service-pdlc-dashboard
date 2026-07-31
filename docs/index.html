@@ -43361,7 +43361,7 @@ if (programSearch) {
             }
 
             // Update last updated timestamp
-            const lastUpdated = "2026-07-30T14:07:41.892498";
+            const lastUpdated = "2026-07-30T18:06:24.472950";
             if (lastUpdated) {
                 // Format the timestamp if it's an ISO string
                 const date = new Date(lastUpdated);
@@ -44127,10 +44127,10 @@ if (programSearch) {
                         <tr class="breakdown-orphaned-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
                             <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
                                 <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
-                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
-                                        <div style="font-weight: 500; margin-bottom: 4px;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 24px;">
+                                        <div style="font-weight: 500; margin-bottom: 4px; white-space: nowrap;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
-                                                ${epic.name}
+                                                ${truncateEpicTitle(epic.name)}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
                                         <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -44159,6 +44159,14 @@ if (programSearch) {
 
         function isFutureReleaseEpic(epic) {
             return !!(epic.name && epic.name.includes('266'));
+        }
+
+        // Model: "266 UWM Worker Engagement Experience: Agentic Shift Management" (62 chars)
+        function truncateEpicTitle(name, maxLen = 62) {
+            if (!name || name.length <= maxLen) return name;
+            const truncated = name.slice(0, maxLen);
+            const lastSpace = truncated.lastIndexOf(' ');
+            return lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated;
         }
 
         function sortEpicsWithFutureReleaseLast(epics) {
@@ -44303,10 +44311,10 @@ if (programSearch) {
                         <tr class="breakdown-em-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
                             <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
                                 <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
-                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
-                                        <div style="font-weight: 500; margin-bottom: 4px;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 24px;">
+                                        <div style="font-weight: 500; margin-bottom: 4px; white-space: nowrap;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
-                                                ${epic.name}
+                                                ${truncateEpicTitle(epic.name)}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
                                         <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -44386,10 +44394,10 @@ if (programSearch) {
                         <tr class="breakdown-pm-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
                             <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
                                 <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
-                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
-                                        <div style="font-weight: 500; margin-bottom: 4px;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 24px;">
+                                        <div style="font-weight: 500; margin-bottom: 4px; white-space: nowrap;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
-                                                ${epic.name}
+                                                ${truncateEpicTitle(epic.name)}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
                                         <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">

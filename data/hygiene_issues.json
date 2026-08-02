@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 145,
+    "total_epics_needing_attention": 146,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
-      "missing_scheduled_build": 50,
+      "missing_scheduled_build": 51,
       "missing_priority": 102,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 64
+      "missing_planned_release": 65
     }
   },
   "epics": [
@@ -1231,6 +1231,24 @@
       "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
       "issues": [
         "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZAo92AG",
+      "epic_name": "Test Irit",
+      "epic_name_key": "Test Irit",
+      "team": "-",
+      "owner": "Irit Suliman",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "30",
+      "story_points": 0,
+      "program": "FS 264: S&O: Agentic S&O",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
       ]
     },
     {
@@ -2552,8 +2570,26 @@
   "by_team": [
     {
       "name": "-",
-      "epic_count": 2,
+      "epic_count": 3,
       "epics": [
+        {
+          "epic_id": "a3QEE000002ZAo92AG",
+          "epic_name": "Test Irit",
+          "epic_name_key": "Test Irit",
+          "team": "-",
+          "owner": "Irit Suliman",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "30",
+          "story_points": 0,
+          "program": "FS 264: S&O: Agentic S&O",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
         {
           "epic_id": "a3QEE000002BlKD2A0",
           "epic_name": "[264] UWM S&O M2: Intelligent Shift Global Optimization",

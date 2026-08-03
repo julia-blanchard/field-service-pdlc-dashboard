@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 146,
+    "total_epics_needing_attention": 148,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
       "missing_scheduled_build": 51,
-      "missing_priority": 102,
+      "missing_priority": 104,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 65
+      "missing_planned_release": 68
     }
   },
   "epics": [
@@ -501,7 +501,7 @@
       "epic_name_key": "[264] [SFS Mobile Assets] [Unified Scheduling] Service document for AGX",
       "team": "SFS Mobile Assets",
       "owner": "Sandeep Agrawal",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -803,7 +803,8 @@
       "project": "264 Customer Enhancements",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
@@ -936,7 +937,7 @@
       "epic_name_key": "[264][Scheduling Console] Bundled Work",
       "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Gal Asraf",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
@@ -954,7 +955,7 @@
       "epic_name_key": "[264][Scheduling Console] D&D Scheduled appointments from list",
       "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Gal Asraf",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
@@ -1008,8 +1009,26 @@
       "epic_name_key": "[264][Scheduling Console] Adjust Duration AND Snap-In",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "FS 264: S&O: The New Scheduling Console",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Y8Ob2AK",
+      "epic_name": "[264][Scheduling Console] Gantt Filters",
+      "epic_name_key": "[264][Scheduling Console] Gantt Filters",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "On Track",
+      "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
       "program": "FS 264: S&O: The New Scheduling Console",
@@ -1039,10 +1058,28 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002TAnd2AG",
+      "epic_name": "[264][Scheduling Console] Right Click For Actions",
+      "epic_name_key": "[264][Scheduling Console] Right Click For Actions",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "On Track",
+      "scheduled_build": "264.10",
+      "priority": "-",
+      "story_points": 0,
+      "program": "FS 264: S&O: The New Scheduling Console",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002TAaj2AG",
       "epic_name": "[264][Scheduling Console] Side by Side Gantt and List",
       "epic_name_key": "[264][Scheduling Console] Side by Side Gantt and List",
-      "team": "FSL - Resource - Dispatch Console",
+      "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Lilach Talbi",
       "health": "Not Started",
       "scheduled_build": "264.7",
@@ -1062,7 +1099,7 @@
       "epic_name_key": "[264][Scheduling Console] Gantt Color Palette",
       "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Gal Asraf",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
@@ -1293,7 +1330,7 @@
       "epic_name_key": "[264][Scheduling Console] Transparency Into Schedule Actions",
       "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Gal Asraf",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
@@ -1838,7 +1875,7 @@
       "epic_name_key": "264 [FSL - Foundation - Apps] Service Territory Sharing",
       "team": "FSL - Foundation - Apps",
       "owner": "Siddharth Mathur",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -2885,7 +2922,7 @@
           "epic_name_key": "264 [FSL - Foundation - Apps] Service Territory Sharing",
           "team": "FSL - Foundation - Apps",
           "owner": "Siddharth Mathur",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -3304,7 +3341,7 @@
     },
     {
       "name": "FSL - Resource - Dispatch Console",
-      "epic_count": 6,
+      "epic_count": 7,
       "epics": [
         {
           "epic_id": "a3QEE000002TAcL2AW",
@@ -3330,7 +3367,7 @@
           "epic_name_key": "[264][Scheduling Console] Adjust Duration AND Snap-In",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -3343,13 +3380,31 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002TAaj2AG",
-          "epic_name": "[264][Scheduling Console] Side by Side Gantt and List",
-          "epic_name_key": "[264][Scheduling Console] Side by Side Gantt and List",
+          "epic_id": "a3QEE000002Y8Ob2AK",
+          "epic_name": "[264][Scheduling Console] Gantt Filters",
+          "epic_name_key": "[264][Scheduling Console] Gantt Filters",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "Not Started",
-          "scheduled_build": "264.7",
+          "health": "On Track",
+          "scheduled_build": "264.3",
+          "priority": "-",
+          "story_points": 0,
+          "program": "FS 264: S&O: The New Scheduling Console",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002TAnd2AG",
+          "epic_name": "[264][Scheduling Console] Right Click For Actions",
+          "epic_name_key": "[264][Scheduling Console] Right Click For Actions",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "On Track",
+          "scheduled_build": "264.10",
           "priority": "-",
           "story_points": 0,
           "program": "FS 264: S&O: The New Scheduling Console",
@@ -3698,7 +3753,7 @@
     },
     {
       "name": "FSL - Talpiot - Dispatch Console",
-      "epic_count": 8,
+      "epic_count": 9,
       "epics": [
         {
           "epic_id": "a3QEE000002Srxt2AC",
@@ -3706,7 +3761,7 @@
           "epic_name_key": "[264][Scheduling Console] Bundled Work",
           "team": "FSL - Talpiot - Dispatch Console",
           "owner": "Gal Asraf",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
@@ -3724,7 +3779,7 @@
           "epic_name_key": "[264][Scheduling Console] D&D Scheduled appointments from list",
           "team": "FSL - Talpiot - Dispatch Console",
           "owner": "Gal Asraf",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
@@ -3773,12 +3828,30 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002TAaj2AG",
+          "epic_name": "[264][Scheduling Console] Side by Side Gantt and List",
+          "epic_name_key": "[264][Scheduling Console] Side by Side Gantt and List",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": "-",
+          "story_points": 0,
+          "program": "FS 264: S&O: The New Scheduling Console",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002TAVt2AO",
           "epic_name": "[264][Scheduling Console] Gantt Color Palette",
           "epic_name_key": "[264][Scheduling Console] Gantt Color Palette",
           "team": "FSL - Talpiot - Dispatch Console",
           "owner": "Gal Asraf",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
@@ -3831,7 +3904,7 @@
           "epic_name_key": "[264][Scheduling Console] Transparency Into Schedule Actions",
           "team": "FSL - Talpiot - Dispatch Console",
           "owner": "Gal Asraf",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
@@ -4649,7 +4722,7 @@
           "epic_name_key": "[264] [SFS Mobile Assets] [Unified Scheduling] Service document for AGX",
           "team": "SFS Mobile Assets",
           "owner": "Sandeep Agrawal",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -4676,7 +4749,8 @@
           "project": "264 Customer Enhancements",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         }
       ]

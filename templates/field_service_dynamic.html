@@ -2997,7 +2997,9 @@
                             {% endif %}
                         </div>
                         <div style="margin-bottom: 12px;">
-                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">{{ program.portfolio }}</span>
+                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                                {{ program.portfolio }}{% if program.theme %} | {{ program.theme }}{% endif %}
+                            </span>
                         </div>
 
                         <!-- PBD Validation Status (if available) -->
@@ -3096,7 +3098,9 @@
                             {% endif %}
                         </div>
                         <div style="margin-bottom: 12px;">
-                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">{{ program.portfolio }}</span>
+                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                                {{ program.portfolio }}{% if program.theme %} | {{ program.theme }}{% endif %}
+                            </span>
                         </div>
 
                         <!-- PBD Validation Status (if available) -->

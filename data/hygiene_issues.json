@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_epics_needing_attention": 149,
+    "total_epics_needing_attention": 150,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
@@ -8,7 +8,7 @@
       "missing_priority": 105,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 69
+      "missing_planned_release": 70
     }
   },
   "epics": [
@@ -2000,7 +2000,7 @@
       "epic_name_key": "264 UWM Worker Engagement Experience: Calendar Enhancements - July Release",
       "team": "SFS - WFM - Worker - Experience",
       "owner": "Vinay Bayya",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "262.12",
       "priority": "1",
       "story_points": 0,
@@ -2085,7 +2085,7 @@
       "epic_name_key": "264 UWM Worker Engagement Experience - HLDs, Spikes and Advanced Planning",
       "team": "SFS - WFM - Worker - Experience",
       "owner": "Sindhubala Ulavapalli",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "0",
       "story_points": 0,
@@ -2098,12 +2098,12 @@
     },
     {
       "epic_id": "a3QEE000002Jytl2AC",
-      "epic_name": "266 UWM Worker Engagement Experience: Non-Productive Activities",
-      "epic_name_key": "266 UWM Worker Engagement Experience: Non-Productive Activities",
+      "epic_name": "268 UWM Worker Engagement Experience: Non-Productive Activities",
+      "epic_name_key": "268 UWM Worker Engagement Experience: Non-Productive Activities",
       "team": "SFS - WFM - Worker - Experience",
       "owner": "Sindhubala Ulavapalli",
       "health": "On Track",
-      "scheduled_build": "266",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "[264] Unified Workforce Management (UWM)",
@@ -2204,13 +2204,30 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002YWh32AG",
+      "epic_name": "[266] Compact density view",
+      "epic_name_key": "[266] Compact density view",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Rebecca Hampton",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": "0",
+      "story_points": 0,
+      "program": "[264] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] SFS Schedule Management",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002YVLB2A4",
       "epic_name": "[266] Key Metrics Panel for Schedule Manager",
       "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
       "team": "FSL - Foundation - Atlas",
       "owner": "Avani Jindal",
       "health": "Not Started",
-      "scheduled_build": "266",
+      "scheduled_build": "264.7",
       "priority": "1",
       "story_points": 0,
       "program": "[264] Unified Workforce Management (UWM)",
@@ -2975,7 +2992,7 @@
     },
     {
       "name": "FSL - Foundation - Atlas",
-      "epic_count": 15,
+      "epic_count": 16,
       "epics": [
         {
           "epic_id": "a3QEE000002TAhB2AW",
@@ -2995,13 +3012,30 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002YWh32AG",
+          "epic_name": "[266] Compact density view",
+          "epic_name_key": "[266] Compact density view",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Rebecca Hampton",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": "0",
+          "story_points": 0,
+          "program": "[264] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] SFS Schedule Management",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002YVLB2A4",
           "epic_name": "[266] Key Metrics Panel for Schedule Manager",
           "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
           "team": "FSL - Foundation - Atlas",
           "owner": "Avani Jindal",
           "health": "Not Started",
-          "scheduled_build": "266",
+          "scheduled_build": "264.7",
           "priority": "1",
           "story_points": 0,
           "program": "[264] Unified Workforce Management (UWM)",
@@ -4046,7 +4080,7 @@
           "epic_name_key": "264 UWM Worker Engagement Experience: Calendar Enhancements - July Release",
           "team": "SFS - WFM - Worker - Experience",
           "owner": "Vinay Bayya",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "262.12",
           "priority": "1",
           "story_points": 0,
@@ -4131,7 +4165,7 @@
           "epic_name_key": "264 UWM Worker Engagement Experience - HLDs, Spikes and Advanced Planning",
           "team": "SFS - WFM - Worker - Experience",
           "owner": "Sindhubala Ulavapalli",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "0",
           "story_points": 0,
@@ -4144,12 +4178,12 @@
         },
         {
           "epic_id": "a3QEE000002Jytl2AC",
-          "epic_name": "266 UWM Worker Engagement Experience: Non-Productive Activities",
-          "epic_name_key": "266 UWM Worker Engagement Experience: Non-Productive Activities",
+          "epic_name": "268 UWM Worker Engagement Experience: Non-Productive Activities",
+          "epic_name_key": "268 UWM Worker Engagement Experience: Non-Productive Activities",
           "team": "SFS - WFM - Worker - Experience",
           "owner": "Sindhubala Ulavapalli",
           "health": "On Track",
-          "scheduled_build": "266",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "[264] Unified Workforce Management (UWM)",

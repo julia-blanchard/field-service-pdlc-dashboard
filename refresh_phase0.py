@@ -1,34 +1,29 @@
 #!/usr/bin/env python3
 """
-Fetch Phase 0 and Phase 1 data from Google Sheets using MCP tool
-Consolidates both fetch and parse logic into one script
+Complete Phase 0/1 data refresh from Google Sheets
+Processes all 180 rows, applies tier normalization, and saves to phase_0_programs.json
 """
 
 import json
-import subprocess
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 SCRIPT_DIR = Path(__file__).parent
 JSON_FILE = SCRIPT_DIR / "data" / "phase_0_programs.json"
-SHEET_ID = "1cie8l3W71Bkbncp5Yk3VIIiB3YHApKvRTENj1iwlpi4"
 
-# No row cap - fetch entire sheet
-SHEET_RANGE = "'FS PDLC'!A:Z"
-
-# Column mappings (0-indexed) - Updated 2026-08-04
+# Column mappings (0-indexed)
 COLUMNS = {
     'portfolio': 0,      # Column A
     'theme': 1,          # Column B
     'tier': 2,           # Column C
     'stage': 3,          # Column D
     'owner': 4,          # Column E
-    'initiative': 5,     # Column F (was E)
-    'feature': 6,        # Column G (was I)
+    'initiative': 5,     # Column F
+    'feature': 6,        # Column G
     'former_brief': 7,   # Column H
     'one_pager': 8,      # Column I
-    'related_pbd': 9,    # Column J - Related PBD Link
+    'related_pbd': 9,    # Column J
     'prd': 10,           # Column K
     'tshirt_size': 11,   # Column L
     'what_answering': 12,# Column M
@@ -37,33 +32,13 @@ COLUMNS = {
     'august': 15,        # Column P
     'september': 16,     # Column Q
     'october': 17,       # Column R
-    'status': 18,        # Column S (was Q)
-    'pm_lead': 19,       # Column T (was R)
-    'arch_lead': 20,     # Column U (was S)
-    'tpm_lead': 21,      # Column V (was T)
-    'ux_lead': 22,       # Column W (was U)
-    'cx_lead': 23        # Column X (was V)
+    'status': 18,        # Column S
+    'pm_lead': 19,       # Column T
+    'arch_lead': 20,     # Column U
+    'tpm_lead': 21,      # Column V
+    'ux_lead': 22,       # Column W
+    'cx_lead': 23        # Column X
 }
-
-def fetch_sheet_data():
-    """
-    Use MCP tool to fetch Google Sheet data
-
-    NOTE: This script cannot be run directly from command line.
-    It must be run through Claude Code with MCP tools available.
-
-    To refresh Phase 0/1 data, ask Claude in this project:
-    "Please refresh Phase 0 and Phase 1 data from the Google Sheet"
-    """
-    print("🔄 Fetching Phase 0/1 data from Google Sheet...")
-    print(f"   Sheet ID: {SHEET_ID}")
-    print(f"   Range: {SHEET_RANGE} (no row limit)")
-    print()
-    print("❌ ERROR: This script requires MCP tools and cannot be run directly.")
-    print("   Please ask Claude to refresh the Phase 0/1 data instead.")
-    print()
-    print("   Example: 'Please refresh Phase 0 and Phase 1 data from the Google Sheet'")
-    return None
 
 def get_cell_value(row_data, column_name):
     """Safely get cell value by column name"""
@@ -72,35 +47,35 @@ def get_cell_value(row_data, column_name):
         return ""
     return row_data[col_index] if len(row_data) > col_index else ""
 
-def parse_sheet_data(sheet_data_text):
+def normalize_tier(tier_value):
     """
-    Parse Google Sheets data from MCP read_sheet_values output
-    Includes Phase 0 (PM Backlog) and Phase 1 (Prototyping, Ready for Review)
+    Normalize tier values to T1, T2, T3, or 'Tier N/A'
+    """
+    if not tier_value or not tier_value.strip():
+        return "Tier N/A"
+
+    tier_clean = tier_value.strip()
+
+    # Extract number from tier strings like "Tier 1", "T1", "1", etc.
+    if "1" in tier_clean:
+        return "T1"
+    elif "2" in tier_clean:
+        return "T2"
+    elif "3" in tier_clean:
+        return "T3"
+    else:
+        return "Tier N/A"
+
+def parse_sheet_data(all_rows):
+    """
+    Parse raw Google Sheets rows into structured program data
     """
     programs = []
     skipped_rows = 0
-    total_rows = 0
+    total_rows = len(all_rows)
 
-    lines = sheet_data_text.strip().split('\n')
-
-    for line in lines:
-        if not line.startswith('Row '):
-            continue
-
-        total_rows += 1
-
+    for idx, row_data in enumerate(all_rows, start=4):  # Start at row 4 (after headers)
         try:
-            row_num_part, data_part = line.split(': ', 1)
-            row_num = int(row_num_part.replace('Row', '').strip())
-
-            # Skip header rows (1-3)
-            if row_num < 4:
-                skipped_rows += 1
-                continue
-
-            # Parse the list
-            row_data = eval(data_part)  # Safe here since we control the input
-
             # Get values using column mappings
             portfolio = get_cell_value(row_data, 'portfolio')
             theme = get_cell_value(row_data, 'theme')
@@ -117,22 +92,31 @@ def parse_sheet_data(sheet_data_text):
             cx_lead = get_cell_value(row_data, 'cx_lead')
             related_pbd = get_cell_value(row_data, 'related_pbd')
 
-            # Use Initiative as fallback if Feature is empty
-            display_name = feature if feature else initiative
+            # Determine display name and feature link
+            # If Feature is a URL, use Initiative as name and Feature as a link
+            feature_link = None
+            if feature and (feature.startswith('http://') or feature.startswith('https://')):
+                display_name = initiative
+                feature_link = feature
+            else:
+                display_name = feature if feature else initiative
 
             # Only include Phase 0 and Phase 1 items
-            # Must have either a Feature or Initiative
             if not display_name:
                 skipped_rows += 1
                 continue
 
+            # Truncate very long names to 100 characters
+            if len(display_name) > 100:
+                display_name = display_name[:97] + "..."
+
             # Check if row is in Phase 0 or Phase 1
-            is_phase_0_or_1 = any(s in stage for s in ['PM Backlog', 'Prototyping', 'Ready for Review'])
+            is_phase_0_or_1 = any(s in stage for s in ['PM Backlog', 'Prototyping', 'Ready for Review', 'Engineering Backlog'])
             if not is_phase_0_or_1:
                 skipped_rows += 1
                 continue
 
-            # Normalize portfolio name to FY27 format for Phase 0/1 future work
+            # Normalize portfolio name to FY27 format
             if portfolio and "Field Service" not in portfolio:
                 if portfolio == "Foundations":
                     portfolio = "FY27 Field Service Foundations"
@@ -146,7 +130,7 @@ def parse_sheet_data(sheet_data_text):
                     portfolio = f"FY27 Field Service {portfolio}"
 
             # Determine phase and subcolumn based on stage
-            if "PM Backlog" in stage:
+            if "PM Backlog" in stage or "Engineering Backlog" in stage:
                 phase = "0"
                 subcolumn = "backlog"
             elif "Prototyping" in stage:
@@ -162,15 +146,22 @@ def parse_sheet_data(sheet_data_text):
             # Use PM Lead if populated, otherwise fall back to Owner
             effective_pm = pm_lead or owner or ""
 
+            # Normalize tier to T1/T2/T3 or "Tier N/A"
+            normalized_tier = normalize_tier(tier)
+
+            # Create Google Sheets link to specific row
+            # Format: gid=SHEET_TAB_ID&range=ROW_NUMBER:ROW_NUMBER to highlight entire row
+            sheet_url = f"https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=0&range={idx}:{idx}"
+
             program = {
                 "name": display_name,
                 "full_name": display_name,
-                "id": f"sheet_{row_num}",
+                "id": f"sheet_{idx}",
                 "phase": phase,
                 "subcolumn": subcolumn,
                 "portfolio": portfolio or "TBD",
                 "theme": theme or "",
-                "tier": tier or "",
+                "tier": normalized_tier,
                 "stage": stage,
                 "status": status or "",
                 "program_manager": effective_pm,
@@ -180,12 +171,14 @@ def parse_sheet_data(sheet_data_text):
                 "cx_lead": cx_lead or "",
                 "related_pbd": related_pbd or "",
                 "health": "Unknown",
-                "target_release": ""
+                "target_release": "",
+                "sheet_url": sheet_url,
+                "feature_link": feature_link
             }
             programs.append(program)
 
         except Exception as e:
-            print(f"Warning: Could not parse row {row_num}: {e}")
+            print(f"Warning: Could not parse row {idx}: {e}")
             skipped_rows += 1
             continue
 
@@ -201,6 +194,8 @@ def save_programs(programs):
         pt_time = datetime.now(ZoneInfo("America/Los_Angeles"))
         data = {
             "last_updated": pt_time.isoformat(),
+            "source": "Google Sheets",
+            "sheet_id": "1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c",
             "programs": programs
         }
 
@@ -213,6 +208,7 @@ def save_programs(programs):
         # Group by phase and portfolio for summary
         by_phase = {"0": 0, "1": 0}
         by_portfolio = {}
+        by_tier = {}
 
         for p in programs:
             phase = p.get("phase", "0")
@@ -220,6 +216,9 @@ def save_programs(programs):
 
             portfolio = p.get("portfolio", "TBD")
             by_portfolio[portfolio] = by_portfolio.get(portfolio, 0) + 1
+
+            tier = p.get("tier", "Tier N/A")
+            by_tier[tier] = by_tier.get(tier, 0) + 1
 
         print(f"\nBy Phase:")
         print(f"   Phase 0 (PM Backlog): {by_phase.get('0', 0)}")
@@ -229,32 +228,37 @@ def save_programs(programs):
         for portfolio in sorted(by_portfolio.keys()):
             print(f"   {portfolio}: {by_portfolio[portfolio]}")
 
+        print(f"\nBy Tier:")
+        for tier in sorted(by_tier.keys()):
+            print(f"   {tier}: {by_tier[tier]}")
+
         return True
     except Exception as e:
         print(f"❌ Error writing JSON file: {e}")
         return False
 
-def main():
-    """Main function"""
+if __name__ == "__main__":
     print("=" * 70)
-    print("Phase 0 & Phase 1 Google Sheet Refresh")
+    print("Phase 0 & Phase 1 Data Refresh - Tier Normalization")
     print("=" * 70)
+    print()
+    print("This script processes the raw sheet data with tier normalization.")
+    print("It expects /tmp/all_phase0_rows.json to exist from the MCP agent.")
+    print()
 
-    sheet_data = fetch_sheet_data()
+    # Load raw rows from agent output
+    raw_rows_file = Path("/tmp/all_phase0_rows.json")
+    if not raw_rows_file.exists():
+        print(f"❌ ERROR: {raw_rows_file} not found")
+        print("   Run the MCP agent first to fetch all 177 rows.")
+        exit(1)
 
-    if not sheet_data:
-        print("❌ Failed to fetch Google Sheet data")
-        return 1
+    with open(raw_rows_file) as f:
+        all_rows = json.load(f)
 
-    programs = parse_sheet_data(sheet_data)
+    programs = parse_sheet_data(all_rows)
 
     if programs:
-        success = save_programs(programs)
-        return 0 if success else 1
+        save_programs(programs)
     else:
         print("❌ No Phase 0/1 programs found in sheet")
-        return 1
-
-if __name__ == "__main__":
-    import sys
-    sys.exit(main())

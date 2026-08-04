@@ -535,7 +535,7 @@
             -webkit-backdrop-filter: blur(30px) saturate(180%);
             border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: 10px;
-            padding: 10px;
+            padding: 10px 10px 40px 10px;
             margin-bottom: 8px;
             font-size: 11px;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2867,6 +2867,26 @@
 
     <!-- Overview Content -->
     <div id="overview-view" class="view-content active">
+        {% if show_roadmap_phase01 %}
+        <div style="margin-bottom: 20px; padding: 12px 20px; background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 8px;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <strong style="color: #92400e;">🧪 Roadmap Data Source (Local Only)</strong>
+                    <div style="font-size: 13px; color: #78350f; margin-top: 4px;">
+                        Choose between Google Sheet (current) or GUS Roadmap (NEW) for Phase 0/1 data
+                    </div>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                    <button class="view-toggle" id="source-sheet" onclick="switchPhase01Source('sheet')" style="background: #3b82f6; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500;">
+                        📊 Google Sheet
+                    </button>
+                    <button class="view-toggle" id="source-roadmap" onclick="switchPhase01Source('roadmap')" style="background: transparent; color: #475569; border: 2px solid #cbd5e1; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500;">
+                        🗺️ GUS Roadmap
+                    </button>
+                </div>
+            </div>
+        </div>
+        {% endif %}
         <div style="overflow-x: auto; width: 100%;">
             <main class="phase-container" role="main" aria-label="PDLC Programs by Phase">
         <!-- Phase 0: Ideation & Prioritization -->
@@ -2879,9 +2899,15 @@
 
             {% for program in programs %}
             {% if program.phase == '0' %}
-                <div class="program-card" data-portfolio="{{ program.portfolio }}">
+                <div class="program-card" data-portfolio="{{ program.portfolio }}" style="position: relative;">
                     <div class="program-name" style="margin-bottom: 8px;">
-                        {% if program.sheet_url %}
+                        {% if program.feature_link %}
+                        <a href="{{ program.feature_link }}"
+                           target="_blank"
+                           style="color: inherit; text-decoration: none; cursor: pointer;">
+                            {{ program.name }}
+                        </a>
+                        {% elif program.sheet_url %}
                         <a href="{{ program.sheet_url }}"
                            target="_blank"
                            style="color: inherit; text-decoration: none; cursor: pointer;">
@@ -2899,36 +2925,32 @@
                     </div>
 
                     <div style="margin-bottom: 12px;">
-                        <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">{{ program.portfolio }}</span>
+                        <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                            {{ program.portfolio }}{% if program.theme %} | {{ program.theme }}{% endif %}
+                        </span>
                     </div>
 
                     <div class="program-meta">
-                        {% if program.program_manager %}
                         <div class="meta-item">
-                            <span class="meta-label">PM:</span> {{ program.program_manager }}
+                            <span class="meta-label">PM:</span> {{ program.program_manager if program.program_manager else 'TBD' }}
                         </div>
-                        {% endif %}
-                        {% if program.arch_lead %}
                         <div class="meta-item">
-                            <span class="meta-label">Arch:</span> {{ program.arch_lead }}
+                            <span class="meta-label">Arch:</span> {{ program.arch_lead if program.arch_lead else 'TBD' }}
                         </div>
-                        {% endif %}
-                        {% if program.tpm_lead %}
                         <div class="meta-item">
-                            <span class="meta-label">TPM:</span> {{ program.tpm_lead }}
+                            <span class="meta-label">UX:</span> {{ program.ux_lead if program.ux_lead else 'TBD' }}
                         </div>
-                        {% endif %}
-                        {% if program.ux_lead %}
                         <div class="meta-item">
-                            <span class="meta-label">UX:</span> {{ program.ux_lead }}
+                            <span class="meta-label">TPM:</span> {{ program.tpm_lead if program.tpm_lead else 'TBD' }}
                         </div>
-                        {% endif %}
-                        {% if program.cx_lead %}
-                        <div class="meta-item">
-                            <span class="meta-label">CX:</span> {{ program.cx_lead }}
-                        </div>
-                        {% endif %}
                     </div>
+
+                    <!-- Tier badge in bottom left corner -->
+                    {% if program.tier %}
+                    <div style="position: absolute; bottom: 10px; left: 10px;">
+                        <span style="display: inline-block; font-size: 11px; color: white; font-weight: 600; background: #475569; padding: 4px 8px; border-radius: 4px;">{{ program.tier }}</span>
+                    </div>
+                    {% endif %}
                 </div>
             {% endif %}
             {% endfor %}
@@ -2952,7 +2974,13 @@
                     {% if program.phase == '1' and program.subcolumn == 'prototyping' %}
                     <div class="program-card" data-portfolio="{{ program.portfolio }}">
                         <div class="program-name" style="margin-bottom: 8px;">
-                            {% if program.sheet_url %}
+                            {% if program.feature_link %}
+                            <a href="{{ program.feature_link }}"
+                               target="_blank"
+                               style="color: inherit; text-decoration: none; cursor: pointer;">
+                                {{ program.name }}
+                            </a>
+                            {% elif program.sheet_url %}
                             <a href="{{ program.sheet_url }}"
                                target="_blank"
                                style="color: inherit; text-decoration: none; cursor: pointer;">
@@ -3010,16 +3038,18 @@
                         {% endif %}
 
                         <div class="program-meta">
-                            {% if program.program_manager %}
                             <div class="meta-item">
-                                <span class="meta-label">TPM:</span> {{ program.program_manager }}
+                                <span class="meta-label">PM:</span> {{ program.program_manager if program.program_manager else 'TBD' }}
                             </div>
-                            {% endif %}
-                            {% if program.arch_lead %}
                             <div class="meta-item">
-                                <span class="meta-label">Arch:</span> {{ program.arch_lead }}
+                                <span class="meta-label">Arch:</span> {{ program.arch_lead if program.arch_lead else 'TBD' }}
                             </div>
-                            {% endif %}
+                            <div class="meta-item">
+                                <span class="meta-label">UX:</span> {{ program.ux_lead if program.ux_lead else 'TBD' }}
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">TPM:</span> {{ program.tpm_lead if program.tpm_lead else 'TBD' }}
+                            </div>
                         </div>
                     </div>
                     {% endif %}
@@ -3043,7 +3073,13 @@
                     {% if program.phase == '1' and program.subcolumn == 'ready_for_review' %}
                     <div class="program-card" data-portfolio="{{ program.portfolio }}">
                         <div class="program-name" style="margin-bottom: 8px;">
-                            {% if program.sheet_url %}
+                            {% if program.feature_link %}
+                            <a href="{{ program.feature_link }}"
+                               target="_blank"
+                               style="color: inherit; text-decoration: none; cursor: pointer;">
+                                {{ program.name }}
+                            </a>
+                            {% elif program.sheet_url %}
                             <a href="{{ program.sheet_url }}"
                                target="_blank"
                                style="color: inherit; text-decoration: none; cursor: pointer;">
@@ -3107,11 +3143,18 @@
                         {% endif %}
 
                         <div class="program-meta">
-                            {% if program.program_manager %}
                             <div class="meta-item">
-                                <span class="meta-label">TPM:</span> {{ program.program_manager }}
+                                <span class="meta-label">PM:</span> {{ program.program_manager if program.program_manager else 'TBD' }}
                             </div>
-                            {% endif %}
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> {{ program.arch_lead if program.arch_lead else 'TBD' }}
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">UX:</span> {{ program.ux_lead if program.ux_lead else 'TBD' }}
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">TPM:</span> {{ program.tpm_lead if program.tpm_lead else 'TBD' }}
+                            </div>
                         </div>
                     </div>
                     {% endif %}
@@ -3507,8 +3550,8 @@
                             {% endif %}
                             {% if project.target and project.target != '-' %}
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
-                            <span class="project-meta-item">
-                                <span class="project-meta-label">Target:</span> {{ project.target }}
+                            <span class="badge" style="background-color: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin-left: 4px;" title="Target Release">
+                                🎯 {{ project.target }}
                             </span>
                             {% endif %}
                             {% if project.last_modified %}
@@ -3568,6 +3611,16 @@
                                                 <line x1="3" y1="10" x2="21" y2="10"></line>
                                             </svg>
                                             {{ epic.scheduled_build }}
+                                        </span>
+                                        {% endif %}
+                                        {% if epic.end_date and epic.end_date != '' %}
+                                        <span class="badge" style="background-color: #0070d2; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;" title="Freeze to Production Date">
+                                            📅 {{ epic.end_date }}
+                                        </span>
+                                        {% endif %}
+                                        {% if epic.t_shirt_size and epic.t_shirt_size != '' %}
+                                        <span class="badge" style="background-color: #8b5cf6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;" title="Engineering T-Shirt Size">
+                                            👕 {{ epic.t_shirt_size }}
                                         </span>
                                         {% endif %}
                                         {% if epic.last_modified %}
@@ -15040,6 +15093,157 @@ if (programSearch) {
         });
     });
 }
+
+// Phase 0/1 data source switcher
+function switchPhase01Source(source) {
+    const sheetBtn = document.getElementById('source-sheet');
+    const roadmapBtn = document.getElementById('source-roadmap');
+
+    if (source === 'sheet') {
+        sheetBtn.style.background = '#3b82f6';
+        sheetBtn.style.color = 'white';
+        sheetBtn.style.border = 'none';
+        roadmapBtn.style.background = 'transparent';
+        roadmapBtn.style.color = '#475569';
+        roadmapBtn.style.border = '2px solid #cbd5e1';
+
+        alert('Showing data from Google Sheet (current default)');
+        location.reload(); // Reload to show sheet data
+    } else {
+        roadmapBtn.style.background = '#3b82f6';
+        roadmapBtn.style.color = 'white';
+        roadmapBtn.style.border = 'none';
+        sheetBtn.style.background = 'transparent';
+        sheetBtn.style.color = '#475569';
+        sheetBtn.style.border = '2px solid #cbd5e1';
+
+        loadRoadmapData();
+    }
+}
+
+async function loadRoadmapData() {
+    try {
+        const response = await fetch('/api/roadmap');
+        const data = await response.json();
+
+        // Clear existing Phase 0 and Phase 1 cards
+        const phase0Container = document.querySelector('.phase-0');
+        const phase1Container = document.querySelector('.phase-1');
+
+        // Find and remove existing program cards but keep header
+        phase0Container.querySelectorAll('.program-card').forEach(card => card.remove());
+        phase1Container.querySelectorAll('.program-card').forEach(card => card.remove());
+
+        // Update counts
+        document.querySelector('.phase-0 .phase-count').textContent = data.phase_0_count;
+        document.querySelector('.phase-1 .phase-count').textContent = data.phase_1_count;
+
+        // Render Phase 0 programs
+        data.phase_0.forEach(program => {
+            const card = createProgramCard(program);
+            phase0Container.appendChild(card);
+        });
+
+        // Render Phase 1 programs
+        data.phase_1.forEach(program => {
+            const card = createProgramCard(program);
+            // For Phase 1, add to prototyping subcolumn
+            const prototypingCol = phase1Container.querySelector('.prototyping-subcolumn');
+            if (prototypingCol) {
+                prototypingCol.appendChild(card);
+            }
+        });
+
+        console.log(`Loaded ${data.phase_0_count} Phase 0 and ${data.phase_1_count} Phase 1 programs from GUS Roadmap`);
+    } catch (error) {
+        console.error('Error loading roadmap data:', error);
+        alert('Failed to load GUS Roadmap data. Check console for details.');
+    }
+}
+
+function createProgramCard(program) {
+    const card = document.createElement('div');
+    card.className = 'program-card';
+    card.setAttribute('data-portfolio', program.portfolio || 'Field Service');
+
+    const gusUrl = `https://gus.lightning.force.com/lightning/r/RDMP_Item__c/${program.id}/view`;
+
+    // Build status/health badges
+    let statusBadges = '';
+    if (program.status) {
+        statusBadges += `<span style="display: inline-block; font-size: 11px; color: #0c4a6e; background: #bae6fd; padding: 3px 8px; border-radius: 4px; margin-right: 6px;">${program.status}</span>`;
+    }
+    if (program.health) {
+        const healthColors = {
+            'On Track': '#dcfce7',
+            'At Risk': '#fef3c7',
+            'Off Track': '#fee2e2'
+        };
+        const healthColor = healthColors[program.health] || '#f1f5f9';
+        statusBadges += `<span style="display: inline-block; font-size: 11px; color: #334155; background: ${healthColor}; padding: 3px 8px; border-radius: 4px; margin-right: 6px;">${program.health}</span>`;
+    }
+    if (program.t_shirt_size) {
+        statusBadges += `<span style="display: inline-block; font-size: 11px; color: #7c3aed; background: #ede9fe; padding: 3px 8px; border-radius: 4px;">${program.t_shirt_size}</span>`;
+    }
+
+    // Build timeline section
+    let timeline = '';
+    if (program.target_release || program.target_release_date || program.end_date) {
+        timeline = '<div style="margin-top: 8px; margin-bottom: 8px; font-size: 11px; color: #64748b;">';
+        if (program.target_release) {
+            timeline += `📅 Release ${program.target_release}`;
+        }
+        if (program.target_release_date) {
+            timeline += ` (${program.target_release_date})`;
+        } else if (program.end_date) {
+            timeline += ` (by ${program.end_date})`;
+        }
+        timeline += '</div>';
+    }
+
+    // Build business value highlight
+    let businessValue = '';
+    if (program.business_value) {
+        const shortValue = program.business_value.length > 80
+            ? program.business_value.substring(0, 80) + '...'
+            : program.business_value;
+        businessValue = `<div style="margin-top: 8px; margin-bottom: 8px; font-size: 11px; color: #475569; font-style: italic; border-left: 3px solid #3b82f6; padding-left: 8px;">💡 ${shortValue}</div>`;
+    }
+
+    // Build Slack channel link
+    let slackLink = '';
+    if (program.slack_channel) {
+        slackLink = `<div style="margin-top: 6px;"><a href="slack://channel?team=T02A8R9TL&id=${program.slack_channel}" style="font-size: 11px; color: #3b82f6; text-decoration: none;">💬 Slack</a></div>`;
+    }
+
+    card.innerHTML = `
+        <div class="program-name" style="margin-bottom: 8px;">
+            <a href="${gusUrl}" target="_blank" style="color: inherit; text-decoration: none; cursor: pointer;">
+                ${program.feature || program.name}
+            </a>
+        </div>
+
+        <div style="margin-bottom: 8px;">
+            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                ${program.portfolio || 'Field Service'}
+            </span>
+        </div>
+
+        ${statusBadges ? `<div style="margin-bottom: 8px;">${statusBadges}</div>` : ''}
+        ${timeline}
+        ${businessValue}
+
+        <div class="program-meta">
+            ${program.pm_lead ? `<div class="meta-item"><span class="meta-label">PM:</span> ${program.pm_lead}</div>` : ''}
+            ${program.arch_lead ? `<div class="meta-item"><span class="meta-label">Arch:</span> ${program.arch_lead}</div>` : ''}
+            ${program.tpm_lead ? `<div class="meta-item"><span class="meta-label">TPM:</span> ${program.tpm_lead}</div>` : ''}
+            ${program.ux_lead && program.ux_lead !== 'TBD' ? `<div class="meta-item"><span class="meta-label">UX:</span> ${program.ux_lead}</div>` : ''}
+        </div>
+        ${slackLink}
+    `;
+
+    return card;
+}
 </script>
     </div>
 
@@ -16391,10 +16595,10 @@ if (programSearch) {
                         <tr class="breakdown-orphaned-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
                             <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
                                 <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
-                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
-                                        <div style="font-weight: 500; margin-bottom: 4px;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 24px;">
+                                        <div style="font-weight: 500; margin-bottom: 4px; white-space: nowrap;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
-                                                ${epic.name}
+                                                ${truncateEpicTitle(epic.name)}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
                                         <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -16423,6 +16627,14 @@ if (programSearch) {
 
         function isFutureReleaseEpic(epic) {
             return !!(epic.name && epic.name.includes('266'));
+        }
+
+        // Model: "266 UWM Worker Engagement Experience: Agentic Shift Management" (62 chars)
+        function truncateEpicTitle(name, maxLen = 62) {
+            if (!name || name.length <= maxLen) return name;
+            const truncated = name.slice(0, maxLen);
+            const lastSpace = truncated.lastIndexOf(' ');
+            return lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated;
         }
 
         function sortEpicsWithFutureReleaseLast(epics) {
@@ -16567,10 +16779,10 @@ if (programSearch) {
                         <tr class="breakdown-em-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
                             <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
                                 <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
-                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
-                                        <div style="font-weight: 500; margin-bottom: 4px;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 24px;">
+                                        <div style="font-weight: 500; margin-bottom: 4px; white-space: nowrap;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
-                                                ${epic.name}
+                                                ${truncateEpicTitle(epic.name)}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
                                         <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -16650,10 +16862,10 @@ if (programSearch) {
                         <tr class="breakdown-pm-${sanitizedName}" style="display: none; border-bottom: 1px solid #f1f5f9;">
                             <td style="padding: 8px 0 8px 2px; font-size: 13px; color: #64748b;">
                                 <div style="display: grid; grid-template-columns: 1fr 520px; gap: 1px; align-items: start;">
-                                    <div style="min-width: 0; overflow: hidden; padding-left: 6px;">
-                                        <div style="font-weight: 500; margin-bottom: 4px;">
+                                    <div style="min-width: 0; overflow: hidden; padding-left: 24px;">
+                                        <div style="font-weight: 500; margin-bottom: 4px; white-space: nowrap;">
                                             <a href="https://gus.my.salesforce.com/${epic.id}" target="_blank" style="color: #0176D3; text-decoration: none;">
-                                                ${epic.name}
+                                                ${truncateEpicTitle(epic.name)}
                                             </a> | <span style="background: ${healthColor}; color: white; padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;">${healthStatus}</span>
                                         </div>
                                         <div style="font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">

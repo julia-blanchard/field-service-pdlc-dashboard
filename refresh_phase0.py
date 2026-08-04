@@ -150,9 +150,8 @@ def parse_sheet_data(all_rows):
             normalized_tier = normalize_tier(tier)
 
             # Create Google Sheets link to specific row
-            # Use sheet name in range to ensure correct tab navigation
-            sheet_name = "Phase 0 & Phase 1 Priorites"
-            sheet_url = f"https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=0&range='{sheet_name}'!{idx}:{idx}"
+            # gid=1674131463 is the correct sheet tab ID for "Phase 0 & Phase 1 Priorites"
+            sheet_url = f"https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range={idx}:{idx}"
 
             program = {
                 "name": display_name,

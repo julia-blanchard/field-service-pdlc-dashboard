@@ -284,7 +284,7 @@ def enrich_with_epic_ids(structured_data):
         escaped_names = [name.replace("\\", "\\\\").replace("'", "\\'") for name in batch]
         names_list = "','".join(escaped_names)
 
-        query = f"SELECT Id, Name, Planned_Release__r.Name FROM ADM_Epic__c WHERE Name IN ('{names_list}')"
+        query = f"SELECT Id, Name, Planned_Release__r.Name, End_Date__c, T_Shirt_Size__c FROM ADM_Epic__c WHERE Name IN ('{names_list}')"
 
         try:
             result = subprocess.run(
@@ -300,7 +300,9 @@ def enrich_with_epic_ids(structured_data):
             for record in records:
                 epic_data_map[record['Name']] = {
                     'id': record['Id'],
-                    'planned_release': record.get('Planned_Release__r', {}).get('Name', '-') if record.get('Planned_Release__r') else '-'
+                    'planned_release': record.get('Planned_Release__r', {}).get('Name', '-') if record.get('Planned_Release__r') else '-',
+                    'end_date': record.get('End_Date__c', ''),
+                    't_shirt_size': record.get('T_Shirt_Size__c', '')
                 }
 
         except Exception as e:
@@ -319,10 +321,128 @@ def enrich_with_epic_ids(structured_data):
                 if epic_name in epic_data_map:
                     epic['id'] = epic_data_map[epic_name]['id']
                     epic['planned_release'] = epic_data_map[epic_name]['planned_release']
+                    epic['end_date'] = epic_data_map[epic_name]['end_date']
+                    epic['t_shirt_size'] = epic_data_map[epic_name]['t_shirt_size']
                     enriched_count += 1
 
-    print(f"   ✓ Enriched {enriched_count} epics with planned release data")
+    print(f"   ✓ Enriched {enriched_count} epics with 266 fields")
 
+    return structured_data
+
+def enrich_with_project_fields(structured_data):
+    """Query GUS to get project Target__c field for 266 planning"""
+    print("🔍 Enriching project data with Target field from GUS...")
+
+    # Collect all project names
+    project_names = []
+    for program in structured_data['programs']:
+        for project in program['projects']:
+            if project['name'] and project['name'] != '-':
+                project_names.append(project['name'])
+
+    if not project_names:
+        print("   No projects to enrich")
+        return structured_data
+
+    print(f"   Found {len(project_names)} projects to look up")
+
+    # Query project Target fields in batches
+    project_data_map = {}
+    batch_size = 50
+
+    for i in range(0, len(project_names), batch_size):
+        batch = project_names[i:i + batch_size]
+        # Escape single quotes and backslashes in project names for SOQL
+        escaped_names = [name.replace("\\", "\\\\").replace("'", "\\'") for name in batch]
+        names_list = "','".join(escaped_names)
+
+        query = f"SELECT Id, Name, Target__c FROM PPM_Project__c WHERE Name IN ('{names_list}')"
+
+        try:
+            result = subprocess.run(
+                ['sf', 'data', 'query', '--query', query, '--target-org', TARGET_ORG, '--json'],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+
+            data = json.loads(result.stdout)
+            records = data.get('result', {}).get('records', [])
+
+            for record in records:
+                project_data_map[record['Name']] = {
+                    'target': record.get('Target__c', '')
+                }
+
+        except Exception as e:
+            print(f"   Warning: Failed to query batch {i//batch_size + 1}: {e}")
+            continue
+
+    print(f"   ✓ Found data for {len(project_data_map)} projects")
+
+    # Update project Target fields in structured data
+    enriched_count = 0
+    for program in structured_data['programs']:
+        for project in program['projects']:
+            project_name = project['name']
+            if project_name in project_data_map:
+                project['target'] = project_data_map[project_name]['target']
+                enriched_count += 1
+
+    print(f"   ✓ Enriched {enriched_count} projects with Target field")
+
+    return structured_data
+
+def normalize_portfolio_names(structured_data):
+    """Normalize portfolio names: 266+ (FY27) uses short format, 264 keeps full name"""
+    import re
+    print("🔍 Normalizing portfolio names...")
+
+    # Pattern: "{release number} Field Service {pillar}"
+    release_pattern = re.compile(r'^(\d+) Field Service (.+)$')
+
+    normalized_count = 0
+    for program in structured_data['programs']:
+        original = program['portfolio']
+
+        # Release-prefixed pattern
+        match = release_pattern.match(original)
+        if match:
+            release_num = int(match.group(1))
+            pillar = match.group(2)
+
+            # 266+ (FY27) → short format
+            if release_num >= 266:
+                if pillar == 'Mobile':
+                    new_portfolio = 'FY27 FS Mobile'
+                elif pillar == 'Foundations':
+                    new_portfolio = 'FY27 FS Foundations'
+                elif pillar == 'Scheduling & Optimization':
+                    new_portfolio = 'FY27 FS S&O'
+                elif pillar == 'Workforce Scheduling':
+                    new_portfolio = 'FY27 FS Workforce Scheduling'
+                else:
+                    new_portfolio = f'FY27 FS {pillar}'
+
+                program['portfolio'] = new_portfolio
+                if original != new_portfolio:
+                    normalized_count += 1
+            # 264 and earlier → keep as-is (no normalization)
+
+        # Already FY27 named → shorten if needed
+        elif original.startswith('FY27 Field Service '):
+            pillar = original.replace('FY27 Field Service ', '')
+            if pillar == 'Mobile':
+                program['portfolio'] = 'FY27 FS Mobile'
+                normalized_count += 1
+            elif pillar == 'Foundations':
+                program['portfolio'] = 'FY27 FS Foundations'
+                normalized_count += 1
+            elif pillar == 'Scheduling & Optimization':
+                program['portfolio'] = 'FY27 FS S&O'
+                normalized_count += 1
+
+    print(f"   ✓ Normalized {normalized_count} portfolio names")
     return structured_data
 
 def fetch_field_service_teams():
@@ -506,8 +626,12 @@ def main():
     # Parse into structured format
     structured_data = parse_report_data(report_data)
 
-    # Enrich with epic IDs from GUS
+    # Enrich with epic IDs and 266 fields from GUS
     structured_data = enrich_with_epic_ids(structured_data)
+    structured_data = enrich_with_project_fields(structured_data)
+
+    # Normalize portfolio names (FY27 Field Service Mobile → FY27 FS Mobile)
+    structured_data = normalize_portfolio_names(structured_data)
 
     # Fetch and merge 262 projects
     projects_262 = fetch_262_projects()

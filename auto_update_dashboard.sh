@@ -19,10 +19,12 @@ exec >> "$LOGFILE" 2>&1
 cd /Users/julia.blanchard/field-service-execution-dashboard || exit 1
 
 # Function to send email notification
+# TODO: Switch to Slack when "PDLC Dashboard Bot" is approved (https://api.slack.com/apps/A0BHN9TM350)
 send_notification() {
     local subject="$1"
     local message="$2"
-    echo "$message" | mail -s "$subject" "$EMAIL" 2>&1 || echo "Failed to send email notification"
+    echo "$(date): Sending email notification: $subject"
+    echo "$message" | mail -s "$subject" "$EMAIL" 2>&1 || echo "$(date): Failed to send email notification"
 }
 
 # Function to retry a command
@@ -118,28 +120,84 @@ else
     git commit -m "Automated dashboard update - $(date +'%Y-%m-%d %H:%M')"
 
     # Pull any remote changes first, then push
-    if git pull github main --rebase --autostash && git push github main; then
-        echo "$(date): Pushed to GitHub Pages"
-
-        # Send success notification with stats
-        NEXT_UPDATE=$([ "$UPDATE_TIME" == *"AM"* ] && echo "2:00 PM" || echo "9:00 AM tomorrow")
-        send_notification "PDLC Dashboard Updated Successfully at $UPDATE_TIME" "Latest stats:
-$STATS
-
-View dashboard: https://julia-blanchard.github.io/field-service-pdlc-dashboard/
-
-Next update: $NEXT_UPDATE"
-    else
+    echo "$(date): Pulling latest changes from GitHub..."
+    if ! git pull github main --rebase --autostash; then
         OVERALL_SUCCESS=false
-        send_notification "PDLC Dashboard Update FAILED at $UPDATE_TIME" "Error: Could not push changes to GitHub
+        send_notification "⚠️ PDLC Dashboard Update FAILED at $UPDATE_TIME - Git Pull Error" "Error: Could not pull latest changes from GitHub
 
-Action needed: Check for git conflicts:
+This usually means:
+- Network connectivity issue
+- GitHub is down
+- SSH authentication problem
+
+Action needed:
   cd ~/field-service-execution-dashboard
   git status
+  git pull github main --rebase
 
 Logs: ~/field-service-execution-dashboard/logs/auto_update.log"
         exit 1
     fi
+
+    echo "$(date): Pushing changes to GitHub..."
+    if ! git push github main; then
+        OVERALL_SUCCESS=false
+        send_notification "🚨 PDLC Dashboard Update FAILED at $UPDATE_TIME - Push to GitHub Failed" "Error: Could not push changes to GitHub
+
+This usually means:
+- SSH key not configured (git@github.com authentication failed)
+- Network connectivity issue
+- GitHub repository permissions problem
+
+CRITICAL: Heroku staging and production will NOT update until this is fixed!
+
+Action needed:
+  1. Test SSH connection: ssh -T git@github.com
+  2. Check if SSH key is added to GitHub: https://github.com/settings/keys
+  3. Manually push: cd ~/field-service-execution-dashboard && git push github main
+
+Logs: ~/field-service-execution-dashboard/logs/auto_update.log
+Last commit: $(git log -1 --oneline)"
+        exit 1
+    fi
+
+    echo "$(date): Successfully pushed to GitHub"
+
+    # Send success notification with stats
+    NEXT_UPDATE=$([ "$UPDATE_TIME" == *"AM"* ] && echo "2:00 PM" || echo "9:00 AM tomorrow")
+
+    # Check Phase 0/1 data age and add reminder if needed
+    PHASE01_AGE_DAYS=$(python3 << 'PYEOF'
+import json
+from datetime import datetime
+from zoneinfo import ZoneInfo
+try:
+    with open("data/phase_0_programs.json") as f:
+        data = json.load(f)
+    last_updated = datetime.fromisoformat(data['last_updated'])
+    now = datetime.now(ZoneInfo("America/Los_Angeles"))
+    print((now - last_updated).days)
+except:
+    print("999")
+PYEOF
+)
+
+    PHASE01_REMINDER=""
+    if [ "$PHASE01_AGE_DAYS" -ge 3 ]; then
+        PHASE01_REMINDER="
+
+⚠️ Phase 0/1 data is $PHASE01_AGE_DAYS days old - needs manual refresh via Claude Code
+   (Waiting on Google Service Account approval for automation)"
+    fi
+
+    send_notification "✅ PDLC Dashboard Updated Successfully at $UPDATE_TIME" "Latest stats:
+$STATS
+
+✅ Pushed to GitHub - Heroku staging will auto-deploy shortly
+View dashboard: https://julia-blanchard.github.io/field-service-pdlc-dashboard/
+Heroku staging: https://fieldservice-adlc-staging-146cc68a9d19.rose-virginia.herokuapp.com/
+$PHASE01_REMINDER
+Next update: $NEXT_UPDATE"
 fi
 
 echo "$(date): Dashboard update complete"

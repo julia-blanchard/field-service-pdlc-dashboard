@@ -19,6 +19,7 @@ app = Flask(__name__, static_folder='static')
 SHOW_ORPHANED_TAB = os.getenv('SHOW_ORPHANED_TAB', 'true').lower() == 'true'
 SHOW_HYGIENE_FEATURES = os.getenv('SHOW_HYGIENE_FEATURES', 'true').lower() == 'true'
 SHOW_EPIC_RECOMMENDATIONS = os.getenv('SHOW_EPIC_RECOMMENDATIONS', 'true').lower() == 'true'
+SHOW_ROADMAP_PHASE01 = os.getenv('SHOW_ROADMAP_PHASE01', 'false').lower() == 'true'
 
 # Cache busting
 @app.context_processor
@@ -27,7 +28,8 @@ def inject_cache_buster():
         cache_bust=int(time.time()),
         show_orphaned_tab=SHOW_ORPHANED_TAB,
         show_hygiene_features=SHOW_HYGIENE_FEATURES,
-        show_epic_recommendations=SHOW_EPIC_RECOMMENDATIONS
+        show_epic_recommendations=SHOW_EPIC_RECOMMENDATIONS,
+        show_roadmap_phase01=SHOW_ROADMAP_PHASE01
     )
 
 @app.after_request
@@ -640,13 +642,15 @@ def index():
         if raw_portfolio in portfolio_mapping:
             prog['portfolio'] = portfolio_mapping[raw_portfolio]
 
-    # Get unique portfolios from execution programs - Field Service portfolios + UWM exception
-    # Filter out past releases (262, 260, etc) to keep overview forward-looking on 264/266
+    # Get unique portfolios from BOTH execution AND Phase 0/1 programs
+    # This auto-discovers all Field Service portfolios (including FY27 from Phase 0/1)
+    # Filter out past releases (262, 260, etc) to keep overview forward-looking
+    all_program_sources = execution_programs + phase_0_programs
     portfolios = sorted(set(
         p.get('portfolio', '')
-        for p in execution_programs
+        for p in all_program_sources
         if p.get('portfolio')
-        and ('Field Service' in p.get('portfolio', '') or 'UWM' in p.get('portfolio', ''))
+        and ('Field Service' in p.get('portfolio', '') or p.get('portfolio', '') == 'FY27 SC M4 UWM')
         and not any(old_release in p.get('portfolio', '') for old_release in ['262', '260', '258', '256'])
     ))
 
@@ -1537,6 +1541,18 @@ def hygiene():
         return jsonify(data)
     except Exception as e:
         print(f"Error loading hygiene data: {e}", flush=True)
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/roadmap')
+def roadmap():
+    """Serve GUS roadmap-based Phase 0/1 data"""
+    roadmap_file = os.path.join('data', 'roadmap_phase01.json')
+    try:
+        with open(roadmap_file, 'r') as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        print(f"Error loading roadmap data: {e}", flush=True)
         return jsonify({'error': str(e)}), 500
 
 @app.route('/health')

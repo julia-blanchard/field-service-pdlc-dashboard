@@ -1,7 +1,26 @@
 # PBD Validation Implementation - Field Service Dashboard
 
 **Status**: UI Ready, Backend API Ready, Waiting for Heroku Deployment  
-**Last Updated**: July 16, 2026
+**Last Updated**: July 28, 2026
+
+---
+
+## 📄 Field Service PBD Template
+
+**Template URL**: https://docs.google.com/document/d/1DTsVpmU8dGvJHDKJzR2saAYKP-dRrWC26nqEA9UZQuw/edit
+
+Field Service has its own PBD template with "Field Service" branding. The template is structurally identical to the Service Cloud template (same 17 sections, same validation rules), with only the header changed from "Service Cloud Product Business Document" to **"Field Service Product Business Document"**.
+
+**What the Validator Checks:**
+- 17 required sections (Document Status, Program Identity, Executive Summary, etc.)
+- 120+ individual fields
+- Placeholder detection: `[Text]`, `[Name]`, `[PM Name]`, `[X%]`, `TBD`
+- Minimum requirements: 2+ personas, 4+ success metrics, 7 team roles
+
+**Validation Results:**
+- ✅ **PASS** - All sections complete, no placeholders, ready for Phase 1 inspection
+- ⚠️ **PASS WITH WARNINGS** - Critical sections complete, minor issues (TBD artifacts, incomplete checklists)
+- ❌ **FAIL** - Critical blockers, essential sections empty or placeholder-filled
 
 ---
 
@@ -165,19 +184,15 @@ You could manually validate PBDs before deploying:
 
 ### Phase 1: Add PBD Links to Data Source ✅ DONE
 
-**We need to populate PBD URLs for Field Service Phase 1 programs:**
+**PBD URLs are sourced from Google Sheet:**
 
-**Option A: Add to Google Sheet** (Recommended)
-- Add "PBD URL" column to Field Service Google Sheet
-- PMs paste their PBD links in the sheet
-- `sync_phase0_complete.py` reads PBD URL column
-- Saves to `data/phase_0_programs.json` with `pbd_url` field
+- **Google Sheet**: Field Service PDLC Sheet (ID: 1cie8l3W71Bkbncp5Yk3VIIiB3YHApKvRTENj1iwlpi4)
+- **Tab**: "FS PDLC"
+- **Column**: W ("PBD Link")
+- **Script**: `fetch_phase0_from_sheets.py` reads column W
+- **Output**: Saves to `data/phase_0_programs.json` with `pbd_url` field
 
-**Option B: Hardcode Like Service Cloud**
-- Create `FIELD_SERVICE_PBDS` list in a script
-- Manually maintain the list (not scalable)
-
-**Recommendation**: Option A - keep PBD links in Google Sheet so PMs can manage them
+**How PMs use it**: PMs paste their PBD Google Doc links in column W of the Google Sheet, same place they manage all their other program metadata
 
 ### Phase 2: Create Validation Script ✅ DONE
 
@@ -222,7 +237,7 @@ You could manually validate PBDs before deploying:
 
 | Feature | Service Cloud (Heroku) | Field Service (GitHub Pages) | Field Service (Heroku - Future) |
 |---------|------------------------|------------------------------|----------------------------------|
-| **PBD Links Source** | Hardcoded in Python | Google Sheet (planned) | Google Sheet |
+| **PBD Links Source** | Hardcoded in Python | ✅ Google Sheet Column W | ✅ Google Sheet Column W |
 | **Initial Validation** | Manual script run | Manual script run | Manual script run |
 | **Validation Storage** | phase_1_programs.json | phase_0_programs.json | phase_0_programs.json |
 | **UI Display** | ✅ Status badges | ✅ Status badges (ready) | ✅ Status badges |

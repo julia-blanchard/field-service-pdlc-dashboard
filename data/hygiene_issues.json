@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 148,
+    "total_epics_needing_attention": 149,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
-      "missing_scheduled_build": 51,
-      "missing_priority": 104,
+      "missing_scheduled_build": 52,
+      "missing_priority": 105,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 68
+      "missing_planned_release": 69
     }
   },
   "epics": [
@@ -79,6 +79,25 @@
       "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
       "issues": [
         "missing_scheduled_build"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002VgQ12AK",
+      "epic_name": "Headless 360 - Mobile Experience - [SFS MCX] Agentic Setup",
+      "epic_name_key": "Headless 360 - Mobile Experience - [SFS MCX] Agentic Setup",
+      "team": "SFS Mobile Core Experience",
+      "owner": "Annath Benhamou Benizri",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Field Service: Headless (aka Codey)",
+      "portfolio": "264 Field Service Foundations",
+      "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
@@ -1455,7 +1474,7 @@
       "epic_name_key": "264 SFS [Core Foundations] Shift Management",
       "team": "FSL - Core - Foundations",
       "owner": "Hiromichi Cho",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -1769,7 +1788,7 @@
       "epic_name_key": "Release 264: PSS-FS: Operations Console: Accessibility",
       "team": "Missionforce-Samurais",
       "owner": "Kritica Mantri",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -2809,7 +2828,7 @@
           "epic_name_key": "264 SFS [Core Foundations] Shift Management",
           "team": "FSL - Core - Foundations",
           "owner": "Hiromichi Cho",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -3928,7 +3947,7 @@
           "epic_name_key": "Release 264: PSS-FS: Operations Console: Accessibility",
           "team": "Missionforce-Samurais",
           "owner": "Kritica Mantri",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -4814,8 +4833,27 @@
     },
     {
       "name": "SFS Mobile Core Experience",
-      "epic_count": 7,
+      "epic_count": 8,
       "epics": [
+        {
+          "epic_id": "a3QEE000002VgQ12AK",
+          "epic_name": "Headless 360 - Mobile Experience - [SFS MCX] Agentic Setup",
+          "epic_name_key": "Headless 360 - Mobile Experience - [SFS MCX] Agentic Setup",
+          "team": "SFS Mobile Core Experience",
+          "owner": "Annath Benhamou Benizri",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Field Service: Headless (aka Codey)",
+          "portfolio": "264 Field Service Foundations",
+          "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
         {
           "epic_id": "a3QEE000002WtY52AK",
           "epic_name": "Headless 360 Mobile Experience - Mobile App Config",

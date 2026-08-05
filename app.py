@@ -407,6 +407,8 @@ def index():
             team['june_delivered'] = team.get(m0_field, 0)
             team['june_capacity_limit'] = team.get(f"{m0_name}_capacity_limit", team.get('total', 0) * 24)
             team['june_delivered_by_program'] = team.get(f"{m0_name}_delivered_by_program") or team.get(f"{m0_name}_committed_by_program", {})
+            # Map unmapped field - extract "Unmapped" from by_program dict
+            team['june_delivered_unmapped'] = team['june_delivered_by_program'].get('Unmapped', 0)
 
             # Map Month 1 -> july_committed (template col 1)
             m1_name = month_names[1]
@@ -414,6 +416,8 @@ def index():
             team['july_committed'] = team.get(m1_field, 0)
             team['july_capacity_limit'] = team.get(f"{m1_name}_capacity_limit", team.get('total', 0) * 24)
             team['july_committed_by_program'] = team.get(f"{m1_name}_delivered_by_program") or team.get(f"{m1_name}_committed_by_program", {})
+            # Map unmapped field
+            team['july_committed_unmapped'] = team['july_committed_by_program'].get('Unmapped', 0)
 
             # Map Month 2 -> august_committed (template col 2)
             m2_name = month_names[2]
@@ -421,6 +425,8 @@ def index():
             team['august_committed'] = team.get(m2_field, 0)
             team['august_capacity_limit'] = team.get(f"{m2_name}_capacity_limit", team.get('total', 0) * 24)
             team['august_committed_by_program'] = team.get(f"{m2_name}_committed_by_program", {})
+            # Map unmapped field
+            team['august_committed_unmapped'] = team['august_committed_by_program'].get('Unmapped', 0)
 
             # Map Month 3 -> september_committed (template col 3)
             m3_name = month_names[3]
@@ -428,6 +434,8 @@ def index():
             team['september_committed'] = team.get(m3_field, 0)
             team['september_capacity_limit'] = team.get(f"{m3_name}_capacity_limit", team.get('total', 0) * 24)
             team['september_committed_by_program'] = team.get(f"{m3_name}_committed_by_program", {})
+            # Map unmapped field
+            team['september_committed_unmapped'] = team['september_committed_by_program'].get('Unmapped', 0)
     else:
         # Fallback: Old hardcoded field mapping
         for team in teams:

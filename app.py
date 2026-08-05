@@ -388,22 +388,62 @@ def index():
         with open(teams_file, 'r') as f:
             teams_data = json.load(f)
             teams = teams_data.get('teams', [])
+            capacity_months = teams_data.get('capacity_months', None)
     except:
         teams = []
+        capacity_months = None
 
     # Transform teams data field names for template compatibility
-    for team in teams:
-        # Rename capacity fields to match template expectations
-        team['june_delivered'] = team.get('capacity_delivered_june', 0)
-        team['july_committed'] = team.get('capacity_committed_july', 0)
-        team['august_committed'] = team.get('capacity_committed_august', 0)
-        team['september_committed'] = team.get('capacity_committed_september', 0)
+    # Map rolling months to template's hardcoded column names
+    if capacity_months and len(capacity_months) == 4:
+        # Dynamic: Map rolling months to template's expected fields
+        month_names = [m['name'] for m in capacity_months]
+        month_types = [m['type'] for m in capacity_months]
 
-        # Calculate capacity limits (assume 24 PD per person per month as default)
-        team['june_capacity_limit'] = team.get('total', 0) * 24
-        team['july_capacity_limit'] = team.get('total', 0) * 24
-        team['august_capacity_limit'] = team.get('total', 0) * 24
-        team['september_capacity_limit'] = team.get('total', 0) * 24
+        for team in teams:
+            # Map Month 0 (oldest) -> june_delivered (template col 0)
+            m0_name = month_names[0]
+            m0_field = f"{m0_name}_delivered" if month_types[0] == 'delivered' else f"{m0_name}_committed"
+            team['june_delivered'] = team.get(m0_field, 0)
+            team['june_capacity_limit'] = team.get(f"{m0_name}_capacity_limit", team.get('total', 0) * 24)
+            team['june_delivered_by_program'] = team.get(f"{m0_name}_delivered_by_program") or team.get(f"{m0_name}_committed_by_program", {})
+
+            # Map Month 1 -> july_committed (template col 1)
+            m1_name = month_names[1]
+            m1_field = f"{m1_name}_delivered" if month_types[1] == 'delivered' else f"{m1_name}_committed"
+            team['july_committed'] = team.get(m1_field, 0)
+            team['july_capacity_limit'] = team.get(f"{m1_name}_capacity_limit", team.get('total', 0) * 24)
+            team['july_committed_by_program'] = team.get(f"{m1_name}_delivered_by_program") or team.get(f"{m1_name}_committed_by_program", {})
+
+            # Map Month 2 -> august_committed (template col 2)
+            m2_name = month_names[2]
+            m2_field = f"{m2_name}_committed"
+            team['august_committed'] = team.get(m2_field, 0)
+            team['august_capacity_limit'] = team.get(f"{m2_name}_capacity_limit", team.get('total', 0) * 24)
+            team['august_committed_by_program'] = team.get(f"{m2_name}_committed_by_program", {})
+
+            # Map Month 3 -> september_committed (template col 3)
+            m3_name = month_names[3]
+            m3_field = f"{m3_name}_committed"
+            team['september_committed'] = team.get(m3_field, 0)
+            team['september_capacity_limit'] = team.get(f"{m3_name}_capacity_limit", team.get('total', 0) * 24)
+            team['september_committed_by_program'] = team.get(f"{m3_name}_committed_by_program", {})
+    else:
+        # Fallback: Old hardcoded field mapping
+        for team in teams:
+            team['june_delivered'] = team.get('june_delivered') or team.get('capacity_delivered_june', 0)
+            team['july_committed'] = team.get('july_committed') or team.get('capacity_committed_july', 0)
+            team['august_committed'] = team.get('august_committed') or team.get('capacity_committed_august', 0)
+            team['september_committed'] = team.get('september_committed') or team.get('capacity_committed_september', 0)
+
+            if 'june_capacity_limit' not in team:
+                team['june_capacity_limit'] = team.get('total', 0) * 24
+            if 'july_capacity_limit' not in team:
+                team['july_capacity_limit'] = team.get('total', 0) * 24
+            if 'august_capacity_limit' not in team:
+                team['august_capacity_limit'] = team.get('total', 0) * 24
+            if 'september_capacity_limit' not in team:
+                team['september_capacity_limit'] = team.get('total', 0) * 24
 
     # Keep execution_programs separate (unmodified) for stats and execution tab
     execution_programs = exec_data.get('programs', [])
@@ -868,6 +908,7 @@ def index():
                            project_stats=project_stats,
                            epic_stats=epic_stats,
                            teams=teams,
+                           capacity_months=capacity_months,
                            total_teams=total_teams,
                            total_filled=total_filled,
                            total_non_filled=total_non_filled,

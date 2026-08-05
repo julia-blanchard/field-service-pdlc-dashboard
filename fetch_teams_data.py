@@ -210,26 +210,36 @@ for team in teams:
 
     if team_name in existing_teams_map:
         existing_team = existing_teams_map[team_name]
-        # Preserve capacity-related fields (but NOT manager fields - those are freshly fetched)
-        capacity_fields = [
-            'capacity_delivered_june', 'work_items_closed_june',
-            'capacity_committed_july', 'work_items_committed_july',
-            'capacity_committed_august', 'work_items_committed_august',
-            'capacity_committed_september', 'work_items_committed_september',
-            'june_delivered_by_program', 'june_delivered_unmapped',
-            'july_committed_by_program', 'july_committed_unmapped',
-            'august_committed_by_program', 'august_committed_unmapped',
-            'september_committed_by_program', 'september_committed_unmapped'
+        # Preserve ALL capacity-related fields regardless of naming convention
+        # This includes both old names (capacity_delivered_june) and new names (june_delivered)
+        # and any dynamic month fields from the rolling capacity system
+        capacity_field_patterns = [
+            'capacity', 'work_items', 'delivered', 'committed', 'planned',
+            'by_program', 'unmapped', '_limit', 'june', 'july', 'august',
+            'september', 'october', 'november', 'december', 'january',
+            'february', 'march', 'april', 'may'
         ]
-        for field in capacity_fields:
-            if field in existing_team:
-                team[field] = existing_team[field]
-        print(f"   ✓ Preserved capacity data for {team_name}")
+
+        for field, value in existing_team.items():
+            # Preserve any field that matches capacity patterns
+            # Skip only the fields we're explicitly refreshing: name, filled, non_filled, total, portfolios
+            if field not in ['name', 'filled', 'non_filled', 'total', 'portfolios', 'engineering_manager', 'product_owner']:
+                if any(pattern in field.lower() for pattern in capacity_field_patterns):
+                    team[field] = value
+
+        preserved_count = len([f for f in team.keys() if f not in ['name', 'filled', 'non_filled', 'total', 'portfolios', 'engineering_manager', 'product_owner']])
+        if preserved_count > 0:
+            print(f"   ✓ Preserved {preserved_count} capacity fields for {team_name}")
 
 output = {
     'last_updated': datetime.now().isoformat(),
     'teams': teams
 }
+
+# Preserve capacity_months metadata if it exists (used by rolling capacity system)
+if existing_data.get('capacity_months'):
+    output['capacity_months'] = existing_data['capacity_months']
+    print(f"   ✓ Preserved capacity_months metadata")
 
 DATA_FILE.parent.mkdir(exist_ok=True)
 DATA_FILE.write_text(json.dumps(output, indent=2))

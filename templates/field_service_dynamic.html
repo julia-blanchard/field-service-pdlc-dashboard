@@ -14777,6 +14777,7 @@
                                 </colgroup>
                                 {% set all_programs = (team.june_delivered_by_program.keys() | list + team.july_committed_by_program.keys() | list + team.august_committed_by_program.keys() | list + team.september_committed_by_program.keys() | list) | unique | sort %}
                                 {% for program in all_programs %}
+                                {% if program != 'Unmapped' %}
                                 <tr style="border-bottom: 1px solid #f1f5f9;">
                                     <td style="padding: 8px 16px 8px 48px; font-size: 13px; font-style: italic; vertical-align: top;">
                                         <div style="display: block; margin-bottom: 2px;">
@@ -14806,6 +14807,7 @@
                                         {{ team.september_committed_by_program.get(program, 0) if team.september_committed_by_program.get(program, 0) > 0 else '—' }}
                                     </td>
                                 </tr>
+                                {% endif %}
                                 {% endfor %}
                                 <!-- Display Orphaned row if any unmapped capacity exists -->
                                 {% if team.june_delivered_unmapped or team.july_committed_unmapped or team.august_committed_unmapped or team.september_committed_unmapped %}

@@ -185,8 +185,8 @@
         .filter-group-exec {
             display: flex;
             align-items: center;
-            gap: 16px;
-            padding-left: 40px;
+            gap: 8px;
+            padding-left: 16px;
             border-left: 2px solid rgba(255, 255, 255, 0.3);
         }
 
@@ -201,7 +201,7 @@
             color: white;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            min-width: 60px;
+            min-width: 40px;
         }
 
         .filter-label {
@@ -891,7 +891,7 @@
             padding: 8px 18px;
             background: white;
             border: 1px solid #e5e7eb;
-            border-radius: 20px;
+            border-radius: 8px;
             font-size: 13px;
             font-weight: 600;
             color: #6b7280;
@@ -2915,7 +2915,7 @@
         </div>
 
         <!-- Orphaned Work filters (only show in Orphaned Work view) -->
-        <div id="orphaned-filters-inline" style="display: none;">
+        <div id="orphaned-filters-inline" style="display: none; flex-direction: row; align-items: center;">
             <!-- View Toggles (By Team | By Engineering Manager | By Product Manager) -->
             <div class="filter-group-exec">
                 <label class="filter-label-exec">VIEW</label>
@@ -2923,6 +2923,15 @@
                     <button class="view-toggle orphaned-view-btn active" data-view="by-team" onclick="switchOrphanedView('by-team')" tabindex="-1">By Team</button>
                     <button class="view-toggle orphaned-view-btn" data-view="by-em" onclick="switchOrphanedView('by-em')" tabindex="-1">By Engineering Manager</button>
                     <button class="view-toggle orphaned-view-btn" data-view="by-pm" onclick="switchOrphanedView('by-pm')" tabindex="-1">By Product Manager</button>
+                </div>
+            </div>
+            <!-- Release Filter Toggles -->
+            <div class="filter-group-exec">
+                <label class="filter-label-exec">RELEASE</label>
+                <div class="view-toggles">
+                    <button class="view-toggle orphaned-release-btn" data-release="264" onclick="switchOrphanedRelease('264')" tabindex="-1">264</button>
+                    <button class="view-toggle orphaned-release-btn active" data-release="266" onclick="switchOrphanedRelease('266')" tabindex="-1">266</button>
+                    <button class="view-toggle orphaned-release-btn" data-release="all" onclick="switchOrphanedRelease('all')" tabindex="-1">All</button>
                 </div>
             </div>
         </div>
@@ -13006,16 +13015,6 @@
                                 
                                     
                                 
-                            
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
                                     
                                 
                             
@@ -13030,11 +13029,51 @@
                                 
                                     
                                 
+                            
+                                
+                                    
+                                
                                     
                                 
                                     
                                 
                                     
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
                                 
                                     
                                 
@@ -14456,20 +14495,20 @@
             <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="projects">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                     <div style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">PROJECTS</div>
-                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b;">123</div>
+                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b;">126</div>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <div style="width: 10px; height: 10px; border-radius: 50%; background: #e5e7eb;"></div>
                         <div style="flex: 1; font-size: 13px; color: #64748b;">Not Assigned</div>
-                        <div style="font-size: 13px; color: #94a3b8;">53%</div>
+                        <div style="font-size: 13px; color: #94a3b8;">52%</div>
                         <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">65</div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <div style="width: 10px; height: 10px; border-radius: 50%; background: #9ca3af;"></div>
                         <div style="flex: 1; font-size: 13px; color: #475569;">Not Started</div>
-                        <div style="font-size: 13px; color: #94a3b8;">2%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">3</div>
+                        <div style="font-size: 13px; color: #94a3b8;">5%</div>
+                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">6</div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <div style="width: 10px; height: 10px; border-radius: 50%; background: #10b981;"></div>
@@ -14502,7 +14541,7 @@
             <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="epics">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                     <div style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">EPICS</div>
-                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b;">249</div>
+                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b;">261</div>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; align-items: center; gap: 12px;">
@@ -14514,13 +14553,13 @@
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <div style="width: 10px; height: 10px; border-radius: 50%; background: #9ca3af;"></div>
                         <div style="flex: 1; font-size: 13px; color: #475569;">Not Started</div>
-                        <div style="font-size: 13px; color: #94a3b8;">14%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">35</div>
+                        <div style="font-size: 13px; color: #94a3b8;">18%</div>
+                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">47</div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <div style="width: 10px; height: 10px; border-radius: 50%; background: #10b981;"></div>
                         <div style="flex: 1; font-size: 13px; color: #475569;">On Track</div>
-                        <div style="font-size: 13px; color: #94a3b8;">47%</div>
+                        <div style="font-size: 13px; color: #94a3b8;">44%</div>
                         <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">116</div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 12px;">
@@ -14538,7 +14577,7 @@
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <div style="width: 10px; height: 10px; border-radius: 50%; background: #3b82f6;"></div>
                         <div style="flex: 1; font-size: 13px; color: #475569;">Completed</div>
-                        <div style="font-size: 13px; color: #94a3b8;">31%</div>
+                        <div style="font-size: 13px; color: #94a3b8;">30%</div>
                         <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">78</div>
                     </div>
                 </div>
@@ -14613,7 +14652,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -14660,7 +14699,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -14839,7 +14878,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -14869,7 +14908,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -14899,7 +14938,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15006,7 +15045,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -15053,7 +15092,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15233,7 +15272,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15350,7 +15389,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -15397,7 +15436,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15437,7 +15476,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15517,7 +15556,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15558,7 +15597,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -15605,7 +15644,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15645,7 +15684,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15686,7 +15725,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -15733,7 +15772,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15773,7 +15812,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15813,7 +15852,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -16009,7 +16048,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -16089,7 +16128,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -16278,7 +16317,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -16315,7 +16354,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -16355,7 +16394,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -16846,7 +16885,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -16883,7 +16922,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -16913,7 +16952,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17204,7 +17243,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -17251,7 +17290,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17291,7 +17330,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17499,7 +17538,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17619,7 +17658,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17659,7 +17698,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17739,7 +17778,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17908,7 +17947,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -17955,7 +17994,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17995,7 +18034,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18035,7 +18074,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18075,7 +18114,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18115,7 +18154,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18155,7 +18194,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18196,7 +18235,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -18243,7 +18282,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18372,7 +18411,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -18419,7 +18458,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18539,7 +18578,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18780,7 +18819,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -18827,7 +18866,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18966,7 +19005,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -19013,7 +19052,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19239,7 +19278,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19279,7 +19318,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19319,7 +19358,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19359,7 +19398,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19445,7 +19484,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -19492,7 +19531,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19538,7 +19577,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -19585,7 +19624,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19661,7 +19700,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -19708,7 +19747,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -20247,7 +20286,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -20294,7 +20333,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -20483,7 +20522,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -20530,7 +20569,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21002,7 +21041,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21042,7 +21081,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21082,7 +21121,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21369,7 +21408,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -21416,7 +21455,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21738,7 +21777,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21855,7 +21894,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -21892,7 +21931,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21922,7 +21961,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21982,7 +22021,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -22416,7 +22455,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -22566,7 +22605,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -22646,7 +22685,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23231,7 +23270,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -23268,7 +23307,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23508,7 +23547,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23548,7 +23587,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23588,7 +23627,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23625,7 +23664,7 @@
                     
 
                     <span style="color: #9ca3af; margin: 0 4px;">|</span>
-                    <span class="program-meta-badge count-badge">📦 10 Projects</span>
+                    <span class="program-meta-badge count-badge">📦 13 Projects</span>
 
                     
                 </div>
@@ -23670,7 +23709,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -23717,7 +23756,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23757,7 +23796,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24077,7 +24116,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24117,7 +24156,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24157,7 +24196,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24283,7 +24322,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -24330,7 +24369,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24370,7 +24409,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24410,7 +24449,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24450,7 +24489,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24583,7 +24622,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24623,7 +24662,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24703,7 +24742,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24823,7 +24862,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25053,7 +25092,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25179,7 +25218,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -25226,7 +25265,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25306,7 +25345,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25426,7 +25465,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25466,7 +25505,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25506,7 +25545,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25546,7 +25585,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -25679,7 +25718,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -26445,7 +26484,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -26513,7 +26552,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Epics:</span> 8
+                                <span class="project-meta-label">Epics:</span> 9
                             </span>
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
@@ -26615,6 +26654,46 @@
                                             <line x1="3" y1="10" x2="21" y2="10"></line>
                                         </svg>
                                         264
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][September] 15 min Capacity Planning on Data Cloud" data-scheduled-month="no-date" data-scheduled-build="264.7" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aDOz2AM/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][September] 15 min Capacity Planning on Data Cloud
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Capacity-Planning</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        264.7
                                     </span>
                                     
                                     
@@ -26738,7 +26817,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -26858,7 +26937,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -26904,7 +26983,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-07-15
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
                             </span>
                             
                         </div>
@@ -26951,7 +27030,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-07-15</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -27031,7 +27110,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -27071,7 +27150,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-06-30</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -27444,7 +27523,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -27564,7 +27643,606 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-07-24</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                </div>
+            </div>
+            
+            <div class="project-container" data-project-health="not-started" data-health="Not Started">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <div class="project-expand-icon">▶</div>
+                    <div class="project-icon">📦</div>
+                    <div class="project-info">
+                        <div class="project-name">
+                            
+                            <a href="https://gus.lightning.force.com/lightning/r/agf__ADM_Product__c/a1kEE00000cuI1BYAU/view"
+                               target="_blank"
+                               style="color: inherit; text-decoration: none; cursor: pointer;"
+                               onclick="event.stopPropagation();">
+                                [266] WFM Capacity Planning
+                            </a>
+                            
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Epics:</span> 1
+                            </span>
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Product Owner:</span> Ruchika Pashine
+                            </span>
+                            
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Dev Lead:</span> Bata Chadraa
+                            </span>
+                            
+                            
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="project-health-badge">
+                        
+                        <span class="project-badge badge-not-started">Not Started</span>
+                        
+                    </div>
+                </div>
+                <div class="epics-container">
+                    
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][August] 15 min Capacity Planning on Data Cloud" data-scheduled-month="no-date" data-scheduled-build="264.4" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aDNN2A2/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][August] 15 min Capacity Planning on Data Cloud
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Capacity-Planning</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        264.4
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                </div>
+            </div>
+            
+            <div class="project-container" data-project-health="not-started" data-health="Not Started">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <div class="project-expand-icon">▶</div>
+                    <div class="project-icon">📦</div>
+                    <div class="project-info">
+                        <div class="project-name">
+                            
+                            <a href="https://gus.lightning.force.com/lightning/r/agf__ADM_Product__c/a1kEE00000cuHzZYAU/view"
+                               target="_blank"
+                               style="color: inherit; text-decoration: none; cursor: pointer;"
+                               onclick="event.stopPropagation();">
+                                [266] WFM Foundations
+                            </a>
+                            
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Epics:</span> 8
+                            </span>
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Product Owner:</span> Mike Cliffe
+                            </span>
+                            
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Dev Lead:</span> Bata Chadraa
+                            </span>
+                            
+                            
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="project-health-badge">
+                        
+                        <span class="project-badge badge-not-started">Not Started</span>
+                        
+                    </div>
+                </div>
+                <div class="epics-container">
+                    
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][264 carry over] Real-Time Adherence" data-scheduled-month="no-date" data-scheduled-build="266" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aECz2AM/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][264 carry over] Real-Time Adherence
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        266
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][August] 15 min Aggregation on Data Cloud" data-scheduled-month="no-date" data-scheduled-build="264.4" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aD5d2AE/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][August] 15 min Aggregation on Data Cloud
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        264.4
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][August] Bring your own data" data-scheduled-month="no-date" data-scheduled-build="264.4" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aD412AE/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][August] Bring your own data
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        264.4
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][Carry from 264] Omni-Widget Activities" data-scheduled-month="no-date" data-scheduled-build="266" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aEGD2A2/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][Carry from 264] Omni-Widget Activities
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        266
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][September] 15 min Aggregation on Data Cloud" data-scheduled-month="no-date" data-scheduled-build="264.7" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aDAT2A2/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][September] 15 min Aggregation on Data Cloud
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        264.7
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266] Aggregation Setup" data-scheduled-month="no-date" data-scheduled-build="266" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aDDh2AM/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266] Aggregation Setup
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        266
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266] Bring your own data" data-scheduled-month="no-date" data-scheduled-build="266" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aCj32AE/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266] Bring your own data
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        266
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266] Intraday support" data-scheduled-month="no-date" data-scheduled-build="266" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aDVR2A2/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266] Intraday support
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-Foundation</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        266
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                </div>
+            </div>
+            
+            <div class="project-container" data-project-health="not-started" data-health="Not Started">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <div class="project-expand-icon">▶</div>
+                    <div class="project-icon">📦</div>
+                    <div class="project-info">
+                        <div class="project-name">
+                            
+                            <a href="https://gus.lightning.force.com/lightning/r/agf__ADM_Product__c/a1kEE00000cuI2nYAE/view"
+                               target="_blank"
+                               style="color: inherit; text-decoration: none; cursor: pointer;"
+                               onclick="event.stopPropagation();">
+                                [266] WFM-ML-Foundations
+                            </a>
+                            
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Epics:</span> 2
+                            </span>
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Product Owner:</span> VARSHA CHALAMALASETTY
+                            </span>
+                            
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Dev Lead:</span> Bata Chadraa
+                            </span>
+                            
+                            
+                            
+                            <span style="color: #9ca3af; margin: 0 4px;">|</span>
+                            <span class="project-meta-item">
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="project-health-badge">
+                        
+                        <span class="project-badge badge-not-started">Not Started</span>
+                        
+                    </div>
+                </div>
+                <div class="epics-container">
+                    
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][August] 15 min Forecasting on Data Cloud" data-scheduled-month="no-date" data-scheduled-build="264.4" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aD8r2AE/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][August] 15 min Forecasting on Data Cloud
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-ML-Foundations</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        264.4
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    
+                                    <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="epic-row epic-card-health-not-started" data-epic-name="[266][August] Planner Agent for UWM" data-scheduled-month="no-date" data-scheduled-build="264.4" data-health="Not Started">
+                            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+                                <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                                    <span class="epic-name">
+                                        
+                                        <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/a3QEE000002aDtd2AE/view"
+                                           target="_blank"
+                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           onclick="event.stopPropagation();">
+                                            [266][August] Planner Agent for UWM
+                                        </a>
+                                        
+                                    </span>
+                                    
+                                    <span class="epic-badge badge-not-started">Not Started</span>
+                                    
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    
+                                    <span><strong>Team:</strong> Team-WFM-ML-Foundations</span>
+                                    
+                                    
+                                    <span style="display: flex; align-items: center; gap: 4px;">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        264.4
+                                    </span>
+                                    
+                                    
+                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -47446,7 +48124,7 @@ function createProgramCard(program) {
             }
 
             // Update last updated timestamp
-            const lastUpdated = "2026-08-06T16:04:59.130390";
+            const lastUpdated = "2026-08-07T14:07:24.951184";
             if (lastUpdated) {
                 // Format the timestamp if it's an ISO string
                 const date = new Date(lastUpdated);
@@ -48054,7 +48732,7 @@ function createProgramCard(program) {
             // Show/hide orphaned filters
             const orphanedFilters = document.getElementById('orphaned-filters-inline');
             if (orphanedFilters) {
-                orphanedFilters.style.display = viewName === 'orphaned' ? 'contents' : 'none';
+                orphanedFilters.style.display = viewName === 'orphaned' ? 'flex' : 'none';
             }
 
             // Grey out portfolio filter in Orphaned view (orphaned epics have no portfolio by definition)
@@ -48093,6 +48771,8 @@ function createProgramCard(program) {
         // Orphaned epics data
         const epicRecommendationsEnabled = false;
         let orphanedData = null;
+        let orphanedDataOriginal = null; // Store unfiltered data
+        let currentOrphanedRelease = localStorage.getItem('orphanedReleaseFilter') || '266'; // Default to 266
         window.orphanedDataLoaded = false;
 
         async function loadOrphanedData() {
@@ -48101,13 +48781,16 @@ function createProgramCard(program) {
                 const endpoint = window.location.hostname.includes('github.io') ?
                     'data/unallocated_data.json' : '/api/orphaned';
                 const response = await fetch(endpoint);
-                orphanedData = await response.json();
+                orphanedDataOriginal = await response.json();
                 window.orphanedDataLoaded = true;
 
-                // Update stat cards - showing only orphaned metrics
-                document.getElementById('orphaned-total').textContent = orphanedData.summary.orphaned_epics || 0;
-                document.getElementById('orphaned-capacity').textContent = Math.round(orphanedData.summary.orphaned_capacity || 0);
-                document.getElementById('orphaned-teams').textContent = orphanedData.summary.unique_teams || 0;
+                // Apply initial release filter
+                applyOrphanedReleaseFilter(currentOrphanedRelease);
+
+                // Update button states
+                document.querySelectorAll('.orphaned-release-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.release === currentOrphanedRelease);
+                });
 
                 renderOrphanedView('by-team');
             } catch (error) {
@@ -48115,6 +48798,80 @@ function createProgramCard(program) {
                 document.getElementById('orphaned-team-tbody').innerHTML =
                     '<tr><td colspan="6" style="padding: 40px; text-align: center; color: #dc2626;">Error loading orphaned epics data</td></tr>';
             }
+        }
+
+        function switchOrphanedRelease(release) {
+            currentOrphanedRelease = release;
+            localStorage.setItem('orphanedReleaseFilter', release);
+
+            // Update button states
+            document.querySelectorAll('.orphaned-release-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.release === release);
+            });
+
+            // Apply filter and re-render
+            applyOrphanedReleaseFilter(release);
+
+            // Re-render current view
+            const currentView = document.querySelector('.orphaned-view-btn.active')?.dataset.view || 'by-team';
+            renderOrphanedView(currentView);
+        }
+
+        function applyOrphanedReleaseFilter(release) {
+            if (!orphanedDataOriginal) return;
+
+            // Filter epics based on release
+            const filterEpics = (epics) => {
+                if (release === 'all') return epics;
+
+                return epics.filter(epic => {
+                    const scheduledBuild = epic.scheduled_build || '';
+                    const epicName = epic.name || '';
+
+                    if (release === '264') {
+                        // Include if scheduled_build starts with 264 OR epic name contains 264
+                        return scheduledBuild.startsWith('264') || /\b264\b/.test(epicName);
+                    } else if (release === '266') {
+                        // Include if scheduled_build starts with 266+ OR epic name contains 266+
+                        return /^(266|268|270|272)/.test(scheduledBuild) || /\b(266|268|270|272)\b/.test(epicName);
+                    }
+                    return true;
+                });
+            };
+
+            // Create filtered copy of data
+            orphanedData = {
+                ...orphanedDataOriginal,
+                epics: filterEpics(orphanedDataOriginal.epics),
+                by_team: orphanedDataOriginal.by_team.map(team => ({
+                    ...team,
+                    epics: filterEpics(team.epics),
+                    epic_count: filterEpics(team.epics).length,
+                    total_capacity: filterEpics(team.epics).reduce((sum, e) => sum + (e.story_points || 0), 0),
+                    orphaned_capacity: filterEpics(team.epics).reduce((sum, e) => sum + (e.story_points || 0), 0)
+                })).filter(team => team.epics.length > 0),
+                by_release: orphanedDataOriginal.by_release.map(rel => ({
+                    ...rel,
+                    epics: filterEpics(rel.epics),
+                    epic_count: filterEpics(rel.epics).length,
+                    total_capacity: filterEpics(rel.epics).reduce((sum, e) => sum + (e.story_points || 0), 0)
+                })).filter(rel => rel.epics.length > 0)
+            };
+
+            // Update summary stats
+            const filteredEpics = orphanedData.epics;
+            const summary = {
+                orphaned_epics: filteredEpics.length,
+                orphaned_capacity: filteredEpics.reduce((sum, e) => sum + (e.story_points || 0), 0),
+                unique_teams: new Set(filteredEpics.map(e => e.team).filter(t => t && t !== '-')).size
+            };
+
+            orphanedData.summary = summary;
+
+            // Update stat cards
+            document.getElementById('orphaned-total').textContent = summary.orphaned_epics || 0;
+            document.getElementById('orphaned-capacity').textContent = Math.round(summary.orphaned_capacity || 0);
+            document.getElementById('orphaned-teams').textContent = summary.unique_teams || 0;
         }
 
         function switchOrphanedView(viewType) {

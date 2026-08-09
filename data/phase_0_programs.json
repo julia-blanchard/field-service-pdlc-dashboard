@@ -261,7 +261,7 @@
       "tpm_lead": "",
       "ux_lead": "",
       "cx_lead": "",
-      "related_pbd": "PBD \u2014 AGX Feature Program",
+      "related_pbd": "PBD — AGX Feature Program",
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=15:15",
@@ -283,7 +283,7 @@
       "tpm_lead": "",
       "ux_lead": "",
       "cx_lead": "",
-      "related_pbd": "PBD \u2014 AGX Feature Program",
+      "related_pbd": "PBD — AGX Feature Program",
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=16:16",
@@ -315,8 +315,8 @@
       "name": "Headless 360 - End to end steelthread of Field Service Setup",
       "full_name": "Headless 360 - End to end steelthread of Field Service Setup",
       "id": "sheet_18",
-      "phase": "0",
-      "subcolumn": "backlog",
+      "phase": "1",
+      "subcolumn": "prototyping",
       "portfolio": "FY27 Field Service Mobile",
       "theme": "Headless",
       "tier": "T1",
@@ -331,7 +331,12 @@
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=18:18",
-      "feature_link": null
+      "feature_link": null,
+      "pbd_url": "https://docs.google.com/document/d/1BC575RmPfzTA57M2ylA3YITuDNiufii1o-OnkEIxwW8/edit",
+      "parent_program": "Field Service Headless Setup",
+      "report_url": "validation_reports/pbd_validation_headless-360-conversational-field-service-setup_2026-08-07.html",
+      "validation_status": "PASS WITH WARNINGS",
+      "completion": 75
     },
     {
       "name": "Improve app performance in low connectivity states",
@@ -437,7 +442,7 @@
       "tpm_lead": "",
       "ux_lead": "",
       "cx_lead": "",
-      "related_pbd": "PBD \u2014 AGX Feature Program",
+      "related_pbd": "PBD — AGX Feature Program",
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=23:23",
@@ -469,8 +474,8 @@
       "name": "Phase 2 of WFM - native experience in Field Service or standalone app",
       "full_name": "Phase 2 of WFM - native experience in Field Service or standalone app",
       "id": "sheet_25",
-      "phase": "0",
-      "subcolumn": "backlog",
+      "phase": "1",
+      "subcolumn": "prototyping",
       "portfolio": "FY27 Field Service Mobile",
       "theme": "WFM: Shift scheduling",
       "tier": "Tier N/A",
@@ -485,14 +490,16 @@
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=25:25",
-      "feature_link": null
+      "feature_link": null,
+      "pbd_url": "https://docs.google.com/document/d/1Mu7lyiv7Ux4uvSt1AoRjTCxBrf1HQep8vR3W3wJqcZQ/edit",
+      "parent_program": "Frontline Workforce Management"
     },
     {
       "name": "Upload Queue: Validation Errors",
       "full_name": "Upload Queue: Validation Errors",
       "id": "sheet_26",
-      "phase": "0",
-      "subcolumn": "backlog",
+      "phase": "1",
+      "subcolumn": "prototyping",
       "portfolio": "FY27 Field Service Mobile",
       "theme": "Offline Priming",
       "tier": "T1",
@@ -507,7 +514,9 @@
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=26:26",
-      "feature_link": null
+      "feature_link": null,
+      "pbd_url": "https://docs.google.com/document/d/1aNThhwwRJAkvlyQ6pf7-cIFzu9etuVG61eu2w-qJPbk/edit",
+      "parent_program": "Perf Priming & Upload Queue Improvements"
     },
     {
       "name": "Improved upload performance when uploading large volumes of  records and files ",
@@ -535,8 +544,8 @@
       "name": "Project Felix",
       "full_name": "Project Felix",
       "id": "sheet_28",
-      "phase": "0",
-      "subcolumn": "backlog",
+      "phase": "1",
+      "subcolumn": "prototyping",
       "portfolio": "FY27 Field Service Mobile",
       "theme": "Mobile AI",
       "tier": "T1",
@@ -551,7 +560,9 @@
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=28:28",
-      "feature_link": null
+      "feature_link": null,
+      "pbd_url": "https://docs.google.com/document/d/1y145WkBKt47HucqKk0IaM9hvxiSAxEcjiP-ROIr3_Ls",
+      "parent_program": "Agentforce Adoption: Mobile"
     },
     {
       "name": "Background Agents triggered throughout the job to integrate non-deterministic outputs into the wo...",
@@ -569,7 +580,7 @@
       "tpm_lead": "",
       "ux_lead": "",
       "cx_lead": "",
-      "related_pbd": "PBD \u2014 AGX Feature Program",
+      "related_pbd": "PBD — AGX Feature Program",
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=29:29",
@@ -591,7 +602,7 @@
       "tpm_lead": "",
       "ux_lead": "",
       "cx_lead": "",
-      "related_pbd": "PBD \u2014 AGX Feature Program",
+      "related_pbd": "PBD — AGX Feature Program",
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=30:30",
@@ -862,8 +873,8 @@
       "feature_link": null
     },
     {
-      "name": "Auto-provision Claude Code for mobile engineers \u2014 MCP servers/CLIs plus persistent settings \u2014 to ...",
-      "full_name": "Auto-provision Claude Code for mobile engineers \u2014 MCP servers/CLIs plus persistent settings \u2014 to ...",
+      "name": "Auto-provision Claude Code for mobile engineers — MCP servers/CLIs plus persistent settings — to ...",
+      "full_name": "Auto-provision Claude Code for mobile engineers — MCP servers/CLIs plus persistent settings — to ...",
       "id": "sheet_43",
       "phase": "0",
       "subcolumn": "backlog",
@@ -906,8 +917,8 @@
       "feature_link": null
     },
     {
-      "name": "Migrate Service Reports 1.0 to Document Builder 2.0 \u2014 1,227 customers, projected 63% fewer incide...",
-      "full_name": "Migrate Service Reports 1.0 to Document Builder 2.0 \u2014 1,227 customers, projected 63% fewer incide...",
+      "name": "Migrate Service Reports 1.0 to Document Builder 2.0 — 1,227 customers, projected 63% fewer incide...",
+      "full_name": "Migrate Service Reports 1.0 to Document Builder 2.0 — 1,227 customers, projected 63% fewer incide...",
       "id": "sheet_45",
       "phase": "0",
       "subcolumn": "backlog",
@@ -1126,8 +1137,8 @@
       "feature_link": null
     },
     {
-      "name": "Currently, technicians are limited to static routes and often switch to third-party apps\u2014manually...",
-      "full_name": "Currently, technicians are limited to static routes and often switch to third-party apps\u2014manually...",
+      "name": "Currently, technicians are limited to static routes and often switch to third-party apps—manually...",
+      "full_name": "Currently, technicians are limited to static routes and often switch to third-party apps—manually...",
       "id": "sheet_55",
       "phase": "0",
       "subcolumn": "backlog",
@@ -1302,8 +1313,8 @@
       "feature_link": null
     },
     {
-      "name": "External Calendar Sync (Gmail / Outlook \u2194 SF, 2-way + EAC FedRamp)",
-      "full_name": "External Calendar Sync (Gmail / Outlook \u2194 SF, 2-way + EAC FedRamp)",
+      "name": "External Calendar Sync (Gmail / Outlook ↔ SF, 2-way + EAC FedRamp)",
+      "full_name": "External Calendar Sync (Gmail / Outlook ↔ SF, 2-way + EAC FedRamp)",
       "id": "sheet_64",
       "phase": "0",
       "subcolumn": "backlog",
@@ -1500,8 +1511,8 @@
       "feature_link": null
     },
     {
-      "name": "Optimization Hub \u2014 observability layer",
-      "full_name": "Optimization Hub \u2014 observability layer",
+      "name": "Optimization Hub — observability layer",
+      "full_name": "Optimization Hub — observability layer",
       "id": "sheet_73",
       "phase": "0",
       "subcolumn": "backlog",
@@ -1522,8 +1533,8 @@
       "feature_link": null
     },
     {
-      "name": "Bulk Schedule / Reschedule \u2014 Field+Onsite",
-      "full_name": "Bulk Schedule / Reschedule \u2014 Field+Onsite",
+      "name": "Bulk Schedule / Reschedule — Field+Onsite",
+      "full_name": "Bulk Schedule / Reschedule — Field+Onsite",
       "id": "sheet_74",
       "phase": "0",
       "subcolumn": "backlog",
@@ -1830,8 +1841,8 @@
       "feature_link": null
     },
     {
-      "name": "Agentic reasoning \u2014 Find Candidates",
-      "full_name": "Agentic reasoning \u2014 Find Candidates",
+      "name": "Agentic reasoning — Find Candidates",
+      "full_name": "Agentic reasoning — Find Candidates",
       "id": "sheet_88",
       "phase": "0",
       "subcolumn": "backlog",
@@ -1896,8 +1907,8 @@
       "feature_link": null
     },
     {
-      "name": "Shift Mgmt UI \u2014 grouping & filters",
-      "full_name": "Shift Mgmt UI \u2014 grouping & filters",
+      "name": "Shift Mgmt UI — grouping & filters",
+      "full_name": "Shift Mgmt UI — grouping & filters",
       "id": "sheet_91",
       "phase": "0",
       "subcolumn": "backlog",
@@ -2116,8 +2127,8 @@
       "feature_link": null
     },
     {
-      "name": "External website support for flows (Lightning Out \u2014 inbound scheduling flows)",
-      "full_name": "External website support for flows (Lightning Out \u2014 inbound scheduling flows)",
+      "name": "External website support for flows (Lightning Out — inbound scheduling flows)",
+      "full_name": "External website support for flows (Lightning Out — inbound scheduling flows)",
       "id": "sheet_101",
       "phase": "0",
       "subcolumn": "backlog",
@@ -2248,8 +2259,8 @@
       "feature_link": null
     },
     {
-      "name": "Agentic reasoning \u2014 Schedule Actions",
-      "full_name": "Agentic reasoning \u2014 Schedule Actions",
+      "name": "Agentic reasoning — Schedule Actions",
+      "full_name": "Agentic reasoning — Schedule Actions",
       "id": "sheet_107",
       "phase": "0",
       "subcolumn": "backlog",
@@ -2270,8 +2281,8 @@
       "feature_link": null
     },
     {
-      "name": "Travel time between onsite \u2194 field (also considering virtual SAs)",
-      "full_name": "Travel time between onsite \u2194 field (also considering virtual SAs)",
+      "name": "Travel time between onsite ↔ field (also considering virtual SAs)",
+      "full_name": "Travel time between onsite ↔ field (also considering virtual SAs)",
       "id": "sheet_108",
       "phase": "0",
       "subcolumn": "backlog",
@@ -2908,8 +2919,8 @@
       "feature_link": null
     },
     {
-      "name": "Optimization Hub upgrades today's fragmented post-run view into one canonical scorecard \u2014 KPIs bo...",
-      "full_name": "Optimization Hub upgrades today's fragmented post-run view into one canonical scorecard \u2014 KPIs bo...",
+      "name": "Optimization Hub upgrades today's fragmented post-run view into one canonical scorecard — KPIs bo...",
+      "full_name": "Optimization Hub upgrades today's fragmented post-run view into one canonical scorecard — KPIs bo...",
       "id": "sheet_137",
       "phase": "1",
       "subcolumn": "prototyping",
@@ -3851,6 +3862,29 @@
       "health": "Unknown",
       "target_release": "",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=180:180",
+      "feature_link": null
+    },
+    {
+      "name": "Guided Experience",
+      "full_name": "Guided Experience",
+      "id": "a1fEE0000004AqPYAU",
+      "phase": "1",
+      "subcolumn": "prototyping",
+      "portfolio": "FY27 Field Service Mobile",
+      "theme": "Mobile Experience",
+      "tier": "Tier 1",
+      "stage": "Prototyping",
+      "status": "On Track",
+      "program_manager": "Julia Blanchard",
+      "arch_lead": "TBD",
+      "tpm_lead": "TBD",
+      "ux_lead": "TBD",
+      "cx_lead": "",
+      "pbd_url": "https://docs.google.com/document/d/1QCXLHOwl6bQ8iTng3qGKhZLpZuz_TIrgS6jmq0606bo/edit",
+      "parent_program": "Guided Experience Program",
+      "health": "On Track",
+      "target_release": "266",
+      "sheet_url": "",
       "feature_link": null
     }
   ]

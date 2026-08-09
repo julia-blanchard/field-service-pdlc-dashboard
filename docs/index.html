@@ -174,7 +174,7 @@
             margin-bottom: 24px;
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: 20px;
             position: relative;
             z-index: 100;
             flex-wrap: wrap;
@@ -572,9 +572,13 @@
             color: #1e293b;
             margin-bottom: 12px;
             letter-spacing: -0.01em;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
             line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            word-break: normal;
+            overflow-wrap: anywhere;
         }
 
         .program-name a {
@@ -585,6 +589,32 @@
 
         .program-name a:hover {
             color: #1d4ed8;
+        }
+
+        .program-pillbox {
+            display: inline-block;
+            font-size: 11px;
+            color: #7c3aed;
+            font-weight: 600;
+            background: #f3e8ff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            max-width: 100%;
+            margin-top: 6px;
+            line-height: 1.3;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .program-title-row {
+            display: block;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .program-title-text {
+            margin-bottom: 6px;
+            overflow: hidden;
         }
 
         .program-meta {
@@ -2771,6 +2801,7 @@
         <button class="nav-button" onclick="switchView('execution')" tabindex="-1">Execution</button>
         <button class="nav-button" onclick="switchView('allocations')" tabindex="-1">Allocations</button>
         
+        <button class="nav-button" onclick="switchView('phase0')" tabindex="-1">Phase 0</button>
     </div>
 
     <!-- Filter Bar -->
@@ -2922,7 +2953,7 @@
                 <div class="view-toggles">
                     <button class="view-toggle orphaned-view-btn active" data-view="by-team" onclick="switchOrphanedView('by-team')" tabindex="-1">By Team</button>
                     <button class="view-toggle orphaned-view-btn" data-view="by-em" onclick="switchOrphanedView('by-em')" tabindex="-1">By Engineering Manager</button>
-                    <button class="view-toggle orphaned-view-btn" data-view="by-pm" onclick="switchOrphanedView('by-pm')" tabindex="-1">By Product Manager</button>
+                    <button class="view-toggle orphaned-view-btn" data-view="by-pm" onclick="switchOrphanedView('by-pm')" tabindex="-1" style="margin-right: 20px;">By Product Manager</button>
                 </div>
             </div>
             <!-- Release Filter Toggles -->
@@ -2946,7 +2977,7 @@
         <div class="phase-column phase-0">
             <div class="phase-header">
                 <span>0️⃣ Ideation & Prioritization</span>
-                <span class="phase-count">158</span>
+                <span class="phase-count">154</span>
             </div>
 
 
@@ -3500,46 +3531,6 @@
             
             
             
-                <div class="program-card" data-portfolio="FY27 Field Service Mobile" style="position: relative;">
-                    <div class="program-name" style="margin-bottom: 8px;">
-                        
-                        <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=18:18"
-                           target="_blank"
-                           style="color: inherit; text-decoration: none; cursor: pointer;">
-                            Headless 360 - End to end steelthread of Field Service Setup
-                        </a>
-                        
-                    </div>
-
-                    <div style="margin-bottom: 12px;">
-                        <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
-                            FY27 Field Service Mobile | Headless
-                        </span>
-                    </div>
-
-                    <div class="program-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">PM:</span> Kara Carreri
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Arch:</span> Oleg Bivol
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">UX:</span> Kristen Muramoto
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">TPM:</span> TBD
-                        </div>
-                    </div>
-
-                    <!-- Tier badge in bottom left corner -->
-                    
-                    <div style="position: absolute; bottom: 10px; left: 10px;">
-                        <span style="display: inline-block; font-size: 11px; color: white; font-weight: 600; background: #475569; padding: 4px 8px; border-radius: 4px;">T1</span>
-                    </div>
-                    
-                </div>
-            
             
             
                 <div class="program-card" data-portfolio="FY27 Field Service Mobile" style="position: relative;">
@@ -3794,87 +3785,7 @@
             
             
             
-                <div class="program-card" data-portfolio="FY27 Field Service Mobile" style="position: relative;">
-                    <div class="program-name" style="margin-bottom: 8px;">
-                        
-                        <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=25:25"
-                           target="_blank"
-                           style="color: inherit; text-decoration: none; cursor: pointer;">
-                            Phase 2 of WFM - native experience in Field Service or standalone app
-                        </a>
-                        
-                    </div>
-
-                    <div style="margin-bottom: 12px;">
-                        <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
-                            FY27 Field Service Mobile | WFM: Shift scheduling
-                        </span>
-                    </div>
-
-                    <div class="program-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">PM:</span> Clare Provenzano
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Arch:</span> Graham Oldfield Andrew Little
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">UX:</span> Sheila Christian John Vollmer
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">TPM:</span> Scott Andrus
-                        </div>
-                    </div>
-
-                    <!-- Tier badge in bottom left corner -->
-                    
-                    <div style="position: absolute; bottom: 10px; left: 10px;">
-                        <span style="display: inline-block; font-size: 11px; color: white; font-weight: 600; background: #475569; padding: 4px 8px; border-radius: 4px;">Tier N/A</span>
-                    </div>
-                    
-                </div>
             
-            
-            
-                <div class="program-card" data-portfolio="FY27 Field Service Mobile" style="position: relative;">
-                    <div class="program-name" style="margin-bottom: 8px;">
-                        
-                        <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=26:26"
-                           target="_blank"
-                           style="color: inherit; text-decoration: none; cursor: pointer;">
-                            Upload Queue: Validation Errors
-                        </a>
-                        
-                    </div>
-
-                    <div style="margin-bottom: 12px;">
-                        <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
-                            FY27 Field Service Mobile | Offline Priming
-                        </span>
-                    </div>
-
-                    <div class="program-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">PM:</span> Nitasha Walia
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Arch:</span> TBD
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">UX:</span> TBD
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">TPM:</span> TBD
-                        </div>
-                    </div>
-
-                    <!-- Tier badge in bottom left corner -->
-                    
-                    <div style="position: absolute; bottom: 10px; left: 10px;">
-                        <span style="display: inline-block; font-size: 11px; color: white; font-weight: 600; background: #475569; padding: 4px 8px; border-radius: 4px;">T1</span>
-                    </div>
-                    
-                </div>
             
             
             
@@ -3919,46 +3830,6 @@
                 </div>
             
             
-            
-                <div class="program-card" data-portfolio="FY27 Field Service Mobile" style="position: relative;">
-                    <div class="program-name" style="margin-bottom: 8px;">
-                        
-                        <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=28:28"
-                           target="_blank"
-                           style="color: inherit; text-decoration: none; cursor: pointer;">
-                            Project Felix
-                        </a>
-                        
-                    </div>
-
-                    <div style="margin-bottom: 12px;">
-                        <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
-                            FY27 Field Service Mobile | Mobile AI
-                        </span>
-                    </div>
-
-                    <div class="program-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">PM:</span> Nitasha Walia
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Arch:</span> Graham Oldfield
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">UX:</span> Stephen Coyner
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">TPM:</span> TBD
-                        </div>
-                    </div>
-
-                    <!-- Tier badge in bottom left corner -->
-                    
-                    <div style="position: absolute; bottom: 10px; left: 10px;">
-                        <span style="display: inline-block; font-size: 11px; color: white; font-weight: 600; background: #475569; padding: 4px 8px; border-radius: 4px;">T1</span>
-                    </div>
-                    
-                </div>
             
             
             
@@ -9719,12 +9590,14 @@
             
             
             
+            
+            
         </div>
 
         <div class="phase-column phase-1 has-subcolumns">
             <div class="phase-header">
                 <span>1️⃣ Discovery & Prototyping</span>
-                <span class="phase-count">17</span>
+                <span class="phase-count">22</span>
             </div>
 
             <div class="phase-subcolumns">
@@ -9732,7 +9605,7 @@
                 <div class="phase-subcolumn prototyping-subcolumn">
                     <div class="subcolumn-header">
                         <span>Prototyping</span>
-                        <span class="subcolumn-count">12</span>
+                        <span class="subcolumn-count">17</span>
                     </div>
 
                     
@@ -9765,6 +9638,51 @@
                     
                     
                     
+                    <div class="program-card" data-portfolio="FY27 Field Service Mobile">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=18:18"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Headless 360 - End to end steelthread of Field Service Setup
+                                </a>
+                                
+                            </div>
+                            
+                            <span class="program-pillbox" title="Parent Program">Field Service Headless Setup</span>
+                            
+                        </div>
+                        <div style="margin-bottom: 12px;">
+                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                                FY27 Field Service Mobile | Headless
+                            </span>
+                        </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+                        <!-- Validation status - HIDDEN per user request -->
+                        
+                        
+
+                        <!-- PBD Links -->
+                        
+
+                        <div class="program-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">PM:</span> Kara Carreri
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> Oleg Bivol
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">UX:</span> Kristen Muramoto
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">TPM:</span> TBD
+                            </div>
+                        </div>
+                    </div>
                     
                     
                     
@@ -9780,10 +9698,140 @@
                     
                     
                     
+                    <div class="program-card" data-portfolio="FY27 Field Service Mobile">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=25:25"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Phase 2 of WFM - native experience in Field Service or standalone app
+                                </a>
+                                
+                            </div>
+                            
+                            <span class="program-pillbox" title="Parent Program">Frontline Workforce Management</span>
+                            
+                        </div>
+                        <div style="margin-bottom: 12px;">
+                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                                FY27 Field Service Mobile | WFM: Shift scheduling
+                            </span>
+                        </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
+                        <div class="program-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">PM:</span> Clare Provenzano
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> Graham Oldfield Andrew Little
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">UX:</span> Sheila Christian John Vollmer
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">TPM:</span> Scott Andrus
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="program-card" data-portfolio="FY27 Field Service Mobile">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=26:26"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Upload Queue: Validation Errors
+                                </a>
+                                
+                            </div>
+                            
+                            <span class="program-pillbox" title="Parent Program">Perf Priming & Upload Queue Improvements</span>
+                            
+                        </div>
+                        <div style="margin-bottom: 12px;">
+                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                                FY27 Field Service Mobile | Offline Priming
+                            </span>
+                        </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
+                        <div class="program-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">PM:</span> Nitasha Walia
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> TBD
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">UX:</span> TBD
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">TPM:</span> TBD
+                            </div>
+                        </div>
+                    </div>
                     
                     
                     
                     
+                    
+                    <div class="program-card" data-portfolio="FY27 Field Service Mobile">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=28:28"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Project Felix
+                                </a>
+                                
+                            </div>
+                            
+                            <span class="program-pillbox" title="Parent Program">Agentforce Adoption: Mobile</span>
+                            
+                        </div>
+                        <div style="margin-bottom: 12px;">
+                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                                FY27 Field Service Mobile | Mobile AI
+                            </span>
+                        </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
+                        <div class="program-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">PM:</span> Nitasha Walia
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> Graham Oldfield
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">UX:</span> Stephen Coyner
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">TPM:</span> TBD
+                            </div>
+                        </div>
+                    </div>
                     
                     
                     
@@ -9802,13 +9850,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Mobile">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=36:36"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Introduce a 3-tier notification system (Standard, High Priority, Emergency) with admin-controlled...
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=36:36"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Introduce a 3-tier notification system (Standard, High Priority, Emergency) with admin-controlled...
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -9820,7 +9871,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -9870,13 +9921,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Mobile">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=51:51"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Enable real-time, field-based color coding on map layers (Work Order related lists) in online and...
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=51:51"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Enable real-time, field-based color coding on map layers (Work Order related lists) in online and...
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -9888,7 +9942,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10036,13 +10090,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=116:116"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Voice outbound Engagment\n(TD platform)
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=116:116"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Voice outbound Engagment\n(TD platform)
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10054,7 +10111,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10116,13 +10173,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=137:137"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Optimization Hub upgrades today's fragmented post-run view into one canonical scorecard — KPIs bo...
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=137:137"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Optimization Hub upgrades today's fragmented post-run view into one canonical scorecard — KPIs bo...
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10134,7 +10194,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10170,13 +10230,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=145:145"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Validate Truck routing scenarios with HERE API services 
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=145:145"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Validate Truck routing scenarios with HERE API services 
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10188,7 +10251,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10232,13 +10295,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=157:157"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                * Search by Lookup Fields: Solve the top customer complaint by enabling search across lookup rela...
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=157:157"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    * Search by Lookup Fields: Solve the top customer complaint by enabling search across lookup rela...
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10250,7 +10316,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10272,13 +10338,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=159:159"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                * AI-Driven Gantt & List Search: Natural language searching on the Gantt/List- addressing feedbac...
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=159:159"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    * AI-Driven Gantt & List Search: Natural language searching on the Gantt/List- addressing feedbac...
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10290,7 +10359,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10312,13 +10381,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=160:160"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                * Research for Integrated Crew Management: Native crew handling inside the Scheduling experience ...
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=160:160"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    * Research for Integrated Crew Management: Native crew handling inside the Scheduling experience ...
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10330,7 +10402,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10352,13 +10424,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=161:161"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                * Multi-Record Absence Management: Bulk create/edit capabilities for team absences (UI & Agentfor...
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=161:161"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    * Multi-Record Absence Management: Bulk create/edit capabilities for team absences (UI & Agentfor...
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10370,7 +10445,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10392,13 +10467,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=162:162"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                1 .Visualization and exploration:\nPlanner view (6 months)\nPlanner/ Dispatcher view (3 months)
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=162:162"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    1 .Visualization and exploration:\nPlanner view (6 months)\nPlanner/ Dispatcher view (3 months)
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10410,7 +10488,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10432,13 +10510,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=163:163"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                2. Insight to action:\nLocal optimization and bundling
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=163:163"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    2. Insight to action:\nLocal optimization and bundling
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10450,7 +10531,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10472,13 +10553,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
-                            
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=164:164"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                3. Filters:\nCrew, Skill, Maintanance type
-                            </a>
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=164:164"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    3. Filters:\nCrew, Skill, Maintanance type
+                                </a>
+                                
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10490,7 +10574,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10540,6 +10624,51 @@
                     
                     
                     
+                    
+                    
+                    
+                    <div class="program-card" data-portfolio="FY27 Field Service Mobile">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://gus.lightning.force.com/lightning/r/ADM_Product_Tag__c/a1fEE0000004AqPYAU/view"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Guided Experience
+                                </a>
+                                
+                            </div>
+                            
+                            <span class="program-pillbox" title="Parent Program">Guided Experience Program</span>
+                            
+                        </div>
+                        <div style="margin-bottom: 12px;">
+                            <span style="display: inline-block; font-size: 12px; color: #475569; font-weight: 600; background: #dbeafe; padding: 4px 10px; border-radius: 6px;">
+                                FY27 Field Service Mobile | Mobile Experience
+                            </span>
+                        </div>
+
+                        <!-- PBD Validation Status (if available) -->
+                        
+
+                        <!-- PBD Links -->
+                        
+
+                        <div class="program-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">PM:</span> Julia Blanchard
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Arch:</span> TBD
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">UX:</span> TBD
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">TPM:</span> TBD
+                            </div>
+                        </div>
+                    </div>
                     
                     
                     
@@ -10684,13 +10813,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Mobile">
-                        <div class="program-name" style="margin-bottom: 8px;">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=17:17"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Additional language support Spanish (Spain, Mexican, Argentine, Cuban & Dominican dialects), Fren...
+                                </a>
                             
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=17:17"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Additional language support Spanish (Spain, Mexican, Argentine, Cuban & Dominican dialects), Fren...
-                            </a>
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -10702,7 +10834,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -10984,13 +11116,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=149:149"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    WFM unified shifts policy, rules, objectives (headless + UI)
+                                </a>
                             
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=149:149"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                WFM unified shifts policy, rules, objectives (headless + UI)
-                            </a>
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -11002,7 +11137,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -11024,13 +11159,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=150:150"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    WFM unscheduled shifts optimization
+                                </a>
                             
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=150:150"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                WFM unscheduled shifts optimization
-                            </a>
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -11042,7 +11180,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -11064,13 +11202,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=151:151"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Respect user preferences in optimization
+                                </a>
                             
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=151:151"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Respect user preferences in optimization
-                            </a>
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -11082,7 +11223,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -11104,13 +11245,16 @@
                     
                     
                     <div class="program-card" data-portfolio="FY27 Field Service Scheduling & Optimization">
-                        <div class="program-name" style="margin-bottom: 8px;">
+                        <div class="program-title-row">
+                            <div class="program-name program-title-text">
+                                
+                                <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=152:152"
+                                   target="_blank"
+                                   style="color: inherit; text-decoration: none; cursor: pointer;">
+                                    Check rules API
+                                </a>
                             
-                            <a href="https://docs.google.com/spreadsheets/d/1ERWXm6wVS5ItzxCqR6pX1tTf6_ec2_D-jPZeEF5V89c/edit#gid=1674131463&range=152:152"
-                               target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;">
-                                Check rules API
-                            </a>
+                            </div>
                             
                         </div>
                         <div style="margin-bottom: 12px;">
@@ -11122,7 +11266,7 @@
                         <!-- PBD Validation Status (if available) -->
                         
 
-                        <!-- PBD Links - HIDDEN per user request -->
+                        <!-- PBD Links -->
                         
 
                         <div class="program-meta">
@@ -11140,6 +11284,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
                     
                     
                     
@@ -11333,6 +11479,8 @@
                         <span class="subcolumn-count">49</span>
                     </div>
 
+                    
+                    
                     
                     
                     
@@ -14652,7 +14800,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -14699,7 +14847,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -14878,7 +15026,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -14908,7 +15056,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -14938,7 +15086,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15476,7 +15624,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15556,7 +15704,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15597,7 +15745,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -15644,7 +15792,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15684,7 +15832,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -15725,7 +15873,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-08
                             </span>
                             
                         </div>
@@ -15772,7 +15920,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -16128,7 +16276,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17330,7 +17478,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17498,7 +17646,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-05</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17538,7 +17686,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17658,7 +17806,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -17947,7 +18095,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-08
                             </span>
                             
                         </div>
@@ -17994,7 +18142,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18194,7 +18342,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18235,7 +18383,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -18282,7 +18430,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -18578,7 +18726,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19278,7 +19426,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -19398,7 +19546,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -20286,7 +20434,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -20333,7 +20481,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -20522,7 +20670,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -20569,7 +20717,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -20826,7 +20974,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-06
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -20873,7 +21021,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-06</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -20954,7 +21102,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-05
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -21001,7 +21149,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-05</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21041,7 +21189,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21121,7 +21269,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21162,7 +21310,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-05
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -21209,7 +21357,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-05</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21408,7 +21556,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-09
                             </span>
                             
                         </div>
@@ -21455,7 +21603,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -21777,7 +21925,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -22605,7 +22753,7 @@
                                     
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -22685,7 +22833,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23507,7 +23655,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-02</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23547,7 +23695,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23587,7 +23735,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23627,7 +23775,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -23709,7 +23857,7 @@
                             
                             <span style="color: #9ca3af; margin: 0 4px;">|</span>
                             <span class="project-meta-item">
-                                <span class="project-meta-label">Last Modified:</span> 2026-08-07
+                                <span class="project-meta-label">Last Modified:</span> 2026-08-08
                             </span>
                             
                         </div>
@@ -23756,7 +23904,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24116,7 +24264,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24409,7 +24557,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-09</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -24622,7 +24770,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -27110,7 +27258,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -28242,7 +28390,7 @@
                                     </span>
                                     
                                     
-                                    <span><strong>Last Modified:</strong> 2026-08-07</span>
+                                    <span><strong>Last Modified:</strong> 2026-08-08</span>
                                     
                                     <div class="hygiene-badges-container" style="margin-left: auto; line-height: 1;"></div>
                                 </div>
@@ -47327,6 +47475,60 @@
 
     
 
+    <!-- Phase 0 View -->
+    <div id="phase0-view" class="view-content">
+        <h2 style="font-size: 24px; font-weight: 600; color: #e2e8f0; margin-bottom: 8px;">Phase 0 - Mobile Portfolio</h2>
+        <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+            Early-stage initiatives and features in the Mobile portfolio backlog. Add new items or promote existing ones to GUS programs.
+        </p>
+
+        <!-- Stats Card + Actions -->
+        <div style="display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start;">
+            <div class="stat-card" style="flex: 0 0 auto; min-width: 200px;">
+                <div class="stat-header">
+                    <div>
+                        <div class="stat-label" style="font-size: 10px;">MOBILE INITIATIVES</div>
+                        <div class="stat-value" id="phase0-count" style="font-size: 28px;">—</div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="showNewInitiativeModal()" style="margin-top: 12px; padding: 10px 20px; background: #22c55e; color: white; border: none; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+                + New Initiative
+            </button>
+        </div>
+
+        <!-- Phase 0 Table -->
+        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+            <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                <colgroup>
+                    <col style="width: 25%;">
+                    <col style="width: 15%;">
+                    <col style="width: 12%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Initiative</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Theme</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Stage</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Tier</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">PM Lead</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Arch Lead</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">TPM Lead</th>
+                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="phase0-tbody">
+                    <tr><td colspan="8" style="padding: 40px; text-align: center; color: #94a3b8;">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     </div><!-- End tab-content -->
 </div><!-- End content-wrapper -->
 
@@ -48124,7 +48326,7 @@ function createProgramCard(program) {
             }
 
             // Update last updated timestamp
-            const lastUpdated = "2026-08-07T14:07:24.951184";
+            const lastUpdated = "2026-08-09T10:16:09.157864";
             if (lastUpdated) {
                 // Format the timestamp if it's an ISO string
                 const date = new Date(lastUpdated);
@@ -48762,6 +48964,11 @@ function createProgramCard(program) {
             // Load orphaned data when switching to orphaned view
             if (viewName === 'orphaned' && !window.orphanedDataLoaded) {
                 loadOrphanedData();
+            }
+
+            // Load Phase 0 data when switching to phase0 view
+            if (viewName === 'phase0' && !window.phase0DataLoaded) {
+                loadPhase0Data();
             }
 
             // Save active view to localStorage so refresh doesn't reset to overview
@@ -49467,6 +49674,66 @@ function createProgramCard(program) {
                 button.textContent = originalText;
                 button.disabled = false;
             }
+        }
+
+        // Phase 0 Data Loading and Rendering
+        async function loadPhase0Data() {
+            try {
+                const response = await fetch('/api/phase0-mobile');
+                const data = await response.json();
+                window.phase0DataLoaded = true;
+
+                // Update count
+                document.getElementById('phase0-count').textContent = data.count || 0;
+
+                // Render table
+                renderPhase0Table(data.items || []);
+            } catch (error) {
+                console.error('Error loading Phase 0 data:', error);
+                document.getElementById('phase0-tbody').innerHTML =
+                    '<tr><td colspan="8" style="padding: 40px; text-align: center; color: #dc2626;">Error loading Phase 0 data</td></tr>';
+            }
+        }
+
+        function renderPhase0Table(items) {
+            const tbody = document.getElementById('phase0-tbody');
+
+            if (!items || items.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" style="padding: 40px; text-align: center; color: #94a3b8;">No Mobile initiatives found</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = items.map(item => `
+                <tr style="border-bottom: 1px solid #e5e7eb; transition: background 0.15s;">
+                    <td style="padding: 12px 16px; font-size: 13px; color: #1e293b;">
+                        <div style="font-weight: 500; margin-bottom: 2px;">${escapeHtml(item.name || item.full_name || 'Unnamed')}</div>
+                        ${item.sheet_url ? `<a href="${item.sheet_url}" target="_blank" style="font-size: 11px; color: #0176D3; text-decoration: none;">View in Sheet →</a>` : ''}
+                    </td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.theme || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.stage || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.tier || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.program_manager || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.arch_lead || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.tpm_lead || '-')}</td>
+                    <td style="padding: 12px 16px; text-align: center;">
+                        <button onclick="editInitiative('${item.id}')" style="padding: 4px 10px; background: #0176D3; color: white; border: none; border-radius: 4px; font-size: 11px; cursor: pointer;">Edit</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showNewInitiativeModal() {
+            alert('New Initiative modal coming soon!\n\nThis will allow you to add new Phase 0 items to the Google Sheet.');
+        }
+
+        function editInitiative(id) {
+            alert(`Edit initiative ${id} - coming soon!`);
         }
 
         function dismissRecommendation(epicId, event) {

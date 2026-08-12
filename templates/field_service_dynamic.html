@@ -17285,31 +17285,6 @@ function createProgramCard(program) {
             header.classList.toggle('expanded');
         }
 
-        // Auto-refresh every 5 minutes (300,000 ms)
-        // Only for Flask version - GitHub Pages uses static data
-        const AUTO_REFRESH_INTERVAL = 5 * 60 * 1000; // 5 minutes
-        let autoRefreshTimer;
-
-        function startAutoRefresh() {
-            // Check if /api/refresh endpoint exists (Flask app)
-            fetch('/api/refresh', { method: 'HEAD' })
-                .then(response => {
-                    if (response.ok || response.status === 405) {
-                        // Endpoint exists, enable auto-refresh
-                        console.log('Auto-refresh enabled: will refresh every 5 minutes');
-                        autoRefreshTimer = setInterval(() => {
-                            console.log('Auto-refreshing dashboard...');
-                            refreshData();
-                        }, AUTO_REFRESH_INTERVAL);
-                    } else {
-                        console.log('Static site detected - auto-refresh disabled');
-                    }
-                })
-                .catch(() => {
-                    console.log('Static site detected - auto-refresh disabled');
-                });
-        }
-
         // Hygiene data storage
         let hygieneData = null;
         let hygieneFilterActive = false;
@@ -17441,16 +17416,6 @@ function createProgramCard(program) {
                 setTimeout(() => {
                     switchView(savedView);
                 }, 100);
-            }
-        });
-
-        // Start auto-refresh on page load
-        window.addEventListener('load', startAutoRefresh);
-
-        // Clear timer on page unload
-        window.addEventListener('beforeunload', () => {
-            if (autoRefreshTimer) {
-                clearInterval(autoRefreshTimer);
             }
         });
 

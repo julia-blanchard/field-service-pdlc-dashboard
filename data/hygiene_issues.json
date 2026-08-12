@@ -1,11 +1,11 @@
 {
   "summary": {
-    "total_epics_needing_attention": 151,
+    "total_epics_needing_attention": 150,
     "teams_affected": 28,
     "programs_affected": 19,
     "issue_breakdown": {
       "missing_scheduled_build": 53,
-      "missing_priority": 105,
+      "missing_priority": 104,
       "missing_owner": 0,
       "blocked_no_comments": 0,
       "missing_planned_release": 70
@@ -1685,23 +1685,6 @@
       "team": "SFS Core Scheduler",
       "owner": "Kritica Mantri",
       "health": "Completed",
-      "scheduled_build": "264",
-      "priority": "-",
-      "story_points": 0,
-      "program": "264 Operations Console",
-      "portfolio": "264 Field Service Workforce Scheduling",
-      "project": "264 Operations Console",
-      "issues": [
-        "missing_priority"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002MXvR2AW",
-      "epic_name": "264: PSS-FS: Operations Console: Push Service",
-      "epic_name_key": "264: PSS-FS: Operations Console: Push Service",
-      "team": "SFS Core Scheduler",
-      "owner": "Kritica Mantri",
-      "health": "Unknown",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -4232,7 +4215,7 @@
     },
     {
       "name": "SFS Core Scheduler",
-      "epic_count": 12,
+      "epic_count": 11,
       "epics": [
         {
           "epic_id": "a3QEE000002MYBZ2A4",
@@ -4343,23 +4326,6 @@
           "team": "SFS Core Scheduler",
           "owner": "Kritica Mantri",
           "health": "Completed",
-          "scheduled_build": "264",
-          "priority": "-",
-          "story_points": 0,
-          "program": "264 Operations Console",
-          "portfolio": "264 Field Service Workforce Scheduling",
-          "project": "264 Operations Console",
-          "issues": [
-            "missing_priority"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002MXvR2AW",
-          "epic_name": "264: PSS-FS: Operations Console: Push Service",
-          "epic_name_key": "264: PSS-FS: Operations Console: Push Service",
-          "team": "SFS Core Scheduler",
-          "owner": "Kritica Mantri",
-          "health": "Unknown",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,

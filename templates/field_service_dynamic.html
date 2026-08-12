@@ -2852,14 +2852,23 @@
         </div>
 
         <!-- Orphaned Work filters (only show in Orphaned Work view) -->
-        <div id="orphaned-filters-inline" style="display: none;">
+        <div id="orphaned-filters-inline" style="display: none; flex-direction: row; align-items: center;">
             <!-- View Toggles (By Team | By Engineering Manager | By Product Manager) -->
             <div class="filter-group-exec">
                 <label class="filter-label-exec">VIEW</label>
                 <div class="view-toggles">
                     <button class="view-toggle orphaned-view-btn active" data-view="by-team" onclick="switchOrphanedView('by-team')" tabindex="-1">By Team</button>
                     <button class="view-toggle orphaned-view-btn" data-view="by-em" onclick="switchOrphanedView('by-em')" tabindex="-1">By Engineering Manager</button>
-                    <button class="view-toggle orphaned-view-btn" data-view="by-pm" onclick="switchOrphanedView('by-pm')" tabindex="-1">By Product Manager</button>
+                    <button class="view-toggle orphaned-view-btn" data-view="by-pm" onclick="switchOrphanedView('by-pm')" tabindex="-1" style="margin-right: 20px;">By Product Manager</button>
+                </div>
+            </div>
+            <!-- Release Filter Toggles -->
+            <div class="filter-group-exec">
+                <label class="filter-label-exec">RELEASE</label>
+                <div class="view-toggles">
+                    <button class="view-toggle orphaned-release-btn" data-release="264" onclick="switchOrphanedRelease('264')" tabindex="-1">264</button>
+                    <button class="view-toggle orphaned-release-btn active" data-release="266" onclick="switchOrphanedRelease('266')" tabindex="-1">266</button>
+                    <button class="view-toggle orphaned-release-btn" data-release="all" onclick="switchOrphanedRelease('all')" tabindex="-1">All</button>
                 </div>
             </div>
         </div>
@@ -16453,7 +16462,7 @@ function createProgramCard(program) {
             // Show/hide orphaned filters
             const orphanedFilters = document.getElementById('orphaned-filters-inline');
             if (orphanedFilters) {
-                orphanedFilters.style.display = viewName === 'orphaned' ? 'contents' : 'none';
+                orphanedFilters.style.display = viewName === 'orphaned' ? 'flex' : 'none';
             }
 
             // Grey out portfolio filter in Orphaned view (orphaned epics have no portfolio by definition)
@@ -16492,6 +16501,8 @@ function createProgramCard(program) {
         // Orphaned epics data
         const epicRecommendationsEnabled = {{ 'true' if show_epic_recommendations else 'false' }};
         let orphanedData = null;
+        let orphanedDataOriginal = null; // Store unfiltered data
+        let currentOrphanedRelease = localStorage.getItem('orphanedReleaseFilter') || '266'; // Default to 266
         window.orphanedDataLoaded = false;
 
         async function loadOrphanedData() {
@@ -16500,13 +16511,16 @@ function createProgramCard(program) {
                 const endpoint = window.location.hostname.includes('github.io') ?
                     'data/unallocated_data.json' : '/api/orphaned';
                 const response = await fetch(endpoint);
-                orphanedData = await response.json();
+                orphanedDataOriginal = await response.json();
                 window.orphanedDataLoaded = true;
 
-                // Update stat cards - showing only orphaned metrics
-                document.getElementById('orphaned-total').textContent = orphanedData.summary.orphaned_epics || 0;
-                document.getElementById('orphaned-capacity').textContent = Math.round(orphanedData.summary.orphaned_capacity || 0);
-                document.getElementById('orphaned-teams').textContent = orphanedData.summary.unique_teams || 0;
+                // Apply initial release filter
+                applyOrphanedReleaseFilter(currentOrphanedRelease);
+
+                // Update button states
+                document.querySelectorAll('.orphaned-release-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.release === currentOrphanedRelease);
+                });
 
                 renderOrphanedView('by-team');
             } catch (error) {
@@ -16514,6 +16528,80 @@ function createProgramCard(program) {
                 document.getElementById('orphaned-team-tbody').innerHTML =
                     '<tr><td colspan="6" style="padding: 40px; text-align: center; color: #dc2626;">Error loading orphaned epics data</td></tr>';
             }
+        }
+
+        function switchOrphanedRelease(release) {
+            currentOrphanedRelease = release;
+            localStorage.setItem('orphanedReleaseFilter', release);
+
+            // Update button states
+            document.querySelectorAll('.orphaned-release-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.release === release);
+            });
+
+            // Apply filter and re-render
+            applyOrphanedReleaseFilter(release);
+
+            // Re-render current view
+            const currentView = document.querySelector('.orphaned-view-btn.active')?.dataset.view || 'by-team';
+            renderOrphanedView(currentView);
+        }
+
+        function applyOrphanedReleaseFilter(release) {
+            if (!orphanedDataOriginal) return;
+
+            // Filter epics based on release
+            const filterEpics = (epics) => {
+                if (release === 'all') return epics;
+
+                return epics.filter(epic => {
+                    const scheduledBuild = epic.scheduled_build || '';
+                    const epicName = epic.name || '';
+
+                    if (release === '264') {
+                        // Include if scheduled_build starts with 264 OR epic name contains 264
+                        return scheduledBuild.startsWith('264') || /\b264\b/.test(epicName);
+                    } else if (release === '266') {
+                        // Include if scheduled_build starts with 266+ OR epic name contains 266+
+                        return /^(266|268|270|272)/.test(scheduledBuild) || /\b(266|268|270|272)\b/.test(epicName);
+                    }
+                    return true;
+                });
+            };
+
+            // Create filtered copy of data
+            orphanedData = {
+                ...orphanedDataOriginal,
+                epics: filterEpics(orphanedDataOriginal.epics),
+                by_team: orphanedDataOriginal.by_team.map(team => ({
+                    ...team,
+                    epics: filterEpics(team.epics),
+                    epic_count: filterEpics(team.epics).length,
+                    total_capacity: filterEpics(team.epics).reduce((sum, e) => sum + (e.story_points || 0), 0),
+                    orphaned_capacity: filterEpics(team.epics).reduce((sum, e) => sum + (e.story_points || 0), 0)
+                })).filter(team => team.epics.length > 0),
+                by_release: orphanedDataOriginal.by_release.map(rel => ({
+                    ...rel,
+                    epics: filterEpics(rel.epics),
+                    epic_count: filterEpics(rel.epics).length,
+                    total_capacity: filterEpics(rel.epics).reduce((sum, e) => sum + (e.story_points || 0), 0)
+                })).filter(rel => rel.epics.length > 0)
+            };
+
+            // Update summary stats
+            const filteredEpics = orphanedData.epics;
+            const summary = {
+                orphaned_epics: filteredEpics.length,
+                orphaned_capacity: filteredEpics.reduce((sum, e) => sum + (e.story_points || 0), 0),
+                unique_teams: new Set(filteredEpics.map(e => e.team).filter(t => t && t !== '-')).size
+            };
+
+            orphanedData.summary = summary;
+
+            // Update stat cards
+            document.getElementById('orphaned-total').textContent = summary.orphaned_epics || 0;
+            document.getElementById('orphaned-capacity').textContent = Math.round(summary.orphaned_capacity || 0);
+            document.getElementById('orphaned-teams').textContent = summary.unique_teams || 0;
         }
 
         function switchOrphanedView(viewType) {

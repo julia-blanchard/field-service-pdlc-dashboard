@@ -1,23 +1,23 @@
 {
   "total_epics_checked": 71,
-  "suggestions_found": 11,
-  "no_stories_found": 31,
+  "suggestions_found": 10,
+  "no_stories_found": 32,
   "no_majority_build": 29,
   "majority_threshold": 0.7,
   "suggestions": [
     {
-      "epic_id": "a3QEE000002D9nV2AS",
-      "epic_name": "264 SFS Frontline AI - Unified Scheduling New Pre-work Brief Flow",
-      "epic_name_key": "264 SFS Frontline AI - Unified Scheduling New Pre-work Brief Flow",
-      "team": "SFS Frontline AI",
-      "owner": "Nitasha Walia",
+      "epic_id": "a3QEE000002SA892AG",
+      "epic_name": "264 [AGX] New Cards & Enhancements",
+      "epic_name_key": "264 [AGX] New Cards & Enhancements",
+      "team": "SFS Mobile AGX",
+      "owner": "Roman Ivaniv",
       "program": "264 Field Service: Workforce Scheduling on Mobile",
-      "project": "264 Pre-Work Brief Template",
-      "suggested_build": "264",
-      "suggested_build_id": "a06EE000004rIFtYAM",
-      "matching_stories": 7,
-      "total_stories": 8,
-      "ratio": 0.88
+      "project": "264 AGX",
+      "suggested_build": "SFS.iOS.264.0",
+      "suggested_build_id": "a06EE00000ScOVqYAN",
+      "matching_stories": 33,
+      "total_stories": 37,
+      "ratio": 0.89
     },
     {
       "epic_id": "a3QEE000002Q7UY2A0",
@@ -144,20 +144,6 @@
       "matching_stories": 5,
       "total_stories": 6,
       "ratio": 0.83
-    },
-    {
-      "epic_id": "a3QEE000002V4B32AK",
-      "epic_name": "[264] Settings & Licenses: Field Service Mobile under WFS Add-On",
-      "epic_name_key": "[264] Settings & Licenses: Field Service Mobile under WFS Add-On",
-      "team": "SFS Mobile Core Experience",
-      "owner": "Sharon Adler",
-      "program": "264 Infield",
-      "project": "264 Infield",
-      "suggested_build": "264",
-      "suggested_build_id": "a06EE000004rIFtYAM",
-      "matching_stories": 18,
-      "total_stories": 20,
-      "ratio": 0.9
     }
   ]
 }

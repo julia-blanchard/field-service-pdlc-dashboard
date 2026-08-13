@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 184,
-    "teams_affected": 28,
+    "total_epics_needing_attention": 187,
+    "teams_affected": 29,
     "programs_affected": 26,
     "issue_breakdown": {
       "missing_scheduled_build": 71,
-      "missing_priority": 136,
+      "missing_priority": 139,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 106
+      "missing_planned_release": 109
     }
   },
   "epics": [
@@ -256,6 +256,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002FcAH2A0",
+      "epic_name": "[AGX GA] Conditional Visibility",
+      "epic_name_key": "[AGX GA] Conditional Visibility",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
       "epic_id": "a3QEE000001s49J2AQ",
       "epic_name": "262 [AGX Pilot] iOS - Mobile Experience",
       "epic_name_key": "262 [AGX Pilot] iOS - Mobile Experience",
@@ -270,6 +287,43 @@
       "project": "264 AGX",
       "issues": [
         "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002SA892AG",
+      "epic_name": "264 [AGX] New Cards & Enhancements",
+      "epic_name_key": "264 [AGX] New Cards & Enhancements",
+      "team": "SFS Mobile AGX",
+      "owner": "Roman Ivaniv",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Fc2D2AS",
+      "epic_name": "264 [Workforce Scheduling GA] Additional Cards",
+      "epic_name_key": "264 [Workforce Scheduling GA] Additional Cards",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
@@ -372,23 +426,6 @@
       "project": "264 Performance Priming Enhancements",
       "issues": [
         "missing_priority"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002D9nV2AS",
-      "epic_name": "264 SFS Frontline AI - Unified Scheduling New Pre-work Brief Flow",
-      "epic_name_key": "264 SFS Frontline AI - Unified Scheduling New Pre-work Brief Flow",
-      "team": "SFS Frontline AI",
-      "owner": "Nitasha Walia",
-      "health": "Completed",
-      "scheduled_build": "-",
-      "priority": "21",
-      "story_points": 0,
-      "program": "264 Field Service: Workforce Scheduling on Mobile",
-      "portfolio": "264 Field Service Mobile",
-      "project": "264 Pre-Work Brief Template",
-      "issues": [
-        "missing_scheduled_build"
       ]
     },
     {
@@ -1572,14 +1609,13 @@
       "team": "SFS Mobile Core Experience",
       "owner": "Sharon Adler",
       "health": "Completed",
-      "scheduled_build": "-",
+      "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
       "program": "264 Infield",
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Infield",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -3213,6 +3249,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002bsTJ2AY",
+      "epic_name": "[AiRouter] SageMaker Cross FI",
+      "epic_name_key": "[AiRouter] SageMaker Cross FI",
+      "team": "AIPlatform - AI Router",
+      "owner": "Mark Wang",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 2,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002at1d2AA",
       "epic_name": "PBD",
       "epic_name_key": "PBD",
@@ -3689,6 +3743,30 @@
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AIPlatform - AI Router",
+      "epic_count": 1,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002bsTJ2AY",
+          "epic_name": "[AiRouter] SageMaker Cross FI",
+          "epic_name_key": "[AiRouter] SageMaker Cross FI",
+          "team": "AIPlatform - AI Router",
+          "owner": "Mark Wang",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 2,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_scheduled_build",
             "missing_planned_release"
           ]
         }
@@ -5669,25 +5747,8 @@
     },
     {
       "name": "SFS Frontline AI",
-      "epic_count": 12,
+      "epic_count": 11,
       "epics": [
-        {
-          "epic_id": "a3QEE000002D9nV2AS",
-          "epic_name": "264 SFS Frontline AI - Unified Scheduling New Pre-work Brief Flow",
-          "epic_name_key": "264 SFS Frontline AI - Unified Scheduling New Pre-work Brief Flow",
-          "team": "SFS Frontline AI",
-          "owner": "Nitasha Walia",
-          "health": "Completed",
-          "scheduled_build": "-",
-          "priority": "21",
-          "story_points": 0,
-          "program": "264 Field Service: Workforce Scheduling on Mobile",
-          "portfolio": "264 Field Service Mobile",
-          "project": "264 Pre-Work Brief Template",
-          "issues": [
-            "missing_scheduled_build"
-          ]
-        },
         {
           "epic_id": "a3QEE000002FsAD2A0",
           "epic_name": "264 SFS Frontline AI - Agentforce Voice (Pilot Support)",
@@ -5883,8 +5944,25 @@
     },
     {
       "name": "SFS Mobile AGX",
-      "epic_count": 7,
+      "epic_count": 10,
       "epics": [
+        {
+          "epic_id": "a3QEE000002FcAH2A0",
+          "epic_name": "[AGX GA] Conditional Visibility",
+          "epic_name_key": "[AGX GA] Conditional Visibility",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
         {
           "epic_id": "a3QEE000001s49J2AQ",
           "epic_name": "262 [AGX Pilot] iOS - Mobile Experience",
@@ -5900,6 +5978,43 @@
           "project": "264 AGX",
           "issues": [
             "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002SA892AG",
+          "epic_name": "264 [AGX] New Cards & Enhancements",
+          "epic_name_key": "264 [AGX] New Cards & Enhancements",
+          "team": "SFS Mobile AGX",
+          "owner": "Roman Ivaniv",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Fc2D2AS",
+          "epic_name": "264 [Workforce Scheduling GA] Additional Cards",
+          "epic_name_key": "264 [Workforce Scheduling GA] Additional Cards",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
@@ -6257,14 +6372,13 @@
           "team": "SFS Mobile Core Experience",
           "owner": "Sharon Adler",
           "health": "Completed",
-          "scheduled_build": "-",
+          "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
           "program": "264 Infield",
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Infield",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]

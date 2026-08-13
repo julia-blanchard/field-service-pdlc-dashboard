@@ -711,8 +711,14 @@ def fetch_new_release_programs(structured_data):
                     'loc': '',
                     'path_to_green': ''
                 })
-            if not proj_epics:
-                continue
+            # Empty projects would normally be dropped as noise, but this
+            # whole function only runs for portfolios the GUS report doesn't
+            # cover yet (new FY27 pillars) -- their projects start empty on
+            # purpose, before epics get mapped in via the recommendation
+            # engine or normal planning. Dropping them here made entire
+            # programs disappear until someone manually mapped in a first
+            # epic, which is what happened to Guided Experience, Project
+            # Felix, and AMA Field App under FY27 FS Mobile.
             epic_builds = [e['scheduled_build'] for e in proj_epics if e['scheduled_build'] and e['scheduled_build'] != '-']
             prog_projects.append({
                 'name': proj['Name'],
@@ -724,8 +730,9 @@ def fetch_new_release_programs(structured_data):
                 'health_status': proj.get('Project_Health__c') or 'Unknown',
                 'epics': proj_epics
             })
-        if not prog_projects:
-            continue
+        # A program with projects but zero epics anywhere still shows up
+        # (e.g. Agentforce Mobile Adoption, 0 projects) so it's visible as a
+        # candidate for the recommendation engine, not silently dropped.
         program_health = prog.get('Program_Health__c') or 'Unknown'
         new_programs.append({
             'name': prog['Name'],

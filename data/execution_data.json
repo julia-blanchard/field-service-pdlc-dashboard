@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T13:51:14.830010",
+  "last_updated": "2026-08-13T18:06:56.145968",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -318,11 +318,28 @@
           "name": "264 AGX",
           "id": "a1kEE00000Uu5yHYAR",
           "product_owner": "",
-          "dev_lead": "Steve Thistle",
+          "dev_lead": "Will Carpenter",
           "target": null,
           "last_modified": "2026-08-13",
           "health_status": "On Track",
           "epics": [
+            {
+              "name": "[AGX GA] Conditional Visibility",
+              "id": "a3QEE000002FcAH2A0",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "-",
+              "owner": "Will Carpenter",
+              "team": "SFS Mobile AGX",
+              "scheduled_build": "264",
+              "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
+              "last_modified": "2026-08-13",
+              "loc": "\ud83d\udfe2 Above the Line",
+              "path_to_green": "-",
+              "end_date": null,
+              "t_shirt_size": null
+            },
             {
               "name": "262 [AGX Pilot] iOS - Mobile Experience",
               "id": "a3QEE000001s49J2AQ",
@@ -334,6 +351,40 @@
               "team": "SFS Mobile AGX",
               "scheduled_build": "262",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
+              "last_modified": "2026-08-13",
+              "loc": "\ud83d\udfe2 Above the Line",
+              "path_to_green": "-",
+              "end_date": null,
+              "t_shirt_size": null
+            },
+            {
+              "name": "264 [AGX] New Cards & Enhancements",
+              "id": "a3QEE000002SA892AG",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "-",
+              "owner": "Roman Ivaniv",
+              "team": "SFS Mobile AGX",
+              "scheduled_build": "-",
+              "planned_release": "-",
+              "last_modified": "2026-08-13",
+              "loc": "\ud83d\udfe2 Above the Line",
+              "path_to_green": "-",
+              "end_date": null,
+              "t_shirt_size": null
+            },
+            {
+              "name": "264 [Workforce Scheduling GA] Additional Cards",
+              "id": "a3QEE000002Fc2D2AS",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "-",
+              "owner": "Will Carpenter",
+              "team": "SFS Mobile AGX",
+              "scheduled_build": "264",
+              "planned_release": "-",
               "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
@@ -506,7 +557,7 @@
           "product_owner": "",
           "dev_lead": "Nitasha Walia",
           "target": null,
-          "last_modified": "2026-06-17",
+          "last_modified": "2026-08-13",
           "health_status": "Completed",
           "epics": [
             {
@@ -518,9 +569,9 @@
               "health_comments": "-",
               "owner": "Nitasha Walia",
               "team": "SFS Frontline AI",
-              "scheduled_build": "-",
+              "scheduled_build": "264",
               "planned_release": "264 SFS Frontline AI",
-              "last_modified": "2026-06-17",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2358,7 +2409,7 @@
               "health_comments": "08/03\r\n- Waiting on PM input for W-23062340\r\n07/22\r\n- Blocked on PM input for W-23062340\r\n07/06\r\n- In progress. ETA: FF",
               "owner": "Sri Ram Bathina",
               "team": "FSL - Asset - 360",
-              "scheduled_build": "-",
+              "scheduled_build": "264",
               "planned_release": "FSL - Asset 360 - 264",
               "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
@@ -2910,7 +2961,7 @@
           "product_owner": "",
           "dev_lead": "Sharon Adler",
           "target": null,
-          "last_modified": "2026-08-10",
+          "last_modified": "2026-08-13",
           "health_status": "On Track",
           "epics": [
             {
@@ -2922,9 +2973,9 @@
               "health_comments": "-",
               "owner": "Sharon Adler",
               "team": "SFS Mobile Core Experience",
-              "scheduled_build": "-",
+              "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-08-10",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3085,7 +3136,7 @@
           "product_owner": "Tushar Sharma",
           "dev_lead": "Vinay Bayya",
           "target": null,
-          "last_modified": "2026-08-08",
+          "last_modified": "2026-08-13",
           "health_status": "On Track",
           "epics": [
             {
@@ -3099,7 +3150,7 @@
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "264",
               "planned_release": "264 Release- SFS - WFM - Worker - Experience",
-              "last_modified": "2026-08-08",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -5940,6 +5991,88 @@
       ]
     },
     {
+      "name": "266 Onsite, Infield, Hybrid Scheduling",
+      "id": "a1fEE00000042UfYAI",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Yonit Shefer",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "266 Onsite Scheduling",
+          "id": "a1kEE00000YMBfZYAX",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-07-08",
+          "health_status": "Watch",
+          "epics": []
+        },
+        {
+          "name": "266 Infield & Onsite Hybrid",
+          "id": "a1kEE00000YMBinYAH",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-07-28",
+          "health_status": "On Track",
+          "epics": []
+        },
+        {
+          "name": "266 Infield",
+          "id": "a1kEE00000YMBkPYAX",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-02",
+          "health_status": "On Track",
+          "epics": []
+        }
+      ]
+    },
+    {
+      "name": "266 Workforce Scheduling",
+      "id": "a1fEE00000042WHYAY",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Yonit Shefer",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "266 WFS Workforce management",
+          "id": "a1kEE00000aYGf7YAG",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-07-30",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "266 WFS TBD",
+          "id": "a1kEE00000aYGgjYAG",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-02",
+          "health_status": "Not Started",
+          "epics": []
+        }
+      ]
+    },
+    {
+      "name": "266 placeholder",
+      "id": "a1fEE00000042XtYAI",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "",
+      "target_release": "",
+      "projects": []
+    },
+    {
       "name": "[266] Workforce Scheduling Trust",
       "id": "a1fEE0000004EQzYAM",
       "portfolio": "FY27 FS Workforce Scheduling",
@@ -6156,6 +6289,16 @@
           ]
         },
         {
+          "name": "S&O Transparency Pilot - Adoption and CS",
+          "id": "a1kEE00000d2cdpYAA",
+          "product_owner": "Sigal Shapira",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
           "name": "S&O Scheduling Agent - Help Agent",
           "id": "a1kEE00000d2cfRYAQ",
           "product_owner": "Niv Garber",
@@ -6344,6 +6487,16 @@
               "path_to_green": ""
             }
           ]
+        },
+        {
+          "name": "Scheduling Console - Scheduling Transparency",
+          "id": "a1kEE00000cxbQfYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-10",
+          "health_status": "Not Started",
+          "epics": []
         },
         {
           "name": "S&O Dispatcher Agent - Adoption",
@@ -6782,6 +6935,26 @@
           ]
         },
         {
+          "name": "Scheduling Console - Manual Scheduling",
+          "id": "a1kEE00000cxbP3YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "Scheduling Console - Parity",
+          "id": "a1kEE00000cxbSHYAY",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Canceled",
+          "epics": []
+        },
+        {
           "name": "Scheduling Console - Trust",
           "id": "a1kEE00000d2IGvYAM",
           "product_owner": "",
@@ -6808,6 +6981,16 @@
           ]
         }
       ]
+    },
+    {
+      "name": "S&O Customer Success",
+      "id": "a1fEE00000049JFYAY",
+      "portfolio": "FY27 FS S&O",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Irit Suliman",
+      "target_release": "",
+      "projects": []
     },
     {
       "name": "S&O Trust",
@@ -6879,6 +7062,16 @@
       "program_manager": "Irit Suliman",
       "target_release": "",
       "projects": [
+        {
+          "name": "S&O WFM Shift optimization setup",
+          "id": "a1kEE00000cyGjxYAE",
+          "product_owner": "Itay Sagiv",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-11",
+          "health_status": "Not Started",
+          "epics": []
+        },
         {
           "name": "S&O WFM New shift scheduling rules",
           "id": "a1kEE00000cyGlZYAU",
@@ -7016,6 +7209,98 @@
       ]
     },
     {
+      "name": "[266] Guided Experience",
+      "id": "a1fEE0000004AqPYAU",
+      "portfolio": "FY27 FS Mobile",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Julia Blanchard",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "Guided Experience GA Readiness",
+          "id": "a1kEE00000bG1dxYAC",
+          "product_owner": "Will Carpenter",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-04",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "Guided Experience Setup & Scale",
+          "id": "a1kEE00000bG1fZYAS",
+          "product_owner": "Will Carpenter",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-04",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "Guided Experience Enterprise Complexity",
+          "id": "a1kEE00000bG1hBYAS",
+          "product_owner": "Will Carpenter",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-04",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "Guided Experience Agentic Integration",
+          "id": "a1kEE00000bG1inYAC",
+          "product_owner": "Will Carpenter",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-04",
+          "health_status": "Not Started",
+          "epics": []
+        }
+      ]
+    },
+    {
+      "name": "[266] Project Felix",
+      "id": "a1fEE0000004AvFYAU",
+      "portfolio": "FY27 FS Mobile",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Julia Blanchard",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "Felix MVP",
+          "id": "a1kEE00000cxxRBYAY",
+          "product_owner": "Nitasha Walia",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-11",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "Felix Future Capabilities",
+          "id": "a1kEE00000cxxSnYAI",
+          "product_owner": "Nitasha Walia",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-10",
+          "health_status": "Not Started",
+          "epics": []
+        }
+      ]
+    },
+    {
+      "name": "[266] Agentforce Mobile Adoption",
+      "id": "a1fEE0000004AyTYAU",
+      "portfolio": "FY27 FS Mobile",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Julia Blanchard",
+      "target_release": "",
+      "projects": []
+    },
+    {
       "name": "[266] Mobile AI & Voice to Form",
       "id": "a1fEE0000004D9xYAE",
       "portfolio": "FY27 FS Mobile",
@@ -7064,6 +7349,93 @@
               "path_to_green": ""
             }
           ]
+        },
+        {
+          "name": "Agentforce & AI Platform",
+          "id": "a1kEE00000cwGMfYAM",
+          "product_owner": "Nitasha Walia",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": [
+            {
+              "name": "[AiRouter] SageMaker Cross FI",
+              "id": "a3QEE000002bsTJ2AY",
+              "priority": 2,
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Mark Wang",
+              "team": "AIPlatform - AI Router",
+              "scheduled_build": "-",
+              "planned_release": "",
+              "last_modified": "2026-08-13",
+              "loc": "",
+              "path_to_green": ""
+            }
+          ]
+        },
+        {
+          "name": "Mobile Experience Enhancements",
+          "id": "a1kEE00000cwGOHYA2",
+          "product_owner": "Nitasha Walia",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-08",
+          "health_status": "Not Started",
+          "epics": []
+        }
+      ]
+    },
+    {
+      "name": "[266] AMA Field App",
+      "id": "a1fEE0000004DmfYAE",
+      "portfolio": "FY27 FS Mobile",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Julia Blanchard",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "Field App Type & Persona Framework",
+          "id": "a1kEE00000cyuXhYAI",
+          "product_owner": "Kevin Ota",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-11",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "Module Extraction & Interface Contracts",
+          "id": "a1kEE00000cyuZJYAY",
+          "product_owner": "Kevin Ota",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-11",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "HiSync Integration",
+          "id": "a1kEE00000cyuavYAA",
+          "product_owner": "Kevin Ota",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-11",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "Governance & Rollout",
+          "id": "a1kEE00000cyucXYAQ",
+          "product_owner": "Kevin Ota",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-11",
+          "health_status": "Not Started",
+          "epics": []
         }
       ]
     },
@@ -7137,6 +7509,16 @@
       "program_manager": "Scott Andrus",
       "target_release": "",
       "projects": [
+        {
+          "name": "[266] SBOM (Service Bill of Materials)",
+          "id": "a1kEE00000cxqRJYAY",
+          "product_owner": "Nishant Sharma",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-10",
+          "health_status": "Not Started",
+          "epics": []
+        },
         {
           "name": "[266] Asset-Centric Dispatch View",
           "id": "a1kEE00000cxqSvYAI",

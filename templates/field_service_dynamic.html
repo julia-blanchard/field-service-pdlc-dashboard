@@ -16884,28 +16884,27 @@ function createProgramCard(program) {
             const confidenceText = topRec.confidence === 'high' ? 'High' :
                                   topRec.confidence === 'medium' ? 'Medium' : 'Low';
             const scorePercent = Math.round(topRec.score * 100);
+            const confidenceLine = `${scorePercent}% match - ${confidenceText} confidence | <strong>Program:</strong> ${topRec.program_name}`;
 
-            // Extract only the Portfolio name - strip team match, build tags, and keyword rationale
-            const portfolioMatch = topRec.reasoning.match(/Portfolio:\s*([^•]+?)\s*(?:•|$)/);
-            const portfolioName = portfolioMatch ? portfolioMatch[1].trim() : (topRec.program_portfolio || '');
-            const confidenceLine = `${scorePercent}% match - ${confidenceText} confidence${portfolioName ? ' | <strong>Portfolio:</strong> ' + portfolioName : ''}`;
+            const titleRow = topRec.project_name ? `
+                            ${confidenceIcon} <span style="font-weight: 600;">Recommended Project:</span>
+                            <a href="https://gus.my.salesforce.com/${topRec.project_id}" target="_blank" style="color: #0176D3; text-decoration: none; font-weight: 600;">
+                                ${topRec.project_name}
+                            </a>` : `
+                            ${confidenceIcon} <span style="font-weight: 600;">Recommended Program:</span>
+                            <a href="https://gus.my.salesforce.com/${topRec.program_id}" target="_blank" style="color: #0176D3; text-decoration: none; font-weight: 600;">
+                                ${topRec.program_name}
+                            </a>`;
 
             return `
                 <div data-epic-id="${epic.id}" style="padding: 6px 10px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 4px; font-size: 11px; width: 510px; min-width: 510px; max-width: 510px; box-sizing: border-box;">
                     <div style="display: flex; flex-direction: column;">
                         <div style="margin-bottom: 3px; font-size: 11px; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                            ${confidenceIcon} <span style="font-weight: 600;">Recommended Program:</span>
-                            <a href="https://gus.my.salesforce.com/${topRec.program_id}" target="_blank" style="color: #0176D3; text-decoration: none; font-weight: 600;">
-                                ${topRec.program_name}
-                            </a>
+                            ${titleRow}
                         </div>
                         <div style="color: #64748b; font-size: 11px; white-space: normal; overflow-wrap: break-word;">
                             ${confidenceLine}
                         </div>
-                        ${topRec.project_name ? `
-                        <div style="color: #64748b; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;">
-                            → Project: <strong>${topRec.project_name}</strong>
-                        </div>` : ''}
                         <div style="display: flex; justify-content: flex-start; width: auto; gap: 6px; margin-top: 6px; flex-wrap: nowrap;">
                             <button onclick="mapEpicToProgram('${epic.id}', '${topRec.program_id}', '${topRec.program_name.replace(/'/g, "\\'")}', '${topRec.project_id || ''}', event)"
                                     style="background: #0176D3; color: white; border: none; padding: 3px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; font-weight: 600; white-space: nowrap;">

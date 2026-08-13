@@ -702,7 +702,7 @@ def index():
         p.get('portfolio', '')
         for p in all_program_sources
         if p.get('portfolio')
-        and ('Field Service' in p.get('portfolio', '') or p.get('portfolio', '') == 'FY27 SC M4 UWM')
+        and ('Field Service' in p.get('portfolio', '') or p.get('portfolio', '').startswith('FY27 FS') or p.get('portfolio', '') == 'FY27 SC M4 UWM')
         and not any(old_release in p.get('portfolio', '') for old_release in ['262', '260', '258', '256'])
     ))
 

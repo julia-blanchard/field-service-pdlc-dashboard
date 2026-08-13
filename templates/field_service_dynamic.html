@@ -16849,6 +16849,21 @@ function createProgramCard(program) {
             return lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated;
         }
 
+        function truncateProjectName(name, maxLen = 50) {
+            if (!name || name.length <= maxLen) return name;
+            const truncated = name.slice(0, maxLen);
+
+            // Cut before an unclosed "(" rather than mid-parenthetical
+            const openIdx = truncated.lastIndexOf('(');
+            const closeIdx = truncated.lastIndexOf(')');
+            if (openIdx > closeIdx) {
+                return truncated.slice(0, openIdx).trim();
+            }
+
+            const lastSpace = truncated.lastIndexOf(' ');
+            return lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated;
+        }
+
         function sortEpicsWithFutureReleaseLast(epics) {
             return epics.slice().sort((a, b) => {
                 const aFuture = isFutureReleaseEpic(a) ? 1 : 0;
@@ -16888,8 +16903,8 @@ function createProgramCard(program) {
 
             const titleRow = topRec.project_name ? `
                             ${confidenceIcon} <span style="font-weight: 600;">Recommended Project:</span>
-                            <a href="https://gus.my.salesforce.com/${topRec.project_id}" target="_blank" style="color: #0176D3; text-decoration: none; font-weight: 600;">
-                                ${topRec.project_name}
+                            <a href="https://gus.my.salesforce.com/${topRec.project_id}" target="_blank" title="${topRec.project_name}" style="color: #0176D3; text-decoration: none; font-weight: 600;">
+                                ${truncateProjectName(topRec.project_name)}
                             </a>` : `
                             ${confidenceIcon} <span style="font-weight: 600;">Recommended Program:</span>
                             <a href="https://gus.my.salesforce.com/${topRec.program_id}" target="_blank" style="color: #0176D3; text-decoration: none; font-weight: 600;">

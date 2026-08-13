@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12T11:01:40.343842",
+  "last_updated": "2026-08-13T13:47:11.414032",
   "teams": [
     {
       "name": "FSL - Asset - 360",
@@ -220,7 +220,8 @@
       "non_filled": 0,
       "total": 6,
       "portfolios": [
-        "264 Field Service Scheduling & Optimization"
+        "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O"
       ],
       "engineering_manager": "Avi Inbar",
       "product_owner": "Niv Garber",
@@ -337,7 +338,7 @@
       "non_filled": 0,
       "total": 7,
       "portfolios": [
-        "264 Field Service Scheduling & Optimization"
+        "FY27 FS S&O"
       ],
       "engineering_manager": "Lilach Talbi",
       "product_owner": "Yulia Libster",
@@ -390,6 +391,7 @@
       "total": 10,
       "portfolios": [
         "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "FY27 SC M4 UWM"
       ],
       "engineering_manager": "Eviatar Yosef",
@@ -443,7 +445,8 @@
       "total": 8,
       "portfolios": [
         "264 Field Service Scheduling & Optimization",
-        "264 Field Service Workforce Scheduling"
+        "264 Field Service Workforce Scheduling",
+        "FY27 FS S&O"
       ],
       "engineering_manager": "Yonatan Bar-Yehuda",
       "product_owner": "Dori Nahmias",
@@ -676,6 +679,7 @@
       "total": 12,
       "portfolios": [
         "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "FY27 SC M4 UWM"
       ],
       "engineering_manager": "Mor Cohen",
@@ -781,7 +785,8 @@
       "non_filled": 0,
       "total": 11,
       "portfolios": [
-        "264 Field Service Workforce Scheduling"
+        "264 Field Service Workforce Scheduling",
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Kritica Mantri",
       "product_owner": "Nishant Sharma",
@@ -833,7 +838,8 @@
       "non_filled": 0,
       "total": 7,
       "portfolios": [
-        "264 Field Service Mobile"
+        "264 Field Service Mobile",
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Paul Chan",
       "product_owner": "Nitasha Walia",

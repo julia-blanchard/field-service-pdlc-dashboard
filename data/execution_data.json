@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T09:28:27.716449",
+  "last_updated": "2026-08-13T13:51:14.830010",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -103,7 +103,7 @@
               "team": "SFS Setup Experience",
               "scheduled_build": "-",
               "planned_release": "264",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -120,7 +120,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "-",
               "planned_release": "-",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -130,9 +130,9 @@
               "name": "Headless 360 - Mobile Experience - Data Capture & Pre Work Brief",
               "id": "a3QEE000002WtbJ2AS",
               "priority": "1",
-              "health": "Not Started",
-              "health_status": "Not Started",
-              "health_comments": "-",
+              "health": "On Track",
+              "health_status": "On Track",
+              "health_comments": "Pre-work brief, Data Capture and Mobile Branding skills are being onboarded on Codey.",
               "owner": "Kara Carreri",
               "team": "SFS Mobile Services",
               "scheduled_build": "-",
@@ -147,14 +147,14 @@
               "name": "Headless 360 Mobile Experience - Mobile App Config",
               "id": "a3QEE000002WtY52AK",
               "priority": "1",
-              "health": "Not Started",
-              "health_status": "Not Started",
+              "health": "On Track",
+              "health_status": "On Track",
               "health_comments": "-",
               "owner": "Kara Carreri",
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "-",
               "planned_release": "264",
-              "last_modified": "2026-07-16",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -227,7 +227,7 @@
               "team": "SFS Quality Enablement",
               "scheduled_build": "-",
               "planned_release": "264 SFS Quality Enablement",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -351,7 +351,7 @@
               "team": "SFS Mobile AGX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -475,7 +475,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile Services - Unified Scheduling, Performance Priming",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -565,7 +565,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "264 SFS Mobile Assets Planned release",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -599,7 +599,7 @@
               "team": "SFS Mobile AGX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -706,7 +706,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "264 - SFS Mobile Core Experience (MCX)",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -886,40 +886,6 @@
               "path_to_green": "-",
               "end_date": null,
               "t_shirt_size": null
-            },
-            {
-              "name": "266 SFS Frontline AI - Image to Form (AI)",
-              "id": "a3QEE000002CjeX2AS",
-              "priority": "105",
-              "health": "Not Started",
-              "health_status": "Not Started",
-              "health_comments": "-",
-              "owner": "Nitasha Walia",
-              "team": "SFS Frontline AI",
-              "scheduled_build": "-",
-              "planned_release": "-",
-              "last_modified": "2026-07-14",
-              "loc": "\ud83d\udd34 Below the Line",
-              "path_to_green": "-",
-              "end_date": null,
-              "t_shirt_size": null
-            },
-            {
-              "name": "266 SFS Frontline AI - Voice to Form (Traceability)",
-              "id": "a3QEE000002Cjg92AC",
-              "priority": "110",
-              "health": "Unknown",
-              "health_status": "On Hold",
-              "health_comments": "-",
-              "owner": "Nitasha Walia",
-              "team": "SFS Frontline AI",
-              "scheduled_build": "-",
-              "planned_release": "264 SFS Frontline AI",
-              "last_modified": "2026-07-14",
-              "loc": "\ud83d\udd34 Below the Line",
-              "path_to_green": "-",
-              "end_date": null,
-              "t_shirt_size": null
             }
           ]
         }
@@ -971,7 +937,7 @@
               "team": "SFS Mobile Comms and Search",
               "scheduled_build": "-",
               "planned_release": "264 - Comms and Search",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1179,7 +1145,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "264",
               "planned_release": "SFS Resource 264 FSL - Foundation - Corecodiles",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2189,7 +2155,7 @@
           "product_owner": "",
           "dev_lead": "Avi Inbar",
           "target": null,
-          "last_modified": "2026-08-12",
+          "last_modified": "2026-08-13",
           "health_status": "On Track",
           "epics": [
             {
@@ -2203,7 +2169,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "262.13",
               "planned_release": "SFS Resource 264 FSL - Foundation - Corecodiles",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2394,7 +2360,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3094,7 +3060,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3286,7 +3252,7 @@
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "264",
               "planned_release": "264 Release- SFS - WFM - Worker - Experience",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-",
               "end_date": null,
@@ -3433,7 +3399,7 @@
               "team": "FSL - Operations - Intelligence",
               "scheduled_build": "266",
               "planned_release": "-",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3478,7 +3444,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264.4",
               "planned_release": "-",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3529,7 +3495,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3682,7 +3648,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3925,7 +3891,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "264",
               "planned_release": "264 Optimization Engineering - Engine Scrum Team",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe1  Stretch Goal",
               "path_to_green": "-",
               "end_date": null,
@@ -4479,7 +4445,7 @@
               "team": "Team-WFM-ML-Foundations",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -4736,7 +4702,7 @@
           "product_owner": "Mike Cliffe",
           "dev_lead": "Bata Chadraa",
           "target": null,
-          "last_modified": "2026-08-12",
+          "last_modified": "2026-08-13",
           "health_status": "On Track",
           "epics": [
             {
@@ -4750,7 +4716,7 @@
               "team": "Team-WFM-Foundation",
               "scheduled_build": "266",
               "planned_release": "SC 266 Release - Team-WFM-Foundation",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-11-19",
@@ -4801,7 +4767,7 @@
               "team": "Team-WFM-Foundation",
               "scheduled_build": "266",
               "planned_release": "SC 266 Release - Team-WFM-Foundation",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-11-19",
@@ -5974,6 +5940,67 @@
       ]
     },
     {
+      "name": "[266] Workforce Scheduling Trust",
+      "id": "a1fEE0000004EQzYAM",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "[266] Workforce Scheduling Trust: Application Production Support",
+          "id": "a1kEE00000d2fC8YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Workforce Scheduling Trust: Compliance",
+          "id": "a1kEE00000d2fC9YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Workforce Scheduling Trust: Developer Experience & DoD Debt",
+          "id": "a1kEE00000d2fCAYAY",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Workforce Scheduling Trust: Infrastructure / DevOps Support",
+          "id": "a1kEE00000d2fCBYAY",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Workforce Scheduling Trust: Security",
+          "id": "a1kEE00000d2fCCYAY",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        }
+      ]
+    },
+    {
       "name": "S&O Autonomous Scheduling & Dispatch",
       "id": "a1fEE00000049EPYAY",
       "portfolio": "FY27 FS S&O",
@@ -6476,7 +6503,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.3",
               "planned_release": "",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "",
               "path_to_green": ""
             }
@@ -6655,7 +6682,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-08-12",
+              "last_modified": "2026-08-13",
               "loc": "",
               "path_to_green": ""
             }
@@ -6779,6 +6806,67 @@
               "path_to_green": ""
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "S&O Trust",
+      "id": "a1fEE00000049KrYAI",
+      "portfolio": "FY27 FS S&O",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "Irit Suliman",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "[266] S&O Trust: Application Production Support",
+          "id": "a1kEE00000d2fC3YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] S&O Trust: Compliance",
+          "id": "a1kEE00000d2fC4YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] S&O Trust: Developer Experience & DoD Debt",
+          "id": "a1kEE00000d2fC5YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] S&O Trust: Infrastructure / DevOps Support",
+          "id": "a1kEE00000d2fC6YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] S&O Trust: Security",
+          "id": "a1kEE00000d2fC7YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
         }
       ]
     },
@@ -6928,6 +7016,119 @@
       ]
     },
     {
+      "name": "[266] Mobile AI & Voice to Form",
+      "id": "a1fEE0000004D9xYAE",
+      "portfolio": "FY27 FS Mobile",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "Voice to Form Evolution",
+          "id": "a1kEE00000cwGL3YAM",
+          "product_owner": "Nitasha Walia",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": [
+            {
+              "name": "266 SFS Frontline AI - Image to Form (AI)",
+              "id": "a3QEE000002CjeX2AS",
+              "priority": 105,
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Nitasha Walia",
+              "team": "SFS Frontline AI",
+              "scheduled_build": "-",
+              "planned_release": "",
+              "last_modified": "2026-08-13",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "266 SFS Frontline AI - Voice to Form (Traceability)",
+              "id": "a3QEE000002Cjg92AC",
+              "priority": 110,
+              "health": "Unknown",
+              "health_status": "On Hold",
+              "health_comments": "",
+              "owner": "Nitasha Walia",
+              "team": "SFS Frontline AI",
+              "scheduled_build": "-",
+              "planned_release": "",
+              "last_modified": "2026-08-13",
+              "loc": "",
+              "path_to_green": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "[266] Mobile Trust",
+      "id": "a1fEE0000004ENlYAM",
+      "portfolio": "FY27 FS Mobile",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "[266] Mobile Trust: Application Production Support",
+          "id": "a1kEE00000d2fByYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Mobile Trust: Compliance",
+          "id": "a1kEE00000d2fBzYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "id": "a1kEE00000d2fC0YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Mobile Trust: Infrastructure / DevOps Support",
+          "id": "a1kEE00000d2fC1YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Mobile Trust: Security",
+          "id": "a1kEE00000d2fC2YAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        }
+      ]
+    },
+    {
       "name": "[266] Assets",
       "id": "a1fEE0000004DJdYAM",
       "portfolio": "FY27 FS Foundations",
@@ -6991,6 +7192,67 @@
               "path_to_green": ""
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "[266] Foundations Trust",
+      "id": "a1fEE0000004EPNYA2",
+      "portfolio": "FY27 FS Foundations",
+      "health": "Unknown",
+      "health_status": "Unknown",
+      "program_manager": "",
+      "target_release": "",
+      "projects": [
+        {
+          "name": "[266] Foundations Trust: Application Production Support",
+          "id": "a1kEE00000d2fBtYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Foundations Trust: Compliance",
+          "id": "a1kEE00000d2fBuYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Foundations Trust: Developer Experience & DoD Debt",
+          "id": "a1kEE00000d2fBvYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Foundations Trust: Infrastructure / DevOps Support",
+          "id": "a1kEE00000d2fBwYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
+        },
+        {
+          "name": "[266] Foundations Trust: Security",
+          "id": "a1kEE00000d2fBxYAI",
+          "product_owner": "",
+          "dev_lead": "",
+          "target": "",
+          "last_modified": "2026-08-13",
+          "health_status": "Not Started",
+          "epics": []
         }
       ]
     }

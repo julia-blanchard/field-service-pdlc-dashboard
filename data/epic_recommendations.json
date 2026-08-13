@@ -1168,6 +1168,57 @@
         "project_id": "a1kEE00000XOrjJYAT",
         "project_name": "[264] SFS Schedule Management",
         "project_score": 0.586
+      },
+      {
+        "program_id": "a1fEE0000004EPNYA2",
+        "program_name": "[266] Foundations Trust",
+        "program_portfolio": "FY27 FS Foundations",
+        "score": 0.235,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.45,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 266 alignment",
+        "project_id": "a1kEE00000d2fBxYAI",
+        "project_name": "[266] Foundations Trust: Security",
+        "project_score": 0.23
+      },
+      {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.232,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.44,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 266 alignment",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.227
+      },
+      {
+        "program_id": "a1fEE0000004EQzYAM",
+        "program_name": "[266] Workforce Scheduling Trust",
+        "program_portfolio": "FY27 FS Workforce Scheduling",
+        "score": 0.209,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.36,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 266 alignment",
+        "project_id": "a1kEE00000d2fCCYAY",
+        "project_name": "[266] Workforce Scheduling Trust: Security",
+        "project_score": 0.209
       }
     ],
     "a3QEE000002GKkn2AG": [
@@ -1226,18 +1277,18 @@
         "program_id": "a1fEE00000049G1YAI",
         "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
         "program_portfolio": "FY27 FS S&O",
-        "score": 0.418,
+        "score": 0.618,
         "confidence": "medium",
         "components": {
           "team": 1.0,
           "keyword": 0.06,
-          "portfolio": 0.0,
+          "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Team match: FSL - Foundation - Corecodiles",
+        "reasoning": "Team match: FSL - Foundation - Corecodiles \u2022 Portfolio: FY27 FS S&O",
         "project_id": "a1kEE00000TnoEHYAZ",
         "project_name": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
-        "project_score": 0.288
+        "project_score": 0.388
       },
       {
         "program_id": "a1fEE00000036bxYAA",
@@ -1308,6 +1359,23 @@
         "project_id": "a1kEE00000Zs7BdYAJ",
         "project_name": "[264] Field Service: Headless Steel Thread Core and Mobile",
         "project_score": 0.134
+      },
+      {
+        "program_id": "a1fEE0000004EPNYA2",
+        "program_name": "[266] Foundations Trust",
+        "program_portfolio": "FY27 FS Foundations",
+        "score": 0.216,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.39,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 266 alignment",
+        "project_id": "a1kEE00000d2fBxYAI",
+        "project_name": "[266] Foundations Trust: Security",
+        "project_score": 0.217
       },
       {
         "program_id": "a1fEE00000042T3YAI",
@@ -1395,6 +1463,23 @@
         "project_id": "a1kEE00000YMBdxYAH",
         "project_name": "266 Operations Console",
         "project_score": 0.244
+      },
+      {
+        "program_id": "a1fEE0000004EPNYA2",
+        "program_name": "[266] Foundations Trust",
+        "program_portfolio": "FY27 FS Foundations",
+        "score": 0.224,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.41,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 266 alignment",
+        "project_id": "a1kEE00000d2fBxYAI",
+        "project_name": "[266] Foundations Trust: Security",
+        "project_score": 0.223
       }
     ],
     "a3QEE000001oayz2AA": [
@@ -1718,86 +1803,86 @@
         "program_id": "a1fEE00000049HdYAI",
         "program_name": "S&O Scheduling Console Adoption",
         "program_portfolio": "FY27 FS S&O",
-        "score": 0.508,
-        "confidence": "medium",
+        "score": 0.708,
+        "confidence": "high",
         "components": {
           "team": 1.0,
           "keyword": 0.36,
-          "portfolio": 0.0,
+          "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Team match: FSL - Resource - Dispatch Console",
+        "reasoning": "Team match: FSL - Resource - Dispatch Console \u2022 Portfolio: FY27 FS S&O",
         "project_id": "a1kEE00000TnnmrYAB",
         "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-        "project_score": 0.615
+        "project_score": 0.715
+      },
+      {
+        "program_id": "a1fEE00000049EPYAY",
+        "program_name": "S&O Autonomous Scheduling & Dispatch",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.265,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.22,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2d21YAA",
+        "project_name": "S&O Scheduling Agent HDX",
+        "project_score": 0.175
+      },
+      {
+        "program_id": "a1fEE00000049G1YAI",
+        "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.261,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.2,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnoEHYAZ",
+        "project_name": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
+        "project_score": 0.302
       },
       {
         "program_id": "a1fEE00000036TtYAI",
         "program_name": "FS 264: S&O: The New Scheduling Console",
         "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.435,
-        "confidence": "medium",
+        "score": 0.235,
+        "confidence": "low",
         "components": {
           "team": 0.0,
           "keyword": 0.45,
-          "portfolio": 1.0,
+          "portfolio": 0.0,
           "build": 1.0
         },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
+        "reasoning": "Build 264 alignment",
         "project_id": "a1kEE00000Xak4XYAR",
         "project_name": "FS 264: S&O: Custom Actions",
-        "project_score": 0.258
+        "project_score": 0.158
       },
       {
-        "program_id": "a1fEE00000036VVYAY",
-        "program_name": "FS 264: S&O: Agentic S&O",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.362,
+        "program_id": "a1fEE0000004DUvYAM",
+        "program_name": "S&O Frontline Workforce Management",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.232,
         "confidence": "low",
         "components": {
           "team": 0.0,
-          "keyword": 0.2,
+          "keyword": 0.11,
           "portfolio": 1.0,
-          "build": 1.0
+          "build": 0.0
         },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000TnoB3YAJ",
-        "project_name": "FS 264: S&O: Agentforce Scheduling - Unified Experience",
-        "project_score": 0.309
-      },
-      {
-        "program_id": "a1fEE0000003hmnYAA",
-        "program_name": "FS 264: S&O Trust",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.36,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.2,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000X4FNFYA3",
-        "project_name": "FS 264: S&O Trust: Accessibility, Quality and Performance",
-        "project_score": 0.271
-      },
-      {
-        "program_id": "a1fEE00000036bxYAA",
-        "program_name": "FS 264: S&O: S&O Customer Success",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.357,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.19,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000TnoFtYAJ",
-        "project_name": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-        "project_score": 0.253
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000cyGlZYAU",
+        "project_name": "S&O WFM New shift scheduling rules",
+        "project_score": 0.164
       }
     ],
     "a3QEE000002QhzR2AS": [
@@ -1805,335 +1890,74 @@
         "program_id": "a1fEE00000049HdYAI",
         "program_name": "S&O Scheduling Console Adoption",
         "program_portfolio": "FY27 FS S&O",
-        "score": 0.424,
+        "score": 0.624,
         "confidence": "medium",
         "components": {
           "team": 1.0,
           "keyword": 0.08,
-          "portfolio": 0.0,
+          "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Team match: FSL - Resource - Dispatch Console",
+        "reasoning": "Team match: FSL - Resource - Dispatch Console \u2022 Portfolio: FY27 FS S&O",
         "project_id": "a1kEE00000TnnmrYAB",
         "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-        "project_score": 0.505
+        "project_score": 0.605
       },
       {
-        "program_id": "a1fEE00000036VVYAY",
-        "program_name": "FS 264: S&O: Agentic S&O",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.264,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.21,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000TnoB3YAJ",
-        "project_name": "FS 264: S&O: Agentforce Scheduling - Unified Experience",
-        "project_score": 0.204
-      },
-      {
-        "program_id": "a1fEE0000003hmnYAA",
-        "program_name": "FS 264: S&O Trust",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.262,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.21,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000X4FIPYA3",
-        "project_name": "FS 264: S&O Trust: Observability",
-        "project_score": 0.168
-      },
-      {
-        "program_id": "a1fEE00000036aLYAQ",
-        "program_name": "FS 264: S&O: Workforce Labor Optimization",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.256,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.19,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000TnoUPYAZ",
-        "project_name": "FS 264: S&O: Max hours rule",
-        "project_score": 0.16
-      },
-      {
-        "program_id": "a1fEE00000036bxYAA",
-        "program_name": "FS 264: S&O: S&O Customer Success",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.253,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.18,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000TnoFtYAJ",
-        "project_name": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-        "project_score": 0.159
-      }
-    ],
-    "a3QEE000002Mran2AC": [
-      {
-        "program_id": "a1fEE00000049HdYAI",
-        "program_name": "S&O Scheduling Console Adoption",
+        "program_id": "a1fEE00000049G1YAI",
+        "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
         "program_portfolio": "FY27 FS S&O",
-        "score": 0.472,
-        "confidence": "medium",
-        "components": {
-          "team": 1.0,
-          "keyword": 0.24,
-          "portfolio": 0.0,
-          "build": 0.0
-        },
-        "reasoning": "Team match: FSL - Resource - Dispatch Console",
-        "project_id": "a1kEE00000TnnmrYAB",
-        "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-        "project_score": 0.596
-      },
-      {
-        "program_id": "a1fEE0000003hmnYAA",
-        "program_name": "FS 264: S&O Trust",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.442,
-        "confidence": "medium",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.47,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000X4FIPYA3",
-        "project_name": "FS 264: S&O Trust: Observability",
-        "project_score": 0.352
-      },
-      {
-        "program_id": "a1fEE00000036TtYAI",
-        "program_name": "FS 264: S&O: The New Scheduling Console",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.414,
-        "confidence": "medium",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.38,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000Xak4XYAR",
-        "project_name": "FS 264: S&O: Custom Actions",
-        "project_score": 0.286
-      },
-      {
-        "program_id": "a1fEE00000036bxYAA",
-        "program_name": "FS 264: S&O: S&O Customer Success",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.373,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.24,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000TnoFtYAJ",
-        "project_name": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-        "project_score": 0.274
-      },
-      {
-        "program_id": "a1fEE00000036VVYAY",
-        "program_name": "FS 264: S&O: Agentic S&O",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.372,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.24,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000Tno4bYAB",
-        "project_name": "FS 264: S&O: [Trust] AF Scripts Outreach",
-        "project_score": 0.33
-      }
-    ],
-    "a3QEE000002TAZ72AO": [
-      {
-        "program_id": "a1fEE00000049HdYAI",
-        "program_name": "S&O Scheduling Console Adoption",
-        "program_portfolio": "FY27 FS S&O",
-        "score": 0.521,
-        "confidence": "medium",
-        "components": {
-          "team": 1.0,
-          "keyword": 0.4,
-          "portfolio": 0.0,
-          "build": 0.0
-        },
-        "reasoning": "Team match: FSL - Resource - Dispatch Console",
-        "project_id": "a1kEE00000TnnmrYAB",
-        "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-        "project_score": 0.609
-      },
-      {
-        "program_id": "a1fEE00000036TtYAI",
-        "program_name": "FS 264: S&O: The New Scheduling Console",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.439,
-        "confidence": "medium",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.46,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264.10 alignment",
-        "project_id": "a1kEE00000Tnny9YAB",
-        "project_name": "FS 264: S&O: Run RSO as Simulation - Service only",
-        "project_score": 0.409
-      },
-      {
-        "program_id": "a1fEE00000036VVYAY",
-        "program_name": "FS 264: S&O: Agentic S&O",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.369,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.23,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264.10 alignment",
-        "project_id": "a1kEE00000TnoCfYAJ",
-        "project_name": "FS 264: S&O: Agentforce Scheduling - Day of service notification",
-        "project_score": 0.306
-      },
-      {
-        "program_id": "a1fEE0000003hmnYAA",
-        "program_name": "FS 264: S&O Trust",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.367,
+        "score": 0.267,
         "confidence": "low",
         "components": {
           "team": 0.0,
           "keyword": 0.22,
           "portfolio": 1.0,
-          "build": 1.0
+          "build": 0.0
         },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264.10 alignment",
-        "project_id": "a1kEE00000X4FDZYA3",
-        "project_name": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
-        "project_score": 0.266
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnoEHYAZ",
+        "project_name": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
+        "project_score": 0.162
       },
       {
-        "program_id": "a1fEE00000036aLYAQ",
-        "program_name": "FS 264: S&O: Workforce Labor Optimization",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.361,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.2,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization \u2022 Build 264.10 alignment",
-        "project_id": "a1kEE00000TnoUPYAZ",
-        "project_name": "FS 264: S&O: Max hours rule",
-        "project_score": 0.265
-      }
-    ],
-    "a3QEE000000FyDZ2A0": [
-      {
-        "program_id": "a1fEE00000049HdYAI",
-        "program_name": "S&O Scheduling Console Adoption",
+        "program_id": "a1fEE00000049EPYAY",
+        "program_name": "S&O Autonomous Scheduling & Dispatch",
         "program_portfolio": "FY27 FS S&O",
-        "score": 0.488,
-        "confidence": "medium",
-        "components": {
-          "team": 1.0,
-          "keyword": 0.29,
-          "portfolio": 0.0,
-          "build": 0.0
-        },
-        "reasoning": "Team match: FSL - Resource - Dispatch Console",
-        "project_id": "a1kEE00000TnnmrYAB",
-        "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-        "project_score": 0.47
-      },
-      {
-        "program_id": "a1fEE00000036TtYAI",
-        "program_name": "FS 264: S&O: The New Scheduling Console",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.269,
+        "score": 0.25,
         "confidence": "low",
         "components": {
           "team": 0.0,
-          "keyword": 0.23,
+          "keyword": 0.17,
           "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000Tnny9YAB",
-        "project_name": "FS 264: S&O: Run RSO as Simulation - Service only",
-        "project_score": 0.126
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2ccDYAQ",
+        "project_name": "S&O Workforce Scheduling Agent - Parity",
+        "project_score": 0.135
       },
       {
-        "program_id": "a1fEE00000036bxYAA",
-        "program_name": "FS 264: S&O: S&O Customer Success",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.219,
+        "program_id": "a1fEE0000004DUvYAM",
+        "program_name": "S&O Frontline Workforce Management",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.223,
         "confidence": "low",
         "components": {
           "team": 0.0,
-          "keyword": 0.06,
+          "keyword": 0.08,
           "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000TnoFtYAJ",
-        "project_name": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-        "project_score": 0.117
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000cyGonYAE",
+        "project_name": "S&O WFM Worker experience",
+        "project_score": 0.172
       },
       {
-        "program_id": "a1fEE00000036VVYAY",
-        "program_name": "FS 264: S&O: Agentic S&O",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.215,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.05,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000Tno6DYAR",
-        "project_name": "FS 264: S&O: Agentforce Setup (Outbound)",
-        "project_score": 0.127
-      },
-      {
-        "program_id": "a1fEE00000036aLYAQ",
-        "program_name": "FS 264: S&O: Workforce Labor Optimization",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
+        "program_id": "a1fEE00000049KrYAI",
+        "program_name": "S&O Trust",
+        "program_portfolio": "FY27 FS S&O",
         "score": 0.214,
         "confidence": "low",
         "components": {
@@ -2142,10 +1966,271 @@
           "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000TnoUPYAZ",
-        "project_name": "FS 264: S&O: Max hours rule",
-        "project_score": 0.125
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2fC5YAI",
+        "project_name": "[266] S&O Trust: Developer Experience & DoD Debt",
+        "project_score": 0.173
+      }
+    ],
+    "a3QEE000002Mran2AC": [
+      {
+        "program_id": "a1fEE00000049HdYAI",
+        "program_name": "S&O Scheduling Console Adoption",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.672,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.24,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: FSL - Resource - Dispatch Console \u2022 Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnnmrYAB",
+        "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
+        "project_score": 0.696
+      },
+      {
+        "program_id": "a1fEE00000049KrYAI",
+        "program_name": "S&O Trust",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.281,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.27,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2fC4YAI",
+        "project_name": "[266] S&O Trust: Compliance",
+        "project_score": 0.193
+      },
+      {
+        "program_id": "a1fEE00000049G1YAI",
+        "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.272,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.24,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnoEHYAZ",
+        "project_name": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
+        "project_score": 0.26
+      },
+      {
+        "program_id": "a1fEE0000003hmnYAA",
+        "program_name": "FS 264: S&O Trust",
+        "program_portfolio": "264 Field Service Scheduling & Optimization",
+        "score": 0.242,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.47,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 264 alignment",
+        "project_id": "a1kEE00000X4FIPYA3",
+        "project_name": "FS 264: S&O Trust: Observability",
+        "project_score": 0.252
+      },
+      {
+        "program_id": "a1fEE00000049EPYAY",
+        "program_name": "S&O Autonomous Scheduling & Dispatch",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.232,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.11,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2cfRYAQ",
+        "project_name": "S&O Scheduling Agent - Help Agent",
+        "project_score": 0.134
+      }
+    ],
+    "a3QEE000002TAZ72AO": [
+      {
+        "program_id": "a1fEE00000049HdYAI",
+        "program_name": "S&O Scheduling Console Adoption",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.721,
+        "confidence": "high",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.4,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: FSL - Resource - Dispatch Console \u2022 Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnnmrYAB",
+        "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
+        "project_score": 0.709
+      },
+      {
+        "program_id": "a1fEE00000049EPYAY",
+        "program_name": "S&O Autonomous Scheduling & Dispatch",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.266,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.22,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2cfRYAQ",
+        "project_name": "S&O Scheduling Agent - Help Agent",
+        "project_score": 0.184
+      },
+      {
+        "program_id": "a1fEE00000049G1YAI",
+        "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.253,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.18,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnoEHYAZ",
+        "project_name": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
+        "project_score": 0.298
+      },
+      {
+        "program_id": "a1fEE00000036TtYAI",
+        "program_name": "FS 264: S&O: The New Scheduling Console",
+        "program_portfolio": "264 Field Service Scheduling & Optimization",
+        "score": 0.239,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.46,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 264.10 alignment",
+        "project_id": "a1kEE00000Tnny9YAB",
+        "project_name": "FS 264: S&O: Run RSO as Simulation - Service only",
+        "project_score": 0.309
+      },
+      {
+        "program_id": "a1fEE0000004DUvYAM",
+        "program_name": "S&O Frontline Workforce Management",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.227,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.09,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000cyGlZYAU",
+        "project_name": "S&O WFM New shift scheduling rules",
+        "project_score": 0.166
+      }
+    ],
+    "a3QEE000000FyDZ2A0": [
+      {
+        "program_id": "a1fEE00000049HdYAI",
+        "program_name": "S&O Scheduling Console Adoption",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.688,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.29,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: FSL - Resource - Dispatch Console \u2022 Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnnmrYAB",
+        "project_name": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
+        "project_score": 0.57
+      },
+      {
+        "program_id": "a1fEE00000049EPYAY",
+        "program_name": "S&O Autonomous Scheduling & Dispatch",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.266,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.22,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2ch3YAA",
+        "project_name": "S&O Scheduling Agent on NGA",
+        "project_score": 0.133
+      },
+      {
+        "program_id": "a1fEE00000049G1YAI",
+        "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.234,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.11,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2bugYAA",
+        "project_name": "S&O Dispatcher Agent - Adoption",
+        "project_score": 0.142
+      },
+      {
+        "program_id": "a1fEE0000004DUvYAM",
+        "program_name": "S&O Frontline Workforce Management",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.228,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.09,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000cyhiXYAQ",
+        "project_name": "S&O WFM Min duration of consecutive productive activity",
+        "project_score": 0.132
+      },
+      {
+        "program_id": "a1fEE00000049KrYAI",
+        "program_name": "S&O Trust",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.216,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.05,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000d2fC4YAI",
+        "project_name": "[266] S&O Trust: Compliance",
+        "project_score": 0.129
       }
     ],
     "a3QEE000002Sj7V2AS": [
@@ -2237,6 +2322,23 @@
     ],
     "a3QEE000001OD5B2AW": [
       {
+        "program_id": "a1fEE00000049HdYAI",
+        "program_name": "S&O Scheduling Console Adoption",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.676,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.25,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnnoTYAR",
+        "project_name": "FS 264: S&O: Multi-Stage Work - Service side",
+        "project_score": 0.285
+      },
+      {
         "program_id": "a1fEE00000036TtYAI",
         "program_name": "FS 264: S&O: The New Scheduling Console",
         "program_portfolio": "264 Field Service Scheduling & Optimization",
@@ -2252,6 +2354,23 @@
         "project_id": "a1kEE00000Tnny9YAB",
         "project_name": "FS 264: S&O: Run RSO as Simulation - Service only",
         "project_score": 0.578
+      },
+      {
+        "program_id": "a1fEE00000049G1YAI",
+        "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.671,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.24,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnoEHYAZ",
+        "project_name": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
+        "project_score": 0.286
       },
       {
         "program_id": "a1fEE00000036bxYAA",
@@ -2286,43 +2405,43 @@
         "project_id": "a1kEE00000X4FIPYA3",
         "project_name": "FS 264: S&O Trust: Observability",
         "project_score": 0.576
-      },
-      {
-        "program_id": "a1fEE00000036aLYAQ",
-        "program_name": "FS 264: S&O: Workforce Labor Optimization",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.618,
-        "confidence": "medium",
-        "components": {
-          "team": 1.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000TnoUPYAZ",
-        "project_name": "FS 264: S&O: Max hours rule",
-        "project_score": 0.353
-      },
-      {
-        "program_id": "a1fEE0000003DdRYAU",
-        "program_name": "264 Infield",
-        "program_portfolio": "264 Field Service Workforce Scheduling",
-        "score": 0.618,
-        "confidence": "medium",
-        "components": {
-          "team": 1.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: 264 Field Service Workforce Scheduling",
-        "project_id": "a1kEE00000VSA93YAH",
-        "project_name": "264 Infield",
-        "project_score": 0.271
       }
     ],
     "a3QEE000000SOXF2A4": [
+      {
+        "program_id": "a1fEE00000049HdYAI",
+        "program_name": "S&O Scheduling Console Adoption",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.632,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.11,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnnoTYAR",
+        "project_name": "FS 264: S&O: Multi-Stage Work - Service side",
+        "project_score": 0.27
+      },
+      {
+        "program_id": "a1fEE00000049G1YAI",
+        "program_name": "S&O Agentic Dispatcher/Scheduling Experience",
+        "program_portfolio": "FY27 FS S&O",
+        "score": 0.623,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.08,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: FY27 FS S&O",
+        "project_id": "a1kEE00000TnoEHYAZ",
+        "project_name": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
+        "project_score": 0.233
+      },
       {
         "program_id": "a1fEE00000036aLYAQ",
         "program_name": "FS 264: S&O: Workforce Labor Optimization",
@@ -2373,40 +2492,6 @@
         "project_id": "a1kEE00000X4FIPYA3",
         "project_name": "FS 264: S&O Trust: Observability",
         "project_score": 0.566
-      },
-      {
-        "program_id": "a1fEE00000036TtYAI",
-        "program_name": "FS 264: S&O: The New Scheduling Console",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.609,
-        "confidence": "medium",
-        "components": {
-          "team": 1.0,
-          "keyword": 0.03,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000Tnny9YAB",
-        "project_name": "FS 264: S&O: Run RSO as Simulation - Service only",
-        "project_score": 0.572
-      },
-      {
-        "program_id": "a1fEE00000036bxYAA",
-        "program_name": "FS 264: S&O: S&O Customer Success",
-        "program_portfolio": "264 Field Service Scheduling & Optimization",
-        "score": 0.607,
-        "confidence": "medium",
-        "components": {
-          "team": 1.0,
-          "keyword": 0.02,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Team match: FSL - Resource - Scheduling Intelligence \u2022 Portfolio: 264 Field Service Scheduling & Optimization",
-        "project_id": "a1kEE00000TnoFtYAJ",
-        "project_name": "FS 264: S&O: Appointment Booking - MDW + Schedule",
-        "project_score": 0.334
       }
     ],
     "a3QEE000002WsqX2AS": [
@@ -3181,18 +3266,35 @@
         "program_id": "a1fEE00000042T3YAI",
         "program_name": "266 Operations Console",
         "program_portfolio": "FY27 FS Workforce Scheduling",
-        "score": 0.42,
+        "score": 0.62,
         "confidence": "medium",
         "components": {
           "team": 1.0,
           "keyword": 0.07,
-          "portfolio": 0.0,
+          "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Team match: SFS Core Scheduler",
+        "reasoning": "Team match: SFS Core Scheduler \u2022 Portfolio: FY27 FS Workforce Scheduling",
         "project_id": "a1kEE00000YMBdxYAH",
         "project_name": "266 Operations Console",
-        "project_score": 0.473
+        "project_score": 0.573
+      },
+      {
+        "program_id": "a1fEE0000004EQzYAM",
+        "program_name": "[266] Workforce Scheduling Trust",
+        "program_portfolio": "FY27 FS Workforce Scheduling",
+        "score": 0.238,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.12,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Workforce Scheduling",
+        "project_id": "a1kEE00000d2fCBYAY",
+        "project_name": "[266] Workforce Scheduling Trust: Infrastructure / DevOps Support",
+        "project_score": 0.156
       },
       {
         "program_id": "a1fEE0000003DdVYAU",
@@ -3227,26 +3329,26 @@
         "project_id": "a1kEE00000VSACHYA5",
         "project_name": "264 Onsite Scheduling",
         "project_score": 0.137
-      },
-      {
-        "program_id": "a1fEE0000003DdTYAU",
-        "program_name": "264 Infield & Onsite Hybrid",
-        "program_portfolio": "264 Field Service Workforce Scheduling",
-        "score": 0.232,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Workforce Scheduling",
-        "project_id": "a1kEE00000VSAAfYAP",
-        "project_name": "264 Infield & Onsite Hybrid",
-        "project_score": 0.137
       }
     ],
     "a3QEE000002MY3V2AW": [
+      {
+        "program_id": "a1fEE00000042T3YAI",
+        "program_name": "266 Operations Console",
+        "program_portfolio": "FY27 FS Workforce Scheduling",
+        "score": 0.764,
+        "confidence": "high",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.55,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Core Scheduler \u2022 Strong keyword similarity \u2022 Portfolio: FY27 FS Workforce Scheduling",
+        "project_id": "a1kEE00000YMBdxYAH",
+        "project_name": "266 Operations Console",
+        "project_score": 0.741
+      },
       {
         "program_id": "a1fEE0000003DdUYAU",
         "program_name": "264 Operations Console",
@@ -3265,21 +3367,21 @@
         "project_score": 0.461
       },
       {
-        "program_id": "a1fEE00000042T3YAI",
-        "program_name": "266 Operations Console",
+        "program_id": "a1fEE0000004EQzYAM",
+        "program_name": "[266] Workforce Scheduling Trust",
         "program_portfolio": "FY27 FS Workforce Scheduling",
-        "score": 0.564,
-        "confidence": "medium",
+        "score": 0.261,
+        "confidence": "low",
         "components": {
-          "team": 1.0,
-          "keyword": 0.55,
-          "portfolio": 0.0,
+          "team": 0.0,
+          "keyword": 0.2,
+          "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Team match: SFS Core Scheduler \u2022 Strong keyword similarity",
-        "project_id": "a1kEE00000YMBdxYAH",
-        "project_name": "266 Operations Console",
-        "project_score": 0.641
+        "reasoning": "Portfolio: FY27 FS Workforce Scheduling",
+        "project_id": "a1kEE00000d2fC8YAI",
+        "project_name": "[266] Workforce Scheduling Trust: Application Production Support",
+        "project_score": 0.167
       },
       {
         "program_id": "a1fEE0000003DdWYAU",
@@ -3314,26 +3416,26 @@
         "project_id": "a1kEE00000VSACHYA5",
         "project_name": "264 Onsite Scheduling",
         "project_score": 0.138
-      },
-      {
-        "program_id": "a1fEE0000003DdTYAU",
-        "program_name": "264 Infield & Onsite Hybrid",
-        "program_portfolio": "264 Field Service Workforce Scheduling",
-        "score": 0.233,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Workforce Scheduling",
-        "project_id": "a1kEE00000VSAAfYAP",
-        "project_name": "264 Infield & Onsite Hybrid",
-        "project_score": 0.138
       }
     ],
     "a3QEE000002MY9x2AG": [
+      {
+        "program_id": "a1fEE00000042T3YAI",
+        "program_name": "266 Operations Console",
+        "program_portfolio": "FY27 FS Workforce Scheduling",
+        "score": 0.844,
+        "confidence": "high",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.48,
+          "portfolio": 1.0,
+          "build": 1.0
+        },
+        "reasoning": "Team match: SFS Core Scheduler \u2022 Portfolio: FY27 FS Workforce Scheduling \u2022 Build 266 alignment",
+        "project_id": "a1kEE00000YMBdxYAH",
+        "project_name": "266 Operations Console",
+        "project_score": 0.817
+      },
       {
         "program_id": "a1fEE0000003DdUYAU",
         "program_name": "264 Operations Console",
@@ -3352,21 +3454,21 @@
         "project_score": 0.446
       },
       {
-        "program_id": "a1fEE00000042T3YAI",
-        "program_name": "266 Operations Console",
+        "program_id": "a1fEE0000004EQzYAM",
+        "program_name": "[266] Workforce Scheduling Trust",
         "program_portfolio": "FY27 FS Workforce Scheduling",
-        "score": 0.644,
-        "confidence": "medium",
+        "score": 0.358,
+        "confidence": "low",
         "components": {
-          "team": 1.0,
-          "keyword": 0.48,
-          "portfolio": 0.0,
+          "team": 0.0,
+          "keyword": 0.19,
+          "portfolio": 1.0,
           "build": 1.0
         },
-        "reasoning": "Team match: SFS Core Scheduler \u2022 Build 266 alignment",
-        "project_id": "a1kEE00000YMBdxYAH",
-        "project_name": "266 Operations Console",
-        "project_score": 0.717
+        "reasoning": "Portfolio: FY27 FS Workforce Scheduling \u2022 Build 266 alignment",
+        "project_id": "a1kEE00000d2fC9YAI",
+        "project_name": "[266] Workforce Scheduling Trust: Compliance",
+        "project_score": 0.273
       },
       {
         "program_id": "a1fEE0000003DdWYAU",
@@ -3401,26 +3503,26 @@
         "project_id": "a1kEE00000VSACHYA5",
         "project_name": "264 Onsite Scheduling",
         "project_score": 0.137
-      },
-      {
-        "program_id": "a1fEE0000003DdTYAU",
-        "program_name": "264 Infield & Onsite Hybrid",
-        "program_portfolio": "264 Field Service Workforce Scheduling",
-        "score": 0.23,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.1,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Workforce Scheduling",
-        "project_id": "a1kEE00000VSAAfYAP",
-        "project_name": "264 Infield & Onsite Hybrid",
-        "project_score": 0.135
       }
     ],
     "a3QEE0000023zCH2AY": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.667,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.22,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.574
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -3456,6 +3558,23 @@
         "project_score": 0.58
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.255,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.18,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.167
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -3471,40 +3590,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.131
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.234,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.12
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.22,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.07,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.123
       }
     ],
     "a3QEE000002T91x2AC": [
@@ -3543,6 +3628,23 @@
         "project_score": 0.608
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.637,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.12,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.577
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -3575,26 +3677,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.159
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.245,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.15,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.154
       }
     ],
     "a3QEE000002Vq1B2AS": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.66,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.2,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.566
+      },
       {
         "program_id": "a1fEE0000003BBsYAM",
         "program_name": "264 Field Service: Workforce Scheduling on Mobile",
@@ -3630,6 +3732,23 @@
         "project_score": 0.587
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.25,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.17,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC1YAI",
+        "project_name": "[266] Mobile Trust: Infrastructure / DevOps Support",
+        "project_score": 0.19
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -3645,43 +3764,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.12
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.22,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.07,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.123
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.218,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.126
       }
     ],
     "a3QEE000002SxTp2AK": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.705,
+        "confidence": "high",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.35,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.576
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -3717,6 +3819,23 @@
         "project_score": 0.583
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.409,
+        "confidence": "medium",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.7,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Strong keyword similarity \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.299
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -3732,40 +3851,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.119
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.224,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.128
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.222,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.07,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.136
       }
     ],
     "a3QEE000002Vlnt2AC": [
@@ -3804,6 +3889,23 @@
         "project_score": 0.654
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.641,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.14,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.577
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -3836,26 +3938,26 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.163
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.249,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.16,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.157
       }
     ],
     "a3QEE000002Sfn32AC": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.669,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.23,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.566
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -3891,6 +3993,23 @@
         "project_score": 0.571
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.263,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.21,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.17
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -3906,43 +4025,26 @@
         "project_id": "a1kEE00000WzuAvYAJ",
         "project_name": "264 SFS Quality Enablement",
         "project_score": 0.145
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.233,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.133
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.229,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.1,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.135
       }
     ],
     "a3QEE000002S4U92AK": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.684,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.28,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.584
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -3978,6 +4080,23 @@
         "project_score": 0.578
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.334,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.45,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.231
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -3993,40 +4112,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.125
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.227,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.132
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.226,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.142
       }
     ],
     "a3QEE000002KqEE2A0": [
@@ -4065,6 +4150,23 @@
         "project_score": 0.612
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.65,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.17,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.584
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -4097,23 +4199,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.178
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.263,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.21,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.173
       }
     ],
     "a3QEE000002CjWT2A0": [
@@ -4152,6 +4237,23 @@
         "project_score": 0.607
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.638,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.13,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.567
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -4169,41 +4271,41 @@
         "project_score": 0.157
       },
       {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.257,
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.265,
         "confidence": "low",
         "components": {
           "team": 0.0,
-          "keyword": 0.19,
+          "keyword": 0.22,
           "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.169
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.254,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.18,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.163
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.166
       }
     ],
     "a3QEE000002P0gP2AS": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.71,
+        "confidence": "high",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.37,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.571
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -4239,6 +4341,23 @@
         "project_score": 0.576
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.331,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.44,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.228
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -4254,43 +4373,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.127
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.226,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.13
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.224,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.139
       }
     ],
     "a3QEE000001s2qf2AA": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.638,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.13,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.566
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -4358,23 +4460,6 @@
         "project_id": "a1kEE00000WzuAvYAJ",
         "project_name": "264 SFS Quality Enablement",
         "project_score": 0.138
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.217,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.125
       }
     ],
     "a3QEE0000022kYf2AI": [
@@ -4413,6 +4498,23 @@
         "project_score": 0.717
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.642,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.14,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.568
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -4445,26 +4547,26 @@
         "project_id": "a1kEE00000WzuAvYAJ",
         "project_name": "264 SFS Quality Enablement",
         "project_score": 0.286
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.365,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.22,
-          "portfolio": 1.0,
-          "build": 1.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile \u2022 Build 264 alignment",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.273
       }
     ],
     "a3QEE000002KsXl2AK": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.667,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.22,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.566
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -4500,6 +4602,23 @@
         "project_score": 0.57
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.264,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.21,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.171
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -4515,40 +4634,6 @@
         "project_id": "a1kEE00000WzuAvYAJ",
         "project_name": "264 SFS Quality Enablement",
         "project_score": 0.14
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.224,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.12
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.218,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.125
       }
     ],
     "a3QEE000002Cg7B2AS": [
@@ -4587,6 +4672,23 @@
         "project_score": 0.604
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.636,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.12,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.566
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -4619,23 +4721,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.176
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.264,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.21,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.178
       }
     ],
     "a3QEE000002CjY52AK": [
@@ -4674,6 +4759,40 @@
         "project_score": 0.614
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.661,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.2,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.567
+      },
+      {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.312,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.37,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.213
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -4689,40 +4808,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.154
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.257,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.19,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.168
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.253,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.18,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.162
       }
     ],
     "a3QEE0000029L452AE": [
@@ -4761,6 +4846,23 @@
         "project_score": 0.609
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.646,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.15,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.58
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -4778,38 +4880,21 @@
         "project_score": 0.167
       },
       {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.268,
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.276,
         "confidence": "low",
         "components": {
           "team": 0.0,
-          "keyword": 0.23,
+          "keyword": 0.25,
           "portfolio": 1.0,
           "build": 0.0
         },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.181
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.262,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.21,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.173
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.176
       }
     ],
     "a3QEE000002ByVx2AK": [
@@ -4848,6 +4933,40 @@
         "project_score": 0.617
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.663,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.21,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.576
+      },
+      {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.333,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.44,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.23
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -4863,43 +4982,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.163
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.267,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.22,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.18
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.261,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.2,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.172
       }
     ],
     "a3QEE000002XRcz2AG": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.673,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.24,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.584
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -4935,6 +5037,23 @@
         "project_score": 0.588
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.273,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.24,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.176
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -4950,43 +5069,26 @@
         "project_id": "a1kEE00000WzuAvYAJ",
         "project_name": "264 SFS Quality Enablement",
         "project_score": 0.144
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.232,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.133
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.221,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.07,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.13
       }
     ],
     "a3QEE000002Vlfp2AC": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.665,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.22,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.573
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -5022,6 +5124,23 @@
         "project_score": 0.579
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.254,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.18,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fByYAI",
+        "project_name": "[266] Mobile Trust: Application Production Support",
+        "project_score": 0.17
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -5037,40 +5156,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.13
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.234,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.12
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.219,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.122
       }
     ],
     "a3QEE000002WlvV2AS": [
@@ -5109,6 +5194,23 @@
         "project_score": 0.602
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.638,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.13,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.593
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -5141,26 +5243,26 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.158
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.255,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.18,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.151
       }
     ],
     "a3QEE000002Xcjh2AC": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.658,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.19,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.576
+      },
       {
         "program_id": "a1fEE0000003BBsYAM",
         "program_name": "264 Field Service: Workforce Scheduling on Mobile",
@@ -5196,6 +5298,23 @@
         "project_score": 0.588
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.25,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.17,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.163
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -5211,43 +5330,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.128
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.225,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.13
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.218,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.125
       }
     ],
     "a3QEE000002X3sP2AS": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.685,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.28,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.599
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -5283,6 +5385,23 @@
         "project_score": 0.578
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.243,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.14,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fByYAI",
+        "project_name": "[266] Mobile Trust: Application Production Support",
+        "project_score": 0.192
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -5298,43 +5417,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.126
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.226,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.13
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.225,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.126
       }
     ],
     "a3QEE000002X3qn2AC": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.687,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.29,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.6
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -5370,6 +5472,23 @@
         "project_score": 0.579
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.245,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.15,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fByYAI",
+        "project_name": "[266] Mobile Trust: Application Production Support",
+        "project_score": 0.193
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -5385,43 +5504,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.127
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.227,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.132
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.226,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.128
       }
     ],
     "a3QEE000002CRRV2A4": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.67,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.23,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.576
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -5457,6 +5559,23 @@
         "project_score": 0.577
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.258,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.19,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.17
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -5472,40 +5591,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.134
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.224,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.122
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.221,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.07,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.125
       }
     ],
     "a3QEE000002V9In2AK": [
@@ -5544,6 +5629,23 @@
         "project_score": 0.621
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.638,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.13,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.584
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -5576,23 +5678,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.186
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.266,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.22,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.175
       }
     ],
     "a3QEE000002VlhR2AS": [
@@ -5631,6 +5716,23 @@
         "project_score": 0.607
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.639,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.13,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.579
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -5663,26 +5765,26 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.156
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.253,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.18,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.158
       }
     ],
     "a3QEE000002Vq2n2AC": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.661,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.2,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.565
+      },
       {
         "program_id": "a1fEE0000003BBsYAM",
         "program_name": "264 Field Service: Workforce Scheduling on Mobile",
@@ -5718,6 +5820,23 @@
         "project_score": 0.588
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.251,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.17,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fByYAI",
+        "project_name": "[266] Mobile Trust: Application Production Support",
+        "project_score": 0.192
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -5733,40 +5852,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.12
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.219,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.122
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.217,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.124
       }
     ],
     "a3QEE000002VnuX2AS": [
@@ -5805,6 +5890,23 @@
         "project_score": 0.618
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.648,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.16,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.576
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -5837,23 +5939,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.177
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.262,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.21,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.172
       }
     ],
     "a3QEE000002VXL72AO": [
@@ -5892,6 +5977,23 @@
         "project_score": 0.603
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.636,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.12,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.573
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -5924,23 +6026,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.154
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.242,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.14,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.149
       }
     ],
     "a3QEE000002VlmH2AS": [
@@ -5979,6 +6064,23 @@
         "project_score": 0.6
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.635,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.12,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.564
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -6011,23 +6113,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.147
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.238,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.13,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.145
       }
     ],
     "a3QEE000002VlSw2AK": [
@@ -6066,6 +6151,23 @@
         "project_score": 0.599
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.635,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.12,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.563
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -6098,23 +6200,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.146
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.237,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.12,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.144
       }
     ],
     "a3QEE000002Vnw92AC": [
@@ -6153,6 +6238,23 @@
         "project_score": 0.616
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.649,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.16,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.573
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -6185,26 +6287,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.17
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.266,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.22,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.177
       }
     ],
     "a3QEE000002Vlcb2AC": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.677,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.26,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.584
+      },
       {
         "program_id": "a1fEE0000003BBsYAM",
         "program_name": "264 Field Service: Workforce Scheduling on Mobile",
@@ -6240,6 +6342,23 @@
         "project_score": 0.59
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.274,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.25,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.173
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -6255,43 +6374,26 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.134
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.233,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.123
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.225,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.129
       }
     ],
     "a3QEE000001yud32AA": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.693,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.31,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.594
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -6327,6 +6429,23 @@
         "project_score": 0.581
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.256,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.19,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.166
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -6342,40 +6461,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.126
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.227,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.121
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.22,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.07,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.123
       }
     ],
     "a3QEE000002OC5J2AW": [
@@ -6414,6 +6499,23 @@
         "project_score": 0.615
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.641,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.14,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.582
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -6446,26 +6548,26 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.169
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.262,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.21,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.169
       }
     ],
     "a3QEE000002P6gz2AC": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.73,
+        "confidence": "high",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.43,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.617
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -6501,6 +6603,23 @@
         "project_score": 0.585
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.271,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.24,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fC2YAI",
+        "project_name": "[266] Mobile Trust: Security",
+        "project_score": 0.18
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -6516,40 +6635,6 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.142
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.233,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.11,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.125
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.227,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.132
       }
     ],
     "a3QEE000002IxQH2A0": [
@@ -6588,6 +6673,23 @@
         "project_score": 0.613
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.646,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.15,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.57
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -6620,23 +6722,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.178
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.269,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.23,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.181
       }
     ],
     "a3QEE000002IxN32AK": [
@@ -6675,6 +6760,23 @@
         "project_score": 0.613
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.646,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.15,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.57
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -6707,23 +6809,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.178
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.269,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.23,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.181
       }
     ],
     "a3QEE000002D9lt2AC": [
@@ -6762,6 +6847,23 @@
         "project_score": 0.613
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.646,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.15,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.57
+      },
+      {
         "program_id": "a1fEE0000003hq1YAA",
         "program_name": "264 Field Service: KONE",
         "program_portfolio": "264 Field Service Mobile",
@@ -6794,23 +6896,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.178
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.269,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.23,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.181
       }
     ],
     "a3QB0000000LF0bMAG": [
@@ -6849,6 +6934,23 @@
         "project_score": 0.57
       },
       {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.62,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.07,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.572
+      },
+      {
         "program_id": "a1fEE0000003hV3YAI",
         "program_name": "264 SFS Quality Enablement",
         "program_portfolio": "264 Field Service Mobile",
@@ -6881,26 +6983,26 @@
         "project_id": "a1kEE00000X4VrpYAF",
         "project_name": "264 KONE: Phase 1",
         "project_score": 0.139
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.226,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.09,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.132
       }
     ],
     "a3QEE000001zN5Z2AU": [
+      {
+        "program_id": "a1fEE0000004D9xYAE",
+        "program_name": "[266] Mobile AI & Voice to Form",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.649,
+        "confidence": "medium",
+        "components": {
+          "team": 1.0,
+          "keyword": 0.16,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Team match: SFS Frontline AI \u2022 Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000cwGL3YAM",
+        "project_name": "Voice to Form Evolution",
+        "project_score": 0.563
+      },
       {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
@@ -6936,6 +7038,23 @@
         "project_score": 0.558
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.248,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.16,
+          "portfolio": 1.0,
+          "build": 0.0
+        },
+        "reasoning": "Portfolio: FY27 FS Mobile",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.162
+      },
+      {
         "program_id": "a1fEE0000003BBpYAM",
         "program_name": "264 Field Service: Customer Trust",
         "program_portfolio": "264 Field Service Mobile",
@@ -6951,40 +7070,6 @@
         "project_id": "a1kEE00000Uu5yDYAR",
         "project_name": "264 Customer Enhancements",
         "project_score": 0.119
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.219,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.117
-      },
-      {
-        "program_id": "a1fEE0000003hV3YAI",
-        "program_name": "264 SFS Quality Enablement",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.218,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.06,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000WzuAvYAJ",
-        "project_name": "264 SFS Quality Enablement",
-        "project_score": 0.121
       }
     ],
     "a3QEE000002SA892AG": [
@@ -12678,6 +12763,23 @@
         "project_score": 0.573
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.268,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.56,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Strong keyword similarity \u2022 Build 266 alignment",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.285
+      },
+      {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
         "program_portfolio": "264 Field Service Mobile",
@@ -12710,23 +12812,6 @@
         "project_id": "a1kEE00000WzuAvYAJ",
         "project_name": "264 SFS Quality Enablement",
         "project_score": 0.147
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.223,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.132
       }
     ],
     "a3QEE000002Miyv2AC": [
@@ -13374,6 +13459,23 @@
         "project_score": 0.573
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.268,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.56,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Strong keyword similarity \u2022 Build 266 alignment",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.285
+      },
+      {
         "program_id": "a1fEE0000003BBrYAM",
         "program_name": "264 Field Service: Mobile Agentic AI",
         "program_portfolio": "264 Field Service Mobile",
@@ -13406,23 +13508,6 @@
         "project_id": "a1kEE00000WzuAvYAJ",
         "project_name": "264 SFS Quality Enablement",
         "project_score": 0.147
-      },
-      {
-        "program_id": "a1fEE0000003hq1YAA",
-        "program_name": "264 Field Service: KONE",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.223,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.08,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000X4VrpYAF",
-        "project_name": "264 KONE: Phase 1",
-        "project_score": 0.132
       }
     ],
     "a3QEE000002QAKL2A4": [
@@ -19899,6 +19984,23 @@
         "project_score": 0.295
       },
       {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.275,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.58,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Strong keyword similarity \u2022 Build 266 alignment",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.377
+      },
+      {
         "program_id": "a1fEE000000311BYAQ",
         "program_name": "[264] Mobile Insights GA",
         "program_portfolio": "264 Field Service Foundations",
@@ -19931,23 +20033,6 @@
         "project_id": "a1kEE00000Uu5yFYAR",
         "project_name": "264 Mobile AI/Agentforce: PWB & Voice to Form",
         "project_score": 0.175
-      },
-      {
-        "program_id": "a1fEE0000003BBpYAM",
-        "program_name": "264 Field Service: Customer Trust",
-        "program_portfolio": "264 Field Service Mobile",
-        "score": 0.257,
-        "confidence": "low",
-        "components": {
-          "team": 0.0,
-          "keyword": 0.19,
-          "portfolio": 1.0,
-          "build": 0.0
-        },
-        "reasoning": "Portfolio: 264 Field Service Mobile",
-        "project_id": "a1kEE00000Uu5yDYAR",
-        "project_name": "264 Customer Enhancements",
-        "project_score": 0.141
       }
     ],
     "a3QEE0000021mKn2AI": [
@@ -20107,6 +20192,40 @@
         "project_id": "a1kEE00000Xzua9YAB",
         "project_name": "[264] Mobile Insights GA",
         "project_score": 0.136
+      },
+      {
+        "program_id": "a1fEE0000004ENlYAM",
+        "program_name": "[266] Mobile Trust",
+        "program_portfolio": "FY27 FS Mobile",
+        "score": 0.204,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.35,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 266 alignment",
+        "project_id": "a1kEE00000d2fBzYAI",
+        "project_name": "[266] Mobile Trust: Compliance",
+        "project_score": 0.22
+      },
+      {
+        "program_id": "a1fEE0000004EPNYA2",
+        "program_name": "[266] Foundations Trust",
+        "program_portfolio": "FY27 FS Foundations",
+        "score": 0.201,
+        "confidence": "low",
+        "components": {
+          "team": 0.0,
+          "keyword": 0.34,
+          "portfolio": 0.0,
+          "build": 1.0
+        },
+        "reasoning": "Build 266 alignment",
+        "project_id": "a1kEE00000d2fBuYAI",
+        "project_name": "[266] Foundations Trust: Compliance",
+        "project_score": 0.217
       }
     ]
   }

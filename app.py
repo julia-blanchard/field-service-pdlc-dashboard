@@ -597,10 +597,14 @@ def index():
 
             proj['epics_by_month'] = [(month, epics_by_month[month]) for month in sorted_months]
 
-        # Filter out empty projects (no epics, no name, or no ID)
+        # Filter out junk project rows (no name/ID) but keep projects with
+        # zero epics -- new-release (FY27) projects legitimately start empty
+        # before epics get mapped in, and dropping them here hid programs
+        # like Guided Experience/Project Felix/AMA Field App even after
+        # fetch_execution_data.py stopped dropping them upstream.
         prog['projects'] = [
             p for p in prog.get('projects', [])
-            if p.get('epics') and len(p['epics']) > 0 and p.get('name') and p.get('name') != '-'
+            if p.get('name') and p.get('name') != '-'
         ]
 
     # Make a copy for phase_2 that we can normalize without affecting execution_programs

@@ -189,6 +189,68 @@ def extract_program_teams(program: Dict) -> List[str]:
     return list(teams)
 
 
+def extract_project_teams(project: Dict) -> List[str]:
+    """Extract all unique team names from a single project's epics"""
+    teams = set()
+    for epic in project.get('epics', []):
+        team = epic.get('team', '')
+        if team and team != '-':
+            teams.add(team)
+    return list(teams)
+
+
+def calculate_project_score(epic: Dict, program: Dict, project: Dict, team_portfolios: Dict[str, Dict]) -> float:
+    """
+    Score how well an epic fits a specific project within its recommended
+    program. Epics link to GUS via Project, not Program directly, so once a
+    program has multiple projects the program-level score alone can't say
+    which one to map to.
+    """
+    project_teams = extract_project_teams(project)
+    team_score = calculate_team_match(epic.get('team', ''), project_teams)
+
+    # Dilute team credit for "catch-all" projects that span many teams --
+    # matching 1 of 5 teams in a project is weaker signal than matching
+    # the only team in a single-team project.
+    if len(project_teams) > 1:
+        team_score = team_score / len(project_teams)
+
+    keyword_score = calculate_keyword_match(epic.get('name', ''), project.get('name', ''))
+    portfolio_score = calculate_portfolio_match(
+        epic.get('team', ''), team_portfolios, program.get('portfolio', '')
+    )
+    build_score = calculate_build_match(epic.get('scheduled_build', ''), project.get('name', ''))
+
+    weights = {'team': 0.45, 'keyword': 0.35, 'portfolio': 0.10, 'build': 0.10}
+    total = (
+        team_score * weights['team'] +
+        keyword_score * weights['keyword'] +
+        portfolio_score * weights['portfolio'] +
+        build_score * weights['build']
+    )
+    return round(total, 3)
+
+
+def find_best_project(epic: Dict, program: Dict, team_portfolios: Dict[str, Dict]) -> Dict:
+    """
+    Pick the best-matching project within a program for this epic.
+    Returns {} if the program has no projects (nothing to recommend).
+    """
+    projects = program.get('projects', [])
+    if not projects:
+        return {}
+
+    scored = [(calculate_project_score(epic, program, p, team_portfolios), p) for p in projects]
+    scored.sort(key=lambda x: x[0], reverse=True)
+    best_score, best_project = scored[0]
+
+    return {
+        'project_id': best_project.get('id'),
+        'project_name': best_project.get('name'),
+        'project_score': best_score
+    }
+
+
 def generate_recommendations(
     orphaned_epics: List[Dict],
     programs: List[Dict],
@@ -229,7 +291,7 @@ def generate_recommendations(
 
             # Only include if score > 0.20 (filter out very weak matches)
             if score > 0.20:
-                epic_recommendations.append({
+                recommendation = {
                     'program_id': program.get('id'),
                     'program_name': program.get('name'),
                     'program_portfolio': program.get('portfolio', '-'),
@@ -237,7 +299,13 @@ def generate_recommendations(
                     'confidence': get_confidence_level(score),
                     'components': components,
                     'reasoning': generate_reasoning(epic, program, components)
-                })
+                }
+
+                best_project = find_best_project(epic, program, team_portfolios)
+                if best_project:
+                    recommendation.update(best_project)
+
+                epic_recommendations.append(recommendation)
 
         # Sort by score descending
         epic_recommendations.sort(key=lambda x: x['score'], reverse=True)

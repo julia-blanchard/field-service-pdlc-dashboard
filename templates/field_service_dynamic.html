@@ -16902,8 +16902,12 @@ function createProgramCard(program) {
                         <div style="color: #64748b; font-size: 11px; white-space: normal; overflow-wrap: break-word;">
                             ${confidenceLine}
                         </div>
+                        ${topRec.project_name ? `
+                        <div style="color: #64748b; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;">
+                            → Project: <strong>${topRec.project_name}</strong>
+                        </div>` : ''}
                         <div style="display: flex; justify-content: flex-start; width: auto; gap: 6px; margin-top: 6px; flex-wrap: nowrap;">
-                            <button onclick="mapEpicToProgram('${epic.id}', '${topRec.program_id}', '${topRec.program_name.replace(/'/g, "\\'")}', event)"
+                            <button onclick="mapEpicToProgram('${epic.id}', '${topRec.program_id}', '${topRec.program_name.replace(/'/g, "\\'")}', '${topRec.project_id || ''}', event)"
                                     style="background: #0176D3; color: white; border: none; padding: 3px 8px; border-radius: 3px; font-size: 10px; cursor: pointer; font-weight: 600; white-space: nowrap;">
                                 Map It
                             </button>
@@ -17161,7 +17165,7 @@ function createProgramCard(program) {
         // A Program in GUS has no direct Epic relationship - epics link via Epic.Project__c,
         // and each Project has its own Program__c. So "mapping to a program" really means
         // picking (or eventually creating) the Project within that program to attach the epic to.
-        async function mapEpicToProgram(epicId, programId, programName, event) {
+        async function mapEpicToProgram(epicId, programId, programName, recommendedProjectId, event) {
             if (event) event.stopPropagation();
 
             // Close the "All Recommendations" modal if this was launched from there
@@ -17189,11 +17193,18 @@ function createProgramCard(program) {
                 button.disabled = false;
             }
 
-            openProjectPickerModal(epicId, programId, programName, projects);
+            openProjectPickerModal(epicId, programId, programName, projects, recommendedProjectId);
         }
 
-        function openProjectPickerModal(epicId, programId, programName, projects) {
+        function openProjectPickerModal(epicId, programId, programName, projects, recommendedProjectId) {
             // Widest program has 11 projects; a 2-column grid of compact cards fits all of them without scrolling.
+            // Recommended project (from the scoring engine) is sorted first and highlighted.
+            if (recommendedProjectId) {
+                projects = [...projects].sort((a, b) =>
+                    (b.id === recommendedProjectId) - (a.id === recommendedProjectId)
+                );
+            }
+
             let modalHTML = `
                 <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 10000; display: flex; align-items: center; justify-content: center;" onclick="this.remove()">
                     <div style="background: white; border-radius: 8px; max-width: 760px; max-height: 90vh; overflow-y: auto; padding: 24px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);" onclick="event.stopPropagation()">
@@ -17221,10 +17232,11 @@ function createProgramCard(program) {
                 modalHTML += `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">`;
                 projects.forEach(project => {
                     const safeName = project.name.replace(/'/g, "\\'");
+                    const isRecommended = project.id === recommendedProjectId;
                     modalHTML += `
-                        <div style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px 10px; display: flex; justify-content: space-between; align-items: center; gap: 8px; min-width: 0;">
+                        <div style="border: 1px solid ${isRecommended ? '#0176D3' : '#e5e7eb'}; border-radius: 6px; padding: 8px 10px; display: flex; justify-content: space-between; align-items: center; gap: 8px; min-width: 0; ${isRecommended ? 'background: #f0f9ff;' : ''}">
                             <div style="min-width: 0; overflow: hidden;">
-                                <div style="font-weight: 600; color: #1e293b; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${project.name}</div>
+                                <div style="font-weight: 600; color: #1e293b; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${isRecommended ? '⭐ ' : ''}${project.name}</div>
                                 <div style="font-size: 10px; color: #64748b; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${project.health_status || 'Not Assigned'}${project.target ? ' • Target: ' + project.target : ''}</div>
                             </div>
                             <button onclick="confirmMapEpicToProject('${epicId}', '${project.id}', '${safeName}', '${programId}', '${programName.replace(/'/g, "\\'")}', event)"
@@ -17447,8 +17459,12 @@ function createProgramCard(program) {
                         <div style="font-size: 11px; color: #64748b; margin-bottom: 12px;">
                             ${rec.reasoning}
                         </div>
+                        ${rec.project_name ? `
+                        <div style="font-size: 11px; color: #64748b; margin-bottom: 12px;">
+                            → Project: <strong>${rec.project_name}</strong>
+                        </div>` : ''}
                         <div style="display: flex; gap: 8px; justify-content: flex-end;">
-                            <button onclick="mapEpicToProgram('${epicId}', '${rec.program_id}', '${rec.program_name.replace(/'/g, "\\'")}', event)"
+                            <button onclick="mapEpicToProgram('${epicId}', '${rec.program_id}', '${rec.program_name.replace(/'/g, "\\'")}', '${rec.project_id || ''}', event)"
                                     style="background: #0176D3; color: white; border: none; padding: 6px 16px; border-radius: 4px; font-size: 12px; cursor: pointer; font-weight: 600;">
                                 Map to This Program
                             </button>

@@ -1609,13 +1609,68 @@ def map_epic_to_project():
 def hygiene():
     """Serve hygiene issues for Needs Attention feature"""
     hygiene_file = os.path.join('data', 'hygiene_issues.json')
+    suggestions_file = os.path.join('data', 'scheduled_build_suggestions.json')
     try:
         with open(hygiene_file, 'r') as f:
             data = json.load(f)
+
+        try:
+            with open(suggestions_file, 'r') as f:
+                suggestions_by_id = {
+                    s['epic_id']: s for s in json.load(f).get('suggestions', [])
+                }
+            for epic in data.get('epics', []):
+                suggestion = suggestions_by_id.get(epic.get('epic_id'))
+                if suggestion:
+                    epic['suggested_build'] = {
+                        'value': suggestion['suggested_build'],
+                        'build_id': suggestion['suggested_build_id'],
+                        'matching_stories': suggestion['matching_stories'],
+                        'total_stories': suggestion['total_stories']
+                    }
+        except FileNotFoundError:
+            pass
+
         return jsonify(data)
     except Exception as e:
         print(f"Error loading hygiene data: {e}", flush=True)
         return jsonify({'error': str(e)}), 500
+
+@app.route('/api/apply-scheduled-build', methods=['POST'])
+def apply_scheduled_build():
+    """Set ADM_Epic__c.Scheduled_Build__c via sf CLI, from a hygiene suggestion."""
+    if not SHOW_HYGIENE_FEATURES:
+        return jsonify({'success': False, 'error': 'Feature disabled'}), 404
+
+    body = request.get_json(silent=True) or {}
+    epic_id = body.get('epic_id', '')
+    build_id = body.get('build_id', '')
+
+    if not epic_id or not build_id:
+        return jsonify({'success': False, 'error': 'epic_id and build_id are required'}), 400
+
+    try:
+        result = subprocess.run(
+            ['sf', 'data', 'update', 'record',
+             '--target-org', 'org62',
+             '--sobject', 'ADM_Epic__c',
+             '--record-id', epic_id,
+             '--values', f'Scheduled_Build__c={build_id}',
+             '--json'],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        if result.returncode != 0:
+            print(f"sf data update failed: {result.stderr}", flush=True)
+            return jsonify({'success': False, 'error': result.stderr or result.stdout}), 500
+
+        return jsonify({'success': True})
+    except subprocess.TimeoutExpired:
+        return jsonify({'success': False, 'error': 'Request to GUS timed out'}), 504
+    except Exception as e:
+        print(f"Error updating epic: {e}", flush=True)
+        return jsonify({'success': False, 'error': str(e)}), 500
 
 @app.route('/api/roadmap')
 def roadmap():

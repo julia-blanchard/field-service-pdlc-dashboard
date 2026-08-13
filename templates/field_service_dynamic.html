@@ -16874,19 +16874,18 @@ function createProgramCard(program) {
                 return '';
             }
 
-            if (isFutureReleaseEpic(epic)) {
-                return `
-                    <div style="padding: 6px 10px; background: #FFFDF0; border: 1px solid #F0C050; border-radius: 6px; font-size: 10px; width: 260px; min-width: 260px; max-width: 260px; box-sizing: border-box;">
-                        <div style="display: flex; flex-direction: column;">
-                            <div style="color: #94a3b8; font-style: italic; font-size: 11px; white-space: normal; overflow-wrap: break-word;">
-                                ⏳ Future Release — project not yet created
+            if (!epic.recommendations || epic.recommendations.length === 0) {
+                if (isFutureReleaseEpic(epic)) {
+                    return `
+                        <div style="padding: 6px 10px; background: #FFFDF0; border: 1px solid #F0C050; border-radius: 6px; font-size: 10px; width: 260px; min-width: 260px; max-width: 260px; box-sizing: border-box;">
+                            <div style="display: flex; flex-direction: column;">
+                                <div style="color: #94a3b8; font-style: italic; font-size: 11px; white-space: normal; overflow-wrap: break-word;">
+                                    ⏳ Future Release — project not yet created
+                                </div>
                             </div>
                         </div>
-                    </div>
-                `;
-            }
-
-            if (!epic.recommendations || epic.recommendations.length === 0) {
+                    `;
+                }
                 return '';
             }
 
@@ -17330,6 +17329,43 @@ function createProgramCard(program) {
             }
         }
 
+        async function applySuggestedBuild(epicId, buildId, buildName, epicName, event) {
+            if (event) event.stopPropagation();
+
+            if (!confirm(`Set Scheduled Build to "${buildName}" for:\n\n${epicName}\n\nThis will update the epic in GUS.`)) {
+                return;
+            }
+
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = '...';
+            button.disabled = true;
+
+            try {
+                const response = await fetch('/api/apply-scheduled-build', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ epic_id: epicId, build_id: buildId })
+                });
+                const result = await response.json();
+
+                if (!result.success) {
+                    alert(`✗ Failed to update epic in GUS:\n\n${result.error || 'Unknown error'}`);
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    return;
+                }
+
+                alert(`✓ Scheduled Build set to "${buildName}"`);
+                const badgeSpan = button.closest('span');
+                if (badgeSpan) badgeSpan.style.display = 'none';
+            } catch (e) {
+                alert(`✗ Failed to update epic in GUS:\n\n${e.message}`);
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+        }
+
         // Phase 0 Data Loading and Rendering
         async function loadPhase0Data() {
             try {
@@ -17649,7 +17685,14 @@ function createProgramCard(program) {
             // Suggested scheduled build, inferred from majority vote across the epic's stories
             if (issues.includes('missing_scheduled_build') && epicIssues.suggested_build) {
                 const sb = epicIssues.suggested_build;
-                badges.push(`<span style="font-size: 11px; margin-left: 6px; color: #0176D3;">💡 Suggested Build: ${sb.value} (${sb.matching_stories}/${sb.total_stories} stories)</span>`);
+                const safeEpicName = epicIssues.epic_name.replace(/'/g, "\\'");
+                badges.push(`<span style="font-size: 11px; margin-left: 6px; color: #0176D3; white-space: nowrap;">
+                    💡 Suggested Build: ${sb.value} (${sb.matching_stories}/${sb.total_stories} stories)
+                    <button onclick="applySuggestedBuild('${epicIssues.epic_id}', '${sb.build_id}', '${sb.value}', '${safeEpicName}', event)"
+                            style="background: #0176D3; color: white; border: none; padding: 1px 6px; border-radius: 3px; font-size: 10px; cursor: pointer; font-weight: 600; margin-left: 4px;">
+                        Apply
+                    </button>
+                </span>`);
             }
 
             // Individual badges for other issues

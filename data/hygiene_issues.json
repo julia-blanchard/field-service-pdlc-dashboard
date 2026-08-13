@@ -4,7 +4,7 @@
     "teams_affected": 28,
     "programs_affected": 26,
     "issue_breakdown": {
-      "missing_scheduled_build": 72,
+      "missing_scheduled_build": 71,
       "missing_priority": 136,
       "missing_owner": 0,
       "blocked_no_comments": 0,
@@ -1152,14 +1152,13 @@
       "team": "FSL - Asset - 360",
       "owner": "Sri Ram Bathina",
       "health": "Unknown",
-      "scheduled_build": "-",
+      "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
       "program": "264 Scheduling Flows",
       "portfolio": "264 Field Service Workforce Scheduling",
       "project": "264 Scheduling Flows",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority"
       ]
     },
@@ -3724,14 +3723,13 @@
           "team": "FSL - Asset - 360",
           "owner": "Sri Ram Bathina",
           "health": "Unknown",
-          "scheduled_build": "-",
+          "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
           "program": "264 Scheduling Flows",
           "portfolio": "264 Field Service Workforce Scheduling",
           "project": "264 Scheduling Flows",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority"
           ]
         },

@@ -20,6 +20,7 @@ SHOW_ORPHANED_TAB = os.getenv('SHOW_ORPHANED_TAB', 'true').lower() == 'true'
 SHOW_HYGIENE_FEATURES = os.getenv('SHOW_HYGIENE_FEATURES', 'true').lower() == 'true'
 SHOW_EPIC_RECOMMENDATIONS = os.getenv('SHOW_EPIC_RECOMMENDATIONS', 'true').lower() == 'true'
 SHOW_ROADMAP_PHASE01 = os.getenv('SHOW_ROADMAP_PHASE01', 'false').lower() == 'true'
+SHOW_PHASE0_TAB = os.getenv('SHOW_PHASE0_TAB', 'false').lower() == 'true'
 
 # Cache busting
 @app.context_processor
@@ -29,7 +30,8 @@ def inject_cache_buster():
         show_orphaned_tab=SHOW_ORPHANED_TAB,
         show_hygiene_features=SHOW_HYGIENE_FEATURES,
         show_epic_recommendations=SHOW_EPIC_RECOMMENDATIONS,
-        show_roadmap_phase01=SHOW_ROADMAP_PHASE01
+        show_roadmap_phase01=SHOW_ROADMAP_PHASE01,
+        show_phase0_tab=SHOW_PHASE0_TAB
     )
 
 @app.after_request
@@ -1602,6 +1604,30 @@ def roadmap():
         return jsonify(data)
     except Exception as e:
         print(f"Error loading roadmap data: {e}", flush=True)
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/phase0-mobile')
+def phase0_mobile():
+    """Serve Mobile portfolio Phase 0 items from Google Sheet data"""
+    phase0_file = os.path.join('data', 'phase_0_programs.json')
+    try:
+        with open(phase0_file, 'r') as f:
+            data = json.load(f)
+
+        # Filter for Mobile portfolio only
+        mobile_items = [
+            item for item in data.get('programs', [])
+            if 'Mobile' in item.get('portfolio', '')
+        ]
+
+        return jsonify({
+            'items': mobile_items,
+            'count': len(mobile_items),
+            'last_updated': data.get('last_updated', ''),
+            'source': data.get('source', 'Google Sheets')
+        })
+    except Exception as e:
+        print(f"Error loading Phase 0 Mobile data: {e}", flush=True)
         return jsonify({'error': str(e)}), 500
 
 @app.route('/health')

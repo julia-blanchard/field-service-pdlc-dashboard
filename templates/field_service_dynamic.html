@@ -2803,6 +2803,9 @@
         {% if show_orphaned_tab %}
         <button class="nav-button" onclick="switchView('orphaned')" tabindex="-1">Orphaned Work</button>
         {% endif %}
+        {% if show_phase0_tab %}
+        <button class="nav-button" onclick="switchView('phase0')" tabindex="-1">Phase 0</button>
+        {% endif %}
     </div>
 
     <!-- Filter Bar -->
@@ -15097,6 +15100,62 @@
     </div>
     {% endif %}
 
+    <!-- Phase 0 View -->
+    {% if show_phase0_tab %}
+    <div id="phase0-view" class="view-content">
+        <h2 style="font-size: 24px; font-weight: 600; color: #e2e8f0; margin-bottom: 8px;">Phase 0 - Mobile Portfolio</h2>
+        <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+            Early-stage initiatives and features in the Mobile portfolio backlog. Add new items or promote existing ones to GUS programs.
+        </p>
+
+        <!-- Stats Card + Actions -->
+        <div style="display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start;">
+            <div class="stat-card" style="flex: 0 0 auto; min-width: 200px;">
+                <div class="stat-header">
+                    <div>
+                        <div class="stat-label" style="font-size: 10px;">MOBILE INITIATIVES</div>
+                        <div class="stat-value" id="phase0-count" style="font-size: 28px;">—</div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="showNewInitiativeModal()" style="margin-top: 12px; padding: 10px 20px; background: #22c55e; color: white; border: none; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+                + New Initiative
+            </button>
+        </div>
+
+        <!-- Phase 0 Table -->
+        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);">
+            <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                <colgroup>
+                    <col style="width: 25%;">
+                    <col style="width: 15%;">
+                    <col style="width: 12%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Initiative</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Theme</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Stage</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Tier</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">PM Lead</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Arch Lead</th>
+                        <th style="text-align: left; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">TPM Lead</th>
+                        <th style="text-align: center; padding: 12px 16px; font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="phase0-tbody">
+                    <tr><td colspan="8" style="padding: 40px; text-align: center; color: #94a3b8;">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% endif %}
+
     </div><!-- End tab-content -->
 </div><!-- End content-wrapper -->
 
@@ -16534,6 +16593,11 @@ function createProgramCard(program) {
                 loadOrphanedData();
             }
 
+            // Load Phase 0 data when switching to phase0 view
+            if (viewName === 'phase0' && !window.phase0DataLoaded) {
+                loadPhase0Data();
+            }
+
             // Save active view to localStorage so refresh doesn't reset to overview
             localStorage.setItem('activeView', viewName);
         }
@@ -17237,6 +17301,66 @@ function createProgramCard(program) {
                 button.textContent = originalText;
                 button.disabled = false;
             }
+        }
+
+        // Phase 0 Data Loading and Rendering
+        async function loadPhase0Data() {
+            try {
+                const response = await fetch('/api/phase0-mobile');
+                const data = await response.json();
+                window.phase0DataLoaded = true;
+
+                // Update count
+                document.getElementById('phase0-count').textContent = data.count || 0;
+
+                // Render table
+                renderPhase0Table(data.items || []);
+            } catch (error) {
+                console.error('Error loading Phase 0 data:', error);
+                document.getElementById('phase0-tbody').innerHTML =
+                    '<tr><td colspan="8" style="padding: 40px; text-align: center; color: #dc2626;">Error loading Phase 0 data</td></tr>';
+            }
+        }
+
+        function renderPhase0Table(items) {
+            const tbody = document.getElementById('phase0-tbody');
+
+            if (!items || items.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" style="padding: 40px; text-align: center; color: #94a3b8;">No Mobile initiatives found</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = items.map(item => `
+                <tr style="border-bottom: 1px solid #e5e7eb; transition: background 0.15s;">
+                    <td style="padding: 12px 16px; font-size: 13px; color: #1e293b;">
+                        <div style="font-weight: 500; margin-bottom: 2px;">${escapeHtml(item.name || item.full_name || 'Unnamed')}</div>
+                        ${item.sheet_url ? `<a href="${item.sheet_url}" target="_blank" style="font-size: 11px; color: #0176D3; text-decoration: none;">View in Sheet →</a>` : ''}
+                    </td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.theme || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.stage || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.tier || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.program_manager || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.arch_lead || '-')}</td>
+                    <td style="padding: 12px 16px; font-size: 12px; color: #64748b;">${escapeHtml(item.tpm_lead || '-')}</td>
+                    <td style="padding: 12px 16px; text-align: center;">
+                        <button onclick="editInitiative('${item.id}')" style="padding: 4px 10px; background: #0176D3; color: white; border: none; border-radius: 4px; font-size: 11px; cursor: pointer;">Edit</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showNewInitiativeModal() {
+            alert('New Initiative modal coming soon!\n\nThis will allow you to add new Phase 0 items to the Google Sheet.');
+        }
+
+        function editInitiative(id) {
+            alert(`Edit initiative ${id} - coming soon!`);
         }
 
         function dismissRecommendation(epicId, event) {

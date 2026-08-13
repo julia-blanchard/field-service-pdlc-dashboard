@@ -713,6 +713,7 @@ def index():
         if p.get('portfolio')
         and ('Field Service' in p.get('portfolio', '') or p.get('portfolio', '').startswith('FY27 FS') or p.get('portfolio', '') == 'FY27 SC M4 UWM')
         and not any(old_release in p.get('portfolio', '') for old_release in ['262', '260', '258', '256'])
+        and p.get('portfolio', '') != 'FY27 FS Trust'  # Deprecated pillar, being folded into other FY27 portfolios
     ))
 
     # Filter phase_0_programs to only include Field Service portfolios

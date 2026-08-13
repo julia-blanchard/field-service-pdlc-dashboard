@@ -6,6 +6,7 @@ Shows: Programs -> Projects -> Epics with health information
 """
 
 import json
+import re
 import subprocess
 import os
 from datetime import datetime
@@ -16,6 +17,21 @@ SCRIPT_DIR = Path(__file__).parent
 DATA_FILE = SCRIPT_DIR / "data" / "execution_data.json"
 REPORT_ID = "00OEE000002tswH2AQ"  # Field Service report
 TARGET_ORG = os.getenv("TARGET_ORG", "org62")  # Use env var or default to org62
+
+# The GUS report above has a hardcoded portfolio scope, so it silently misses
+# new portfolios (e.g. FY27/266 pillars) until someone edits the report's
+# filter by hand. discover_forward_facing_portfolios() below fills that gap
+# via SOQL instead -- no hardcoded portfolio names, so the next release's
+# portfolios get picked up automatically as long as their name carries a
+# release number.
+FORWARD_RELEASE_CUTOFF = 264  # keep 264 and newer; drop 262 and earlier
+JUNK_PORTFOLIO_NAME_RE = re.compile(r'dummy|holder|test|do not use|innovation|backlog', re.IGNORECASE)
+RELEASE_NUMBER_RE = re.compile(r'\b(2[4-9]\d)\b')
+FY27_NAME_RE = re.compile(r'FY27', re.IGNORECASE)
+# Portfolios that match the Field Service name search but whose Parent_Cloud__c
+# is confirmed to be something else (e.g. Government Cloud Field Service ->
+# Parent_Cloud__c = GIA, not Field Service).
+EXCLUDED_PARENT_CLOUD_PORTFOLIOS = {'Government Cloud Field Service'}
 
 def fetch_execution_report():
     """Fetch execution report from GUS with extended metadata"""
@@ -433,13 +449,18 @@ def normalize_portfolio_names(structured_data):
         elif original.startswith('FY27 Field Service '):
             pillar = original.replace('FY27 Field Service ', '')
             if pillar == 'Mobile':
-                program['portfolio'] = 'FY27 FS Mobile'
-                normalized_count += 1
+                new_portfolio = 'FY27 FS Mobile'
             elif pillar == 'Foundations':
-                program['portfolio'] = 'FY27 FS Foundations'
-                normalized_count += 1
+                new_portfolio = 'FY27 FS Foundations'
             elif pillar == 'Scheduling & Optimization':
-                program['portfolio'] = 'FY27 FS S&O'
+                new_portfolio = 'FY27 FS S&O'
+            elif pillar == 'Workforce Scheduling':
+                new_portfolio = 'FY27 FS Workforce Scheduling'
+            else:
+                new_portfolio = f'FY27 FS {pillar}'
+
+            program['portfolio'] = new_portfolio
+            if original != new_portfolio:
                 normalized_count += 1
 
     print(f"   ✓ Normalized {normalized_count} portfolio names")
@@ -544,6 +565,184 @@ def fetch_262_projects():
         print(f"   ⚠️  Failed to fetch 262 projects: {e}")
         return []
 
+def run_soql(query):
+    """Run a SOQL query via sf CLI and return the records list"""
+    result = subprocess.run(
+        ['sf', 'data', 'query', '--query', query, '--target-org', TARGET_ORG, '--json'],
+        capture_output=True, text=True, check=True
+    )
+    return json.loads(result.stdout).get('result', {}).get('records', [])
+
+def is_forward_facing_portfolio_name(name):
+    """
+    Decide if a portfolio name represents current/upcoming work vs a
+    retired release. Every Field Service portfolio name carries an explicit
+    release number (e.g. "264 Field Service Mobile", "FY27 Field Service
+    Trust") -- that's a more reliable signal than epic LastModifiedDate,
+    since old-release backlogs get bulk-groomed/triaged periodically,
+    which bumps LastModifiedDate without representing new work.
+
+    Returns True/False, or None if no release number could be found (those
+    get dropped -- empirically they're vague/legacy names like "Field
+    Service Cloud FY25", not real current-release portfolios).
+    """
+    if JUNK_PORTFOLIO_NAME_RE.search(name):
+        return False
+    if name in EXCLUDED_PARENT_CLOUD_PORTFOLIOS:
+        return False
+    if FY27_NAME_RE.search(name):
+        return True
+    match = RELEASE_NUMBER_RE.search(name)
+    if not match:
+        return None
+    return int(match.group(1)) >= FORWARD_RELEASE_CUTOFF
+
+def discover_forward_facing_portfolios():
+    """
+    Find Field Service portfolios via SOQL (no hardcoded portfolio list),
+    scoped to release >= FORWARD_RELEASE_CUTOFF. This is what lets new
+    portfolios (like FY27/266 pillars) get picked up automatically instead
+    of requiring someone to edit the GUS report's filter by hand.
+    """
+    print("🔍 Discovering forward-facing Field Service portfolios via SOQL...")
+    try:
+        portfolios = run_soql(
+            "SELECT Id, Name FROM PPM_Portfolio__c "
+            "WHERE Name LIKE '%Field Service%' OR Name LIKE '%FSL%' OR Name LIKE '%SFS%'"
+        )
+    except Exception as e:
+        print(f"   ⚠️  Failed to discover portfolios: {e}")
+        return []
+
+    forward = [p for p in portfolios if is_forward_facing_portfolio_name(p['Name'])]
+    print(f"   ✓ {len(forward)} of {len(portfolios)} discovered portfolios are forward-facing")
+    return forward
+
+def fetch_new_release_programs(structured_data):
+    """
+    Fill the gap left by the GUS report's hardcoded portfolio scope: walk
+    Portfolio -> Program -> Project -> Epic via SOQL for any forward-facing
+    portfolio the report didn't already surface, and return program dicts
+    matching parse_report_data's shape.
+    """
+    print("🔍 Fetching new-release programs not covered by the GUS report...")
+
+    existing_portfolios = {p['portfolio'] for p in structured_data['programs']}
+    forward_portfolios = discover_forward_facing_portfolios()
+    new_portfolios = [p for p in forward_portfolios if p['Name'] not in existing_portfolios]
+
+    if not new_portfolios:
+        print("   ✓ No new portfolios to add -- report coverage is up to date")
+        return []
+
+    print(f"   ✓ {len(new_portfolios)} new portfolios not yet in execution data: "
+          f"{[p['Name'] for p in new_portfolios]}")
+
+    portfolio_map = {p['Id']: p['Name'] for p in new_portfolios}
+    portfolio_idlist = ','.join(f"'{i}'" for i in portfolio_map)
+
+    try:
+        programs = run_soql(
+            f"SELECT Id, Name, Portfolio__c, Program_Health__c, Program_Manager__r.Name "
+            f"FROM PPM_Program__c WHERE Portfolio__c IN ({portfolio_idlist})"
+        )
+    except Exception as e:
+        print(f"   ⚠️  Failed to fetch new-release programs: {e}")
+        return []
+
+    if not programs:
+        return []
+
+    program_idlist = ','.join(f"'{p['Id']}'" for p in programs)
+    try:
+        projects = run_soql(
+            f"SELECT Id, Name, Program__c, Project_Health__c, "
+            f"Product_Owner_Project_Object__r.Name, LastModifiedDate "
+            f"FROM PPM_Project__c WHERE Program__c IN ({program_idlist})"
+        )
+    except Exception as e:
+        print(f"   ⚠️  Failed to fetch new-release projects: {e}")
+        return []
+
+    epics = []
+    project_ids = [p['Id'] for p in projects]
+    chunk_size = 200
+    for i in range(0, len(project_ids), chunk_size):
+        chunk = project_ids[i:i + chunk_size]
+        chunk_idlist = ','.join(f"'{c}'" for c in chunk)
+        try:
+            epics.extend(run_soql(
+                f"SELECT Id, Name, Project__c, Health__c, Team__r.Name, "
+                f"Scheduled_Build__r.Name, Priority__c, LastModifiedDate, "
+                f"Epic_Health_Comments__c, Owner.Name "
+                f"FROM ADM_Epic__c WHERE Project__c IN ({chunk_idlist})"
+            ))
+        except Exception as e:
+            print(f"   ⚠️  Failed to fetch epics for chunk {i // chunk_size + 1}: {e}")
+            continue
+
+    epics_by_project = defaultdict(list)
+    for e in epics:
+        epics_by_project[e['Project__c']].append(e)
+
+    projects_by_program = defaultdict(list)
+    for p in projects:
+        projects_by_program[p['Program__c']].append(p)
+
+    new_programs = []
+    for prog in programs:
+        prog_projects = []
+        for proj in projects_by_program.get(prog['Id'], []):
+            proj_epics = []
+            for e in epics_by_project.get(proj['Id'], []):
+                health_status = e.get('Health__c') or 'Unknown'
+                proj_epics.append({
+                    'name': e['Name'],
+                    'id': e['Id'],
+                    'priority': e.get('Priority__c') or '-',
+                    'health': parse_health_from_status(health_status),
+                    'health_status': health_status,
+                    'health_comments': e.get('Epic_Health_Comments__c') or '',
+                    'owner': (e.get('Owner') or {}).get('Name', ''),
+                    'team': (e.get('Team__r') or {}).get('Name', '-') if e.get('Team__r') else '-',
+                    'scheduled_build': (e.get('Scheduled_Build__r') or {}).get('Name', '-') if e.get('Scheduled_Build__r') else '-',
+                    'planned_release': '',
+                    'last_modified': (e.get('LastModifiedDate') or '')[:10],
+                    'loc': '',
+                    'path_to_green': ''
+                })
+            if not proj_epics:
+                continue
+            epic_builds = [e['scheduled_build'] for e in proj_epics if e['scheduled_build'] and e['scheduled_build'] != '-']
+            prog_projects.append({
+                'name': proj['Name'],
+                'id': proj['Id'],
+                'product_owner': (proj.get('Product_Owner_Project_Object__r') or {}).get('Name', '') if proj.get('Product_Owner_Project_Object__r') else '',
+                'dev_lead': '',
+                'target': max(epic_builds) if epic_builds else '',
+                'last_modified': (proj.get('LastModifiedDate') or '')[:10],
+                'health_status': proj.get('Project_Health__c') or 'Unknown',
+                'epics': proj_epics
+            })
+        if not prog_projects:
+            continue
+        program_health = prog.get('Program_Health__c') or 'Unknown'
+        new_programs.append({
+            'name': prog['Name'],
+            'id': prog['Id'],
+            'portfolio': portfolio_map.get(prog['Portfolio__c'], 'Unknown'),
+            'health': parse_health_from_status(program_health),
+            'health_status': program_health,
+            'program_manager': (prog.get('Program_Manager__r') or {}).get('Name', '') if prog.get('Program_Manager__r') else '',
+            'target_release': '',
+            'projects': prog_projects
+        })
+
+    print(f"   ✓ Built {len(new_programs)} new-release programs "
+          f"({sum(len(p['projects']) for p in new_programs)} projects, "
+          f"{sum(len(proj['epics']) for p in new_programs for proj in p['projects'])} epics)")
+    return new_programs
+
 def merge_262_projects(structured_data, projects_262):
     """Merge 262 projects into structured data"""
     if not projects_262:
@@ -630,12 +829,19 @@ def main():
     structured_data = enrich_with_epic_ids(structured_data)
     structured_data = enrich_with_project_fields(structured_data)
 
-    # Normalize portfolio names (FY27 Field Service Mobile → FY27 FS Mobile)
-    structured_data = normalize_portfolio_names(structured_data)
-
     # Fetch and merge 262 projects
     projects_262 = fetch_262_projects()
     structured_data = merge_262_projects(structured_data, projects_262)
+
+    # Fill in any forward-facing portfolios the GUS report's hardcoded scope
+    # missed (e.g. new FY27/266 pillars) -- must run before
+    # normalize_portfolio_names so the newly-fetched programs' portfolio
+    # names get normalized consistently with the report-sourced ones.
+    new_programs = fetch_new_release_programs(structured_data)
+    structured_data['programs'].extend(new_programs)
+
+    # Normalize portfolio names (FY27 Field Service Mobile → FY27 FS Mobile)
+    structured_data = normalize_portfolio_names(structured_data)
 
     # Save to JSON file
     DATA_FILE.parent.mkdir(exist_ok=True)

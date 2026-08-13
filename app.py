@@ -686,7 +686,16 @@ def index():
         'Mobile': '264 Field Service Mobile',
         'Foundations': '264 Field Service Foundations',
         'Scheduling & Optimization': '264 Field Service Scheduling & Optimization',
-        'Workforce Scheduling': '264 Field Service Workforce Scheduling'
+        'Workforce Scheduling': '264 Field Service Workforce Scheduling',
+        # Phase 0 still stores the long-form FY27 names; execution_data.json's
+        # normalize_portfolio_names() already shortened these to "FY27 FS ..."
+        # -- map them the same way so both sources collapse into one string
+        # instead of appearing twice in the portfolio selector.
+        'FY27 Field Service Mobile': 'FY27 FS Mobile',
+        'FY27 Field Service Foundations': 'FY27 FS Foundations',
+        'FY27 Field Service Scheduling & Optimization': 'FY27 FS S&O',
+        'FY27 Field Service Workforce Scheduling': 'FY27 FS Workforce Scheduling',
+        'FY27 Field Service Trust': 'FY27 FS Trust',
     }
 
     for prog in phase_0_programs:

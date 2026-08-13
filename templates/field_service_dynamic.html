@@ -16838,7 +16838,9 @@ function createProgramCard(program) {
         }
 
         function isFutureReleaseEpic(epic) {
-            return !!(epic.name && epic.name.includes('266'));
+            const scheduledBuild = epic.scheduled_build || '';
+            const epicName = epic.name || '';
+            return /^(266|268|270|272)/.test(scheduledBuild) || /\b(266|268|270|272)\b/.test(epicName);
         }
 
         // Model: "266 UWM Worker Engagement Experience: Agentic Shift Management" (62 chars)

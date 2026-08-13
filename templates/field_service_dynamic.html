@@ -3052,7 +3052,7 @@
                         <!-- PBD Validation Status (if available) -->
                         {% if program.validation_status %}
                         <!-- Validation status - HIDDEN per user request -->
-                        {% if false %}
+                        {% if show_pbd_validation %}
                         <div style="margin-bottom: 12px;">
                             {% if program.validation_status == 'PASS' %}
                             <span class="status-badge" style="background: #dcfce7; color: #166534;">✅ {{ program.validation_status }}</span>
@@ -3068,19 +3068,24 @@
                         {% endif %}
                         {% endif %}
 
-                        <!-- PBD Links - HIDDEN per user request -->
-                        {% if false %}
-                        {% if program.pbd_url or program.report_url %}
+                        <!-- PBD Links -->
+                        {% if show_pbd_validation %}
+                        {% if program.pbd_url %}
                         <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
-                            {% if program.pbd_url %}
                             <a href="{{ program.pbd_url }}" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #0891b2, #06b6d4); color: white; border-radius: 6px; text-decoration: none; font-size: 0.85em; font-weight: 500;">
                                 📄 View PBD
                             </a>
-                            {% endif %}
                             {% if program.report_url %}
                             <a href="{{ program.report_url }}" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #f59e0b, #fbbf24); color: #78350f; border-radius: 6px; text-decoration: none; font-size: 0.85em; font-weight: 500;">
                                 📊 View Report
                             </a>
+                            <button onclick="revalidatePBD('{{ program.id }}', '{{ program.pbd_url }}')" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #8b5cf6, #a78bfa); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85em; font-weight: 500;">
+                                🔄 Re-validate
+                            </button>
+                            {% else %}
+                            <button onclick="revalidatePBD('{{ program.id }}', '{{ program.pbd_url }}')" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #10b981, #34d399); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85em; font-weight: 500;">
+                                ✅ Validate
+                            </button>
                             {% endif %}
                         </div>
                         {% endif %}
@@ -3158,7 +3163,7 @@
                         <!-- PBD Validation Status (if available) -->
                         {% if program.validation_status %}
                         <!-- Validation status - HIDDEN per user request -->
-                        {% if false %}
+                        {% if show_pbd_validation %}
                         <div style="margin-bottom: 12px;">
                             {% if program.validation_status == 'PASS' %}
                             <span class="status-badge" style="background: #dcfce7; color: #166534;">✅ {{ program.validation_status }}</span>
@@ -3174,24 +3179,23 @@
                         {% endif %}
                         {% endif %}
 
-                        <!-- PBD Links - HIDDEN per user request -->
-                        {% if false %}
-                        {% if program.pbd_url or program.report_url %}
+                        <!-- PBD Links -->
+                        {% if show_pbd_validation %}
+                        {% if program.pbd_url %}
                         <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
-                            {% if program.pbd_url %}
                             <a href="{{ program.pbd_url }}" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #0891b2, #06b6d4); color: white; border-radius: 6px; text-decoration: none; font-size: 0.85em; font-weight: 500;">
                                 📄 View PBD
                             </a>
-                            {% endif %}
                             {% if program.report_url %}
                             <a href="{{ program.report_url }}" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #f59e0b, #fbbf24); color: #78350f; border-radius: 6px; text-decoration: none; font-size: 0.85em; font-weight: 500;">
                                 📊 View Report
                             </a>
-                            {% endif %}
-                            <!-- Re-validate button (only works on Heroku with backend) -->
-                            {% if program.pbd_url %}
                             <button onclick="revalidatePBD('{{ program.id }}', '{{ program.pbd_url }}')" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #8b5cf6, #a78bfa); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85em; font-weight: 500;">
                                 🔄 Re-validate
+                            </button>
+                            {% else %}
+                            <button onclick="revalidatePBD('{{ program.id }}', '{{ program.pbd_url }}')" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: linear-gradient(135deg, #10b981, #34d399); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85em; font-weight: 500;">
+                                ✅ Validate
                             </button>
                             {% endif %}
                         </div>
@@ -17670,6 +17674,7 @@ function createProgramCard(program) {
                 }, 100);
             }
         });
+
 
         // PBD Re-validation Function (requires Heroku backend)
         async function revalidatePBD(programId, pbdUrl) {

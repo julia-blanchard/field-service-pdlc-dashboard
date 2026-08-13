@@ -1,71 +1,93 @@
 #!/usr/bin/env python3
 """
-Real PBD Validation using the /validate-pbd skill
-This script must be run within Claude Code context to access MCP tools
+PBD Validation Script - Stub Implementation
+TODO: Integrate with Google Workspace MCP to read and validate PBD documents
 """
 
 import json
 import sys
-import subprocess
 from pathlib import Path
+from datetime import datetime
 
-def validate_pbd_with_skill(pbd_url):
+def validate_pbd_stub(pbd_url):
     """
-    Run the /validate-pbd skill via Claude Code CLI
-    Returns the validation report as a dict
+    Stub validator - returns mock results
+    Real implementation will use Google Workspace MCP to:
+    1. Read the PBD document
+    2. Check for required sections
+    3. Validate completeness
+    4. Generate detailed HTML report
     """
-    try:
-        # Call Claude Code with the validate-pbd skill
-        # This assumes we're in a Claude Code session with MCP access
-        result = subprocess.run(
-            ['claude', 'code', 'skill', 'validate-pbd', pbd_url],
-            capture_output=True,
-            text=True,
-            timeout=120
-        )
 
-        if result.returncode != 0:
-            print(f"Error running validator: {result.stderr}")
-            return None
+    # Extract document ID from URL
+    doc_id = "unknown"
+    if "/document/d/" in pbd_url:
+        doc_id = pbd_url.split("/document/d/")[1].split("/")[0]
 
-        # Parse the output to extract validation status
-        output = result.stdout
+    # Generate a simple HTML report
+    report_html = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PBD Validation Report</title>
+    <style>
+        body {{ font-family: system-ui, -apple-system, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }}
+        .status {{ font-size: 24px; font-weight: 600; margin-bottom: 20px; }}
+        .pass {{ color: #10b981; }}
+        .warning {{ color: #f59e0b; }}
+        .fail {{ color: #ef4444; }}
+        .section {{ margin: 20px 0; padding: 15px; background: #f9fafb; border-radius: 8px; }}
+        .completion {{ font-size: 18px; margin: 20px 0; }}
+    </style>
+</head>
+<body>
+    <h1>PBD Validation Report</h1>
+    <p>Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+    <p>Document: <a href="{pbd_url}" target="_blank">{doc_id}</a></p>
 
-        # Extract key information from the validation report
-        # This is a simple parser - might need refinement based on actual output
-        status = "FAIL"
-        completion = 0
+    <div class="status pass">✅ STUB - Validation Not Yet Implemented</div>
 
-        if "✅ PASS" in output and "WARNING" not in output:
-            status = "PASS"
-        elif "⚠️ PASS WITH WARNINGS" in output:
-            status = "PASS WITH WARNINGS"
+    <div class="completion">
+        <strong>Completion Rate:</strong> -- %
+    </div>
 
-        # Try to extract completion percentage
-        import re
-        completion_match = re.search(r'Completion Rate[:\s]+(\d+)%', output)
-        if completion_match:
-            completion = int(completion_match.group(1))
+    <div class="section">
+        <h3>Next Steps</h3>
+        <p>To enable real validation:</p>
+        <ol>
+            <li>Integrate Google Workspace MCP tools to read document content</li>
+            <li>Parse PBD sections and validate required fields</li>
+            <li>Generate detailed section-by-section analysis</li>
+            <li>Store reports and update program JSON with results</li>
+        </ol>
+    </div>
+</body>
+</html>
+    """
 
-        return {
-            "status": status,
-            "completion": completion,
-            "report": output
-        }
+    # Create reports directory if it doesn't exist
+    reports_dir = Path(__file__).parent / "validation_reports"
+    reports_dir.mkdir(exist_ok=True)
 
-    except Exception as e:
-        print(f"Error validating PBD: {e}")
-        return None
+    # Save report
+    report_filename = f"pbd_validation_{doc_id}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.html"
+    report_path = reports_dir / report_filename
+
+    with open(report_path, 'w') as f:
+        f.write(report_html)
+
+    return {
+        "status": "STUB",
+        "completion": 0,
+        "report_url": f"validation_reports/{report_filename}"
+    }
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 validate_pbd_real.py <pbd_url>")
+        print(json.dumps({"error": "Missing PBD URL parameter"}))
         sys.exit(1)
 
     pbd_url = sys.argv[1]
-    result = validate_pbd_with_skill(pbd_url)
+    result = validate_pbd_stub(pbd_url)
 
-    if result:
-        print(json.dumps(result, indent=2))
-    else:
-        sys.exit(1)
+    print(json.dumps(result))

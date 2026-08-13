@@ -21,6 +21,7 @@ SHOW_HYGIENE_FEATURES = os.getenv('SHOW_HYGIENE_FEATURES', 'true').lower() == 't
 SHOW_EPIC_RECOMMENDATIONS = os.getenv('SHOW_EPIC_RECOMMENDATIONS', 'true').lower() == 'true'
 SHOW_ROADMAP_PHASE01 = os.getenv('SHOW_ROADMAP_PHASE01', 'false').lower() == 'true'
 SHOW_PHASE0_TAB = os.getenv('SHOW_PHASE0_TAB', 'false').lower() == 'true'
+SHOW_PBD_VALIDATION = os.getenv('SHOW_PBD_VALIDATION', 'false').lower() == 'true'
 
 # Cache busting
 @app.context_processor
@@ -31,7 +32,8 @@ def inject_cache_buster():
         show_hygiene_features=SHOW_HYGIENE_FEATURES,
         show_epic_recommendations=SHOW_EPIC_RECOMMENDATIONS,
         show_roadmap_phase01=SHOW_ROADMAP_PHASE01,
-        show_phase0_tab=SHOW_PHASE0_TAB
+        show_phase0_tab=SHOW_PHASE0_TAB,
+        show_pbd_validation=SHOW_PBD_VALIDATION
     )
 
 @app.after_request
@@ -1347,6 +1349,13 @@ def refresh_execution_data():
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
 
+@app.route('/validation_reports/<path:filename>')
+def serve_validation_report(filename):
+    """Serve validation report HTML files"""
+    from flask import send_from_directory
+    reports_dir = os.path.join(os.path.dirname(__file__), 'validation_reports')
+    return send_from_directory(reports_dir, filename)
+
 @app.route('/api/validate-pbd', methods=['POST'])
 def validate_pbd():
     """
@@ -1392,8 +1401,22 @@ def validate_pbd():
             try:
                 validation_result = json_lib.loads(result.stdout)
 
-                # Update phase_1_programs.json with new validation results
-                # (Implementation would merge results into existing JSON)
+                # Update phase_0_programs.json with new validation results
+                data_file = os.path.join(os.path.dirname(__file__), 'data', 'phase_0_programs.json')
+                with open(data_file, 'r') as f:
+                    programs_data = json_lib.load(f)
+
+                # Find and update the program
+                for program in programs_data.get('programs', []):
+                    if program.get('id') == program_id:
+                        program['report_url'] = validation_result.get('report_url', '')
+                        program['validation_status'] = validation_result.get('status', 'UNKNOWN')
+                        program['completion'] = validation_result.get('completion', 0)
+                        break
+
+                # Save updated data
+                with open(data_file, 'w') as f:
+                    json_lib.dump(programs_data, f, indent=2)
 
                 return jsonify({
                     "success": True,

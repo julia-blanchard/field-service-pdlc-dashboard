@@ -16833,6 +16833,34 @@ function createProgramCard(program) {
             return /^(266|268|270|272)/.test(scheduledBuild) || /\b(266|268|270|272)\b/.test(epicName);
         }
 
+        // Release group implied by a recommendation's program/project name, mirroring
+        // the Python engine's get_release_group(). Returns '' if the name carries no
+        // release number (an ungated program, a valid pick under either toggle).
+        function getRecommendationReleaseGroup(rec) {
+            const text = `${rec.program_name || ''} ${rec.project_name || ''}`;
+            const match = text.match(/\b(264|266|268|270|272)\b/);
+            if (!match) return '';
+            return match[1] === '264' ? '264' : '266+';
+        }
+
+        // Pick the recommendation to display given the active 264/266 toggle. An epic's
+        // Scheduled_Build__c and its own name can disagree (data-entry lag), so its
+        // recommendation list can span both a 264-scoped and a 266+-scoped option --
+        // only ever surface one whose own release matches the active toggle (or carries
+        // no release number at all, i.e. an ungated program). Never show a 264-scoped
+        // recommendation under the 266 toggle or vice versa. Returns null if nothing
+        // in the list qualifies.
+        function pickRecommendationForActiveRelease(epic) {
+            if (!epic.recommendations || epic.recommendations.length === 0) return null;
+            if (currentOrphanedRelease === 'all') return epic.recommendations[0];
+
+            const wantGroup = currentOrphanedRelease === '264' ? '264' : '266+';
+            return epic.recommendations.find(rec => {
+                const group = getRecommendationReleaseGroup(rec);
+                return !group || group === wantGroup;
+            }) || null;
+        }
+
         // Model: "266 UWM Worker Engagement Experience: Agentic Shift Management" (62 chars)
         function truncateEpicTitle(name, maxLen = 62) {
             if (!name || name.length <= maxLen) return name;
@@ -16869,7 +16897,9 @@ function createProgramCard(program) {
                 return '';
             }
 
-            if (!epic.recommendations || epic.recommendations.length === 0) {
+            const topRec = pickRecommendationForActiveRelease(epic);
+
+            if (!topRec) {
                 if (isFutureReleaseEpic(epic)) {
                     return `
                         <div style="padding: 6px 10px; background: #FFFDF0; border: 1px solid #F0C050; border-radius: 6px; font-size: 10px; width: 260px; min-width: 260px; max-width: 260px; box-sizing: border-box;">
@@ -16884,7 +16914,6 @@ function createProgramCard(program) {
                 return '';
             }
 
-            const topRec = epic.recommendations[0];
             const confidenceIcon = topRec.confidence === 'high' ? '🟢' :
                                   topRec.confidence === 'medium' ? '🟡' : '⚪';
             const confidenceText = topRec.confidence === 'high' ? 'High' :
@@ -17458,6 +17487,21 @@ function createProgramCard(program) {
                 return;
             }
 
+            // Same release scoping as the inline card: never list a 264-scoped option
+            // while viewing under the 266 toggle or vice versa.
+            const releaseScopedRecs = currentOrphanedRelease === 'all'
+                ? epic.recommendations
+                : epic.recommendations.filter(rec => {
+                    const group = getRecommendationReleaseGroup(rec);
+                    const wantGroup = currentOrphanedRelease === '264' ? '264' : '266+';
+                    return !group || group === wantGroup;
+                });
+
+            if (releaseScopedRecs.length === 0) {
+                alert('No recommendations available for this epic under the current release filter');
+                return;
+            }
+
             // Build modal content
             let modalHTML = `
                 <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 10000; display: flex; align-items: center; justify-content: center;" onclick="this.remove()">
@@ -17473,7 +17517,7 @@ function createProgramCard(program) {
                         </div>
             `;
 
-            epic.recommendations.forEach((rec, index) => {
+            releaseScopedRecs.forEach((rec, index) => {
                 const confidenceIcon = rec.confidence === 'high' ? '🟢' : rec.confidence === 'medium' ? '🟡' : '⚪';
                 const scorePercent = Math.round(rec.score * 100);
                 const borderColor = index === 0 ? '#3b82f6' : '#e5e7eb';

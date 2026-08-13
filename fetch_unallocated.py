@@ -8,10 +8,19 @@ Shows epics that are either:
 """
 
 import json
+import re
 import subprocess
 from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
+
+def strip_html(text):
+    """Strip HTML tags/entities from a rich-text field like Description__c."""
+    if not text:
+        return ''
+    text = re.sub(r'<[^>]+>', ' ', text)
+    text = text.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
+    return re.sub(r'\s+', ' ', text).strip()
 
 SCRIPT_DIR = Path(__file__).parent
 DATA_FILE = SCRIPT_DIR / "data" / "unallocated_data.json"
@@ -114,7 +123,7 @@ def fetch_all_field_service_epics_direct():
     SELECT Id, Name, Health__c, Epic_Health_Comments__c,
            Priority__c, Scheduled_Build__r.Name,
            Owner.Name, Owner.IsActive, Team__r.Name,
-           Project__r.Name,
+           Project__r.Name, Description__c,
            CreatedDate, LastModifiedDate,
            Actual_Story_Points_on_Epic__c
     FROM ADM_Epic__c
@@ -175,7 +184,8 @@ def fetch_all_field_service_epics_direct():
             'story_points': story_points,
             'program_name': program_name,
             'program_portfolio': '-',  # We'll fetch portfolio separately if needed
-            'project_name': project_name
+            'project_name': project_name,
+            'description': strip_html(record.get('Description__c', ''))
         }
 
         all_epics.append(epic)

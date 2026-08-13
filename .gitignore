@@ -31,3 +31,6 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# PBD Validation Reports (local only)
+validation_reports/

@@ -83,6 +83,30 @@ def format_month_header(month_str):
 
 app.jinja_env.filters['format_month'] = format_month_header
 
+def shorten_portfolio_label(portfolio):
+    """Display-only: 'Field Service' -> 'FS' so labels match the FY27 'FS' naming"""
+    if not portfolio:
+        return portfolio
+    return portfolio.replace('Field Service', 'FS')
+
+app.jinja_env.filters['shorten_portfolio'] = shorten_portfolio_label
+
+def get_execution_months():
+    """
+    Forward-looking rolling window for the Execution tab's MONTH filter:
+    current month + next 3 months (e.g. Aug/Sep/Oct/Nov today).
+    Unlike Allocations' rolling window, this has no backward-looking month.
+    """
+    today = datetime.now()
+    months = []
+    for offset in range(4):
+        month_date = today + relativedelta(months=offset)
+        months.append({
+            'value': month_date.strftime('%Y-%m'),
+            'label': month_date.strftime('%B')
+        })
+    return months
+
 def map_release_to_freeze_month(release_number):
     """
     Map Salesforce release numbers (including patches) to their ship month
@@ -935,6 +959,7 @@ def index():
                            epic_stats=epic_stats,
                            teams=teams,
                            capacity_months=capacity_months,
+                           execution_months=get_execution_months(),
                            total_teams=total_teams,
                            total_filled=total_filled,
                            total_non_filled=total_non_filled,

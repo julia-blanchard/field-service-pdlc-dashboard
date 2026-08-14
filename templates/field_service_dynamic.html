@@ -583,7 +583,7 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             word-break: normal;
-            overflow-wrap: break-word;
+            overflow-wrap: normal;
             text-overflow: ellipsis;
         }
 
@@ -15933,6 +15933,27 @@ function createProgramCard(program) {
             updatePortfolioFilter();
         }
 
+        // .program-name uses -webkit-line-clamp, which truncates at whatever character
+        // fits the box -- including mid-word -- regardless of overflow-wrap/word-break.
+        // Trim whole words instead so titles never get cut mid-token.
+        function clampProgramNames() {
+            document.querySelectorAll('.program-name').forEach(el => {
+                const textNode = el.querySelector('a') || el;
+                if (!textNode.dataset.fullText) {
+                    textNode.dataset.fullText = textNode.textContent.trim();
+                }
+                const full = textNode.dataset.fullText;
+                textNode.textContent = full;
+                if (el.scrollHeight <= el.clientHeight + 1) return;
+
+                const words = full.split(' ');
+                while (words.length > 1 && el.scrollHeight > el.clientHeight + 1) {
+                    words.pop();
+                    textNode.textContent = words.join(' ') + '…';
+                }
+            });
+        }
+
         // Restore filter on page load
         document.addEventListener('DOMContentLoaded', () => {
             const savedPortfolios = localStorage.getItem('selectedPortfolios');
@@ -17759,6 +17780,9 @@ function createProgramCard(program) {
         window.addEventListener('DOMContentLoaded', () => {
             // Load hygiene data
             loadHygieneData();
+
+            clampProgramNames();
+            window.addEventListener('resize', clampProgramNames);
 
             const savedView = localStorage.getItem('activeView');
             if (savedView && savedView !== 'overview') {

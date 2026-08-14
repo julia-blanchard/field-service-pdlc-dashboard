@@ -535,7 +535,7 @@
             -webkit-backdrop-filter: blur(30px) saturate(180%);
             border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: 10px;
-            padding: 10px 10px 40px 10px;
+            padding: 10px;
             margin-bottom: 8px;
             font-size: 11px;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -548,7 +548,12 @@
             overflow-wrap: break-word;
             display: flex;
             flex-direction: column;
-            min-height: 140px;
+        }
+
+        /* Phase 0 cards reserve extra bottom padding for the tier badge, which is
+           absolutely positioned in the card's bottom-left corner. */
+        .phase-0 .program-card {
+            padding-bottom: 40px;
         }
 
         .program-card:hover {
@@ -578,7 +583,8 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             word-break: normal;
-            overflow-wrap: anywhere;
+            overflow-wrap: break-word;
+            text-overflow: ellipsis;
         }
 
         .program-name a {

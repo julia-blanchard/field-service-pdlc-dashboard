@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 187,
+    "total_epics_needing_attention": 193,
     "teams_affected": 29,
     "programs_affected": 26,
     "issue_breakdown": {
-      "missing_scheduled_build": 71,
-      "missing_priority": 139,
+      "missing_scheduled_build": 74,
+      "missing_priority": 145,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 109
+      "missing_planned_release": 115
     }
   },
   "epics": [
@@ -997,7 +997,7 @@
       "story_points": 0,
       "program": "FS 264: S&O: Agentic S&O",
       "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
+      "project": "FS 264: S&O: AF Scripts Outreach",
       "issues": [
         "missing_priority"
       ]
@@ -1014,7 +1014,7 @@
       "story_points": 0,
       "program": "FS 264: S&O: Agentic S&O",
       "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
+      "project": "FS 264: S&O: AF Scripts Outreach",
       "issues": [
         "missing_scheduled_build",
         "missing_planned_release"
@@ -1062,7 +1062,7 @@
       "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
       "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Avi Inbar",
-      "health": "On Track",
+      "health": "Watch",
       "scheduled_build": "262.13",
       "priority": "35",
       "story_points": 0,
@@ -1903,7 +1903,7 @@
       "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
       "team": "FSL - Foundation - Atlas",
       "owner": "Avani Jindal",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.7",
       "priority": "1",
       "story_points": 0,
@@ -2217,7 +2217,7 @@
       "epic_name_key": "Trust Work for Capacity Planning Team",
       "team": "Team-WFM-Capacity-Planning",
       "owner": "Ruchika Pashine",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "5",
       "story_points": 0,
@@ -2234,7 +2234,7 @@
       "epic_name_key": "[264] Analysis: Conversational Forecasting & Anomaly Detection using MoiraiAgent",
       "team": "Team-WFM-ML-Foundations",
       "owner": "VARSHA CHALAMALASETTY",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "264",
       "priority": "53",
       "story_points": 0,
@@ -2251,7 +2251,7 @@
       "epic_name_key": "[264] Forecasting - Moirai Support and Enhanced Workloads Support",
       "team": "Team-WFM-ML-Foundations",
       "owner": "VARSHA CHALAMALASETTY",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -2269,7 +2269,7 @@
       "epic_name_key": "[264] Moirai Forecast Accuracy",
       "team": "Team-WFM-ML-Foundations",
       "owner": "VARSHA CHALAMALASETTY",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "264",
       "priority": "51",
       "story_points": 0,
@@ -2286,7 +2286,7 @@
       "epic_name_key": "[264] POC: Intra-day Reforecasting for Real-time Shift Optimization",
       "team": "Team-WFM-ML-Foundations",
       "owner": "VARSHA CHALAMALASETTY",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "264",
       "priority": "52",
       "story_points": 0,
@@ -2328,6 +2328,42 @@
       "program": "[264] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] WFM Workloads Forecasting",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002cC732AE",
+      "epic_name": "[266] Trust Related Work for Capacity Planning",
+      "epic_name_key": "[266] Trust Related Work for Capacity Planning",
+      "team": "Team-WFM-Capacity-Planning",
+      "owner": "Taniya Ghosh",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Capacity Planning",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002cC8f2AE",
+      "epic_name": "[266] Trust Related Work for ML Foundation",
+      "epic_name_key": "[266] Trust Related Work for ML Foundation",
+      "team": "Team-WFM-ML-Foundations",
+      "owner": "Taniya Ghosh",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM-ML-Foundations",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -2676,7 +2712,7 @@
       "epic_name_key": "[264] SFS [AF] Transparency - Engine",
       "team": "Optimization Engineering",
       "owner": "Sigal Shapira",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.4",
       "priority": 20,
       "story_points": 0,
@@ -2744,43 +2780,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002TAXV2A4",
-      "epic_name": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
-      "epic_name_key": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
-      "team": "FSL - Resource - Dispatch Console",
-      "owner": "Lilach Talbi",
-      "health": "Unknown",
-      "scheduled_build": "-",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-      "issues": [
-        "missing_scheduled_build",
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002U4rR2AS",
-      "epic_name": "[264][Scheduling Console]Long Term View",
-      "epic_name_key": "[264][Scheduling Console]Long Term View",
-      "team": "FSL - Resource - Dispatch Console",
-      "owner": "Lilach Talbi",
-      "health": "On Track",
-      "scheduled_build": "264.3",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002LcPJ2A0",
       "epic_name": "[264][Scheduling Console] Complex Work Enhancements",
       "epic_name_key": "[264][Scheduling Console] Complex Work Enhancements",
@@ -2792,7 +2791,7 @@
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
       "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Multi-Stage Work - Service side",
+      "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -2810,7 +2809,7 @@
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
       "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Multi-Stage Work - Service side",
+      "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -2828,160 +2827,16 @@
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
       "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Multi-Stage Work - Service side",
+      "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
         "missing_priority",
         "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002VJ6r2AG",
-      "epic_name": "[264][Scheduling Console]  [Dispatch Console Team] Complex Work Enhancements",
-      "epic_name_key": "[264][Scheduling Console]  [Dispatch Console Team] Complex Work Enhancements",
-      "team": "FSL - Resource - Dispatch Console",
-      "owner": "Lilach Talbi",
-      "health": "On Track",
-      "scheduled_build": "264.3",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Multi-Stage Work - Service side",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002S6MH2A0",
-      "epic_name": "[264][Scheduling Console] holiday display",
-      "epic_name_key": "[264][Scheduling Console] holiday display",
-      "team": "FSL - Talpiot - Dispatch Console",
-      "owner": "Gal Asraf",
-      "health": "On Track",
-      "scheduled_build": "264.7",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002SiOM2A0",
-      "epic_name": "[264][Scheduling Console] Adjust Duration AND Snap-In",
-      "epic_name_key": "[264][Scheduling Console] Adjust Duration AND Snap-In",
-      "team": "FSL - Resource - Dispatch Console",
-      "owner": "Lilach Talbi",
-      "health": "On Track",
-      "scheduled_build": "264.3",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002TAaj2AG",
-      "epic_name": "[264][Scheduling Console] Side by Side Gantt and List",
-      "epic_name_key": "[264][Scheduling Console] Side by Side Gantt and List",
-      "team": "FSL - Talpiot - Dispatch Console",
-      "owner": "Lilach Talbi",
-      "health": "Not Started",
-      "scheduled_build": "264.7",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002TAcL2AW",
-      "epic_name": "Canceled - [264][Scheduling Console] Adjust Appt/Absence Duration & D&D Snap-In",
-      "epic_name_key": "Canceled - [264][Scheduling Console] Adjust Appt/Absence Duration & D&D Snap-In",
-      "team": "FSL - Resource - Dispatch Console",
-      "owner": "Lilach Talbi",
-      "health": "Unknown",
-      "scheduled_build": "264.4",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002TAnd2AG",
-      "epic_name": "[264][Scheduling Console] Right Click For Actions",
-      "epic_name_key": "[264][Scheduling Console] Right Click For Actions",
-      "team": "FSL - Resource - Dispatch Console",
-      "owner": "Gal Asraf",
-      "health": "On Track",
-      "scheduled_build": "264.3",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002Y8Ob2AK",
-      "epic_name": "[264][Scheduling Console] Gantt Custom Filters",
-      "epic_name_key": "[264][Scheduling Console] Gantt Custom Filters",
-      "team": "FSL - Resource - Dispatch Console",
-      "owner": "Lilach Talbi",
-      "health": "On Track",
-      "scheduled_build": "264.3",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002TAdx2AG",
-      "epic_name": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-      "epic_name_key": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-      "team": "FSL - Talpiot - Dispatch Console",
-      "owner": "Gal Asraf",
-      "health": "Not Started",
-      "scheduled_build": "264.7",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
-      "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Expanded Gantt Search (Appointment Search)",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002TAVt2AO",
-      "epic_name": "[264][Scheduling Console] Gantt Color Palette",
-      "epic_name_key": "[264][Scheduling Console] Gantt Color Palette",
+      "epic_id": "a3QEE000002Srxt2AC",
+      "epic_name": "[264][Scheduling Console] Bundled Work",
+      "epic_name_key": "[264][Scheduling Console] Bundled Work",
       "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Gal Asraf",
       "health": "On Track",
@@ -2990,7 +2845,7 @@
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
       "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Gantt Colors Palette",
+      "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -3008,20 +2863,20 @@
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
       "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Expandability for Scheduling Actions (single and bulk)",
+      "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
         "missing_priority",
         "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002Srxt2AC",
-      "epic_name": "[264][Scheduling Console] Bundled Work",
-      "epic_name_key": "[264][Scheduling Console] Bundled Work",
-      "team": "FSL - Talpiot - Dispatch Console",
-      "owner": "Gal Asraf",
+      "epic_id": "a3QEE000002VJ6r2AG",
+      "epic_name": "[264][Scheduling Console]  [Dispatch Console Team] Complex Work Enhancements",
+      "epic_name_key": "[264][Scheduling Console]  [Dispatch Console Team] Complex Work Enhancements",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
       "health": "On Track",
-      "scheduled_build": "264.4",
+      "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
@@ -3069,6 +2924,133 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002S6MH2A0",
+      "epic_name": "[264][Scheduling Console] holiday display",
+      "epic_name_key": "[264][Scheduling Console] holiday display",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "On Track",
+      "scheduled_build": "264.7",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002SiOM2A0",
+      "epic_name": "[264][Scheduling Console] Adjust Duration AND Snap-In",
+      "epic_name_key": "[264][Scheduling Console] Adjust Duration AND Snap-In",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "On Track",
+      "scheduled_build": "264.3",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002TAVt2AO",
+      "epic_name": "[264][Scheduling Console] Gantt Color Palette",
+      "epic_name_key": "[264][Scheduling Console] Gantt Color Palette",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002TAXV2A4",
+      "epic_name": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
+      "epic_name_key": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Unknown",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002TAaj2AG",
+      "epic_name": "[264][Scheduling Console] Side by Side Gantt and List",
+      "epic_name_key": "[264][Scheduling Console] Side by Side Gantt and List",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "On Track",
+      "scheduled_build": "264.7",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002TAcL2AW",
+      "epic_name": "Canceled - [264][Scheduling Console] Adjust Appt/Absence Duration & D&D Snap-In",
+      "epic_name_key": "Canceled - [264][Scheduling Console] Adjust Appt/Absence Duration & D&D Snap-In",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Unknown",
+      "scheduled_build": "264.4",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002TAdx2AG",
+      "epic_name": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
+      "epic_name_key": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "Not Started",
+      "scheduled_build": "264.7",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002TAkP2AW",
       "epic_name": "[264][Scheduling Console] Support Appointment Icons",
       "epic_name_key": "[264][Scheduling Console] Support Appointment Icons",
@@ -3076,6 +3058,60 @@
       "owner": "Gal Asraf",
       "health": "Not Started",
       "scheduled_build": "264.11",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002TAnd2AG",
+      "epic_name": "[264][Scheduling Console] Right Click For Actions",
+      "epic_name_key": "[264][Scheduling Console] Right Click For Actions",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "On Track",
+      "scheduled_build": "264.3",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002U4rR2AS",
+      "epic_name": "[264][Scheduling Console]Long Term View",
+      "epic_name_key": "[264][Scheduling Console]Long Term View",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "On Track",
+      "scheduled_build": "264.3",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Y8Ob2AK",
+      "epic_name": "[264][Scheduling Console] Gantt Custom Filters",
+      "epic_name_key": "[264][Scheduling Console] Gantt Custom Filters",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "On Track",
+      "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
@@ -3098,8 +3134,83 @@
       "story_points": 0,
       "program": "S&O Scheduling Console Adoption",
       "portfolio": "FY27 FS S&O",
-      "project": "Scheduling Console - Trust",
+      "project": "S&O Scheduling Console - Trust",
       "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002SsXN2A0",
+      "epic_name": "[264] [Scheduling Console] bugs and features enhancements",
+      "epic_name_key": "[264] [Scheduling Console] bugs and features enhancements",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Trust",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002W2lV2AS",
+      "epic_name": "[264][Scheduling Console] DC2 Automation",
+      "epic_name_key": "[264][Scheduling Console] DC2 Automation",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Trust",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002adCz2AI",
+      "epic_name": "[264][Scheduling Console] - Demo Data",
+      "epic_name_key": "[264][Scheduling Console] - Demo Data",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Trust",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002adEb2AI",
+      "epic_name": "*[264][Scheduling Console] - Talpiot's Bugs and Leftovers",
+      "epic_name_key": "*[264][Scheduling Console] - Talpiot's Bugs and Leftovers",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Gal Asraf",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console Adoption",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Trust",
+      "issues": [
+        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -3341,7 +3452,7 @@
           "story_points": 0,
           "program": "FS 264: S&O: Agentic S&O",
           "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
+          "project": "FS 264: S&O: AF Scripts Outreach",
           "issues": [
             "missing_scheduled_build",
             "missing_planned_release"
@@ -4120,7 +4231,7 @@
           "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
           "team": "FSL - Foundation - Atlas",
           "owner": "Avani Jindal",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.7",
           "priority": "1",
           "story_points": 0,
@@ -4497,45 +4608,8 @@
     },
     {
       "name": "FSL - Resource - Dispatch Console",
-      "epic_count": 7,
+      "epic_count": 8,
       "epics": [
-        {
-          "epic_id": "a3QEE000002TAXV2A4",
-          "epic_name": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
-          "epic_name_key": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
-          "team": "FSL - Resource - Dispatch Console",
-          "owner": "Lilach Talbi",
-          "health": "Unknown",
-          "scheduled_build": "-",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
-          "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-          "issues": [
-            "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002U4rR2AS",
-          "epic_name": "[264][Scheduling Console]Long Term View",
-          "epic_name_key": "[264][Scheduling Console]Long Term View",
-          "team": "FSL - Resource - Dispatch Console",
-          "owner": "Lilach Talbi",
-          "health": "On Track",
-          "scheduled_build": "264.3",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
-          "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Long-Cycle Work & Expanded Views (2 weeks/1 month/6 months...)",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
         {
           "epic_id": "a3QEE000002VJ6r2AG",
           "epic_name": "[264][Scheduling Console]  [Dispatch Console Team] Complex Work Enhancements",
@@ -4548,7 +4622,7 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Multi-Stage Work - Service side",
+          "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -4566,8 +4640,27 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002TAXV2A4",
+          "epic_name": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
+          "epic_name_key": "[Scheduling Console] Long-Cycle Work & Long-Term Views",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Unknown",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -4584,7 +4677,7 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -4602,7 +4695,25 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002U4rR2AS",
+          "epic_name": "[264][Scheduling Console]Long Term View",
+          "epic_name_key": "[264][Scheduling Console]Long Term View",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "On Track",
+          "scheduled_build": "264.3",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -4620,7 +4731,25 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002SsXN2A0",
+          "epic_name": "[264] [Scheduling Console] bugs and features enhancements",
+          "epic_name_key": "[264] [Scheduling Console] bugs and features enhancements",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Trust",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -4913,7 +5042,7 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Multi-Stage Work - Service side",
+          "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -4931,7 +5060,7 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Multi-Stage Work - Service side",
+          "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -4949,7 +5078,7 @@
           "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
           "team": "FSL - Resource - Scheduling Orcas",
           "owner": "Avi Inbar",
-          "health": "On Track",
+          "health": "Watch",
           "scheduled_build": "262.13",
           "priority": "35",
           "story_points": 0,
@@ -4964,7 +5093,7 @@
     },
     {
       "name": "FSL - Talpiot - Dispatch Console",
-      "epic_count": 13,
+      "epic_count": 16,
       "epics": [
         {
           "epic_id": "a3QEE000002NSAX2A4",
@@ -4978,7 +5107,7 @@
           "story_points": 0,
           "program": "FS 264: S&O: Agentic S&O",
           "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: [Trust] AF Scripts Outreach",
+          "project": "FS 264: S&O: AF Scripts Outreach",
           "issues": [
             "missing_priority"
           ]
@@ -5013,97 +5142,7 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Multi-Stage Work - Service side",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002S6MH2A0",
-          "epic_name": "[264][Scheduling Console] holiday display",
-          "epic_name_key": "[264][Scheduling Console] holiday display",
-          "team": "FSL - Talpiot - Dispatch Console",
-          "owner": "Gal Asraf",
-          "health": "On Track",
-          "scheduled_build": "264.7",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
-          "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002TAaj2AG",
-          "epic_name": "[264][Scheduling Console] Side by Side Gantt and List",
-          "epic_name_key": "[264][Scheduling Console] Side by Side Gantt and List",
-          "team": "FSL - Talpiot - Dispatch Console",
-          "owner": "Lilach Talbi",
-          "health": "Not Started",
-          "scheduled_build": "264.7",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
-          "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Gantt & List Capabilities:Adjust App & Absence Dur, Holidays",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002TAdx2AG",
-          "epic_name": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-          "epic_name_key": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-          "team": "FSL - Talpiot - Dispatch Console",
-          "owner": "Gal Asraf",
-          "health": "Not Started",
-          "scheduled_build": "264.7",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
-          "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Expanded Gantt Search (Appointment Search)",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002TAVt2AO",
-          "epic_name": "[264][Scheduling Console] Gantt Color Palette",
-          "epic_name_key": "[264][Scheduling Console] Gantt Color Palette",
-          "team": "FSL - Talpiot - Dispatch Console",
-          "owner": "Gal Asraf",
-          "health": "On Track",
-          "scheduled_build": "264.4",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
-          "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Gantt Colors Palette",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002Ssif2AC",
-          "epic_name": "[264][Scheduling Console] D&D Scheduled appointments from list",
-          "epic_name_key": "[264][Scheduling Console] D&D Scheduled appointments from list",
-          "team": "FSL - Talpiot - Dispatch Console",
-          "owner": "Gal Asraf",
-          "health": "On Track",
-          "scheduled_build": "264.7",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
-          "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Expandability for Scheduling Actions (single and bulk)",
+          "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -5117,6 +5156,24 @@
           "owner": "Gal Asraf",
           "health": "On Track",
           "scheduled_build": "264.4",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Advanced Use Cases",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Ssif2AC",
+          "epic_name": "[264][Scheduling Console] D&D Scheduled appointments from list",
+          "epic_name_key": "[264][Scheduling Console] D&D Scheduled appointments from list",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "On Track",
+          "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
@@ -5164,6 +5221,78 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002S6MH2A0",
+          "epic_name": "[264][Scheduling Console] holiday display",
+          "epic_name_key": "[264][Scheduling Console] holiday display",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "On Track",
+          "scheduled_build": "264.7",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002TAVt2AO",
+          "epic_name": "[264][Scheduling Console] Gantt Color Palette",
+          "epic_name_key": "[264][Scheduling Console] Gantt Color Palette",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002TAaj2AG",
+          "epic_name": "[264][Scheduling Console] Side by Side Gantt and List",
+          "epic_name_key": "[264][Scheduling Console] Side by Side Gantt and List",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "On Track",
+          "scheduled_build": "264.7",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002TAdx2AG",
+          "epic_name": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
+          "epic_name_key": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002TAkP2AW",
           "epic_name": "[264][Scheduling Console] Support Appointment Icons",
           "epic_name_key": "[264][Scheduling Console] Support Appointment Icons",
@@ -5193,8 +5322,65 @@
           "story_points": 0,
           "program": "S&O Scheduling Console Adoption",
           "portfolio": "FY27 FS S&O",
-          "project": "Scheduling Console - Trust",
+          "project": "S&O Scheduling Console - Trust",
           "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002W2lV2AS",
+          "epic_name": "[264][Scheduling Console] DC2 Automation",
+          "epic_name_key": "[264][Scheduling Console] DC2 Automation",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Trust",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002adCz2AI",
+          "epic_name": "[264][Scheduling Console] - Demo Data",
+          "epic_name_key": "[264][Scheduling Console] - Demo Data",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Trust",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002adEb2AI",
+          "epic_name": "*[264][Scheduling Console] - Talpiot's Bugs and Leftovers",
+          "epic_name_key": "*[264][Scheduling Console] - Talpiot's Bugs and Leftovers",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console Adoption",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Trust",
+          "issues": [
+            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -5287,7 +5473,7 @@
           "epic_name_key": "[264] SFS [AF] Transparency - Engine",
           "team": "Optimization Engineering",
           "owner": "Sigal Shapira",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.4",
           "priority": 20,
           "story_points": 0,
@@ -6672,7 +6858,7 @@
     },
     {
       "name": "Team-WFM-Capacity-Planning",
-      "epic_count": 1,
+      "epic_count": 2,
       "epics": [
         {
           "epic_id": "a3QEE000002PYa12AG",
@@ -6680,7 +6866,7 @@
           "epic_name_key": "Trust Work for Capacity Planning Team",
           "team": "Team-WFM-Capacity-Planning",
           "owner": "Ruchika Pashine",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "5",
           "story_points": 0,
@@ -6690,12 +6876,30 @@
           "issues": [
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002cC732AE",
+          "epic_name": "[266] Trust Related Work for Capacity Planning",
+          "epic_name_key": "[266] Trust Related Work for Capacity Planning",
+          "team": "Team-WFM-Capacity-Planning",
+          "owner": "Taniya Ghosh",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Capacity Planning",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "Team-WFM-ML-Foundations",
-      "epic_count": 4,
+      "epic_count": 5,
       "epics": [
         {
           "epic_id": "a3QEE000002KARt2AO",
@@ -6703,7 +6907,7 @@
           "epic_name_key": "[264] Analysis: Conversational Forecasting & Anomaly Detection using MoiraiAgent",
           "team": "Team-WFM-ML-Foundations",
           "owner": "VARSHA CHALAMALASETTY",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "264",
           "priority": "53",
           "story_points": 0,
@@ -6720,7 +6924,7 @@
           "epic_name_key": "[264] Forecasting - Moirai Support and Enhanced Workloads Support",
           "team": "Team-WFM-ML-Foundations",
           "owner": "VARSHA CHALAMALASETTY",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -6738,7 +6942,7 @@
           "epic_name_key": "[264] Moirai Forecast Accuracy",
           "team": "Team-WFM-ML-Foundations",
           "owner": "VARSHA CHALAMALASETTY",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "264",
           "priority": "51",
           "story_points": 0,
@@ -6755,7 +6959,7 @@
           "epic_name_key": "[264] POC: Intra-day Reforecasting for Real-time Shift Optimization",
           "team": "Team-WFM-ML-Foundations",
           "owner": "VARSHA CHALAMALASETTY",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "264",
           "priority": "52",
           "story_points": 0,
@@ -6763,6 +6967,24 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] WFM-ML-Foundations",
           "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002cC8f2AE",
+          "epic_name": "[266] Trust Related Work for ML Foundation",
+          "epic_name_key": "[266] Trust Related Work for ML Foundation",
+          "team": "Team-WFM-ML-Foundations",
+          "owner": "Taniya Ghosh",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM-ML-Foundations",
+          "issues": [
+            "missing_priority",
             "missing_planned_release"
           ]
         }

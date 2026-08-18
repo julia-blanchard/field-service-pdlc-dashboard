@@ -136,14 +136,14 @@ def map_release_to_freeze_month(release_number):
     if release_str in ['262.11', '262.12']: return '2026-07'  # Jun 29 - Jul 13
     if release_str in ['262.13', '262.14', '262.15', '262.16']: return '2026-08'  # Aug 03-24
 
-    # 264 patches
-    if release_str == '264': return '2026-08'  # Aug 03
-    if release_str == '264.1': return '2026-08'  # Aug 10
-    if release_str == '264.2': return '2026-08'  # Aug 17
-    if release_str == '264.3': return '2026-08'  # Aug 24
-    if release_str == '264.4': return '2026-08'  # Aug 31 (actually Aug 31 but still August)
-    if release_str in ['264.5', '264.6']: return '2026-09'  # Sep 21, Sep 28
-    if release_str in ['264.7', '264.8', '264.9', '264.10']: return '2026-10'  # Oct 05-26
+    # 264 patches (grouped by freeze-to-prod date, i.e. the month it actually ships)
+    if release_str == '264': return '2026-08'  # freeze-to-prod 8/6
+    if release_str == '264.1': return '2026-08'  # freeze-to-prod 8/13
+    if release_str == '264.2': return '2026-08'  # freeze-to-prod 8/20
+    if release_str == '264.3': return '2026-08'  # freeze-to-prod 8/27
+    if release_str == '264.4': return '2026-09'  # freeze-to-prod 9/3
+    if release_str == '264.5': return '2026-09'  # freeze-to-prod 9/24
+    if release_str in ['264.6', '264.7', '264.8', '264.9', '264.10']: return '2026-10'  # freeze-to-prod 10/1-10/29
     if release_str in ['264.11', '264.12', '264.13']: return '2026-11'  # Nov 02-16
     if release_str in ['264.14', '264.15', '264.16']: return '2026-12'  # Nov 30 - Dec 14
     if release_str == '264.17': return '2027-01'  # Jan 04

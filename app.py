@@ -393,6 +393,16 @@ def enrich_programs_with_hygiene(execution_programs):
 
     return execution_programs
 
+def strip_canceled_epics(programs):
+    """Drop epics with health_status='Canceled' so they never render or count toward stats/target-release."""
+    for prog in programs:
+        for proj in prog.get('projects', []):
+            proj['epics'] = [
+                e for e in proj.get('epics', [])
+                if str(e.get('health_status', '')).strip().lower() != 'canceled'
+            ]
+    return programs
+
 @app.route('/')
 def index():
     """Main dashboard - Field Service PDLC with Heroku layout"""
@@ -406,6 +416,8 @@ def index():
             exec_data = json.load(f)
     except:
         exec_data = {'programs': [], 'last_updated': None}
+
+    exec_data['programs'] = strip_canceled_epics(exec_data.get('programs', []))
 
     # Extract last_updated timestamp (prefer execution data, fallback to phase_0)
     last_updated = exec_data.get('last_updated') or phase_0_updated
@@ -1006,7 +1018,7 @@ def execution_final():
     except:
         exec_data = {'programs': [], 'last_updated': None}
 
-    programs = exec_data.get('programs', [])
+    programs = strip_canceled_epics(exec_data.get('programs', []))
     last_updated = exec_data.get('last_updated') or teams_data.get('last_updated')
 
     # Calculate program stats
@@ -1178,7 +1190,7 @@ def execution_v2():
     except:
         exec_data = {'programs': [], 'last_updated': None}
 
-    programs = exec_data.get('programs', [])
+    programs = strip_canceled_epics(exec_data.get('programs', []))
     last_updated = exec_data.get('last_updated') or teams_data.get('last_updated')
 
     # Calculate program stats

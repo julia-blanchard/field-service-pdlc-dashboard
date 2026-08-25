@@ -50,9 +50,16 @@ def format_month_header(month_str):
     except:
         return month_str
 
-# Create Jinja2 environment with custom filter
+def shorten_portfolio_label(portfolio):
+    """Display-only: 'Field Service' -> 'FS' so labels match the FY27 'FS' naming"""
+    if not portfolio:
+        return portfolio
+    return portfolio.replace('Field Service', 'FS')
+
+# Create Jinja2 environment with custom filters (must match app.py's filters)
 env = Environment(loader=FileSystemLoader('templates'))
 env.filters['format_month'] = format_month_header
+env.filters['shorten_portfolio'] = shorten_portfolio_label
 template = env.get_template('field_service_dynamic.html')
 
 # Prepare data for template

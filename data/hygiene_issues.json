@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 193,
+    "total_epics_needing_attention": 191,
     "teams_affected": 29,
     "programs_affected": 26,
     "issue_breakdown": {
       "missing_scheduled_build": 74,
-      "missing_priority": 145,
+      "missing_priority": 143,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 115
+      "missing_planned_release": 113
     }
   },
   "epics": [
@@ -2328,42 +2328,6 @@
       "program": "[264] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
       "project": "[264] WFM Workloads Forecasting",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002cC732AE",
-      "epic_name": "[266] Trust Related Work for Capacity Planning",
-      "epic_name_key": "[266] Trust Related Work for Capacity Planning",
-      "team": "Team-WFM-Capacity-Planning",
-      "owner": "Taniya Ghosh",
-      "health": "Not Started",
-      "scheduled_build": "266",
-      "priority": "-",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[266] WFM Capacity Planning",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002cC8f2AE",
-      "epic_name": "[266] Trust Related Work for ML Foundation",
-      "epic_name_key": "[266] Trust Related Work for ML Foundation",
-      "team": "Team-WFM-ML-Foundations",
-      "owner": "Taniya Ghosh",
-      "health": "Not Started",
-      "scheduled_build": "266",
-      "priority": "-",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[266] WFM-ML-Foundations",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -6858,7 +6822,7 @@
     },
     {
       "name": "Team-WFM-Capacity-Planning",
-      "epic_count": 2,
+      "epic_count": 1,
       "epics": [
         {
           "epic_id": "a3QEE000002PYa12AG",
@@ -6876,30 +6840,12 @@
           "issues": [
             "missing_planned_release"
           ]
-        },
-        {
-          "epic_id": "a3QEE000002cC732AE",
-          "epic_name": "[266] Trust Related Work for Capacity Planning",
-          "epic_name_key": "[266] Trust Related Work for Capacity Planning",
-          "team": "Team-WFM-Capacity-Planning",
-          "owner": "Taniya Ghosh",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": "-",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[266] WFM Capacity Planning",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
         }
       ]
     },
     {
       "name": "Team-WFM-ML-Foundations",
-      "epic_count": 5,
+      "epic_count": 4,
       "epics": [
         {
           "epic_id": "a3QEE000002KARt2AO",
@@ -6967,24 +6913,6 @@
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] WFM-ML-Foundations",
           "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002cC8f2AE",
-          "epic_name": "[266] Trust Related Work for ML Foundation",
-          "epic_name_key": "[266] Trust Related Work for ML Foundation",
-          "team": "Team-WFM-ML-Foundations",
-          "owner": "Taniya Ghosh",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": "-",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[266] WFM-ML-Foundations",
-          "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         }

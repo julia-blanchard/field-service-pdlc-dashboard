@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 191,
-    "teams_affected": 29,
-    "programs_affected": 26,
+    "total_epics_needing_attention": 202,
+    "teams_affected": 30,
+    "programs_affected": 28,
     "issue_breakdown": {
-      "missing_scheduled_build": 74,
-      "missing_priority": 143,
+      "missing_scheduled_build": 80,
+      "missing_priority": 153,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 113
+      "missing_planned_release": 124
     }
   },
   "epics": [
@@ -27,6 +27,24 @@
       "project": "[264] Mobile Insights GA",
       "issues": [
         "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002f0692AA",
+      "epic_name": "[264/266] Field Service: Headless Setup APIs Cross-FS Epic",
+      "epic_name_key": "[264/266] Field Service: Headless Setup APIs Cross-FS Epic",
+      "team": "-",
+      "owner": "Scott Andrus",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "1",
+      "story_points": 0,
+      "program": "[264] Field Service: Headless (aka Codey)",
+      "portfolio": "264 Field Service Foundations",
+      "project": "[264/266] Field Service: Headless Setup APIs",
+      "issues": [
+        "missing_scheduled_build",
         "missing_planned_release"
       ]
     },
@@ -798,7 +816,7 @@
       "epic_name_key": "[264][SFS MCX][Native GIS] Work Order Related List Layer (GA Enhancement)",
       "team": "SFS Mobile Core Experience",
       "owner": "Sharon Adler",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -1062,7 +1080,7 @@
       "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
       "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Avi Inbar",
-      "health": "Watch",
+      "health": "Completed",
       "scheduled_build": "262.13",
       "priority": "35",
       "story_points": 0,
@@ -1881,40 +1899,6 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002YWh32AG",
-      "epic_name": "[266] Compact density view",
-      "epic_name_key": "[266] Compact density view",
-      "team": "FSL - Foundation - Atlas",
-      "owner": "Rebecca Hampton",
-      "health": "On Track",
-      "scheduled_build": "264.4",
-      "priority": "0",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] SFS Schedule Management",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002YVLB2A4",
-      "epic_name": "[266] Key Metrics Panel for Schedule Manager",
-      "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
-      "team": "FSL - Foundation - Atlas",
-      "owner": "Avani Jindal",
-      "health": "On Track",
-      "scheduled_build": "264.7",
-      "priority": "1",
-      "story_points": 0,
-      "program": "[264] Unified Workforce Management (UWM)",
-      "portfolio": "FY27 SC M4 UWM",
-      "project": "[264] SFS Schedule Management",
-      "issues": [
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002Fns52AC",
       "epic_name": "264 SPIKEs for Schedule Management",
       "epic_name_key": "264 SPIKEs for Schedule Management",
@@ -2141,8 +2125,8 @@
     },
     {
       "epic_id": "a3QEE000002a6tl2AA",
-      "epic_name": "266 SFS [Infra] WEM Project",
-      "epic_name_key": "266 SFS [Infra] WEM Project",
+      "epic_name": "266 SFS [Infra] UWM / WEM / Including WEM Gov",
+      "epic_name_key": "266 SFS [Infra] UWM / WEM / Including WEM Gov",
       "team": "Optimization Engineering",
       "owner": "Josh Honeycutt",
       "health": "Not Started",
@@ -2379,7 +2363,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2398,7 +2382,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2417,7 +2401,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2436,7 +2420,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2455,7 +2439,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2474,7 +2458,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2493,7 +2477,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2512,7 +2496,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2531,7 +2515,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Workforce Scheduling Agent - Parity",
       "issues": [
@@ -2550,7 +2534,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Agent - Help Agent",
       "issues": [
@@ -2569,7 +2553,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Agent on NGA",
       "issues": [
@@ -2588,7 +2572,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Agent on NGA",
       "issues": [
@@ -2607,7 +2591,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Agent on NGA",
       "issues": [
@@ -2626,7 +2610,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Autonomous Scheduling & Dispatch",
+      "program": "S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Agent HDX",
       "issues": [
@@ -2645,7 +2629,7 @@
       "scheduled_build": "264.4",
       "priority": 15,
       "story_points": 0,
-      "program": "S&O Agentic Dispatcher/Scheduling Experience",
+      "program": "S&O Dispatch Agent",
       "portfolio": "FY27 FS S&O",
       "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
       "issues": [
@@ -2662,7 +2646,7 @@
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Agentic Dispatcher/Scheduling Experience",
+      "program": "S&O Dispatch Agent",
       "portfolio": "FY27 FS S&O",
       "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
       "issues": [
@@ -2680,7 +2664,7 @@
       "scheduled_build": "264.4",
       "priority": 20,
       "story_points": 0,
-      "program": "S&O Agentic Dispatcher/Scheduling Experience",
+      "program": "S&O Dispatch Agent",
       "portfolio": "FY27 FS S&O",
       "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
       "issues": [
@@ -2697,7 +2681,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Agentic Dispatcher/Scheduling Experience",
+      "program": "S&O Dispatch Agent",
       "portfolio": "FY27 FS S&O",
       "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
       "issues": [
@@ -2715,7 +2699,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Agentic Dispatcher/Scheduling Experience",
+      "program": "S&O Dispatch Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Dispatcher Agent - Adoption",
       "issues": [
@@ -2734,7 +2718,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Agentic Dispatcher/Scheduling Experience",
+      "program": "S&O Dispatch Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Dispatcher Agent - Adoption",
       "issues": [
@@ -2753,7 +2737,7 @@
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
@@ -2771,7 +2755,7 @@
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
@@ -2789,7 +2773,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
@@ -2807,7 +2791,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
@@ -2825,7 +2809,7 @@
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
@@ -2843,7 +2827,7 @@
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
@@ -2861,7 +2845,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Advanced Use Cases",
       "issues": [
@@ -2879,7 +2863,7 @@
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Map Capabilities",
       "issues": [
@@ -2897,7 +2881,7 @@
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -2915,7 +2899,7 @@
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -2933,7 +2917,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -2951,7 +2935,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -2970,7 +2954,7 @@
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -2988,7 +2972,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -3006,7 +2990,7 @@
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -3024,7 +3008,7 @@
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -3042,7 +3026,7 @@
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -3060,7 +3044,7 @@
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -3078,7 +3062,61 @@
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002dtpt2AA",
+      "epic_name": "[266] [Scheduling Console] Quick Absence Creation",
+      "epic_name_key": "[266] [Scheduling Console] Quick Absence Creation",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002dtrV2AQ",
+      "epic_name": "[266] [Scheduling Console] Utilization View",
+      "epic_name_key": "[266] [Scheduling Console] Utilization View",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002dtxx2AA",
+      "epic_name": "[266][UNDER THE LINE] [Scheduling Console] Flexible Density Settings",
+      "epic_name_key": "[266][UNDER THE LINE] [Scheduling Console] Flexible Density Settings",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
@@ -3096,7 +3134,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Trust",
       "issues": [
@@ -3114,7 +3152,7 @@
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Trust",
       "issues": [
@@ -3132,7 +3170,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Trust",
       "issues": [
@@ -3151,7 +3189,7 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Trust",
       "issues": [
@@ -3170,12 +3208,83 @@
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Scheduling Console Adoption",
+      "program": "S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Trust",
       "issues": [
         "missing_scheduled_build",
         "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002TAZ72AO",
+      "epic_name": "[264][Scheduling Console] Run RSO as Simulation",
+      "epic_name_key": "[264][Scheduling Console] Run RSO as Simulation",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Unknown",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Agentic Capabilities",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002du1B2AQ",
+      "epic_name": "[266] [Scheduling Console] RSO as Preview",
+      "epic_name_key": "[266] [Scheduling Console] RSO as Preview",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Agentic Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ep2f2AA",
+      "epic_name": "[266][Trust][Scheduling Intelligence]",
+      "epic_name_key": "[266][Trust][Scheduling Intelligence]",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Maayan Balasy Dollberg",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 1,
+      "story_points": 0,
+      "program": "S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ep4H2AQ",
+      "epic_name": "[266][Trust][Parachute][Scheduling Intelligence]",
+      "epic_name_key": "[266][Trust][Parachute][Scheduling Intelligence]",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Maayan Balasy Dollberg",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 1,
+      "story_points": 0,
+      "program": "S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Application Production Support",
+      "issues": [
         "missing_planned_release"
       ]
     },
@@ -3189,7 +3298,7 @@
       "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Frontline Workforce Management",
+      "program": "S&O CCaaS & Frontline Workforce Management",
       "portfolio": "FY27 FS S&O",
       "project": "S&O WFM New shift scheduling rules",
       "issues": [
@@ -3207,7 +3316,7 @@
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Frontline Workforce Management",
+      "program": "S&O CCaaS & Frontline Workforce Management",
       "portfolio": "FY27 FS S&O",
       "project": "S&O WFM unscheduled shifts optimization",
       "issues": [
@@ -3225,7 +3334,7 @@
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Frontline Workforce Management",
+      "program": "S&O CCaaS & Frontline Workforce Management",
       "portfolio": "FY27 FS S&O",
       "project": "S&O WFM unscheduled shifts optimization",
       "issues": [
@@ -3243,7 +3352,7 @@
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Frontline Workforce Management",
+      "program": "S&O CCaaS & Frontline Workforce Management",
       "portfolio": "FY27 FS S&O",
       "project": "S&O WFM Worker experience",
       "issues": [
@@ -3261,7 +3370,7 @@
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Frontline Workforce Management",
+      "program": "S&O CCaaS & Frontline Workforce Management",
       "portfolio": "FY27 FS S&O",
       "project": "S&O WFM Worker experience",
       "issues": [
@@ -3279,10 +3388,86 @@
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
-      "program": "S&O Frontline Workforce Management",
+      "program": "S&O CCaaS & Frontline Workforce Management",
       "portfolio": "FY27 FS S&O",
       "project": "S&O WFM Min duration of consecutive productive activity",
       "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YF3V2AW",
+      "epic_name": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix MVP",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YF572AG",
+      "epic_name": "266 SFS Frontline AI - [Android] Felix with LLM Gateway",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Felix with LLM Gateway",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix MVP",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YF6j2AG",
+      "epic_name": "266 SFS Frontline AI - [iOS] Felix with Agentforce for Dreamforce",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Felix with Agentforce for Dreamforce",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix MVP",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YFRh2AO",
+      "epic_name": "266 SFS Frontline AI - [Core] Felix with LLM Gateway",
+      "epic_name_key": "266 SFS Frontline AI - [Core] Felix with LLM Gateway",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix MVP",
+      "issues": [
+        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -3338,6 +3523,24 @@
       "project": "Agentforce & AI Platform",
       "issues": [
         "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002efHp2AI",
+      "epic_name": "[Aug][264] Perf test for AI Router cross FI sagemaker routing",
+      "epic_name_key": "[Aug][264] Perf test for AI Router cross FI sagemaker routing",
+      "team": "Shared Q4 (Perf) & CTS - AI Cloud",
+      "owner": "David Ching",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -3402,8 +3605,26 @@
   "by_team": [
     {
       "name": "-",
-      "epic_count": 22,
+      "epic_count": 23,
       "epics": [
+        {
+          "epic_id": "a3QEE000002f0692AA",
+          "epic_name": "[264/266] Field Service: Headless Setup APIs Cross-FS Epic",
+          "epic_name_key": "[264/266] Field Service: Headless Setup APIs Cross-FS Epic",
+          "team": "-",
+          "owner": "Scott Andrus",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "1",
+          "story_points": 0,
+          "program": "[264] Field Service: Headless (aka Codey)",
+          "portfolio": "264 Field Service Foundations",
+          "project": "[264/266] Field Service: Headless Setup APIs",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
         {
           "epic_id": "a3QEE000002ZAo92AG",
           "epic_name": "Test Irit",
@@ -3470,7 +3691,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3489,7 +3710,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3508,7 +3729,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3527,7 +3748,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3546,7 +3767,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3565,7 +3786,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3584,7 +3805,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3603,7 +3824,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3622,7 +3843,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling Agent - Parity",
           "issues": [
@@ -3641,7 +3862,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Agent - Help Agent",
           "issues": [
@@ -3660,7 +3881,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Agent on NGA",
           "issues": [
@@ -3679,7 +3900,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Agent on NGA",
           "issues": [
@@ -3698,7 +3919,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Agent on NGA",
           "issues": [
@@ -3717,7 +3938,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Autonomous Scheduling & Dispatch",
+          "program": "S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Agent HDX",
           "issues": [
@@ -3736,7 +3957,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Agentic Dispatcher/Scheduling Experience",
+          "program": "S&O Dispatch Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Dispatcher Agent - Adoption",
           "issues": [
@@ -3755,7 +3976,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Agentic Dispatcher/Scheduling Experience",
+          "program": "S&O Dispatch Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Dispatcher Agent - Adoption",
           "issues": [
@@ -4153,7 +4374,7 @@
     },
     {
       "name": "FSL - Foundation - Atlas",
-      "epic_count": 16,
+      "epic_count": 14,
       "epics": [
         {
           "epic_id": "a3QEE000002TAhB2AW",
@@ -4170,40 +4391,6 @@
           "project": "[264] SFS Schedule Management",
           "issues": [
             "missing_priority"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002YWh32AG",
-          "epic_name": "[266] Compact density view",
-          "epic_name_key": "[266] Compact density view",
-          "team": "FSL - Foundation - Atlas",
-          "owner": "Rebecca Hampton",
-          "health": "On Track",
-          "scheduled_build": "264.4",
-          "priority": "0",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] SFS Schedule Management",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002YVLB2A4",
-          "epic_name": "[266] Key Metrics Panel for Schedule Manager",
-          "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
-          "team": "FSL - Foundation - Atlas",
-          "owner": "Avani Jindal",
-          "health": "On Track",
-          "scheduled_build": "264.7",
-          "priority": "1",
-          "story_points": 0,
-          "program": "[264] Unified Workforce Management (UWM)",
-          "portfolio": "FY27 SC M4 UWM",
-          "project": "[264] SFS Schedule Management",
-          "issues": [
-            "missing_planned_release"
           ]
         },
         {
@@ -4465,7 +4652,7 @@
           "scheduled_build": "264.4",
           "priority": 15,
           "story_points": 0,
-          "program": "S&O Agentic Dispatcher/Scheduling Experience",
+          "program": "S&O Dispatch Agent",
           "portfolio": "FY27 FS S&O",
           "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
           "issues": [
@@ -4572,7 +4759,7 @@
     },
     {
       "name": "FSL - Resource - Dispatch Console",
-      "epic_count": 8,
+      "epic_count": 12,
       "epics": [
         {
           "epic_id": "a3QEE000002VJ6r2AG",
@@ -4584,7 +4771,7 @@
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
@@ -4602,7 +4789,7 @@
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -4620,7 +4807,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -4639,7 +4826,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -4657,7 +4844,7 @@
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -4675,7 +4862,7 @@
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -4693,7 +4880,43 @@
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002dtrV2AQ",
+          "epic_name": "[266] [Scheduling Console] Utilization View",
+          "epic_name_key": "[266] [Scheduling Console] Utilization View",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002dtxx2AA",
+          "epic_name": "[266][UNDER THE LINE] [Scheduling Console] Flexible Density Settings",
+          "epic_name_key": "[266][UNDER THE LINE] [Scheduling Console] Flexible Density Settings",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -4711,9 +4934,46 @@
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Trust",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002TAZ72AO",
+          "epic_name": "[264][Scheduling Console] Run RSO as Simulation",
+          "epic_name_key": "[264][Scheduling Console] Run RSO as Simulation",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Unknown",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Agentic Capabilities",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002du1B2AQ",
+          "epic_name": "[266] [Scheduling Console] RSO as Preview",
+          "epic_name_key": "[266] [Scheduling Console] RSO as Preview",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Agentic Capabilities",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -4790,7 +5050,7 @@
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Frontline Workforce Management",
+          "program": "S&O CCaaS & Frontline Workforce Management",
           "portfolio": "FY27 FS S&O",
           "project": "S&O WFM unscheduled shifts optimization",
           "issues": [
@@ -4808,7 +5068,7 @@
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Frontline Workforce Management",
+          "program": "S&O CCaaS & Frontline Workforce Management",
           "portfolio": "FY27 FS S&O",
           "project": "S&O WFM Worker experience",
           "issues": [
@@ -4826,7 +5086,7 @@
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Frontline Workforce Management",
+          "program": "S&O CCaaS & Frontline Workforce Management",
           "portfolio": "FY27 FS S&O",
           "project": "S&O WFM Min duration of consecutive productive activity",
           "issues": [
@@ -4838,7 +5098,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Intelligence",
-      "epic_count": 11,
+      "epic_count": 13,
       "epics": [
         {
           "epic_id": "a3QEE000002LcIr2AK",
@@ -4986,7 +5246,7 @@
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Agentic Dispatcher/Scheduling Experience",
+          "program": "S&O Dispatch Agent",
           "portfolio": "FY27 FS S&O",
           "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
           "issues": [
@@ -5004,7 +5264,7 @@
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
@@ -5022,11 +5282,45 @@
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
             "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ep2f2AA",
+          "epic_name": "[266][Trust][Scheduling Intelligence]",
+          "epic_name_key": "[266][Trust][Scheduling Intelligence]",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Maayan Balasy Dollberg",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 1,
+          "story_points": 0,
+          "program": "S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ep4H2AQ",
+          "epic_name": "[266][Trust][Parachute][Scheduling Intelligence]",
+          "epic_name_key": "[266][Trust][Parachute][Scheduling Intelligence]",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Maayan Balasy Dollberg",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 1,
+          "story_points": 0,
+          "program": "S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Application Production Support",
+          "issues": [
             "missing_planned_release"
           ]
         }
@@ -5042,7 +5336,7 @@
           "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
           "team": "FSL - Resource - Scheduling Orcas",
           "owner": "Avi Inbar",
-          "health": "Watch",
+          "health": "Completed",
           "scheduled_build": "262.13",
           "priority": "35",
           "story_points": 0,
@@ -5057,7 +5351,7 @@
     },
     {
       "name": "FSL - Talpiot - Dispatch Console",
-      "epic_count": 16,
+      "epic_count": 17,
       "epics": [
         {
           "epic_id": "a3QEE000002NSAX2A4",
@@ -5086,7 +5380,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Agentic Dispatcher/Scheduling Experience",
+          "program": "S&O Dispatch Agent",
           "portfolio": "FY27 FS S&O",
           "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
           "issues": [
@@ -5104,7 +5398,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
@@ -5122,7 +5416,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
@@ -5140,7 +5434,7 @@
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
@@ -5158,7 +5452,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Advanced Use Cases",
           "issues": [
@@ -5176,7 +5470,7 @@
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Map Capabilities",
           "issues": [
@@ -5194,7 +5488,7 @@
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -5212,7 +5506,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -5230,7 +5524,7 @@
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -5248,7 +5542,7 @@
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -5266,7 +5560,25 @@
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002dtpt2AA",
+          "epic_name": "[266] [Scheduling Console] Quick Absence Creation",
+          "epic_name_key": "[266] [Scheduling Console] Quick Absence Creation",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
@@ -5284,7 +5596,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Trust",
           "issues": [
@@ -5302,7 +5614,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Trust",
           "issues": [
@@ -5321,7 +5633,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Trust",
           "issues": [
@@ -5340,7 +5652,7 @@
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Scheduling Console Adoption",
+          "program": "S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Trust",
           "issues": [
@@ -5399,8 +5711,8 @@
         },
         {
           "epic_id": "a3QEE000002a6tl2AA",
-          "epic_name": "266 SFS [Infra] WEM Project",
-          "epic_name_key": "266 SFS [Infra] WEM Project",
+          "epic_name": "266 SFS [Infra] UWM / WEM / Including WEM Gov",
+          "epic_name_key": "266 SFS [Infra] UWM / WEM / Including WEM Gov",
           "team": "Optimization Engineering",
           "owner": "Josh Honeycutt",
           "health": "Not Started",
@@ -5441,7 +5753,7 @@
           "scheduled_build": "264.4",
           "priority": 20,
           "story_points": 0,
-          "program": "S&O Agentic Dispatcher/Scheduling Experience",
+          "program": "S&O Dispatch Agent",
           "portfolio": "FY27 FS S&O",
           "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
           "issues": [
@@ -5458,7 +5770,7 @@
           "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Frontline Workforce Management",
+          "program": "S&O CCaaS & Frontline Workforce Management",
           "portfolio": "FY27 FS S&O",
           "project": "S&O WFM New shift scheduling rules",
           "issues": [
@@ -5476,7 +5788,7 @@
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Frontline Workforce Management",
+          "program": "S&O CCaaS & Frontline Workforce Management",
           "portfolio": "FY27 FS S&O",
           "project": "S&O WFM unscheduled shifts optimization",
           "issues": [
@@ -5494,7 +5806,7 @@
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
-          "program": "S&O Frontline Workforce Management",
+          "program": "S&O CCaaS & Frontline Workforce Management",
           "portfolio": "FY27 FS S&O",
           "project": "S&O WFM Worker experience",
           "issues": [
@@ -5897,7 +6209,7 @@
     },
     {
       "name": "SFS Frontline AI",
-      "epic_count": 11,
+      "epic_count": 15,
       "epics": [
         {
           "epic_id": "a3QEE000002FsAD2A0",
@@ -6052,6 +6364,82 @@
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
             "missing_scheduled_build"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YF3V2AW",
+          "epic_name": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix MVP",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YF572AG",
+          "epic_name": "266 SFS Frontline AI - [Android] Felix with LLM Gateway",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Felix with LLM Gateway",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix MVP",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YF6j2AG",
+          "epic_name": "266 SFS Frontline AI - [iOS] Felix with Agentforce for Dreamforce",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Felix with Agentforce for Dreamforce",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix MVP",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YFRh2AO",
+          "epic_name": "266 SFS Frontline AI - [Core] Felix with LLM Gateway",
+          "epic_name_key": "266 SFS Frontline AI - [Core] Felix with LLM Gateway",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix MVP",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
@@ -6504,7 +6892,7 @@
           "epic_name_key": "[264][SFS MCX][Native GIS] Work Order Related List Layer (GA Enhancement)",
           "team": "SFS Mobile Core Experience",
           "owner": "Sharon Adler",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -6816,6 +7204,30 @@
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
             "missing_scheduled_build"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shared Q4 (Perf) & CTS - AI Cloud",
+      "epic_count": 1,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002efHp2AI",
+          "epic_name": "[Aug][264] Perf test for AI Router cross FI sagemaker routing",
+          "epic_name_key": "[Aug][264] Perf test for AI Router cross FI sagemaker routing",
+          "team": "Shared Q4 (Perf) & CTS - AI Cloud",
+          "owner": "David Ching",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
           ]
         }
       ]

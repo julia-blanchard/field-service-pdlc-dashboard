@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T20:12:33.014360",
+  "last_updated": "2026-08-25T09:58:42.802870",
   "teams": [
     {
       "name": "FSL - Asset - 360",
@@ -945,7 +945,8 @@
       "non_filled": 0,
       "total": 8,
       "portfolios": [
-        "264 Field Service Mobile"
+        "264 Field Service Mobile",
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Sandeep Agrawal",
       "product_owner": "Sharon Adler",
@@ -999,7 +1000,8 @@
       "non_filled": 0,
       "total": 5,
       "portfolios": [
-        "264 Field Service Mobile"
+        "264 Field Service Mobile",
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Steve Thistle",
       "product_owner": "Kara Carreri",
@@ -1111,7 +1113,8 @@
       "non_filled": 0,
       "total": 8,
       "portfolios": [
-        "264 Field Service Mobile"
+        "264 Field Service Mobile",
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Yoni Moseri",
       "product_owner": "Sharon Adler",
@@ -1204,7 +1207,7 @@
       "non_filled": 0,
       "total": 8,
       "portfolios": [
-        "264 Field Service Mobile"
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Andrew Shand",
       "product_owner": "Will Carpenter",
@@ -1295,7 +1298,8 @@
       "total": 4,
       "portfolios": [
         "264 Field Service Foundations",
-        "264 Field Service Mobile"
+        "264 Field Service Mobile",
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Raghav Abboy",
       "product_owner": "Kara Carreri",

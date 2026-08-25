@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 202,
-    "teams_affected": 30,
-    "programs_affected": 28,
+    "total_epics_needing_attention": 280,
+    "teams_affected": 31,
+    "programs_affected": 31,
     "issue_breakdown": {
-      "missing_scheduled_build": 80,
-      "missing_priority": 153,
+      "missing_scheduled_build": 138,
+      "missing_priority": 178,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 124
+      "missing_planned_release": 202
     }
   },
   "epics": [
@@ -2823,7 +2823,7 @@
       "epic_name_key": "[264][Scheduling Console]  [Dispatch Console Team] Complex Work Enhancements",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
@@ -2895,7 +2895,7 @@
       "epic_name_key": "[264][Scheduling Console] Adjust Duration AND Snap-In",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
@@ -3022,7 +3022,7 @@
       "epic_name_key": "[264][Scheduling Console] Right Click For Actions",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Gal Asraf",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
@@ -3040,7 +3040,7 @@
       "epic_name_key": "[264][Scheduling Console]Long Term View",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
@@ -3059,7 +3059,7 @@
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
       "health": "On Track",
-      "scheduled_build": "264.3",
+      "scheduled_build": "264.4",
       "priority": "-",
       "story_points": 0,
       "program": "S&O Scheduling Console",
@@ -3397,6 +3397,96 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002f2r72AA",
+      "epic_name": "266 SFS Frontline AI - AGX Templates and Examples",
+      "epic_name_key": "266 SFS Frontline AI - AGX Templates and Examples",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 27,
+      "story_points": 0,
+      "program": "[266] Guided Experience",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Guided Experience Setup & Scale",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002f2sj2AA",
+      "epic_name": "266 SFS Frontline AI - AGX AI Assisted Setup & Development",
+      "epic_name_key": "266 SFS Frontline AI - AGX AI Assisted Setup & Development",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 27,
+      "story_points": 0,
+      "program": "[266] Guided Experience",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Guided Experience Setup & Scale",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002f2pV2AQ",
+      "epic_name": "266 SFS Frontline AI - AGX Card Coverage",
+      "epic_name_key": "266 SFS Frontline AI - AGX Card Coverage",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 27,
+      "story_points": 0,
+      "program": "[266] Guided Experience",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Guided Experience Enterprise Complexity",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002f2vx2AA",
+      "epic_name": "266 SFS Frontline AI - AGX Auxiliary Actions",
+      "epic_name_key": "266 SFS Frontline AI - AGX Auxiliary Actions",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 28,
+      "story_points": 0,
+      "program": "[266] Guided Experience",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Guided Experience Enterprise Complexity",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002f2uL2AQ",
+      "epic_name": "266 SFS Frontline AI - AGX Background Agents",
+      "epic_name_key": "266 SFS Frontline AI - AGX Background Agents",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 28,
+      "story_points": 0,
+      "program": "[266] Guided Experience",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Guided Experience Agentic Integration",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002YF3V2AW",
       "epic_name": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
       "epic_name_key": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
@@ -3473,6 +3563,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000001yud32AA",
+      "epic_name": "266 SFS Frontline AI - Android Shortcuts & Gemini Voice",
+      "epic_name_key": "266 SFS Frontline AI - Android Shortcuts & Gemini Voice",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 180,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002CjeX2AS",
       "epic_name": "266 SFS Frontline AI - Image to Form (AI)",
       "epic_name_key": "266 SFS Frontline AI - Image to Form (AI)",
@@ -3509,6 +3617,263 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002P6gz2AC",
+      "epic_name": "266 SFS Frontline AI - [Android] Voice Note",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Voice Note",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002X3qn2AC",
+      "epic_name": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002X3sP2AS",
+      "epic_name": "266 SFS Frontline AI - [Android] Agentforce Voice Close Caption Support",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Agentforce Voice Close Caption Support",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002XRcz2AG",
+      "epic_name": "266 SFS Frontline AI - V2F DC Instrumentation",
+      "epic_name_key": "266 SFS Frontline AI - V2F DC Instrumentation",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002XzRl2AK",
+      "epic_name": "266 SFS Frontline AI - Voice To Form UX Enhancements",
+      "epic_name_key": "266 SFS Frontline AI - Voice To Form UX Enhancements",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 33,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YFZl2AO",
+      "epic_name": "266 SFS Frontline AI - Voice to Form Offline Pilot",
+      "epic_name_key": "266 SFS Frontline AI - Voice to Form Offline Pilot",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 40,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002a01x2AA",
+      "epic_name": "266 SFS Frontline AI - [iOS] Voice Note",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Voice Note",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aSnp2AE",
+      "epic_name": "266 SFS Frontline AI - [iOS] Merge Offline Voice to Form into main branch",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Merge Offline Voice to Form into main branch",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 31,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aSpR2AU",
+      "epic_name": "266 SFS Frontline AI - [Android] Merge Offline Voice to Form into main branch",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Merge Offline Voice to Form into main branch",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 31,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE0000022kYf2AI",
+      "epic_name": "266 SFS Frontline AI - Guided Troubleshooting GA",
+      "epic_name_key": "266 SFS Frontline AI - Guided Troubleshooting GA",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": 45,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002CRRV2A4",
+      "epic_name": "266 SFS Frontline AI - Minify Prompt (Cost to Serve)",
+      "epic_name_key": "266 SFS Frontline AI - Minify Prompt (Cost to Serve)",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 99,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002VlSw2AK",
+      "epic_name": "266 SFS Frontline AI - [Android] Multi-Modal support via LLM Gateway 2.0",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Multi-Modal support via LLM Gateway 2.0",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 96,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002VlmH2AS",
+      "epic_name": "266 SFS Frontline AI - [iOS] Multi-Modal support via LLM Gateway 2.0",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Multi-Modal support via LLM Gateway 2.0",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 96,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Xcjh2AC",
+      "epic_name": "266 SFS Frontline AI - NGA agent_router Routing Reliability",
+      "epic_name_key": "266 SFS Frontline AI - NGA agent_router Routing Reliability",
+      "team": "SFS Frontline AI",
+      "owner": "Naveen Vasu",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002bsTJ2AY",
       "epic_name": "[AiRouter] SageMaker Cross FI",
       "epic_name_key": "[AiRouter] SageMaker Cross FI",
@@ -3539,6 +3904,1050 @@
       "program": "[266] Mobile AI & Voice to Form",
       "portfolio": "FY27 FS Mobile",
       "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002JJ7R2AW",
+      "epic_name": "266 SFS Mobile Platform DX - Android Platform Support",
+      "epic_name_key": "266 SFS Mobile Platform DX - Android Platform Support",
+      "team": "SFS Mobile Platform DX",
+      "owner": "Neil Parsons",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MSJ32AO",
+      "epic_name": "266 [Hyperforce][Performance Priming] Trust: Quality",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Quality",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 10,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002NzOD2A0",
+      "epic_name": "266 SFS Mobile Platform DX - iOS Platform Support",
+      "epic_name_key": "266 SFS Mobile Platform DX - iOS Platform Support",
+      "team": "SFS Mobile Platform DX",
+      "owner": "Riley MacDonald",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Sfn32AC",
+      "epic_name": "266 SFS Frontline AI - [M2.7] Observability Excellence",
+      "epic_name_key": "266 SFS Frontline AI - [M2.7] Observability Excellence",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 25,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002SmN72AK",
+      "epic_name": "[266] [SFS Mobile assets]Trust and Production support",
+      "epic_name_key": "[266] [SFS Mobile assets]Trust and Production support",
+      "team": "SFS Mobile Assets",
+      "owner": "Sandeep Agrawal",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002XREn2AO",
+      "epic_name": "266 SFS Mobile C&S - Observability & Alerting",
+      "epic_name_key": "266 SFS Mobile C&S - Observability & Alerting",
+      "team": "SFS Mobile Comms and Search",
+      "owner": "Steve Thistle",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YD1h2AG",
+      "epic_name": "266 SFS Mobile Platform DX - Observability and Alerting",
+      "epic_name_key": "266 SFS Mobile Platform DX - Observability and Alerting",
+      "team": "SFS Mobile Platform DX",
+      "owner": "Andre Dion",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002GUDt2AO",
+      "epic_name": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+      "epic_name_key": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+      "team": "SFS Mobile Location and DC",
+      "owner": "Sharon Adler",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Lg372AC",
+      "epic_name": "266 [Mobile] Trust, Maintenance and Compliance",
+      "epic_name_key": "266 [Mobile] Trust, Maintenance and Compliance",
+      "team": "SFS Mobile Services",
+      "owner": "Raghav Abboy",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 3,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Lhbt2AC",
+      "epic_name": "266 [Core] Trust, Maintenance and Compliance",
+      "epic_name_key": "266 [Core] Trust, Maintenance and Compliance",
+      "team": "SFS Mobile Services",
+      "owner": "Man Kit Yau",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 3,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MSNt2AO",
+      "epic_name": "266 [Hyperforce][Performance Priming] Trust: Maintenance & Compliance",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Maintenance & Compliance",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 10,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002NzCv2AK",
+      "epic_name": "266 SFS Mobile - C&S - [Trust] ZBB",
+      "epic_name_key": "266 SFS Mobile - C&S - [Trust] ZBB",
+      "team": "SFS Mobile Comms and Search",
+      "owner": "Steve Thistle",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 3,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002S4U92AK",
+      "epic_name": "266 SFS Frontline AI - Core Trust",
+      "epic_name_key": "266 SFS Frontline AI - Core Trust",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 10,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002SxTp2AK",
+      "epic_name": "266 SFS Frontline AI - [M2.7] Mobile Trust",
+      "epic_name_key": "266 SFS Frontline AI - [M2.7] Mobile Trust",
+      "team": "SFS Frontline AI",
+      "owner": "Karthick Raghavan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 10,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002U4Rd2AK",
+      "epic_name": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+      "epic_name_key": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+      "team": "SFS Mobile Location and DC",
+      "owner": "Yoni Moseri",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE0000023zCH2AY",
+      "epic_name": "266 SFS Frontline AI - [iOS] Refactor Service Report List",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Refactor Service Report List",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 35,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE0000029PkP2AU",
+      "epic_name": "266 SFS Mobile Platform DX - ECA Migration",
+      "epic_name_key": "266 SFS Mobile Platform DX - ECA Migration",
+      "team": "SFS Mobile Platform DX",
+      "owner": "Jamie Wutke",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Kolt2AC",
+      "epic_name": "266 SFS Mobile Platform DX - CI and PR DX Improvements",
+      "epic_name_key": "266 SFS Mobile Platform DX - CI and PR DX Improvements",
+      "team": "SFS Mobile Platform DX",
+      "owner": "Riley MacDonald",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002L4Yv2AK",
+      "epic_name": "266 SFS Mobile Platform DX - Release Process and Improvements",
+      "epic_name_key": "266 SFS Mobile Platform DX - Release Process and Improvements",
+      "team": "SFS Mobile Platform DX",
+      "owner": "Riley MacDonald",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002RArl2AG",
+      "epic_name": "266 [Hyperforce][Performance Priming] Trust: Paved Path",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Paved Path",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 9,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002VSdB2AW",
+      "epic_name": "266 SFS Mobile - [Trust] Remove MET Code - SFS Mobile Location & DC",
+      "epic_name_key": "266 SFS Mobile - [Trust] Remove MET Code - SFS Mobile Location & DC",
+      "team": "SFS Mobile Location and DC",
+      "owner": "Leah Vogel",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002VXL72AO",
+      "epic_name": "266 SFS Frontline AI - Feature Architecture (AI-Ready Source of Truth)",
+      "epic_name_key": "266 SFS Frontline AI - Feature Architecture (AI-Ready Source of Truth)",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 97,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Vlcb2AC",
+      "epic_name": "266 SFS Frontline AI - Kotlin Migration",
+      "epic_name_key": "266 SFS Frontline AI - Kotlin Migration",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Vlfp2AC",
+      "epic_name": "266 SFS Frontline AI - [Android] Refactor Service Report List",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Refactor Service Report List",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 35,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002X8452AC",
+      "epic_name": "266 [Mobile Flow] Unit Test and Performance Improvements",
+      "epic_name_key": "266 [Mobile Flow] Unit Test and Performance Improvements",
+      "team": "SFS Mobile Assets",
+      "owner": "VIVEK SEHRAWAT",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YGKX2A4",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - PWB",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - PWB",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YGNl2AO",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - PWB",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - PWB",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YGdu2AG",
+      "epic_name": "266 SFS Frontline AI - [Core] Team EngOS Setup for Autonomous Execution",
+      "epic_name_key": "266 SFS Frontline AI - [Core] Team EngOS Setup for Autonomous Execution",
+      "team": "SFS Frontline AI",
+      "owner": "Naveen Vasu",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 15,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Ym2f2AC",
+      "epic_name": "266 SFS Frontline AI - [iOS] Team EngOS Improvements",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Team EngOS Improvements",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 15,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Yw212AC",
+      "epic_name": "266 SFS Mobile Platform DX - MobileUI / Patterns Components",
+      "epic_name_key": "266 SFS Mobile Platform DX - MobileUI / Patterns Components",
+      "team": "SFS Mobile Platform DX",
+      "owner": "Thomas Myrden",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Z6qz2AC",
+      "epic_name": "266 SFS Frontline AI - [Core] Automation Improvement - Post Work Summary",
+      "epic_name_key": "266 SFS Frontline AI - [Core] Automation Improvement - Post Work Summary",
+      "team": "SFS Frontline AI",
+      "owner": "Shreyaa Sridhar",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZdAE2A0",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Custom Nav",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Custom Nav",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZgeM2AS",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Quick Action",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Quick Action",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Zh5l2AC",
+      "epic_name": "266 SFS Frontline AI - [Core] Automation Improvement - Guided Troubleshooting",
+      "epic_name_key": "266 SFS Frontline AI - [Core] Automation Improvement - Guided Troubleshooting",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Zh8z2AC",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Agentforce",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Agentforce",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhAb2AK",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - V2RE",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2RE",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhCD2A0",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Agentforce",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Agentforce",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhDp2AK",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Profile",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Profile",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhFR2A0",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Profile",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Profile",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhH32AK",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Quick Action",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Quick Action",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhIf2AK",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Custom Nav",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Custom Nav",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhKH2A0",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Service Report 1.0",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Service Report 1.0",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhLt2AK",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Service Report 1.0",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Service Report 1.0",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhP72AK",
+      "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - V2DC",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2DC",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhQj2AK",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - V2RE",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - V2RE",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZhSL2A0",
+      "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - V2DC",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - V2DC",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MSR72AO",
+      "epic_name": "266 [Hyperforce][Performance Priming] Trust: Operational Productivity",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Operational Productivity",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 9,
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Infrastructure / DevOps Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE00000130e12AA",
+      "epic_name": "266 [Hyperforce][Performance Priming] - Files Priming",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] - Files Priming",
+      "team": "SFS Mobile Services",
+      "owner": "Naveen Vasu",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000001jqLF2AY",
+      "epic_name": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
+      "epic_name_key": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
+      "team": "SFS Mobile Services",
+      "owner": "Raghav Abboy",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 1,
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000001ljYz2AI",
+      "epic_name": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+      "epic_name_key": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+      "team": "SFS Mobile Services",
+      "owner": "Raghav Abboy",
+      "health": "Unknown",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002RhJ32AK",
+      "epic_name": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
+      "epic_name_key": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
+      "team": "SFS Mobile Services",
+      "owner": "Man Kit Yau",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 3,
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE0000020EWT2A2",
+      "epic_name": "266 [Core] Scale Platform Actions Mobile Metadata API",
+      "epic_name_key": "266 [Core] Scale Platform Actions Mobile Metadata API",
+      "team": "SFS Mobile Services",
+      "owner": "Raghav Abboy",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 3,
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Scale & Throughput",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MSSj2AO",
+      "epic_name": "266 [Hyperforce][Performance Priming] High Throughput Data Processing",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] High Throughput Data Processing",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 8,
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Scale & Throughput",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002XCkP2AW",
+      "epic_name": "266 [Mobile] Caching and Offline Optimization",
+      "epic_name_key": "266 [Mobile] Caching and Offline Optimization",
+      "team": "SFS Mobile Services",
+      "owner": "Raghav Abboy",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Scale & Throughput",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MSFp2AO",
+      "epic_name": "266 [Hyperforce][Performance Priming] Stability & Resiliency",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] Stability & Resiliency",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 8,
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Observability & Reliability",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MSPV2A4",
+      "epic_name": "266 [Hyperforce][Performance Priming] Observability / Monitoring",
+      "epic_name_key": "266 [Hyperforce][Performance Priming] Observability / Monitoring",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 7,
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Observability & Reliability",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MU9Z2AW",
+      "epic_name": "[Hyperforce][Performance Priming] Q4 HARR Performance Testing Gaps",
+      "epic_name_key": "[Hyperforce][Performance Priming] Q4 HARR Performance Testing Gaps",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Observability & Reliability",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002bgAP2AY",
+      "epic_name": "266 [Mobile] Performance Priming Observability Uplift",
+      "epic_name_key": "266 [Mobile] Performance Priming Observability Uplift",
+      "team": "SFS Mobile Services",
+      "owner": "Nigel Menger",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Performance Priming",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Performance Priming: Observability & Reliability",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -4767,7 +6176,7 @@
           "epic_name_key": "[264][Scheduling Console]  [Dispatch Console Team] Complex Work Enhancements",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
@@ -4785,7 +6194,7 @@
           "epic_name_key": "[264][Scheduling Console] Adjust Duration AND Snap-In",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
@@ -4840,7 +6249,7 @@
           "epic_name_key": "[264][Scheduling Console] Right Click For Actions",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Gal Asraf",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
@@ -4858,7 +6267,7 @@
           "epic_name_key": "[264][Scheduling Console]Long Term View",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
@@ -4877,7 +6286,7 @@
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
           "health": "On Track",
-          "scheduled_build": "264.3",
+          "scheduled_build": "264.4",
           "priority": "-",
           "story_points": 0,
           "program": "S&O Scheduling Console",
@@ -6209,7 +7618,7 @@
     },
     {
       "name": "SFS Frontline AI",
-      "epic_count": 15,
+      "epic_count": 62,
       "epics": [
         {
           "epic_id": "a3QEE000002FsAD2A0",
@@ -6367,6 +7776,96 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002f2r72AA",
+          "epic_name": "266 SFS Frontline AI - AGX Templates and Examples",
+          "epic_name_key": "266 SFS Frontline AI - AGX Templates and Examples",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 27,
+          "story_points": 0,
+          "program": "[266] Guided Experience",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Guided Experience Setup & Scale",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002f2sj2AA",
+          "epic_name": "266 SFS Frontline AI - AGX AI Assisted Setup & Development",
+          "epic_name_key": "266 SFS Frontline AI - AGX AI Assisted Setup & Development",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 27,
+          "story_points": 0,
+          "program": "[266] Guided Experience",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Guided Experience Setup & Scale",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002f2pV2AQ",
+          "epic_name": "266 SFS Frontline AI - AGX Card Coverage",
+          "epic_name_key": "266 SFS Frontline AI - AGX Card Coverage",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 27,
+          "story_points": 0,
+          "program": "[266] Guided Experience",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Guided Experience Enterprise Complexity",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002f2vx2AA",
+          "epic_name": "266 SFS Frontline AI - AGX Auxiliary Actions",
+          "epic_name_key": "266 SFS Frontline AI - AGX Auxiliary Actions",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 28,
+          "story_points": 0,
+          "program": "[266] Guided Experience",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Guided Experience Enterprise Complexity",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002f2uL2AQ",
+          "epic_name": "266 SFS Frontline AI - AGX Background Agents",
+          "epic_name_key": "266 SFS Frontline AI - AGX Background Agents",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 28,
+          "story_points": 0,
+          "program": "[266] Guided Experience",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Guided Experience Agentic Integration",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002YF3V2AW",
           "epic_name": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
           "epic_name_key": "266 SFS Frontline AI - [iOS] Felix with LLM Gateway",
@@ -6443,6 +7942,24 @@
           ]
         },
         {
+          "epic_id": "a3QEE000001yud32AA",
+          "epic_name": "266 SFS Frontline AI - Android Shortcuts & Gemini Voice",
+          "epic_name_key": "266 SFS Frontline AI - Android Shortcuts & Gemini Voice",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 180,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002CjeX2AS",
           "epic_name": "266 SFS Frontline AI - Image to Form (AI)",
           "epic_name_key": "266 SFS Frontline AI - Image to Form (AI)",
@@ -6473,6 +7990,750 @@
           "program": "[266] Mobile AI & Voice to Form",
           "portfolio": "FY27 FS Mobile",
           "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002P6gz2AC",
+          "epic_name": "266 SFS Frontline AI - [Android] Voice Note",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Voice Note",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002X3qn2AC",
+          "epic_name": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002X3sP2AS",
+          "epic_name": "266 SFS Frontline AI - [Android] Agentforce Voice Close Caption Support",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Agentforce Voice Close Caption Support",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002XRcz2AG",
+          "epic_name": "266 SFS Frontline AI - V2F DC Instrumentation",
+          "epic_name_key": "266 SFS Frontline AI - V2F DC Instrumentation",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002XzRl2AK",
+          "epic_name": "266 SFS Frontline AI - Voice To Form UX Enhancements",
+          "epic_name_key": "266 SFS Frontline AI - Voice To Form UX Enhancements",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 33,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YFZl2AO",
+          "epic_name": "266 SFS Frontline AI - Voice to Form Offline Pilot",
+          "epic_name_key": "266 SFS Frontline AI - Voice to Form Offline Pilot",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 40,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002a01x2AA",
+          "epic_name": "266 SFS Frontline AI - [iOS] Voice Note",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Voice Note",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aSnp2AE",
+          "epic_name": "266 SFS Frontline AI - [iOS] Merge Offline Voice to Form into main branch",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Merge Offline Voice to Form into main branch",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 31,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aSpR2AU",
+          "epic_name": "266 SFS Frontline AI - [Android] Merge Offline Voice to Form into main branch",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Merge Offline Voice to Form into main branch",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 31,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE0000022kYf2AI",
+          "epic_name": "266 SFS Frontline AI - Guided Troubleshooting GA",
+          "epic_name_key": "266 SFS Frontline AI - Guided Troubleshooting GA",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": 45,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002CRRV2A4",
+          "epic_name": "266 SFS Frontline AI - Minify Prompt (Cost to Serve)",
+          "epic_name_key": "266 SFS Frontline AI - Minify Prompt (Cost to Serve)",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 99,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002VlSw2AK",
+          "epic_name": "266 SFS Frontline AI - [Android] Multi-Modal support via LLM Gateway 2.0",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Multi-Modal support via LLM Gateway 2.0",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 96,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002VlmH2AS",
+          "epic_name": "266 SFS Frontline AI - [iOS] Multi-Modal support via LLM Gateway 2.0",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Multi-Modal support via LLM Gateway 2.0",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 96,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Xcjh2AC",
+          "epic_name": "266 SFS Frontline AI - NGA agent_router Routing Reliability",
+          "epic_name_key": "266 SFS Frontline AI - NGA agent_router Routing Reliability",
+          "team": "SFS Frontline AI",
+          "owner": "Naveen Vasu",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Sfn32AC",
+          "epic_name": "266 SFS Frontline AI - [M2.7] Observability Excellence",
+          "epic_name_key": "266 SFS Frontline AI - [M2.7] Observability Excellence",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 25,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002S4U92AK",
+          "epic_name": "266 SFS Frontline AI - Core Trust",
+          "epic_name_key": "266 SFS Frontline AI - Core Trust",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 10,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002SxTp2AK",
+          "epic_name": "266 SFS Frontline AI - [M2.7] Mobile Trust",
+          "epic_name_key": "266 SFS Frontline AI - [M2.7] Mobile Trust",
+          "team": "SFS Frontline AI",
+          "owner": "Karthick Raghavan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 10,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE0000023zCH2AY",
+          "epic_name": "266 SFS Frontline AI - [iOS] Refactor Service Report List",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Refactor Service Report List",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 35,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002VXL72AO",
+          "epic_name": "266 SFS Frontline AI - Feature Architecture (AI-Ready Source of Truth)",
+          "epic_name_key": "266 SFS Frontline AI - Feature Architecture (AI-Ready Source of Truth)",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 97,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Vlcb2AC",
+          "epic_name": "266 SFS Frontline AI - Kotlin Migration",
+          "epic_name_key": "266 SFS Frontline AI - Kotlin Migration",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Vlfp2AC",
+          "epic_name": "266 SFS Frontline AI - [Android] Refactor Service Report List",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Refactor Service Report List",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 35,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YGKX2A4",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - PWB",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - PWB",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YGNl2AO",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - PWB",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - PWB",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YGdu2AG",
+          "epic_name": "266 SFS Frontline AI - [Core] Team EngOS Setup for Autonomous Execution",
+          "epic_name_key": "266 SFS Frontline AI - [Core] Team EngOS Setup for Autonomous Execution",
+          "team": "SFS Frontline AI",
+          "owner": "Naveen Vasu",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 15,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Ym2f2AC",
+          "epic_name": "266 SFS Frontline AI - [iOS] Team EngOS Improvements",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Team EngOS Improvements",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 15,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Z6qz2AC",
+          "epic_name": "266 SFS Frontline AI - [Core] Automation Improvement - Post Work Summary",
+          "epic_name_key": "266 SFS Frontline AI - [Core] Automation Improvement - Post Work Summary",
+          "team": "SFS Frontline AI",
+          "owner": "Shreyaa Sridhar",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZdAE2A0",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Custom Nav",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Custom Nav",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZgeM2AS",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Quick Action",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Quick Action",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Zh5l2AC",
+          "epic_name": "266 SFS Frontline AI - [Core] Automation Improvement - Guided Troubleshooting",
+          "epic_name_key": "266 SFS Frontline AI - [Core] Automation Improvement - Guided Troubleshooting",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Zh8z2AC",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Agentforce",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Agentforce",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhAb2AK",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - V2RE",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2RE",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhCD2A0",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Agentforce",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Agentforce",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhDp2AK",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Profile",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Profile",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhFR2A0",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Profile",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Profile",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhH32AK",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Quick Action",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Quick Action",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhIf2AK",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Custom Nav",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Custom Nav",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhKH2A0",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - Service Report 1.0",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Service Report 1.0",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhLt2AK",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - Service Report 1.0",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - Service Report 1.0",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhP72AK",
+          "epic_name": "266 SFS Frontline AI - [Android] Automation Improvement - V2DC",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2DC",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhQj2AK",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - V2RE",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - V2RE",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZhSL2A0",
+          "epic_name": "266 SFS Frontline AI - [iOS] Automation Improvement - V2DC",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - V2DC",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
           "issues": [
             "missing_scheduled_build",
             "missing_planned_release"
@@ -6662,7 +8923,7 @@
     },
     {
       "name": "SFS Mobile Assets",
-      "epic_count": 3,
+      "epic_count": 5,
       "epics": [
         {
           "epic_id": "a3QEE000002FY8H2AW",
@@ -6718,12 +8979,50 @@
             "missing_priority",
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002SmN72AK",
+          "epic_name": "[266] [SFS Mobile assets]Trust and Production support",
+          "epic_name_key": "[266] [SFS Mobile assets]Trust and Production support",
+          "team": "SFS Mobile Assets",
+          "owner": "Sandeep Agrawal",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002X8452AC",
+          "epic_name": "266 [Mobile Flow] Unit Test and Performance Improvements",
+          "epic_name_key": "266 [Mobile Flow] Unit Test and Performance Improvements",
+          "team": "SFS Mobile Assets",
+          "owner": "VIVEK SEHRAWAT",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "SFS Mobile Comms and Search",
-      "epic_count": 3,
+      "epic_count": 5,
       "epics": [
         {
           "epic_id": "a3QEE000002GUCH2A4",
@@ -6774,6 +9073,43 @@
           "project": "264 KONE: Phase 1",
           "issues": [
             "missing_scheduled_build"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002XREn2AO",
+          "epic_name": "266 SFS Mobile C&S - Observability & Alerting",
+          "epic_name_key": "266 SFS Mobile C&S - Observability & Alerting",
+          "team": "SFS Mobile Comms and Search",
+          "owner": "Steve Thistle",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002NzCv2AK",
+          "epic_name": "266 SFS Mobile - C&S - [Trust] ZBB",
+          "epic_name_key": "266 SFS Mobile - C&S - [Trust] ZBB",
+          "team": "SFS Mobile Comms and Search",
+          "owner": "Steve Thistle",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 3,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
           ]
         }
       ]
@@ -6925,7 +9261,7 @@
     },
     {
       "name": "SFS Mobile Location and DC",
-      "epic_count": 3,
+      "epic_count": 6,
       "epics": [
         {
           "epic_id": "a3QEE000002FYjN2AW",
@@ -6981,12 +9317,206 @@
             "missing_priority",
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002GUDt2AO",
+          "epic_name": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+          "epic_name_key": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+          "team": "SFS Mobile Location and DC",
+          "owner": "Sharon Adler",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002U4Rd2AK",
+          "epic_name": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+          "epic_name_key": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
+          "team": "SFS Mobile Location and DC",
+          "owner": "Yoni Moseri",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002VSdB2AW",
+          "epic_name": "266 SFS Mobile - [Trust] Remove MET Code - SFS Mobile Location & DC",
+          "epic_name_key": "266 SFS Mobile - [Trust] Remove MET Code - SFS Mobile Location & DC",
+          "team": "SFS Mobile Location and DC",
+          "owner": "Leah Vogel",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SFS Mobile Platform DX",
+      "epic_count": 7,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002JJ7R2AW",
+          "epic_name": "266 SFS Mobile Platform DX - Android Platform Support",
+          "epic_name_key": "266 SFS Mobile Platform DX - Android Platform Support",
+          "team": "SFS Mobile Platform DX",
+          "owner": "Neil Parsons",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002NzOD2A0",
+          "epic_name": "266 SFS Mobile Platform DX - iOS Platform Support",
+          "epic_name_key": "266 SFS Mobile Platform DX - iOS Platform Support",
+          "team": "SFS Mobile Platform DX",
+          "owner": "Riley MacDonald",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YD1h2AG",
+          "epic_name": "266 SFS Mobile Platform DX - Observability and Alerting",
+          "epic_name_key": "266 SFS Mobile Platform DX - Observability and Alerting",
+          "team": "SFS Mobile Platform DX",
+          "owner": "Andre Dion",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE0000029PkP2AU",
+          "epic_name": "266 SFS Mobile Platform DX - ECA Migration",
+          "epic_name_key": "266 SFS Mobile Platform DX - ECA Migration",
+          "team": "SFS Mobile Platform DX",
+          "owner": "Jamie Wutke",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Kolt2AC",
+          "epic_name": "266 SFS Mobile Platform DX - CI and PR DX Improvements",
+          "epic_name_key": "266 SFS Mobile Platform DX - CI and PR DX Improvements",
+          "team": "SFS Mobile Platform DX",
+          "owner": "Riley MacDonald",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002L4Yv2AK",
+          "epic_name": "266 SFS Mobile Platform DX - Release Process and Improvements",
+          "epic_name_key": "266 SFS Mobile Platform DX - Release Process and Improvements",
+          "team": "SFS Mobile Platform DX",
+          "owner": "Riley MacDonald",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Yw212AC",
+          "epic_name": "266 SFS Mobile Platform DX - MobileUI / Patterns Components",
+          "epic_name_key": "266 SFS Mobile Platform DX - MobileUI / Patterns Components",
+          "team": "SFS Mobile Platform DX",
+          "owner": "Thomas Myrden",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "SFS Mobile Services",
-      "epic_count": 2,
+      "epic_count": 19,
       "epics": [
         {
           "epic_id": "a3QEE000002WtbJ2AS",
@@ -7020,6 +9550,300 @@
           "project": "264 Performance Priming Enhancements",
           "issues": [
             "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MSJ32AO",
+          "epic_name": "266 [Hyperforce][Performance Priming] Trust: Quality",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Quality",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 10,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Lg372AC",
+          "epic_name": "266 [Mobile] Trust, Maintenance and Compliance",
+          "epic_name_key": "266 [Mobile] Trust, Maintenance and Compliance",
+          "team": "SFS Mobile Services",
+          "owner": "Raghav Abboy",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 3,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Lhbt2AC",
+          "epic_name": "266 [Core] Trust, Maintenance and Compliance",
+          "epic_name_key": "266 [Core] Trust, Maintenance and Compliance",
+          "team": "SFS Mobile Services",
+          "owner": "Man Kit Yau",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 3,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MSNt2AO",
+          "epic_name": "266 [Hyperforce][Performance Priming] Trust: Maintenance & Compliance",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Maintenance & Compliance",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 10,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002RArl2AG",
+          "epic_name": "266 [Hyperforce][Performance Priming] Trust: Paved Path",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Paved Path",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 9,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MSR72AO",
+          "epic_name": "266 [Hyperforce][Performance Priming] Trust: Operational Productivity",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] Trust: Operational Productivity",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 9,
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Infrastructure / DevOps Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE00000130e12AA",
+          "epic_name": "266 [Hyperforce][Performance Priming] - Files Priming",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] - Files Priming",
+          "team": "SFS Mobile Services",
+          "owner": "Naveen Vasu",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000001jqLF2AY",
+          "epic_name": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
+          "epic_name_key": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
+          "team": "SFS Mobile Services",
+          "owner": "Raghav Abboy",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 1,
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000001ljYz2AI",
+          "epic_name": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+          "epic_name_key": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+          "team": "SFS Mobile Services",
+          "owner": "Raghav Abboy",
+          "health": "Unknown",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002RhJ32AK",
+          "epic_name": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
+          "epic_name_key": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
+          "team": "SFS Mobile Services",
+          "owner": "Man Kit Yau",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 3,
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Data Sync & Priming Mechanics",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE0000020EWT2A2",
+          "epic_name": "266 [Core] Scale Platform Actions Mobile Metadata API",
+          "epic_name_key": "266 [Core] Scale Platform Actions Mobile Metadata API",
+          "team": "SFS Mobile Services",
+          "owner": "Raghav Abboy",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 3,
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Scale & Throughput",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MSSj2AO",
+          "epic_name": "266 [Hyperforce][Performance Priming] High Throughput Data Processing",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] High Throughput Data Processing",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 8,
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Scale & Throughput",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002XCkP2AW",
+          "epic_name": "266 [Mobile] Caching and Offline Optimization",
+          "epic_name_key": "266 [Mobile] Caching and Offline Optimization",
+          "team": "SFS Mobile Services",
+          "owner": "Raghav Abboy",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Scale & Throughput",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MSFp2AO",
+          "epic_name": "266 [Hyperforce][Performance Priming] Stability & Resiliency",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] Stability & Resiliency",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 8,
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Observability & Reliability",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MSPV2A4",
+          "epic_name": "266 [Hyperforce][Performance Priming] Observability / Monitoring",
+          "epic_name_key": "266 [Hyperforce][Performance Priming] Observability / Monitoring",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 7,
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Observability & Reliability",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MU9Z2AW",
+          "epic_name": "[Hyperforce][Performance Priming] Q4 HARR Performance Testing Gaps",
+          "epic_name_key": "[Hyperforce][Performance Priming] Q4 HARR Performance Testing Gaps",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Observability & Reliability",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bgAP2AY",
+          "epic_name": "266 [Mobile] Performance Priming Observability Uplift",
+          "epic_name_key": "266 [Mobile] Performance Priming Observability Uplift",
+          "team": "SFS Mobile Services",
+          "owner": "Nigel Menger",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Performance Priming",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Performance Priming: Observability & Reliability",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
           ]
         }
       ]

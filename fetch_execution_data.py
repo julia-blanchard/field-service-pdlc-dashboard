@@ -9,6 +9,7 @@ import json
 import re
 import subprocess
 import os
+import sys
 from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
@@ -827,7 +828,7 @@ def main():
     report_data = fetch_execution_report()
     if not report_data:
         print("❌ Failed to fetch report data")
-        return
+        sys.exit(1)
 
     # Parse into structured format
     structured_data = parse_report_data(report_data)

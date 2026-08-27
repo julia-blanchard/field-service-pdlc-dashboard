@@ -33,6 +33,13 @@ FY27_NAME_RE = re.compile(r'FY27', re.IGNORECASE)
 # is confirmed to be something else (e.g. Government Cloud Field Service ->
 # Parent_Cloud__c = GIA, not Field Service).
 EXCLUDED_PARENT_CLOUD_PORTFOLIOS = {'Government Cloud Field Service'}
+# Portfolios named after their Service Cloud "SC M#" milestone rather than
+# "Field Service"/"FSL"/"SFS" even though they host real Field Service
+# programs (e.g. Unified Workforce Management). The name-based discovery
+# query below can't find these, so they're added explicitly. app.py's
+# portfolio-selector filter hardcodes this same portfolio for the same
+# reason -- keep both lists in sync if this changes.
+EXTRA_FORWARD_PORTFOLIO_NAMES = {'FY27 SC M4 UWM'}
 
 def fetch_execution_report():
     """Fetch execution report from GUS with extended metadata"""
@@ -410,6 +417,60 @@ def enrich_with_project_fields(structured_data):
 
     return structured_data
 
+def enrich_with_program_target(structured_data):
+    """
+    Query GUS for each program's own Target__c field on PPM_Program__c and
+    use it as the authoritative target release.
+
+    Without this, app.py fell back to scanning every epic under a program
+    and using the epic with the highest Scheduled_Build__c -- so a single
+    epic scheduled further out than the rest of the program (e.g. a stretch
+    item slipped to 268 under a [264]-named program) silently overrode the
+    program's actual target. The program record's own Target__c field is
+    the source of truth; the epic-scan is now only a fallback for programs
+    where GUS has no Target__c set at all.
+    """
+    print("🔍 Enriching program data with Target field from GUS...")
+
+    program_ids = [p['id'] for p in structured_data['programs'] if p.get('id')]
+    if not program_ids:
+        print("   No programs to enrich")
+        return structured_data
+
+    program_target_map = {}
+    batch_size = 200
+    for i in range(0, len(program_ids), batch_size):
+        batch = program_ids[i:i + batch_size]
+        ids_list = "','".join(batch)
+        query = f"SELECT Id, Target__c FROM PPM_Program__c WHERE Id IN ('{ids_list}')"
+
+        try:
+            result = subprocess.run(
+                ['sf', 'data', 'query', '--query', query, '--target-org', TARGET_ORG, '--json'],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            data = json.loads(result.stdout)
+            records = data.get('result', {}).get('records', [])
+            for record in records:
+                if record.get('Target__c'):
+                    program_target_map[record['Id']] = record['Target__c']
+        except Exception as e:
+            print(f"   Warning: Failed to query program target batch {i//batch_size + 1}: {e}")
+            continue
+
+    enriched_count = 0
+    for program in structured_data['programs']:
+        target = program_target_map.get(program.get('id'))
+        if target:
+            program['target_release'] = target
+            enriched_count += 1
+
+    print(f"   ✓ Enriched {enriched_count} programs with their own Target__c field")
+
+    return structured_data
+
 def normalize_portfolio_names(structured_data):
     """Normalize portfolio names: 266+ (FY27) uses short format, 264 keeps full name"""
     import re
@@ -609,37 +670,47 @@ def discover_forward_facing_portfolios():
     try:
         portfolios = run_soql(
             "SELECT Id, Name FROM PPM_Portfolio__c "
-            "WHERE Name LIKE '%Field Service%' OR Name LIKE '%FSL%' OR Name LIKE '%SFS%'"
+            "WHERE Name LIKE '%Field Service%' OR Name LIKE '%FSL%' OR Name LIKE '%SFS%' "
+            "OR Name IN (" + ','.join(f"'{n}'" for n in EXTRA_FORWARD_PORTFOLIO_NAMES) + ")"
         )
     except Exception as e:
         print(f"   ⚠️  Failed to discover portfolios: {e}")
         return []
 
-    forward = [p for p in portfolios if is_forward_facing_portfolio_name(p['Name'])]
+    forward = [
+        p for p in portfolios
+        if p['Name'] in EXTRA_FORWARD_PORTFOLIO_NAMES or is_forward_facing_portfolio_name(p['Name'])
+    ]
     print(f"   ✓ {len(forward)} of {len(portfolios)} discovered portfolios are forward-facing")
     return forward
 
 def fetch_new_release_programs(structured_data):
     """
     Fill the gap left by the GUS report's hardcoded portfolio scope: walk
-    Portfolio -> Program -> Project -> Epic via SOQL for any forward-facing
-    portfolio the report didn't already surface, and return program dicts
-    matching parse_report_data's shape.
+    Portfolio -> Program -> Project -> Epic via SOQL for any program not yet
+    present in execution data, and return program dicts matching
+    parse_report_data's shape.
+
+    Scans every forward-facing portfolio on each run (not just ones brand
+    new to the dashboard) and filters by program id, not portfolio name --
+    a portfolio having one program already covered by the GUS report
+    doesn't mean it has ALL of them. E.g. "FY27 SC M4 UWM" surfaces
+    "[264] Unified Workforce Management (UWM)" via the report, but
+    "[266] Unified Workforce Management (UWM)" is a separate program in
+    the same portfolio that the report's hardcoded scope never picks up.
+    Skipping the whole portfolio because one program already existed left
+    266 UWM permanently invisible.
     """
     print("🔍 Fetching new-release programs not covered by the GUS report...")
 
-    existing_portfolios = {p['portfolio'] for p in structured_data['programs']}
+    existing_program_ids = {p['id'] for p in structured_data['programs']}
     forward_portfolios = discover_forward_facing_portfolios()
-    new_portfolios = [p for p in forward_portfolios if p['Name'] not in existing_portfolios]
 
-    if not new_portfolios:
-        print("   ✓ No new portfolios to add -- report coverage is up to date")
+    if not forward_portfolios:
+        print("   ✓ No forward-facing portfolios found")
         return []
 
-    print(f"   ✓ {len(new_portfolios)} new portfolios not yet in execution data: "
-          f"{[p['Name'] for p in new_portfolios]}")
-
-    portfolio_map = {p['Id']: p['Name'] for p in new_portfolios}
+    portfolio_map = {p['Id']: p['Name'] for p in forward_portfolios}
     portfolio_idlist = ','.join(f"'{i}'" for i in portfolio_map)
 
     try:
@@ -651,8 +722,14 @@ def fetch_new_release_programs(structured_data):
         print(f"   ⚠️  Failed to fetch new-release programs: {e}")
         return []
 
+    programs = [p for p in programs if p['Id'] not in existing_program_ids]
+
     if not programs:
+        print("   ✓ No new programs to add -- report coverage is up to date")
         return []
+
+    print(f"   ✓ {len(programs)} new programs not yet in execution data: "
+          f"{[p['Name'] for p in programs]}")
 
     program_idlist = ','.join(f"'{p['Id']}'" for p in programs)
     try:
@@ -847,6 +924,11 @@ def main():
     # names get normalized consistently with the report-sourced ones.
     new_programs = fetch_new_release_programs(structured_data)
     structured_data['programs'].extend(new_programs)
+
+    # Pull each program's own Target__c as the authoritative target release,
+    # so a single outlier epic scheduled past the program's real target
+    # (see app.py's epic-scan fallback) doesn't override it.
+    structured_data = enrich_with_program_target(structured_data)
 
     # Normalize portfolio names (FY27 Field Service Mobile → FY27 FS Mobile)
     structured_data = normalize_portfolio_names(structured_data)

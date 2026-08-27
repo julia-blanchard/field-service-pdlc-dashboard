@@ -518,38 +518,43 @@ def index():
     from collections import defaultdict
     import re
     for prog in execution_programs:
-        # Set program target_release to the LATEST scheduled_build across all epics
-        # This represents when the program will actually be complete (when last epic ships)
-        latest_build = None
-        latest_build_num = 0
+        # The program's own Target__c (fetched from GUS in
+        # fetch_execution_data.py) is authoritative -- only fall back to
+        # scanning epics for the latest scheduled_build when GUS has no
+        # Target__c set. A stretch/outlier epic scheduled past the
+        # program's real target should not override it (e.g. a [264]
+        # program with one epic slipped to build 268 must still show 264).
+        if not prog.get('target_release'):
+            latest_build = None
+            latest_build_num = 0
 
-        for proj in prog.get('projects', []):
-            for epic in proj.get('epics', []):
-                scheduled_build = epic.get('scheduled_build', '')
-                if scheduled_build and scheduled_build != '-':
-                    # Extract numeric part (e.g., "264.3" -> 264.3)
-                    try:
-                        build_match = re.search(r'(\d+)\.?(\d*)', scheduled_build)
-                        if build_match:
-                            major = int(build_match.group(1))
-                            minor = int(build_match.group(2)) if build_match.group(2) else 0
-                            build_num = major + (minor / 100)  # 264.3 -> 264.03 for comparison
-                            if build_num > latest_build_num:
-                                latest_build_num = build_num
-                                latest_build = scheduled_build
-                    except:
-                        pass
+            for proj in prog.get('projects', []):
+                for epic in proj.get('epics', []):
+                    scheduled_build = epic.get('scheduled_build', '')
+                    if scheduled_build and scheduled_build != '-':
+                        # Extract numeric part (e.g., "264.3" -> 264.3)
+                        try:
+                            build_match = re.search(r'(\d+)\.?(\d*)', scheduled_build)
+                            if build_match:
+                                major = int(build_match.group(1))
+                                minor = int(build_match.group(2)) if build_match.group(2) else 0
+                                build_num = major + (minor / 100)  # 264.3 -> 264.03 for comparison
+                                if build_num > latest_build_num:
+                                    latest_build_num = build_num
+                                    latest_build = scheduled_build
+                        except:
+                            pass
 
-        if latest_build:
-            prog['target_release'] = latest_build
-        elif not prog.get('target_release'):
-            # Fallback: extract from program name
-            match = re.search(r'\[(\d{3})\]', prog.get('name', ''))
-            if match:
-                prog['target_release'] = match.group(1)
+            if latest_build:
+                prog['target_release'] = latest_build
             else:
-                # Final fallback: default to 264 for current work
-                prog['target_release'] = '264'
+                # Fallback: extract from program name
+                match = re.search(r'\[(\d{3})\]', prog.get('name', ''))
+                if match:
+                    prog['target_release'] = match.group(1)
+                else:
+                    # Final fallback: default to 264 for current work
+                    prog['target_release'] = '264'
 
         # Normalize health status: Unknown → Not Assigned
         health_val = str(prog.get('health', '')).strip()
@@ -655,36 +660,38 @@ def index():
         # Normalize portfolio name from program name
         prog['portfolio'] = normalize_portfolio_name(prog.get('name', ''), prog.get('portfolio', ''))
 
-        # Set program target_release to the LATEST scheduled_build (same as execution view)
-        latest_build = None
-        latest_build_num = 0
+        # Program's own Target__c from GUS is authoritative (see
+        # execution_programs loop above) -- only scan epics when it's blank.
+        if not prog.get('target_release'):
+            latest_build = None
+            latest_build_num = 0
 
-        for proj in prog.get('projects', []):
-            for epic in proj.get('epics', []):
-                scheduled_build = epic.get('scheduled_build', '')
-                if scheduled_build and scheduled_build != '-':
-                    try:
-                        build_match = re.search(r'(\d+)\.?(\d*)', scheduled_build)
-                        if build_match:
-                            major = int(build_match.group(1))
-                            minor = int(build_match.group(2)) if build_match.group(2) else 0
-                            build_num = major + (minor / 100)
-                            if build_num > latest_build_num:
-                                latest_build_num = build_num
-                                latest_build = scheduled_build
-                    except:
-                        pass
+            for proj in prog.get('projects', []):
+                for epic in proj.get('epics', []):
+                    scheduled_build = epic.get('scheduled_build', '')
+                    if scheduled_build and scheduled_build != '-':
+                        try:
+                            build_match = re.search(r'(\d+)\.?(\d*)', scheduled_build)
+                            if build_match:
+                                major = int(build_match.group(1))
+                                minor = int(build_match.group(2)) if build_match.group(2) else 0
+                                build_num = major + (minor / 100)
+                                if build_num > latest_build_num:
+                                    latest_build_num = build_num
+                                    latest_build = scheduled_build
+                        except:
+                            pass
 
-        if latest_build:
-            prog['target_release'] = latest_build
-        elif not prog.get('target_release'):
-            # Fallback: extract from program name
-            match = re.search(r'\[(\d{3})\]', prog.get('name', ''))
-            if match:
-                prog['target_release'] = match.group(1)
+            if latest_build:
+                prog['target_release'] = latest_build
             else:
-                # Final fallback: default to 264 for current work
-                prog['target_release'] = '264'
+                # Fallback: extract from program name
+                match = re.search(r'\[(\d{3})\]', prog.get('name', ''))
+                if match:
+                    prog['target_release'] = match.group(1)
+                else:
+                    # Final fallback: default to 264 for current work
+                    prog['target_release'] = '264'
 
         # Normalize health status: Unknown → Not Assigned
         health_val = str(prog.get('health', '')).strip()

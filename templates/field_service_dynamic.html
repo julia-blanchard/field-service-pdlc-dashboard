@@ -1580,12 +1580,23 @@
             display: flex;
             gap: 12px;
             overflow-x: auto;
-            padding-bottom: 8px;
+            align-items: flex-start;
+            padding: 0 16px 8px 16px;
         }
 
         .month-column {
-            flex: 0 0 320px;
-            min-width: 320px;
+            flex: 0 0 340px;
+            min-width: 340px;
+        }
+
+        /* Epic cards fill their swimlane column edge-to-edge instead of the
+           full-width row margins used outside the timeline layout. */
+        .month-column .epic-row {
+            margin: 0 0 6px 0;
+        }
+
+        .month-column .epic-row:last-child {
+            margin-bottom: 0;
         }
 
         .month-header {
@@ -3634,10 +3645,12 @@
                 </div>
                 <div class="epics-container">
                     {% if project.epics_by_month %}
+                    <div class="months-row">
                         {% for month, epics in project.epics_by_month %}
-                        <div class="month-header" data-month="{{ month }}" style="padding: 8px 12px; margin: 4px 16px 8px 16px; background: #f1f5f9; border: none; border-left: 3px solid #3b82f6; border-radius: 0; box-shadow: none; text-align: left; font-size: 12px; font-weight: 600; color: #475569;">
-                            {{ month|format_month }}
-                        </div>
+                        <div class="month-column" data-month="{{ month }}">
+                            <div class="month-header">
+                                {{ month|format_month }}
+                            </div>
                             {% for epic in epics %}
                             <div class="epic-row epic-card-health-{{ epic.health|lower|replace(' ', '-') }}" data-epic-name="{{ epic.name }}" data-scheduled-month="{{ epic.scheduled_month if epic.scheduled_month else 'no-date' }}" data-scheduled-build="{{ epic.scheduled_build if epic.scheduled_build else '-' }}" data-health="{{ epic.health_status if epic.health_status else (epic.health if epic.health else 'Unknown') }}">
                                 <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
@@ -3660,7 +3673,7 @@
                                         <span class="epic-badge badge-not-started">Not Started</span>
                                         {% endif %}
                                     </div>
-                                    <div style="display: flex; align-items: center; gap: 16px; font-size: 11px; color: #64748b;">
+                                    <div style="display: flex; align-items: center; gap: 12px; font-size: 11px; color: #64748b; flex-wrap: wrap;">
                                         {% if epic.team %}
                                         <span><strong>Team:</strong> {{ epic.team }}</span>
                                         {% endif %}
@@ -3683,7 +3696,9 @@
                                 </div>
                             </div>
                             {% endfor %}
+                        </div>
                         {% endfor %}
+                    </div>
                     {% else %}
                         {% for epic in project.epics %}
                         <div class="epic-row epic-card-health-{{ epic.health|lower|replace(' ', '-') }}" data-epic-name="{{ epic.name }}" data-scheduled-month="{{ epic.scheduled_month if epic.scheduled_month else 'no-date' }}" data-scheduled-build="{{ epic.scheduled_build if epic.scheduled_build else '-' }}" data-health="{{ epic.health_status if epic.health_status else (epic.health if epic.health else 'Unknown') }}">
@@ -16315,7 +16330,7 @@ function createProgramCard(program) {
                         });
                         document.querySelectorAll('#execution-view .project-container').forEach(p => p.style.display = '');
                         document.querySelectorAll('.epic-row').forEach(e => e.style.display = '');
-                        document.querySelectorAll('.month-header').forEach(h => h.style.display = '');
+                        document.querySelectorAll('.month-column').forEach(c => c.style.display = '');
 
                         // Recalculate stat cards for all visible items
                         recalculateStatCards();
@@ -16354,27 +16369,17 @@ function createProgramCard(program) {
                             }
                         });
 
-                        // 2. Hide month headers that don't match the selected month OR have no visible epics
-                        document.querySelectorAll('.month-header').forEach(header => {
-                            const headerMonth = header.getAttribute('data-month');
+                        // 2. Hide month swimlane columns that don't match the selected month OR have no visible epics
+                        document.querySelectorAll('.month-column').forEach(column => {
+                            const columnMonth = column.getAttribute('data-month');
 
-                            // If filtering to a specific month, only show that month's header
-                            if (headerMonth !== targetMonth) {
-                                header.style.display = 'none';
+                            // If filtering to a specific month, only show that month's column
+                            if (columnMonth !== targetMonth) {
+                                column.style.display = 'none';
                             } else {
-                                // Check if this header has any visible epics after it
-                                let nextElement = header.nextElementSibling;
-                                let hasVisibleEpics = false;
-
-                                while (nextElement && !nextElement.classList.contains('month-header')) {
-                                    if (nextElement.classList.contains('epic-row') && nextElement.style.display !== 'none') {
-                                        hasVisibleEpics = true;
-                                        break;
-                                    }
-                                    nextElement = nextElement.nextElementSibling;
-                                }
-
-                                header.style.display = hasVisibleEpics ? '' : 'none';
+                                const hasVisibleEpics = Array.from(column.querySelectorAll('.epic-row'))
+                                    .some(epic => epic.style.display !== 'none');
+                                column.style.display = hasVisibleEpics ? '' : 'none';
                             }
                         });
 

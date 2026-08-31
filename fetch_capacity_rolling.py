@@ -307,7 +307,7 @@ def main():
 
             # Calculate theoretical capacity
             capacity_limit_key = f"{month_name}_capacity_limit"
-            team[capacity_limit_key] = filled * 0.8 * 20
+            team[capacity_limit_key] = filled * 0.8 * 22
 
             # Set actual capacity data
             capacity_data = all_capacity_data[month_name]['capacity']

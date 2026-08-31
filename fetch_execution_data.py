@@ -56,6 +56,11 @@ def fetch_execution_report():
 
         report_data = json.loads(result.stdout)
         return report_data
+    except subprocess.CalledProcessError as e:
+        print(f"Error fetching report: {e}")
+        print(f"  stderr: {e.stderr}")
+        print(f"  stdout: {e.stdout}")
+        return None
     except Exception as e:
         print(f"Error fetching report: {e}")
         return None

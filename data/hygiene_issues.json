@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 339,
+    "total_epics_needing_attention": 353,
     "teams_affected": 35,
     "programs_affected": 36,
     "issue_breakdown": {
-      "missing_scheduled_build": 159,
-      "missing_priority": 211,
+      "missing_scheduled_build": 156,
+      "missing_priority": 223,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 261
+      "missing_planned_release": 269
     }
   },
   "epics": [
@@ -106,14 +106,13 @@
       "team": "SFS Mobile Core Experience",
       "owner": "Annath Benhamou Benizri",
       "health": "On Track",
-      "scheduled_build": "-",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "[264] Field Service: Headless (aka Codey)",
       "portfolio": "264 Field Service Foundations",
       "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -291,6 +290,109 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002O3YH2A0",
+      "epic_name": "[AGX GA] Flow Builder, Setup Experience",
+      "epic_name_key": "[AGX GA] Flow Builder, Setup Experience",
+      "team": "SFS Mobile AGX",
+      "owner": "Raghav Abboy",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002FcLZ2A0",
+      "epic_name": "[AGX GA] Instrumentation",
+      "epic_name_key": "[AGX GA] Instrumentation",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002FcGj2AK",
+      "epic_name": "[AGX GA] Iteration of Steps",
+      "epic_name_key": "[AGX GA] Iteration of Steps",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002FcF72AK",
+      "epic_name": "[AGX GA] Optional Actions",
+      "epic_name_key": "[AGX GA] Optional Actions",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002FcDV2A0",
+      "epic_name": "[AGX GA] Parallel Steps",
+      "epic_name_key": "[AGX GA] Parallel Steps",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Fc5R2AS",
+      "epic_name": "[AGX GA] Screen Debugging",
+      "epic_name_key": "[AGX GA] Screen Debugging",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000001s49J2AQ",
       "epic_name": "262 [AGX Pilot] iOS - Mobile Experience",
       "epic_name_key": "262 [AGX Pilot] iOS - Mobile Experience",
@@ -385,6 +487,23 @@
       "team": "SFS Mobile AGX",
       "owner": "Will Carpenter",
       "health": "On Track",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service: Workforce Scheduling on Mobile",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 AGX",
+      "issues": [
+        "missing_priority"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Fbni2AC",
+      "epic_name": "264 [Workforce Scheduling GA] Template Enhancements",
+      "epic_name_key": "264 [Workforce Scheduling GA] Template Enhancements",
+      "team": "SFS Mobile AGX",
+      "owner": "Will Carpenter",
+      "health": "Not Started",
       "scheduled_build": "264",
       "priority": "-",
       "story_points": 0,
@@ -2953,6 +3072,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002fxz32AA",
+      "epic_name": "[266] Intraday Forecast Accuracy",
+      "epic_name_key": "[266] Intraday Forecast Accuracy",
+      "team": "Team-WFM-Workloads-Forecasting",
+      "owner": "VARSHA CHALAMALASETTY",
+      "health": "Unknown",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Workloads Forecasting",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002JfzB2AS",
       "epic_name": "Auto Refresh of Gantt",
       "epic_name_key": "Auto Refresh of Gantt",
@@ -3144,6 +3281,132 @@
       "program": "[266] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
       "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZYaM2AW",
+      "epic_name": "UWM 266 : FWM \u2014 Breaks as resource absence [October]",
+      "epic_name_key": "UWM 266 : FWM \u2014 Breaks as resource absence [October]",
+      "team": "Optimization Engineering",
+      "owner": "Rotem Brooks",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] UWM Optimization Engineering",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZYaN2AW",
+      "epic_name": "UWM 266 : Shift assignment optimization - O2engine [October]",
+      "epic_name_key": "UWM 266 : Shift assignment optimization - O2engine [October]",
+      "team": "Optimization Engineering",
+      "owner": "Rotem Brooks",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] UWM Optimization Engineering",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZYaO2AW",
+      "epic_name": "UWM 266 : Relevance groups - O2engine [October]",
+      "epic_name_key": "UWM 266 : Relevance groups - O2engine [October]",
+      "team": "Optimization Engineering",
+      "owner": "Kfir Twizer",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] UWM Optimization Engineering",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZYaP2AW",
+      "epic_name": "UWM 266 : User preferences - O2engine [September]",
+      "epic_name_key": "UWM 266 : User preferences - O2engine [September]",
+      "team": "Optimization Engineering",
+      "owner": "Rotem Brooks",
+      "health": "Not Started",
+      "scheduled_build": "264.7",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] UWM Optimization Engineering",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZYaQ2AW",
+      "epic_name": "UWM 266 : getCandidate - O2engine [October]",
+      "epic_name_key": "UWM 266 : getCandidate - O2engine [October]",
+      "team": "Optimization Engineering",
+      "owner": "Rotem Brooks",
+      "health": "Not Started",
+      "scheduled_build": "264.11",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] UWM Optimization Engineering",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZYaR2AW",
+      "epic_name": "UWM 266 : Check rule API - O2engine [September]",
+      "epic_name_key": "UWM 266 : Check rule API - O2engine [September]",
+      "team": "Optimization Engineering",
+      "owner": "Sharon Hadar",
+      "health": "Not Started",
+      "scheduled_build": "264.4",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] UWM Optimization Engineering",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZYaS2AW",
+      "epic_name": "UWM 266 : minimum duration - O2engine [October]",
+      "epic_name_key": "UWM 266 : minimum duration - O2engine [October]",
+      "team": "Optimization Engineering",
+      "owner": "Sharon Hadar",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] UWM Optimization Engineering",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -3458,7 +3721,7 @@
       "team": "FSL - Foundation - Corecodiles",
       "owner": "Sigal Shapira",
       "health": "On Track",
-      "scheduled_build": "264.4",
+      "scheduled_build": "264.7",
       "priority": 15,
       "story_points": 0,
       "program": "S&O Dispatch Agent",
@@ -3518,6 +3781,23 @@
       "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
       "issues": [
         "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MN1d2AG",
+      "epic_name": "[264] SFS [AF] [TRUST] Employee migration to agent script",
+      "epic_name_key": "[264] SFS [AF] [TRUST] Employee migration to agent script",
+      "team": "FSL - Foundation - Corecodiles",
+      "owner": "Avi Inbar",
+      "health": "On Track",
+      "scheduled_build": "264.5",
+      "priority": 25,
+      "story_points": 0,
+      "program": "S&O Dispatch Agent",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Dispatcher Agent - Adoption",
+      "issues": [
         "missing_planned_release"
       ]
     },
@@ -4121,38 +4401,19 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002ZYaR2AW",
-      "epic_name": "UWM 266 : Check rule API - O2engine",
-      "epic_name_key": "UWM 266 : Check rule API - O2engine",
-      "team": "Optimization Engineering",
-      "owner": "Sharon Hadar",
-      "health": "Not Started",
-      "scheduled_build": "264.4",
-      "priority": "-",
+      "epic_id": "a3QEE000002fyof2AA",
+      "epic_name": "[266] SFS [ESO] [TRUST] Serivce Support",
+      "epic_name_key": "[266] SFS [ESO] [TRUST] Serivce Support",
+      "team": "FSL - Foundation - Corecodiles",
+      "owner": "Miriam Kahana",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 1,
       "story_points": 0,
-      "program": "S&O CCaaS & Frontline Workforce Management",
+      "program": "S&O Trust",
       "portfolio": "FY27 FS S&O",
-      "project": "S&O WFM New shift scheduling rules",
+      "project": "[266] S&O Trust: Application Production Support",
       "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002ZYaQ2AW",
-      "epic_name": "UWM 266 : getCandidate - O2engine",
-      "epic_name_key": "UWM 266 : getCandidate - O2engine",
-      "team": "Optimization Engineering",
-      "owner": "Rotem Brooks",
-      "health": "Not Started",
-      "scheduled_build": "264.11",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O CCaaS & Frontline Workforce Management",
-      "portfolio": "FY27 FS S&O",
-      "project": "S&O WFM unscheduled shifts optimization",
-      "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -4169,24 +4430,6 @@
       "program": "S&O CCaaS & Frontline Workforce Management",
       "portfolio": "FY27 FS S&O",
       "project": "S&O WFM unscheduled shifts optimization",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002ZYaP2AW",
-      "epic_name": "UWM 266 : User preferences - O2engine",
-      "epic_name_key": "UWM 266 : User preferences - O2engine",
-      "team": "Optimization Engineering",
-      "owner": "Rotem Brooks",
-      "health": "Not Started",
-      "scheduled_build": "264.7",
-      "priority": "-",
-      "story_points": 0,
-      "program": "S&O CCaaS & Frontline Workforce Management",
-      "portfolio": "FY27 FS S&O",
-      "project": "S&O WFM Worker experience",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -5182,19 +5425,18 @@
     },
     {
       "epic_id": "a3QEE000002VPPB2A4",
-      "epic_name": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
-      "epic_name_key": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+      "epic_name": "2026 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+      "epic_name_key": "2026 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
       "team": "SFS Mobile Core Experience",
       "owner": "Sharon Adler",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "[266] Mobile Trust",
       "portfolio": "FY27 FS Mobile",
       "project": "[266] Mobile Trust: Compliance",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -6050,19 +6292,18 @@
     },
     {
       "epic_id": "a3QEE000002ep972AA",
-      "epic_name": "[266][SFS MCX][Trust] Trust  - August September",
-      "epic_name_key": "[266][SFS MCX][Trust] Trust  - August September",
+      "epic_name": "[266][SFS MCX][Trust] Trust  - August-September-October",
+      "epic_name_key": "[266][SFS MCX][Trust] Trust  - August-September-October",
       "team": "SFS Mobile Core Experience",
       "owner": "Leah Vogel",
       "health": "On Track",
-      "scheduled_build": "-",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "[266] Foundations Trust",
       "portfolio": "FY27 FS Foundations",
       "project": "[266] Foundations Trust: Security",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -7418,7 +7659,7 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 2,
+      "epic_count": 4,
       "epics": [
         {
           "epic_id": "a3QEE000002GSNN2A4",
@@ -7445,12 +7686,46 @@
           "team": "FSL - Foundation - Corecodiles",
           "owner": "Sigal Shapira",
           "health": "On Track",
-          "scheduled_build": "264.4",
+          "scheduled_build": "264.7",
           "priority": 15,
           "story_points": 0,
           "program": "S&O Dispatch Agent",
           "portfolio": "FY27 FS S&O",
           "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MN1d2AG",
+          "epic_name": "[264] SFS [AF] [TRUST] Employee migration to agent script",
+          "epic_name_key": "[264] SFS [AF] [TRUST] Employee migration to agent script",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Avi Inbar",
+          "health": "On Track",
+          "scheduled_build": "264.5",
+          "priority": 25,
+          "story_points": 0,
+          "program": "S&O Dispatch Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Dispatcher Agent - Adoption",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002fyof2AA",
+          "epic_name": "[266] SFS [ESO] [TRUST] Serivce Support",
+          "epic_name_key": "[266] SFS [ESO] [TRUST] Serivce Support",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Miriam Kahana",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 1,
+          "story_points": 0,
+          "program": "S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Application Production Support",
           "issues": [
             "missing_planned_release"
           ]
@@ -8507,7 +8782,7 @@
     },
     {
       "name": "Optimization Engineering",
-      "epic_count": 7,
+      "epic_count": 11,
       "epics": [
         {
           "epic_id": "a3QEE000002GVrV2AW",
@@ -8563,6 +8838,132 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002ZYaM2AW",
+          "epic_name": "UWM 266 : FWM \u2014 Breaks as resource absence [October]",
+          "epic_name_key": "UWM 266 : FWM \u2014 Breaks as resource absence [October]",
+          "team": "Optimization Engineering",
+          "owner": "Rotem Brooks",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] UWM Optimization Engineering",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZYaN2AW",
+          "epic_name": "UWM 266 : Shift assignment optimization - O2engine [October]",
+          "epic_name_key": "UWM 266 : Shift assignment optimization - O2engine [October]",
+          "team": "Optimization Engineering",
+          "owner": "Rotem Brooks",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] UWM Optimization Engineering",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZYaO2AW",
+          "epic_name": "UWM 266 : Relevance groups - O2engine [October]",
+          "epic_name_key": "UWM 266 : Relevance groups - O2engine [October]",
+          "team": "Optimization Engineering",
+          "owner": "Kfir Twizer",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] UWM Optimization Engineering",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZYaP2AW",
+          "epic_name": "UWM 266 : User preferences - O2engine [September]",
+          "epic_name_key": "UWM 266 : User preferences - O2engine [September]",
+          "team": "Optimization Engineering",
+          "owner": "Rotem Brooks",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] UWM Optimization Engineering",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZYaQ2AW",
+          "epic_name": "UWM 266 : getCandidate - O2engine [October]",
+          "epic_name_key": "UWM 266 : getCandidate - O2engine [October]",
+          "team": "Optimization Engineering",
+          "owner": "Rotem Brooks",
+          "health": "Not Started",
+          "scheduled_build": "264.11",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] UWM Optimization Engineering",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZYaR2AW",
+          "epic_name": "UWM 266 : Check rule API - O2engine [September]",
+          "epic_name_key": "UWM 266 : Check rule API - O2engine [September]",
+          "team": "Optimization Engineering",
+          "owner": "Sharon Hadar",
+          "health": "Not Started",
+          "scheduled_build": "264.4",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] UWM Optimization Engineering",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZYaS2AW",
+          "epic_name": "UWM 266 : minimum duration - O2engine [October]",
+          "epic_name_key": "UWM 266 : minimum duration - O2engine [October]",
+          "team": "Optimization Engineering",
+          "owner": "Sharon Hadar",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] UWM Optimization Engineering",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002GQVF2A4",
           "epic_name": "[264] SFS [AF] Transparency - Engine",
           "epic_name_key": "[264] SFS [AF] Transparency - Engine",
@@ -8576,60 +8977,6 @@
           "portfolio": "FY27 FS S&O",
           "project": "FS 264: S&O: Agentforce Scheduling - Transparency/Explainability",
           "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ZYaR2AW",
-          "epic_name": "UWM 266 : Check rule API - O2engine",
-          "epic_name_key": "UWM 266 : Check rule API - O2engine",
-          "team": "Optimization Engineering",
-          "owner": "Sharon Hadar",
-          "health": "Not Started",
-          "scheduled_build": "264.4",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O CCaaS & Frontline Workforce Management",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O WFM New shift scheduling rules",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ZYaQ2AW",
-          "epic_name": "UWM 266 : getCandidate - O2engine",
-          "epic_name_key": "UWM 266 : getCandidate - O2engine",
-          "team": "Optimization Engineering",
-          "owner": "Rotem Brooks",
-          "health": "Not Started",
-          "scheduled_build": "264.11",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O CCaaS & Frontline Workforce Management",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O WFM unscheduled shifts optimization",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ZYaP2AW",
-          "epic_name": "UWM 266 : User preferences - O2engine",
-          "epic_name_key": "UWM 266 : User preferences - O2engine",
-          "team": "Optimization Engineering",
-          "owner": "Rotem Brooks",
-          "health": "Not Started",
-          "scheduled_build": "264.7",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O CCaaS & Frontline Workforce Management",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O WFM Worker experience",
-          "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         }
@@ -10417,7 +10764,7 @@
     },
     {
       "name": "SFS Mobile AGX",
-      "epic_count": 10,
+      "epic_count": 17,
       "epics": [
         {
           "epic_id": "a3QEE000002FcAH2A0",
@@ -10434,6 +10781,109 @@
           "project": "264 AGX",
           "issues": [
             "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002O3YH2A0",
+          "epic_name": "[AGX GA] Flow Builder, Setup Experience",
+          "epic_name_key": "[AGX GA] Flow Builder, Setup Experience",
+          "team": "SFS Mobile AGX",
+          "owner": "Raghav Abboy",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002FcLZ2A0",
+          "epic_name": "[AGX GA] Instrumentation",
+          "epic_name_key": "[AGX GA] Instrumentation",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002FcGj2AK",
+          "epic_name": "[AGX GA] Iteration of Steps",
+          "epic_name_key": "[AGX GA] Iteration of Steps",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002FcF72AK",
+          "epic_name": "[AGX GA] Optional Actions",
+          "epic_name_key": "[AGX GA] Optional Actions",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002FcDV2A0",
+          "epic_name": "[AGX GA] Parallel Steps",
+          "epic_name_key": "[AGX GA] Parallel Steps",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Fc5R2AS",
+          "epic_name": "[AGX GA] Screen Debugging",
+          "epic_name_key": "[AGX GA] Screen Debugging",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
@@ -10531,6 +10981,23 @@
           "team": "SFS Mobile AGX",
           "owner": "Will Carpenter",
           "health": "On Track",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service: Workforce Scheduling on Mobile",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 AGX",
+          "issues": [
+            "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Fbni2AC",
+          "epic_name": "264 [Workforce Scheduling GA] Template Enhancements",
+          "epic_name_key": "264 [Workforce Scheduling GA] Template Enhancements",
+          "team": "SFS Mobile AGX",
+          "owner": "Will Carpenter",
+          "health": "Not Started",
           "scheduled_build": "264",
           "priority": "-",
           "story_points": 0,
@@ -10856,14 +11323,13 @@
           "team": "SFS Mobile Core Experience",
           "owner": "Annath Benhamou Benizri",
           "health": "On Track",
-          "scheduled_build": "-",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "[264] Field Service: Headless (aka Codey)",
           "portfolio": "264 Field Service Foundations",
           "project": "[264] Field Service: Headless Steel Thread Core and Mobile",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -10990,38 +11456,36 @@
         },
         {
           "epic_id": "a3QEE000002VPPB2A4",
-          "epic_name": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
-          "epic_name_key": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+          "epic_name": "2026 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+          "epic_name_key": "2026 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
           "team": "SFS Mobile Core Experience",
           "owner": "Sharon Adler",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "[266] Mobile Trust",
           "portfolio": "FY27 FS Mobile",
           "project": "[266] Mobile Trust: Compliance",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
         },
         {
           "epic_id": "a3QEE000002ep972AA",
-          "epic_name": "[266][SFS MCX][Trust] Trust  - August September",
-          "epic_name_key": "[266][SFS MCX][Trust] Trust  - August September",
+          "epic_name": "[266][SFS MCX][Trust] Trust  - August-September-October",
+          "epic_name_key": "[266][SFS MCX][Trust] Trust  - August-September-October",
           "team": "SFS Mobile Core Experience",
           "owner": "Leah Vogel",
           "health": "On Track",
-          "scheduled_build": "-",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "[266] Foundations Trust",
           "portfolio": "FY27 FS Foundations",
           "project": "[266] Foundations Trust: Security",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -12276,7 +12740,7 @@
     },
     {
       "name": "Team-WFM-Workloads-Forecasting",
-      "epic_count": 3,
+      "epic_count": 4,
       "epics": [
         {
           "epic_id": "a3QEE000002TojR2AS",
@@ -12321,6 +12785,24 @@
           "team": "Team-WFM-Workloads-Forecasting",
           "owner": "Taniya Ghosh",
           "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Workloads Forecasting",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002fxz32AA",
+          "epic_name": "[266] Intraday Forecast Accuracy",
+          "epic_name_key": "[266] Intraday Forecast Accuracy",
+          "team": "Team-WFM-Workloads-Forecasting",
+          "owner": "VARSHA CHALAMALASETTY",
+          "health": "Unknown",
           "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,

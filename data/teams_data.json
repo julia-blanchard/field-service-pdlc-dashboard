@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T19:35:36.801389",
+  "last_updated": "2026-08-30T15:33:28.382813",
   "teams": [
     {
       "name": "FSL - Asset - 360",
@@ -28,7 +28,7 @@
       },
       "july_committed_unmapped": 20.0,
       "august_committed_by_program": {
-        "264 Scheduling Flows": 99.0,
+        "264 Scheduling Flows": 98.0,
         "Unmapped": 51.0
       },
       "august_committed_unmapped": 0,
@@ -44,8 +44,8 @@
         "264 Scheduling Flows": 134.0
       },
       "august_capacity_limit": 140.8,
-      "august_committed": 150,
-      "august_work_items": 48,
+      "august_committed": 149,
+      "august_work_items": 47,
       "september_capacity_limit": 140.8,
       "september_committed": 2,
       "september_work_items": 1,
@@ -133,11 +133,12 @@
       },
       "july_committed_unmapped": 73.0,
       "august_committed_by_program": {
-        "Unmapped": 74.0
+        "Unmapped": 66.0,
+        "[264] Field Service: Headless (aka Codey)": 1.0
       },
       "august_committed_unmapped": 2.0,
       "september_committed_by_program": {
-        "Unmapped": 1.0
+        "Unmapped": 4.0
       },
       "september_committed_unmapped": 0,
       "july_capacity_limit": 123.20000000000002,
@@ -149,11 +150,11 @@
         "264 Onsite Scheduling": 20.0
       },
       "august_capacity_limit": 123.20000000000002,
-      "august_committed": 74,
-      "august_work_items": 26,
+      "august_committed": 67,
+      "august_work_items": 24,
       "september_capacity_limit": 123.20000000000002,
-      "september_committed": 1,
-      "september_work_items": 1,
+      "september_committed": 4,
+      "september_work_items": 2,
       "october_capacity_limit": 123.20000000000002,
       "october_committed": 0,
       "october_work_items": 0,
@@ -229,7 +230,7 @@
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O"
       ],
-      "engineering_manager": "Avi Inbar",
+      "engineering_manager": "Elhanan Rosental",
       "product_owner": "Niv Garber",
       "capacity_delivered_june": 133.0,
       "work_items_closed_june": 90,
@@ -253,10 +254,10 @@
       },
       "july_committed_unmapped": 7.0,
       "august_committed_by_program": {
-        "FS 264: S&O: Agentic S&O": 9.0,
         "Unmapped": 6.0,
+        "FS 264: S&O: Agentic S&O": 8.0,
         "S&O Dispatch Agent": 9.0,
-        "FS 264: S&O Trust": 9.0
+        "FS 264: S&O Trust": 6.0
       },
       "august_committed_unmapped": 0,
       "september_committed_by_program": {},
@@ -271,8 +272,8 @@
         "S&O Dispatch Agent": 49.0
       },
       "august_capacity_limit": 105.60000000000002,
-      "august_committed": 33,
-      "august_work_items": 19,
+      "august_committed": 29,
+      "august_work_items": 18,
       "september_capacity_limit": 105.60000000000002,
       "september_committed": 0,
       "september_work_items": 0,
@@ -311,15 +312,15 @@
       },
       "july_committed_unmapped": 27.0,
       "august_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 75.0,
-        "Unmapped": 5.0,
-        "[264] Mobile Insights GA": 6.0
+        "[264] Unified Workforce Management (UWM)": 72.0,
+        "Unmapped": 3.0,
+        "[264] Mobile Insights GA": 3.0
       },
       "august_committed_unmapped": 17.0,
       "september_committed_by_program": {
-        "[264] Mobile Insights GA": 6.0,
-        "[264] Unified Workforce Management (UWM)": 5.0,
-        "Unmapped": 20.0
+        "[264] Mobile Insights GA": 9.0,
+        "[264] Unified Workforce Management (UWM)": 8.0,
+        "Unmapped": 22.0
       },
       "september_committed_unmapped": 79.0,
       "july_capacity_limit": 176.0,
@@ -331,11 +332,11 @@
         "[264] Mobile Insights GA": 9.0
       },
       "august_capacity_limit": 176.0,
-      "august_committed": 86,
-      "august_work_items": 21,
+      "august_committed": 78,
+      "august_work_items": 18,
       "september_capacity_limit": 176.0,
-      "september_committed": 31,
-      "september_work_items": 8,
+      "september_committed": 39,
+      "september_work_items": 11,
       "october_capacity_limit": 176.0,
       "october_committed": 172,
       "october_work_items": 39,
@@ -401,9 +402,9 @@
     },
     {
       "name": "FSL - Resource - Scheduling Hawks",
-      "filled": 10,
+      "filled": 9,
       "non_filled": 0,
-      "total": 10,
+      "total": 9,
       "portfolios": [
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O",
@@ -429,8 +430,8 @@
       },
       "july_committed_unmapped": 118.0,
       "august_committed_by_program": {
-        "[264] Unified Workforce Management (UWM)": 3.0,
-        "Unmapped": 127.0
+        "Unmapped": 126.0,
+        "[264] Unified Workforce Management (UWM)": 3.0
       },
       "august_committed_unmapped": 58.0,
       "september_committed_by_program": {},
@@ -443,8 +444,8 @@
         "[264] Unified Workforce Management (UWM)": 212.0
       },
       "august_capacity_limit": 176.0,
-      "august_committed": 130,
-      "august_work_items": 26,
+      "august_committed": 129,
+      "august_work_items": 27,
       "september_capacity_limit": 176.0,
       "september_committed": 0,
       "september_work_items": 0,
@@ -548,8 +549,8 @@
       },
       "july_committed_unmapped": 0,
       "august_committed_by_program": {
-        "FS 264: S&O Trust": 55.0,
-        "FS 264: S&O: Agentic S&O": 26.0
+        "FS 264: S&O Trust": 50.0,
+        "FS 264: S&O: Agentic S&O": 28.0
       },
       "august_committed_unmapped": 0,
       "september_committed_by_program": {},
@@ -562,7 +563,7 @@
         "FS 264: S&O: Agentic S&O": 165.0
       },
       "august_capacity_limit": 123.20000000000002,
-      "august_committed": 81,
+      "august_committed": 78,
       "august_work_items": 27,
       "september_capacity_limit": 123.20000000000002,
       "september_committed": 0,
@@ -581,7 +582,8 @@
       "total": 9,
       "portfolios": [
         "264 Field Service Scheduling & Optimization",
-        "264 Field Service Workforce Scheduling"
+        "264 Field Service Workforce Scheduling",
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Gal Shalom",
       "product_owner": "Dori Nahmias",
@@ -609,9 +611,9 @@
       },
       "july_committed_unmapped": 33.0,
       "august_committed_by_program": {
-        "Unmapped": 54.0,
-        "FS 264: S&O Trust": 70.0,
-        "264 Infield": 16.0,
+        "Unmapped": 55.0,
+        "FS 264: S&O Trust": 67.0,
+        "264 Infield": 14.0,
         "264 Operations Console": 2.0
       },
       "august_committed_unmapped": 38.0,
@@ -630,8 +632,8 @@
         "264 Infield & Onsite Hybrid": 3.0
       },
       "august_capacity_limit": 158.4,
-      "august_committed": 142,
-      "august_work_items": 62,
+      "august_committed": 138,
+      "august_work_items": 61,
       "september_capacity_limit": 158.4,
       "september_committed": 4,
       "september_work_items": 2,
@@ -644,9 +646,9 @@
     },
     {
       "name": "MomentumForce",
-      "filled": 8,
+      "filled": 9,
       "non_filled": 0,
-      "total": 8,
+      "total": 9,
       "portfolios": [
         "264 Field Service Scheduling & Optimization"
       ],
@@ -670,7 +672,7 @@
       },
       "july_committed_unmapped": 68.0,
       "august_committed_by_program": {
-        "Unmapped": 58.0,
+        "Unmapped": 53.0,
         "FS 264: S&O Trust": 10.5
       },
       "august_committed_unmapped": 60.0,
@@ -684,8 +686,8 @@
         "FS 264: S&O Trust": 103.0
       },
       "august_capacity_limit": 140.8,
-      "august_committed": 68.5,
-      "august_work_items": 46,
+      "august_committed": 63.5,
+      "august_work_items": 41,
       "september_capacity_limit": 140.8,
       "september_committed": 0,
       "september_work_items": 0,
@@ -732,7 +734,7 @@
       },
       "july_committed_unmapped": 97.0,
       "august_committed_by_program": {
-        "Unmapped": 76.0,
+        "Unmapped": 69.0,
         "[264] Unified Workforce Management (UWM)": 2.0,
         "S&O CCaaS & Frontline Workforce Management": 2.0,
         "FS 264: S&O: S&O Customer Success": 3.0
@@ -752,8 +754,8 @@
         "[264] Unified Workforce Management (UWM)": 76.0
       },
       "august_capacity_limit": 211.20000000000005,
-      "august_committed": 83,
-      "august_work_items": 43,
+      "august_committed": 76,
+      "august_work_items": 42,
       "september_capacity_limit": 211.20000000000005,
       "september_committed": 5,
       "september_work_items": 3,
@@ -770,7 +772,7 @@
       "non_filled": 0,
       "total": 3,
       "portfolios": [
-        "264 Field Service Foundations"
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Yariv Finkelshtein",
       "product_owner": "Yariv Finkelshtein",
@@ -787,7 +789,7 @@
       "july_committed_by_program": {},
       "july_committed_unmapped": 87.0,
       "august_committed_by_program": {
-        "Unmapped": 70.0
+        "Unmapped": 65.0
       },
       "august_committed_unmapped": 0,
       "september_committed_by_program": {
@@ -801,8 +803,8 @@
         "Unmapped": 146.0
       },
       "august_capacity_limit": 52.80000000000001,
-      "august_committed": 70,
-      "august_work_items": 22,
+      "august_committed": 65,
+      "august_work_items": 19,
       "september_capacity_limit": 52.80000000000001,
       "september_committed": 6,
       "september_work_items": 2,
@@ -843,9 +845,9 @@
       },
       "july_committed_unmapped": 13.0,
       "august_committed_by_program": {
-        "264 Operations Console": 7.0,
-        "Unmapped": 12.0,
-        "266 Operations Console": 55.0
+        "264 Operations Console": 5.0,
+        "Unmapped": 10.0,
+        "266 Operations Console": 52.0
       },
       "august_committed_unmapped": 0,
       "september_committed_by_program": {},
@@ -859,17 +861,17 @@
         "266 Operations Console": 6.0
       },
       "august_capacity_limit": 193.60000000000002,
-      "august_committed": 74,
-      "august_work_items": 27,
+      "august_committed": 67,
+      "august_work_items": 23,
       "september_capacity_limit": 193.60000000000002,
       "september_committed": 0,
       "september_work_items": 0,
       "october_capacity_limit": 193.60000000000002,
-      "october_committed": 8,
-      "october_work_items": 5,
+      "october_committed": 15,
+      "october_work_items": 9,
       "october_committed_by_program": {
-        "Unmapped": 2.0,
-        "266 Operations Console": 6.0
+        "Unmapped": 5.0,
+        "266 Operations Console": 10.0
       }
     },
     {
@@ -902,8 +904,8 @@
       "july_committed_unmapped": 84.0,
       "august_committed_by_program": {
         "[266] Mobile Trust": 27.0,
-        "Unmapped": 45.0,
-        "[266] Mobile AI & Voice to Form": 9.0
+        "Unmapped": 42.0,
+        "[266] Mobile AI & Voice to Form": 12.0
       },
       "august_committed_unmapped": 3.0,
       "september_committed_by_program": {},
@@ -912,9 +914,9 @@
       "july_delivered": 185,
       "july_work_items": 115,
       "july_delivered_by_program": {
-        "Unmapped": 142.0,
+        "Unmapped": 140.0,
         "[266] Mobile Trust": 12.0,
-        "[266] Mobile AI & Voice to Form": 14.0,
+        "[266] Mobile AI & Voice to Form": 16.0,
         "264 Field Service: Mobile Agentic AI": 12.0,
         "[266] Project Felix": 5.0
       },
@@ -1019,7 +1021,9 @@
       },
       "july_committed_unmapped": 163.0,
       "august_committed_by_program": {
-        "Unmapped": 119.0,
+        "Unmapped": 80.0,
+        "[266] Mobile Trust": 39.0,
+        "264 Field Service: Customer Trust": 2.0,
         "264 Field Service: Workforce Scheduling on Mobile": 9.0
       },
       "august_committed_unmapped": 20.0,
@@ -1034,8 +1038,8 @@
         "264 Field Service: Customer Trust": 3.0
       },
       "august_capacity_limit": 140.8,
-      "august_committed": 128,
-      "august_work_items": 62,
+      "august_committed": 130,
+      "august_work_items": 64,
       "september_capacity_limit": 140.8,
       "september_committed": 0,
       "september_work_items": 0,
@@ -1046,9 +1050,9 @@
     },
     {
       "name": "SFS Mobile Comms and Search",
-      "filled": 5,
+      "filled": 4,
       "non_filled": 0,
-      "total": 5,
+      "total": 4,
       "portfolios": [
         "264 Field Service Mobile",
         "FY27 FS Mobile"
@@ -1075,7 +1079,7 @@
       "july_committed_unmapped": 56.0,
       "august_committed_by_program": {
         "[266] Mobile Trust": 2.0,
-        "Unmapped": 16.0,
+        "Unmapped": 13.0,
         "264 Field Service: KONE": 3.0
       },
       "august_committed_unmapped": 0,
@@ -1091,8 +1095,8 @@
         "264 Field Service: KONE": 18.0
       },
       "august_capacity_limit": 88.0,
-      "august_committed": 21,
-      "august_work_items": 10,
+      "august_committed": 18,
+      "august_work_items": 9,
       "september_capacity_limit": 88.0,
       "september_committed": 3,
       "september_work_items": 1,
@@ -1109,7 +1113,9 @@
       "portfolios": [
         "264 Field Service Foundations",
         "264 Field Service Mobile",
-        "264 Field Service Workforce Scheduling"
+        "264 Field Service Workforce Scheduling",
+        "FY27 FS Foundations",
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Adi Sharet",
       "product_owner": "Kevin Ota",
@@ -1133,7 +1139,8 @@
       },
       "july_committed_unmapped": 124.0,
       "august_committed_by_program": {
-        "Unmapped": 106.0,
+        "Unmapped": 89.0,
+        "[266] Foundations Trust": 16.0,
         "264 Field Service: Workforce Scheduling on Mobile": 21.0,
         "[264] Field Service: Headless (aka Codey)": 4.0
       },
@@ -1150,8 +1157,8 @@
         "[264] Field Service: Headless (aka Codey)": 41.0
       },
       "august_capacity_limit": 88.0,
-      "august_committed": 131,
-      "august_work_items": 55,
+      "august_committed": 130,
+      "august_work_items": 54,
       "september_capacity_limit": 88.0,
       "september_committed": 0,
       "september_work_items": 0,
@@ -1169,7 +1176,8 @@
       "total": 8,
       "portfolios": [
         "264 Field Service Mobile",
-        "FY27 FS Mobile"
+        "FY27 FS Mobile",
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Yoni Moseri",
       "product_owner": "Sharon Adler",
@@ -1192,7 +1200,7 @@
       "july_committed_unmapped": 89.0,
       "august_committed_by_program": {
         "[266] Mobile Trust": 2.0,
-        "Unmapped": 70.0
+        "Unmapped": 65.0
       },
       "august_committed_unmapped": 29.0,
       "september_committed_by_program": {},
@@ -1206,7 +1214,7 @@
         "264 Field Service: Customer Trust": 2.0
       },
       "august_capacity_limit": 140.8,
-      "august_committed": 72,
+      "august_committed": 67,
       "august_work_items": 27,
       "september_capacity_limit": 140.8,
       "september_committed": 0,
@@ -1284,7 +1292,7 @@
       "july_committed_by_program": {},
       "july_committed_unmapped": 118.0,
       "august_committed_by_program": {
-        "Unmapped": 72.0,
+        "Unmapped": 76.0,
         "[266] Mobile Trust": 5.0
       },
       "august_committed_unmapped": 14.0,
@@ -1298,8 +1306,8 @@
         "[266] Mobile Trust": 4.0
       },
       "august_capacity_limit": 140.8,
-      "august_committed": 77,
-      "august_work_items": 32,
+      "august_committed": 81,
+      "august_work_items": 34,
       "september_capacity_limit": 140.8,
       "september_committed": 0,
       "september_work_items": 0,
@@ -1408,8 +1416,8 @@
       "october_committed": 274,
       "october_work_items": 69,
       "october_committed_by_program": {
-        "[266] Mobile Performance Priming": 122.0,
-        "Unmapped": 85.0,
+        "[266] Mobile Performance Priming": 181.0,
+        "Unmapped": 26.0,
         "[266] Mobile Trust": 67.0
       }
     },
@@ -1419,7 +1427,8 @@
       "non_filled": 0,
       "total": 4,
       "portfolios": [
-        "264 Field Service Foundations"
+        "264 Field Service Foundations",
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Pei Chu",
       "product_owner": "Shilpa Ramaswamy",
@@ -1439,7 +1448,8 @@
       "july_committed_unmapped": 28.0,
       "august_committed_by_program": {
         "[264] Field Service: Headless (aka Codey)": 6.0,
-        "Unmapped": 42.0
+        "Unmapped": 30.0,
+        "[266] Mobile Trust": 11.0
       },
       "august_committed_unmapped": 0,
       "september_committed_by_program": {},
@@ -1452,8 +1462,8 @@
         "[264] Field Service: Headless (aka Codey)": 11.0
       },
       "august_capacity_limit": 70.4,
-      "august_committed": 48,
-      "august_work_items": 14,
+      "august_committed": 47,
+      "august_work_items": 13,
       "september_capacity_limit": 70.4,
       "september_committed": 0,
       "september_work_items": 0,
@@ -1461,7 +1471,7 @@
       "october_committed": 4,
       "october_work_items": 2,
       "october_committed_by_program": {
-        "Unmapped": 4.0
+        "[266] Mobile Trust": 4.0
       }
     },
     {
@@ -1491,7 +1501,7 @@
       },
       "july_committed_unmapped": 9.0,
       "august_committed_by_program": {
-        "Unmapped": 152.0,
+        "Unmapped": 147.0,
         "[264] Unified Workforce Management (UWM)": 69.0
       },
       "august_committed_unmapped": 271.0,
@@ -1507,8 +1517,8 @@
         "[264] Unified Workforce Management (UWM)": 83.0
       },
       "august_capacity_limit": 35.2,
-      "august_committed": 221,
-      "august_work_items": 53,
+      "august_committed": 216,
+      "august_work_items": 51,
       "september_capacity_limit": 35.2,
       "september_committed": 15,
       "september_work_items": 5,

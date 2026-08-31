@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 280,
-    "teams_affected": 31,
-    "programs_affected": 31,
+    "total_epics_needing_attention": 339,
+    "teams_affected": 35,
+    "programs_affected": 36,
     "issue_breakdown": {
-      "missing_scheduled_build": 138,
-      "missing_priority": 178,
+      "missing_scheduled_build": 159,
+      "missing_priority": 211,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 202
+      "missing_planned_release": 261
     }
   },
   "epics": [
@@ -2318,6 +2318,838 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002YNib2AG",
+      "epic_name": "264 SFS Mobile - [TRUST] [MIT] -  Production Support & Investigations",
+      "epic_name_key": "264 SFS Mobile - [TRUST] [MIT] -  Production Support & Investigations",
+      "team": "SFS Mobile Location and DC",
+      "owner": "Dana Bergman",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002GKWH2A4",
+      "epic_name": "* 264 SFS [Trust]  - mTLS Migration",
+      "epic_name_key": "* 264 SFS [Trust]  - mTLS Migration",
+      "team": "FSL - Resource - Scheduling Platform",
+      "owner": "Lev Gorelik",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": 30,
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002JRBR2A4",
+      "epic_name": "*[264] QuantumForce - Engineering Support",
+      "epic_name_key": "*[264] QuantumForce - Engineering Support",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": 100,
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002JREf2AO",
+      "epic_name": "*[264] QuantumForce - FIT Support +add capabilities",
+      "epic_name_key": "*[264] QuantumForce - FIT Support +add capabilities",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": 300,
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002JTrZ2AW",
+      "epic_name": "*[264] QuantumForce - Brainforce - Automation",
+      "epic_name_key": "*[264] QuantumForce - Brainforce - Automation",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": 400,
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002JTzd2AG",
+      "epic_name": "*[264] QuantumForce - Orgfarm support",
+      "epic_name_key": "*[264] QuantumForce - Orgfarm support",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": 200,
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002JU4T2AW",
+      "epic_name": "*[264] QuantumForce - Orgfarm- automatic upgrade package and flash",
+      "epic_name_key": "*[264] QuantumForce - Orgfarm- automatic upgrade package and flash",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": 700,
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002LNbZ2AW",
+      "epic_name": "*[264] QuantumForce - Stabilize Workspace",
+      "epic_name_key": "*[264] QuantumForce - Stabilize Workspace",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": 600,
+      "story_points": 0,
+      "program": "264 Field Service Trust",
+      "portfolio": "FY27 FS Trust",
+      "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okid2AC",
+      "epic_name": "Q4 Testing [264] Planning: 15min Intervals",
+      "epic_name_key": "Q4 Testing [264] Planning: 15min Intervals",
+      "team": "-",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Core Capabilities",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Planning: 15min Intervals",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okie2AC",
+      "epic_name": "Q4 Testing [264] Planning: Skills-based planning",
+      "epic_name_key": "Q4 Testing [264] Planning: Skills-based planning",
+      "team": "-",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Core Capabilities",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Planning: Skills-based planning",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okif2AC",
+      "epic_name": "Q4 Testing [264] Planning: Mass Shift Assignment",
+      "epic_name_key": "Q4 Testing [264] Planning: Mass Shift Assignment",
+      "team": "-",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Core Capabilities",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Planning: Mass Shift Assignment",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okig2AC",
+      "epic_name": "Q4 Testing [264] Perforamce Tracking: Real-time adherence agent",
+      "epic_name_key": "Q4 Testing [264] Perforamce Tracking: Real-time adherence agent",
+      "team": "-",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Core Capabilities",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Perforamce Tracking: Real-time adherence agent",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okih2AC",
+      "epic_name": "Q4 Testing [264] Short Horizon Planning: Shifts Container",
+      "epic_name_key": "Q4 Testing [264] Short Horizon Planning: Shifts Container",
+      "team": "-",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Resource Optimizer",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Short Horizon Planning: Shifts Container",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okii2AC",
+      "epic_name": "Q4 Testing [264] Short Horizon Planning: Resource Optimizer Wizard",
+      "epic_name_key": "Q4 Testing [264] Short Horizon Planning: Resource Optimizer Wizard",
+      "team": "-",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Resource Optimizer",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Short Horizon Planning: Resource Optimizer Wizard",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okij2AC",
+      "epic_name": "Q4 Testing [264] Short Horizon Planning: Automate Recurring Scheduling Window",
+      "epic_name_key": "Q4 Testing [264] Short Horizon Planning: Automate Recurring Scheduling Window",
+      "team": "-",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Resource Optimizer",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Short Horizon Planning: Automate Recurring Scheduling Window",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okik2AC",
+      "epic_name": "Q4 Testing [264] Real-Time Optimization: Agentic Supervisor",
+      "epic_name_key": "Q4 Testing [264] Real-Time Optimization: Agentic Supervisor",
+      "team": "Perf Eng - Service Cloud",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Resource Optimizer",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Real-Time Optimization: Agentic Supervisor",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Okil2AC",
+      "epic_name": "Q4 Testing [264] Real-Time Optimization: Real-time Alerts and Notifications",
+      "epic_name_key": "Q4 Testing [264] Real-Time Optimization: Real-time Alerts and Notifications",
+      "team": "Perf Eng - Service Cloud",
+      "owner": "Emily Mesirow",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[264] Resource Optimizer",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[264] Real-Time Optimization: Real-time Alerts and Notifications",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aCj32AE",
+      "epic_name": "[266] Bring your own data",
+      "epic_name_key": "[266] Bring your own data",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 5,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aD412AE",
+      "epic_name": "[266][August] Bring your own data",
+      "epic_name_key": "[266][August] Bring your own data",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Completed",
+      "scheduled_build": "264.4",
+      "priority": 5,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aD5d2AE",
+      "epic_name": "[266][August] 15 min Aggregation on Data Cloud",
+      "epic_name_key": "[266][August] 15 min Aggregation on Data Cloud",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": 6,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aDAT2A2",
+      "epic_name": "[266][September] 15 min Aggregation on Data Cloud",
+      "epic_name_key": "[266][September] 15 min Aggregation on Data Cloud",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "264.7",
+      "priority": 7,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aDDh2AM",
+      "epic_name": "[266][September][Setup] Aggregation Setup",
+      "epic_name_key": "[266][September][Setup] Aggregation Setup",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "264.7",
+      "priority": 5,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aDVR2A2",
+      "epic_name": "[266] Intraday support",
+      "epic_name_key": "[266] Intraday support",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 5,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aECz2AM",
+      "epic_name": "[266][264 carry over] Real-Time Adherence",
+      "epic_name_key": "[266][264 carry over] Real-Time Adherence",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 100,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aEGD2A2",
+      "epic_name": "[266][Carry from 264] Omni-Widget Activities",
+      "epic_name_key": "[266][Carry from 264] Omni-Widget Activities",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 101,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002biVZ2AY",
+      "epic_name": "[266][Stretch] WFM & MWM Setup in Salesforce Go",
+      "epic_name_key": "[266][Stretch] WFM & MWM Setup in Salesforce Go",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 51,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002fewP2AQ",
+      "epic_name": "[266][September] Bring your own data",
+      "epic_name_key": "[266][September] Bring your own data",
+      "team": "Team-WFM-Foundation",
+      "owner": "Vartika Vaish",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": 5,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002frC52AI",
+      "epic_name": "[266][September] Intraday UI - 15-Minute Support",
+      "epic_name_key": "[266][September] Intraday UI - 15-Minute Support",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "264.7",
+      "priority": 8,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002frGv2AI",
+      "epic_name": "[266][September] Intraday support",
+      "epic_name_key": "[266][September] Intraday support",
+      "team": "Team-WFM-Foundation",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "264.7",
+      "priority": 9,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aDNN2A2",
+      "epic_name": "[266][August] 15 min Capacity Planning on Data Cloud",
+      "epic_name_key": "[266][August] 15 min Capacity Planning on Data Cloud",
+      "team": "Team-WFM-Capacity-Planning",
+      "owner": "Bata Chadraa",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": 6,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Capacity Planning",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aDOz2AM",
+      "epic_name": "[266][September] 15 min Capacity Planning on Data Cloud",
+      "epic_name_key": "[266][September] 15 min Capacity Planning on Data Cloud",
+      "team": "Team-WFM-Capacity-Planning",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "264.7",
+      "priority": 7,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Capacity Planning",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002cC732AE",
+      "epic_name": "[266] Trust Related Work for Capacity Planning",
+      "epic_name_key": "[266] Trust Related Work for Capacity Planning",
+      "team": "Team-WFM-Capacity-Planning",
+      "owner": "Taniya Ghosh",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Capacity Planning",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aD8r2AE",
+      "epic_name": "[266][August] 15 min Forecasting on Data Cloud",
+      "epic_name_key": "[266][August] 15 min Forecasting on Data Cloud",
+      "team": "Team-WFM-ML-Foundations",
+      "owner": "Bata Chadraa",
+      "health": "Not Started",
+      "scheduled_build": "264.4",
+      "priority": 5,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM-ML-Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002aDtd2AE",
+      "epic_name": "[266][August] Planner Agent for UWM",
+      "epic_name_key": "[266][August] Planner Agent for UWM",
+      "team": "Team-WFM-ML-Foundations",
+      "owner": "Bata Chadraa",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": 5,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM-ML-Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002cC8f2AE",
+      "epic_name": "[266] Trust Related Work for ML Foundation",
+      "epic_name_key": "[266] Trust Related Work for ML Foundation",
+      "team": "Team-WFM-ML-Foundations",
+      "owner": "Taniya Ghosh",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM-ML-Foundations",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002cC3p2AE",
+      "epic_name": "[266] Trust Related Work for Workloads Forecasting Team",
+      "epic_name_key": "[266] Trust Related Work for Workloads Forecasting Team",
+      "team": "Team-WFM-Workloads-Forecasting",
+      "owner": "Taniya Ghosh",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Workloads Forecasting",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002JfzB2AS",
+      "epic_name": "Auto Refresh of Gantt",
+      "epic_name_key": "Auto Refresh of Gantt",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Ruchika Pashine",
+      "health": "Unknown",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002VYDx2AO",
+      "epic_name": "[266] Drag and Drop Shifts on the Grid",
+      "epic_name_key": "[266] Drag and Drop Shifts on the Grid",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Xiao Han",
+      "health": "Unknown",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Vcz72AC",
+      "epic_name": "[266 Atlas] TDs and Trust",
+      "epic_name_key": "[266 Atlas] TDs and Trust",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Pei Chu",
+      "health": "Unknown",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YTmQ2AW",
+      "epic_name": "Quick Filter Saving",
+      "epic_name_key": "Quick Filter Saving",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Pei Chu",
+      "health": "Unknown",
+      "scheduled_build": "264.11",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YVLB2A4",
+      "epic_name": "[266] Key Metrics Panel for Schedule Manager",
+      "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Avani Jindal",
+      "health": "On Track",
+      "scheduled_build": "264.7",
+      "priority": 1,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YVMn2AO",
+      "epic_name": "[266] Shift Rotation",
+      "epic_name_key": "[266] Shift Rotation",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Manisha Chaurasia",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YWh32AG",
+      "epic_name": "[266] Compact density view",
+      "epic_name_key": "[266] Compact density view",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Rebecca Hampton",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YXwT2AW",
+      "epic_name": "[266] Rule Violations and Alerts",
+      "epic_name_key": "[266] Rule Violations and Alerts",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Xiao Han",
+      "health": "Not Started",
+      "scheduled_build": "264.11",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZuZF2A0",
+      "epic_name": "Quick Filter Accordion",
+      "epic_name_key": "Quick Filter Accordion",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Pei Chu",
+      "health": "On Track",
+      "scheduled_build": "264.4",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002ZukX2AS",
+      "epic_name": "Quick Filter Saving By Logic",
+      "epic_name_key": "Quick Filter Saving By Logic",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Pei Chu",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002foNt2AI",
+      "epic_name": "[266] Holiday Support on Schedule Manager UI",
+      "epic_name_key": "[266] Holiday Support on Schedule Manager UI",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Xiao Han",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002MXvR2AW",
       "epic_name": "264: PSS-FS: Operations Console: Push Service",
       "epic_name_key": "264: PSS-FS: Operations Console: Push Service",
@@ -2982,9 +3814,9 @@
     },
     {
       "epic_id": "a3QEE000002TAdx2AG",
-      "epic_name": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-      "epic_name_key": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-      "team": "FSL - Talpiot - Dispatch Console",
+      "epic_name": "[264.7][Scheduling Console] Enhanced Gantt Search For Appointments",
+      "epic_name_key": "[264.7][Scheduling Console] Enhanced Gantt Search For Appointments",
+      "team": "FSL - Resource - Dispatch Console",
       "owner": "Gal Asraf",
       "health": "Not Started",
       "scheduled_build": "264.7",
@@ -3326,8 +4158,8 @@
     },
     {
       "epic_id": "a3QEE000002aXtx2AE",
-      "epic_name": "UWM 266 : getCandidate - service",
-      "epic_name_key": "UWM 266 : getCandidate - service",
+      "epic_name": "[266][October] getCandidate - service",
+      "epic_name_key": "[266][October] getCandidate - service",
       "team": "FSL - Resource - Scheduling Hawks",
       "owner": "Eran Rotbart",
       "health": "Not Started",
@@ -3362,8 +4194,8 @@
     },
     {
       "epic_id": "a3QEE000002aY212AE",
-      "epic_name": "UWM 266 : User preferences - service",
-      "epic_name_key": "UWM 266 : User preferences - service",
+      "epic_name": "[266][September] User preferences - service",
+      "epic_name_key": "[266][September] User preferences - service",
       "team": "FSL - Resource - Scheduling Hawks",
       "owner": "Riki Pachter",
       "health": "Not Started",
@@ -3636,6 +4468,44 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002Vq1B2AS",
+      "epic_name": "266 SFS Frontline AI - [iOS] Hybrid LWC Rendering Support",
+      "epic_name_key": "266 SFS Frontline AI - [iOS] Hybrid LWC Rendering Support",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002Vq2n2AC",
+      "epic_name": "266 SFS Frontline AI - [Android] Hybrid LWC Rendering Support",
+      "epic_name_key": "266 SFS Frontline AI - [Android] Hybrid LWC Rendering Support",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002X3qn2AC",
       "epic_name": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
       "epic_name_key": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
@@ -3711,14 +4581,32 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002YFZl2AO",
-      "epic_name": "266 SFS Frontline AI - Voice to Form Offline Pilot",
-      "epic_name_key": "266 SFS Frontline AI - Voice to Form Offline Pilot",
+      "epic_id": "a3QEE000002YFY92AO",
+      "epic_name": "266 SFS Frontline AI - Adoption Support",
+      "epic_name_key": "266 SFS Frontline AI - Adoption Support",
       "team": "SFS Frontline AI",
       "owner": "Paul Chan",
       "health": "On Track",
       "scheduled_build": "-",
-      "priority": 40,
+      "priority": 25,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002YFZl2AO",
+      "epic_name": "266 SFS Frontline AI - [Adoption] Voice to Form Offline Pilot",
+      "epic_name_key": "266 SFS Frontline AI - [Adoption] Voice to Form Offline Pilot",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": 25,
       "story_points": 0,
       "program": "[266] Mobile AI & Voice to Form",
       "portfolio": "FY27 FS Mobile",
@@ -3778,6 +4666,24 @@
       "program": "[266] Mobile AI & Voice to Form",
       "portfolio": "FY27 FS Mobile",
       "project": "Voice to Form Evolution",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000001s2qf2AA",
+      "epic_name": "SFS Frontline AI - Guided Troubleshooting",
+      "epic_name_key": "SFS Frontline AI - Guided Troubleshooting",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 100,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
       "issues": [
         "missing_scheduled_build",
         "missing_planned_release"
@@ -3910,6 +4816,25 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002FZM52AO",
+      "epic_name": "[266][SFS Mobile Assets][Android] Notifications Priority",
+      "epic_name_key": "[266][SFS Mobile Assets][Android] Notifications Priority",
+      "team": "SFS Mobile Assets",
+      "owner": "Sharon Adler",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002JJ7R2AW",
       "epic_name": "266 SFS Mobile Platform DX - Android Platform Support",
       "epic_name_key": "266 SFS Mobile Platform DX - Android Platform Support",
@@ -4002,6 +4927,25 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002WIOr2AO",
+      "epic_name": "[266] [SFS Mobile Assets] Native Mobile flows GA",
+      "epic_name_key": "[266] [SFS Mobile Assets] Native Mobile flows GA",
+      "team": "SFS Mobile Assets",
+      "owner": "Sandeep Agrawal",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002XREn2AO",
       "epic_name": "266 SFS Mobile C&S - Observability & Alerting",
       "epic_name_key": "266 SFS Mobile C&S - Observability & Alerting",
@@ -4040,6 +4984,25 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002Yf9F2AS",
+      "epic_name": "[266][SFS Mobile Assets][iOS] Notifications Priority",
+      "epic_name_key": "[266][SFS Mobile Assets][iOS] Notifications Priority",
+      "team": "SFS Mobile Assets",
+      "owner": "Prashanth Moorthy",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Application Production Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002GUDt2AO",
       "epic_name": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
       "epic_name_key": "266 SFS Mobile - [Trust] SFS Planned Trust Enhancements",
@@ -4059,8 +5022,8 @@
     },
     {
       "epic_id": "a3QEE000002Lg372AC",
-      "epic_name": "266 [Mobile] Trust, Maintenance and Compliance",
-      "epic_name_key": "266 [Mobile] Trust, Maintenance and Compliance",
+      "epic_name": "[Mobile] Trust, Maintenance and Compliance",
+      "epic_name_key": "[Mobile] Trust, Maintenance and Compliance",
       "team": "SFS Mobile Services",
       "owner": "Raghav Abboy",
       "health": "Not Started",
@@ -4127,6 +5090,25 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002P0gP2AS",
+      "epic_name": "266 SFS Frontline AI - Mobile Insight",
+      "epic_name_key": "266 SFS Frontline AI - Mobile Insight",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002S4U92AK",
       "epic_name": "266 SFS Frontline AI - Core Trust",
       "epic_name_key": "266 SFS Frontline AI - Core Trust",
@@ -4176,6 +5158,62 @@
       "portfolio": "FY27 FS Mobile",
       "project": "[266] Mobile Trust: Compliance",
       "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002V7wv2AC",
+      "epic_name": "[266] [Trust] SFS Setup Experience Trust",
+      "epic_name_key": "[266] [Trust] SFS Setup Experience Trust",
+      "team": "SFS Setup Experience",
+      "owner": "Rahul Mehta",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002VPPB2A4",
+      "epic_name": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+      "epic_name_key": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+      "team": "SFS Mobile Core Experience",
+      "owner": "Sharon Adler",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Compliance",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QB00000005bCHMAY",
+      "epic_name": "FSL [Trust][Automation][iOS]  - Improve Code Coverage",
+      "epic_name_key": "FSL [Trust][Automation][iOS]  - Improve Code Coverage",
+      "team": "SFS Frontline AI",
+      "owner": "Hao Guan",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Mobile Trust",
+      "portfolio": "FY27 FS Mobile",
+      "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -4781,8 +5819,8 @@
     },
     {
       "epic_id": "a3QEE000001jqLF2AY",
-      "epic_name": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
-      "epic_name_key": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
+      "epic_name": "[Core] [Briefcase] Run as User asynchronously for long executions",
+      "epic_name_key": "[Core] [Briefcase] Run as User asynchronously for long executions",
       "team": "SFS Mobile Services",
       "owner": "Raghav Abboy",
       "health": "On Track",
@@ -4798,8 +5836,8 @@
     },
     {
       "epic_id": "a3QEE000001ljYz2AI",
-      "epic_name": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
-      "epic_name_key": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+      "epic_name": "[Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+      "epic_name_key": "[Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
       "team": "SFS Mobile Services",
       "owner": "Raghav Abboy",
       "health": "Unknown",
@@ -4816,8 +5854,8 @@
     },
     {
       "epic_id": "a3QEE000002RhJ32AK",
-      "epic_name": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
-      "epic_name_key": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
+      "epic_name": "[Core] Enable PSS Data Hierarchy for Performance Priming",
+      "epic_name_key": "[Core] Enable PSS Data Hierarchy for Performance Priming",
       "team": "SFS Mobile Services",
       "owner": "Man Kit Yau",
       "health": "On Track",
@@ -4833,8 +5871,8 @@
     },
     {
       "epic_id": "a3QEE0000020EWT2A2",
-      "epic_name": "266 [Core] Scale Platform Actions Mobile Metadata API",
-      "epic_name_key": "266 [Core] Scale Platform Actions Mobile Metadata API",
+      "epic_name": "[Core] Scale Platform Actions Mobile Metadata API",
+      "epic_name_key": "[Core] Scale Platform Actions Mobile Metadata API",
       "team": "SFS Mobile Services",
       "owner": "Raghav Abboy",
       "health": "Not Started",
@@ -4867,8 +5905,8 @@
     },
     {
       "epic_id": "a3QEE000002XCkP2AW",
-      "epic_name": "266 [Mobile] Caching and Offline Optimization",
-      "epic_name_key": "266 [Mobile] Caching and Offline Optimization",
+      "epic_name": "[Mobile] Caching and Offline Optimization",
+      "epic_name_key": "[Mobile] Caching and Offline Optimization",
       "team": "SFS Mobile Services",
       "owner": "Raghav Abboy",
       "health": "Not Started",
@@ -5009,12 +6047,31 @@
         "missing_priority",
         "missing_planned_release"
       ]
+    },
+    {
+      "epic_id": "a3QEE000002ep972AA",
+      "epic_name": "[266][SFS MCX][Trust] Trust  - August September",
+      "epic_name_key": "[266][SFS MCX][Trust] Trust  - August September",
+      "team": "SFS Mobile Core Experience",
+      "owner": "Leah Vogel",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Foundations Trust",
+      "portfolio": "FY27 FS Foundations",
+      "project": "[266] Foundations Trust: Security",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
     }
   ],
   "by_team": [
     {
       "name": "-",
-      "epic_count": 23,
+      "epic_count": 30,
       "epics": [
         {
           "epic_id": "a3QEE000002f0692AA",
@@ -5084,6 +6141,139 @@
           "program": "[264] Unified Workforce Management (UWM)",
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] UWM S&O",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okid2AC",
+          "epic_name": "Q4 Testing [264] Planning: 15min Intervals",
+          "epic_name_key": "Q4 Testing [264] Planning: 15min Intervals",
+          "team": "-",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Core Capabilities",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Planning: 15min Intervals",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okie2AC",
+          "epic_name": "Q4 Testing [264] Planning: Skills-based planning",
+          "epic_name_key": "Q4 Testing [264] Planning: Skills-based planning",
+          "team": "-",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Core Capabilities",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Planning: Skills-based planning",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okif2AC",
+          "epic_name": "Q4 Testing [264] Planning: Mass Shift Assignment",
+          "epic_name_key": "Q4 Testing [264] Planning: Mass Shift Assignment",
+          "team": "-",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Core Capabilities",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Planning: Mass Shift Assignment",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okig2AC",
+          "epic_name": "Q4 Testing [264] Perforamce Tracking: Real-time adherence agent",
+          "epic_name_key": "Q4 Testing [264] Perforamce Tracking: Real-time adherence agent",
+          "team": "-",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Core Capabilities",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Perforamce Tracking: Real-time adherence agent",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okih2AC",
+          "epic_name": "Q4 Testing [264] Short Horizon Planning: Shifts Container",
+          "epic_name_key": "Q4 Testing [264] Short Horizon Planning: Shifts Container",
+          "team": "-",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Resource Optimizer",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Short Horizon Planning: Shifts Container",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okii2AC",
+          "epic_name": "Q4 Testing [264] Short Horizon Planning: Resource Optimizer Wizard",
+          "epic_name_key": "Q4 Testing [264] Short Horizon Planning: Resource Optimizer Wizard",
+          "team": "-",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Resource Optimizer",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Short Horizon Planning: Resource Optimizer Wizard",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okij2AC",
+          "epic_name": "Q4 Testing [264] Short Horizon Planning: Automate Recurring Scheduling Window",
+          "epic_name_key": "Q4 Testing [264] Short Horizon Planning: Automate Recurring Scheduling Window",
+          "team": "-",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Resource Optimizer",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Short Horizon Planning: Automate Recurring Scheduling Window",
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
@@ -5783,7 +6973,7 @@
     },
     {
       "name": "FSL - Foundation - Atlas",
-      "epic_count": 14,
+      "epic_count": 25,
       "epics": [
         {
           "epic_id": "a3QEE000002TAhB2AW",
@@ -6026,6 +7216,203 @@
           "issues": [
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002JfzB2AS",
+          "epic_name": "Auto Refresh of Gantt",
+          "epic_name_key": "Auto Refresh of Gantt",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Ruchika Pashine",
+          "health": "Unknown",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002VYDx2AO",
+          "epic_name": "[266] Drag and Drop Shifts on the Grid",
+          "epic_name_key": "[266] Drag and Drop Shifts on the Grid",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Xiao Han",
+          "health": "Unknown",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Vcz72AC",
+          "epic_name": "[266 Atlas] TDs and Trust",
+          "epic_name_key": "[266 Atlas] TDs and Trust",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Pei Chu",
+          "health": "Unknown",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YTmQ2AW",
+          "epic_name": "Quick Filter Saving",
+          "epic_name_key": "Quick Filter Saving",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Pei Chu",
+          "health": "Unknown",
+          "scheduled_build": "264.11",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YVLB2A4",
+          "epic_name": "[266] Key Metrics Panel for Schedule Manager",
+          "epic_name_key": "[266] Key Metrics Panel for Schedule Manager",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Avani Jindal",
+          "health": "On Track",
+          "scheduled_build": "264.7",
+          "priority": 1,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YVMn2AO",
+          "epic_name": "[266] Shift Rotation",
+          "epic_name_key": "[266] Shift Rotation",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Manisha Chaurasia",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YWh32AG",
+          "epic_name": "[266] Compact density view",
+          "epic_name_key": "[266] Compact density view",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Rebecca Hampton",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YXwT2AW",
+          "epic_name": "[266] Rule Violations and Alerts",
+          "epic_name_key": "[266] Rule Violations and Alerts",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Xiao Han",
+          "health": "Not Started",
+          "scheduled_build": "264.11",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZuZF2A0",
+          "epic_name": "Quick Filter Accordion",
+          "epic_name_key": "Quick Filter Accordion",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Pei Chu",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ZukX2AS",
+          "epic_name": "Quick Filter Saving By Logic",
+          "epic_name_key": "Quick Filter Saving By Logic",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Pei Chu",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002foNt2AI",
+          "epic_name": "[266] Holiday Support on Schedule Manager UI",
+          "epic_name_key": "[266] Holiday Support on Schedule Manager UI",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Xiao Han",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
@@ -6168,7 +7555,7 @@
     },
     {
       "name": "FSL - Resource - Dispatch Console",
-      "epic_count": 12,
+      "epic_count": 13,
       "epics": [
         {
           "epic_id": "a3QEE000002VJ6r2AG",
@@ -6233,6 +7620,24 @@
           "owner": "Lilach Talbi",
           "health": "Unknown",
           "scheduled_build": "264.4",
+          "priority": "-",
+          "story_points": 0,
+          "program": "S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002TAdx2AG",
+          "epic_name": "[264.7][Scheduling Console] Enhanced Gantt Search For Appointments",
+          "epic_name_key": "[264.7][Scheduling Console] Enhanced Gantt Search For Appointments",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Gal Asraf",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
           "program": "S&O Scheduling Console",
@@ -6451,8 +7856,8 @@
         },
         {
           "epic_id": "a3QEE000002aXtx2AE",
-          "epic_name": "UWM 266 : getCandidate - service",
-          "epic_name_key": "UWM 266 : getCandidate - service",
+          "epic_name": "[266][October] getCandidate - service",
+          "epic_name_key": "[266][October] getCandidate - service",
           "team": "FSL - Resource - Scheduling Hawks",
           "owner": "Eran Rotbart",
           "health": "Not Started",
@@ -6469,8 +7874,8 @@
         },
         {
           "epic_id": "a3QEE000002aY212AE",
-          "epic_name": "UWM 266 : User preferences - service",
-          "epic_name_key": "UWM 266 : User preferences - service",
+          "epic_name": "[266][September] User preferences - service",
+          "epic_name_key": "[266][September] User preferences - service",
           "team": "FSL - Resource - Scheduling Hawks",
           "owner": "Riki Pachter",
           "health": "Not Started",
@@ -6759,8 +8164,31 @@
       ]
     },
     {
+      "name": "FSL - Resource - Scheduling Platform",
+      "epic_count": 1,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002GKWH2A4",
+          "epic_name": "* 264 SFS [Trust]  - mTLS Migration",
+          "epic_name_key": "* 264 SFS [Trust]  - mTLS Migration",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Lev Gorelik",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": 30,
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
       "name": "FSL - Talpiot - Dispatch Console",
-      "epic_count": 17,
+      "epic_count": 16,
       "epics": [
         {
           "epic_id": "a3QEE000002NSAX2A4",
@@ -6930,24 +8358,6 @@
           "team": "FSL - Talpiot - Dispatch Console",
           "owner": "Lilach Talbi",
           "health": "On Track",
-          "scheduled_build": "264.7",
-          "priority": "-",
-          "story_points": 0,
-          "program": "S&O Scheduling Console",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Console - Gantt & List Capabilities",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002TAdx2AG",
-          "epic_name": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-          "epic_name_key": "[264][Scheduling Console] Enhanced Gantt Search For Appointments",
-          "team": "FSL - Talpiot - Dispatch Console",
-          "owner": "Gal Asraf",
-          "health": "Not Started",
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
@@ -7220,6 +8630,158 @@
           "project": "S&O WFM Worker experience",
           "issues": [
             "missing_priority",
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Perf Eng - Service Cloud",
+      "epic_count": 2,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002Okik2AC",
+          "epic_name": "Q4 Testing [264] Real-Time Optimization: Agentic Supervisor",
+          "epic_name_key": "Q4 Testing [264] Real-Time Optimization: Agentic Supervisor",
+          "team": "Perf Eng - Service Cloud",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Resource Optimizer",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Real-Time Optimization: Agentic Supervisor",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Okil2AC",
+          "epic_name": "Q4 Testing [264] Real-Time Optimization: Real-time Alerts and Notifications",
+          "epic_name_key": "Q4 Testing [264] Real-Time Optimization: Real-time Alerts and Notifications",
+          "team": "Perf Eng - Service Cloud",
+          "owner": "Emily Mesirow",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[264] Resource Optimizer",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[264] Real-Time Optimization: Real-time Alerts and Notifications",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "QuantumForce",
+      "epic_count": 6,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002JRBR2A4",
+          "epic_name": "*[264] QuantumForce - Engineering Support",
+          "epic_name_key": "*[264] QuantumForce - Engineering Support",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": 100,
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002JREf2AO",
+          "epic_name": "*[264] QuantumForce - FIT Support +add capabilities",
+          "epic_name_key": "*[264] QuantumForce - FIT Support +add capabilities",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": 300,
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002JTrZ2AW",
+          "epic_name": "*[264] QuantumForce - Brainforce - Automation",
+          "epic_name_key": "*[264] QuantumForce - Brainforce - Automation",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": 400,
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002JTzd2AG",
+          "epic_name": "*[264] QuantumForce - Orgfarm support",
+          "epic_name_key": "*[264] QuantumForce - Orgfarm support",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": 200,
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002JU4T2AW",
+          "epic_name": "*[264] QuantumForce - Orgfarm- automatic upgrade package and flash",
+          "epic_name_key": "*[264] QuantumForce - Orgfarm- automatic upgrade package and flash",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": 700,
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002LNbZ2AW",
+          "epic_name": "*[264] QuantumForce - Stabilize Workspace",
+          "epic_name_key": "*[264] QuantumForce - Stabilize Workspace",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": 600,
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
             "missing_planned_release"
           ]
         }
@@ -7618,7 +9180,7 @@
     },
     {
       "name": "SFS Frontline AI",
-      "epic_count": 62,
+      "epic_count": 68,
       "epics": [
         {
           "epic_id": "a3QEE000002FsAD2A0",
@@ -8015,6 +9577,44 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002Vq1B2AS",
+          "epic_name": "266 SFS Frontline AI - [iOS] Hybrid LWC Rendering Support",
+          "epic_name_key": "266 SFS Frontline AI - [iOS] Hybrid LWC Rendering Support",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Vq2n2AC",
+          "epic_name": "266 SFS Frontline AI - [Android] Hybrid LWC Rendering Support",
+          "epic_name_key": "266 SFS Frontline AI - [Android] Hybrid LWC Rendering Support",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002X3qn2AC",
           "epic_name": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
           "epic_name_key": "266 SFS Frontline AI - [iOS] Agentforce Voice Close Caption Support",
@@ -8090,14 +9690,32 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002YFZl2AO",
-          "epic_name": "266 SFS Frontline AI - Voice to Form Offline Pilot",
-          "epic_name_key": "266 SFS Frontline AI - Voice to Form Offline Pilot",
+          "epic_id": "a3QEE000002YFY92AO",
+          "epic_name": "266 SFS Frontline AI - Adoption Support",
+          "epic_name_key": "266 SFS Frontline AI - Adoption Support",
           "team": "SFS Frontline AI",
           "owner": "Paul Chan",
           "health": "On Track",
           "scheduled_build": "-",
-          "priority": 40,
+          "priority": 25,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YFZl2AO",
+          "epic_name": "266 SFS Frontline AI - [Adoption] Voice to Form Offline Pilot",
+          "epic_name_key": "266 SFS Frontline AI - [Adoption] Voice to Form Offline Pilot",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": 25,
           "story_points": 0,
           "program": "[266] Mobile AI & Voice to Form",
           "portfolio": "FY27 FS Mobile",
@@ -8157,6 +9775,24 @@
           "program": "[266] Mobile AI & Voice to Form",
           "portfolio": "FY27 FS Mobile",
           "project": "Voice to Form Evolution",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000001s2qf2AA",
+          "epic_name": "SFS Frontline AI - Guided Troubleshooting",
+          "epic_name_key": "SFS Frontline AI - Guided Troubleshooting",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 100,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
           "issues": [
             "missing_scheduled_build",
             "missing_planned_release"
@@ -8271,6 +9907,25 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002P0gP2AS",
+          "epic_name": "266 SFS Frontline AI - Mobile Insight",
+          "epic_name_key": "266 SFS Frontline AI - Mobile Insight",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002S4U92AK",
           "epic_name": "266 SFS Frontline AI - Core Trust",
           "epic_name_key": "266 SFS Frontline AI - Core Trust",
@@ -8303,6 +9958,25 @@
           "project": "[266] Mobile Trust: Compliance",
           "issues": [
             "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QB00000005bCHMAY",
+          "epic_name": "FSL [Trust][Automation][iOS]  - Improve Code Coverage",
+          "epic_name_key": "FSL [Trust][Automation][iOS]  - Improve Code Coverage",
+          "team": "SFS Frontline AI",
+          "owner": "Hao Guan",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -8923,7 +10597,7 @@
     },
     {
       "name": "SFS Mobile Assets",
-      "epic_count": 5,
+      "epic_count": 8,
       "epics": [
         {
           "epic_id": "a3QEE000002FY8H2AW",
@@ -8981,11 +10655,68 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002FZM52AO",
+          "epic_name": "[266][SFS Mobile Assets][Android] Notifications Priority",
+          "epic_name_key": "[266][SFS Mobile Assets][Android] Notifications Priority",
+          "team": "SFS Mobile Assets",
+          "owner": "Sharon Adler",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002SmN72AK",
           "epic_name": "[266] [SFS Mobile assets]Trust and Production support",
           "epic_name_key": "[266] [SFS Mobile assets]Trust and Production support",
           "team": "SFS Mobile Assets",
           "owner": "Sandeep Agrawal",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002WIOr2AO",
+          "epic_name": "[266] [SFS Mobile Assets] Native Mobile flows GA",
+          "epic_name_key": "[266] [SFS Mobile Assets] Native Mobile flows GA",
+          "team": "SFS Mobile Assets",
+          "owner": "Sandeep Agrawal",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Application Production Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002Yf9F2AS",
+          "epic_name": "[266][SFS Mobile Assets][iOS] Notifications Priority",
+          "epic_name_key": "[266][SFS Mobile Assets][iOS] Notifications Priority",
+          "team": "SFS Mobile Assets",
+          "owner": "Prashanth Moorthy",
           "health": "Not Started",
           "scheduled_build": "-",
           "priority": "-",
@@ -9116,7 +10847,7 @@
     },
     {
       "name": "SFS Mobile Core Experience",
-      "epic_count": 8,
+      "epic_count": 10,
       "epics": [
         {
           "epic_id": "a3QEE000002VgQ12AK",
@@ -9256,12 +10987,50 @@
             "missing_priority",
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002VPPB2A4",
+          "epic_name": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+          "epic_name_key": "266 SFS Mobile - [AA] Migrate Google Maps Directions/Matrix to Routes API",
+          "team": "SFS Mobile Core Experience",
+          "owner": "Sharon Adler",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002ep972AA",
+          "epic_name": "[266][SFS MCX][Trust] Trust  - August September",
+          "epic_name_key": "[266][SFS MCX][Trust] Trust  - August September",
+          "team": "SFS Mobile Core Experience",
+          "owner": "Leah Vogel",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Foundations Trust",
+          "portfolio": "FY27 FS Foundations",
+          "project": "[266] Foundations Trust: Security",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "SFS Mobile Location and DC",
-      "epic_count": 6,
+      "epic_count": 7,
       "epics": [
         {
           "epic_id": "a3QEE000002FYjN2AW",
@@ -9312,6 +11081,25 @@
           "program": "264 Field Service: Customer Trust",
           "portfolio": "264 Field Service Mobile",
           "project": "264 Customer Enhancements",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002YNib2AG",
+          "epic_name": "264 SFS Mobile - [TRUST] [MIT] -  Production Support & Investigations",
+          "epic_name_key": "264 SFS Mobile - [TRUST] [MIT] -  Production Support & Investigations",
+          "team": "SFS Mobile Location and DC",
+          "owner": "Dana Bergman",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "264 Field Service Trust",
+          "portfolio": "FY27 FS Trust",
+          "project": "[264] All Clouds (SFS) - Trust: Application Production Support",
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
@@ -9571,8 +11359,8 @@
         },
         {
           "epic_id": "a3QEE000002Lg372AC",
-          "epic_name": "266 [Mobile] Trust, Maintenance and Compliance",
-          "epic_name_key": "266 [Mobile] Trust, Maintenance and Compliance",
+          "epic_name": "[Mobile] Trust, Maintenance and Compliance",
+          "epic_name_key": "[Mobile] Trust, Maintenance and Compliance",
           "team": "SFS Mobile Services",
           "owner": "Raghav Abboy",
           "health": "Not Started",
@@ -9674,8 +11462,8 @@
         },
         {
           "epic_id": "a3QEE000001jqLF2AY",
-          "epic_name": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
-          "epic_name_key": "266 [Core] [Briefcase] Run as User asynchronously for long executions",
+          "epic_name": "[Core] [Briefcase] Run as User asynchronously for long executions",
+          "epic_name_key": "[Core] [Briefcase] Run as User asynchronously for long executions",
           "team": "SFS Mobile Services",
           "owner": "Raghav Abboy",
           "health": "On Track",
@@ -9691,8 +11479,8 @@
         },
         {
           "epic_id": "a3QEE000001ljYz2AI",
-          "epic_name": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
-          "epic_name_key": "266 [Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+          "epic_name": "[Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
+          "epic_name_key": "[Core] [LWC Priming] Support LWC Priming via Briefcase Rules for Offline Use",
           "team": "SFS Mobile Services",
           "owner": "Raghav Abboy",
           "health": "Unknown",
@@ -9709,8 +11497,8 @@
         },
         {
           "epic_id": "a3QEE000002RhJ32AK",
-          "epic_name": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
-          "epic_name_key": "266 [Core] Enable PSS Data Hierarchy for Performance Priming",
+          "epic_name": "[Core] Enable PSS Data Hierarchy for Performance Priming",
+          "epic_name_key": "[Core] Enable PSS Data Hierarchy for Performance Priming",
           "team": "SFS Mobile Services",
           "owner": "Man Kit Yau",
           "health": "On Track",
@@ -9726,8 +11514,8 @@
         },
         {
           "epic_id": "a3QEE0000020EWT2A2",
-          "epic_name": "266 [Core] Scale Platform Actions Mobile Metadata API",
-          "epic_name_key": "266 [Core] Scale Platform Actions Mobile Metadata API",
+          "epic_name": "[Core] Scale Platform Actions Mobile Metadata API",
+          "epic_name_key": "[Core] Scale Platform Actions Mobile Metadata API",
           "team": "SFS Mobile Services",
           "owner": "Raghav Abboy",
           "health": "Not Started",
@@ -9760,8 +11548,8 @@
         },
         {
           "epic_id": "a3QEE000002XCkP2AW",
-          "epic_name": "266 [Mobile] Caching and Offline Optimization",
-          "epic_name_key": "266 [Mobile] Caching and Offline Optimization",
+          "epic_name": "[Mobile] Caching and Offline Optimization",
+          "epic_name_key": "[Mobile] Caching and Offline Optimization",
           "team": "SFS Mobile Services",
           "owner": "Raghav Abboy",
           "health": "Not Started",
@@ -9977,7 +11765,7 @@
     },
     {
       "name": "SFS Setup Experience",
-      "epic_count": 3,
+      "epic_count": 4,
       "epics": [
         {
           "epic_id": "a3QEE000002WtRd2AK",
@@ -10029,6 +11817,24 @@
           "issues": [
             "missing_scheduled_build"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002V7wv2AC",
+          "epic_name": "[266] [Trust] SFS Setup Experience Trust",
+          "epic_name_key": "[266] [Trust] SFS Setup Experience Trust",
+          "team": "SFS Setup Experience",
+          "owner": "Rahul Mehta",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Mobile Trust",
+          "portfolio": "FY27 FS Mobile",
+          "project": "[266] Mobile Trust: Compliance",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
@@ -10058,7 +11864,7 @@
     },
     {
       "name": "Team-WFM-Capacity-Planning",
-      "epic_count": 1,
+      "epic_count": 4,
       "epics": [
         {
           "epic_id": "a3QEE000002PYa12AG",
@@ -10076,12 +11882,274 @@
           "issues": [
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002aDNN2A2",
+          "epic_name": "[266][August] 15 min Capacity Planning on Data Cloud",
+          "epic_name_key": "[266][August] 15 min Capacity Planning on Data Cloud",
+          "team": "Team-WFM-Capacity-Planning",
+          "owner": "Bata Chadraa",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": 6,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Capacity Planning",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aDOz2AM",
+          "epic_name": "[266][September] 15 min Capacity Planning on Data Cloud",
+          "epic_name_key": "[266][September] 15 min Capacity Planning on Data Cloud",
+          "team": "Team-WFM-Capacity-Planning",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": 7,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Capacity Planning",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002cC732AE",
+          "epic_name": "[266] Trust Related Work for Capacity Planning",
+          "epic_name_key": "[266] Trust Related Work for Capacity Planning",
+          "team": "Team-WFM-Capacity-Planning",
+          "owner": "Taniya Ghosh",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Capacity Planning",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team-WFM-Foundation",
+      "epic_count": 12,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002aCj32AE",
+          "epic_name": "[266] Bring your own data",
+          "epic_name_key": "[266] Bring your own data",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aD412AE",
+          "epic_name": "[266][August] Bring your own data",
+          "epic_name_key": "[266][August] Bring your own data",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Completed",
+          "scheduled_build": "264.4",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aD5d2AE",
+          "epic_name": "[266][August] 15 min Aggregation on Data Cloud",
+          "epic_name_key": "[266][August] 15 min Aggregation on Data Cloud",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": 6,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aDAT2A2",
+          "epic_name": "[266][September] 15 min Aggregation on Data Cloud",
+          "epic_name_key": "[266][September] 15 min Aggregation on Data Cloud",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": 7,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aDDh2AM",
+          "epic_name": "[266][September][Setup] Aggregation Setup",
+          "epic_name_key": "[266][September][Setup] Aggregation Setup",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aDVR2A2",
+          "epic_name": "[266] Intraday support",
+          "epic_name_key": "[266] Intraday support",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aECz2AM",
+          "epic_name": "[266][264 carry over] Real-Time Adherence",
+          "epic_name_key": "[266][264 carry over] Real-Time Adherence",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 100,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aEGD2A2",
+          "epic_name": "[266][Carry from 264] Omni-Widget Activities",
+          "epic_name_key": "[266][Carry from 264] Omni-Widget Activities",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 101,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002biVZ2AY",
+          "epic_name": "[266][Stretch] WFM & MWM Setup in Salesforce Go",
+          "epic_name_key": "[266][Stretch] WFM & MWM Setup in Salesforce Go",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 51,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002fewP2AQ",
+          "epic_name": "[266][September] Bring your own data",
+          "epic_name_key": "[266][September] Bring your own data",
+          "team": "Team-WFM-Foundation",
+          "owner": "Vartika Vaish",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002frC52AI",
+          "epic_name": "[266][September] Intraday UI - 15-Minute Support",
+          "epic_name_key": "[266][September] Intraday UI - 15-Minute Support",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": 8,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002frGv2AI",
+          "epic_name": "[266][September] Intraday support",
+          "epic_name_key": "[266][September] Intraday support",
+          "team": "Team-WFM-Foundation",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "264.7",
+          "priority": 9,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "Team-WFM-ML-Foundations",
-      "epic_count": 4,
+      "epic_count": 7,
       "epics": [
         {
           "epic_id": "a3QEE000002KARt2AO",
@@ -10151,12 +12219,64 @@
           "issues": [
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002aD8r2AE",
+          "epic_name": "[266][August] 15 min Forecasting on Data Cloud",
+          "epic_name_key": "[266][August] 15 min Forecasting on Data Cloud",
+          "team": "Team-WFM-ML-Foundations",
+          "owner": "Bata Chadraa",
+          "health": "Not Started",
+          "scheduled_build": "264.4",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM-ML-Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002aDtd2AE",
+          "epic_name": "[266][August] Planner Agent for UWM",
+          "epic_name_key": "[266][August] Planner Agent for UWM",
+          "team": "Team-WFM-ML-Foundations",
+          "owner": "Bata Chadraa",
+          "health": "On Track",
+          "scheduled_build": "264.4",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM-ML-Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002cC8f2AE",
+          "epic_name": "[266] Trust Related Work for ML Foundation",
+          "epic_name_key": "[266] Trust Related Work for ML Foundation",
+          "team": "Team-WFM-ML-Foundations",
+          "owner": "Taniya Ghosh",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM-ML-Foundations",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "Team-WFM-Workloads-Forecasting",
-      "epic_count": 2,
+      "epic_count": 3,
       "epics": [
         {
           "epic_id": "a3QEE000002TojR2AS",
@@ -10189,6 +12309,24 @@
           "program": "[264] Unified Workforce Management (UWM)",
           "portfolio": "FY27 SC M4 UWM",
           "project": "[264] WFM Workloads Forecasting",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002cC3p2AE",
+          "epic_name": "[266] Trust Related Work for Workloads Forecasting Team",
+          "epic_name_key": "[266] Trust Related Work for Workloads Forecasting Team",
+          "team": "Team-WFM-Workloads-Forecasting",
+          "owner": "Taniya Ghosh",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Workloads Forecasting",
           "issues": [
             "missing_priority",
             "missing_planned_release"

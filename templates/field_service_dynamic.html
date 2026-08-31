@@ -17723,7 +17723,7 @@ function createProgramCard(program) {
             const planningIssues = issues.filter(i => planningLabels[i]);
             if (planningIssues.length > 0) {
                 const missingItems = planningIssues.map(i => planningLabels[i]).join(', ');
-                badges.push(`<span style="font-size: 11px; margin-left: 6px;"><span style="color: #d97706;">⚠️ Missing:</span> <span style="color: #64748b;">${missingItems}</span></span>`);
+                badges.push(`<span style="font-size: 11px;"><span style="color: #d97706;">⚠️ Missing:</span> <span style="color: #64748b;">${missingItems}</span></span>`);
             }
 
             // Suggested scheduled build, inferred from majority vote across the epic's stories

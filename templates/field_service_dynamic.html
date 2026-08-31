@@ -1042,6 +1042,58 @@
             border-color: #1f2937;
         }
 
+        .filter-select-exec {
+            padding: 8px 32px 8px 12px;
+            background: white;
+            color: #1e293b;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 9 9'><path fill='%2364748b' d='M0 2l4.5 5L9 2z'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+        }
+
+        .filter-select-exec:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            border-color: rgba(0, 0, 0, 0.2);
+        }
+
+        #exec-status-select[data-status="not-started"] {
+            background-color: #f3f4f6;
+            color: #6b7280;
+            border-color: #d1d5db;
+        }
+
+        #exec-status-select[data-status="on-track"] {
+            background-color: #d1fae5;
+            color: #047857;
+            border-color: #10b981;
+        }
+
+        #exec-status-select[data-status="on-watch"] {
+            background-color: #fef3c7;
+            color: #d97706;
+            border-color: #fbbf24;
+        }
+
+        #exec-status-select[data-status="blocked"] {
+            background-color: #fee2e2;
+            color: #dc2626;
+            border-color: #ef4444;
+        }
+
+        #exec-status-select[data-status="completed"] {
+            background-color: #dbeafe;
+            color: #0176D3;
+            border-color: #3b82f6;
+        }
 
         /* Epic List */
         .epic-list-container {
@@ -2850,10 +2902,15 @@
 
         <!-- Execution filters (only show in Execution view) -->
         <div id="execution-filters-inline" style="display: none;">
-            <!-- View Toggles (Programs | Projects | Epics) -->
+            <!-- View dropdown (Programs | Projects | Epics) -->
             <div class="filter-group-exec">
                 <label class="filter-label-exec">VIEW</label>
-                <div class="view-toggles">
+                <select class="filter-select-exec" id="exec-view-select">
+                    <option value="program" selected>Programs</option>
+                    <option value="project">Projects</option>
+                    <option value="epic">Epics</option>
+                </select>
+                <div class="view-toggles" style="display: none;">
                     <button class="view-toggle active" data-view="program" tabindex="-1">Programs</button>
                     <button class="view-toggle" data-view="project" tabindex="-1">Projects</button>
                     <button class="view-toggle" data-view="epic" tabindex="-1">Epics</button>
@@ -2862,7 +2919,15 @@
 
             <div class="filter-group-exec">
                 <label class="filter-label-exec">STATUS</label>
-                <div class="filter-pills">
+                <select class="filter-select-exec" id="exec-status-select">
+                    <option value="all" selected>All</option>
+                    <option value="not-started">Not Started</option>
+                    <option value="on-track">On Track</option>
+                    <option value="on-watch">On Watch</option>
+                    <option value="blocked">Blocked</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <div class="filter-pills" style="display: none;">
                     <button class="filter-pill active" data-status="all" tabindex="-1">All</button>
                     <button class="filter-pill" data-status="not-started" tabindex="-1">Not Started</button>
                     <button class="filter-pill" data-status="on-track" tabindex="-1">On Track</button>
@@ -2874,7 +2939,13 @@
 
             <div class="filter-group-exec">
                 <label class="filter-label-exec">MONTH</label>
-                <div class="filter-pills">
+                <select class="filter-select-exec" id="exec-month-select">
+                    <option value="all" selected>All Months</option>
+                    {% for month_config in execution_months %}
+                    <option value="{{ month_config.value }}">{{ month_config.label }}</option>
+                    {% endfor %}
+                </select>
+                <div class="filter-pills" style="display: none;">
                     <button class="filter-pill month-pill active" data-month="all" tabindex="-1">All Months</button>
 
                     {% for month_config in execution_months %}
@@ -16238,10 +16309,10 @@ function createProgramCard(program) {
                             });
 
                             const matchingEpics = [];
-                            const searchClass = 'health-' + selectedStatus;
+                            const searchClass = 'health-' + badgeStatus;
                             console.log('Epics view: searching for class:', searchClass);
 
-                            document.querySelectorAll('.epic-card').forEach(epic => {
+                            document.querySelectorAll('.epic-row').forEach(epic => {
                                 const epicClasses = epic.className;
                                 if (epicClasses.includes(searchClass)) {
                                     matchingEpics.push(epic);
@@ -16255,16 +16326,16 @@ function createProgramCard(program) {
                                 console.log('Epics view: 0 matches - hiding all programs/projects/epics');
                                 document.querySelectorAll('#execution-view .program-row').forEach(p => p.style.display = 'none');
                                 document.querySelectorAll('#execution-view .project-container').forEach(p => p.style.display = 'none');
-                                document.querySelectorAll('.epic-card').forEach(e => e.style.display = 'none');
+                                document.querySelectorAll('.epic-row').forEach(e => e.style.display = 'none');
 
                                 // Show empty state
-                                const emptyState = document.getElementById('empty-state');
+                                const emptyState = document.getElementById('execution-empty-state');
                                 const treeContainer = document.getElementById('tree-container');
                                 if (emptyState) emptyState.style.display = 'block';
                                 if (treeContainer) treeContainer.style.display = 'none';
                             } else {
                                 // Hide empty state, show tree
-                                const emptyState = document.getElementById('empty-state');
+                                const emptyState = document.getElementById('execution-empty-state');
                                 const treeContainer = document.getElementById('tree-container');
                                 if (emptyState) emptyState.style.display = 'none';
                                 if (treeContainer) treeContainer.style.display = 'block';
@@ -16272,7 +16343,7 @@ function createProgramCard(program) {
                                 // Bubble up to show parent projects/programs
                                 const matchingProjects = new Set();
                                 matchingEpics.forEach(epic => {
-                                    const project = epic.closest('.project-row');
+                                    const project = epic.closest('.project-container');
                                     if (project) matchingProjects.add(project);
                                 });
 
@@ -16290,7 +16361,7 @@ function createProgramCard(program) {
                                     program.style.display = (hasMatchingEpics && matchesPortfolio) ? '' : 'none';
                                 });
 
-                                document.querySelectorAll('#execution-view .project-row').forEach(project => {
+                                document.querySelectorAll('#execution-view .project-container').forEach(project => {
                                     const hasMatchingEpics = matchingProjects.has(project);
                                     const program = project.closest('.program-row');
                                     const portfolio = program ? program.getAttribute('data-portfolio') : null;
@@ -16299,7 +16370,7 @@ function createProgramCard(program) {
                                     project.style.display = (hasMatchingEpics && matchesPortfolio) ? '' : 'none';
                                 });
 
-                                document.querySelectorAll('.epic-card').forEach(epic => {
+                                document.querySelectorAll('.epic-row').forEach(epic => {
                                     const matchesStatus = matchingEpics.includes(epic);
                                     const program = epic.closest('.program-row');
                                     const portfolio = program ? program.getAttribute('data-portfolio') : null;
@@ -16416,6 +16487,39 @@ function createProgramCard(program) {
                     }
                 });
             });
+
+            // Execution filter dropdowns: drive the existing hidden buttons so all
+            // filter logic above stays the single source of truth.
+            const execViewSelect = document.getElementById('exec-view-select');
+            if (execViewSelect) {
+                execViewSelect.addEventListener('change', function() {
+                    const btn = document.querySelector('.view-toggle[data-view="' + this.value + '"]');
+                    if (btn) btn.click();
+                });
+            }
+
+            const execStatusSelect = document.getElementById('exec-status-select');
+            if (execStatusSelect) {
+                execStatusSelect.setAttribute('data-status', execStatusSelect.value);
+                execStatusSelect.addEventListener('change', function() {
+                    this.setAttribute('data-status', this.value);
+                    const pill = document.querySelector('.filter-pill[data-status="' + this.value + '"]');
+                    if (pill) pill.click();
+                });
+            }
+
+            const execMonthSelect = document.getElementById('exec-month-select');
+            if (execMonthSelect) {
+                execMonthSelect.addEventListener('change', function() {
+                    const pill = document.querySelector('.month-pill[data-month="' + this.value + '"]');
+                    if (pill) pill.click();
+                    // Month selection can auto-switch to Epic view (see month-pill handler above)
+                    const activeViewToggle = document.querySelector('.view-toggle.active');
+                    if (activeViewToggle && execViewSelect) {
+                        execViewSelect.value = activeViewToggle.dataset.view;
+                    }
+                });
+            }
         });
 
         // Recalculate stat cards based on visible items only

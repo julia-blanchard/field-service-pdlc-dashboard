@@ -82,6 +82,12 @@ if ! retry_command "/usr/bin/python3 fetch_teams_data.py" "Fetching teams data";
     echo "$(date): Teams fetch failed, continuing with cached data"
 fi
 
+# Roll the 4-month capacity window forward (non-critical, can continue with cached)
+echo "$(date): Rolling capacity window forward..."
+if ! retry_command "/usr/bin/python3 fetch_capacity_rolling.py" "Rolling capacity window"; then
+    echo "$(date): Capacity rolling failed, continuing with cached capacity_months"
+fi
+
 # Analyze hygiene issues (non-critical, can continue without)
 echo "$(date): Analyzing hygiene issues..."
 if ! /usr/bin/python3 analyze_hygiene.py; then

@@ -60,10 +60,10 @@
     "SFS Mobile - Quality": "Ray Finn",
     "SFS Mobile AGX": "Will Carpenter",
     "SFS Mobile Assets": "Sharon Adler",
-    "SFS Mobile Comms and Search": "Kara Carreri",
     "SFS Mobile Core Experience": "Kevin Ota",
     "SFS Mobile Dynamic Experience": "Asaf Altagar",
     "SFS Mobile Fullstack IL": "Sharon Adler",
+    "SFS Mobile GX": "Will Carpenter",
     "SFS Mobile Location and DC": "Sharon Adler",
     "SFS Mobile LRP": "Kevin Ota",
     "SFS Mobile Offline Extensibility": "Nitasha Walia",
@@ -139,10 +139,10 @@
     "SFS Mobile - Quality": "Subra Vadali",
     "SFS Mobile AGX": "Raghav Abboy",
     "SFS Mobile Assets": "Sandeep Agrawal",
-    "SFS Mobile Comms and Search": "Steve Thistle",
     "SFS Mobile Core Experience": "Adi Sharet",
     "SFS Mobile Dynamic Experience": "Himanshu Phalak",
     "SFS Mobile Fullstack IL": "Leah Vogel",
+    "SFS Mobile GX": "Steve Thistle",
     "SFS Mobile Location and DC": "Yoni Moseri",
     "SFS Mobile LRP": "Kevin Ota",
     "SFS Mobile Offline Extensibility": "Raghav Abboy",
@@ -158,5 +158,5 @@
     "SFS Setup Experience": "Pei Chu",
     "SFS-S&O-Leadership": "Elhanan Rosental"
   },
-  "last_updated": "2026-08-30 15:33:29"
+  "last_updated": "2026-08-31 13:44:09"
 }

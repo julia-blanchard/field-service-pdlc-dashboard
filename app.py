@@ -867,91 +867,51 @@ def index():
 
     # Aggregate capacity by program for "By Program" view
     from collections import defaultdict
-    program_capacity = defaultdict(lambda: {
-        'june_delivered': 0,
-        'july_committed': 0,
-        'august_planned': 0,
-        'september_planned': 0,
-        'teams': []
-    })
+
+    if capacity_months and len(capacity_months) == 4:
+        month_by_program_keys = [
+            (m['name'], m['name'] + ('_delivered_by_program' if m['type'] == 'delivered' else '_committed_by_program'))
+            for m in capacity_months
+        ]
+    else:
+        month_by_program_keys = [
+            ('june', 'june_delivered_by_program'),
+            ('july', 'july_committed_by_program'),
+            ('august', 'august_committed_by_program'),
+            ('september', 'september_committed_by_program'),
+        ]
+    month_names = [name for name, _ in month_by_program_keys]
+
+    program_capacity = defaultdict(lambda: {**{name: 0 for name in month_names}, 'teams': {}})
 
     for team in teams:
         team_name = team['name']
-
-        # June delivered by program
-        for program, points in team.get('june_delivered_by_program', {}).items():
-            program_capacity[program]['june_delivered'] += points
-            if team_name not in [t['name'] for t in program_capacity[program]['teams']]:
-                program_capacity[program]['teams'].append({
-                    'name': team_name,
-                    'june_delivered': points,
-                    'july_committed': 0,
-                    'august_planned': 0,
-                    'september_planned': 0
-                })
-            else:
-                for t in program_capacity[program]['teams']:
-                    if t['name'] == team_name:
-                        t['june_delivered'] += points
-
-        # July committed by program
-        for program, points in team.get('july_committed_by_program', {}).items():
-            program_capacity[program]['july_committed'] += points
-            existing_team = next((t for t in program_capacity[program]['teams'] if t['name'] == team_name), None)
-            if not existing_team:
-                program_capacity[program]['teams'].append({
-                    'name': team_name,
-                    'june_delivered': 0,
-                    'july_committed': points,
-                    'august_planned': 0,
-                    'september_planned': 0
-                })
-            else:
-                existing_team['july_committed'] += points
-
-        # August committed by program
-        for program, points in team.get('august_committed_by_program', {}).items():
-            program_capacity[program]['august_planned'] += points
-            existing_team = next((t for t in program_capacity[program]['teams'] if t['name'] == team_name), None)
-            if not existing_team:
-                program_capacity[program]['teams'].append({
-                    'name': team_name,
-                    'june_delivered': 0,
-                    'july_committed': 0,
-                    'august_planned': points,
-                    'september_planned': 0
-                })
-            else:
-                existing_team['august_planned'] += points
-
-        # September committed by program
-        for program, points in team.get('september_committed_by_program', {}).items():
-            program_capacity[program]['september_planned'] += points
-            existing_team = next((t for t in program_capacity[program]['teams'] if t['name'] == team_name), None)
-            if not existing_team:
-                program_capacity[program]['teams'].append({
-                    'name': team_name,
-                    'june_delivered': 0,
-                    'july_committed': 0,
-                    'august_planned': 0,
-                    'september_planned': points
-                })
-            else:
-                existing_team['september_planned'] += points
+        for month_name, by_program_key in month_by_program_keys:
+            for program, points in team.get(by_program_key, {}).items():
+                program_capacity[program][month_name] += points
+                team_totals = program_capacity[program]['teams'].setdefault(
+                    team_name, {name: 0 for name in month_names}
+                )
+                team_totals[month_name] += points
 
     # Convert to list and sort by total capacity
     programs_by_capacity = [
         {
             'name': program,
-            'june_delivered': data['june_delivered'],
-            'july_committed': data['july_committed'],
-            'august_planned': data['august_planned'],
-            'september_planned': data['september_planned'],
-            'teams': sorted(data['teams'], key=lambda t: t['june_delivered'] + t['july_committed'], reverse=True)
+            **{name: data[name] for name in month_names},
+            'teams': sorted(
+                [{'name': tname, **tdata} for tname, tdata in data['teams'].items()],
+                key=lambda t: sum(t[name] for name in month_names),
+                reverse=True
+            )
         }
         for program, data in program_capacity.items()
     ]
-    programs_by_capacity = sorted(programs_by_capacity, key=lambda p: p['june_delivered'] + p['july_committed'], reverse=True)
+    programs_by_capacity = sorted(
+        programs_by_capacity,
+        key=lambda p: sum(p[name] for name in month_names),
+        reverse=True
+    )
 
     # Build program name → {id, portfolio} lookup for Allocations tab
     program_lookup = {}

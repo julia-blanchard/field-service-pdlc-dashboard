@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 470,
-    "teams_affected": 33,
+    "total_epics_needing_attention": 491,
+    "teams_affected": 34,
     "programs_affected": 38,
     "issue_breakdown": {
       "missing_scheduled_build": 184,
-      "missing_priority": 272,
+      "missing_priority": 286,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 398
+      "missing_planned_release": 419
     }
   },
   "epics": [
@@ -977,23 +977,6 @@
       "project": "FS 264: S&O: Agentforce Scheduling - Fill Gaps",
       "issues": [
         "missing_scheduled_build",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002MN9h2AG",
-      "epic_name": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
-      "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
-      "team": "FSL - Resource - Scheduling Orcas",
-      "owner": "Avi Inbar",
-      "health": "Completed",
-      "scheduled_build": "264.4",
-      "priority": "35",
-      "story_points": 0,
-      "program": "FS 264: S&O: Agentic S&O",
-      "portfolio": "264 Field Service Scheduling & Optimization",
-      "project": "FS 264: S&O: Agentforce Setup (Outbound)",
-      "issues": [
         "missing_planned_release"
       ]
     },
@@ -2907,6 +2890,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002jIFl2AM",
+      "epic_name": "Add Service Territory to the capacity plan input screen",
+      "epic_name_key": "Add Service Territory to the capacity plan input screen",
+      "team": "Team-WFM-Capacity-Planning",
+      "owner": "Ruchika Pashine",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Capacity Planning",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002aDtd2AE",
       "epic_name": "[266][August] Planner Agent for UWM",
       "epic_name_key": "[266][August] Planner Agent for UWM",
@@ -2982,7 +2983,7 @@
       "owner": "VARSHA CHALAMALASETTY",
       "health": "Not Started",
       "scheduled_build": "266",
-      "priority": 2,
+      "priority": 50,
       "story_points": 0,
       "program": "[266] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
@@ -2999,7 +3000,7 @@
       "owner": "VARSHA CHALAMALASETTY",
       "health": "Not Started",
       "scheduled_build": "266",
-      "priority": 2,
+      "priority": 52,
       "story_points": 0,
       "program": "[266] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
@@ -3010,8 +3011,8 @@
     },
     {
       "epic_id": "a3QEE000002hqlN2AQ",
-      "epic_name": "[266][November] Planner Agent Enhancements for Production Readiness",
-      "epic_name_key": "[266][November] Planner Agent Enhancements for Production Readiness",
+      "epic_name": "[266] [November] Planner Agent Enhancements for Production Readiness",
+      "epic_name_key": "[266] [November] Planner Agent Enhancements for Production Readiness",
       "team": "Team-WFM-Workloads-Forecasting",
       "owner": "VARSHA CHALAMALASETTY",
       "health": "Not Started",
@@ -3027,13 +3028,13 @@
     },
     {
       "epic_id": "a3QEE000002ilrh2AA",
-      "epic_name": "[266] Field Service - Multiple Service Territory Support",
-      "epic_name_key": "[266] Field Service - Multiple Service Territory Support",
+      "epic_name": "[266] [264 Backport] Field Service - Multiple Service Territory Support",
+      "epic_name_key": "[266] [264 Backport] Field Service - Multiple Service Territory Support",
       "team": "Team-WFM-Workloads-Forecasting",
       "owner": "VARSHA CHALAMALASETTY",
-      "health": "Not Started",
-      "scheduled_build": "266",
-      "priority": 52,
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": 2,
       "story_points": 0,
       "program": "[266] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
@@ -3048,9 +3049,26 @@
       "epic_name_key": "[266] Omni-Channel TD - Associate WorkSkillGroup to AgentWork",
       "team": "Team-WFM-Workloads-Forecasting",
       "owner": "VARSHA CHALAMALASETTY",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "266",
-      "priority": 53,
+      "priority": 4,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Workloads Forecasting",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002jIPR2A2",
+      "epic_name": "[266] [264 Backport] CCaaS - Move Service Territory from Workload to CP",
+      "epic_name_key": "[266] [264 Backport] CCaaS - Move Service Territory from Workload to CP",
+      "team": "Team-WFM-Workloads-Forecasting",
+      "owner": "VARSHA CHALAMALASETTY",
+      "health": "Not Started",
+      "scheduled_build": "264",
+      "priority": 3,
       "story_points": 0,
       "program": "[266] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
@@ -3574,7 +3592,7 @@
       "owner": "Riki Pachter",
       "health": "Not Started",
       "scheduled_build": "264.7",
-      "priority": 30,
+      "priority": 25,
       "story_points": 0,
       "program": "[266] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
@@ -4638,7 +4656,7 @@
       "epic_id": "a3QEE000002bnTd2AI",
       "epic_name": "[266] SFS [AF] - Unified Agent - Guest",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Guest",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "264.11",
@@ -4655,7 +4673,7 @@
       "epic_id": "a3QEE000002bnVF2AY",
       "epic_name": "[266] SFS [AF] - Unified Agent - Voice",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Voice",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "266",
@@ -4690,7 +4708,7 @@
       "epic_id": "a3QEE000002bnYT2AY",
       "epic_name": "[266] SFS [AF] - Unified Agent - Outbound: Service Reminders",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Outbound: Service Reminders",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "266",
@@ -4707,7 +4725,7 @@
       "epic_id": "a3QEE000002bnbh2AA",
       "epic_name": "[266] SFS [AF] - Unified Agent - Outbound: Rebook & Conversational",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Outbound: Rebook & Conversational",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "266",
@@ -4724,7 +4742,7 @@
       "epic_id": "a3QEE000002bndJ2AQ",
       "epic_name": "[266] SFS [AF] - Unified Agent - Setup",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Setup",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "264.14",
@@ -4741,7 +4759,7 @@
       "epic_id": "a3QEE000002bnev2AA",
       "epic_name": "[266] SFS [AF] - Unified Agent - Email Confirmation",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Email Confirmation",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "266",
@@ -4758,7 +4776,7 @@
       "epic_id": "a3QEE000002bngX2AQ",
       "epic_name": "[266] SFS [AF] - Unified Agent - Scheduling for Employee",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Scheduling for Employee",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "266",
@@ -4775,7 +4793,7 @@
       "epic_id": "a3QEE000002bni92AA",
       "epic_name": "[266] SFS [AF] - Unified Agent - Supervisor View",
       "epic_name_key": "[266] SFS [AF] - Unified Agent - Supervisor View",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "266",
@@ -4809,7 +4827,7 @@
       "epic_id": "a3QEE000002bnjl2AA",
       "epic_name": "[266] SFS [AF] - Help Agent",
       "epic_name_key": "[266] SFS [AF] - Help Agent",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "264.11",
@@ -4818,6 +4836,57 @@
       "program": "[266] S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Agent - Help Agent",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002GQlN2AW",
+      "epic_name": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
+      "epic_name_key": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
+      "team": "FSL - Resource - Scheduling Orcas",
+      "owner": "Sigal Shapira",
+      "health": "Completed",
+      "scheduled_build": "264.4",
+      "priority": 25,
+      "story_points": 0,
+      "program": "[266] S&O Scheduling Agent",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Agent on NGA",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002GSon2AG",
+      "epic_name": "[264] SFS [AF] Agentforce Scheduling Outreach - Outbound",
+      "epic_name_key": "[264] SFS [AF] Agentforce Scheduling Outreach - Outbound",
+      "team": "FSL - Resource - Scheduling Orcas",
+      "owner": "Niv Garber",
+      "health": "Completed",
+      "scheduled_build": "264.4",
+      "priority": 20,
+      "story_points": 0,
+      "program": "[266] S&O Scheduling Agent",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Agent on NGA",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002MN9h2AG",
+      "epic_name": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
+      "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
+      "team": "FSL - Resource - Scheduling Orcas",
+      "owner": "Avi Inbar",
+      "health": "Completed",
+      "scheduled_build": "264.4",
+      "priority": 35,
+      "story_points": 0,
+      "program": "[266] S&O Scheduling Agent",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Agent on NGA",
       "issues": [
         "missing_planned_release"
       ]
@@ -4883,7 +4952,7 @@
       "epic_id": "a3QEE000002bnrp2AA",
       "epic_name": "[266] SFS [AF] - Scheduling Agent HDX",
       "epic_name_key": "[266] SFS [AF] - Scheduling Agent HDX",
-      "team": "-",
+      "team": "FSL - Resource - Scheduling Orcas",
       "owner": "Irit Suliman",
       "health": "Not Started",
       "scheduled_build": "264.14",
@@ -5870,6 +5939,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002blwT2AQ",
+      "epic_name": "*[8.9.2][266][SFS] Daily On-Call Support",
+      "epic_name_key": "*[8.9.2][266][SFS] Daily On-Call Support",
+      "team": "MomentumForce",
+      "owner": "Shubham Gupta",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 200,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002ep2f2AA",
       "epic_name": "[266][Trust][Scheduling Intelligence]",
       "epic_name_key": "[266][Trust][Scheduling Intelligence]",
@@ -6040,6 +6126,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002bloP2AQ",
+      "epic_name": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
+      "epic_name_key": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
+      "team": "MomentumForce",
+      "owner": "Shubham Gupta",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 380,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Security",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002a7532AA",
       "epic_name": "266 SFS [Infra] Gov Cloud",
       "epic_name_key": "266 SFS [Infra] Gov Cloud",
@@ -6194,6 +6297,60 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002j4kf2AA",
+      "epic_name": "[266][Trust] Performance monitoring",
+      "epic_name_key": "[266][Trust] Performance monitoring",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Benchmarking",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4pV2AQ",
+      "epic_name": "[266][Trust] Monthly ESO Metrics - Add metrics in code",
+      "epic_name_key": "[266][Trust] Monthly ESO Metrics - Add metrics in code",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Benchmarking",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4sj2AA",
+      "epic_name": "[266][Trust] Schedule Performance Improvement",
+      "epic_name_key": "[266][Trust] Schedule Performance Improvement",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Benchmarking",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002cQI52AM",
       "epic_name": "266 : Customer Success and Adoption - O2engine",
       "epic_name_key": "266 : Customer Success and Adoption - O2engine",
@@ -6223,6 +6380,220 @@
       "program": "[266] S&O Optimization Platform",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Opt. Platform Customer Success",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4cb2AA",
+      "epic_name": "[266][LS] LS Optimization: Project Guardian",
+      "epic_name_key": "[266][LS] LS Optimization: Project Guardian",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Customer Success",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4eD2AQ",
+      "epic_name": "[266][Trust] Meaningful Errors (list provided by support)",
+      "epic_name_key": "[266][Trust] Meaningful Errors (list provided by support)",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Customer Success",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4fp2AA",
+      "epic_name": "[266][Trust] Reduce 500/400 errors",
+      "epic_name_key": "[266][Trust] Reduce 500/400 errors",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Customer Success",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4hR2AQ",
+      "epic_name": "[266][Trust] Block LS",
+      "epic_name_key": "[266][Trust] Block LS",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Customer Success",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4r72AA",
+      "epic_name": "[266][Trust] Add shift-aware admission gate",
+      "epic_name_key": "[266][Trust] Add shift-aware admission gate",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Customer Success",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4vx2AA",
+      "epic_name": "[266][Trust] (TK/Senske) Meaningful error for \"Entity is deleted\"",
+      "epic_name_key": "[266][Trust] (TK/Senske) Meaningful error for \"Entity is deleted\"",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Customer Success",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002epCL2AY",
+      "epic_name": "[266][O2] RSO - support 24/7 mode",
+      "epic_name_key": "[266][O2] RSO - support 24/7 mode",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Maayan Balasy Dollberg",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 60,
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Innovation",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4j32AA",
+      "epic_name": "[266][WFS] Objectives Weight new Calculation",
+      "epic_name_key": "[266][WFS] Objectives Weight new Calculation",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Innovation",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4mH2AQ",
+      "epic_name": "[266][O2] RVA Complex Work",
+      "epic_name_key": "[266][O2] RVA Complex Work",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Innovation",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4nt2AA",
+      "epic_name": "[266][O2] Light API",
+      "epic_name_key": "[266][O2] Light API",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Innovation",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002j4uL2AQ",
+      "epic_name": "[266][Trust] Transparency in Core",
+      "epic_name_key": "[266][Trust] Transparency in Core",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Innovation",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002epAj2AI",
+      "epic_name": "[266][WFS] Appointment Booking Grading (266 Unified Scheduling)",
+      "epic_name_key": "[266][WFS] Appointment Booking Grading (266 Unified Scheduling)",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Maayan Balasy Dollberg",
+      "health": "On Track",
+      "scheduled_build": "264",
+      "priority": 60,
+      "story_points": 0,
+      "program": "[266] S&O Optimization Platform",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Opt. Platform Appointment Booking Enhancements",
       "issues": [
         "missing_planned_release"
       ]
@@ -8390,7 +8761,7 @@
   "by_team": [
     {
       "name": "-",
-      "epic_count": 37,
+      "epic_count": 27,
       "epics": [
         {
           "epic_id": "a3QEE000002f0692AA",
@@ -8657,40 +9028,6 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002bnTd2AI",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Guest",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Guest",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "264.11",
-          "priority": 30,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bnVF2AY",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Voice",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Voice",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": 40,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002bnWr2AI",
           "epic_name": "Cancelled - [266] SFS [AF] - Unified Agent - Voice Guest",
           "epic_name_key": "Cancelled - [266] SFS [AF] - Unified Agent - Voice Guest",
@@ -8705,125 +9042,6 @@
           "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
           "issues": [
             "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bnYT2AY",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Outbound: Service Reminders",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Outbound: Service Reminders",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": 55,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bnbh2AA",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Outbound: Rebook & Conversational",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Outbound: Rebook & Conversational",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": 110,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bndJ2AQ",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Setup",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Setup",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "264.14",
-          "priority": 20,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bnev2AA",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Email Confirmation",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Email Confirmation",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": 120,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bngX2AQ",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Scheduling for Employee",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Scheduling for Employee",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": 140,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bni92AA",
-          "epic_name": "[266] SFS [AF] - Unified Agent - Supervisor View",
-          "epic_name_key": "[266] SFS [AF] - Unified Agent - Supervisor View",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": 150,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bnjl2AA",
-          "epic_name": "[266] SFS [AF] - Help Agent",
-          "epic_name_key": "[266] SFS [AF] - Help Agent",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "264.11",
-          "priority": 20,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Agent - Help Agent",
-          "issues": [
             "missing_planned_release"
           ]
         },
@@ -8881,23 +9099,6 @@
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002bnrp2AA",
-          "epic_name": "[266] SFS [AF] - Scheduling Agent HDX",
-          "epic_name_key": "[266] SFS [AF] - Scheduling Agent HDX",
-          "team": "-",
-          "owner": "Irit Suliman",
-          "health": "Not Started",
-          "scheduled_build": "264.14",
-          "priority": 30,
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Agent",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Agent HDX",
-          "issues": [
             "missing_planned_release"
           ]
         },
@@ -10790,7 +10991,7 @@
           "owner": "Riki Pachter",
           "health": "Not Started",
           "scheduled_build": "264.7",
-          "priority": 30,
+          "priority": 25,
           "story_points": 0,
           "program": "[266] Unified Workforce Management (UWM)",
           "portfolio": "FY27 SC M4 UWM",
@@ -10874,7 +11075,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Intelligence",
-      "epic_count": 13,
+      "epic_count": 28,
       "epics": [
         {
           "epic_id": "a3QEE000002LcIr2AK",
@@ -11099,30 +11300,281 @@
           "issues": [
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002j4kf2AA",
+          "epic_name": "[266][Trust] Performance monitoring",
+          "epic_name_key": "[266][Trust] Performance monitoring",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Benchmarking",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4pV2AQ",
+          "epic_name": "[266][Trust] Monthly ESO Metrics - Add metrics in code",
+          "epic_name_key": "[266][Trust] Monthly ESO Metrics - Add metrics in code",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Benchmarking",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4sj2AA",
+          "epic_name": "[266][Trust] Schedule Performance Improvement",
+          "epic_name_key": "[266][Trust] Schedule Performance Improvement",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Benchmarking",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4cb2AA",
+          "epic_name": "[266][LS] LS Optimization: Project Guardian",
+          "epic_name_key": "[266][LS] LS Optimization: Project Guardian",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Customer Success",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4eD2AQ",
+          "epic_name": "[266][Trust] Meaningful Errors (list provided by support)",
+          "epic_name_key": "[266][Trust] Meaningful Errors (list provided by support)",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Customer Success",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4fp2AA",
+          "epic_name": "[266][Trust] Reduce 500/400 errors",
+          "epic_name_key": "[266][Trust] Reduce 500/400 errors",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Customer Success",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4hR2AQ",
+          "epic_name": "[266][Trust] Block LS",
+          "epic_name_key": "[266][Trust] Block LS",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Customer Success",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4r72AA",
+          "epic_name": "[266][Trust] Add shift-aware admission gate",
+          "epic_name_key": "[266][Trust] Add shift-aware admission gate",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Customer Success",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4vx2AA",
+          "epic_name": "[266][Trust] (TK/Senske) Meaningful error for \"Entity is deleted\"",
+          "epic_name_key": "[266][Trust] (TK/Senske) Meaningful error for \"Entity is deleted\"",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Customer Success",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002epCL2AY",
+          "epic_name": "[266][O2] RSO - support 24/7 mode",
+          "epic_name_key": "[266][O2] RSO - support 24/7 mode",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Maayan Balasy Dollberg",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 60,
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Innovation",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4j32AA",
+          "epic_name": "[266][WFS] Objectives Weight new Calculation",
+          "epic_name_key": "[266][WFS] Objectives Weight new Calculation",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Innovation",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4mH2AQ",
+          "epic_name": "[266][O2] RVA Complex Work",
+          "epic_name_key": "[266][O2] RVA Complex Work",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Innovation",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4nt2AA",
+          "epic_name": "[266][O2] Light API",
+          "epic_name_key": "[266][O2] Light API",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Innovation",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002j4uL2AQ",
+          "epic_name": "[266][Trust] Transparency in Core",
+          "epic_name_key": "[266][Trust] Transparency in Core",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Innovation",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002epAj2AI",
+          "epic_name": "[266][WFS] Appointment Booking Grading (266 Unified Scheduling)",
+          "epic_name_key": "[266][WFS] Appointment Booking Grading (266 Unified Scheduling)",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Maayan Balasy Dollberg",
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": 60,
+          "story_points": 0,
+          "program": "[266] S&O Optimization Platform",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Opt. Platform Appointment Booking Enhancements",
+          "issues": [
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "FSL - Resource - Scheduling Orcas",
-      "epic_count": 6,
+      "epic_count": 18,
       "epics": [
-        {
-          "epic_id": "a3QEE000002MN9h2AG",
-          "epic_name": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
-          "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
-          "team": "FSL - Resource - Scheduling Orcas",
-          "owner": "Avi Inbar",
-          "health": "Completed",
-          "scheduled_build": "264.4",
-          "priority": "35",
-          "story_points": 0,
-          "program": "FS 264: S&O: Agentic S&O",
-          "portfolio": "264 Field Service Scheduling & Optimization",
-          "project": "FS 264: S&O: Agentforce Setup (Outbound)",
-          "issues": [
-            "missing_planned_release"
-          ]
-        },
         {
           "epic_id": "a3QEE000002GSqP2AW",
           "epic_name": "[264] SFS Unified Scheduling Agent (MVP)",
@@ -11158,6 +11610,142 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002bnTd2AI",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Guest",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Guest",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "264.11",
+          "priority": 30,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bnVF2AY",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Voice",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Voice",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 40,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bnYT2AY",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Outbound: Service Reminders",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Outbound: Service Reminders",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 55,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bnbh2AA",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Outbound: Rebook & Conversational",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Outbound: Rebook & Conversational",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 110,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bndJ2AQ",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Setup",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Setup",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "264.14",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bnev2AA",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Email Confirmation",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Email Confirmation",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 120,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bngX2AQ",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Scheduling for Employee",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Scheduling for Employee",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 140,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bni92AA",
+          "epic_name": "[266] SFS [AF] - Unified Agent - Supervisor View",
+          "epic_name_key": "[266] SFS [AF] - Unified Agent - Supervisor View",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 150,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002hJMP2A2",
           "epic_name": "[266] SFS Unified Scheduling Agent Guest feature",
           "epic_name_key": "[266] SFS Unified Scheduling Agent Guest feature",
@@ -11170,6 +11758,91 @@
           "program": "[266] S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bnjl2AA",
+          "epic_name": "[266] SFS [AF] - Help Agent",
+          "epic_name_key": "[266] SFS [AF] - Help Agent",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "264.11",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Agent - Help Agent",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002GQlN2AW",
+          "epic_name": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
+          "epic_name_key": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Sigal Shapira",
+          "health": "Completed",
+          "scheduled_build": "264.4",
+          "priority": 25,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Agent on NGA",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002GSon2AG",
+          "epic_name": "[264] SFS [AF] Agentforce Scheduling Outreach - Outbound",
+          "epic_name_key": "[264] SFS [AF] Agentforce Scheduling Outreach - Outbound",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Niv Garber",
+          "health": "Completed",
+          "scheduled_build": "264.4",
+          "priority": 20,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Agent on NGA",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002MN9h2AG",
+          "epic_name": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
+          "epic_name_key": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Avi Inbar",
+          "health": "Completed",
+          "scheduled_build": "264.4",
+          "priority": 35,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Agent on NGA",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bnrp2AA",
+          "epic_name": "[266] SFS [AF] - Scheduling Agent HDX",
+          "epic_name_key": "[266] SFS [AF] - Scheduling Agent HDX",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Irit Suliman",
+          "health": "Not Started",
+          "scheduled_build": "264.14",
+          "priority": 30,
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Agent HDX",
           "issues": [
             "missing_planned_release"
           ]
@@ -11812,6 +12485,46 @@
           "project": "264 Operations Console",
           "issues": [
             "missing_priority"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MomentumForce",
+      "epic_count": 2,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002blwT2AQ",
+          "epic_name": "*[8.9.2][266][SFS] Daily On-Call Support",
+          "epic_name_key": "*[8.9.2][266][SFS] Daily On-Call Support",
+          "team": "MomentumForce",
+          "owner": "Shubham Gupta",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 200,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bloP2AQ",
+          "epic_name": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
+          "epic_name_key": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
+          "team": "MomentumForce",
+          "owner": "Shubham Gupta",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 380,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Security",
+          "issues": [
+            "missing_planned_release"
           ]
         }
       ]
@@ -16202,7 +16915,7 @@
     },
     {
       "name": "Team-WFM-Capacity-Planning",
-      "epic_count": 10,
+      "epic_count": 11,
       "epics": [
         {
           "epic_id": "a3QEE000002PYa12AG",
@@ -16372,6 +17085,24 @@
           "project": "[266] WFM Capacity Planning",
           "issues": [
             "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002jIFl2AM",
+          "epic_name": "Add Service Territory to the capacity plan input screen",
+          "epic_name_key": "Add Service Territory to the capacity plan input screen",
+          "team": "Team-WFM-Capacity-Planning",
+          "owner": "Ruchika Pashine",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Capacity Planning",
+          "issues": [
+            "missing_priority",
             "missing_planned_release"
           ]
         }
@@ -16818,7 +17549,7 @@
     },
     {
       "name": "Team-WFM-Workloads-Forecasting",
-      "epic_count": 8,
+      "epic_count": 9,
       "epics": [
         {
           "epic_id": "a3QEE000002TojR2AS",
@@ -16881,7 +17612,7 @@
           "owner": "VARSHA CHALAMALASETTY",
           "health": "Not Started",
           "scheduled_build": "266",
-          "priority": 2,
+          "priority": 50,
           "story_points": 0,
           "program": "[266] Unified Workforce Management (UWM)",
           "portfolio": "FY27 SC M4 UWM",
@@ -16898,7 +17629,7 @@
           "owner": "VARSHA CHALAMALASETTY",
           "health": "Not Started",
           "scheduled_build": "266",
-          "priority": 2,
+          "priority": 52,
           "story_points": 0,
           "program": "[266] Unified Workforce Management (UWM)",
           "portfolio": "FY27 SC M4 UWM",
@@ -16909,8 +17640,8 @@
         },
         {
           "epic_id": "a3QEE000002hqlN2AQ",
-          "epic_name": "[266][November] Planner Agent Enhancements for Production Readiness",
-          "epic_name_key": "[266][November] Planner Agent Enhancements for Production Readiness",
+          "epic_name": "[266] [November] Planner Agent Enhancements for Production Readiness",
+          "epic_name_key": "[266] [November] Planner Agent Enhancements for Production Readiness",
           "team": "Team-WFM-Workloads-Forecasting",
           "owner": "VARSHA CHALAMALASETTY",
           "health": "Not Started",
@@ -16926,13 +17657,13 @@
         },
         {
           "epic_id": "a3QEE000002ilrh2AA",
-          "epic_name": "[266] Field Service - Multiple Service Territory Support",
-          "epic_name_key": "[266] Field Service - Multiple Service Territory Support",
+          "epic_name": "[266] [264 Backport] Field Service - Multiple Service Territory Support",
+          "epic_name_key": "[266] [264 Backport] Field Service - Multiple Service Territory Support",
           "team": "Team-WFM-Workloads-Forecasting",
           "owner": "VARSHA CHALAMALASETTY",
-          "health": "Not Started",
-          "scheduled_build": "266",
-          "priority": 52,
+          "health": "On Track",
+          "scheduled_build": "264",
+          "priority": 2,
           "story_points": 0,
           "program": "[266] Unified Workforce Management (UWM)",
           "portfolio": "FY27 SC M4 UWM",
@@ -16947,9 +17678,26 @@
           "epic_name_key": "[266] Omni-Channel TD - Associate WorkSkillGroup to AgentWork",
           "team": "Team-WFM-Workloads-Forecasting",
           "owner": "VARSHA CHALAMALASETTY",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "266",
-          "priority": 53,
+          "priority": 4,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Workloads Forecasting",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002jIPR2A2",
+          "epic_name": "[266] [264 Backport] CCaaS - Move Service Territory from Workload to CP",
+          "epic_name_key": "[266] [264 Backport] CCaaS - Move Service Territory from Workload to CP",
+          "team": "Team-WFM-Workloads-Forecasting",
+          "owner": "VARSHA CHALAMALASETTY",
+          "health": "Not Started",
+          "scheduled_build": "264",
+          "priority": 3,
           "story_points": 0,
           "program": "[266] Unified Workforce Management (UWM)",
           "portfolio": "FY27 SC M4 UWM",

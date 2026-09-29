@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T14:00:08.593887",
+  "last_updated": "2026-09-29T09:00:08.279571",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -16,7 +16,7 @@
           "product_owner": "",
           "dev_lead": "Vinay Bayya",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "Completed",
           "epics": [
             {
@@ -30,7 +30,7 @@
               "team": "FSL - Operations - Intelligence",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -86,7 +86,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "FS MCX August September October Work",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -148,7 +148,7 @@
               "team": "SFS Setup Experience",
               "scheduled_build": "-",
               "planned_release": "264",
-              "last_modified": "2026-09-27",
+              "last_modified": "2026-09-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -314,7 +314,7 @@
           "product_owner": "",
           "dev_lead": "Raghav Abboy",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "On Track",
           "epics": [
             {
@@ -328,7 +328,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -481,7 +481,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -622,7 +622,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile Services - Unified Scheduling, Performance Priming",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -639,7 +639,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile Services - Unified Scheduling, Performance Priming",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -712,7 +712,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "264",
               "planned_release": "264 SFS Mobile Assets Planned release",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -777,7 +777,7 @@
           "product_owner": "",
           "dev_lead": "Sharon Adler",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "Completed",
           "epics": [
             {
@@ -791,7 +791,7 @@
               "team": "SFS Mobile Location and DC",
               "scheduled_build": "264",
               "planned_release": "264 SFS Mobile Location and DC - Release Planner",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -822,7 +822,7 @@
           "product_owner": "",
           "dev_lead": "Sandeep Agrawal",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "On Track",
           "epics": [
             {
@@ -836,7 +836,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "264",
               "planned_release": "264 SFS Mobile Assets Planned release",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -853,7 +853,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "FS MCX August September October Work",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1157,7 +1157,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "-",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1377,7 +1377,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "264",
               "planned_release": "264 Scheduling Intelligence",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1445,7 +1445,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1487,7 +1487,7 @@
           "product_owner": "",
           "dev_lead": "Bhuvnesh Mehra",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "On Track",
           "epics": [
             {
@@ -1501,7 +1501,7 @@
               "team": "MomentumForce",
               "scheduled_build": "264",
               "planned_release": "264 MomentumForce",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-08-14",
@@ -1552,7 +1552,7 @@
               "team": "MomentumForce",
               "scheduled_build": "264",
               "planned_release": "264 MomentumForce",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-08-14",
@@ -1576,23 +1576,6 @@
               "t_shirt_size": null
             },
             {
-              "name": "*[8.9.2][266][SFS] Daily On-Call Support",
-              "id": "a3QEE000002blwT2AQ",
-              "priority": "200",
-              "health": "On Track",
-              "health_status": "On Track",
-              "health_comments": "-",
-              "owner": "Shubham Gupta",
-              "team": "MomentumForce",
-              "scheduled_build": "266",
-              "planned_release": "266 MomentumForce",
-              "last_modified": "2026-09-28",
-              "loc": "\ud83d\udd34 Below the Line",
-              "path_to_green": "-",
-              "end_date": "2026-12-15",
-              "t_shirt_size": null
-            },
-            {
               "name": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
               "id": "a3QEE000002GRZN2A4",
               "priority": "20",
@@ -1603,7 +1586,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1617,7 +1600,7 @@
           "product_owner": "",
           "dev_lead": "Orelie Fridler",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "On Track",
           "epics": [
             {
@@ -1631,7 +1614,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1725,23 +1708,6 @@
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-08-17",
-              "t_shirt_size": null
-            },
-            {
-              "name": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
-              "id": "a3QEE000002bloP2AQ",
-              "priority": "380",
-              "health": "On Track",
-              "health_status": "On Track",
-              "health_comments": "-",
-              "owner": "Shubham Gupta",
-              "team": "MomentumForce",
-              "scheduled_build": "266",
-              "planned_release": "266 MomentumForce",
-              "last_modified": "2026-09-28",
-              "loc": "\ud83d\udd34 Below the Line",
-              "path_to_green": "-",
-              "end_date": "2026-12-15",
               "t_shirt_size": null
             },
             {
@@ -1991,28 +1957,11 @@
           "name": "FS 264: S&O: AF Scripts Outreach",
           "id": "a1kEE00000Tno4bYAB",
           "product_owner": "",
-          "dev_lead": "Niv Garber",
+          "dev_lead": "Gal Asraf",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-06-08",
           "health_status": "On Track",
           "epics": [
-            {
-              "name": "[264] SFS [AF] Agentforce Scheduling Outreach - Outbound",
-              "id": "a3QEE000002GSon2AG",
-              "priority": "20",
-              "health": "Completed",
-              "health_status": "Completed",
-              "health_comments": "-",
-              "owner": "Niv Garber",
-              "team": "FSL - Resource - Scheduling Orcas",
-              "scheduled_build": "264.4",
-              "planned_release": "FSL - Resource - Scheduling Orcas - 264 Planned Release",
-              "last_modified": "2026-09-28",
-              "loc": "\ud83d\udfe2 Above the Line",
-              "path_to_green": "-",
-              "end_date": null,
-              "t_shirt_size": null
-            },
             {
               "name": "262 Dispatch Experience 2.0 - Outreach",
               "id": "a3QEE000002NSAX2A4",
@@ -2070,34 +2019,6 @@
               "scheduled_build": "-",
               "planned_release": "264",
               "last_modified": "2026-06-08",
-              "loc": "\ud83d\udfe2 Above the Line",
-              "path_to_green": "-",
-              "end_date": null,
-              "t_shirt_size": null
-            }
-          ]
-        },
-        {
-          "name": "FS 264: S&O: Agentforce Scheduling - Day of service notification",
-          "id": "a1kEE00000TnoCfYAJ",
-          "product_owner": "",
-          "dev_lead": "Sigal Shapira",
-          "target": null,
-          "last_modified": "2026-09-28",
-          "health_status": "Completed",
-          "epics": [
-            {
-              "name": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
-              "id": "a3QEE000002GQlN2AW",
-              "priority": "25",
-              "health": "Completed",
-              "health_status": "Completed",
-              "health_comments": "-",
-              "owner": "Sigal Shapira",
-              "team": "FSL - Resource - Scheduling Orcas",
-              "scheduled_build": "264.4",
-              "planned_release": "FSL - Resource - Scheduling Orcas - 264 Planned Release",
-              "last_modified": "2026-09-28",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2210,28 +2131,11 @@
           "name": "FS 264: S&O: Agentforce Setup (Outbound)",
           "id": "a1kEE00000Tno6DYAR",
           "product_owner": "",
-          "dev_lead": "Avi Inbar",
+          "dev_lead": "Niv Garber",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-06-08",
           "health_status": "Completed",
           "epics": [
-            {
-              "name": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
-              "id": "a3QEE000002MN9h2AG",
-              "priority": "35",
-              "health": "Completed",
-              "health_status": "Completed",
-              "health_comments": "-",
-              "owner": "Avi Inbar",
-              "team": "FSL - Resource - Scheduling Orcas",
-              "scheduled_build": "264.4",
-              "planned_release": "-",
-              "last_modified": "2026-09-28",
-              "loc": "\ud83d\udfe2 Above the Line",
-              "path_to_green": "-",
-              "end_date": null,
-              "t_shirt_size": "Medium"
-            },
             {
               "name": "Agentforce Scheduling Setup Wizard (Proactive Outreach Focus)",
               "id": "a3QEE000002GT3J2AW",
@@ -2389,7 +2293,7 @@
               "team": "FSL - Core - Foundations",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2431,7 +2335,7 @@
           "product_owner": "",
           "dev_lead": "Sri Ram Bathina",
           "target": null,
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "On Track",
           "epics": [
             {
@@ -2445,7 +2349,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2479,7 +2383,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2496,7 +2400,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2513,7 +2417,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2739,7 +2643,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "-",
               "planned_release": "-",
-              "last_modified": "2026-09-08",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3145,7 +3049,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3162,7 +3066,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3405,7 +3309,7 @@
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "266",
               "planned_release": "264 Release- SFS - WFM - Worker - Experience",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3665,7 +3569,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -4428,7 +4332,7 @@
               "team": "Team-WFM-ML-Foundations",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -6459,7 +6363,7 @@
               "team": "Team-WFM-Foundation",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -6654,7 +6558,7 @@
               "team": "Team-WFM-Foundation",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -6681,7 +6585,7 @@
           "product_owner": "Ruchika Pashine",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-24",
+          "last_modified": "2026-09-29",
           "health_status": "On Track",
           "epics": [
             {
@@ -6695,7 +6599,7 @@
               "team": "Team-WFM-Capacity-Planning",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-25",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -6710,7 +6614,7 @@
               "team": "Team-WFM-Capacity-Planning",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -6818,6 +6722,21 @@
               "last_modified": "2026-09-10",
               "loc": "",
               "path_to_green": ""
+            },
+            {
+              "name": "Add Service Territory to the capacity plan input screen",
+              "id": "a3QEE000002jIFl2AM",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Ruchika Pashine",
+              "team": "Team-WFM-Capacity-Planning",
+              "scheduled_build": "264",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
             }
           ]
         },
@@ -6883,7 +6802,7 @@
           "product_owner": "VARSHA CHALAMALASETTY",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-24",
+          "last_modified": "2026-09-29",
           "health_status": "On Track",
           "epics": [
             {
@@ -6904,7 +6823,7 @@
             {
               "name": "[266] [November] Forecast Accuracy",
               "id": "a3QEE000002fxz32AA",
-              "priority": 2,
+              "priority": 50,
               "health": "Not Started",
               "health_status": "Not Started",
               "health_comments": "",
@@ -6912,14 +6831,14 @@
               "team": "Team-WFM-Workloads-Forecasting",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
             {
               "name": "[266] [November] Intraday Re-Forecasting / Optimization Insights",
               "id": "a3QEE000002gFW92AM",
-              "priority": 2,
+              "priority": 52,
               "health": "Not Started",
               "health_status": "Not Started",
               "health_comments": "",
@@ -6927,12 +6846,12 @@
               "team": "Team-WFM-Workloads-Forecasting",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-10",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
             {
-              "name": "[266][November] Planner Agent Enhancements for Production Readiness",
+              "name": "[266] [November] Planner Agent Enhancements for Production Readiness",
               "id": "a3QEE000002hqlN2AQ",
               "priority": 51,
               "health": "Not Started",
@@ -6942,37 +6861,52 @@
               "team": "Team-WFM-Workloads-Forecasting",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-11",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
             {
-              "name": "[266] Field Service - Multiple Service Territory Support",
+              "name": "[266] [264 Backport] Field Service - Multiple Service Territory Support",
               "id": "a3QEE000002ilrh2AA",
-              "priority": 52,
-              "health": "Not Started",
-              "health_status": "Not Started",
+              "priority": 2,
+              "health": "On Track",
+              "health_status": "On Track",
               "health_comments": "",
               "owner": "VARSHA CHALAMALASETTY",
               "team": "Team-WFM-Workloads-Forecasting",
-              "scheduled_build": "266",
+              "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
             {
               "name": "[266] Omni-Channel TD - Associate WorkSkillGroup to AgentWork",
               "id": "a3QEE000002ilwX2AQ",
-              "priority": 53,
-              "health": "Not Started",
-              "health_status": "Not Started",
+              "priority": 4,
+              "health": "On Track",
+              "health_status": "On Track",
               "health_comments": "",
               "owner": "VARSHA CHALAMALASETTY",
               "team": "Team-WFM-Workloads-Forecasting",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266] [264 Backport] CCaaS - Move Service Territory from Workload to CP",
+              "id": "a3QEE000002jIPR2A2",
+              "priority": 3,
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "VARSHA CHALAMALASETTY",
+              "team": "Team-WFM-Workloads-Forecasting",
+              "scheduled_build": "264",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -7058,7 +6992,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -7073,7 +7007,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -7395,7 +7329,7 @@
               "team": "FSL - Resource - Scheduling Hawks",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -7447,7 +7381,7 @@
             {
               "name": "[266][November] User preferences - service",
               "id": "a3QEE000002aY212AE",
-              "priority": 30,
+              "priority": 25,
               "health": "Not Started",
               "health_status": "Not Started",
               "health_comments": "",
@@ -7455,7 +7389,7 @@
               "team": "FSL - Resource - Scheduling Hawks",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-09-09",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -7571,7 +7505,7 @@
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -7616,7 +7550,7 @@
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -7661,7 +7595,7 @@
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -7702,7 +7636,7 @@
               "team": "FSL - Operations - Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -7739,7 +7673,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -7754,7 +7688,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8046,7 +7980,7 @@
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8476,7 +8410,7 @@
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8514,10 +8448,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8529,10 +8463,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8559,10 +8493,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8574,10 +8508,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8589,10 +8523,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.14",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8604,10 +8538,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8619,10 +8553,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8634,10 +8568,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -8664,8 +8598,8 @@
           "product_owner": "Niv Garber",
           "dev_lead": "",
           "target": "264.11",
-          "last_modified": "2026-08-13",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[266] SFS [AF] - Help Agent",
@@ -8675,10 +8609,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -8689,10 +8623,55 @@
           "id": "a1kEE00000d2ch3YAA",
           "product_owner": "Niv Garber",
           "dev_lead": "",
-          "target": "",
-          "last_modified": "2026-09-28",
+          "target": "264.4",
+          "last_modified": "2026-09-29",
           "health_status": "Not Started",
           "epics": [
+            {
+              "name": "[264] SFS [AF] Agentforce scheduling  - Day Of Service notification",
+              "id": "a3QEE000002GQlN2AW",
+              "priority": 25,
+              "health": "Completed",
+              "health_status": "Completed",
+              "health_comments": "",
+              "owner": "Sigal Shapira",
+              "team": "FSL - Resource - Scheduling Orcas",
+              "scheduled_build": "264.4",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[264] SFS [AF] Agentforce Scheduling Outreach - Outbound",
+              "id": "a3QEE000002GSon2AG",
+              "priority": 20,
+              "health": "Completed",
+              "health_status": "Completed",
+              "health_comments": "",
+              "owner": "Niv Garber",
+              "team": "FSL - Resource - Scheduling Orcas",
+              "scheduled_build": "264.4",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[264] SFS [AF] - SFS Agentforce Scheduling Setup Outbound",
+              "id": "a3QEE000002MN9h2AG",
+              "priority": 35,
+              "health": "Completed",
+              "health_status": "Completed",
+              "health_comments": "",
+              "owner": "Avi Inbar",
+              "team": "FSL - Resource - Scheduling Orcas",
+              "scheduled_build": "264.4",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
             {
               "name": "266] SFS [AF] - Guest inbound",
               "id": "a3QEE000002bnlN2AQ",
@@ -8746,8 +8725,8 @@
           "product_owner": "Sigal Shapira",
           "dev_lead": "",
           "target": "264.14",
-          "last_modified": "2026-08-13",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[266] SFS [AF] - Scheduling Agent HDX",
@@ -8757,10 +8736,10 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Irit Suliman",
-              "team": "-",
+              "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.14",
               "planned_release": "",
-              "last_modified": "2026-09-14",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -8849,8 +8828,8 @@
           "product_owner": "Sigal Shapira",
           "dev_lead": "",
           "target": "264.7",
-          "last_modified": "2026-09-28",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[264] SFS [AF] Transparency - Core Logic",
@@ -8934,7 +8913,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-18",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -8946,8 +8925,8 @@
           "product_owner": "Sigal Shapira",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-09",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[266] SFS [AF] Transparency - Engine - Phase 2 Research",
@@ -8960,7 +8939,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -9069,8 +9048,8 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "264.7",
-          "last_modified": "2026-09-03",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[264][Scheduling Console] Complex Work Enhancements",
@@ -9158,7 +9137,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.3",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -9226,8 +9205,8 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-24",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[264.7][Scheduling Console] holiday display",
@@ -9510,7 +9489,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -9662,7 +9641,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -9775,8 +9754,8 @@
           "product_owner": "Yulia Libster",
           "dev_lead": "",
           "target": "264.8",
-          "last_modified": "2026-09-03",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[264.8] [Scheduling Console] LS- Support complex work",
@@ -9804,7 +9783,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.8",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -9837,9 +9816,24 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-17",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
+            {
+              "name": "*[8.9.2][266][SFS] Daily On-Call Support",
+              "id": "a3QEE000002blwT2AQ",
+              "priority": 200,
+              "health": "On Track",
+              "health_status": "On Track",
+              "health_comments": "",
+              "owner": "Shubham Gupta",
+              "team": "MomentumForce",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
             {
               "name": "[266][Trust][Scheduling Intelligence]",
               "id": "a3QEE000002ep2f2AA",
@@ -9851,7 +9845,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -9881,7 +9875,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -9938,7 +9932,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "",
-          "last_modified": "2026-08-13",
+          "last_modified": "2026-09-29",
           "health_status": "Not Started",
           "epics": []
         },
@@ -9948,7 +9942,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-09",
+          "last_modified": "2026-09-29",
           "health_status": "Not Started",
           "epics": [
             {
@@ -9974,7 +9968,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "Not Started",
           "epics": [
             {
@@ -10029,10 +10023,26 @@
           "id": "a1kEE00000d2fC7YAI",
           "product_owner": "",
           "dev_lead": "",
-          "target": "",
-          "last_modified": "2026-08-13",
-          "health_status": "Not Started",
-          "epics": []
+          "target": "266",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
+          "epics": [
+            {
+              "name": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
+              "id": "a3QEE000002bloP2AQ",
+              "priority": 380,
+              "health": "On Track",
+              "health_status": "On Track",
+              "health_comments": "",
+              "owner": "Shubham Gupta",
+              "team": "MomentumForce",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            }
+          ]
         },
         {
           "name": "[266] S&O Trust: Gov Cloud Onboarding",
@@ -10066,7 +10076,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "Not Started",
           "epics": [
             {
@@ -10092,7 +10102,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-28",
+          "last_modified": "2026-09-29",
           "health_status": "Not Started",
           "epics": [
             {
@@ -10266,8 +10276,8 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-09",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "[266] O2 External Benchmark \u2014 Verifiable Solver Proof",
@@ -10283,6 +10293,51 @@
               "last_modified": "2026-09-28",
               "loc": "",
               "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Performance monitoring",
+              "id": "a3QEE000002j4kf2AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Monthly ESO Metrics - Add metrics in code",
+              "id": "a3QEE000002j4pV2AQ",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Schedule Performance Improvement",
+              "id": "a3QEE000002j4sj2AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
             }
           ]
         },
@@ -10292,8 +10347,8 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-09-09",
-          "health_status": "Not Started",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
           "epics": [
             {
               "name": "266 : Customer Success and Adoption - O2engine",
@@ -10324,6 +10379,96 @@
               "last_modified": "2026-09-28",
               "loc": "",
               "path_to_green": ""
+            },
+            {
+              "name": "[266][LS] LS Optimization: Project Guardian",
+              "id": "a3QEE000002j4cb2AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Meaningful Errors (list provided by support)",
+              "id": "a3QEE000002j4eD2AQ",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Reduce 500/400 errors",
+              "id": "a3QEE000002j4fp2AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Block LS",
+              "id": "a3QEE000002j4hR2AQ",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Add shift-aware admission gate",
+              "id": "a3QEE000002j4r72AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] (TK/Senske) Meaningful error for \"Entity is deleted\"",
+              "id": "a3QEE000002j4vx2AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
             }
           ]
         },
@@ -10332,10 +10477,112 @@
           "id": "a1kEE00000diHjRYAU",
           "product_owner": "",
           "dev_lead": "",
-          "target": "",
-          "last_modified": "2026-09-03",
+          "target": "266",
+          "last_modified": "2026-09-29",
+          "health_status": "On Track",
+          "epics": [
+            {
+              "name": "[266][O2] RSO - support 24/7 mode",
+              "id": "a3QEE000002epCL2AY",
+              "priority": 60,
+              "health": "On Track",
+              "health_status": "On Track",
+              "health_comments": "",
+              "owner": "Maayan Balasy Dollberg",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][WFS] Objectives Weight new Calculation",
+              "id": "a3QEE000002j4j32AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][O2] RVA Complex Work",
+              "id": "a3QEE000002j4mH2AQ",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][O2] Light API",
+              "id": "a3QEE000002j4nt2AA",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            },
+            {
+              "name": "[266][Trust] Transparency in Core",
+              "id": "a3QEE000002j4uL2AQ",
+              "priority": "-",
+              "health": "Not Started",
+              "health_status": "Not Started",
+              "health_comments": "",
+              "owner": "Yonatan Bar-Yehuda",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "266",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            }
+          ]
+        },
+        {
+          "name": "S&O Opt. Platform Appointment Booking Enhancements",
+          "id": "a1kEE00000e8YThYAM",
+          "product_owner": "Dori Nahmias",
+          "dev_lead": "",
+          "target": "264",
+          "last_modified": "2026-09-29",
           "health_status": "Not Started",
-          "epics": []
+          "epics": [
+            {
+              "name": "[266][WFS] Appointment Booking Grading (266 Unified Scheduling)",
+              "id": "a3QEE000002epAj2AI",
+              "priority": 60,
+              "health": "On Track",
+              "health_status": "On Track",
+              "health_comments": "",
+              "owner": "Maayan Balasy Dollberg",
+              "team": "FSL - Resource - Scheduling Intelligence",
+              "scheduled_build": "264",
+              "planned_release": "",
+              "last_modified": "2026-09-29",
+              "loc": "",
+              "path_to_green": ""
+            }
+          ]
         }
       ]
     },
@@ -10999,7 +11246,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -11100,7 +11347,7 @@
               "team": "SFS Mobile Location and DC",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-27",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -11145,7 +11392,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -11190,7 +11437,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -11205,7 +11452,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -11351,7 +11598,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -11471,7 +11718,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -11617,7 +11864,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -11889,7 +12136,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -12081,7 +12328,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -12287,7 +12534,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },
@@ -12302,7 +12549,7 @@
               "team": "SFS Mobile Location and DC",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-28",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             }
@@ -12396,7 +12643,7 @@
               "team": "-",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-23",
+              "last_modified": "2026-09-29",
               "loc": "",
               "path_to_green": ""
             },

@@ -14859,6 +14859,27 @@
                         <td style="text-align: center; padding: 12px 16px; font-size: 13px; color: #475569; font-weight: 600;">
                             {{ team.total }}
                         </td>
+                        {% if capacity_months and capacity_months|length == 4 %}
+                        {% for month_config in capacity_months %}
+                        {% set suffix = '_delivered' if month_config.type == 'delivered' else '_committed' %}
+                        {% set val_key = month_config.name ~ suffix %}
+                        {% set limit_key = month_config.name ~ '_capacity_limit' %}
+                        <td style="text-align: center; padding: 12px 16px; font-size: 13px; font-weight: 600;{% if loop.first %} border-left: 2px solid #0ea5e9;{% endif %}">
+                            {% if team[val_key] %}
+                                {% set pct = (team[val_key] / team[limit_key] * 100) if team[limit_key] > 0 else 0 %}
+                                {% if month_config.type == 'delivered' %}
+                                <div style="color: #64748b;">{{ team[val_key] }}</div>
+                                <div style="font-size: 11px; font-weight: 400; color: #94a3b8;">of {{ team[limit_key]|int }} PD <span style="color: {% if pct > 100 %}#dc2626{% elif pct > 80 %}#f59e0b{% else %}#2563eb{% endif %};">({{ pct|int }}%)</span></div>
+                                {% else %}
+                                <div style="color: {% if pct > 100 %}#dc2626{% elif pct > 80 %}#f59e0b{% else %}#2563eb{% endif %};">{{ team[val_key] }}</div>
+                                <div style="font-size: 11px; color: #94a3b8; font-weight: 400;">of {{ team[limit_key]|int }} PD ({{ pct|int }}%)</div>
+                                {% endif %}
+                            {% else %}
+                                <span style="color: #cbd5e1;">—</span>
+                            {% endif %}
+                        </td>
+                        {% endfor %}
+                        {% else %}
                         <td style="text-align: center; padding: 12px 16px; font-size: 13px; font-weight: 600; border-left: 2px solid #0ea5e9;">
                             {% if team.june_delivered %}
                                 {% set pct = (team.june_delivered / team.june_capacity_limit * 100) if team.june_capacity_limit > 0 else 0 %}
@@ -14895,6 +14916,7 @@
                                 <span style="color: #cbd5e1;">—</span>
                             {% endif %}
                         </td>
+                        {% endif %}
                     </tr>
 
                     <!-- Program breakdown rows (hidden by default) -->
@@ -14909,6 +14931,67 @@
                                     <col style="width: 140px;">
                                     <col style="width: 140px;">
                                 </colgroup>
+                                {% if capacity_months and capacity_months|length == 4 %}
+                                {% set ns = namespace(programs=[]) %}
+                                {% for month_config in capacity_months %}
+                                {% set suffix = '_delivered_by_program' if month_config.type == 'delivered' else '_committed_by_program' %}
+                                {% set ns.programs = ns.programs + (team[month_config.name ~ suffix].keys() | list) %}
+                                {% endfor %}
+                                {% set all_programs = ns.programs | unique | sort %}
+                                {% for program in all_programs %}
+                                {% if program != 'Unmapped' %}
+                                <tr style="border-bottom: 1px solid #f1f5f9;">
+                                    <td style="padding: 8px 16px 8px 48px; font-size: 13px; font-style: italic; vertical-align: top;">
+                                        <div style="display: block; margin-bottom: 2px;">
+                                            {% if program_lookup.get(program) and program_lookup[program].get('id') %}
+                                            <a href="https://gus.lightning.force.com/lightning/r/ADM_Product_Tag__c/{{ program_lookup[program]['id'] }}/view"
+                                               target="_blank"
+                                               style="color: #0176D3; text-decoration: none; font-weight: 500; display: block;">{{ program }}</a>
+                                            {% else %}
+                                            <span style="color: #0176D3; font-weight: 500; display: block;">{{ program }}</span>
+                                            {% endif %}
+                                        </div>
+                                        {% if program_lookup.get(program) and program_lookup[program].get('portfolio') %}
+                                        <div style="color: #94a3b8; font-size: 12px; font-weight: 400; font-style: normal; display: block; line-height: 1.3;">{{ program_lookup[program]['portfolio'] }}</div>
+                                        {% endif %}
+                                    </td>
+                                    <td style="text-align: center; padding: 8px 16px; vertical-align: top;"></td>
+                                    {% for month_config in capacity_months %}
+                                    {% set suffix = '_delivered_by_program' if month_config.type == 'delivered' else '_committed_by_program' %}
+                                    {% set month_color = '#64748b' if month_config.type == 'delivered' else '#2563eb' %}
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: {{ month_color }}; vertical-align: top;">
+                                        {{ team[month_config.name ~ suffix].get(program, 0) if team[month_config.name ~ suffix].get(program, 0) > 0 else '—' }}
+                                    </td>
+                                    {% endfor %}
+                                </tr>
+                                {% endif %}
+                                {% endfor %}
+                                <!-- Display Orphaned row if any unmapped capacity exists -->
+                                {% set ns2 = namespace(has_unmapped=false) %}
+                                {% for month_config in capacity_months %}
+                                {% set suffix = '_delivered_by_program' if month_config.type == 'delivered' else '_committed_by_program' %}
+                                {% if team[month_config.name ~ suffix].get('Unmapped', 0) > 0 %}
+                                {% set ns2.has_unmapped = true %}
+                                {% endif %}
+                                {% endfor %}
+                                {% if ns2.has_unmapped %}
+                                <tr style="border-bottom: 1px solid #f1f5f9; cursor: pointer;" onclick="toggleUnmappedBreakdown('{{ team.name | replace(' ', '-') | replace(':', '') }}', '{{ team.name }}')">
+                                    <td style="padding: 8px 16px 8px 48px; font-size: 13px; color: #94a3b8; font-style: italic; vertical-align: top;">
+                                        <span class="expand-icon" id="expand-unmapped-{{ team.name | replace(' ', '-') | replace(':', '') }}" style="display: inline-block; width: 18px; margin-right: 4px; font-size: 14px; color: #94a3b8; transition: transform 0.2s;">▸</span>
+                                        Orphaned
+                                    </td>
+                                    <td style="padding: 8px 16px; vertical-align: top;"></td>
+                                    {% for month_config in capacity_months %}
+                                    {% set suffix = '_delivered_by_program' if month_config.type == 'delivered' else '_committed_by_program' %}
+                                    {% set month_color = '#64748b' if month_config.type == 'delivered' else '#2563eb' %}
+                                    {% set unmapped_val = team[month_config.name ~ suffix].get('Unmapped', 0) %}
+                                    <td style="text-align: center; padding: 8px 16px; font-size: 12px; color: {{ month_color }}; vertical-align: top;">
+                                        {{ unmapped_val if unmapped_val > 0 else '—' }}
+                                    </td>
+                                    {% endfor %}
+                                </tr>
+                                {% endif %}
+                                {% else %}
                                 {% set all_programs = (team.june_delivered_by_program.keys() | list + team.july_committed_by_program.keys() | list + team.august_committed_by_program.keys() | list + team.september_committed_by_program.keys() | list) | unique | sort %}
                                 {% for program in all_programs %}
                                 {% if program != 'Unmapped' %}
@@ -14964,6 +15047,7 @@
                                         {{ team.september_committed_unmapped if team.september_committed_unmapped > 0 else '—' }}
                                     </td>
                                 </tr>
+                                {% endif %}
                                 {% endif %}
                             </table>
                         </td>
@@ -17834,7 +17918,7 @@ function createProgramCard(program) {
             if (issues.includes('missing_scheduled_build') && epicIssues.suggested_build) {
                 const sb = epicIssues.suggested_build;
                 const safeEpicName = epicIssues.epic_name.replace(/'/g, "\\'");
-                badges.push(`<span style="font-size: 11px; margin-left: 6px; color: #0176D3; white-space: nowrap;">
+                badges.push(`<span style="display: block; margin-top: 4px; font-size: 11px; color: #0176D3; white-space: nowrap;">
                     💡 Suggested Build: ${sb.value} (${sb.matching_stories}/${sb.total_stories} stories)
                     <button onclick="applySuggestedBuild('${epicIssues.epic_id}', '${sb.build_id}', '${sb.value}', '${safeEpicName}', event)"
                             style="background: #0176D3; color: white; border: none; padding: 1px 6px; border-radius: 3px; font-size: 10px; cursor: pointer; font-weight: 600; margin-left: 4px;">

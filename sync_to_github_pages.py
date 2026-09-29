@@ -221,6 +221,7 @@ html = template.render(
     total_non_filled=total_non_filled,
     programs_by_capacity=[],
     program_lookup=program_lookup,
+    capacity_months=teams_data.get('capacity_months', None),
     last_updated=exec_data.get('last_updated')
 )
 

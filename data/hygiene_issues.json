@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 491,
-    "teams_affected": 34,
+    "total_epics_needing_attention": 495,
+    "teams_affected": 35,
     "programs_affected": 38,
     "issue_breakdown": {
       "missing_scheduled_build": 184,
-      "missing_priority": 286,
+      "missing_priority": 287,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 419
+      "missing_planned_release": 423
     }
   },
   "epics": [
@@ -2736,6 +2736,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002jQ8T2AU",
+      "epic_name": "[266] Q3 Testing. - 15 min IntervalAgg,Forecst, Intraday,  BYOD and Headless",
+      "epic_name_key": "[266] Q3 Testing. - 15 min IntervalAgg,Forecst, Intraday,  BYOD and Headless",
+      "team": "Service Cloud CCQ",
+      "owner": "Silpa Guddati",
+      "health": "On Track",
+      "scheduled_build": "264.7",
+      "priority": 7,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Foundations",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002JoWD2A0",
       "epic_name": "[266][October] Support for asynchronous channels (Testing only)",
       "epic_name_key": "[266][October] Support for asynchronous channels (Testing only)",
@@ -2908,6 +2925,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002jQ3d2AE",
+      "epic_name": "[266] Q3 Testing -15 min Capacity Planning and async channel support testing",
+      "epic_name_key": "[266] Q3 Testing -15 min Capacity Planning and async channel support testing",
+      "team": "Service Cloud CCQ",
+      "owner": "Silpa Guddati",
+      "health": "On Track",
+      "scheduled_build": "264.7",
+      "priority": 2,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Capacity Planning",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002aDtd2AE",
       "epic_name": "[266][August] Planner Agent for UWM",
       "epic_name_key": "[266][August] Planner Agent for UWM",
@@ -3069,6 +3103,23 @@
       "health": "Not Started",
       "scheduled_build": "264",
       "priority": 3,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] WFM Workloads Forecasting",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002jQA52AM",
+      "epic_name": "[266] Q3 Testing - Workloads and Forecasting - Workgroup Skills",
+      "epic_name_key": "[266] Q3 Testing - Workloads and Forecasting - Workgroup Skills",
+      "team": "Service Cloud CCQ",
+      "owner": "Silpa Guddati",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 5,
       "story_points": 0,
       "program": "[266] Unified Workforce Management (UWM)",
       "portfolio": "FY27 SC M4 UWM",
@@ -3315,6 +3366,24 @@
       "epic_id": "a3QEE000002ij6j2AA",
       "epic_name": "[266] FWM LPS Licensing Support [Oct]",
       "epic_name_key": "[266] FWM LPS Licensing Support [Oct]",
+      "team": "FSL - Foundation - Atlas",
+      "owner": "Angela Liu (SFS)",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] SFS Schedule Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002jLS92AM",
+      "epic_name": "[266] Multi-ST CP uplift for Schedule Manager UI [Oct]",
+      "epic_name_key": "[266] Multi-ST CP uplift for Schedule Manager UI [Oct]",
       "team": "FSL - Foundation - Atlas",
       "owner": "Angela Liu (SFS)",
       "health": "On Track",
@@ -4630,7 +4699,7 @@
       "story_points": 0,
       "program": "[266] S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Workforce Scheduling - Unified Agent - Unified Experience MVP",
+      "project": "FS 264: S&O: Workforce Scheduling - Unified Agent MVP",
       "issues": [
         "missing_planned_release"
       ]
@@ -4647,7 +4716,7 @@
       "story_points": 0,
       "program": "[266] S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
-      "project": "FS 264: S&O: Workforce Scheduling - Unified Agent - Unified Experience MVP",
+      "project": "FS 264: S&O: Workforce Scheduling - Unified Agent MVP",
       "issues": [
         "missing_planned_release"
       ]
@@ -6046,9 +6115,9 @@
       "epic_name_key": "[266] SFS [WFS] [TRUST] Scheduled jobs limits to Core",
       "team": "FSL - Foundation - Corecodiles",
       "owner": "Miriam Kahana",
-      "health": "Unknown",
+      "health": "On Track",
       "scheduled_build": "266",
-      "priority": 2,
+      "priority": 7,
       "story_points": 0,
       "program": "[266] S&O Trust",
       "portfolio": "FY27 FS S&O",
@@ -7046,7 +7115,7 @@
       "epic_name_key": "266 SFS Frontline AI - NGA agent_router Routing Reliability",
       "team": "SFS Frontline AI",
       "owner": "Naveen Vasu",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -8393,7 +8462,7 @@
       "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Profile",
       "team": "SFS Frontline AI",
       "owner": "Paul Chan",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": 20,
       "story_points": 0,
@@ -9695,7 +9764,7 @@
     },
     {
       "name": "FSL - Foundation - Atlas",
-      "epic_count": 27,
+      "epic_count": 28,
       "epics": [
         {
           "epic_id": "a3QEE000002TAhB2AW",
@@ -10173,6 +10242,24 @@
             "missing_priority",
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002jLS92AM",
+          "epic_name": "[266] Multi-ST CP uplift for Schedule Manager UI [Oct]",
+          "epic_name_key": "[266] Multi-ST CP uplift for Schedule Manager UI [Oct]",
+          "team": "FSL - Foundation - Atlas",
+          "owner": "Angela Liu (SFS)",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] SFS Schedule Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
         }
       ]
     },
@@ -10255,9 +10342,9 @@
           "epic_name_key": "[266] SFS [WFS] [TRUST] Scheduled jobs limits to Core",
           "team": "FSL - Foundation - Corecodiles",
           "owner": "Miriam Kahana",
-          "health": "Unknown",
+          "health": "On Track",
           "scheduled_build": "266",
-          "priority": 2,
+          "priority": 7,
           "story_points": 0,
           "program": "[266] S&O Trust",
           "portfolio": "FY27 FS S&O",
@@ -11587,7 +11674,7 @@
           "story_points": 0,
           "program": "[266] S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Workforce Scheduling - Unified Agent - Unified Experience MVP",
+          "project": "FS 264: S&O: Workforce Scheduling - Unified Agent MVP",
           "issues": [
             "missing_planned_release"
           ]
@@ -11604,7 +11691,7 @@
           "story_points": 0,
           "program": "[266] S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
-          "project": "FS 264: S&O: Workforce Scheduling - Unified Agent - Unified Experience MVP",
+          "project": "FS 264: S&O: Workforce Scheduling - Unified Agent MVP",
           "issues": [
             "missing_planned_release"
           ]
@@ -14553,7 +14640,7 @@
           "epic_name_key": "266 SFS Frontline AI - NGA agent_router Routing Reliability",
           "team": "SFS Frontline AI",
           "owner": "Naveen Vasu",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -14935,7 +15022,7 @@
           "epic_name_key": "266 SFS Frontline AI - [iOS] Automation Improvement - Profile",
           "team": "SFS Frontline AI",
           "owner": "Paul Chan",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": 20,
           "story_points": 0,
@@ -16867,6 +16954,63 @@
           "project": "[266] Mobile Trust: Compliance",
           "issues": [
             "missing_priority",
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Service Cloud CCQ",
+      "epic_count": 3,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002jQ8T2AU",
+          "epic_name": "[266] Q3 Testing. - 15 min IntervalAgg,Forecst, Intraday,  BYOD and Headless",
+          "epic_name_key": "[266] Q3 Testing. - 15 min IntervalAgg,Forecst, Intraday,  BYOD and Headless",
+          "team": "Service Cloud CCQ",
+          "owner": "Silpa Guddati",
+          "health": "On Track",
+          "scheduled_build": "264.7",
+          "priority": 7,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Foundations",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002jQ3d2AE",
+          "epic_name": "[266] Q3 Testing -15 min Capacity Planning and async channel support testing",
+          "epic_name_key": "[266] Q3 Testing -15 min Capacity Planning and async channel support testing",
+          "team": "Service Cloud CCQ",
+          "owner": "Silpa Guddati",
+          "health": "On Track",
+          "scheduled_build": "264.7",
+          "priority": 2,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Capacity Planning",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002jQA52AM",
+          "epic_name": "[266] Q3 Testing - Workloads and Forecasting - Workgroup Skills",
+          "epic_name_key": "[266] Q3 Testing - Workloads and Forecasting - Workgroup Skills",
+          "team": "Service Cloud CCQ",
+          "owner": "Silpa Guddati",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 5,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] WFM Workloads Forecasting",
+          "issues": [
             "missing_planned_release"
           ]
         }

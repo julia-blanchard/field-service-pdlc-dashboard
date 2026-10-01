@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 495,
+    "total_epics_needing_attention": 499,
     "teams_affected": 35,
     "programs_affected": 38,
     "issue_breakdown": {
       "missing_scheduled_build": 184,
-      "missing_priority": 287,
+      "missing_priority": 285,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 423
+      "missing_planned_release": 427
     }
   },
   "epics": [
@@ -3930,13 +3930,47 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002jVRV2A2",
+      "epic_name": "266 SFS/FWM Support Capacity Plans with Multiple Service Territories",
+      "epic_name_key": "266 SFS/FWM Support Capacity Plans with Multiple Service Territories",
+      "team": "FSL - Operations - Intelligence",
+      "owner": "Nafeez Salma Chittoor Khader",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 40,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] Operations Intelligence",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002jVT72AM",
+      "epic_name": "266 SFS/FWM Capacity Plan with Job Profiles",
+      "epic_name_key": "266 SFS/FWM Capacity Plan with Job Profiles",
+      "team": "FSL - Operations - Intelligence",
+      "owner": "Nafeez Salma Chittoor Khader",
+      "health": "Not Started",
+      "scheduled_build": "266",
+      "priority": 40,
+      "story_points": 0,
+      "program": "[266] Unified Workforce Management (UWM)",
+      "portfolio": "FY27 SC M4 UWM",
+      "project": "[266] Operations Intelligence",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002MXvR2AW",
       "epic_name": "264: PSS-FS: Operations Console: Push Service",
       "epic_name_key": "264: PSS-FS: Operations Console: Push Service",
       "team": "SFS Core Scheduler",
       "owner": "Kritica Mantri",
-      "health": "Unknown",
-      "scheduled_build": "264",
+      "health": "On Track",
+      "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
@@ -4270,12 +4304,30 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002jY7d2AE",
+      "epic_name": "266: PSS-FS: Operations Console: Push Service for Activity Tracker",
+      "epic_name_key": "266: PSS-FS: Operations Console: Push Service for Activity Tracker",
+      "team": "SFS Core Scheduler",
+      "owner": "Josson Thoppil",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "266 WFS Operations Console",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "project": "266 WFS Operations Console",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002fzHh2AI",
       "epic_name": "266 - Estimated wait time - Lobby for Workforce Scheduling",
       "epic_name_key": "266 - Estimated wait time - Lobby for Workforce Scheduling",
       "team": "FSL - Foundation - Apps",
       "owner": "Neerja Rewal",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -4313,7 +4365,7 @@
       "epic_name_key": "266 - Autorefresh - Lobby for Workforce Scheduling",
       "team": "FSL - Foundation - Apps",
       "owner": "Neerja Rewal",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -5216,7 +5268,7 @@
       "epic_name_key": "[264][Scheduling Console] Complex Work Enhancements",
       "team": "FSL - Resource - Scheduling Intelligence",
       "owner": "Yonatan Bar-Yehuda",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.3",
       "priority": "-",
       "story_points": 0,
@@ -5342,7 +5394,7 @@
       "epic_name_key": "[264.7] [Scheduling Console] Gantt Crew Filter",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Itay Noama",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
@@ -5487,7 +5539,7 @@
       "epic_name_key": "[264.11][Scheduling Console] Enhanced Gantt Search For Appointments",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Gal Asraf",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
@@ -5505,7 +5557,7 @@
       "epic_name_key": "[264][Scheduling Console] Support Appointment Icons",
       "team": "FSL - Talpiot - Dispatch Console",
       "owner": "Gal Asraf",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
@@ -5615,13 +5667,12 @@
       "owner": "Lilach Talbi",
       "health": "Not Started",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 105,
       "story_points": 0,
       "program": "[266] S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -5633,13 +5684,12 @@
       "owner": "Lilach Talbi",
       "health": "Not Started",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 105,
       "story_points": 0,
       "program": "[266] S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -5669,13 +5719,12 @@
       "owner": "Lilach Talbi",
       "health": "Not Started",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 105,
       "story_points": 0,
       "program": "[266] S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Gantt & List Capabilities",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -5703,7 +5752,7 @@
       "epic_name_key": "[264.11] [Scheduling Console] Lookup search in the list",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Natalia Polozyuk",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
@@ -5739,7 +5788,7 @@
       "epic_name_key": "[264.7] [Scheduling Console] Set the gantt for today",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Jouwana Dow",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
@@ -5753,11 +5802,11 @@
     },
     {
       "epic_id": "a3QEE000002fvpB2AQ",
-      "epic_name": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences and Availability",
-      "epic_name_key": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences and Availability",
+      "epic_name": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences",
+      "epic_name_key": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
@@ -5775,7 +5824,7 @@
       "epic_name_key": "[264.11] [Scheduling Console]Support Grafana and Argus",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
@@ -5793,7 +5842,7 @@
       "epic_name_key": "[266] [Scheduling Console] Improvements to the Embedded \u201cWhy\u201d Explanation",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
@@ -5811,7 +5860,7 @@
       "epic_name_key": "[264.7] [Scheduling Console] Rule violation filter loading experience",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Alberto Chocron",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
@@ -5935,6 +5984,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002jYUD2A2",
+      "epic_name": "[266] [Scheduling Console] bugs and features enhancements",
+      "epic_name_key": "[266] [Scheduling Console] bugs and features enhancements",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Trust",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002TAZ72AO",
       "epic_name": "[264][Scheduling Console] Run RSO as Simulation",
       "epic_name_key": "[264][Scheduling Console] Run RSO as Simulation",
@@ -5961,13 +6028,12 @@
       "owner": "Lilach Talbi",
       "health": "Not Started",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 105,
       "story_points": 0,
       "program": "[266] S&O Scheduling Console",
       "portfolio": "FY27 FS S&O",
       "project": "S&O Scheduling Console - Agentic Capabilities",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -5977,7 +6043,7 @@
       "epic_name_key": "[264.8] [Scheduling Console] LS- Support complex work",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Gil Meyerstein",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.8",
       "priority": "-",
       "story_points": 0,
@@ -5991,12 +6057,12 @@
     },
     {
       "epic_id": "a3QEE000002fvcH2AQ",
-      "epic_name": "[264.8] [Scheduling Console] LS- Support Snap-in and Adjust duration",
-      "epic_name_key": "[264.8] [Scheduling Console] LS- Support Snap-in and Adjust duration",
+      "epic_name": "[264.7] [Scheduling Console] LS- Support Snap-in and Adjust duration",
+      "epic_name_key": "[264.7] [Scheduling Console] LS- Support Snap-in and Adjust duration",
       "team": "FSL - Resource - Dispatch Console",
       "owner": "Matan Firozi",
-      "health": "On Track",
-      "scheduled_build": "264.8",
+      "health": "Completed",
+      "scheduled_build": "264.7",
       "priority": "-",
       "story_points": 0,
       "program": "[266] S&O Scheduling Console",
@@ -9709,7 +9775,7 @@
           "epic_name_key": "266 - Estimated wait time - Lobby for Workforce Scheduling",
           "team": "FSL - Foundation - Apps",
           "owner": "Neerja Rewal",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -9747,7 +9813,7 @@
           "epic_name_key": "266 - Autorefresh - Lobby for Workforce Scheduling",
           "team": "FSL - Foundation - Apps",
           "owner": "Neerja Rewal",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -10357,7 +10423,7 @@
     },
     {
       "name": "FSL - Operations - Intelligence",
-      "epic_count": 6,
+      "epic_count": 8,
       "epics": [
         {
           "epic_id": "a3QEE0000028wth2AA",
@@ -10464,12 +10530,46 @@
           "issues": [
             "missing_planned_release"
           ]
+        },
+        {
+          "epic_id": "a3QEE000002jVRV2A2",
+          "epic_name": "266 SFS/FWM Support Capacity Plans with Multiple Service Territories",
+          "epic_name_key": "266 SFS/FWM Support Capacity Plans with Multiple Service Territories",
+          "team": "FSL - Operations - Intelligence",
+          "owner": "Nafeez Salma Chittoor Khader",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 40,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] Operations Intelligence",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002jVT72AM",
+          "epic_name": "266 SFS/FWM Capacity Plan with Job Profiles",
+          "epic_name_key": "266 SFS/FWM Capacity Plan with Job Profiles",
+          "team": "FSL - Operations - Intelligence",
+          "owner": "Nafeez Salma Chittoor Khader",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": 40,
+          "story_points": 0,
+          "program": "[266] Unified Workforce Management (UWM)",
+          "portfolio": "FY27 SC M4 UWM",
+          "project": "[266] Operations Intelligence",
+          "issues": [
+            "missing_planned_release"
+          ]
         }
       ]
     },
     {
       "name": "FSL - Resource - Dispatch Console",
-      "epic_count": 26,
+      "epic_count": 27,
       "epics": [
         {
           "epic_id": "a3QEE000002VJ6r2AG",
@@ -10495,7 +10595,7 @@
           "epic_name_key": "[264.7] [Scheduling Console] Gantt Crew Filter",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Itay Noama",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
@@ -10568,7 +10668,7 @@
           "epic_name_key": "[264.11][Scheduling Console] Enhanced Gantt Search For Appointments",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Gal Asraf",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
@@ -10660,13 +10760,12 @@
           "owner": "Lilach Talbi",
           "health": "Not Started",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 105,
           "story_points": 0,
           "program": "[266] S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -10678,13 +10777,12 @@
           "owner": "Lilach Talbi",
           "health": "Not Started",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 105,
           "story_points": 0,
           "program": "[266] S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -10712,7 +10810,7 @@
           "epic_name_key": "[264.11] [Scheduling Console] Lookup search in the list",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Natalia Polozyuk",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
@@ -10748,7 +10846,7 @@
           "epic_name_key": "[264.7] [Scheduling Console] Set the gantt for today",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Jouwana Dow",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
@@ -10762,11 +10860,11 @@
         },
         {
           "epic_id": "a3QEE000002fvpB2AQ",
-          "epic_name": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences and Availability",
-          "epic_name_key": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences and Availability",
+          "epic_name": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences",
+          "epic_name_key": "[264.7] [Scheduling Console] ESO - Support Snap-in for Absences",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
@@ -10784,7 +10882,7 @@
           "epic_name_key": "[264.11] [Scheduling Console]Support Grafana and Argus",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
@@ -10802,7 +10900,7 @@
           "epic_name_key": "[266] [Scheduling Console] Improvements to the Embedded \u201cWhy\u201d Explanation",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Lilach Talbi",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
@@ -10820,7 +10918,7 @@
           "epic_name_key": "[264.7] [Scheduling Console] Rule violation filter loading experience",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Alberto Chocron",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
@@ -10869,6 +10967,24 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002jYUD2A2",
+          "epic_name": "[266] [Scheduling Console] bugs and features enhancements",
+          "epic_name_key": "[266] [Scheduling Console] bugs and features enhancements",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Trust",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002TAZ72AO",
           "epic_name": "[264][Scheduling Console] Run RSO as Simulation",
           "epic_name_key": "[264][Scheduling Console] Run RSO as Simulation",
@@ -10895,13 +11011,12 @@
           "owner": "Lilach Talbi",
           "health": "Not Started",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 105,
           "story_points": 0,
           "program": "[266] S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Agentic Capabilities",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -10911,7 +11026,7 @@
           "epic_name_key": "[264.8] [Scheduling Console] LS- Support complex work",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Gil Meyerstein",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "264.8",
           "priority": "-",
           "story_points": 0,
@@ -10925,12 +11040,12 @@
         },
         {
           "epic_id": "a3QEE000002fvcH2AQ",
-          "epic_name": "[264.8] [Scheduling Console] LS- Support Snap-in and Adjust duration",
-          "epic_name_key": "[264.8] [Scheduling Console] LS- Support Snap-in and Adjust duration",
+          "epic_name": "[264.7] [Scheduling Console] LS- Support Snap-in and Adjust duration",
+          "epic_name_key": "[264.7] [Scheduling Console] LS- Support Snap-in and Adjust duration",
           "team": "FSL - Resource - Dispatch Console",
           "owner": "Matan Firozi",
-          "health": "On Track",
-          "scheduled_build": "264.8",
+          "health": "Completed",
+          "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
           "program": "[266] S&O Scheduling Console",
@@ -11324,7 +11439,7 @@
           "epic_name_key": "[264][Scheduling Console] Complex Work Enhancements",
           "team": "FSL - Resource - Scheduling Intelligence",
           "owner": "Yonatan Bar-Yehuda",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.3",
           "priority": "-",
           "story_points": 0,
@@ -12410,7 +12525,7 @@
           "epic_name_key": "[264][Scheduling Console] Support Appointment Icons",
           "team": "FSL - Talpiot - Dispatch Console",
           "owner": "Gal Asraf",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
@@ -12466,13 +12581,12 @@
           "owner": "Lilach Talbi",
           "health": "Not Started",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 105,
           "story_points": 0,
           "program": "[266] S&O Scheduling Console",
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -13621,7 +13735,7 @@
     },
     {
       "name": "SFS Core Scheduler",
-      "epic_count": 29,
+      "epic_count": 30,
       "epics": [
         {
           "epic_id": "a3QEE000002MYBZ2A4",
@@ -13818,8 +13932,8 @@
           "epic_name_key": "264: PSS-FS: Operations Console: Push Service",
           "team": "SFS Core Scheduler",
           "owner": "Kritica Mantri",
-          "health": "Unknown",
-          "scheduled_build": "264",
+          "health": "On Track",
+          "scheduled_build": "264.7",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
@@ -14148,6 +14262,24 @@
           "project": "266 WFS Operations Console",
           "issues": [
             "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002jY7d2AE",
+          "epic_name": "266: PSS-FS: Operations Console: Push Service for Activity Tracker",
+          "epic_name_key": "266: PSS-FS: Operations Console: Push Service for Activity Tracker",
+          "team": "SFS Core Scheduler",
+          "owner": "Josson Thoppil",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Operations Console",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Operations Console",
+          "issues": [
             "missing_priority",
             "missing_planned_release"
           ]

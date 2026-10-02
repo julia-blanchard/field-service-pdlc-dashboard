@@ -472,7 +472,56 @@ def enrich_with_program_target(structured_data):
             program['target_release'] = target
             enriched_count += 1
 
-    print(f"   ✓ Enriched {enriched_count} programs with their own Target__c field")
+    print(f"   ✓ Enriched {enriched_count} programs with Target field")
+
+    return structured_data
+
+def enrich_with_program_health_comments(structured_data):
+    """
+    Query GUS for each program's Program_Health_Comments__c field.
+
+    The GUS report (REPORT_ID) doesn't include this column, so it's pulled
+    via a separate SOQL query keyed by the program IDs already parsed from
+    the report, same pattern as enrich_with_program_target.
+    """
+    print("🔍 Enriching program data with Health Comments from GUS...")
+
+    program_ids = [p['id'] for p in structured_data['programs'] if p.get('id')]
+    if not program_ids:
+        print("   No programs to enrich")
+        return structured_data
+
+    program_comments_map = {}
+    batch_size = 200
+    for i in range(0, len(program_ids), batch_size):
+        batch = program_ids[i:i + batch_size]
+        ids_list = "','".join(batch)
+        query = f"SELECT Id, Program_Health_Comments__c FROM PPM_Program__c WHERE Id IN ('{ids_list}')"
+
+        try:
+            result = subprocess.run(
+                ['sf', 'data', 'query', '--query', query, '--target-org', TARGET_ORG, '--json'],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            data = json.loads(result.stdout)
+            records = data.get('result', {}).get('records', [])
+            for record in records:
+                if record.get('Program_Health_Comments__c'):
+                    program_comments_map[record['Id']] = record['Program_Health_Comments__c']
+        except Exception as e:
+            print(f"   Warning: Failed to query program health comments batch {i//batch_size + 1}: {e}")
+            continue
+
+    enriched_count = 0
+    for program in structured_data['programs']:
+        comments = program_comments_map.get(program.get('id'))
+        if comments:
+            program['health_comments'] = comments
+            enriched_count += 1
+
+    print(f"   ✓ Enriched {enriched_count} programs with Health Comments")
 
     return structured_data
 
@@ -847,6 +896,7 @@ def merge_262_projects(structured_data, projects_262):
 
     added_projects = 0
     new_programs = 0
+    newly_added_project_ids = []
 
     for proj_record in projects_262:
         program_name = proj_record.get('Program__r', {}).get('Name', '')
@@ -855,7 +905,6 @@ def merge_262_projects(structured_data, projects_262):
 
         project_name = proj_record.get('Name', '')
         project_id = proj_record.get('Id', '')
-        scheduled_build = proj_record.get('Scheduled_Build__r', {}).get('Name', '')
         portfolio_ref = proj_record.get('Program__r', {}).get('Portfolio__r')
         portfolio = portfolio_ref.get('Name', 'Unknown') if portfolio_ref else 'Unknown'
 
@@ -870,7 +919,16 @@ def merge_262_projects(structured_data, projects_262):
                 'health': 'Unknown',
                 'health_status': 'Unknown',
                 'program_manager': '',
-                'target_release': '262',
+                # Left blank on purpose -- app.py's enrichment derives the
+                # real target from the project's epics (fetched below), or
+                # falls back to the program name's own [NNN] tag.
+                # Hardcoding '262' here mislabeled every program first
+                # discovered through this path, e.g. "[266] Guided
+                # Experience" showed target 262 even though it's a 266
+                # program -- this query only finds projects via a
+                # 262-tagged epic, which says nothing about the program's
+                # overall release.
+                'target_release': '',
                 'projects': []
             }
             structured_data['programs'].append(programs_map[program_name])
@@ -886,20 +944,148 @@ def merge_262_projects(structured_data, projects_262):
                 break
 
         if not existing_project:
-            # Add new 262 project
+            # Add new 262 project; epics/target get filled in below once
+            # the project's full epic list is fetched.
             program['projects'].append({
                 'name': project_name,
                 'id': project_id,
                 'product_owner': '',
                 'dev_lead': '',
-                'target': scheduled_build,
+                'target': '',
                 'last_modified': '',
                 'health_status': 'Unknown',
-                'epics': []  # 262 projects won't have epic details from this query
+                'epics': []
             })
             added_projects += 1
+            newly_added_project_ids.append(project_id)
+
+    # fetch_262_projects() only found these projects via one 262-tagged
+    # epic per work item -- it never fetched the project's full epic list,
+    # so every other epic (including ones scheduled for later builds) was
+    # silently dropped from the tree. Fetch all epics for the newly-added
+    # projects directly, same shape as fetch_new_release_programs() uses.
+    total_epics_fetched = 0
+    if newly_added_project_ids:
+        epics_by_project = defaultdict(list)
+        chunk_size = 200
+        for i in range(0, len(newly_added_project_ids), chunk_size):
+            chunk = newly_added_project_ids[i:i + chunk_size]
+            chunk_idlist = ','.join(f"'{c}'" for c in chunk)
+            try:
+                epic_records = run_soql(
+                    f"SELECT Id, Name, Project__c, Health__c, Team__r.Name, "
+                    f"Scheduled_Build__r.Name, Priority__c, LastModifiedDate, "
+                    f"Epic_Health_Comments__c, Owner.Name "
+                    f"FROM ADM_Epic__c WHERE Project__c IN ({chunk_idlist})"
+                )
+            except Exception as e:
+                print(f"   ⚠️  Failed to fetch epics for 262 projects chunk {i // chunk_size + 1}: {e}")
+                continue
+            for e in epic_records:
+                epics_by_project[e['Project__c']].append(e)
+
+        newly_added_ids_set = set(newly_added_project_ids)
+        for program in structured_data['programs']:
+            for proj in program['projects']:
+                if proj['id'] not in newly_added_ids_set:
+                    continue
+                proj_epics = []
+                for e in epics_by_project.get(proj['id'], []):
+                    health_status = e.get('Health__c') or 'Unknown'
+                    proj_epics.append({
+                        'name': e['Name'],
+                        'id': e['Id'],
+                        'priority': e.get('Priority__c') or '-',
+                        'health': parse_health_from_status(health_status),
+                        'health_status': health_status,
+                        'health_comments': e.get('Epic_Health_Comments__c') or '',
+                        'owner': (e.get('Owner') or {}).get('Name', ''),
+                        'team': (e.get('Team__r') or {}).get('Name', '-') if e.get('Team__r') else '-',
+                        'scheduled_build': (e.get('Scheduled_Build__r') or {}).get('Name', '-') if e.get('Scheduled_Build__r') else '-',
+                        'planned_release': '',
+                        'last_modified': (e.get('LastModifiedDate') or '')[:10],
+                        'loc': '',
+                        'path_to_green': ''
+                    })
+                proj['epics'] = proj_epics
+                total_epics_fetched += len(proj_epics)
+                epic_builds = [e['scheduled_build'] for e in proj_epics if e['scheduled_build'] and e['scheduled_build'] != '-']
+                proj['target'] = max(epic_builds) if epic_builds else ''
 
     print(f"   ✓ Added {added_projects} 262 projects across {new_programs} programs")
+    if newly_added_project_ids:
+        print(f"   ✓ Fetched {total_epics_fetched} epics for newly-added 262 projects")
+    return structured_data
+
+def fetch_epics_no_sprint(structured_data):
+    """
+    Compute the "Epics with No Sprint" stat: active epics (Health__c not
+    Completed/Canceled) that have zero child ADM_Work__c records with a
+    Sprint__c set. Matches the Service Cloud dashboard's 4th stat card.
+
+    Scoped to the same epics already in structured_data (same Field Service
+    team/portfolio scoping as the other 3 cards) rather than re-querying
+    GUS from scratch.
+    """
+    print("🔍 Computing epics with no sprint...")
+
+    epic_health_map = {}
+    for program in structured_data['programs']:
+        for project in program['projects']:
+            for epic in project['epics']:
+                epic_id = epic.get('id')
+                if epic_id:
+                    epic_health_map[epic_id] = epic.get('health_status') or ''
+
+    if not epic_health_map:
+        print("   No epics with IDs to check")
+        structured_data['epic_no_sprint_stats'] = {'on_track': 0, 'watch': 0, 'blocked': 0, 'not_started': 0}
+        structured_data['total_epics_no_sprint'] = 0
+        return structured_data
+
+    epic_ids = list(epic_health_map.keys())
+    epics_with_sprint = set()
+    batch_size = 200
+
+    for i in range(0, len(epic_ids), batch_size):
+        batch = epic_ids[i:i + batch_size]
+        ids_list = "','".join(batch)
+        query = (
+            f"SELECT Epic__c FROM ADM_Work__c "
+            f"WHERE Epic__c IN ('{ids_list}') AND Sprint__c != null "
+            f"GROUP BY Epic__c"
+        )
+        try:
+            records = run_soql(query)
+            for record in records:
+                if record.get('Epic__c'):
+                    epics_with_sprint.add(record['Epic__c'])
+        except Exception as e:
+            print(f"   ⚠️  Failed to query sprint batch {i // batch_size + 1}: {e}")
+            continue
+
+    stats = {'on_track': 0, 'watch': 0, 'blocked': 0, 'not_started': 0}
+    for epic_id, health_status in epic_health_map.items():
+        if epic_id in epics_with_sprint:
+            continue
+        health_lower = health_status.lower()
+        if 'completed' in health_lower or 'complete' in health_lower or 'cancel' in health_lower:
+            continue  # not active
+        if 'on track' in health_lower:
+            stats['on_track'] += 1
+        elif 'watch' in health_lower or 'at risk' in health_lower:
+            stats['watch'] += 1
+        elif 'blocked' in health_lower or 'off track' in health_lower:
+            stats['blocked'] += 1
+        else:
+            # Not Started, On Hold, or blank/unknown health
+            stats['not_started'] += 1
+
+    total = sum(stats.values())
+    structured_data['epic_no_sprint_stats'] = stats
+    structured_data['total_epics_no_sprint'] = total
+    print(f"   ✓ {total} active epics with no sprint ({len(epics_with_sprint)} epics have sprinted work)")
+
     return structured_data
 
 def main():
@@ -935,8 +1121,15 @@ def main():
     # (see app.py's epic-scan fallback) doesn't override it.
     structured_data = enrich_with_program_target(structured_data)
 
+    # Pull each program's Program_Health_Comments__c (SC's "Health Comments"
+    # equivalent) -- not present in the GUS report, so a separate query.
+    structured_data = enrich_with_program_health_comments(structured_data)
+
     # Normalize portfolio names (FY27 Field Service Mobile → FY27 FS Mobile)
     structured_data = normalize_portfolio_names(structured_data)
+
+    # Compute "Epics with No Sprint" stat for the 4th Execution tab stat card
+    structured_data = fetch_epics_no_sprint(structured_data)
 
     # Save to JSON file
     DATA_FILE.parent.mkdir(exist_ok=True)

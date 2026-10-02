@@ -8,6 +8,7 @@ Test deployment to staging
 from flask import Flask, render_template, jsonify, request
 import os
 import json
+import re
 import subprocess
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
@@ -45,26 +46,61 @@ def add_header(response):
     return response
 
 def extract_latest_comment(comments_text):
-    """Extract only the latest dated comment from health comments"""
+    """Extract only the single most recent dated entry from a health comments
+    field that accumulates one dated entry per update (newest entries are
+    usually prepended, but dates are compared explicitly rather than assumed)."""
     if not comments_text or comments_text == '-':
         return '-'
 
     import re
-    # Pattern to match date prefixes like "27-May:", "05/19/2026:", "6/2:"
-    date_pattern = r'(\d{1,2}[-/]\w+[-/]\d{0,4}:|\d{1,2}[-/]\d{1,2}[-/]\d{2,4}:|\d{1,2}[-/]\d{1,2}:)'
+    from datetime import datetime
 
-    # Split by date patterns
-    parts = re.split(date_pattern, comments_text)
+    # Date markers seen in GUS health comments: "[9/29]:", "(9/15):", "9/22:",
+    # "27-May:" -- optionally wrapped in [] or (), colon may sit inside or
+    # outside the bracket.
+    marker_pattern = re.compile(
+        r'[\[\(]?(\d{1,2})[/-](\d{1,2}|[A-Za-z]{3,9})(?:[/-](\d{2,4}))?[\]\)]?:\s*'
+    )
 
-    # Find the first date-prefixed entry (most recent, assuming reverse chronological)
-    for i in range(len(parts)):
-        if parts[i] and ':' in parts[i] and i + 1 < len(parts):
-            # Return date prefix + its content
-            latest = parts[i] + parts[i+1]
-            return latest.strip()
+    matches = list(marker_pattern.finditer(comments_text))
+    if not matches:
+        # No date marker found -- return the full text and let CSS wrap it
+        # rather than hard-truncating with an ellipsis.
+        return comments_text.strip()
 
-    # If no date pattern found, return first 200 chars
-    return comments_text[:200] + ('...' if len(comments_text) > 200 else '')
+    month_names = {
+        'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
+        'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12
+    }
+
+    entries = []
+    for idx, m in enumerate(matches):
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(comments_text)
+        entry_text = comments_text[m.start():end].strip()
+
+        first, second, year = m.group(1), m.group(2), m.group(3)
+        date_obj = None
+        try:
+            if second.isdigit():
+                month, day = int(first), int(second)
+            else:
+                day, month = int(first), month_names.get(second[:3].lower())
+            year_int = int(year) if year else datetime.now().year
+            if year_int < 100:
+                year_int += 2000
+            if month:
+                date_obj = datetime(year_int, month, day)
+        except (ValueError, TypeError):
+            date_obj = None
+
+        entries.append((date_obj, idx, entry_text))
+
+    # Prefer the entry with the latest parsed date; ties/unparseable dates
+    # fall back to whichever appeared first in the text.
+    dated_entries = [e for e in entries if e[0] is not None]
+    best = max(dated_entries, key=lambda e: (e[0], -e[1])) if dated_entries else entries[0]
+
+    return best[2]
 
 # Register as Jinja2 filter
 app.jinja_env.filters['latest_comment'] = extract_latest_comment
@@ -72,7 +108,7 @@ app.jinja_env.filters['latest_comment'] = extract_latest_comment
 def format_month_header(month_str):
     """Convert YYYY-MM to 'Month YYYY' format"""
     if not month_str or month_str == 'no-date':
-        return 'Release Month Not Assigned'
+        return 'Sprint N/A'
 
     try:
         from datetime import datetime
@@ -147,6 +183,14 @@ def map_release_to_freeze_month(release_number):
     if release_str in ['264.11', '264.12', '264.13']: return '2026-11'  # Nov 02-16
     if release_str in ['264.14', '264.15', '264.16']: return '2026-12'  # Nov 30 - Dec 14
     if release_str == '264.17': return '2027-01'  # Jan 04
+
+    # SFS.iOS/SFS.Android platform builds run on their own train, separate
+    # from the plain 264.x core patch schedule above -- mapped from each
+    # build record's actual Release_Freeze_Datetime__c in GUS.
+    if release_str in ['SFS.iOS.264.0', 'SFS.Android.264.0']: return '2026-08'  # freeze 8/26
+    if release_str in ['SFS.iOS.264.1', 'SFS.Android.264.1']: return '2026-09'  # freeze 9/30
+    if release_str in ['SFS.iOS.264.2', 'SFS.Android.264.2']: return '2026-11'  # freeze 11/4
+    if release_str in ['SFS.iOS.264.3', 'SFS.Android.264.3']: return '2026-12'  # freeze 12/30
 
     # 266 patches (from 264 tab references)
     if release_str == '266': return '2026-12'  # Dec 07
@@ -857,6 +901,10 @@ def index():
     # Total epics = all epics including not assigned
     total_epics = sum(epic_stats.values())
 
+    # Epics with No Sprint (4th stat card) -- precomputed by fetch_execution_data.py
+    epic_no_sprint_stats = exec_data.get('epic_no_sprint_stats') or {'on_track': 0, 'watch': 0, 'blocked': 0, 'not_started': 0}
+    total_epics_no_sprint = exec_data.get('total_epics_no_sprint', 0)
+
     # Sort execution programs by portfolio
     execution_programs_sorted = sorted(execution_programs, key=lambda p: (p.get('portfolio', '') or 'zzz', p.get('name', '')))
 
@@ -921,6 +969,75 @@ def index():
             'portfolio': prog.get('portfolio', '')
         }
 
+    # Aggregate capacity by portfolio for the Allocations donut cards, split
+    # Innovation vs Trust by whether the program itself is a "Trust" program
+    # within its pillar (e.g. "266 WFS Trust", "264 Field Service: Trust").
+    # Capacity is stored in person-days (PD); convert to SWE-equivalent by
+    # dividing by the number of weekdays in that calendar month.
+    import calendar as calendar_module
+    DONUT_COLORS = ['#0176D3', '#0d9488', '#4f46e5', '#0ea5e9', '#7c3aed',
+                    '#0891b2', '#6366f1', '#dc2626', '#16a34a', '#ca8a04']
+
+    def is_trust_program(name):
+        return bool(re.search(r'\btrust\b', name, re.IGNORECASE))
+
+    def weekdays_in_month(year, month):
+        _, days_in_month = calendar_module.monthrange(year, month)
+        return sum(1 for day in range(1, days_in_month + 1)
+                   if datetime(year, month, day).weekday() < 5)
+
+    portfolio_allocations = []
+    if capacity_months and len(capacity_months) == 4:
+        # Match Service Cloud's 3-card row layout; show the 3 forward-looking
+        # months (committed/planned) rather than the delivered/actuals month.
+        for month_config in capacity_months[1:4]:
+            month_name = month_config['name']
+            by_program_key = (f"{month_name}_delivered_by_program" if month_config['type'] == 'delivered'
+                               else f"{month_name}_committed_by_program")
+            swe_divisor = weekdays_in_month(month_config['year'], month_config['month'])
+
+            portfolio_totals = defaultdict(lambda: {'innovation': 0, 'trust': 0})
+            for team in teams:
+                for program, points in team.get(by_program_key, {}).items():
+                    portfolio = program_lookup.get(program, {}).get('portfolio') or 'Unmapped'
+                    bucket = 'trust' if is_trust_program(program) else 'innovation'
+                    portfolio_totals[portfolio][bucket] += points / swe_divisor
+
+            rows = [
+                {
+                    'portfolio': portfolio.replace('264 Field Service', '264 FS'),
+                    'innovation': round(data['innovation'], 1),
+                    'trust': round(data['trust'], 1),
+                    'total': round(data['innovation'] + data['trust'], 1),
+                }
+                for portfolio, data in portfolio_totals.items()
+                if portfolio != 'Unmapped' and not portfolio.startswith('264')
+                and (data['innovation'] + data['trust']) > 0
+            ]
+            rows.sort(key=lambda r: r['total'], reverse=True)
+            for i, row in enumerate(rows):
+                row['color'] = DONUT_COLORS[i % len(DONUT_COLORS)]
+
+            grand_total = sum(r['total'] for r in rows)
+
+            if month_config['type'] == 'delivered':
+                title = 'SWE Allocations by Portfolio'
+            elif month_config['type'] == 'committed':
+                title = 'Committed SWE Allocations by Portfolio'
+            else:
+                title = 'Planned SWE Allocations by Portfolio'
+
+            portfolio_allocations.append({
+                'label': month_config['label'],
+                'year': month_config['year'],
+                'title': title,
+                'rows': rows,
+                'segments': [(r['color'], r['total']) for r in rows],
+                'total': round(grand_total, 1),
+                'innovation_total': round(sum(r['innovation'] for r in rows), 1),
+                'trust_total': round(sum(r['trust'] for r in rows), 1),
+            })
+
     return render_template('field_service_dynamic.html',
                            static_site=False,
                            programs=all_programs,
@@ -936,8 +1053,11 @@ def index():
                            health_counts=health_counts,
                            project_stats=project_stats,
                            epic_stats=epic_stats,
+                           epic_no_sprint_stats=epic_no_sprint_stats,
+                           total_epics_no_sprint=total_epics_no_sprint,
                            teams=teams,
                            capacity_months=capacity_months,
+                           portfolio_allocations=portfolio_allocations,
                            execution_months=get_execution_months(),
                            total_teams=total_teams,
                            total_filled=total_filled,

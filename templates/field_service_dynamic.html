@@ -16,40 +16,13 @@
 
         body {
             font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e3a5f 100%);
+            background: #334155;
             color: #1a202c;
             padding: 8px;
             min-height: 100vh;
             position: relative;
             overflow-x: auto;
             font-size: 11px;
-        }
-
-        /* Decorative curved elements */
-        body::before {
-            content: '';
-            position: fixed;
-            top: -20%;
-            right: -10%;
-            width: 60%;
-            height: 80%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        body::after {
-            content: '';
-            position: fixed;
-            bottom: -30%;
-            left: -15%;
-            width: 70%;
-            height: 90%;
-            background: radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 0;
         }
 
         .phase-container,
@@ -161,16 +134,14 @@
         }
 
         .filter-bar {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(30px) saturate(180%);
-            -webkit-backdrop-filter: blur(30px) saturate(180%);
+            background: #475569;
             padding: 24px 32px;
             border-radius: 16px;
             box-shadow:
                 0 8px 32px rgba(0, 0, 0, 0.15),
-                inset 0 1px 0 rgba(255, 255, 255, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08),
                 inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             margin-bottom: 24px;
             display: flex;
             align-items: center;
@@ -813,11 +784,130 @@
         }
 
         .stat-card {
+            background-image: linear-gradient(160deg, rgba(255,255,255,0.99) 0%, rgba(255,255,255,0.96) 45%, rgba(255,255,255,0.94) 100%);
+            box-sizing: border-box;
+            width: 444.75px;
+            height: 264px;
+            padding: 20px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.85);
+            backdrop-filter: blur(16px);
+            overflow: hidden;
+            box-shadow: rgba(15,23,42,0.16) 0px 12px 30px 0px, rgba(255,255,255,0.9) 0px 1px 0px 0px inset, rgba(15,23,42,0.04) 0px -6px 14px 0px inset;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            font-weight: 700;
+            color: #3d5a80;
+            margin: 0 0 16px;
+            min-height: 40px;
+        }
+
+        .stat-label-subtitle {
+            font-size: 11px;
+            font-weight: 400;
+            color: #94a3b8;
+            margin: 2px 0 0;
+        }
+
+        .stat-donut-wrap {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .stat-donut {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            flex: none;
+            position: relative;
+            box-shadow: 0 8px 18px rgba(15,23,42,0.28), inset 0 -3px 6px rgba(0,0,0,0.22), inset 0 3px 6px rgba(255,255,255,0.45);
+        }
+
+        .stat-donut::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.12) 34%, rgba(255,255,255,0) 55%),
+                        radial-gradient(circle at 68% 78%, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0) 45%);
+        }
+
+        .stat-donut-hole {
+            position: absolute;
+            inset: 28px;
             background: white;
-            padding: 16px;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 2px 6px rgba(15,23,42,0.18);
+        }
+
+        .stat-donut-total {
+            font-size: 24px;
+            font-weight: 700;
+            color: #3d5a80;
+            line-height: 24px;
+        }
+
+        .stat-donut-label {
+            font-size: 10px;
+            color: #64748b;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-rows {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .stat-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 4px 0;
+            border-top: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+            margin-top: -1px;
+        }
+
+        .stat-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+            flex: none;
+        }
+
+        .stat-label-text {
+            flex: 1;
+            font-size: 12px;
+            font-weight: 600;
+            color: #334155;
+            white-space: nowrap;
+        }
+
+        .stat-count {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1e293b;
+            min-width: 28px;
+            text-align: right;
+        }
+
+        .stat-percent {
+            font-size: 12px;
+            font-weight: 600;
+            color: #94a3b8;
+            min-width: 32px;
+            text-align: right;
         }
 
         .stat-header {
@@ -827,14 +917,6 @@
             margin-bottom: 12px;
         }
 
-        .stat-label {
-            font-size: 11px;
-            font-weight: 600;
-            color: #3d5a80;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
         .stat-value {
             font-size: 32px;
             font-weight: 700;
@@ -842,76 +924,6 @@
             line-height: 1;
         }
 
-        .stat-rows {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .stat-row {
-            display: grid;
-            grid-template-columns: 10px 90px 1fr 50px 40px;
-            align-items: center;
-            gap: 12px;
-            font-size: 13px;
-        }
-
-        .stat-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-
-        .stat-dot.green { background: #10b981; }
-        .stat-dot.gray { background: #d1d5db; }
-        .stat-dot.orange { background: #f59e0b; }
-        .stat-dot.red { background: #ef4444; }
-        .stat-dot.blue { background: #3b82f6; }
-
-        .stat-label-text {
-            color: #374151;
-            font-weight: 500;
-            font-size: 13px;
-            flex: 1;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .stat-bar {
-            height: 20px;
-            background: #f3f4f6;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .stat-bar-fill {
-            height: 100%;
-            border-radius: 10px;
-            transition: width 0.3s;
-        }
-
-        .stat-bar-fill.green { background: #10b981; }
-        .stat-bar-fill.gray { background: #e5e7eb; }
-        .stat-bar-fill.orange { background: #f59e0b; }
-        .stat-bar-fill.red { background: #ef4444; }
-        .stat-bar-fill.blue { background: #3b82f6; }
-
-        .stat-percent {
-            color: #6b7280;
-            font-size: 13px;
-            text-align: right;
-            font-weight: 500;
-            min-width: 50px;
-        }
-
-        .stat-count {
-            color: #111827;
-            font-size: 16px;
-            font-weight: 700;
-            text-align: right;
-            min-width: 40px;
-        }
 
         /* View Toggles Container */
         .view-toggles-container {
@@ -924,12 +936,13 @@
         }
 
         .view-toggle {
-            padding: 8px 8px;
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
+            padding: 8px 18px;
+            background: transparent;
+            border: 1px solid rgb(215,220,228);
+            border-radius: 20px;
             font-size: 13px;
             font-weight: 600;
+            font-family: Arial, sans-serif;
             color: #6b7280;
             cursor: pointer;
             transition: all 0.2s;
@@ -941,16 +954,18 @@
         }
 
         .view-toggle.active {
-            background: #1f2937;
+            background: transparent;
             color: white;
-            border-color: #1f2937;
+            border: 1px solid rgb(19,26,36);
+            box-shadow: rgba(15,23,42,0.28) 0px 3px 6px 0px, rgba(255,255,255,0.18) 0px 1px 0px 0px inset, rgba(0,0,0,0.28) 0px -3px 5px 0px inset;
         }
 
-        /* Force allocations view buttons to use black when active */
+        /* Force allocations view buttons to match SC's glassy active pill */
         .allocations-view-btn.active {
-            background: #1f2937 !important;
+            background: transparent !important;
             color: white !important;
-            border-color: #1f2937 !important;
+            border: 1px solid rgb(19,26,36) !important;
+            box-shadow: rgba(15,23,42,0.28) 0px 3px 6px 0px, rgba(255,255,255,0.18) 0px 1px 0px 0px inset, rgba(0,0,0,0.28) 0px -3px 5px 0px inset !important;
         }
 
         .filter-pills {
@@ -1272,6 +1287,13 @@
             width: 100%;
         }
 
+        .program-health-comment {
+            font-size: 12px;
+            font-style: italic;
+            color: #64748b;
+            margin: 8px 0 0 0;
+        }
+
         .program-meta-badge {
             padding: 4px 10px;
             border-radius: 6px;
@@ -1308,37 +1330,43 @@
         }
 
         .program-badge {
-            padding: 4px 10px;
+            padding: 3px 10px;
             border-radius: 6px;
-            font-size: 11px;
+            font-size: 9.5px;
             font-weight: 600;
             flex-shrink: 0;
             margin-top: 2px;
+            border: 1px solid transparent;
         }
 
         .badge-on-track {
-            background: #d1fae5;
-            color: #047857;
+            background-image: linear-gradient(rgb(23,162,148) 0%, rgb(13,148,136) 100%);
+            color: white;
+            border-color: rgb(11,132,120);
         }
 
         .badge-watch {
-            background: #fef3c7;
-            color: #d97706;
+            background-image: linear-gradient(rgb(249,171,36) 0%, rgb(245,158,11) 100%);
+            color: white;
+            border-color: rgb(221,140,7);
         }
 
         .badge-blocked {
-            background: #fee2e2;
-            color: #dc2626;
+            background-image: linear-gradient(rgb(225,61,61) 0%, rgb(220,38,38) 100%);
+            color: white;
+            border-color: rgb(192,32,31);
         }
 
         .badge-completed {
-            background: #dbeafe;
-            color: #0176D3;
+            background-image: linear-gradient(rgb(26,136,224) 0%, rgb(1,118,211) 100%);
+            color: white;
+            border-color: rgb(1,102,184);
         }
 
         .badge-not-started {
-            background: #f3f4f6;
-            color: #6b7280;
+            background-image: linear-gradient(rgb(238,241,245) 0%, rgb(216,223,232) 100%);
+            color: rgb(71,85,105);
+            border-color: rgb(196,204,216);
         }
 
         .badge-unknown {
@@ -1457,21 +1485,22 @@
         }
 
         .project-badge {
-            padding: 4px 10px;
+            padding: 3px 10px;
             border-radius: 6px;
-            font-size: 11px;
+            font-size: 9.5px;
             font-weight: 600;
             margin-top: 2px;
             flex-shrink: 0;
+            border: 1px solid transparent;
         }
 
         /* Project Container (Pillbox Style) */
         .project-container {
-            margin: 12px 16px 8px 16px;
+            margin: 8px 20px;
             width: auto;
             max-width: 100%;
             box-sizing: border-box;
-            background: #f9fafb;
+            background: white;
             border: 1px solid #e5e7eb;
             border-radius: 8px;
             overflow: hidden;
@@ -1482,7 +1511,7 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            padding: 12px 16px;
+            padding: 14px 20px;
             background: white;
             cursor: pointer;
             transition: background-color 0.15s;
@@ -1534,11 +1563,12 @@
             align-items: center;
             justify-content: space-between;
             padding: 8px 12px;
-            margin: 0 16px 6px 16px;
+            margin: 0 16px 12px 16px;
             background: white;
             border: 1px solid #e5e7eb;
             border-left: 4px solid #9ca3af; /* Default gray */
-            border-radius: 6px;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
             transition: background-color 0.15s;
             overflow: hidden;
             position: relative;
@@ -1547,7 +1577,7 @@
         /* Epic health status color indicators */
         .epic-row.epic-card-health-blocked,
         .epic-row.epic-card-health-at-risk {
-            border-left-color: #ef4444;
+            border-left-color: #dc2626;
         }
 
         .epic-row.epic-card-health-watch {
@@ -1555,15 +1585,15 @@
         }
 
         .epic-row.epic-card-health-on-track {
-            border-left-color: #10b981;
+            border-left-color: #0d9488;
         }
 
         .epic-row.epic-card-health-completed {
-            border-left-color: #3b82f6;
+            border-left-color: #0176D3;
         }
 
         .epic-row.epic-card-health-not-started {
-            border-left-color: #9ca3af;
+            border-left-color: #cbd5e1;
         }
 
         .epic-row:last-child {
@@ -1576,7 +1606,7 @@
 
         .epic-row .epic-name {
             flex: 1;
-            font-size: 13px;
+            font-size: 14px;
             color: #374151;
             font-weight: 500;
         }
@@ -1592,12 +1622,13 @@
         }
 
         .epic-row .epic-badge {
-            padding: 4px 10px;
+            padding: 3px 10px;
             border-radius: 6px;
-            font-size: 11px;
+            font-size: 9.5px;
             font-weight: 600;
             flex-shrink: 0;
             margin-top: 2px;
+            border: 1px solid transparent;
         }
 
         /* Epic Timeline */
@@ -1644,7 +1675,7 @@
         /* Epic cards fill their swimlane column edge-to-edge instead of the
            full-width row margins used outside the timeline layout. */
         .month-column .epic-row {
-            margin: 0 0 6px 0;
+            margin: 0 0 12px 0;
         }
 
         .month-column .epic-row:last-child {
@@ -1654,10 +1685,10 @@
         .month-header {
             font-size: 13px;
             font-weight: 700;
-            color: #1f2937;
+            color: #475569;
             padding: 12px 16px;
-            background: #dbeafe;
-            border: 2px solid #0176D3;
+            background: #f1f5f9;
+            border: 1px solid #94a3b8;
             border-radius: 8px;
             text-align: center;
             margin-bottom: 12px;
@@ -1932,8 +1963,8 @@
         }
 
         .status-pill {
-            padding: 8px 18px;
-            border-radius: 20px;
+            padding: 4px 10px;
+            border-radius: 6px;
             font-size: 13px;
             font-weight: 600;
             cursor: default;
@@ -1941,34 +1972,40 @@
             border: 1px solid;
         }
 
+        .status-pill.pill-all.active {
+            background: rgb(239,239,239);
+            color: rgb(0,0,0);
+            border-color: rgb(0,0,0);
+        }
+
         .status-pill.pill-on-track {
-            background: #d1fae5;
-            color: #047857;
-            border-color: #10b981;
+            background-image: linear-gradient(rgb(23,162,148) 0%, rgb(13,148,136) 100%);
+            color: white;
+            border-color: rgb(11,132,120);
         }
 
         .status-pill.pill-not-started {
-            background: #f3f4f6;
-            color: #6b7280;
-            border-color: #d1d5db;
+            background-image: linear-gradient(rgb(238,241,245) 0%, rgb(216,223,232) 100%);
+            color: rgb(71,85,105);
+            border-color: rgb(196,204,216);
         }
 
         .status-pill.pill-on-watch {
-            background: #fef3c7;
-            color: #d97706;
-            border-color: #fbbf24;
+            background-image: linear-gradient(rgb(249,171,36) 0%, rgb(245,158,11) 100%);
+            color: white;
+            border-color: rgb(221,140,7);
         }
 
         .status-pill.pill-blocked {
-            background: #fee2e2;
-            color: #dc2626;
-            border-color: #ef4444;
+            background-image: linear-gradient(rgb(225,61,61) 0%, rgb(220,38,38) 100%);
+            color: white;
+            border-color: rgb(192,32,31);
         }
 
         .status-pill.pill-completed {
-            background: #dbeafe;
-            color: #1e40af;
-            border-color: #60a5fa;
+            background-image: linear-gradient(rgb(26,136,224) 0%, rgb(1,118,211) 100%);
+            color: white;
+            border-color: rgb(1,102,184);
         }
 
         .execution-subnav {
@@ -3436,144 +3473,235 @@
         </div><!-- End overflow wrapper -->
     </div>
 
+    {% macro stat_donut_gradient(segments, total) -%}
+    {%- set ns = namespace(cum=0) -%}
+    {%- for color, count in segments -%}
+    {%- set deg = (count / total * 360) if total else 0 -%}
+    {{ color }} {{ '%.2f'|format(ns.cum) }}deg {{ '%.2f'|format(ns.cum + deg) }}deg{% if not loop.last %}, {% endif %}
+    {%- set ns.cum = ns.cum + deg -%}
+    {%- endfor -%}
+    {%- endmacro %}
+
     <!-- Execution Content -->
     <div id="execution-view" class="view-content">
         <!-- Stats Cards -->
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 32px;">
+        <div style="background: linear-gradient(135deg, #e8f1fc 0%, #eef2fb 40%, #f3ecfb 100%); border-radius: 16px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px; margin-bottom: 32px;">
             <!-- Programs Card -->
-            <div style="background: white; border-radius: 12px; padding: 4px 18px; width: 444.328px; height: 206px; box-sizing: content-box; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="programs">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <div style="font-size: 13px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">PROGRAMS</div>
-                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b; height: 38px;">{{ total_execution_programs }}</div>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 4px;">
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #e5e7eb;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #64748b;">Not Assigned</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (health_counts.not_assigned / total_execution_programs * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ health_counts.not_assigned }}</div>
+            <div class="stat-card" data-card="programs">
+                <div class="stat-label">Programs</div>
+                <div class="stat-donut-wrap">
+                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient([
+                        ('#e2e8f0', health_counts.not_assigned),
+                        ('#cbd5e1', health_counts.not_started),
+                        ('#0d9488', health_counts.on_track),
+                        ('#f59e0b', health_counts.watch),
+                        ('#dc2626', health_counts.blocked),
+                        ('#0176D3', health_counts.completed),
+                    ], total_execution_programs) }});">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total">{{ total_execution_programs }}</div>
+                            <div class="stat-donut-label">TOTAL</div>
+                        </div>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #9ca3af;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Not Started</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (health_counts.not_started / total_execution_programs * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ health_counts.not_started }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #10b981;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">On Track</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (health_counts.on_track / total_execution_programs * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ health_counts.on_track }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Watch</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (health_counts.watch / total_execution_programs * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ health_counts.watch }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Blocked</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (health_counts.blocked / total_execution_programs * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ health_counts.blocked }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #3b82f6;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Completed</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (health_counts.completed / total_execution_programs * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ health_counts.completed }}</div>
+                    <div class="stat-rows">
+                        <div class="stat-row" data-status="not_assigned">
+                            <div class="stat-dot" style="background: #e2e8f0;"></div>
+                            <div class="stat-label-text">Not Assigned</div>
+                            <div class="stat-count">{{ health_counts.not_assigned }}</div>
+                            <div class="stat-percent">{{ (health_counts.not_assigned / total_execution_programs * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="not_started">
+                            <div class="stat-dot" style="background: #cbd5e1;"></div>
+                            <div class="stat-label-text">Not Started</div>
+                            <div class="stat-count">{{ health_counts.not_started }}</div>
+                            <div class="stat-percent">{{ (health_counts.not_started / total_execution_programs * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="on_track">
+                            <div class="stat-dot" style="background: #0d9488;"></div>
+                            <div class="stat-label-text">On Track</div>
+                            <div class="stat-count">{{ health_counts.on_track }}</div>
+                            <div class="stat-percent">{{ (health_counts.on_track / total_execution_programs * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="watch">
+                            <div class="stat-dot" style="background: #f59e0b;"></div>
+                            <div class="stat-label-text">Watch</div>
+                            <div class="stat-count">{{ health_counts.watch }}</div>
+                            <div class="stat-percent">{{ (health_counts.watch / total_execution_programs * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="blocked">
+                            <div class="stat-dot" style="background: #dc2626;"></div>
+                            <div class="stat-label-text">Blocked</div>
+                            <div class="stat-count">{{ health_counts.blocked }}</div>
+                            <div class="stat-percent">{{ (health_counts.blocked / total_execution_programs * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="completed">
+                            <div class="stat-dot" style="background: #0176D3;"></div>
+                            <div class="stat-label-text">Completed</div>
+                            <div class="stat-count">{{ health_counts.completed }}</div>
+                            <div class="stat-percent">{{ (health_counts.completed / total_execution_programs * 100)|round|int }}%</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Projects Card -->
-            <div style="background: white; border-radius: 12px; padding: 4px 18px; width: 444.328px; height: 206px; box-sizing: content-box; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="projects">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <div style="font-size: 13px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">PROJECTS</div>
-                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b; height: 38px;">{{ total_projects }}</div>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 4px;">
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #e5e7eb;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #64748b;">Not Assigned</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (project_stats.not_assigned / total_projects * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ project_stats.not_assigned }}</div>
+            <div class="stat-card" data-card="projects">
+                <div class="stat-label">Projects</div>
+                <div class="stat-donut-wrap">
+                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient([
+                        ('#e2e8f0', project_stats.not_assigned),
+                        ('#cbd5e1', project_stats.not_started),
+                        ('#0d9488', project_stats.on_track),
+                        ('#f59e0b', project_stats.watch),
+                        ('#dc2626', project_stats.blocked),
+                        ('#0176D3', project_stats.completed),
+                    ], total_projects) }});">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total">{{ total_projects }}</div>
+                            <div class="stat-donut-label">TOTAL</div>
+                        </div>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #9ca3af;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Not Started</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (project_stats.not_started / total_projects * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ project_stats.not_started }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #10b981;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">On Track</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (project_stats.on_track / total_projects * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ project_stats.on_track }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Watch</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (project_stats.watch / total_projects * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ project_stats.watch }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Blocked</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (project_stats.blocked / total_projects * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ project_stats.blocked }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #3b82f6;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Completed</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (project_stats.completed / total_projects * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ project_stats.completed }}</div>
+                    <div class="stat-rows">
+                        <div class="stat-row" data-status="not_assigned">
+                            <div class="stat-dot" style="background: #e2e8f0;"></div>
+                            <div class="stat-label-text">Not Assigned</div>
+                            <div class="stat-count">{{ project_stats.not_assigned }}</div>
+                            <div class="stat-percent">{{ (project_stats.not_assigned / total_projects * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="not_started">
+                            <div class="stat-dot" style="background: #cbd5e1;"></div>
+                            <div class="stat-label-text">Not Started</div>
+                            <div class="stat-count">{{ project_stats.not_started }}</div>
+                            <div class="stat-percent">{{ (project_stats.not_started / total_projects * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="on_track">
+                            <div class="stat-dot" style="background: #0d9488;"></div>
+                            <div class="stat-label-text">On Track</div>
+                            <div class="stat-count">{{ project_stats.on_track }}</div>
+                            <div class="stat-percent">{{ (project_stats.on_track / total_projects * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="watch">
+                            <div class="stat-dot" style="background: #f59e0b;"></div>
+                            <div class="stat-label-text">Watch</div>
+                            <div class="stat-count">{{ project_stats.watch }}</div>
+                            <div class="stat-percent">{{ (project_stats.watch / total_projects * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="blocked">
+                            <div class="stat-dot" style="background: #dc2626;"></div>
+                            <div class="stat-label-text">Blocked</div>
+                            <div class="stat-count">{{ project_stats.blocked }}</div>
+                            <div class="stat-percent">{{ (project_stats.blocked / total_projects * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="completed">
+                            <div class="stat-dot" style="background: #0176D3;"></div>
+                            <div class="stat-label-text">Completed</div>
+                            <div class="stat-count">{{ project_stats.completed }}</div>
+                            <div class="stat-percent">{{ (project_stats.completed / total_projects * 100)|round|int }}%</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Epics Card -->
-            <div style="background: white; border-radius: 12px; padding: 4px 18px; width: 444.328px; height: 206px; box-sizing: content-box; box-shadow: 0 1px 3px rgba(0,0,0,0.1);" data-card="epics">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <div style="font-size: 13px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">EPICS</div>
-                    <div class="text-3xl" style="font-size: 32px; font-weight: 700; color: #1e293b; height: 38px;">{{ total_epics }}</div>
+            <div class="stat-card" data-card="epics">
+                <div class="stat-label">Epics</div>
+                <div class="stat-donut-wrap">
+                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient([
+                        ('#e2e8f0', epic_stats.not_assigned),
+                        ('#cbd5e1', epic_stats.not_started),
+                        ('#0d9488', epic_stats.on_track),
+                        ('#f59e0b', epic_stats.watch),
+                        ('#dc2626', epic_stats.blocked),
+                        ('#0176D3', epic_stats.completed),
+                    ], total_epics) }});">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total">{{ total_epics }}</div>
+                            <div class="stat-donut-label">TOTAL</div>
+                        </div>
+                    </div>
+                    <div class="stat-rows">
+                        <div class="stat-row" data-status="not_assigned">
+                            <div class="stat-dot" style="background: #e2e8f0;"></div>
+                            <div class="stat-label-text">Not Assigned</div>
+                            <div class="stat-count">{{ epic_stats.not_assigned }}</div>
+                            <div class="stat-percent">{{ (epic_stats.not_assigned / total_epics * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="not_started">
+                            <div class="stat-dot" style="background: #cbd5e1;"></div>
+                            <div class="stat-label-text">Not Started</div>
+                            <div class="stat-count">{{ epic_stats.not_started }}</div>
+                            <div class="stat-percent">{{ (epic_stats.not_started / total_epics * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="on_track">
+                            <div class="stat-dot" style="background: #0d9488;"></div>
+                            <div class="stat-label-text">On Track</div>
+                            <div class="stat-count">{{ epic_stats.on_track }}</div>
+                            <div class="stat-percent">{{ (epic_stats.on_track / total_epics * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="watch">
+                            <div class="stat-dot" style="background: #f59e0b;"></div>
+                            <div class="stat-label-text">Watch</div>
+                            <div class="stat-count">{{ epic_stats.watch }}</div>
+                            <div class="stat-percent">{{ (epic_stats.watch / total_epics * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="blocked">
+                            <div class="stat-dot" style="background: #dc2626;"></div>
+                            <div class="stat-label-text">Blocked</div>
+                            <div class="stat-count">{{ epic_stats.blocked }}</div>
+                            <div class="stat-percent">{{ (epic_stats.blocked / total_epics * 100)|round|int }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="completed">
+                            <div class="stat-dot" style="background: #0176D3;"></div>
+                            <div class="stat-label-text">Completed</div>
+                            <div class="stat-count">{{ epic_stats.completed }}</div>
+                            <div class="stat-percent">{{ (epic_stats.completed / total_epics * 100)|round|int }}%</div>
+                        </div>
+                    </div>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 4px;">
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #e5e7eb;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #64748b;">Not Assigned</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (epic_stats.not_assigned / total_epics * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ epic_stats.not_assigned }}</div>
+            </div>
+
+            <!-- Epics with No Sprint Card -->
+            <div class="stat-card" data-card="epics-no-sprint">
+                <div class="stat-label">Epics with No Sprint
+                    <div class="stat-label-subtitle">Active epics (not completed) with no sprinted stories</div>
+                </div>
+                <div class="stat-donut-wrap">
+                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient([
+                        ('#dc2626', epic_no_sprint_stats.blocked),
+                        ('#f59e0b', epic_no_sprint_stats.watch),
+                        ('#0d9488', epic_no_sprint_stats.on_track),
+                        ('#cbd5e1', epic_no_sprint_stats.not_started),
+                    ], total_epics_no_sprint) }});">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total">{{ total_epics_no_sprint }}</div>
+                            <div class="stat-donut-label">UNSCHEDULED</div>
+                        </div>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #9ca3af;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Not Started</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (epic_stats.not_started / total_epics * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ epic_stats.not_started }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #10b981;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">On Track</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (epic_stats.on_track / total_epics * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ epic_stats.on_track }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Watch</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (epic_stats.watch / total_epics * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ epic_stats.watch }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Blocked</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (epic_stats.blocked / total_epics * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ epic_stats.blocked }}</div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 10px; height: 10px; border-radius: 50%; background: #3b82f6;"></div>
-                        <div style="flex: 1; font-size: 13px; color: #475569;">Completed</div>
-                        <div style="font-size: 13px; color: #94a3b8;">{{ (epic_stats.completed / total_epics * 100)|round|int }}%</div>
-                        <div style="font-size: 14px; font-weight: 600; color: #1e293b; min-width: 32px; text-align: right;">{{ epic_stats.completed }}</div>
+                    <div class="stat-rows">
+                        <div class="stat-row" data-status="blocked">
+                            <div class="stat-dot" style="background: #dc2626;"></div>
+                            <div class="stat-label-text">Blocked</div>
+                            <div class="stat-count">{{ epic_no_sprint_stats.blocked }}</div>
+                            <div class="stat-percent">{{ (epic_no_sprint_stats.blocked / total_epics_no_sprint * 100)|round|int if total_epics_no_sprint else 0 }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="watch">
+                            <div class="stat-dot" style="background: #f59e0b;"></div>
+                            <div class="stat-label-text">Watch</div>
+                            <div class="stat-count">{{ epic_no_sprint_stats.watch }}</div>
+                            <div class="stat-percent">{{ (epic_no_sprint_stats.watch / total_epics_no_sprint * 100)|round|int if total_epics_no_sprint else 0 }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="on_track">
+                            <div class="stat-dot" style="background: #0d9488;"></div>
+                            <div class="stat-label-text">On Track</div>
+                            <div class="stat-count">{{ epic_no_sprint_stats.on_track }}</div>
+                            <div class="stat-percent">{{ (epic_no_sprint_stats.on_track / total_epics_no_sprint * 100)|round|int if total_epics_no_sprint else 0 }}%</div>
+                        </div>
+                        <div class="stat-row" data-status="not_started">
+                            <div class="stat-dot" style="background: #cbd5e1;"></div>
+                            <div class="stat-label-text">Not Started</div>
+                            <div class="stat-count">{{ epic_no_sprint_stats.not_started }}</div>
+                            <div class="stat-percent">{{ (epic_no_sprint_stats.not_started / total_epics_no_sprint * 100)|round|int if total_epics_no_sprint else 0 }}%</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -3581,17 +3709,15 @@
 
         <!-- Needs Attention Banner -->
         {% if show_hygiene_features %}
-        <div id="hygiene-banner" style="display: none; background: #fef3c7; border-left: 4px solid #f59e0b; padding: 16px 20px; border-radius: 8px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 12px;">
-                <span style="font-size: 20px;">⚠️</span>
-                <div style="flex: 1;">
-                    <div style="font-weight: 600; color: #92400e; font-size: 14px; margin-bottom: 4px;">
-                        <span id="hygiene-count">0</span> Epics Need Attention
-                    </div>
-                    <div style="color: #78350f; font-size: 12px;">
-                        Missing data or requiring updates • <a href="#" onclick="toggleHygieneFilter(); return false;" style="color: #d97706; text-decoration: underline;">Filter view</a>
-                    </div>
-                </div>
+        <div id="hygiene-banner" style="display: none; background: #fef3c7; border-left: 4px solid #f59e0b; padding: 10px 20px; border-radius: 8px; margin-bottom: 24px;">
+            <div style="display: flex; align-items: baseline; gap: 8px;">
+                <span style="font-size: 16px;">⚠️</span>
+                <span style="font-weight: 600; color: #92400e; font-size: 14px;">
+                    <span id="hygiene-count">0</span> Epics Need Attention
+                </span>
+                <span style="color: #78350f; font-size: 12px;">
+                    Missing data or requiring updates • <a href="#" onclick="toggleHygieneFilter(); return false;" style="color: #d97706; text-decoration: underline;">Filter view</a>
+                </span>
             </div>
         </div>
         {% endif %}
@@ -3653,6 +3779,11 @@
                     </div>
                     {% endif %}
                 </div>
+                {% if program.health_comments %}
+                <div class="program-health-comment">
+                    Health Comments: {{ program.health_comments|latest_comment }}
+                </div>
+                {% endif %}
             </div>
         </div>
 
@@ -3668,7 +3799,7 @@
                             {% if project.id %}
                             <a href="https://gus.lightning.force.com/lightning/r/agf__ADM_Product__c/{{ project.id }}/view"
                                target="_blank"
-                               style="color: inherit; text-decoration: none; cursor: pointer;"
+                               style="cursor: pointer;"
                                onclick="event.stopPropagation();">
                                 {{ project.name }}
                             </a>
@@ -3730,7 +3861,7 @@
                                             {% if epic.id %}
                                             <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/{{ epic.id }}/view"
                                                target="_blank"
-                                               style="color: inherit; text-decoration: none; cursor: pointer;"
+                                               style="cursor: pointer;"
                                                onclick="event.stopPropagation();">
                                                 {{ epic.name }}
                                             </a>
@@ -3779,7 +3910,7 @@
                                         {% if epic.id %}
                                         <a href="https://gus.lightning.force.com/lightning/r/ADM_Epic__c/{{ epic.id }}/view"
                                            target="_blank"
-                                           style="color: inherit; text-decoration: none; cursor: pointer;"
+                                           style="cursor: pointer;"
                                            onclick="event.stopPropagation();">
                                             {{ epic.name }}
                                         </a>
@@ -10673,170 +10804,6 @@
     
 
 
-<!-- Stats Cards (Service Cloud - HIDDEN for Field Service dashboard) -->
-<div class="stats-grid" style="display: none;">
-    <!-- Programs Card -->
-    <div class="stat-card">
-        <div class="stat-header">
-            <div class="stat-label">PROGRAMS</div>
-            <div class="stat-value">54</div>
-        </div>
-        <div class="stat-rows">
-            
-            <div class="stat-row">
-                <div class="stat-dot gray"></div>
-                <div class="stat-label-text">Not Started</div>
-                <div class="stat-bar"><div class="stat-bar-fill gray" style="width: 4%"></div></div>
-                <div class="stat-percent">4%</div>
-                <div class="stat-count">2</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot green"></div>
-                <div class="stat-label-text">On Track</div>
-                <div class="stat-bar"><div class="stat-bar-fill green" style="width: 81%"></div></div>
-                <div class="stat-percent">81%</div>
-                <div class="stat-count">44</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot orange"></div>
-                <div class="stat-label-text">Watch</div>
-                <div class="stat-bar"><div class="stat-bar-fill orange" style="width: 7%"></div></div>
-                <div class="stat-percent">7%</div>
-                <div class="stat-count">4</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot red"></div>
-                <div class="stat-label-text">Blocked</div>
-                <div class="stat-bar"><div class="stat-bar-fill red" style="width: 2%"></div></div>
-                <div class="stat-percent">2%</div>
-                <div class="stat-count">1</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot blue"></div>
-                <div class="stat-label-text">Completed</div>
-                <div class="stat-bar"><div class="stat-bar-fill blue" style="width: 6%"></div></div>
-                <div class="stat-percent">6%</div>
-                <div class="stat-count">3</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Projects Card -->
-    <div class="stat-card">
-        <div class="stat-header">
-            <div class="stat-label">PROJECTS</div>
-            <div class="stat-value">150</div>
-        </div>
-        <div class="stat-rows">
-            
-            <div class="stat-row">
-                <div class="stat-dot gray"></div>
-                <div class="stat-label-text">Not Started</div>
-                <div class="stat-bar"><div class="stat-bar-fill gray" style="width: 17%"></div></div>
-                <div class="stat-percent">17%</div>
-                <div class="stat-count">25</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot green"></div>
-                <div class="stat-label-text">On Track</div>
-                <div class="stat-bar"><div class="stat-bar-fill green" style="width: 65%"></div></div>
-                <div class="stat-percent">65%</div>
-                <div class="stat-count">98</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot orange"></div>
-                <div class="stat-label-text">Watch</div>
-                <div class="stat-bar"><div class="stat-bar-fill orange" style="width: 5%"></div></div>
-                <div class="stat-percent">5%</div>
-                <div class="stat-count">8</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot red"></div>
-                <div class="stat-label-text">Blocked</div>
-                <div class="stat-bar"><div class="stat-bar-fill red" style="width: 1%"></div></div>
-                <div class="stat-percent">1%</div>
-                <div class="stat-count">2</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot blue"></div>
-                <div class="stat-label-text">Completed</div>
-                <div class="stat-bar"><div class="stat-bar-fill blue" style="width: 6%"></div></div>
-                <div class="stat-percent">6%</div>
-                <div class="stat-count">9</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Epics Card -->
-    <div class="stat-card">
-        <div class="stat-header">
-            <div class="stat-label">EPICS</div>
-            <div class="stat-value">629</div>
-        </div>
-        <div class="stat-rows">
-            
-            <div class="stat-row">
-                <div class="stat-dot gray"></div>
-                <div class="stat-label-text">Not Started</div>
-                <div class="stat-bar"><div class="stat-bar-fill gray" style="width: 22%"></div></div>
-                <div class="stat-percent">22%</div>
-                <div class="stat-count">139</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot green"></div>
-                <div class="stat-label-text">On Track</div>
-                <div class="stat-bar"><div class="stat-bar-fill green" style="width: 59%"></div></div>
-                <div class="stat-percent">59%</div>
-                <div class="stat-count">372</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot orange"></div>
-                <div class="stat-label-text">Watch</div>
-                <div class="stat-bar"><div class="stat-bar-fill orange" style="width: 1%"></div></div>
-                <div class="stat-percent">1%</div>
-                <div class="stat-count">6</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot red"></div>
-                <div class="stat-label-text">Blocked</div>
-                <div class="stat-bar"><div class="stat-bar-fill red" style="width: 0%"></div></div>
-                <div class="stat-percent">0%</div>
-                <div class="stat-count">2</div>
-            </div>
-
-            
-            <div class="stat-row">
-                <div class="stat-dot blue"></div>
-                <div class="stat-label-text">Completed</div>
-                <div class="stat-bar"><div class="stat-bar-fill blue" style="width: 17%"></div></div>
-                <div class="stat-percent">17%</div>
-                <div class="stat-count">109</div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
@@ -12482,7 +12449,7 @@
 
 
                         <div class="month-column" data-month="no-date">
-                            <div class="month-header" style="background: #fef3c7; color: #92400e; border-color: #f59e0b;">Release Month Not Assigned</div>
+                            <div class="month-header">Sprint N/A</div>
 
                             
                             
@@ -14797,25 +14764,48 @@
     <!-- Allocations Content -->
     <!-- Allocations Content -->
     <div id="allocations-view" class="view-content">
-        <!-- Stats Grid -->
-        <div class="stats-grid" style="margin-bottom: 16px;">
-            <div class="stat-card">
-                <div class="stat-header">
-                    <div>
-                        <div class="stat-label">TEAMS</div>
-                        <div class="stat-value">{{ total_teams }}</div>
+        <!-- Portfolio Allocation Donuts (Innovation vs Trust split) -->
+        {% if portfolio_allocations %}
+        <div style="display: grid; grid-template-columns: repeat({{ portfolio_allocations|length }}, minmax(0, 1fr)); gap: 16px; margin-bottom: 16px;">
+            {% for alloc in portfolio_allocations %}
+            <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
+                <div class="stat-label" style="min-height: 52px;">{{ alloc.title }}
+                    <div style="font-weight: 600; color: #64748b; font-size: 13px; margin-top: 2px;">{{ alloc.label }} {{ alloc.year }}</div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px;">
+                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient(alloc.segments, alloc.total) }});">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total" style="font-size: 34px; font-weight: 800; line-height: 34px;">{{ alloc.total|round|int }}</div>
+                            <div class="stat-donut-label">TOTAL SWEs</div>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 382px; min-width: 0;">
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 10px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0;">Portfolio</span>
+                            <span style="flex: none; width: 55px; text-align: right; color: #0176D3;">Innovation</span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #0d9488; margin-left: 6px;">Trust</span>
+                        </div>
+                        {% for row in alloc.rows %}
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid #f1f5f9;{% if loop.first %} border-top: 1px solid #f1f5f9;{% endif %}">
+                            <span style="width: 10px; height: 10px; border-radius: 3px; flex: none; background: {{ row.color }};"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ row.portfolio }}</span>
+                            <span style="flex: none; width: 55px; text-align: right; color: {% if row.innovation %}#1e293b{% else %}#cbd5e1{% endif %}; font-weight: 700; font-size: 12px;">{{ row.innovation|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
+                            <span style="flex: none; width: 40px; text-align: right; color: {% if row.trust %}#0d9488{% else %}#cbd5e1{% endif %}; font-weight: 700; font-size: 12px; margin-left: 6px;">{{ row.trust|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
+                        </div>
+                        {% endfor %}
+                        <div style="display: flex; align-items: center; gap: 10px; margin-top: 8px; padding-top: 8px; border-top: 2px solid #e2e8f0; font-size: 12px;">
+                            <span style="width: 10px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0; color: #64748b; font-weight: 700;">Total</span>
+                            <span style="flex: none; width: 55px; text-align: right; color: #1e293b; font-weight: 800;">{{ alloc.innovation_total|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #0d9488; font-weight: 800; margin-left: 6px;">{{ alloc.trust_total|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="stat-card">
-                <div class="stat-header">
-                    <div>
-                        <div class="stat-label">HEADCOUNT</div>
-                        <div class="stat-value">{{ total_filled }}</div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
+        {% endif %}
 
         <!-- By Team View (default) -->
         <div id="by-team-view" style="padding: 0px;">
@@ -15851,6 +15841,19 @@ function createProgramCard(program) {
                 }
             });
 
+            // Projects/epics inherit visibility from their parent program's portfolio match
+            document.querySelectorAll('#execution-view .project-container').forEach(project => {
+                const program = project.closest('.program-row');
+                const portfolio = program ? program.getAttribute('data-portfolio') : null;
+                project.style.display = (selectedPortfolios.size === 0 || selectedPortfolios.has(portfolio)) ? '' : 'none';
+            });
+
+            document.querySelectorAll('#execution-view .epic-row').forEach(epic => {
+                const program = epic.closest('.program-row');
+                const portfolio = program ? program.getAttribute('data-portfolio') : null;
+                epic.style.display = (selectedPortfolios.size === 0 || selectedPortfolios.has(portfolio)) ? '' : 'none';
+            });
+
             // Filter Allocations tab program rows AND their team sub-rows
             const allocationsRows = document.querySelectorAll('#allocations-view .program-capacity-row');
             allocationsRows.forEach(row => {
@@ -15896,7 +15899,7 @@ function createProgramCard(program) {
             updatePhaseCounts();
 
             // Update Execution stats
-            updateExecutionStats();
+            recalculateStatCards();
 
             // Update Allocations stats
             updateAllocationsStats();
@@ -15945,148 +15948,6 @@ function createProgramCard(program) {
             if (phase3Count) phase3Count.textContent = phase3Cards.length;
         }
 
-        function updateExecutionStats() {
-            // Count visible programs/projects/epics in Execution tab
-            const visiblePrograms = document.querySelectorAll('#execution-view .program-row:not([style*="display: none"])');
-
-            let progOnTrack = 0, progNotStarted = 0, progWatch = 0, progBlocked = 0, progCompleted = 0;
-            let projOnTrack = 0, projNotStarted = 0, projWatch = 0, projBlocked = 0, projCompleted = 0;
-            let epicOnTrack = 0, epicNotStarted = 0, epicWatch = 0, epicBlocked = 0, epicCompleted = 0;
-            let totalProjects = 0, totalEpics = 0;
-
-            visiblePrograms.forEach(progRow => {
-                const progHealth = (progRow.querySelector('.program-badge')?.textContent || '').toLowerCase();
-                if (progHealth.includes('track')) progOnTrack++;
-                else if (progHealth.includes('not started')) progNotStarted++;
-                else if (progHealth.includes('watch') || progHealth.includes('risk')) progWatch++;
-                else if (progHealth.includes('blocked')) progBlocked++;
-                else if (progHealth.includes('completed')) progCompleted++;
-
-                // Count projects in this program
-                progRow.querySelectorAll('.project-row').forEach(projRow => {
-                    totalProjects++;
-                    const projHealth = (projRow.querySelector('.program-badge')?.textContent || '').toLowerCase();
-                    if (projHealth.includes('track')) projOnTrack++;
-                    else if (projHealth.includes('not started')) projNotStarted++;
-                    else if (projHealth.includes('watch') || projHealth.includes('risk')) projWatch++;
-                    else if (projHealth.includes('blocked')) projBlocked++;
-                    else if (projHealth.includes('completed')) projCompleted++;
-
-                    // Count epics in this project
-                    projRow.querySelectorAll('.epic-card').forEach(epicCard => {
-                        totalEpics++;
-                        // Get health from class name (e.g., "health-on-track")
-                        const epicClasses = epicCard.className;
-                        if (epicClasses.includes('health-on-track') || epicClasses.includes('health-green')) epicOnTrack++;
-                        else if (epicClasses.includes('health-not-started') || epicClasses.includes('health-gray')) epicNotStarted++;
-                        else if (epicClasses.includes('health-watch') || epicClasses.includes('health-yellow') || epicClasses.includes('health-at-risk')) epicWatch++;
-                        else if (epicClasses.includes('health-blocked') || epicClasses.includes('health-red')) epicBlocked++;
-                        else if (epicClasses.includes('health-completed') || epicClasses.includes('health-blue')) epicCompleted++;
-                    });
-                });
-            });
-
-            // Update Programs card
-            const progTotal = document.querySelector('#execution-view .stat-card:nth-child(1) .stat-value');
-            if (progTotal) progTotal.textContent = visiblePrograms.length;
-
-            const progNotStartedCount = document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(1) .stat-count');
-            const progOnTrackCount = document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(2) .stat-count');
-            const progWatchCount = document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(3) .stat-count');
-            const progBlockedCount = document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(4) .stat-count');
-            const progCompletedCount = document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(5) .stat-count');
-
-            if (progNotStartedCount) progNotStartedCount.textContent = progNotStarted;
-            if (progOnTrackCount) progOnTrackCount.textContent = progOnTrack;
-            if (progWatchCount) progWatchCount.textContent = progWatch;
-            if (progBlockedCount) progBlockedCount.textContent = progBlocked;
-            if (progCompletedCount) progCompletedCount.textContent = progCompleted;
-
-            // Update percentages and bars
-            const totalProg = visiblePrograms.length;
-            if (totalProg > 0) {
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(1) .stat-percent').textContent = Math.round(progNotStarted / totalProg * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(1) .stat-bar-fill').style.width = Math.round(progNotStarted / totalProg * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(2) .stat-percent').textContent = Math.round(progOnTrack / totalProg * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(2) .stat-bar-fill').style.width = Math.round(progOnTrack / totalProg * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(3) .stat-percent').textContent = Math.round(progWatch / totalProg * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(3) .stat-bar-fill').style.width = Math.round(progWatch / totalProg * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(4) .stat-percent').textContent = Math.round(progBlocked / totalProg * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(4) .stat-bar-fill').style.width = Math.round(progBlocked / totalProg * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(5) .stat-percent').textContent = Math.round(progCompleted / totalProg * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(1) .stat-row:nth-child(5) .stat-bar-fill').style.width = Math.round(progCompleted / totalProg * 100) + '%';
-            }
-
-            // Update Projects card
-            const projTotal = document.querySelector('#execution-view .stat-card:nth-child(2) .stat-value');
-            if (projTotal) projTotal.textContent = totalProjects;
-
-            const projNotStartedCount = document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(1) .stat-count');
-            const projOnTrackCount = document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(2) .stat-count');
-            const projWatchCount = document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(3) .stat-count');
-            const projBlockedCount = document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(4) .stat-count');
-            const projCompletedCount = document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(5) .stat-count');
-
-            if (projNotStartedCount) projNotStartedCount.textContent = projNotStarted;
-            if (projOnTrackCount) projOnTrackCount.textContent = projOnTrack;
-            if (projWatchCount) projWatchCount.textContent = projWatch;
-            if (projBlockedCount) projBlockedCount.textContent = projBlocked;
-            if (projCompletedCount) projCompletedCount.textContent = projCompleted;
-
-            if (totalProjects > 0) {
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(1) .stat-percent').textContent = Math.round(projNotStarted / totalProjects * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(1) .stat-bar-fill').style.width = Math.round(projNotStarted / totalProjects * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(2) .stat-percent').textContent = Math.round(projOnTrack / totalProjects * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(2) .stat-bar-fill').style.width = Math.round(projOnTrack / totalProjects * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(3) .stat-percent').textContent = Math.round(projWatch / totalProjects * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(3) .stat-bar-fill').style.width = Math.round(projWatch / totalProjects * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(4) .stat-percent').textContent = Math.round(projBlocked / totalProjects * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(4) .stat-bar-fill').style.width = Math.round(projBlocked / totalProjects * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(5) .stat-percent').textContent = Math.round(projCompleted / totalProjects * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(2) .stat-row:nth-child(5) .stat-bar-fill').style.width = Math.round(projCompleted / totalProjects * 100) + '%';
-            }
-
-            // Update Epics card
-            const epicTotal = document.querySelector('#execution-view .stat-card:nth-child(3) .stat-value');
-            if (epicTotal) epicTotal.textContent = totalEpics;
-
-            const epicNotStartedCount = document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(1) .stat-count');
-            const epicOnTrackCount = document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(2) .stat-count');
-            const epicWatchCount = document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(3) .stat-count');
-            const epicBlockedCount = document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(4) .stat-count');
-            const epicCompletedCount = document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(5) .stat-count');
-
-            if (epicNotStartedCount) epicNotStartedCount.textContent = epicNotStarted;
-            if (epicOnTrackCount) epicOnTrackCount.textContent = epicOnTrack;
-            if (epicWatchCount) epicWatchCount.textContent = epicWatch;
-            if (epicBlockedCount) epicBlockedCount.textContent = epicBlocked;
-            if (epicCompletedCount) epicCompletedCount.textContent = epicCompleted;
-
-            if (totalEpics > 0) {
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(1) .stat-percent').textContent = Math.round(epicNotStarted / totalEpics * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(1) .stat-bar-fill').style.width = Math.round(epicNotStarted / totalEpics * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(2) .stat-percent').textContent = Math.round(epicOnTrack / totalEpics * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(2) .stat-bar-fill').style.width = Math.round(epicOnTrack / totalEpics * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(3) .stat-percent').textContent = Math.round(epicWatch / totalEpics * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(3) .stat-bar-fill').style.width = Math.round(epicWatch / totalEpics * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(4) .stat-percent').textContent = Math.round(epicBlocked / totalEpics * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(4) .stat-bar-fill').style.width = Math.round(epicBlocked / totalEpics * 100) + '%';
-
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(5) .stat-percent').textContent = Math.round(epicCompleted / totalEpics * 100) + '%';
-                document.querySelector('#execution-view .stat-card:nth-child(3) .stat-row:nth-child(5) .stat-bar-fill').style.width = Math.round(epicCompleted / totalEpics * 100) + '%';
-            }
-        }
 
         function updateAllocationsStats() {
             // Count visible team rows and sum their headcount
@@ -16702,7 +16563,7 @@ function createProgramCard(program) {
 
             // Update Programs stat card
             const programTotal = Object.values(programCounts).reduce((a, b) => a + b, 0);
-            document.querySelector('[data-card="programs"] .text-3xl').textContent = programTotal;
+            document.querySelector('[data-card="programs"] .stat-donut-total').textContent = programTotal;
             updateStatRow('programs', 'not_assigned', programCounts.not_assigned, programTotal);
             updateStatRow('programs', 'not_started', programCounts.not_started, programTotal);
             updateStatRow('programs', 'on_track', programCounts.on_track, programTotal);
@@ -16712,7 +16573,7 @@ function createProgramCard(program) {
 
             // Update Projects stat card
             const projectTotal = Object.values(projectCounts).reduce((a, b) => a + b, 0);
-            document.querySelector('[data-card="projects"] .text-3xl').textContent = projectTotal;
+            document.querySelector('[data-card="projects"] .stat-donut-total').textContent = projectTotal;
             updateStatRow('projects', 'not_assigned', projectCounts.not_assigned, projectTotal);
             updateStatRow('projects', 'not_started', projectCounts.not_started, projectTotal);
             updateStatRow('projects', 'on_track', projectCounts.on_track, projectTotal);
@@ -16722,7 +16583,7 @@ function createProgramCard(program) {
 
             // Update Epics stat card
             const epicTotal = Object.values(epicCounts).reduce((a, b) => a + b, 0);
-            document.querySelector('[data-card="epics"] .text-3xl').textContent = epicTotal;
+            document.querySelector('[data-card="epics"] .stat-donut-total').textContent = epicTotal;
             updateStatRow('epics', 'not_assigned', epicCounts.not_assigned, epicTotal);
             updateStatRow('epics', 'not_started', epicCounts.not_started, epicTotal);
             updateStatRow('epics', 'on_track', epicCounts.on_track, epicTotal);
@@ -16735,22 +16596,11 @@ function createProgramCard(program) {
             const card = document.querySelector(`[data-card="${cardType}"]`);
             if (!card) return;
 
-            const rows = card.querySelectorAll('[style*="display: flex"]');
-            const statusMap = {
-                'not_assigned': 0,
-                'not_started': 1,
-                'on_track': 2,
-                'watch': 3,
-                'blocked': 4,
-                'completed': 5
-            };
-
-            const rowIndex = statusMap[status];
-            if (rowIndex !== undefined && rows[rowIndex]) {
-                const row = rows[rowIndex];
+            const row = card.querySelector(`[data-status="${status}"]`);
+            if (row) {
                 const percentage = total > 0 ? Math.round((count / total) * 100) : 0;
-                const percentDiv = row.querySelector('[style*="color: #94a3b8"]');
-                const countDiv = row.querySelector('[style*="min-width: 32px"]');
+                const percentDiv = row.querySelector('.stat-percent');
+                const countDiv = row.querySelector('.stat-count');
 
                 if (percentDiv) percentDiv.textContent = `${percentage}%`;
                 if (countDiv) countDiv.textContent = count;

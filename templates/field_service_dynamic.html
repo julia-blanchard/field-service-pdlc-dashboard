@@ -14766,7 +14766,7 @@
     <div id="allocations-view" class="view-content">
         <!-- Portfolio Allocation Donuts (Innovation vs Trust split) -->
         {% if portfolio_allocations %}
-        <div style="background-image: linear-gradient(160deg, rgba(100,116,139,0.25) 0%, rgba(100,116,139,0.2) 45%, rgba(100,116,139,0.15) 100%); border-radius: 14px; padding: 16px; margin-bottom: 16px; backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1);">
+        <div style="background: linear-gradient(135deg, #e8f1fc 0%, #eef2fb 40%, #f3ecfb 100%); border-radius: 16px; padding: 20px; margin-bottom: 16px;">
         <div style="display: grid; grid-template-columns: repeat({{ portfolio_allocations|length }}, minmax(0, 1fr)); gap: 16px;">
             {% for alloc in portfolio_allocations %}
             <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
@@ -15183,7 +15183,7 @@
         <h2 style="font-size: 24px; font-weight: 600; color: #e2e8f0; margin-bottom: 20px;">Orphaned Work</h2>
 
         <!-- Stats Grid - 3 donut cards -->
-        <div style="background-image: linear-gradient(160deg, rgba(100,116,139,0.25) 0%, rgba(100,116,139,0.2) 45%, rgba(100,116,139,0.15) 100%); border-radius: 14px; padding: 16px; margin-bottom: 16px; backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1);">
+        <div style="background: linear-gradient(135deg, #e8f1fc 0%, #eef2fb 40%, #f3ecfb 100%); border-radius: 16px; padding: 20px; margin-bottom: 16px;">
         <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;">
             <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
                 <div class="stat-label" style="min-height: 40px;">Orphaned Epics</div>
@@ -15194,15 +15194,21 @@
                             <div class="stat-donut-label">TOTAL</div>
                         </div>
                     </div>
-                    <div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: flex-start; min-width: 0; gap: 6px;">
-                        <div style="font-size: 12px; color: #e2e8f0; font-weight: 600;">By Release:</div>
-                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
-                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #0176D3;"></span>
-                            <span style="color: #cbd5e1;">264: <span id="orphaned-264-count" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                    <div style="flex: 1 1 200px; min-width: 0;">
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 8px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0;">Release</span>
+                            <span style="flex: none; width: 40px; text-align: right;">Count</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
-                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #06b6d4;"></span>
-                            <span style="color: #cbd5e1;">266+: <span id="orphaned-266-count" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9; border-top: 1px solid #f1f5f9;">
+                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0176D3;"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600;">264</span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-264-count">—</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9;">
+                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #06b6d4;"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600;">266+</span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-266-count">—</span>
                         </div>
                     </div>
                 </div>
@@ -15217,15 +15223,21 @@
                             <div class="stat-donut-label">PD</div>
                         </div>
                     </div>
-                    <div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: flex-start; min-width: 0; gap: 6px;">
-                        <div style="font-size: 12px; color: #e2e8f0; font-weight: 600;">By Release:</div>
-                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
-                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #0d9488;"></span>
-                            <span style="color: #cbd5e1;">264: <span id="orphaned-264-capacity" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                    <div style="flex: 1 1 200px; min-width: 0;">
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 8px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0;">Release</span>
+                            <span style="flex: none; width: 40px; text-align: right;">PD</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
-                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #14b8a6;"></span>
-                            <span style="color: #cbd5e1;">266+: <span id="orphaned-266-capacity" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9; border-top: 1px solid #f1f5f9;">
+                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0d9488;"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600;">264</span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-264-capacity">—</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9;">
+                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #14b8a6;"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600;">266+</span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-266-capacity">—</span>
                         </div>
                     </div>
                 </div>
@@ -15240,15 +15252,21 @@
                             <div class="stat-donut-label">TEAMS</div>
                         </div>
                     </div>
-                    <div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: flex-start; min-width: 0; gap: 6px;">
-                        <div style="font-size: 12px; color: #e2e8f0; font-weight: 600;">By Release:</div>
-                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
-                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #f59e0b;"></span>
-                            <span style="color: #cbd5e1;">264: <span id="orphaned-264-teams" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                    <div style="flex: 1 1 200px; min-width: 0;">
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 8px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0;">Release</span>
+                            <span style="flex: none; width: 40px; text-align: right;">Count</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
-                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #fbbf24;"></span>
-                            <span style="color: #cbd5e1;">266+: <span id="orphaned-266-teams" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9; border-top: 1px solid #f1f5f9;">
+                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #f59e0b;"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600;">264</span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-264-teams">—</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9;">
+                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #fbbf24;"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600;">266+</span>
+                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-266-teams">—</span>
                         </div>
                     </div>
                 </div>

@@ -937,9 +937,9 @@
 
         .view-toggle {
             padding: 8px 18px;
-            background: transparent;
-            border: 1px solid rgb(215,220,228);
-            border-radius: 20px;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
             font-size: 13px;
             font-weight: 600;
             font-family: Arial, sans-serif;
@@ -14766,7 +14766,8 @@
     <div id="allocations-view" class="view-content">
         <!-- Portfolio Allocation Donuts (Innovation vs Trust split) -->
         {% if portfolio_allocations %}
-        <div style="display: grid; grid-template-columns: repeat({{ portfolio_allocations|length }}, minmax(0, 1fr)); gap: 16px; margin-bottom: 16px;">
+        <div style="background-image: linear-gradient(160deg, rgba(100,116,139,0.25) 0%, rgba(100,116,139,0.2) 45%, rgba(100,116,139,0.15) 100%); border-radius: 14px; padding: 16px; margin-bottom: 16px; backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1);">
+        <div style="display: grid; grid-template-columns: repeat({{ portfolio_allocations|length }}, minmax(0, 1fr)); gap: 16px;">
             {% for alloc in portfolio_allocations %}
             <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
                 <div class="stat-label" style="min-height: 52px;">{{ alloc.title }}
@@ -14804,6 +14805,7 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
         </div>
         {% endif %}
 
@@ -15178,37 +15180,80 @@
     {% if show_orphaned_tab %}
     <!-- Orphaned Epics Content -->
     <div id="orphaned-view" class="view-content">
-        <h2 style="font-size: 24px; font-weight: 600; color: #e2e8f0; margin-bottom: 8px;">Orphaned Work</h2>
-        <p style="color: #94a3b8; font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
-            Epics missing program or project assignments (264+ releases only). These require PM/leadership intervention to properly nest in the portfolio hierarchy.
-        </p>
+        <h2 style="font-size: 24px; font-weight: 600; color: #e2e8f0; margin-bottom: 20px;">Orphaned Work</h2>
 
-        <!-- Stats Grid - 3 stat cards -->
-        <div class="stats-grid" style="margin-bottom: 16px; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-            <div class="stat-card" style="min-width: 0;">
-                <div class="stat-header">
-                    <div>
-                        <div class="stat-label" style="font-size: 10px;">ORPHANED EPICS</div>
-                        <div class="stat-value" id="orphaned-total" style="font-size: 28px;">—</div>
+        <!-- Stats Grid - 3 donut cards -->
+        <div style="background-image: linear-gradient(160deg, rgba(100,116,139,0.25) 0%, rgba(100,116,139,0.2) 45%, rgba(100,116,139,0.15) 100%); border-radius: 14px; padding: 16px; margin-bottom: 16px; backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1);">
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;">
+            <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
+                <div class="stat-label" style="min-height: 40px;">Orphaned Epics</div>
+                <div style="display: flex; align-items: flex-start; gap: 14px;">
+                    <div class="stat-donut" id="orphaned-epics-donut" style="background: conic-gradient(#0176D3 0deg 360deg);">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total" id="orphaned-total" style="font-size: 34px; font-weight: 800; line-height: 34px;">—</div>
+                            <div class="stat-donut-label">TOTAL</div>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: flex-start; min-width: 0; gap: 6px;">
+                        <div style="font-size: 12px; color: #e2e8f0; font-weight: 600;">By Release:</div>
+                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
+                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #0176D3;"></span>
+                            <span style="color: #cbd5e1;">264: <span id="orphaned-264-count" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
+                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #06b6d4;"></span>
+                            <span style="color: #cbd5e1;">266+: <span id="orphaned-266-count" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="stat-card" style="min-width: 0;">
-                <div class="stat-header">
-                    <div>
-                        <div class="stat-label" style="font-size: 10px;">ORPHANED CAPACITY (PD)</div>
-                        <div class="stat-value" id="orphaned-capacity" style="color: #d97706; font-size: 28px;">—</div>
+
+            <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
+                <div class="stat-label" style="min-height: 40px;">Orphaned Capacity</div>
+                <div style="display: flex; align-items: flex-start; gap: 14px;">
+                    <div class="stat-donut" id="orphaned-capacity-donut" style="background: conic-gradient(#0d9488 0deg 360deg);">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total" id="orphaned-capacity" style="font-size: 34px; font-weight: 800; line-height: 34px;">—</div>
+                            <div class="stat-donut-label">PD</div>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: flex-start; min-width: 0; gap: 6px;">
+                        <div style="font-size: 12px; color: #e2e8f0; font-weight: 600;">By Release:</div>
+                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
+                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #0d9488;"></span>
+                            <span style="color: #cbd5e1;">264: <span id="orphaned-264-capacity" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
+                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #14b8a6;"></span>
+                            <span style="color: #cbd5e1;">266+: <span id="orphaned-266-capacity" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="stat-card" style="min-width: 0;">
-                <div class="stat-header">
-                    <div>
-                        <div class="stat-label" style="font-size: 10px;">TEAMS AFFECTED</div>
-                        <div class="stat-value" id="orphaned-teams" style="font-size: 28px;">—</div>
+
+            <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
+                <div class="stat-label" style="min-height: 40px;">Teams Affected</div>
+                <div style="display: flex; align-items: flex-start; gap: 14px;">
+                    <div class="stat-donut" id="orphaned-teams-donut" style="background: conic-gradient(#f59e0b 0deg 360deg);">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total" id="orphaned-teams" style="font-size: 34px; font-weight: 800; line-height: 34px;">—</div>
+                            <div class="stat-donut-label">TEAMS</div>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: flex-start; min-width: 0; gap: 6px;">
+                        <div style="font-size: 12px; color: #e2e8f0; font-weight: 600;">By Release:</div>
+                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
+                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #f59e0b;"></span>
+                            <span style="color: #cbd5e1;">264: <span id="orphaned-264-teams" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; font-size: 11px;">
+                            <span style="width: 10px; height: 10px; border-radius: 2px; flex: none; background: #fbbf24;"></span>
+                            <span style="color: #cbd5e1;">266+: <span id="orphaned-266-teams" style="color: #e2e8f0; font-weight: 600;">—</span></span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- By Team View -->
@@ -16792,6 +16837,52 @@ function createProgramCard(program) {
             document.getElementById('orphaned-total').textContent = summary.orphaned_epics || 0;
             document.getElementById('orphaned-capacity').textContent = Math.round(summary.orphaned_capacity || 0);
             document.getElementById('orphaned-teams').textContent = summary.unique_teams || 0;
+
+            // Calculate breakdown by release
+            const breakdown264epics = orphanedData.by_release.find(r => r.release === '264')?.epic_count || 0;
+            const breakdown266epics = orphanedData.by_release.find(r => r.release === '266+')?.epic_count || 0;
+            const breakdown264capacity = orphanedData.by_release.find(r => r.release === '264')?.total_capacity || 0;
+            const breakdown266capacity = orphanedData.by_release.find(r => r.release === '266+')?.total_capacity || 0;
+
+            // Calculate unique teams by release
+            const get264Teams = () => {
+                const rel = orphanedData.by_release.find(r => r.release === '264');
+                return rel ? new Set(rel.epics.map(e => e.team).filter(t => t && t !== '-')).size : 0;
+            };
+            const get266Teams = () => {
+                const rel = orphanedData.by_release.find(r => r.release === '266+');
+                return rel ? new Set(rel.epics.map(e => e.team).filter(t => t && t !== '-')).size : 0;
+            };
+            const breakdown264teams = get264Teams();
+            const breakdown266teams = get266Teams();
+
+            // Update breakdown numbers
+            document.getElementById('orphaned-264-count').textContent = breakdown264epics;
+            document.getElementById('orphaned-266-count').textContent = breakdown266epics;
+            document.getElementById('orphaned-264-capacity').textContent = Math.round(breakdown264capacity);
+            document.getElementById('orphaned-266-capacity').textContent = Math.round(breakdown266capacity);
+            document.getElementById('orphaned-264-teams').textContent = breakdown264teams;
+            document.getElementById('orphaned-266-teams').textContent = breakdown266teams;
+
+            // Update donut gradients
+            updateOrphanedDonutGradients(breakdown264epics, breakdown266epics, breakdown264capacity, breakdown266capacity, breakdown264teams, breakdown266teams);
+        }
+
+        function updateOrphanedDonutGradients(c264epics, c266epics, c264cap, c266cap, c264teams, c266teams) {
+            const totalEpics = c264epics + c266epics || 1;
+            const totalCapacity = c264cap + c266cap || 1;
+            const totalTeams = c264teams + c266teams || 1;
+
+            const epic264Pct = (c264epics / totalEpics) * 360;
+            const cap264Pct = (c264cap / totalCapacity) * 360;
+            const team264Pct = (c264teams / totalTeams) * 360;
+
+            document.getElementById('orphaned-epics-donut').style.background =
+                `conic-gradient(#0176D3 0deg ${epic264Pct}deg, #06b6d4 ${epic264Pct}deg 360deg)`;
+            document.getElementById('orphaned-capacity-donut').style.background =
+                `conic-gradient(#0d9488 0deg ${cap264Pct}deg, #14b8a6 ${cap264Pct}deg 360deg)`;
+            document.getElementById('orphaned-teams-donut').style.background =
+                `conic-gradient(#f59e0b 0deg ${team264Pct}deg, #fbbf24 ${team264Pct}deg 360deg)`;
         }
 
         function switchOrphanedView(viewType) {

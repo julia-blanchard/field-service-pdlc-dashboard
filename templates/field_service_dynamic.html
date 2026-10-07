@@ -14767,43 +14767,82 @@
         <!-- Portfolio Allocation Donuts (Innovation vs Trust split) -->
         {% if portfolio_allocations %}
         <div style="background: linear-gradient(135deg, #e8f1fc 0%, #eef2fb 40%, #f3ecfb 100%); border-radius: 16px; padding: 20px; margin-bottom: 16px;">
-        <div style="display: grid; grid-template-columns: repeat({{ portfolio_allocations|length }}, minmax(0, 1fr)); gap: 16px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); gap: 16px;">
             {% for alloc in portfolio_allocations %}
+            {% if alloc.kind == 'unscheduled' %}
             <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
                 <div class="stat-label" style="min-height: 52px;">{{ alloc.title }}
-                    <div style="font-weight: 600; color: #64748b; font-size: 13px; margin-top: 2px;">{{ alloc.label }} {{ alloc.year }}</div>
+                    <div style="font-weight: 600; color: #64748b; font-size: 13px; margin-top: 2px;">{{ alloc.subtitle }}</div>
+                    {% if alloc.note %}<div style="font-weight: 500; color: #94a3b8; font-size: 11px; margin-top: 2px; text-transform: none; letter-spacing: normal;">{{ alloc.note }}</div>{% endif %}
                 </div>
-                <div style="display: flex; align-items: flex-start; gap: 14px;">
-                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient(alloc.segments, alloc.total) }});">
+                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient(alloc.segments, alloc.total) }}); right: 8px;">
                         <div class="stat-donut-hole">
                             <div class="stat-donut-total" style="font-size: 34px; font-weight: 800; line-height: 34px;">{{ alloc.total|round|int }}</div>
                             <div class="stat-donut-label">TOTAL SWEs</div>
                         </div>
                     </div>
-                    <div style="flex: 1 1 382px; min-width: 0;">
-                        <div style="display: flex; align-items: center; gap: 10px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
-                            <span style="width: 10px; flex: none;"></span>
+                    <div style="flex: 1 1 0; min-width: 0;">
+                        <div style="display: flex; align-items: center; gap: 4px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 4px; flex: none;"></span>
                             <span style="flex: 1; min-width: 0;">Portfolio</span>
-                            <span style="flex: none; width: 55px; text-align: right; color: #0176D3;">Innovation</span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #0d9488; margin-left: 6px;">Trust</span>
+                            <span style="flex: none; width: 44px; text-align: center; color: #0176D3;">SWEs</span>
+                            <span style="flex: none; width: 44px; text-align: center; color: #0176D3; margin-left: 4px;">% of total</span>
                         </div>
                         {% for row in alloc.rows %}
-                        <div style="display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid #f1f5f9;{% if loop.first %} border-top: 1px solid #f1f5f9;{% endif %}">
+                        <div style="display: flex; align-items: center; gap: 4px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid #f1f5f9;{% if loop.first %} border-top: 1px solid #f1f5f9;{% endif %}">
                             <span style="width: 10px; height: 10px; border-radius: 3px; flex: none; background: {{ row.color }};"></span>
-                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ row.portfolio }}</span>
-                            <span style="flex: none; width: 55px; text-align: right; color: {% if row.innovation %}#1e293b{% else %}#cbd5e1{% endif %}; font-weight: 700; font-size: 12px;">{{ row.innovation|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
-                            <span style="flex: none; width: 40px; text-align: right; color: {% if row.trust %}#0d9488{% else %}#cbd5e1{% endif %}; font-weight: 700; font-size: 12px; margin-left: 6px;">{{ row.trust|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; margin-right: -32px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="{{ row.portfolio }}">{{ row.portfolio }}</span>
+                            <span style="flex: none; width: 44px; text-align: right; color: #1e293b; font-weight: 700; font-size: 12px;">{{ '%.1f'|format(row.total) }}</span>
+                            <span style="flex: none; width: 44px; text-align: right; color: #94a3b8; font-weight: 600; font-size: 12px; margin-left: 4px;">{{ row.pct }}%</span>
                         </div>
                         {% endfor %}
-                        <div style="display: flex; align-items: center; gap: 10px; margin-top: 8px; padding-top: 8px; border-top: 2px solid #e2e8f0; font-size: 12px;">
+                        <div style="display: flex; align-items: center; gap: 4px; margin-top: 8px; padding-top: 8px; border-top: 2px solid #e2e8f0; font-size: 12px;">
                             <span style="width: 10px; flex: none;"></span>
                             <span style="flex: 1; min-width: 0; color: #64748b; font-weight: 700;">Total</span>
-                            <span style="flex: none; width: 55px; text-align: right; color: #1e293b; font-weight: 800;">{{ alloc.innovation_total|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #0d9488; font-weight: 800; margin-left: 6px;">{{ alloc.trust_total|round|int }}<span style="font-size: 11px; font-weight: 600; color: #94a3b8; margin-left: 4px;">SWEs</span></span>
+                            <span style="flex: none; width: 44px; text-align: right; color: #1e293b; font-weight: 800;">{{ alloc.total|round|int }}</span>
+                            <span style="flex: none; width: 44px; margin-left: 4px;"></span>
                         </div>
                     </div>
                 </div>
             </div>
+            {% else %}
+            <div class="stat-card" style="width: auto; height: auto; min-width: 0;">
+                <div class="stat-label" style="min-height: 52px;">{{ alloc.title }}
+                    <div style="font-weight: 600; color: #64748b; font-size: 13px; margin-top: 2px;">{{ alloc.label }} {{ alloc.year }}</div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 8px;">
+                    <div class="stat-donut" style="background: conic-gradient({{ stat_donut_gradient(alloc.segments, alloc.total) }}); right: 8px;">
+                        <div class="stat-donut-hole">
+                            <div class="stat-donut-total" style="font-size: 34px; font-weight: 800; line-height: 34px;">{{ alloc.total|round|int }}</div>
+                            <div class="stat-donut-label">TOTAL SWEs</div>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 0; min-width: 0;">
+                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 4px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0;">Portfolio</span>
+                            <span style="flex: none; width: 62px; text-align: right; color: #0176D3;">Innovation</span>
+                            <span style="flex: none; width: 36px; text-align: right; color: #0d9488; margin-left: 4px;">Trust</span>
+                        </div>
+                        {% for row in alloc.rows %}
+                        <div style="display: flex; align-items: center; gap: 4px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid #f1f5f9;{% if loop.first %} border-top: 1px solid #f1f5f9;{% endif %}">
+                            <span style="width: 10px; height: 10px; border-radius: 3px; flex: none; background: {{ row.color }};"></span>
+                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; margin-right: -40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="{{ row.portfolio }}">{{ row.portfolio }}</span>
+                            <span style="flex: none; width: 62px; text-align: right; color: {% if row.innovation %}#1e293b{% else %}#cbd5e1{% endif %}; font-weight: 700; font-size: 12px;">{{ row.innovation|round|int }}</span>
+                            <span style="flex: none; width: 36px; text-align: right; color: {% if row.trust %}#0d9488{% else %}#cbd5e1{% endif %}; font-weight: 700; font-size: 12px; margin-left: 4px;">{{ row.trust|round|int }}</span>
+                        </div>
+                        {% endfor %}
+                        <div style="display: flex; align-items: center; gap: 4px; margin-top: 8px; padding-top: 8px; border-top: 2px solid #e2e8f0; font-size: 12px;">
+                            <span style="width: 10px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0; color: #64748b; font-weight: 700;">Total</span>
+                            <span style="flex: none; width: 62px; text-align: right; color: #1e293b; font-weight: 800;">{{ alloc.innovation_total|round|int }}</span>
+                            <span style="flex: none; width: 36px; text-align: right; color: #0d9488; font-weight: 800; margin-left: 4px;">{{ alloc.trust_total|round|int }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
             {% endfor %}
         </div>
         </div>
@@ -15194,21 +15233,12 @@
                         </div>
                     </div>
                     <div style="flex: 1 1 200px; min-width: 0;">
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
-                            <span style="width: 8px; flex: none;"></span>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 10px; flex: none;"></span>
                             <span style="flex: 1; min-width: 0;">Team</span>
-                            <span style="flex: none; width: 40px; text-align: right;">Count</span>
+                            <span style="flex: none; width: 55px; text-align: right;">Count</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9; border-top: 1px solid #f1f5f9;">
-                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0176D3;"></span>
-                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" id="orphaned-team-1-name">—</span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-team-1-count">—</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9;">
-                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0d9488;"></span>
-                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" id="orphaned-team-2-name">—</span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-team-2-count">—</span>
-                        </div>
+                        <div id="orphaned-epics-legend"></div>
                     </div>
                 </div>
             </div>
@@ -15223,21 +15253,12 @@
                         </div>
                     </div>
                     <div style="flex: 1 1 200px; min-width: 0;">
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
-                            <span style="width: 8px; flex: none;"></span>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 10px; flex: none;"></span>
                             <span style="flex: 1; min-width: 0;">Team</span>
-                            <span style="flex: none; width: 40px; text-align: right;">PD</span>
+                            <span style="flex: none; width: 55px; text-align: right;">PD</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9; border-top: 1px solid #f1f5f9;">
-                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0d9488;"></span>
-                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" id="orphaned-cap-team-1-name">—</span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-cap-team-1-pd">—</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9;">
-                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0d9488;"></span>
-                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" id="orphaned-cap-team-2-name">—</span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-cap-team-2-pd">—</span>
-                        </div>
+                        <div id="orphaned-capacity-legend"></div>
                     </div>
                 </div>
             </div>
@@ -15252,21 +15273,12 @@
                         </div>
                     </div>
                     <div style="flex: 1 1 200px; min-width: 0;">
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
-                            <span style="width: 8px; flex: none;"></span>
-                            <span style="flex: 1; min-width: 0;">Team</span>
-                            <span style="flex: none; width: 40px; text-align: right;">Count</span>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 4px 0 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">
+                            <span style="width: 10px; flex: none;"></span>
+                            <span style="flex: 1; min-width: 0;">Eng Manager</span>
+                            <span style="flex: none; width: 55px; text-align: right;">Teams</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9; border-top: 1px solid #f1f5f9;">
-                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0176D3;"></span>
-                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" id="orphaned-team-affected-1-name">—</span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-team-affected-1-count">—</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 11px; border-bottom: 1px solid #f1f5f9;">
-                            <span style="width: 8px; height: 8px; border-radius: 2px; flex: none; background: #0d9488;"></span>
-                            <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" id="orphaned-team-affected-2-name">—</span>
-                            <span style="flex: none; width: 40px; text-align: right; color: #1e293b; font-weight: 700;" id="orphaned-team-affected-2-count">—</span>
-                        </div>
+                        <div id="orphaned-teams-legend"></div>
                     </div>
                 </div>
             </div>
@@ -16774,11 +16786,17 @@ function createProgramCard(program) {
                     btn.classList.toggle('active', btn.dataset.release === currentOrphanedRelease);
                 });
 
-                renderOrphanedView('by-team');
+                try {
+                    renderOrphanedView('by-team');
+                } catch (renderError) {
+                    console.error('Error rendering orphaned view:', renderError);
+                    document.getElementById('orphaned-team-tbody').innerHTML =
+                        '<tr><td colspan="6" style="padding: 40px; text-align: center; color: #64748b;">Table data loading - check console for details</td></tr>';
+                }
             } catch (error) {
                 console.error('Error loading orphaned data:', error);
                 document.getElementById('orphaned-team-tbody').innerHTML =
-                    '<tr><td colspan="6" style="padding: 40px; text-align: center; color: #dc2626;">Error loading orphaned epics data</td></tr>';
+                    '<tr><td colspan="6" style="padding: 40px; text-align: center; color: #dc2626;">Error: ' + error.message + '</td></tr>';
             }
         }
 
@@ -16855,54 +16873,69 @@ function createProgramCard(program) {
             document.getElementById('orphaned-capacity').textContent = Math.round(summary.orphaned_capacity || 0);
             document.getElementById('orphaned-teams').textContent = summary.unique_teams || 0;
 
-            // Calculate breakdown by release
-            const breakdown264epics = orphanedData.by_release.find(r => r.release === '264')?.epic_count || 0;
-            const breakdown266epics = orphanedData.by_release.find(r => r.release === '266+')?.epic_count || 0;
-            const breakdown264capacity = orphanedData.by_release.find(r => r.release === '264')?.total_capacity || 0;
-            const breakdown266capacity = orphanedData.by_release.find(r => r.release === '266+')?.total_capacity || 0;
+            // Roll up the (release-filtered) epics by team, and teams by Engineering Manager
+            const emByTeam = {};
+            orphanedData.by_team.forEach(t => { emByTeam[t.name] = t.engineering_manager || 'Unassigned'; });
+            const teamStats = {};
+            filteredEpics.forEach(epic => {
+                if (!epic.team || epic.team === '-') return;
+                const t = teamStats[epic.team] || (teamStats[epic.team] = { name: epic.team, epics: 0, capacity: 0 });
+                t.epics += 1;
+                t.capacity += epic.story_points || 0;
+            });
+            const teamList = Object.values(teamStats);
+            const emStats = {};
+            teamList.forEach(t => {
+                const em = emByTeam[t.name] || 'Unassigned';
+                emStats[em] = emStats[em] || { name: em, teams: 0 };
+                emStats[em].teams += 1;
+            });
 
-            // Calculate unique teams by release
-            const get264Teams = () => {
-                const rel = orphanedData.by_release.find(r => r.release === '264');
-                return rel ? new Set(rel.epics.map(e => e.team).filter(t => t && t !== '-')).size : 0;
-            };
-            const get266Teams = () => {
-                const rel = orphanedData.by_release.find(r => r.release === '266+');
-                return rel ? new Set(rel.epics.map(e => e.team).filter(t => t && t !== '-')).size : 0;
-            };
-            const breakdown264teams = get264Teams();
-            const breakdown266teams = get266Teams();
-
-            // Update breakdown numbers
-            document.getElementById('orphaned-264-count').textContent = breakdown264epics;
-            document.getElementById('orphaned-266-count').textContent = breakdown266epics;
-            document.getElementById('orphaned-264-capacity').textContent = Math.round(breakdown264capacity);
-            document.getElementById('orphaned-266-capacity').textContent = Math.round(breakdown266capacity);
-            document.getElementById('orphaned-264-teams').textContent = breakdown264teams;
-            document.getElementById('orphaned-266-teams').textContent = breakdown266teams;
-
-            // Team population deferred - legend cells show placeholder dashes for now
-
-            // Update donut gradients
-            updateOrphanedDonutGradients(breakdown264epics, breakdown266epics, breakdown264capacity, breakdown266capacity, breakdown264teams, breakdown266teams);
+            renderOrphanedBreakdown('epics', teamList.map(t => ({ name: t.name, value: t.epics })), 'team');
+            renderOrphanedBreakdown('capacity', teamList.map(t => ({ name: t.name, value: t.capacity })), 'team');
+            renderOrphanedBreakdown('teams', Object.values(emStats).map(e => ({ name: e.name, value: e.teams })), 'manager');
         }
 
-        function updateOrphanedDonutGradients(c264epics, c266epics, c264cap, c266cap, c264teams, c266teams) {
-            const totalEpics = c264epics + c266epics || 1;
-            const totalCapacity = c264cap + c266cap || 1;
-            const totalTeams = c264teams + c266teams || 1;
+        // First 7 of DONUT_COLORS in app.py (Allocations tab donuts): the blue/teal/purple
+        // family. The red/green/amber tail is left out so many-slice donuts don't stray from it.
+        const ORPHANED_PALETTE = ['#0176D3', '#0d9488', '#4f46e5', '#0ea5e9', '#7c3aed',
+                                  '#0891b2', '#6366f1'];
+        const ORPHANED_OTHER = '#cbd5e1';
 
-            const epic264Pct = (c264epics / totalEpics) * 360;
-            const cap264Pct = (c264cap / totalCapacity) * 360;
-            const team264Pct = (c264teams / totalTeams) * 360;
+        // One donut slice per item (top 7 colored, the rest rolled into "Other"), legend rows match the slices
+        function renderOrphanedBreakdown(card, items, noun) {
+            const donut = document.getElementById(`orphaned-${card}-donut`);
+            const legend = document.getElementById(`orphaned-${card}-legend`);
+            const sorted = items.filter(i => i.value > 0).sort((a, b) => b.value - a.value);
+            const total = sorted.reduce((sum, i) => sum + i.value, 0);
+            const top = sorted.slice(0, ORPHANED_PALETTE.length);
+            const rest = sorted.slice(ORPHANED_PALETTE.length);
+            const rows = top.map((item, i) => ({ ...item, color: ORPHANED_PALETTE[i] }));
+            if (rest.length) {
+                rows.push({
+                    name: `Other (${rest.length} ${noun}${rest.length === 1 ? '' : 's'})`,
+                    value: rest.reduce((sum, i) => sum + i.value, 0),
+                    color: ORPHANED_OTHER
+                });
+            }
 
-            // Use Allocations palette: Innovation (#0176D3 blue) and Trust (#0d9488 teal)
-            document.getElementById('orphaned-epics-donut').style.background =
-                `conic-gradient(#0176D3 0deg ${epic264Pct}deg, #0d9488 ${epic264Pct}deg 360deg)`;
-            document.getElementById('orphaned-capacity-donut').style.background =
-                `conic-gradient(#0176D3 0deg ${cap264Pct}deg, #0d9488 ${cap264Pct}deg 360deg)`;
-            document.getElementById('orphaned-teams-donut').style.background =
-                `conic-gradient(#0176D3 0deg ${team264Pct}deg, #0d9488 ${team264Pct}deg 360deg)`;
+            if (donut) {
+                let angle = 0;
+                const stops = rows.map(r => {
+                    const start = angle;
+                    angle += (r.value / total) * 360;
+                    return `${r.color} ${start}deg ${angle}deg`;
+                });
+                donut.style.background = total ? `conic-gradient(${stops.join(', ')})` : 'conic-gradient(#e2e8f0 0deg 360deg)';
+            }
+            if (legend) {
+                legend.innerHTML = rows.map((r, i) => `
+                    <div style="display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid #f1f5f9;${i === 0 ? ' border-top: 1px solid #f1f5f9;' : ''}">
+                        <span style="width: 10px; height: 10px; border-radius: 3px; flex: none; background: ${r.color};"></span>
+                        <span style="flex: 1; min-width: 0; color: #334155; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${r.name}">${r.name}</span>
+                        <span style="flex: none; width: 55px; text-align: right; color: #1e293b; font-weight: 700; font-size: 12px;">${Math.round(r.value)}</span>
+                    </div>`).join('');
+            }
         }
 
         function switchOrphanedView(viewType) {

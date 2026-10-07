@@ -1005,7 +1005,7 @@ def index():
 
             rows = [
                 {
-                    'portfolio': portfolio.replace('264 Field Service', '264 FS'),
+                    'portfolio': portfolio.replace('264 Field Service', '264 FS').replace('FY27 ', ''),
                     'innovation': round(data['innovation'], 1),
                     'trust': round(data['trust'], 1),
                     'total': round(data['innovation'] + data['trust'], 1),
@@ -1036,6 +1036,53 @@ def index():
                 'total': round(grand_total, 1),
                 'innovation_total': round(sum(r['innovation'] for r in rows), 1),
                 'trust_total': round(sum(r['trust'] for r in rows), 1),
+            })
+
+    # 4th donut: unscheduled (no sprint) work by portfolio. Points -> SWEs using
+    # each team's velocity (points delivered per filled SWE per month over the
+    # last 90 days). Teams with no velocity or no filled headcount can't be
+    # converted, so their points are excluded and called out in the subtitle.
+    unscheduled_file = os.path.join(os.path.dirname(__file__), 'data', 'unscheduled_allocation.json')
+    try:
+        with open(unscheduled_file, 'r') as f:
+            unscheduled_alloc = json.load(f)
+    except (OSError, ValueError):
+        unscheduled_alloc = None
+    if unscheduled_alloc and unscheduled_alloc.get('teams'):
+        window_months = unscheduled_alloc.get('velocity_window_days', 90) / 30
+        teams_by_name = {t['name']: t for t in teams}
+        unscheduled_totals = defaultdict(float)
+        excluded_points = 0
+        for team_name, data in unscheduled_alloc['teams'].items():
+            filled = teams_by_name.get(team_name, {}).get('filled', 0)
+            velocity_per_swe = (data['delivered_90d'] / window_months / filled) if filled else 0
+            for program, points in data['unscheduled_by_program'].items():
+                if not velocity_per_swe:
+                    excluded_points += points
+                    continue
+                portfolio = program_lookup.get(program, {}).get('portfolio') or 'Unmapped'
+                unscheduled_totals[portfolio] += points / velocity_per_swe
+
+        rows = [
+            {'portfolio': portfolio.replace('264 Field Service', '264 FS').replace('FY27 ', ''), 'total': round(swes, 1)}
+            for portfolio, swes in unscheduled_totals.items()
+            if portfolio != 'Unmapped' and not portfolio.startswith('264') and swes > 0
+        ]
+        rows.sort(key=lambda r: r['total'], reverse=True)
+        grand_total = sum(r['total'] for r in rows)
+        for i, row in enumerate(rows):
+            row['color'] = DONUT_COLORS[i % len(DONUT_COLORS)]
+            row['pct'] = round(row['total'] / grand_total * 100, 1) if grand_total else 0
+        if rows:
+            portfolio_allocations.append({
+                'kind': 'unscheduled',
+                'title': 'Unscheduled SWE Allocations by Portfolio',
+                'subtitle': 'No sprint · all statuses',
+                'note': (f"Excludes {round(excluded_points):,} PD of unscheduled work on teams with "
+                         "no measured velocity or filled headcount") if excluded_points else '',
+                'rows': rows,
+                'segments': [(r['color'], r['total']) for r in rows],
+                'total': round(grand_total, 1),
             })
 
     return render_template('field_service_dynamic.html',

@@ -1,0 +1,196 @@
+{
+  "generated": "2026-10-06T17:38:00.519477",
+  "velocity_window_days": 90,
+  "teams": {
+    "SFS Mobile Assets": {
+      "unscheduled_by_program": {
+        "264 Field Service: Workforce Scheduling on Mobile": 48.0,
+        "262 Field Service: Mobile Worker Satisfaction": 17.0,
+        "264 Field Service: Trust": 15.0,
+        "[266] Mobile Trust": 26.0
+      },
+      "delivered_90d": 868
+    },
+    "SFS Mobile Location and DC": {
+      "unscheduled_by_program": {
+        "262 Field Service Trust": 91.0,
+        "262 Field Service: Native GIS": 5.0,
+        "264 Field Service: Customer Trust": 14.0,
+        "[266] Mobile Trust": 3.0
+      },
+      "delivered_90d": 494
+    },
+    "SFS Mobile Services": {
+      "unscheduled_by_program": {
+        "FS 260 Mobile: Performance Priming": 2.0,
+        "264 Field Service: Workforce Scheduling on Mobile": 6.0,
+        "262 Field Service: Performance Priming": 3.0,
+        "[264] Field Service: Headless (aka Codey)": 2.0,
+        "Performance Priming 100% Adoption": 89.0,
+        "[266] Quality Automation Uplift": 12.0,
+        "[266] Mobile Trust": 45.0
+      },
+      "delivered_90d": 549
+    },
+    "SFS Mobile GX": {
+      "unscheduled_by_program": {
+        "264 Field Service: Workforce Scheduling on Mobile": 60.0,
+        "262 Field Service Trust": 5.0,
+        "FS 262: Unified: Mobile for Industries (AGX)": 23.0,
+        "[266] Guided Experience": 124.0,
+        "[266] Mobile Trust": 44.0
+      },
+      "delivered_90d": 487
+    },
+    "FSL - Resource - Scheduling Platform": {
+      "unscheduled_by_program": {
+        "262 Field Service Trust": 22.0,
+        "FS 262: S&O: Unified on Core": 24.0,
+        "FS 260 Trust: S&O": 3.0,
+        "FS 264: S&O Trust": 18.0
+      },
+      "delivered_90d": 550
+    },
+    "SFS Mobile Core Experience": {
+      "unscheduled_by_program": {
+        "262 Field Service: Customer Adoption": 25.0,
+        "264 Field Service: Workforce Scheduling on Mobile": 16.0,
+        "[264] Field Service: Headless (aka Codey)": 21.0,
+        "[266] Mobile Trust": 7.0
+      },
+      "delivered_90d": 414
+    },
+    "SFS Mobile - Quality": {
+      "unscheduled_by_program": {
+        "SFS Mobile Quality": 67.0
+      },
+      "delivered_90d": 4
+    },
+    "FSL - Resource - Dispatch Console": {
+      "unscheduled_by_program": {
+        "FS 262: S&O: Dispatch Experience 2.0": 11.0,
+        "[266] S&O Scheduling Console": 2.0
+      },
+      "delivered_90d": 223
+    },
+    "FSL - Resource - Scheduling Intelligence": {
+      "unscheduled_by_program": {
+        "FS 264: S&O: Workforce Labor Optimization": 15.0,
+        "FS 264: S&O Trust": 3.0
+      },
+      "delivered_90d": 217
+    },
+    "FSL - Asset - 360": {
+      "unscheduled_by_program": {
+        "264 Scheduling Flows": 3.0,
+        "262 Field Service Foundations: Assets": 5.0,
+        "[266] Assets": 76.0
+      },
+      "delivered_90d": 910
+    },
+    "SFS - WFM - Worker - Experience": {
+      "unscheduled_by_program": {
+        "[264] Unified Workforce Management (UWM)": 3.0
+      },
+      "delivered_90d": 358
+    },
+    "SFS Core Scheduler": {
+      "unscheduled_by_program": {
+        "Salesforce Field Service 258: Trust": 15.0,
+        "266 WFS Operations Console": 10.0
+      },
+      "delivered_90d": 490
+    },
+    "SFS Setup Experience": {
+      "unscheduled_by_program": {
+        "Salesforce Field Service 258: Trust": 5.0,
+        "[266] Mobile Trust": 4.0
+      },
+      "delivered_90d": 87
+    },
+    "SFS Frontline AI": {
+      "unscheduled_by_program": {
+        "[266] Mobile AI & Voice to Form": 172.0,
+        "[266] Project Felix to Pilot": 7.0,
+        "[266] Quality Automation Uplift": 35.0,
+        "[266] Mobile Trust": 33.0
+      },
+      "delivered_90d": 480
+    },
+    "FSL - Foundation - Apps": {
+      "unscheduled_by_program": {
+        "Public Sector Solutions": 1.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 8.0
+      },
+      "delivered_90d": 551
+    },
+    "FSL - Foundation - Corecodiles": {
+      "unscheduled_by_program": {
+        "[266] S&O Dispatch Agent": 9.0,
+        "[266] S&O Trust": 31.0
+      },
+      "delivered_90d": 369.5
+    },
+    "FSL - Talpiot - Dispatch Console": {
+      "unscheduled_by_program": {
+        "[266] S&O Scheduling Console": 7.0
+      },
+      "delivered_90d": 525
+    },
+    "Optimization Engineering": {
+      "unscheduled_by_program": {
+        "[266] S&O Trust": 3.0,
+        "[266] S&O Optimization Platform": 13.0,
+        "[266] S&O Dispatch Agent": 12.0
+      },
+      "delivered_90d": 727
+    },
+    "FSL - Resource - Scheduling Orcas": {
+      "unscheduled_by_program": {
+        "[266] S&O Trust": 5.0
+      },
+      "delivered_90d": 737
+    },
+    "SFS Mobile Platform DX": {
+      "unscheduled_by_program": {
+        "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 34.0,
+        "[266] Mobile Trust": 221.0,
+        "[266] Quality Automation Uplift": 5.0,
+        "[266] Low Connectivity and Performance": 5.0
+      },
+      "delivered_90d": 481
+    },
+    "FSL - Resource - Scheduling Hawks": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 658
+    },
+    "FSL - Foundation - Atlas": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 693
+    },
+    "QuantumForce": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 411
+    },
+    "FSE - Core": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 29
+    },
+    "MomentumForce": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 575.5
+    },
+    "SynergyForce": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 12
+    },
+    "FSL - Operations - Intelligence": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 278
+    },
+    "FSL - Core - Foundations": {
+      "unscheduled_by_program": {},
+      "delivered_90d": 85
+    }
+  }
+}

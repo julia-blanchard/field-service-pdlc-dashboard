@@ -60,6 +60,9 @@ def shorten_portfolio_label(portfolio):
 env = Environment(loader=FileSystemLoader('templates'))
 env.filters['format_month'] = format_month_header
 env.filters['shorten_portfolio'] = shorten_portfolio_label
+# Imported rather than copied so it can't drift from app.py again
+from app import extract_latest_comment
+env.filters['latest_comment'] = extract_latest_comment
 template = env.get_template('field_service_dynamic.html')
 
 # Prepare data for template
@@ -215,6 +218,8 @@ html = template.render(
     health_counts=health_counts,
     project_stats=project_stats,
     epic_stats=epic_stats,
+    epic_no_sprint_stats=exec_data.get('epic_no_sprint_stats') or {'on_track': 0, 'watch': 0, 'blocked': 0, 'not_started': 0},
+    total_epics_no_sprint=exec_data.get('total_epics_no_sprint', 0),
     teams=teams,
     total_teams=total_teams,
     total_filled=total_filled,

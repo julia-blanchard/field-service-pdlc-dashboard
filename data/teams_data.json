@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T14:17:53.294107",
+  "last_updated": "2026-10-10T20:38:04.587395",
   "teams": [
     {
       "name": "FSE - Core",
@@ -94,10 +94,10 @@
       "september_committed": 117,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 161,
-      "october_work_items": 49,
+      "october_committed": 160,
+      "october_work_items": 48,
       "october_committed_by_program": {
-        "Unmapped": 40.0,
+        "Unmapped": 39.0,
         "264 Scheduling Flows": 12.0,
         "[266] Assets": 101.0,
         "266 WFS Onsite, Infield, Hybrid Scheduling": 8.0
@@ -954,10 +954,10 @@
       "september_committed": 64,
       "september_work_items": 72,
       "october_capacity_limit": 158.4,
-      "october_committed": 101,
-      "october_work_items": 38,
+      "october_committed": 100,
+      "october_work_items": 37,
       "october_committed_by_program": {
-        "Unmapped": 84.0,
+        "Unmapped": 83.0,
         "FS 264: S&O Trust": 17.0
       },
       "august_delivered": 150,
@@ -1196,11 +1196,11 @@
       "september_committed": 106,
       "september_work_items": 93,
       "october_capacity_limit": 176.0,
-      "october_committed": 114,
-      "october_work_items": 52,
+      "october_committed": 118,
+      "october_work_items": 57,
       "october_committed_by_program": {
         "Unmapped": 27.0,
-        "[266] S&O Trust": 62.0,
+        "[266] S&O Trust": 66.0,
         "[266] S&O Optimization Platform": 13.0,
         "[266] S&O Dispatch Agent": 12.0
       },
@@ -1215,10 +1215,10 @@
         "[266] S&O Optimization Platform": 9.0
       },
       "november_capacity_limit": 176.0,
-      "november_committed": 32,
-      "november_work_items": 24,
+      "november_committed": 33,
+      "november_work_items": 25,
       "november_committed_by_program": {
-        "[266] S&O Trust": 24.0,
+        "[266] S&O Trust": 25.0,
         "Unmapped": 8.0
       },
       "september_delivered": 197,
@@ -1703,13 +1703,13 @@
         "264 Field Service: Workforce Scheduling on Mobile": 14.0
       },
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 142,
-      "october_work_items": 52,
+      "october_committed": 145,
+      "october_work_items": 53,
       "october_committed_by_program": {
         "264 Field Service: Workforce Scheduling on Mobile": 33.0,
-        "[266] Guided Experience": 72.0,
-        "Unmapped": 26.0,
-        "[266] Mobile Trust": 11.0
+        "[266] Guided Experience": 69.0,
+        "[266] Mobile Trust": 17.0,
+        "Unmapped": 26.0
       },
       "november_capacity_limit": 105.60000000000002,
       "november_committed": 0,
@@ -1786,11 +1786,11 @@
       "september_committed": 42,
       "september_work_items": 81,
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 74,
-      "october_work_items": 26,
+      "october_committed": 75,
+      "october_work_items": 27,
       "october_committed_by_program": {
         "264 Field Service: Customer Trust": 18.0,
-        "[266] Mobile Trust": 18.0,
+        "[266] Mobile Trust": 19.0,
         "Unmapped": 35.0,
         "[266] Quality Automation Uplift": 3.0
       },
@@ -1926,12 +1926,12 @@
       "september_committed": 68,
       "september_work_items": 67,
       "october_capacity_limit": 140.8,
-      "october_committed": 100,
-      "october_work_items": 38,
+      "october_committed": 95,
+      "october_work_items": 37,
       "october_committed_by_program": {
         "Unmapped": 60.0,
         "[266] Low Connectivity and Performance": 15.0,
-        "[266] Mobile Trust": 18.0,
+        "[266] Mobile Trust": 13.0,
         "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 7.0
       },
       "august_delivered": 171,
@@ -2071,12 +2071,12 @@
       "september_committed": 123,
       "september_work_items": 102,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 400,
-      "october_work_items": 132,
+      "october_committed": 407,
+      "october_work_items": 135,
       "october_committed_by_program": {
-        "Unmapped": 213.0,
-        "[266] Mobile Trust": 74.0,
-        "Performance Priming 100% Adoption": 76.0,
+        "Unmapped": 215.0,
+        "[266] Mobile Trust": 76.0,
+        "Performance Priming 100% Adoption": 79.0,
         "264 Field Service: Workforce Scheduling on Mobile": 20.0,
         "[266] Quality Automation Uplift": 17.0
       },

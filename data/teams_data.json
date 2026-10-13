@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T12:03:51.985472",
+  "last_updated": "2026-10-13T14:00:46.040353",
   "teams": [
     {
       "name": "FSE - Core",
@@ -132,7 +132,7 @@
         "264 Field Service Workforce Scheduling"
       ],
       "engineering_manager": "Anand Komarraju",
-      "product_owner": "Christopher Battles",
+      "product_owner": "Limor Rohald",
       "capacity_delivered_june": 49.0,
       "work_items_closed_june": 13,
       "capacity_committed_july": 70.0,
@@ -324,10 +324,10 @@
       "september_committed": 51,
       "september_work_items": 102,
       "october_capacity_limit": 88.0,
-      "october_committed": 274,
-      "october_work_items": 75,
+      "october_committed": 276,
+      "october_work_items": 76,
       "october_committed_by_program": {
-        "Unmapped": 274.0
+        "Unmapped": 276.0
       },
       "august_delivered": 200,
       "august_delivered_by_program": {
@@ -1202,10 +1202,10 @@
       "september_committed": 106,
       "september_work_items": 93,
       "october_capacity_limit": 176.0,
-      "october_committed": 194,
-      "october_work_items": 90,
+      "october_committed": 185,
+      "october_work_items": 87,
       "october_committed_by_program": {
-        "Unmapped": 50.0,
+        "Unmapped": 41.0,
         "[266] S&O Trust": 83.0,
         "[266] S&O Dispatch Agent": 27.0,
         "[266] S&O Optimization Platform": 34.0
@@ -1372,11 +1372,11 @@
       "september_committed": 103,
       "september_work_items": 62,
       "october_capacity_limit": 193.60000000000002,
-      "october_committed": 157,
-      "october_work_items": 63,
+      "october_committed": 159,
+      "october_work_items": 64,
       "october_committed_by_program": {
         "Salesforce Field Service 258: Trust": 46.0,
-        "Unmapped": 8.0,
+        "Unmapped": 10.0,
         "266 WFS Operations Console": 103.0
       },
       "august_delivered": 130,
@@ -1554,10 +1554,10 @@
       "september_committed": 137,
       "september_work_items": 131,
       "october_capacity_limit": 140.8,
-      "october_committed": 70,
-      "october_work_items": 31,
+      "october_committed": 73,
+      "october_work_items": 32,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 20.0,
+        "[266] Mobile Trust": 23.0,
         "Unmapped": 50.0
       },
       "august_delivered": 240,
@@ -1712,13 +1712,13 @@
         "264 Field Service: Workforce Scheduling on Mobile": 14.0
       },
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 132,
-      "october_work_items": 46,
+      "october_committed": 129,
+      "october_work_items": 45,
       "october_committed_by_program": {
         "264 Field Service: Workforce Scheduling on Mobile": 32.0,
         "[266] Guided Experience": 56.0,
         "[266] Mobile Trust": 15.0,
-        "Unmapped": 29.0
+        "Unmapped": 26.0
       },
       "november_capacity_limit": 105.60000000000002,
       "november_committed": 0,
@@ -1935,14 +1935,14 @@
       "september_committed": 68,
       "september_work_items": 67,
       "october_capacity_limit": 140.8,
-      "october_committed": 85,
-      "october_work_items": 35,
+      "october_committed": 81,
+      "october_work_items": 34,
       "october_committed_by_program": {
-        "Unmapped": 64.0,
+        "[266] Mobile Trust": 5.0,
+        "Unmapped": 63.0,
         "[266] Low Connectivity and Performance": 4.0,
         "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 7.0,
-        "[266] Quality Automation Uplift": 2.0,
-        "[266] Mobile Trust": 8.0
+        "[266] Quality Automation Uplift": 2.0
       },
       "august_delivered": 171,
       "august_delivered_by_program": {
@@ -2167,10 +2167,11 @@
       "september_committed": 13,
       "september_work_items": 9,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 4,
-      "october_work_items": 2,
+      "october_committed": 10,
+      "october_work_items": 4,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 4.0
+        "[266] Mobile Trust": 9.0,
+        "Unmapped": 1.0
       },
       "august_delivered": 22,
       "august_delivered_by_program": {
@@ -2245,10 +2246,10 @@
       "september_committed": 39,
       "september_work_items": 32,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 358,
+      "october_committed": 356,
       "october_work_items": 79,
       "october_committed_by_program": {
-        "Unmapped": 352.0,
+        "Unmapped": 350.0,
         "[264] Unified Workforce Management (UWM)": 6.0
       },
       "august_delivered": 133,

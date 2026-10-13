@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 955,
-    "teams_affected": 76,
+    "total_epics_needing_attention": 966,
+    "teams_affected": 77,
     "programs_affected": 71,
     "issue_breakdown": {
-      "missing_scheduled_build": 270,
-      "missing_priority": 544,
+      "missing_scheduled_build": 269,
+      "missing_priority": 545,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 874
+      "missing_planned_release": 885
     }
   },
   "epics": [
@@ -8381,7 +8381,7 @@
       "epic_id": "a3QEE000002T7D32AK",
       "epic_name": "Intake Assistant Agent",
       "epic_name_key": "Intake Assistant Agent",
-      "team": "-",
+      "team": "NPC Asteroids",
       "owner": "Meg Gray",
       "health": "Unknown",
       "scheduled_build": "266",
@@ -12077,17 +12077,16 @@
       "epic_id": "a3QEE000002hVNZ2A2",
       "epic_name": "WFS - 266 - Actions limited by Status Transition in the Console",
       "epic_name_key": "WFS - 266 - Actions limited by Status Transition in the Console",
-      "team": "SFS Core Scheduler",
+      "team": "FSL - Foundation - Corecodiles",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12478,6 +12477,24 @@
       "project": "266 WFS Infield & Onsite Hybrid",
       "issues": [
         "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002kiph2AA",
+      "epic_name": "266 - Virtual appointments support for WFS",
+      "epic_name_key": "266 - Virtual appointments support for WFS",
+      "team": "FSL - Asset - 360",
+      "owner": "Neerja Rewal",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "project": "266 WFS Infield & Onsite Hybrid",
+      "issues": [
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12912,7 +12929,7 @@
       "story_points": 0,
       "program": "[266] S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
-      "project": "S&O Scheduling Agent - Help Agent",
+      "project": "S&O Scheduling Agent - Help Agent (Research)",
       "issues": [
         "missing_planned_release"
       ]
@@ -13037,7 +13054,7 @@
       "story_points": 0,
       "program": "[266] S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
-      "project": "S&O Scheduling Agent HXL",
+      "project": "S&O Scheduling Agent HXL (Research)",
       "issues": [
         "missing_planned_release"
       ]
@@ -13048,7 +13065,7 @@
       "epic_name_key": "[264] SFS [AF] Transparency - Core Logic",
       "team": "FSL - Foundation - Corecodiles",
       "owner": "Sigal Shapira",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.7",
       "priority": 15,
       "story_points": 0,
@@ -13154,7 +13171,7 @@
       "epic_name_key": "[264] SFS [AF] Employee migration to agent script [Fill Gaps]",
       "team": "FSL - Foundation - Corecodiles",
       "owner": "Avi Inbar",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.7",
       "priority": 25,
       "story_points": 0,
@@ -14047,6 +14064,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002boSv2AI",
+      "epic_name": "[266] Auto-reply bot to Support team for Bundler service",
+      "epic_name_key": "[266] Auto-reply bot to Support team for Bundler service",
+      "team": "SynergyForce Dev",
+      "owner": "Sumit Jaiswal",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 200,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002ep2f2AA",
       "epic_name": "[266][Trust][Scheduling Intelligence]",
       "epic_name_key": "[266][Trust][Scheduling Intelligence]",
@@ -14149,6 +14183,23 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002bzHt2AI",
+      "epic_name": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q3 QAR",
+      "epic_name_key": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q3 QAR",
+      "team": "MomentumForce",
+      "owner": "Navneet Gehlot",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 290,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Compliance",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002a6qX2AQ",
       "epic_name": "266 SFS [Infra] Tech Debts / Queue job based separation / GitEMU Migration",
       "epic_name_key": "266 SFS [Infra] Tech Debts / Queue job based separation / GitEMU Migration",
@@ -14166,6 +14217,57 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002cBUL2A2",
+      "epic_name": "*[266] QuantumForce - Workspace improvements",
+      "epic_name_key": "*[266] QuantumForce - Workspace improvements",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 300,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002cC5R2AU",
+      "epic_name": "*[266] QuantumForce - Brainforce",
+      "epic_name_key": "*[266] QuantumForce - Brainforce",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "Completed",
+      "scheduled_build": "266",
+      "priority": 400,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002cOjJ2AU",
+      "epic_name": "*[266] QuantumForce -Support Bot",
+      "epic_name_key": "*[266] QuantumForce -Support Bot",
+      "team": "QuantumForce",
+      "owner": "Sara Amar",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 400,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Developer Experience & DoD Debt",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002a71p2AA",
       "epic_name": "266 SFS [Infra] Deployment Releases, Patches, 3PPs, Warden etc.",
       "epic_name_key": "266 SFS [Infra] Deployment Releases, Patches, 3PPs, Warden etc.",
@@ -14174,6 +14276,91 @@
       "health": "On Track",
       "scheduled_build": "266",
       "priority": 20,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002b8wj2AA",
+      "epic_name": "*[1.8.17][266][PBS] Spectrum Upgrade to 25.1 for PBS Services",
+      "epic_name_key": "*[1.8.17][266][PBS] Spectrum Upgrade to 25.1 for PBS Services",
+      "team": "MomentumForce",
+      "owner": "Jigyansoo Das",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 240,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002b8yL2AQ",
+      "epic_name": "*[1.8.8][266][PBS] COIN 85 PBSMatch",
+      "epic_name_key": "*[1.8.8][266][PBS] COIN 85 PBSMatch",
+      "team": "MomentumForce",
+      "owner": "Jigyansoo Das",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 250,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002b8zx2AA",
+      "epic_name": "*[1.8.14][266][PBS] June and August Dataset Upgrades",
+      "epic_name_key": "*[1.8.14][266][PBS] June and August Dataset Upgrades",
+      "team": "MomentumForce",
+      "owner": "Jigyansoo Das",
+      "health": "Completed",
+      "scheduled_build": "266",
+      "priority": 260,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002bmAz2AI",
+      "epic_name": "*[8.9.1][266][SFS]Warden AIOps (Causation + Auto Remediation )",
+      "epic_name_key": "*[8.9.1][266][SFS]Warden AIOps (Causation + Auto Remediation )",
+      "team": "MomentumForce",
+      "owner": "Shubham Gupta",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 270,
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002bxzF2AQ",
+      "epic_name": "*[8.9.6][266][FSL] LS TFS to Git EMU Migration",
+      "epic_name_key": "*[8.9.6][266][FSL] LS TFS to Git EMU Migration",
+      "team": "MomentumForce",
+      "owner": "Vikas Prajapat",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": 280,
       "story_points": 0,
       "program": "[266] S&O Trust",
       "portfolio": "FY27 FS S&O",
@@ -16935,7 +17122,7 @@
       "story_points": 0,
       "program": "[266] Assets",
       "portfolio": "FY27 FS Foundations",
-      "project": "[266] Asset-Centric Dispatch View",
+      "project": "[266] Asset-Centric Dispatch View (Research)",
       "issues": [
         "missing_scheduled_build",
         "missing_priority",
@@ -16954,7 +17141,7 @@
       "story_points": 0,
       "program": "[266] Assets",
       "portfolio": "FY27 FS Foundations",
-      "project": "[266] Asset-Centric Dispatch View",
+      "project": "[266] Asset-Centric Dispatch View (Research)",
       "issues": [
         "missing_scheduled_build",
         "missing_priority",
@@ -16973,7 +17160,7 @@
       "story_points": 0,
       "program": "[266] Assets",
       "portfolio": "FY27 FS Foundations",
-      "project": "[266] Asset-Centric Dispatch View",
+      "project": "[266] Asset-Centric Dispatch View (Research)",
       "issues": [
         "missing_scheduled_build",
         "missing_priority",
@@ -16984,7 +17171,7 @@
   "by_team": [
     {
       "name": "-",
-      "epic_count": 32,
+      "epic_count": 31,
       "epics": [
         {
           "epic_id": "a3QEE000002f0692AA",
@@ -17168,24 +17355,6 @@
           "project": "Program Management",
           "issues": [
             "missing_scheduled_build",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002T7D32AK",
-          "epic_name": "Intake Assistant Agent",
-          "epic_name_key": "Intake Assistant Agent",
-          "team": "-",
-          "owner": "Meg Gray",
-          "health": "Unknown",
-          "scheduled_build": "266",
-          "priority": "-",
-          "story_points": 0,
-          "program": "Nonprofit Impact",
-          "portfolio": "Industries Cloud",
-          "project": "Program Management",
-          "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -17539,7 +17708,7 @@
           "story_points": 0,
           "program": "[266] Assets",
           "portfolio": "FY27 FS Foundations",
-          "project": "[266] Asset-Centric Dispatch View",
+          "project": "[266] Asset-Centric Dispatch View (Research)",
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
@@ -17558,7 +17727,7 @@
           "story_points": 0,
           "program": "[266] Assets",
           "portfolio": "FY27 FS Foundations",
-          "project": "[266] Asset-Centric Dispatch View",
+          "project": "[266] Asset-Centric Dispatch View (Research)",
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
@@ -17577,7 +17746,7 @@
           "story_points": 0,
           "program": "[266] Assets",
           "portfolio": "FY27 FS Foundations",
-          "project": "[266] Asset-Centric Dispatch View",
+          "project": "[266] Asset-Centric Dispatch View (Research)",
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
@@ -17924,7 +18093,7 @@
     },
     {
       "name": "FSL - Asset - 360",
-      "epic_count": 27,
+      "epic_count": 28,
       "epics": [
         {
           "epic_id": "a3QEE000002aqi52AA",
@@ -18311,6 +18480,24 @@
           "project": "266 WFS Infield & Onsite Hybrid",
           "issues": [
             "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002kiph2AA",
+          "epic_name": "266 - Virtual appointments support for WFS",
+          "epic_name_key": "266 - Virtual appointments support for WFS",
+          "team": "FSL - Asset - 360",
+          "owner": "Neerja Rewal",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Infield & Onsite Hybrid",
+          "issues": [
             "missing_priority",
             "missing_planned_release"
           ]
@@ -19100,7 +19287,7 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 17,
+      "epic_count": 18,
       "epics": [
         {
           "epic_id": "a3QEE000002GSNN2A4",
@@ -19326,12 +19513,30 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002hVNZ2A2",
+          "epic_name": "WFS - 266 - Actions limited by Status Transition in the Console",
+          "epic_name_key": "WFS - 266 - Actions limited by Status Transition in the Console",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Limor Rohald",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Operations Console",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Operations Console",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002GKHl2AO",
           "epic_name": "[264] SFS [AF] Transparency - Core Logic",
           "epic_name_key": "[264] SFS [AF] Transparency - Core Logic",
           "team": "FSL - Foundation - Corecodiles",
           "owner": "Sigal Shapira",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.7",
           "priority": 15,
           "story_points": 0,
@@ -19348,7 +19553,7 @@
           "epic_name_key": "[264] SFS [AF] Employee migration to agent script [Fill Gaps]",
           "team": "FSL - Foundation - Corecodiles",
           "owner": "Avi Inbar",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.7",
           "priority": 25,
           "story_points": 0,
@@ -21798,7 +22003,7 @@
           "story_points": 0,
           "program": "[266] S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Agent - Help Agent",
+          "project": "S&O Scheduling Agent - Help Agent (Research)",
           "issues": [
             "missing_planned_release"
           ]
@@ -21866,7 +22071,7 @@
           "story_points": 0,
           "program": "[266] S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Agent HXL",
+          "project": "S&O Scheduling Agent HXL (Research)",
           "issues": [
             "missing_planned_release"
           ]
@@ -24200,7 +24405,7 @@
     },
     {
       "name": "MomentumForce",
-      "epic_count": 14,
+      "epic_count": 20,
       "epics": [
         {
           "epic_id": "a3QEE000001otOv2AI",
@@ -24425,6 +24630,108 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002bzHt2AI",
+          "epic_name": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q3 QAR",
+          "epic_name_key": "* [8.9.10] [264] [FSE][FSL][V8] FY 2027 Q3 QAR",
+          "team": "MomentumForce",
+          "owner": "Navneet Gehlot",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 290,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Compliance",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002b8wj2AA",
+          "epic_name": "*[1.8.17][266][PBS] Spectrum Upgrade to 25.1 for PBS Services",
+          "epic_name_key": "*[1.8.17][266][PBS] Spectrum Upgrade to 25.1 for PBS Services",
+          "team": "MomentumForce",
+          "owner": "Jigyansoo Das",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 240,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002b8yL2AQ",
+          "epic_name": "*[1.8.8][266][PBS] COIN 85 PBSMatch",
+          "epic_name_key": "*[1.8.8][266][PBS] COIN 85 PBSMatch",
+          "team": "MomentumForce",
+          "owner": "Jigyansoo Das",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 250,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002b8zx2AA",
+          "epic_name": "*[1.8.14][266][PBS] June and August Dataset Upgrades",
+          "epic_name_key": "*[1.8.14][266][PBS] June and August Dataset Upgrades",
+          "team": "MomentumForce",
+          "owner": "Jigyansoo Das",
+          "health": "Completed",
+          "scheduled_build": "266",
+          "priority": 260,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bmAz2AI",
+          "epic_name": "*[8.9.1][266][SFS]Warden AIOps (Causation + Auto Remediation )",
+          "epic_name_key": "*[8.9.1][266][SFS]Warden AIOps (Causation + Auto Remediation )",
+          "team": "MomentumForce",
+          "owner": "Shubham Gupta",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 270,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002bxzF2AQ",
+          "epic_name": "*[8.9.6][266][FSL] LS TFS to Git EMU Migration",
+          "epic_name_key": "*[8.9.6][266][FSL] LS TFS to Git EMU Migration",
+          "team": "MomentumForce",
+          "owner": "Vikas Prajapat",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 280,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002bloP2AQ",
           "epic_name": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
           "epic_name_key": "*[8.9.9][266] Non-Hyperforce Security bugs/Host vulnerabilities/Wiz/Cloud Misc",
@@ -24445,7 +24752,7 @@
     },
     {
       "name": "NPC Asteroids",
-      "epic_count": 44,
+      "epic_count": 45,
       "epics": [
         {
           "epic_id": "a3QEE000000pBFx2AM",
@@ -25098,6 +25405,24 @@
           "project": "Program Management",
           "issues": [
             "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002T7D32AK",
+          "epic_name": "Intake Assistant Agent",
+          "epic_name_key": "Intake Assistant Agent",
+          "team": "NPC Asteroids",
+          "owner": "Meg Gray",
+          "health": "Unknown",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "Nonprofit Impact",
+          "portfolio": "Industries Cloud",
+          "project": "Program Management",
+          "issues": [
             "missing_priority",
             "missing_planned_release"
           ]
@@ -26672,7 +26997,7 @@
     },
     {
       "name": "QuantumForce",
-      "epic_count": 18,
+      "epic_count": 21,
       "epics": [
         {
           "epic_id": "a3QEE000001oyJl2AI",
@@ -26978,6 +27303,57 @@
           "program": "264 Field Service Trust",
           "portfolio": "FY27 FS Trust",
           "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002cBUL2A2",
+          "epic_name": "*[266] QuantumForce - Workspace improvements",
+          "epic_name_key": "*[266] QuantumForce - Workspace improvements",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 300,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002cC5R2AU",
+          "epic_name": "*[266] QuantumForce - Brainforce",
+          "epic_name_key": "*[266] QuantumForce - Brainforce",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "Completed",
+          "scheduled_build": "266",
+          "priority": 400,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Developer Experience & DoD Debt",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002cOjJ2AU",
+          "epic_name": "*[266] QuantumForce -Support Bot",
+          "epic_name_key": "*[266] QuantumForce -Support Bot",
+          "team": "QuantumForce",
+          "owner": "Sara Amar",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 400,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Developer Experience & DoD Debt",
           "issues": [
             "missing_planned_release"
           ]
@@ -27604,7 +27980,7 @@
     },
     {
       "name": "SFS Core Scheduler",
-      "epic_count": 45,
+      "epic_count": 44,
       "epics": [
         {
           "epic_id": "a3QEE000002MYBZ2A4",
@@ -28241,25 +28617,6 @@
           "epic_id": "a3QEE000002hVLx2AM",
           "epic_name": "WFS - 266 - In-jeopardy indication",
           "epic_name_key": "WFS - 266 - In-jeopardy indication",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "-",
-          "priority": "-",
-          "story_points": 0,
-          "program": "266 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "266 WFS Operations Console",
-          "issues": [
-            "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVNZ2A2",
-          "epic_name": "WFS - 266 - Actions limited by Status Transition in the Console",
-          "epic_name_key": "WFS - 266 - Actions limited by Status Transition in the Console",
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
@@ -34055,6 +34412,29 @@
           "program": "Salesforce Field Service 258: Trust",
           "portfolio": "Salesforce Field Service 258 Theme:  Trust",
           "project": "All Clouds - Compliance",
+          "issues": [
+            "missing_planned_release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SynergyForce Dev",
+      "epic_count": 1,
+      "epics": [
+        {
+          "epic_id": "a3QEE000002boSv2AI",
+          "epic_name": "[266] Auto-reply bot to Support team for Bundler service",
+          "epic_name_key": "[266] Auto-reply bot to Support team for Bundler service",
+          "team": "SynergyForce Dev",
+          "owner": "Sumit Jaiswal",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": 200,
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Application Production Support",
           "issues": [
             "missing_planned_release"
           ]

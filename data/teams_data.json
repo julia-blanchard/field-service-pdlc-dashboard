@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T14:48:58.573000",
+  "last_updated": "2026-10-13T12:03:51.985472",
   "teams": [
     {
       "name": "FSE - Core",
@@ -10,7 +10,7 @@
         "264 Field Service Foundations"
       ],
       "engineering_manager": "Yehudit Dermer",
-      "product_owner": "Amit Mizrahi",
+      "product_owner": "Yaron Telem",
       "august_capacity_limit": 17.6,
       "august_delivered": 13,
       "august_work_items": 6,
@@ -94,13 +94,13 @@
       "september_committed": 117,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 169,
-      "october_work_items": 48,
+      "october_committed": 224,
+      "october_work_items": 67,
       "october_committed_by_program": {
-        "Unmapped": 42.0,
-        "264 Scheduling Flows": 11.0,
-        "[266] Assets": 108.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 8.0
+        "Unmapped": 84.0,
+        "264 Scheduling Flows": 17.0,
+        "[266] Assets": 111.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 12.0
       },
       "august_delivered": 286,
       "august_delivered_by_program": {
@@ -114,8 +114,9 @@
       "september_delivered": 364,
       "september_delivered_by_program": {
         "264 Scheduling Flows": 183.0,
-        "Unmapped": 179.0,
-        "[266] Assets": 2.0
+        "Unmapped": 139.0,
+        "[266] Assets": 2.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 40.0
       },
       "december_capacity_limit": 158.4,
       "december_committed": 0,
@@ -241,11 +242,11 @@
       "september_committed": 76,
       "september_work_items": 73,
       "october_capacity_limit": 158.4,
-      "october_committed": 111,
-      "october_work_items": 38,
+      "october_committed": 113,
+      "october_work_items": 39,
       "october_committed_by_program": {
-        "Unmapped": 74.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 37.0
+        "Unmapped": 70.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 43.0
       },
       "august_delivered": 168,
       "august_delivered_by_program": {
@@ -323,10 +324,10 @@
       "september_committed": 51,
       "september_work_items": 102,
       "october_capacity_limit": 88.0,
-      "october_committed": 275,
-      "october_work_items": 76,
+      "october_committed": 274,
+      "october_work_items": 75,
       "october_committed_by_program": {
-        "Unmapped": 275.0
+        "Unmapped": 274.0
       },
       "august_delivered": 200,
       "august_delivered_by_program": {
@@ -361,6 +362,7 @@
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O",
         "FY27 FS Trust",
+        "FY27 FS Workforce Scheduling",
         "Field Service 260 Trust",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
@@ -415,13 +417,14 @@
       "september_committed": 7,
       "september_work_items": 81,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 59,
-      "october_work_items": 27,
+      "october_committed": 61,
+      "october_work_items": 28,
       "october_committed_by_program": {
+        "[266] S&O Trust": 46.0,
         "Unmapped": 5.0,
-        "[266] S&O Trust": 47.0,
-        "[266] S&O Dispatch Agent": 5.0,
-        "FS 264: S&O: The New Scheduling Console": 2.0
+        "[266] S&O Dispatch Agent": 6.0,
+        "FS 264: S&O: The New Scheduling Console": 2.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 2.0
       },
       "august_delivered": 116.0,
       "august_delivered_by_program": {
@@ -504,10 +507,10 @@
       "september_committed": 57,
       "september_work_items": 35,
       "october_capacity_limit": 176.0,
-      "october_committed": 394,
-      "october_work_items": 92,
+      "october_committed": 389,
+      "october_work_items": 91,
       "october_committed_by_program": {
-        "Unmapped": 394.0
+        "Unmapped": 389.0
       },
       "august_delivered": 72,
       "august_delivered_by_program": {
@@ -590,10 +593,10 @@
       "september_committed": 4,
       "september_work_items": 17,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 2,
-      "october_work_items": 1,
+      "october_committed": 9,
+      "october_work_items": 2,
       "october_committed_by_program": {
-        "Unmapped": 2.0
+        "Unmapped": 9.0
       },
       "august_delivered": 119,
       "august_delivered_by_program": {
@@ -669,10 +672,10 @@
       "september_committed": 116,
       "september_work_items": 52,
       "october_capacity_limit": 158.4,
-      "october_committed": 30,
-      "october_work_items": 6,
+      "october_committed": 26,
+      "october_work_items": 8,
       "october_committed_by_program": {
-        "Unmapped": 30.0
+        "Unmapped": 26.0
       },
       "august_delivered": 167,
       "august_delivered_by_program": {
@@ -762,14 +765,14 @@
       "september_committed": 58,
       "september_work_items": 11,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 117,
-      "october_work_items": 30,
+      "october_committed": 125,
+      "october_work_items": 32,
       "october_committed_by_program": {
+        "[266] S&O Trust": 35.0,
         "Unmapped": 45.0,
         "FS 264: S&O: Agentic S&O": 8.0,
         "FS 264: S&O Trust": 18.0,
-        "[266] S&O Optimization Platform": 19.0,
-        "[266] S&O Trust": 27.0
+        "[266] S&O Optimization Platform": 19.0
       },
       "august_delivered": 23,
       "august_delivered_by_program": {
@@ -857,11 +860,11 @@
       "september_committed": 69,
       "september_work_items": 50,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 101,
-      "october_work_items": 27,
+      "october_committed": 94,
+      "october_work_items": 28,
       "october_committed_by_program": {
         "[266] S&O Trust": 41.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 47.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 40.0,
         "FS 264: S&O Trust": 4.0,
         "[266] S&O Scheduling Agent": 9.0
       },
@@ -956,11 +959,12 @@
       "september_committed": 64,
       "september_work_items": 72,
       "october_capacity_limit": 158.4,
-      "october_committed": 110,
-      "october_work_items": 38,
+      "october_committed": 105,
+      "october_work_items": 37,
       "october_committed_by_program": {
-        "Unmapped": 100.0,
-        "FS 264: S&O Trust": 8.0,
+        "Unmapped": 93.0,
+        "[266] S&O Trust": 0.0,
+        "FS 264: S&O Trust": 10.0,
         "264 Infield": 2.0
       },
       "august_delivered": 150,
@@ -971,10 +975,10 @@
         "264 Field Service Trust": 1.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 30,
-      "november_work_items": 3,
+      "november_committed": 37,
+      "november_work_items": 6,
       "november_committed_by_program": {
-        "Unmapped": 30.0
+        "Unmapped": 37.0
       },
       "september_delivered": 148,
       "september_delivered_by_program": {
@@ -1019,10 +1023,10 @@
         "[266] S&O Dispatch Agent": 2.0
       },
       "october_capacity_limit": 17.6,
-      "october_committed": 74,
+      "october_committed": 77,
       "october_work_items": 30,
       "october_committed_by_program": {
-        "[266] S&O Scheduling Console": 56.0,
+        "[266] S&O Scheduling Console": 59.0,
         "FS 262: S&O: Dispatch Experience 2.0": 4.0,
         "Unmapped": 14.0
       },
@@ -1055,7 +1059,7 @@
         "Field Service 260 Trust"
       ],
       "engineering_manager": "Ankur Singh",
-      "product_owner": "Amit Mizrahi",
+      "product_owner": "Yaron Telem",
       "capacity_delivered_june": 218.5,
       "work_items_closed_june": 156,
       "capacity_committed_july": 118.5,
@@ -1098,11 +1102,11 @@
       "september_committed": 82.5,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 136.0,
-      "october_work_items": 73,
+      "october_committed": 137.5,
+      "october_work_items": 75,
       "october_committed_by_program": {
-        "Unmapped": 128.0,
-        "[266] S&O Trust": 8.0
+        "Unmapped": 113.0,
+        "[266] S&O Trust": 24.5
       },
       "august_delivered": 173.5,
       "august_delivered_by_program": {
@@ -1118,9 +1122,9 @@
       },
       "september_delivered": 182.5,
       "september_delivered_by_program": {
-        "Unmapped": 142.5,
+        "Unmapped": 111.0,
         "FS 264: S&O Trust": 19.0,
-        "[266] S&O Trust": 21.0
+        "[266] S&O Trust": 52.5
       },
       "december_capacity_limit": 158.4,
       "december_committed": 0,
@@ -1198,13 +1202,13 @@
       "september_committed": 106,
       "september_work_items": 93,
       "october_capacity_limit": 176.0,
-      "october_committed": 183,
-      "october_work_items": 84,
+      "october_committed": 194,
+      "october_work_items": 90,
       "october_committed_by_program": {
-        "Unmapped": 47.0,
-        "[266] S&O Trust": 82.0,
-        "[266] S&O Optimization Platform": 27.0,
-        "[266] S&O Dispatch Agent": 27.0
+        "Unmapped": 50.0,
+        "[266] S&O Trust": 83.0,
+        "[266] S&O Dispatch Agent": 27.0,
+        "[266] S&O Optimization Platform": 34.0
       },
       "august_delivered": 249,
       "august_delivered_by_program": {
@@ -1245,6 +1249,7 @@
       "non_filled": 0,
       "total": 3,
       "portfolios": [
+        "FY27 FS S&O",
         "FY27 FS Trust",
         "Field Service 260 Trust"
       ],
@@ -1283,10 +1288,11 @@
       "september_committed": 71,
       "september_work_items": 50,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 138,
-      "october_work_items": 44,
+      "october_committed": 109,
+      "october_work_items": 41,
       "october_committed_by_program": {
-        "Unmapped": 138.0
+        "Unmapped": 77.0,
+        "[266] S&O Trust": 32.0
       },
       "august_delivered": 133,
       "august_delivered_by_program": {
@@ -1301,7 +1307,8 @@
       },
       "september_delivered": 122,
       "september_delivered_by_program": {
-        "Unmapped": 122.0
+        "Unmapped": 48.0,
+        "[266] S&O Trust": 74.0
       },
       "december_capacity_limit": 52.80000000000001,
       "december_committed": 0,
@@ -1365,12 +1372,12 @@
       "september_committed": 103,
       "september_work_items": 62,
       "october_capacity_limit": 193.60000000000002,
-      "october_committed": 115,
-      "october_work_items": 44,
+      "october_committed": 157,
+      "october_work_items": 63,
       "october_committed_by_program": {
-        "Salesforce Field Service 258: Trust": 30.0,
-        "266 WFS Operations Console": 81.0,
-        "Unmapped": 4.0
+        "Salesforce Field Service 258: Trust": 46.0,
+        "Unmapped": 8.0,
+        "266 WFS Operations Console": 103.0
       },
       "august_delivered": 130,
       "august_delivered_by_program": {
@@ -1454,12 +1461,12 @@
       "september_committed": 71,
       "september_work_items": 85,
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 61,
-      "october_work_items": 32,
+      "october_committed": 62,
+      "october_work_items": 33,
       "october_committed_by_program": {
         "[266] Mobile Trust": 15.0,
         "[266] Mobile AI & Voice to Form": 7.0,
-        "Unmapped": 38.0,
+        "Unmapped": 39.0,
         "[266] Quality Automation Uplift": 1.0
       },
       "august_delivered": 150,
@@ -1547,11 +1554,11 @@
       "september_committed": 137,
       "september_work_items": 131,
       "october_capacity_limit": 140.8,
-      "october_committed": 89,
-      "october_work_items": 39,
+      "october_committed": 70,
+      "october_work_items": 31,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 18.0,
-        "Unmapped": 71.0
+        "[266] Mobile Trust": 20.0,
+        "Unmapped": 50.0
       },
       "august_delivered": 240,
       "august_delivered_by_program": {
@@ -1640,11 +1647,11 @@
       "september_committed": 48,
       "september_work_items": 63,
       "october_capacity_limit": 140.8,
-      "october_committed": 185,
-      "october_work_items": 68,
+      "october_committed": 194,
+      "october_work_items": 71,
       "october_committed_by_program": {
-        "Unmapped": 114.0,
-        "[266] Mobile Trust": 18.0,
+        "Unmapped": 115.0,
+        "[266] Mobile Trust": 26.0,
         "262 Field Service: Customer Adoption": 20.0,
         "264 Field Service: Workforce Scheduling on Mobile": 12.0,
         "[264] Field Service: Headless (aka Codey)": 21.0
@@ -1705,11 +1712,11 @@
         "264 Field Service: Workforce Scheduling on Mobile": 14.0
       },
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 136,
-      "october_work_items": 48,
+      "october_committed": 132,
+      "october_work_items": 46,
       "october_committed_by_program": {
-        "264 Field Service: Workforce Scheduling on Mobile": 33.0,
-        "[266] Guided Experience": 59.0,
+        "264 Field Service: Workforce Scheduling on Mobile": 32.0,
+        "[266] Guided Experience": 56.0,
         "[266] Mobile Trust": 15.0,
         "Unmapped": 29.0
       },
@@ -1788,12 +1795,12 @@
       "september_committed": 42,
       "september_work_items": 81,
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 70,
-      "october_work_items": 24,
+      "october_committed": 76,
+      "october_work_items": 26,
       "october_committed_by_program": {
-        "264 Field Service: Customer Trust": 15.0,
-        "[266] Mobile Trust": 17.0,
-        "Unmapped": 35.0,
+        "264 Field Service: Customer Trust": 17.0,
+        "[266] Mobile Trust": 19.0,
+        "Unmapped": 37.0,
         "[266] Quality Automation Uplift": 3.0
       },
       "august_delivered": 167,
@@ -1928,13 +1935,14 @@
       "september_committed": 68,
       "september_work_items": 67,
       "october_capacity_limit": 140.8,
-      "october_committed": 95,
-      "october_work_items": 37,
+      "october_committed": 85,
+      "october_work_items": 35,
       "october_committed_by_program": {
-        "Unmapped": 60.0,
-        "[266] Low Connectivity and Performance": 15.0,
-        "[266] Mobile Trust": 13.0,
-        "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 7.0
+        "Unmapped": 64.0,
+        "[266] Low Connectivity and Performance": 4.0,
+        "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 7.0,
+        "[266] Quality Automation Uplift": 2.0,
+        "[266] Mobile Trust": 8.0
       },
       "august_delivered": 171,
       "august_delivered_by_program": {
@@ -2073,12 +2081,12 @@
       "september_committed": 123,
       "september_work_items": 102,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 413,
-      "october_work_items": 137,
+      "october_committed": 401,
+      "october_work_items": 132,
       "october_committed_by_program": {
-        "Unmapped": 211.0,
-        "Performance Priming 100% Adoption": 90.0,
-        "[266] Mobile Trust": 76.0,
+        "Unmapped": 204.0,
+        "Performance Priming 100% Adoption": 87.0,
+        "[266] Mobile Trust": 74.0,
         "264 Field Service: Workforce Scheduling on Mobile": 19.0,
         "[266] Quality Automation Uplift": 17.0
       },
@@ -2237,11 +2245,11 @@
       "september_committed": 39,
       "september_work_items": 32,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 368,
-      "october_work_items": 81,
+      "october_committed": 358,
+      "october_work_items": 79,
       "october_committed_by_program": {
-        "Unmapped": 360.0,
-        "[264] Unified Workforce Management (UWM)": 8.0
+        "Unmapped": 352.0,
+        "[264] Unified Workforce Management (UWM)": 6.0
       },
       "august_delivered": 133,
       "august_delivered_by_program": {
@@ -2277,7 +2285,7 @@
         "Salesforce Field Service 258 Theme:  Trust"
       ],
       "engineering_manager": "Yariv Finkelshtein",
-      "product_owner": "Amit Mizrahi",
+      "product_owner": "Yaron Telem",
       "capacity_delivered_june": 5.0,
       "work_items_closed_june": 3,
       "capacity_committed_july": 0,
@@ -2307,11 +2315,9 @@
       "september_committed": 0,
       "september_work_items": 0,
       "october_capacity_limit": 35.2,
-      "october_committed": 1,
-      "october_work_items": 1,
-      "october_committed_by_program": {
-        "Unmapped": 1.0
-      },
+      "october_committed": 0,
+      "october_work_items": 0,
+      "october_committed_by_program": {},
       "august_delivered": 7,
       "august_delivered_by_program": {
         "Unmapped": 7.0

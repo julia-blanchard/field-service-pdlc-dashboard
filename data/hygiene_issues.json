@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 966,
+    "total_epics_needing_attention": 968,
     "teams_affected": 77,
     "programs_affected": 71,
     "issue_breakdown": {
-      "missing_scheduled_build": 269,
-      "missing_priority": 545,
+      "missing_scheduled_build": 254,
+      "missing_priority": 546,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 885
+      "missing_planned_release": 887
     }
   },
   "epics": [
@@ -6482,7 +6482,7 @@
       "epic_name_key": "[Trust] Cost Reduction",
       "team": "Messaging Channels and Features",
       "owner": "Sandeep Chawla",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "-",
       "priority": 1,
       "story_points": 0,
@@ -11911,14 +11911,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12042,14 +12041,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12098,14 +12096,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12117,14 +12114,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12136,14 +12132,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12155,14 +12150,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12174,14 +12168,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12193,14 +12186,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12352,7 +12344,7 @@
       "epic_id": "a3QEE000002hV932AE",
       "epic_name": "WFS - 266 - Status Transition Flow Configuration",
       "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
-      "team": "FSL - Resource - Scheduling Platform",
+      "team": "FSL - Foundation - Corecodiles",
       "owner": "Limor Rohald",
       "health": "Not Started",
       "scheduled_build": "-",
@@ -12374,14 +12366,13 @@
       "team": "FSL - Asset - 360",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield & Onsite Hybrid",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12393,14 +12384,13 @@
       "team": "FSL - Asset - 360",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield & Onsite Hybrid",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12412,14 +12402,13 @@
       "team": "-",
       "owner": "Itay Sagiv",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield & Onsite Hybrid",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12468,7 +12457,7 @@
       "epic_name_key": "WFS - 266 - Asset capabilities in WFS",
       "team": "FSL - Asset - 360",
       "owner": "Sri Ram Bathina",
-      "health": "On Track",
+      "health": "Watch",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -12506,14 +12495,13 @@
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12563,14 +12551,13 @@
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Dori Nahmias",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12582,14 +12569,13 @@
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Dori Nahmias",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12677,14 +12663,13 @@
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Dori Nahmias",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12696,14 +12681,13 @@
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Dori Nahmias",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12929,7 +12913,7 @@
       "story_points": 0,
       "program": "[266] S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
-      "project": "S&O Scheduling Agent - Help Agent (Research)",
+      "project": "S&O Scheduling Agent - Help Agent (Prototyping)",
       "issues": [
         "missing_planned_release"
       ]
@@ -13054,7 +13038,7 @@
       "story_points": 0,
       "program": "[266] S&O Scheduling Agent",
       "portfolio": "FY27 FS S&O",
-      "project": "S&O Scheduling Agent HXL (Research)",
+      "project": "S&O Scheduling Agent HXL (Prototyping)",
       "issues": [
         "missing_planned_release"
       ]
@@ -13145,6 +13129,24 @@
       "portfolio": "FY27 FS S&O",
       "project": "S&O Transparency Pilot - Adoption and CS",
       "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002kukP2AQ",
+      "epic_name": "[266] SFS [AF] Transparency -pilot customer adoption (Bugs)",
+      "epic_name_key": "[266] SFS [AF] Transparency -pilot customer adoption (Bugs)",
+      "team": "FSL - Foundation - Corecodiles",
+      "owner": "Sigal Shapira",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Dispatch Agent",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Transparency Pilot - Adoption and CS",
+      "issues": [
+        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -15465,6 +15467,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002kpj72AA",
+      "epic_name": "266 SFS Frontline AI - [Adoption] Conversational PWB Instrumentation",
+      "epic_name_key": "266 SFS Frontline AI - [Adoption] Conversational PWB Instrumentation",
+      "team": "SFS Frontline AI",
+      "owner": "Sindhu Sree Aita",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": 26,
+      "story_points": 0,
+      "program": "[266] Mobile AI & Voice to Form",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Agentforce & AI Platform",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002FZM52AO",
       "epic_name": "[266][SFS Mobile Assets][Android] Notifications Priority",
       "epic_name_key": "[266][SFS Mobile Assets][Android] Notifications Priority",
@@ -17552,14 +17572,13 @@
           "team": "-",
           "owner": "Itay Sagiv",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield & Onsite Hybrid",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -18415,14 +18434,13 @@
           "team": "FSL - Asset - 360",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield & Onsite Hybrid",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -18434,14 +18452,13 @@
           "team": "FSL - Asset - 360",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield & Onsite Hybrid",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -18471,7 +18488,7 @@
           "epic_name_key": "WFS - 266 - Asset capabilities in WFS",
           "team": "FSL - Asset - 360",
           "owner": "Sri Ram Bathina",
-          "health": "On Track",
+          "health": "Watch",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -19287,7 +19304,7 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 18,
+      "epic_count": 20,
       "epics": [
         {
           "epic_id": "a3QEE000002GSNN2A4",
@@ -19531,6 +19548,25 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002hV932AE",
+          "epic_name": "WFS - 266 - Status Transition Flow Configuration",
+          "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Limor Rohald",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Infield & Onsite Hybrid",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002GKHl2AO",
           "epic_name": "[264] SFS [AF] Transparency - Core Logic",
           "epic_name_key": "[264] SFS [AF] Transparency - Core Logic",
@@ -19544,6 +19580,24 @@
           "portfolio": "FY27 FS S&O",
           "project": "S&O Dispatcher Agent - Transparency (Pilot)",
           "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002kukP2AQ",
+          "epic_name": "[266] SFS [AF] Transparency -pilot customer adoption (Bugs)",
+          "epic_name_key": "[266] SFS [AF] Transparency -pilot customer adoption (Bugs)",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Sigal Shapira",
+          "health": "On Track",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Dispatch Agent",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Transparency Pilot - Adoption and CS",
+          "issues": [
+            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -22003,7 +22057,7 @@
           "story_points": 0,
           "program": "[266] S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Agent - Help Agent (Research)",
+          "project": "S&O Scheduling Agent - Help Agent (Prototyping)",
           "issues": [
             "missing_planned_release"
           ]
@@ -22071,7 +22125,7 @@
           "story_points": 0,
           "program": "[266] S&O Scheduling Agent",
           "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Agent HXL (Research)",
+          "project": "S&O Scheduling Agent HXL (Prototyping)",
           "issues": [
             "missing_planned_release"
           ]
@@ -22114,7 +22168,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Platform",
-      "epic_count": 32,
+      "epic_count": 31,
       "epics": [
         {
           "epic_id": "a3QEE000001ofqb2AA",
@@ -22473,39 +22527,19 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002hV932AE",
-          "epic_name": "WFS - 266 - Status Transition Flow Configuration",
-          "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "-",
-          "priority": "-",
-          "story_points": 0,
-          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "266 WFS Infield & Onsite Hybrid",
-          "issues": [
-            "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002hV7R2AU",
           "epic_name": "WFS - 266 - Field Scheduling  Block time before/after SA",
           "epic_name_key": "WFS - 266 - Field Scheduling  Block time before/after SA",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -22555,14 +22589,13 @@
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Dori Nahmias",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -22574,14 +22607,13 @@
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Dori Nahmias",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -22631,14 +22663,13 @@
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Dori Nahmias",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -22650,14 +22681,13 @@
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Dori Nahmias",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -23937,7 +23967,7 @@
           "epic_name_key": "[Trust] Cost Reduction",
           "team": "Messaging Channels and Features",
           "owner": "Sandeep Chawla",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "-",
           "priority": 1,
           "story_points": 0,
@@ -28470,14 +28500,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28601,14 +28630,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28639,14 +28667,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28658,14 +28685,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28677,14 +28703,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28696,14 +28721,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28715,14 +28739,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28734,14 +28757,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -28768,7 +28790,7 @@
     },
     {
       "name": "SFS Frontline AI",
-      "epic_count": 78,
+      "epic_count": 79,
       "epics": [
         {
           "epic_id": "a3QEE000002Krev2AC",
@@ -29617,6 +29639,24 @@
           "epic_id": "a3QEE000002jbv72AA",
           "epic_name": "266 SFS Frontline AI - [Adoption] Conversational Pre-Work Brief",
           "epic_name_key": "266 SFS Frontline AI - [Adoption] Conversational Pre-Work Brief",
+          "team": "SFS Frontline AI",
+          "owner": "Sindhu Sree Aita",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": 26,
+          "story_points": 0,
+          "program": "[266] Mobile AI & Voice to Form",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Agentforce & AI Platform",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002kpj72AA",
+          "epic_name": "266 SFS Frontline AI - [Adoption] Conversational PWB Instrumentation",
+          "epic_name_key": "266 SFS Frontline AI - [Adoption] Conversational PWB Instrumentation",
           "team": "SFS Frontline AI",
           "owner": "Sindhu Sree Aita",
           "health": "Not Started",

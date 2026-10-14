@@ -12344,7 +12344,7 @@
       "epic_id": "a3QEE000002hV932AE",
       "epic_name": "WFS - 266 - Status Transition Flow Configuration",
       "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
-      "team": "FSL - Foundation - Corecodiles",
+      "team": "FSL - Resource - Scheduling Platform",
       "owner": "Limor Rohald",
       "health": "Not Started",
       "scheduled_build": "-",
@@ -16660,7 +16660,7 @@
       "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2RE",
       "team": "SFS Frontline AI",
       "owner": "Paul Chan",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": 20,
       "story_points": 0,
@@ -16804,7 +16804,7 @@
       "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2DC",
       "team": "SFS Frontline AI",
       "owner": "Paul Chan",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": 20,
       "story_points": 0,
@@ -19304,7 +19304,7 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 20,
+      "epic_count": 19,
       "epics": [
         {
           "epic_id": "a3QEE000002GSNN2A4",
@@ -19543,25 +19543,6 @@
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hV932AE",
-          "epic_name": "WFS - 266 - Status Transition Flow Configuration",
-          "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
-          "team": "FSL - Foundation - Corecodiles",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "-",
-          "priority": "-",
-          "story_points": 0,
-          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "266 WFS Infield & Onsite Hybrid",
-          "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -22168,7 +22149,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Platform",
-      "epic_count": 31,
+      "epic_count": 32,
       "epics": [
         {
           "epic_id": "a3QEE000001ofqb2AA",
@@ -22523,6 +22504,25 @@
           "portfolio": "FY27 FS Trust",
           "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
           "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002hV932AE",
+          "epic_name": "WFS - 266 - Status Transition Flow Configuration",
+          "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Limor Rohald",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Infield & Onsite Hybrid",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -30004,7 +30004,7 @@
           "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2RE",
           "team": "SFS Frontline AI",
           "owner": "Paul Chan",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": 20,
           "story_points": 0,
@@ -30148,7 +30148,7 @@
           "epic_name_key": "266 SFS Frontline AI - [Android] Automation Improvement - V2DC",
           "team": "SFS Frontline AI",
           "owner": "Paul Chan",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": 20,
           "story_points": 0,

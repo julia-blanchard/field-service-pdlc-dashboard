@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T09:44:55.900436",
+  "last_updated": "2026-10-14T14:07:43.994687",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -148,7 +148,7 @@
               "team": "SFS Setup Experience",
               "scheduled_build": "-",
               "planned_release": "264",
-              "last_modified": "2026-10-09",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -346,7 +346,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -363,7 +363,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -380,7 +380,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -397,7 +397,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -414,7 +414,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -448,7 +448,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "262",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -482,7 +482,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -499,7 +499,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -516,7 +516,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -550,7 +550,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -849,7 +849,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1456,7 +1456,7 @@
               "team": "SFS Mobile Location and DC",
               "scheduled_build": "-",
               "planned_release": "266 SFS Mobile Location and DC - Release Planner",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1830,7 +1830,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2864,7 +2864,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -5644,7 +5644,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -6100,7 +6100,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -7579,7 +7579,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -9139,7 +9139,7 @@
               "team": "Messaging Channels and Features",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -9169,7 +9169,7 @@
               "team": "Perf Eng - Service Cloud",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -9259,7 +9259,7 @@
               "team": "Conversation Connect",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -10305,7 +10305,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "260",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -10545,7 +10545,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -10590,7 +10590,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -10665,7 +10665,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -11079,7 +11079,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -11404,7 +11404,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "262.13",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -11430,7 +11430,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -12279,7 +12279,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -13186,7 +13186,7 @@
               "team": "Messaging Core - Digital Engagement",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -13732,7 +13732,7 @@
               "team": "Missionforce-Rangers",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-11",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -14966,7 +14966,7 @@
               "health_status": "Not Started",
               "health_comments": "",
               "owner": "Limor Rohald",
-              "team": "FSL - Foundation - Corecodiles",
+              "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "-",
               "planned_release": "",
               "last_modified": "2026-10-14",
@@ -15086,7 +15086,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "268",
-          "last_modified": "2026-10-07",
+          "last_modified": "2026-10-14",
           "health_status": "On Track",
           "epics": [
             {
@@ -15115,7 +15115,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -15175,7 +15175,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-10",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -15448,7 +15448,7 @@
           ]
         }
       ],
-      "health_comments": "[10/14] 264 Risk towards the launch of WFS for PSS: \r\nPriming Breakdown: Including the Mobile add-on breaks Priming. Removing it could drop settings WFS needs, and nobody has confirmed what it does.\r\nImpact: If missed, all capabilities must wait for the next release window on Nov 17.\r\n\r\n\r\n[266] Dev started on the Scheduling flow features and Lobby Management features"
+      "health_comments": "[10/14] 264 Risk towards the launch of WFS for PSS: \r\nPriming Breakdown: Including the Mobile add-on breaks Priming. Removing it could drop settings WFS needs, and nobody has confirmed what it does.\r\nImpact: If missed, all capabilities must wait for the next release window on Nov 17.\r\nNew GFRs raised on Mobile, not sure if it will be needed for the PSS Gov Cloud Compliance. \r\n\r\n[266] Dev started on the Scheduling flow features and Lobby Management features"
     },
     {
       "name": "266 placeholder",
@@ -15551,7 +15551,7 @@
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -15678,7 +15678,7 @@
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.14",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -16027,7 +16027,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16109,7 +16109,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.3",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16124,7 +16124,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16259,7 +16259,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16274,7 +16274,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16379,7 +16379,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16637,7 +16637,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-09-30",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16741,7 +16741,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16854,7 +16854,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -16929,7 +16929,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -16981,7 +16981,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -17052,7 +17052,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -17142,7 +17142,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -17157,7 +17157,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -17209,7 +17209,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -17290,7 +17290,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -17305,7 +17305,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -17320,7 +17320,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -17350,7 +17350,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -17570,7 +17570,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -17879,7 +17879,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18410,7 +18410,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18425,7 +18425,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18455,7 +18455,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18515,7 +18515,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18530,7 +18530,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18545,7 +18545,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18560,7 +18560,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -18586,7 +18586,7 @@
               "team": "SFS Mobile Location and DC",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18781,7 +18781,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -18822,7 +18822,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18837,7 +18837,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -18882,7 +18882,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19017,7 +19017,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19047,7 +19047,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19062,7 +19062,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19077,7 +19077,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -19103,7 +19103,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -19245,7 +19245,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -19329,7 +19329,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19453,7 +19453,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19543,7 +19543,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19566,14 +19566,14 @@
               "name": "266 SFS Frontline AI - [Android] Automation Improvement - V2RE",
               "id": "a3QEE000002ZhAb2AK",
               "priority": 20,
-              "health": "On Track",
-              "health_status": "On Track",
+              "health": "Completed",
+              "health_status": "Completed",
               "health_comments": "",
               "owner": "Paul Chan",
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-06",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19686,14 +19686,14 @@
               "name": "266 SFS Frontline AI - [Android] Automation Improvement - V2DC",
               "id": "a3QEE000002ZhP72AK",
               "priority": 20,
-              "health": "On Track",
-              "health_status": "On Track",
+              "health": "Completed",
+              "health_status": "Completed",
               "health_comments": "",
               "owner": "Paul Chan",
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-06",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19764,7 +19764,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             },
@@ -19843,7 +19843,7 @@
           "product_owner": "Tyler Schott",
           "dev_lead": "",
           "target": "",
-          "last_modified": "2026-10-13",
+          "last_modified": "2026-10-14",
           "health_status": "On Track",
           "epics": [
             {
@@ -19857,7 +19857,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -19879,7 +19879,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "",
-          "last_modified": "2026-10-05",
+          "last_modified": "2026-10-14",
           "health_status": "Not Started",
           "epics": []
         },
@@ -19965,7 +19965,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-10-14",
               "loc": "",
               "path_to_green": ""
             }
@@ -20035,8 +20035,8 @@
       "name": "[266] Assets",
       "id": "a1fEE0000004DJdYAM",
       "portfolio": "FY27 FS Foundations",
-      "health": "On Track",
-      "health_status": "On Track",
+      "health": "Watch",
+      "health_status": "Watch",
       "program_manager": "Scott Andrus",
       "target_release": "266",
       "projects": [
@@ -20132,7 +20132,7 @@
           "product_owner": "Itay Sagiv",
           "dev_lead": "",
           "target": "",
-          "last_modified": "2026-10-13",
+          "last_modified": "2026-10-14",
           "health_status": "On Track",
           "epics": [
             {
@@ -20183,7 +20183,7 @@
           ]
         }
       ],
-      "health_comments": "10/13:\r\nSBOM (Service Bill of Materials): 2 work streams started with assets team. Both on track. Mobile team spun up and working through requirements with PM and UX.\r\n\r\nAsset-Centric Dispatch View: PBD, Prototype, and Customer Research reviewed 10/13 with program sponsor. PBD and Prototype updates requested based on latest discussion. ETA: 10/20\r\n\r\n\r\n9/22:\r\nAsset-Centric Dispatch View: PBD and Prototype complete. Product team working on collecting initial customer feedback on use cases. ETA pending PM.\r\n\r\nSBOM (Service Bill of Materials): Kicking off. Requirements reviewed, Engineering decomposing into epics/work items with sizing. ETA 9/25."
+      "health_comments": "10/13:\r\nSBOM (Service Bill of Materials): 2 work streams started with assets team. Both on track. Mobile team spun up and working through requirements with PM and UX.\r\nRISK: UX mocks pending finalization. UX resources were delayed being assigned to initiative. \r\n\r\nAsset-Centric Dispatch View: PBD, Prototype, and Customer Research reviewed 10/13 with program sponsor. PBD and Prototype updates requested based on latest discussion. ETA: 10/19\r\n\r\n\r\n9/22:\r\nAsset-Centric Dispatch View: PBD and Prototype complete. Product team working on collecting initial customer feedback on use cases. ETA pending PM.\r\n\r\nSBOM (Service Bill of Materials): Kicking off. Requirements reviewed, Engineering decomposing into epics/work items with sizing. ETA 9/25."
     },
     {
       "name": "[266] Foundations Trust",
@@ -20293,7 +20293,7 @@
     "on_track": 25,
     "watch": 1,
     "blocked": 0,
-    "not_started": 142
+    "not_started": 141
   },
-  "total_epics_no_sprint": 168
+  "total_epics_no_sprint": 167
 }

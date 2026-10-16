@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T19:43:26.077033",
+  "last_updated": "2026-10-16T10:29:06.420115",
   "teams": [
     {
       "name": "FSE - Core",
@@ -47,7 +47,9 @@
       "total": 9,
       "portfolios": [
         "262 Field Service Foundations",
-        "264 Field Service Workforce Scheduling"
+        "264 Field Service Workforce Scheduling",
+        "FY27 FS Foundations",
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Sri Ram Bathina",
       "product_owner": "Nishant Sharma",
@@ -92,11 +94,13 @@
       "september_committed": 117,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 225,
-      "october_work_items": 73,
+      "october_committed": 231,
+      "october_work_items": 74,
       "october_committed_by_program": {
+        "Unmapped": 90.0,
         "264 Scheduling Flows": 11.0,
-        "Unmapped": 214.0
+        "[266] Assets": 76.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 54.0
       },
       "august_delivered": 286,
       "august_delivered_by_program": {
@@ -107,12 +111,14 @@
       "november_committed": 34,
       "november_work_items": 10,
       "november_committed_by_program": {
-        "Unmapped": 34.0
+        "[266] Assets": 34.0
       },
       "september_delivered": 364,
       "september_delivered_by_program": {
         "264 Scheduling Flows": 183.0,
-        "Unmapped": 181.0
+        "Unmapped": 139.0,
+        "[266] Assets": 2.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 40.0
       },
       "december_capacity_limit": 158.4,
       "december_committed": 0,
@@ -190,7 +196,8 @@
       "total": 9,
       "portfolios": [
         "262 Field Service Unified Scheduling",
-        "264 Field Service Workforce Scheduling"
+        "264 Field Service Workforce Scheduling",
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Siddharth Mathur",
       "product_owner": "Neerja Rewal",
@@ -237,10 +244,11 @@
       "september_committed": 76,
       "september_work_items": 73,
       "october_capacity_limit": 158.4,
-      "october_committed": 107,
-      "october_work_items": 36,
+      "october_committed": 119,
+      "october_work_items": 42,
       "october_committed_by_program": {
-        "Unmapped": 107.0
+        "Unmapped": 63.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 56.0
       },
       "august_delivered": 168,
       "august_delivered_by_program": {
@@ -254,7 +262,8 @@
       "november_committed_by_program": {},
       "september_delivered": 171,
       "september_delivered_by_program": {
-        "Unmapped": 171.0
+        "Unmapped": 165.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 6.0
       },
       "december_capacity_limit": 158.4,
       "december_committed": 0,
@@ -353,7 +362,9 @@
       "portfolios": [
         "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "FY27 FS Trust",
+        "FY27 FS Workforce Scheduling",
         "Field Service 260 Trust",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
@@ -408,10 +419,12 @@
       "september_committed": 7,
       "september_work_items": 81,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 64,
-      "october_work_items": 28,
+      "october_committed": 59,
+      "october_work_items": 25,
       "october_committed_by_program": {
-        "Unmapped": 62.0,
+        "[266] S&O Trust": 14.0,
+        "[266] S&O Dispatch Agent": 13.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 30.0,
         "FS 264: S&O: The New Scheduling Console": 2.0
       },
       "august_delivered": 116.0,
@@ -427,7 +440,9 @@
       "november_committed_by_program": {},
       "september_delivered": 124.0,
       "september_delivered_by_program": {
-        "Unmapped": 119.5,
+        "[266] S&O Trust": 36.0,
+        "[266] S&O Dispatch Agent": 67.5,
+        "Unmapped": 16.0,
         "FS 264: S&O: The New Scheduling Console": 2.0,
         "FS 264: S&O Trust": 2.5
       },
@@ -493,10 +508,10 @@
       "september_committed": 57,
       "september_work_items": 35,
       "october_capacity_limit": 176.0,
-      "october_committed": 391,
+      "october_committed": 390,
       "october_work_items": 93,
       "october_committed_by_program": {
-        "Unmapped": 391.0
+        "Unmapped": 390.0
       },
       "august_delivered": 72,
       "august_delivered_by_program": {
@@ -531,6 +546,7 @@
       "total": 7,
       "portfolios": [
         "262 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "Field Service 260 Scheduling & Optimization Pillar",
         "Field Service 260 Trust",
         "Salesforce Field Service 258 Theme:  Trust"
@@ -594,7 +610,8 @@
       "november_committed_by_program": {},
       "september_delivered": 32,
       "september_delivered_by_program": {
-        "Unmapped": 32.0
+        "Unmapped": 11.0,
+        "[266] S&O Scheduling Console": 21.0
       },
       "december_capacity_limit": 123.20000000000002,
       "december_committed": 0,
@@ -608,6 +625,7 @@
       "total": 9,
       "portfolios": [
         "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "FY27 SC M4 UWM",
         "FY27 SC M5 AFCC Voice",
         "Field Service 260 Trust"
@@ -655,10 +673,10 @@
       "september_committed": 116,
       "september_work_items": 52,
       "october_capacity_limit": 158.4,
-      "october_committed": 47,
-      "october_work_items": 11,
+      "october_committed": 43,
+      "october_work_items": 9,
       "october_committed_by_program": {
-        "Unmapped": 47.0
+        "Unmapped": 43.0
       },
       "august_delivered": 167,
       "august_delivered_by_program": {
@@ -687,6 +705,7 @@
         "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "264 Field Service Workforce Scheduling",
+        "FY27 FS S&O",
         "Field Service 260 Scheduling & Optimization Pillar",
         "Field Service 260 Trust"
       ],
@@ -750,9 +769,11 @@
       "october_committed": 125,
       "october_work_items": 32,
       "october_committed_by_program": {
-        "Unmapped": 105.0,
+        "Unmapped": 45.0,
         "FS 264: S&O: Agentic S&O": 8.0,
-        "FS 264: S&O Trust": 12.0
+        "[266] S&O Trust": 41.0,
+        "FS 264: S&O Trust": 12.0,
+        "[266] S&O Optimization Platform": 19.0
       },
       "august_delivered": 23,
       "august_delivered_by_program": {
@@ -765,19 +786,20 @@
       "november_committed": 34,
       "november_work_items": 5,
       "november_committed_by_program": {
-        "Unmapped": 34.0
+        "[266] S&O Optimization Platform": 34.0
       },
       "september_delivered": 30,
       "september_delivered_by_program": {
         "FS 264: S&O: Agentic S&O": 8.0,
         "FS 264: S&O Trust": 6.0,
-        "Unmapped": 16.0
+        "Unmapped": 1.0,
+        "[266] S&O Trust": 15.0
       },
       "december_capacity_limit": 123.20000000000002,
       "december_committed": 0,
       "december_work_items": 1,
       "december_committed_by_program": {
-        "Unmapped": 0.0
+        "[266] S&O Optimization Platform": 0.0
       }
     },
     {
@@ -788,7 +810,9 @@
       "portfolios": [
         "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "FY27 FS Trust",
+        "FY27 FS Workforce Scheduling",
         "FY27 SC M1 Trust",
         "Field Service 260 Trust"
       ],
@@ -840,8 +864,10 @@
       "october_committed": 92,
       "october_work_items": 27,
       "october_committed_by_program": {
-        "Unmapped": 88.0,
-        "FS 264: S&O Trust": 4.0
+        "[266] S&O Trust": 37.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 42.0,
+        "FS 264: S&O Trust": 4.0,
+        "[266] S&O Scheduling Agent": 9.0
       },
       "august_delivered": 264,
       "august_delivered_by_program": {
@@ -856,7 +882,9 @@
       "september_delivered": 156,
       "september_delivered_by_program": {
         "FS 264: S&O Trust": 34.0,
-        "Unmapped": 122.0
+        "[266] S&O Scheduling Agent": 5.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 65.0,
+        "[266] S&O Trust": 52.0
       },
       "december_capacity_limit": 123.20000000000002,
       "december_committed": 0,
@@ -873,6 +901,7 @@
         "264 Field Service Scheduling & Optimization",
         "264 Field Service Workforce Scheduling",
         "FY27 FS Trust",
+        "FY27 FS Workforce Scheduling",
         "FY27 SC M1 Trust",
         "Field Service 260 Trust"
       ],
@@ -935,6 +964,7 @@
       "october_work_items": 38,
       "october_committed_by_program": {
         "Unmapped": 81.0,
+        "[266] S&O Trust": 0.0,
         "FS 264: S&O Trust": 11.0,
         "264 Infield & Onsite Hybrid": 6.0,
         "264 Infield": 2.0
@@ -954,11 +984,12 @@
       },
       "september_delivered": 148,
       "september_delivered_by_program": {
-        "Unmapped": 66.0,
+        "Unmapped": 64.0,
         "262 Field Service Trust": 1.0,
         "FS 264: S&O Trust": 60.0,
         "264 Infield": 19.0,
-        "264 Scheduling Flows": 2.0
+        "264 Scheduling Flows": 2.0,
+        "[266] S&O Trust": 2.0
       },
       "december_capacity_limit": 158.4,
       "december_committed": 0,
@@ -972,7 +1003,8 @@
       "total": 1,
       "portfolios": [
         "262 Field Service Scheduling & Optimization",
-        "264 Field Service Scheduling & Optimization"
+        "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O"
       ],
       "engineering_manager": "Gila Anidjar",
       "product_owner": "Yulia Libster",
@@ -996,8 +1028,9 @@
       "october_committed": 78,
       "october_work_items": 27,
       "october_committed_by_program": {
-        "Unmapped": 74.0,
-        "FS 262: S&O: Dispatch Experience 2.0": 4.0
+        "[266] S&O Scheduling Console": 62.0,
+        "FS 262: S&O: Dispatch Experience 2.0": 4.0,
+        "Unmapped": 12.0
       },
       "november_capacity_limit": 17.6,
       "november_committed": 0,
@@ -1005,8 +1038,9 @@
       "november_committed_by_program": {},
       "september_delivered": 181.5,
       "september_delivered_by_program": {
-        "Unmapped": 160.5,
+        "[266] S&O Scheduling Console": 142.5,
         "FS 264: S&O: Agentic S&O": 18.0,
+        "Unmapped": 18.0,
         "FS 262: S&O: Dispatch Experience 2.0": 3.0
       },
       "december_capacity_limit": 17.6,
@@ -1022,6 +1056,7 @@
       "portfolios": [
         "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "FY27 FS Trust",
         "Field Service 260 Trust"
       ],
@@ -1069,10 +1104,11 @@
       "september_committed": 82.5,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 138.5,
-      "october_work_items": 77,
+      "october_committed": 134.5,
+      "october_work_items": 72,
       "october_committed_by_program": {
-        "Unmapped": 138.5
+        "Unmapped": 111.0,
+        "[266] S&O Trust": 23.5
       },
       "august_delivered": 173.5,
       "august_delivered_by_program": {
@@ -1088,8 +1124,9 @@
       },
       "september_delivered": 182.5,
       "september_delivered_by_program": {
-        "Unmapped": 163.5,
-        "FS 264: S&O Trust": 19.0
+        "Unmapped": 111.0,
+        "FS 264: S&O Trust": 19.0,
+        "[266] S&O Trust": 52.5
       },
       "december_capacity_limit": 158.4,
       "december_committed": 0,
@@ -1104,7 +1141,9 @@
       "portfolios": [
         "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
+        "FY27 FS S&O",
         "FY27 FS Trust",
+        "FY27 FS Workforce Scheduling",
         "FY27 SC M4 UWM",
         "FY27 SC M5 AFCC Voice",
         "Salesforce Field Service 258 Theme:  Trust"
@@ -1168,7 +1207,10 @@
       "october_committed": 180,
       "october_work_items": 84,
       "october_committed_by_program": {
-        "Unmapped": 180.0
+        "Unmapped": 30.0,
+        "[266] S&O Trust": 94.0,
+        "[266] S&O Dispatch Agent": 24.0,
+        "[266] S&O Optimization Platform": 32.0
       },
       "august_delivered": 249,
       "august_delivered_by_program": {
@@ -1184,18 +1226,23 @@
       "november_committed": 33,
       "november_work_items": 25,
       "november_committed_by_program": {
-        "Unmapped": 33.0
+        "[266] S&O Trust": 25.0,
+        "Unmapped": 8.0
       },
       "september_delivered": 197,
       "september_delivered_by_program": {
-        "Unmapped": 194.0,
-        "FS 264: S&O: S&O Customer Success": 3.0
+        "Unmapped": 81.0,
+        "FS 264: S&O: S&O Customer Success": 3.0,
+        "[266] S&O Optimization Platform": 31.0,
+        "[266] S&O Trust": 64.0,
+        "[266] S&O Dispatch Agent": 18.0
       },
       "december_capacity_limit": 176.0,
       "december_committed": 6,
       "december_work_items": 6,
       "december_committed_by_program": {
-        "Unmapped": 6.0
+        "Unmapped": 4.0,
+        "[266] S&O Trust": 2.0
       }
     },
     {
@@ -1204,6 +1251,7 @@
       "non_filled": 0,
       "total": 3,
       "portfolios": [
+        "FY27 FS S&O",
         "FY27 FS Trust",
         "Field Service 260 Trust"
       ],
@@ -1245,7 +1293,8 @@
       "october_committed": 82,
       "october_work_items": 42,
       "october_committed_by_program": {
-        "Unmapped": 82.0
+        "Unmapped": 63.0,
+        "[266] S&O Trust": 19.0
       },
       "august_delivered": 133,
       "august_delivered_by_program": {
@@ -1260,7 +1309,8 @@
       },
       "september_delivered": 122,
       "september_delivered_by_program": {
-        "Unmapped": 122.0
+        "Unmapped": 48.0,
+        "[266] S&O Trust": 74.0
       },
       "december_capacity_limit": 52.80000000000001,
       "december_committed": 0,
@@ -1275,6 +1325,7 @@
       "portfolios": [
         "262 Field Service Unified Scheduling",
         "264 Field Service Workforce Scheduling",
+        "FY27 FS Workforce Scheduling",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
       "engineering_manager": "Kritica Mantri",
@@ -1323,11 +1374,12 @@
       "september_committed": 103,
       "september_work_items": 62,
       "october_capacity_limit": 193.60000000000002,
-      "october_committed": 168,
-      "october_work_items": 68,
+      "october_committed": 174,
+      "october_work_items": 70,
       "october_committed_by_program": {
         "Salesforce Field Service 258: Trust": 49.0,
-        "Unmapped": 119.0
+        "Unmapped": 14.0,
+        "266 WFS Operations Console": 111.0
       },
       "august_delivered": 130,
       "august_delivered_by_program": {
@@ -1341,8 +1393,9 @@
       "november_committed_by_program": {},
       "september_delivered": 135,
       "september_delivered_by_program": {
-        "Unmapped": 90.0,
+        "Unmapped": 26.0,
         "Salesforce Field Service 258: Trust": 43.0,
+        "266 WFS Operations Console": 64.0,
         "264 Operations Console": 2.0
       },
       "december_capacity_limit": 193.60000000000002,
@@ -1413,7 +1466,10 @@
       "october_committed": 80,
       "october_work_items": 41,
       "october_committed_by_program": {
-        "Unmapped": 80.0
+        "[266] Mobile Trust": 17.0,
+        "[266] Mobile AI & Voice to Form": 13.0,
+        "Unmapped": 49.0,
+        "[266] Quality Automation Uplift": 1.0
       },
       "august_delivered": 150,
       "august_delivered_by_program": {
@@ -1430,7 +1486,10 @@
       "november_committed_by_program": {},
       "september_delivered": 113,
       "september_delivered_by_program": {
-        "Unmapped": 113.0
+        "[266] Mobile Trust": 44.0,
+        "[266] Mobile AI & Voice to Form": 16.0,
+        "[266] Quality Automation Uplift": 48.0,
+        "Unmapped": 5.0
       },
       "december_capacity_limit": 105.60000000000002,
       "december_committed": 0,
@@ -1445,6 +1504,7 @@
       "portfolios": [
         "262 Field Service Mobile",
         "264 Field Service Mobile",
+        "FY27 FS Mobile",
         "FY27 FS Trust"
       ],
       "engineering_manager": "Sandeep Agrawal",
@@ -1496,10 +1556,11 @@
       "september_committed": 137,
       "september_work_items": 131,
       "october_capacity_limit": 140.8,
-      "october_committed": 68,
-      "october_work_items": 32,
+      "october_committed": 48,
+      "october_work_items": 23,
       "october_committed_by_program": {
-        "Unmapped": 68.0
+        "Unmapped": 33.0,
+        "[266] Mobile Trust": 15.0
       },
       "august_delivered": 240,
       "august_delivered_by_program": {
@@ -1513,7 +1574,8 @@
       "november_committed_by_program": {},
       "september_delivered": 279,
       "september_delivered_by_program": {
-        "Unmapped": 272.0,
+        "[266] Mobile Trust": 40.0,
+        "Unmapped": 232.0,
         "264 Field Service: Trust": 1.0,
         "264 Field Service: Workforce Scheduling on Mobile": 6.0
       },
@@ -1533,6 +1595,7 @@
         "264 Field Service Foundations",
         "264 Field Service Mobile",
         "264 Field Service Workforce Scheduling",
+        "FY27 FS Mobile",
         "FY27 FS Trust"
       ],
       "engineering_manager": "Adi Sharet",
@@ -1586,11 +1649,13 @@
       "september_committed": 48,
       "september_work_items": 63,
       "october_capacity_limit": 140.8,
-      "october_committed": 194,
-      "october_work_items": 72,
+      "october_committed": 195,
+      "october_work_items": 73,
       "october_committed_by_program": {
-        "Unmapped": 141.0,
+        "Unmapped": 114.0,
+        "[266] Mobile Trust": 26.0,
         "262 Field Service: Customer Adoption": 20.0,
+        "266 GovCloud Compliance": 2.0,
         "264 Field Service: Workforce Scheduling on Mobile": 12.0,
         "[264] Field Service: Headless (aka Codey)": 21.0
       },
@@ -1609,7 +1674,8 @@
       "november_committed_by_program": {},
       "september_delivered": 107,
       "september_delivered_by_program": {
-        "Unmapped": 73.0,
+        "[266] Mobile Trust": 21.0,
+        "Unmapped": 52.0,
         "264 Field Service: Workforce Scheduling on Mobile": 20.0,
         "[264] Field Service: Headless (aka Codey)": 10.0,
         "264 Infield": 4.0
@@ -1649,12 +1715,13 @@
         "264 Field Service: Workforce Scheduling on Mobile": 14.0
       },
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 163,
-      "october_work_items": 58,
+      "october_committed": 161,
+      "october_work_items": 57,
       "october_committed_by_program": {
-        "[266] Guided Experience": 87.0,
+        "[266] Guided Experience": 85.0,
         "264 Field Service: Workforce Scheduling on Mobile": 31.0,
-        "Unmapped": 45.0
+        "[266] Mobile Trust": 23.0,
+        "Unmapped": 22.0
       },
       "november_capacity_limit": 105.60000000000002,
       "november_committed": 0,
@@ -1662,11 +1729,12 @@
       "november_committed_by_program": {},
       "september_delivered": 290,
       "september_delivered_by_program": {
-        "Unmapped": 83.0,
+        "Unmapped": 69.0,
         "FS 262: Unified: Mobile for Industries (AGX)": 1.0,
         "264 Field Service: Workforce Scheduling on Mobile": 168.0,
         "264 Field Service: KONE": 3.0,
         "262 Field Service Trust": 5.0,
+        "[266] Mobile Trust": 14.0,
         "[266] Guided Experience": 30.0
       },
       "december_capacity_limit": 105.60000000000002,
@@ -1682,6 +1750,7 @@
       "portfolios": [
         "262 Field Service Mobile",
         "264 Field Service Mobile",
+        "FY27 FS Mobile",
         "FY27 FS Trust"
       ],
       "engineering_manager": "Yoni Moseri",
@@ -1729,11 +1798,13 @@
       "september_committed": 42,
       "september_work_items": 81,
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 73,
-      "october_work_items": 24,
+      "october_committed": 77,
+      "october_work_items": 26,
       "october_committed_by_program": {
         "264 Field Service: Customer Trust": 20.0,
-        "Unmapped": 53.0
+        "[266] Mobile Trust": 21.0,
+        "Unmapped": 33.0,
+        "[266] Quality Automation Uplift": 3.0
       },
       "august_delivered": 167,
       "august_delivered_by_program": {
@@ -1750,8 +1821,11 @@
       "september_delivered": 181,
       "september_delivered_by_program": {
         "264 Field Service: Customer Trust": 69.0,
-        "Unmapped": 107.0,
+        "Unmapped": 30.0,
+        "[266] Mobile Trust": 36.0,
         "262 Field Service: Native GIS": 1.0,
+        "264 Field Service Trust": 1.0,
+        "[266] Quality Automation Uplift": 40.0,
         "264 Field Service: Workforce Scheduling on Mobile": 4.0
       },
       "december_capacity_limit": 105.60000000000002,
@@ -1820,6 +1894,7 @@
       "total": 8,
       "portfolios": [
         "262 Field Service Mobile",
+        "FY27 FS Mobile",
         "FY27 FS Trust",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
@@ -1865,10 +1940,14 @@
       "september_committed": 68,
       "september_work_items": 67,
       "october_capacity_limit": 140.8,
-      "october_committed": 100,
+      "october_committed": 96,
       "october_work_items": 43,
       "october_committed_by_program": {
-        "Unmapped": 100.0
+        "[266] Mobile Trust": 20.0,
+        "Unmapped": 61.0,
+        "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 9.0,
+        "[266] Low Connectivity and Performance": 4.0,
+        "[266] Quality Automation Uplift": 2.0
       },
       "august_delivered": 171,
       "august_delivered_by_program": {
@@ -1883,7 +1962,10 @@
       "september_delivered": 134,
       "september_delivered_by_program": {
         "262 Field Service: Mobile Worker Satisfaction": 6.0,
-        "Unmapped": 128.0
+        "[266] Mobile Trust": 62.0,
+        "Unmapped": 61.0,
+        "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 1.0,
+        "[266] Quality Automation Uplift": 4.0
       },
       "december_capacity_limit": 140.8,
       "december_committed": 0,
@@ -1954,6 +2036,7 @@
         "262 Field Service Mobile",
         "264 Field Service Foundations",
         "264 Field Service Mobile",
+        "FY27 FS Mobile",
         "FY27 FS Trust",
         "Field Service 260 Mobile Pillar"
       ],
@@ -2003,11 +2086,14 @@
       "september_committed": 123,
       "september_work_items": 102,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 380,
-      "october_work_items": 132,
+      "october_committed": 383,
+      "october_work_items": 134,
       "october_committed_by_program": {
-        "Unmapped": 362.0,
-        "264 Field Service: Workforce Scheduling on Mobile": 18.0
+        "Unmapped": 205.0,
+        "Performance Priming 100% Adoption": 68.0,
+        "[266] Mobile Trust": 73.0,
+        "264 Field Service: Workforce Scheduling on Mobile": 18.0,
+        "[266] Quality Automation Uplift": 19.0
       },
       "august_delivered": 147,
       "august_delivered_by_program": {
@@ -2020,13 +2106,16 @@
       "november_committed": 3,
       "november_work_items": 2,
       "november_committed_by_program": {
-        "Unmapped": 3.0
+        "[266] Mobile Trust": 2.0,
+        "Unmapped": 1.0
       },
       "september_delivered": 186,
       "september_delivered_by_program": {
-        "Unmapped": 164.0,
+        "Unmapped": 135.0,
+        "[266] Mobile Trust": 16.0,
         "[264] Field Service: Headless (aka Codey)": 1.0,
-        "264 Field Service: Workforce Scheduling on Mobile": 21.0
+        "264 Field Service: Workforce Scheduling on Mobile": 21.0,
+        "Performance Priming 100% Adoption": 13.0
       },
       "december_capacity_limit": 123.20000000000002,
       "december_committed": 0,
@@ -2041,6 +2130,7 @@
       "portfolios": [
         "262 Field Service Foundations",
         "264 Field Service Foundations",
+        "FY27 FS Mobile",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
       "engineering_manager": "Pei Chu",
@@ -2086,7 +2176,8 @@
       "october_committed": 10,
       "october_work_items": 4,
       "october_committed_by_program": {
-        "Unmapped": 10.0
+        "[266] Mobile Trust": 9.0,
+        "Unmapped": 1.0
       },
       "august_delivered": 22,
       "august_delivered_by_program": {
@@ -2101,7 +2192,8 @@
       "september_delivered": 18,
       "september_delivered_by_program": {
         "[264] Field Service: Headless (aka Codey)": 13.0,
-        "Unmapped": 4.0,
+        "Unmapped": 2.0,
+        "[266] Mobile Trust": 2.0,
         "264 WFS - Workforce Management": 1.0
       },
       "december_capacity_limit": 52.80000000000001,
@@ -2160,10 +2252,10 @@
       "september_committed": 39,
       "september_work_items": 32,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 347,
-      "october_work_items": 77,
+      "october_committed": 337,
+      "october_work_items": 76,
       "october_committed_by_program": {
-        "Unmapped": 341.0,
+        "Unmapped": 331.0,
         "[264] Unified Workforce Management (UWM)": 6.0
       },
       "august_delivered": 133,

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17T09:57:08.336625",
+  "last_updated": "2026-10-17T17:32:13.485262",
   "teams": [
     {
       "name": "FSE - Core",
@@ -94,10 +94,10 @@
       "september_committed": 117,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 228,
-      "october_work_items": 72,
+      "october_committed": 227,
+      "october_work_items": 71,
       "october_committed_by_program": {
-        "Unmapped": 90.0,
+        "Unmapped": 89.0,
         "264 Scheduling Flows": 11.0,
         "[266] Assets": 73.0,
         "266 WFS Onsite, Infield, Hybrid Scheduling": 54.0
@@ -673,10 +673,10 @@
       "september_committed": 116,
       "september_work_items": 52,
       "october_capacity_limit": 158.4,
-      "october_committed": 43,
-      "october_work_items": 9,
+      "october_committed": 47,
+      "october_work_items": 11,
       "october_committed_by_program": {
-        "Unmapped": 43.0
+        "Unmapped": 47.0
       },
       "august_delivered": 167,
       "august_delivered_by_program": {
@@ -2090,10 +2090,10 @@
       "september_committed": 123,
       "september_work_items": 102,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 349,
-      "october_work_items": 122,
+      "october_committed": 342,
+      "october_work_items": 119,
       "october_committed_by_program": {
-        "Unmapped": 188.0,
+        "Unmapped": 181.0,
         "Performance Priming 100% Adoption": 68.0,
         "[266] Mobile Trust": 66.0,
         "264 Field Service: Workforce Scheduling on Mobile": 10.0,
@@ -2107,10 +2107,10 @@
         "[264] Field Service: Headless (aka Codey)": 8.0
       },
       "november_capacity_limit": 123.20000000000002,
-      "november_committed": 3,
-      "november_work_items": 2,
+      "november_committed": 5,
+      "november_work_items": 3,
       "november_committed_by_program": {
-        "[266] Mobile Trust": 2.0,
+        "[266] Mobile Trust": 4.0,
         "Unmapped": 1.0
       },
       "september_delivered": 186,

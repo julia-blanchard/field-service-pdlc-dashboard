@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 974,
+    "total_epics_needing_attention": 982,
     "teams_affected": 77,
     "programs_affected": 71,
     "issue_breakdown": {
-      "missing_scheduled_build": 252,
-      "missing_priority": 546,
+      "missing_scheduled_build": 255,
+      "missing_priority": 554,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 893
+      "missing_planned_release": 901
     }
   },
   "epics": [
@@ -3126,7 +3126,7 @@
       "epic_name_key": "[262][SFS MCX][Data Capture] Lookup Component Enhancements",
       "team": "SFS Mobile Core Experience",
       "owner": "Gilad Katz",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "262",
       "priority": "-",
       "story_points": 0,
@@ -3181,7 +3181,7 @@
       "team": "SFS Mobile Core Experience",
       "owner": "Adi Sharet",
       "health": "On Track",
-      "scheduled_build": "262",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "262 Field Service: Customer Adoption",
@@ -4213,7 +4213,7 @@
       "epic_name_key": "* 262 SFS [Trust]  - Technical Debt",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Orelie Fridler",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "262",
       "priority": "-",
       "story_points": 0,
@@ -4231,7 +4231,7 @@
       "epic_name_key": "262 SFS [Hybrid Scheduling]  - generic Fetch Data",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Orelie Fridler",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "262",
       "priority": "-",
       "story_points": 0,
@@ -4422,7 +4422,7 @@
       "epic_name_key": "* 262 SFS [Trust] -  Vulnerability issues",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Orelie Fridler",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "262",
       "priority": "-",
       "story_points": 0,
@@ -5202,7 +5202,7 @@
       "epic_name_key": "262 SFS [Hybrid Scheduling]  - MP 2 CORE improvments",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Orelie Fridler",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "262",
       "priority": "-",
       "story_points": 0,
@@ -5238,7 +5238,7 @@
       "epic_name_key": "262 SFS [Unified Scheduling] - Unified API - Integration",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Limor Rohald",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "262",
       "priority": "-",
       "story_points": 0,
@@ -5256,7 +5256,7 @@
       "epic_name_key": "262 SFS [Unified Scheduling] - Check Rules API",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Limor Rohald",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "262",
       "priority": "-",
       "story_points": 0,
@@ -6834,7 +6834,7 @@
       "epic_name_key": "[262] ESWP - High Availability",
       "team": "Embedded Service for Web - Platform",
       "owner": "Subash Gutala",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": 7,
       "story_points": 0,
@@ -8383,7 +8383,7 @@
       "epic_name_key": "Intake Assistant Agent",
       "team": "NPC Asteroids",
       "owner": "Meg Gray",
-      "health": "Unknown",
+      "health": "On Track",
       "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
@@ -11928,7 +11928,7 @@
       "epic_name_key": "WFS - 266 - RSO: Field set for keep scheduled",
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -11947,7 +11947,7 @@
       "epic_name_key": "WFS - 266 - RSO: Show results Activity Tracker",
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
-      "health": "On Track",
+      "health": "Watch",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -12075,9 +12075,9 @@
       "epic_id": "a3QEE000002hVNZ2A2",
       "epic_name": "WFS - 266 - Actions limited by Status Transition in the Console",
       "epic_name_key": "WFS - 266 - Actions limited by Status Transition in the Console",
-      "team": "FSL - Foundation - Corecodiles",
+      "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
-      "health": "On Track",
+      "health": "Not Started",
       "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
@@ -12344,17 +12344,16 @@
       "epic_id": "a3QEE000002hV932AE",
       "epic_name": "WFS - 266 - Status Transition Flow Configuration",
       "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
-      "team": "FSL - Resource - Scheduling Platform",
+      "team": "FSL - Foundation - Corecodiles",
       "owner": "Limor Rohald",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield & Onsite Hybrid",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12420,14 +12419,13 @@
       "team": "-",
       "owner": "Itay Sagiv",
       "health": "Not Started",
-      "scheduled_build": "-",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield & Onsite Hybrid",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12458,14 +12456,13 @@
       "team": "FSL - Asset - 360",
       "owner": "Sri Ram Bathina",
       "health": "Watch",
-      "scheduled_build": "-",
+      "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Infield & Onsite Hybrid",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -12490,8 +12487,8 @@
     },
     {
       "epic_id": "a3QEE000002hV7R2AU",
-      "epic_name": "WFS - 266 - Field Scheduling  Block time before/after SA",
-      "epic_name_key": "WFS - 266 - Field Scheduling  Block time before/after SA",
+      "epic_name": "WFS - 268 - Field Scheduling  Block time before/after SA",
+      "epic_name_key": "WFS - 268 - Field Scheduling  Block time before/after SA",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Limor Rohald",
       "health": "Not Started",
@@ -12547,9 +12544,9 @@
       "epic_id": "a3QEE000002hW1t2AE",
       "epic_name": "266 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
       "epic_name_key": "266 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
-      "team": "FSL - Resource - Scheduling Platform",
+      "team": "FSL - Foundation - Corecodiles",
       "owner": "Dori Nahmias",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
@@ -12567,7 +12564,7 @@
       "epic_name_key": "266 WFS - Setup optimization jobs",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Dori Nahmias",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
@@ -12641,7 +12638,7 @@
       "epic_name_key": "266 WFS - Optimization hub - add missing KPIs",
       "team": "Optimization Engineering",
       "owner": "Dori Nahmias",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -12656,8 +12653,8 @@
     },
     {
       "epic_id": "a3QEE000002hWEn2AM",
-      "epic_name": "266 WFS - Optimization hub redesign",
-      "epic_name_key": "266 WFS - Optimization hub redesign",
+      "epic_name": "268 WFS - Optimization hub redesign",
+      "epic_name_key": "268 WFS - Optimization hub redesign",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Dori Nahmias",
       "health": "Not Started",
@@ -12678,7 +12675,7 @@
       "epic_name_key": "266 WFS - Bulk schedule and reschedule",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Dori Nahmias",
-      "health": "Not Started",
+      "health": "Unknown",
       "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
@@ -12715,6 +12712,25 @@
       "epic_name_key": "266 WFS - Field Scheduling PFT",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Orelie Fridler",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "project": "266 WFS Infield",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002leC92AI",
+      "epic_name": "266 WFS - Complex/Multi-Stage Work",
+      "epic_name_key": "266 WFS - Complex/Multi-Stage Work",
+      "team": "FSL - Resource - Scheduling Platform",
+      "owner": "Limor Rohald",
       "health": "Not Started",
       "scheduled_build": "-",
       "priority": "-",
@@ -13526,6 +13542,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002dtt72AA",
+      "epic_name": "[264.14 & 266] [Scheduling Console] Read Only Gantt View",
+      "epic_name_key": "[264.14 & 266] [Scheduling Console] Read Only Gantt View",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Not Started",
+      "scheduled_build": "264.13",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002dtwL2AQ",
       "epic_name": "[266] [UNDER THE LINE] [Scheduling Console] Bookmark Appointments",
       "epic_name_key": "[266] [UNDER THE LINE] [Scheduling Console] Bookmark Appointments",
@@ -13563,9 +13597,9 @@
       "epic_id": "a3QEE000002dtzZ2AQ",
       "epic_name": "[264.11] [Scheduling Console] Skills Filter Dropdown",
       "epic_name_key": "[264.11] [Scheduling Console] Skills Filter Dropdown",
-      "team": "FSL - Talpiot - Dispatch Console",
+      "team": "FSL - Resource - Dispatch Console",
       "owner": "Lilach Talbi",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
@@ -13746,6 +13780,24 @@
       "owner": "Lilach Talbi",
       "health": "On Track",
       "scheduled_build": "264.11",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002mTg52AE",
+      "epic_name": "[266] [Scheduling Console] What's New embedded in the console",
+      "epic_name_key": "[266] [Scheduling Console] What's New embedded in the console",
+      "team": "FSL - Resource - Dispatch Console",
+      "owner": "Lilach Talbi",
+      "health": "Not Started",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "[266] S&O Scheduling Console",
@@ -13998,7 +14050,7 @@
       "epic_name_key": "[266][O2] RVA Complex Work",
       "team": "FSL - Resource - Scheduling Intelligence",
       "owner": "Yonatan Bar-Yehuda",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
@@ -14200,14 +14252,14 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002i3Yv2AI",
-      "epic_name": "[266] SFS [WFS] [TRUST] Scheduled jobs limits to Core",
-      "epic_name_key": "[266] SFS [WFS] [TRUST] Scheduled jobs limits to Core",
+      "epic_id": "a3QEE000002mFYH2A2",
+      "epic_name": "[266] SFS [ESO] [TRUST] Schedule jobs to core",
+      "epic_name_key": "[266] SFS [ESO] [TRUST] Schedule jobs to core",
       "team": "FSL - Foundation - Corecodiles",
       "owner": "Miriam Kahana",
       "health": "On Track",
       "scheduled_build": "266",
-      "priority": 7,
+      "priority": 4,
       "story_points": 0,
       "program": "[266] S&O Trust",
       "portfolio": "FY27 FS S&O",
@@ -14434,6 +14486,25 @@
       "portfolio": "FY27 FS S&O",
       "project": "[266] S&O Trust: Infrastructure / DevOps Support",
       "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002lkkb2AA",
+      "epic_name": "SFS [Infra] HAMS and HARR reviews related work items",
+      "epic_name_key": "SFS [Infra] HAMS and HARR reviews related work items",
+      "team": "Optimization Engineering",
+      "owner": "Lahiru Gallege",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Trust",
+      "portfolio": "FY27 FS S&O",
+      "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -14997,6 +15068,82 @@
       "program": "[266] Project Felix to Pilot",
       "portfolio": "FY27 FS Mobile",
       "project": "Prepare for Phase 2 Gate Transition",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002lj292AA",
+      "epic_name": "Felix M1 - FelixUI Modularized",
+      "epic_name_key": "Felix M1 - FelixUI Modularized",
+      "team": "Field Service 3x90d",
+      "owner": "Andrew Little",
+      "health": "Completed",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix to Pilot",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix M1 - FelixUI Modularized",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002lliH2AQ",
+      "epic_name": "Felix Open Mic - Live Activity Voice",
+      "epic_name_key": "Felix Open Mic - Live Activity Voice",
+      "team": "Field Service 3x90d",
+      "owner": "Andrew Little",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix to Pilot",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix Hot Mic - Live Activity Voice",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002log92AA",
+      "epic_name": "Felix Glasses MVP",
+      "epic_name_key": "Felix Glasses MVP",
+      "team": "Field Service 3x90d",
+      "owner": "Andrew Little",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix to Pilot",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix Hot Mic - Live Activity Voice",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002mHJy2AM",
+      "epic_name": "Felix Backlog & Enhancements",
+      "epic_name_key": "Felix Backlog & Enhancements",
+      "team": "Field Service 3x90d",
+      "owner": "Andrew Little",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Project Felix to Pilot",
+      "portfolio": "FY27 FS Mobile",
+      "project": "Felix Backlog & Enhancements",
       "issues": [
         "missing_scheduled_build",
         "missing_priority",
@@ -17164,7 +17311,7 @@
       "epic_name_key": "[SBOM] Asset Hierarchy Explainer",
       "team": "FSL - Asset - 360",
       "owner": "Nishant Sharma",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
@@ -17183,7 +17330,7 @@
       "team": "FSL - Asset - 360",
       "owner": "Nishant Sharma",
       "health": "Not Started",
-      "scheduled_build": "266",
+      "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
       "program": "[266] Assets",
@@ -17200,7 +17347,7 @@
       "epic_name_key": "[SBOM] Suggest Products Required",
       "team": "FSL - Asset - 360",
       "owner": "Nishant Sharma",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "268",
       "priority": "-",
       "story_points": 0,
@@ -17690,14 +17837,13 @@
           "team": "-",
           "owner": "Itay Sagiv",
           "health": "Not Started",
-          "scheduled_build": "-",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield & Onsite Hybrid",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -18196,7 +18342,7 @@
           "epic_name_key": "[262] ESWP - High Availability",
           "team": "Embedded Service for Web - Platform",
           "owner": "Subash Gutala",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": 7,
           "story_points": 0,
@@ -18589,14 +18735,13 @@
           "team": "FSL - Asset - 360",
           "owner": "Sri Ram Bathina",
           "health": "Watch",
-          "scheduled_build": "-",
+          "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield & Onsite Hybrid",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -18643,7 +18788,7 @@
           "epic_name_key": "[SBOM] Asset Hierarchy Explainer",
           "team": "FSL - Asset - 360",
           "owner": "Nishant Sharma",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
@@ -18662,7 +18807,7 @@
           "team": "FSL - Asset - 360",
           "owner": "Nishant Sharma",
           "health": "Not Started",
-          "scheduled_build": "266",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "[266] Assets",
@@ -18679,7 +18824,7 @@
           "epic_name_key": "[SBOM] Suggest Products Required",
           "team": "FSL - Asset - 360",
           "owner": "Nishant Sharma",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
@@ -19404,7 +19549,7 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 21,
+      "epic_count": 22,
       "epics": [
         {
           "epic_id": "a3QEE000002GSNN2A4",
@@ -19630,18 +19775,18 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002hVNZ2A2",
-          "epic_name": "WFS - 266 - Actions limited by Status Transition in the Console",
-          "epic_name_key": "WFS - 266 - Actions limited by Status Transition in the Console",
+          "epic_id": "a3QEE000002hV932AE",
+          "epic_name": "WFS - 266 - Status Transition Flow Configuration",
+          "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
           "team": "FSL - Foundation - Corecodiles",
           "owner": "Limor Rohald",
-          "health": "On Track",
+          "health": "Not Started",
           "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
-          "program": "266 WFS Operations Console",
+          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "266 WFS Operations Console",
+          "project": "266 WFS Infield & Onsite Hybrid",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -19655,6 +19800,24 @@
           "owner": "Dori Nahmias",
           "health": "On Track",
           "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Infield",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002hW1t2AE",
+          "epic_name": "266 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
+          "epic_name_key": "266 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Dori Nahmias",
+          "health": "Unknown",
+          "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
@@ -19753,14 +19916,14 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002i3Yv2AI",
-          "epic_name": "[266] SFS [WFS] [TRUST] Scheduled jobs limits to Core",
-          "epic_name_key": "[266] SFS [WFS] [TRUST] Scheduled jobs limits to Core",
+          "epic_id": "a3QEE000002mFYH2A2",
+          "epic_name": "[266] SFS [ESO] [TRUST] Schedule jobs to core",
+          "epic_name_key": "[266] SFS [ESO] [TRUST] Schedule jobs to core",
           "team": "FSL - Foundation - Corecodiles",
           "owner": "Miriam Kahana",
           "health": "On Track",
           "scheduled_build": "266",
-          "priority": 7,
+          "priority": 4,
           "story_points": 0,
           "program": "[266] S&O Trust",
           "portfolio": "FY27 FS S&O",
@@ -19923,7 +20086,7 @@
     },
     {
       "name": "FSL - Resource - Dispatch Console",
-      "epic_count": 52,
+      "epic_count": 55,
       "epics": [
         {
           "epic_id": "a3QEE000001rQYT2A2",
@@ -20575,6 +20738,24 @@
           ]
         },
         {
+          "epic_id": "a3QEE000002dtt72AA",
+          "epic_name": "[264.14 & 266] [Scheduling Console] Read Only Gantt View",
+          "epic_name_key": "[264.14 & 266] [Scheduling Console] Read Only Gantt View",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Not Started",
+          "scheduled_build": "264.13",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000002dtwL2AQ",
           "epic_name": "[266] [UNDER THE LINE] [Scheduling Console] Bookmark Appointments",
           "epic_name_key": "[266] [UNDER THE LINE] [Scheduling Console] Bookmark Appointments",
@@ -20605,6 +20786,24 @@
           "portfolio": "FY27 FS S&O",
           "project": "S&O Scheduling Console - Gantt & List Capabilities",
           "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002dtzZ2AQ",
+          "epic_name": "[264.11] [Scheduling Console] Skills Filter Dropdown",
+          "epic_name_key": "[264.11] [Scheduling Console] Skills Filter Dropdown",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "On Track",
+          "scheduled_build": "264.11",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -20760,6 +20959,24 @@
           "owner": "Lilach Talbi",
           "health": "On Track",
           "scheduled_build": "264.11",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002mTg52AE",
+          "epic_name": "[266] [Scheduling Console] What's New embedded in the console",
+          "epic_name_key": "[266] [Scheduling Console] What's New embedded in the console",
+          "team": "FSL - Resource - Dispatch Console",
+          "owner": "Lilach Talbi",
+          "health": "Not Started",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "[266] S&O Scheduling Console",
@@ -21532,7 +21749,7 @@
           "epic_name_key": "[266][O2] RVA Complex Work",
           "team": "FSL - Resource - Scheduling Intelligence",
           "owner": "Yonatan Bar-Yehuda",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
@@ -22285,7 +22502,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Platform",
-      "epic_count": 30,
+      "epic_count": 29,
       "epics": [
         {
           "epic_id": "a3QEE000001ofqb2AA",
@@ -22470,7 +22687,7 @@
           "epic_name_key": "* 262 SFS [Trust]  - Technical Debt",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Orelie Fridler",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "262",
           "priority": "-",
           "story_points": 0,
@@ -22488,7 +22705,7 @@
           "epic_name_key": "262 SFS [Hybrid Scheduling]  - generic Fetch Data",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Orelie Fridler",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "262",
           "priority": "-",
           "story_points": 0,
@@ -22506,7 +22723,7 @@
           "epic_name_key": "* 262 SFS [Trust] -  Vulnerability issues",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Orelie Fridler",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "262",
           "priority": "-",
           "story_points": 0,
@@ -22524,7 +22741,7 @@
           "epic_name_key": "262 SFS [Hybrid Scheduling]  - MP 2 CORE improvments",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Orelie Fridler",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "262",
           "priority": "-",
           "story_points": 0,
@@ -22560,7 +22777,7 @@
           "epic_name_key": "262 SFS [Unified Scheduling] - Unified API - Integration",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Limor Rohald",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "262",
           "priority": "-",
           "story_points": 0,
@@ -22578,7 +22795,7 @@
           "epic_name_key": "262 SFS [Unified Scheduling] - Check Rules API",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Limor Rohald",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "262",
           "priority": "-",
           "story_points": 0,
@@ -22644,28 +22861,9 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002hV932AE",
-          "epic_name": "WFS - 266 - Status Transition Flow Configuration",
-          "epic_name_key": "WFS - 266 - Status Transition Flow Configuration",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "-",
-          "priority": "-",
-          "story_points": 0,
-          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "266 WFS Infield & Onsite Hybrid",
-          "issues": [
-            "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002hV7R2AU",
-          "epic_name": "WFS - 266 - Field Scheduling  Block time before/after SA",
-          "epic_name_key": "WFS - 266 - Field Scheduling  Block time before/after SA",
+          "epic_name": "WFS - 268 - Field Scheduling  Block time before/after SA",
+          "epic_name_key": "WFS - 268 - Field Scheduling  Block time before/after SA",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Limor Rohald",
           "health": "Not Started",
@@ -22700,30 +22898,12 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002hW1t2AE",
-          "epic_name": "266 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
-          "epic_name_key": "266 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Dori Nahmias",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "266 WFS Infield",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002hW3V2AU",
           "epic_name": "266 WFS - Setup optimization jobs",
           "epic_name_key": "266 WFS - Setup optimization jobs",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Dori Nahmias",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
@@ -22756,8 +22936,8 @@
         },
         {
           "epic_id": "a3QEE000002hWEn2AM",
-          "epic_name": "266 WFS - Optimization hub redesign",
-          "epic_name_key": "266 WFS - Optimization hub redesign",
+          "epic_name": "268 WFS - Optimization hub redesign",
+          "epic_name_key": "268 WFS - Optimization hub redesign",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Dori Nahmias",
           "health": "Not Started",
@@ -22778,7 +22958,7 @@
           "epic_name_key": "266 WFS - Bulk schedule and reschedule",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Dori Nahmias",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
@@ -22815,6 +22995,25 @@
           "epic_name_key": "266 WFS - Field Scheduling PFT",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Orelie Fridler",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Infield",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002leC92AI",
+          "epic_name": "266 WFS - Complex/Multi-Stage Work",
+          "epic_name_key": "266 WFS - Complex/Multi-Stage Work",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Limor Rohald",
           "health": "Not Started",
           "scheduled_build": "-",
           "priority": "-",
@@ -22832,7 +23031,7 @@
     },
     {
       "name": "FSL - Talpiot - Dispatch Console",
-      "epic_count": 42,
+      "epic_count": 41,
       "epics": [
         {
           "epic_id": "a3QEE000002NSAX2A4",
@@ -23428,24 +23627,6 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002dtzZ2AQ",
-          "epic_name": "[264.11] [Scheduling Console] Skills Filter Dropdown",
-          "epic_name_key": "[264.11] [Scheduling Console] Skills Filter Dropdown",
-          "team": "FSL - Talpiot - Dispatch Console",
-          "owner": "Lilach Talbi",
-          "health": "Not Started",
-          "scheduled_build": "264.11",
-          "priority": "-",
-          "story_points": 0,
-          "program": "[266] S&O Scheduling Console",
-          "portfolio": "FY27 FS S&O",
-          "project": "S&O Scheduling Console - Gantt & List Capabilities",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002du2n2AA",
           "epic_name": "[266][UNDER THE LINE] [Scheduling Console] Multi-Record Absence Management",
           "epic_name_key": "[266][UNDER THE LINE] [Scheduling Console] Multi-Record Absence Management",
@@ -23882,7 +24063,7 @@
     },
     {
       "name": "Field Service 3x90d",
-      "epic_count": 2,
+      "epic_count": 6,
       "epics": [
         {
           "epic_id": "a3QEE000002jUiL2AU",
@@ -23916,6 +24097,82 @@
           "program": "[266] Project Felix to Pilot",
           "portfolio": "FY27 FS Mobile",
           "project": "Prepare for Phase 2 Gate Transition",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002lj292AA",
+          "epic_name": "Felix M1 - FelixUI Modularized",
+          "epic_name_key": "Felix M1 - FelixUI Modularized",
+          "team": "Field Service 3x90d",
+          "owner": "Andrew Little",
+          "health": "Completed",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix to Pilot",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix M1 - FelixUI Modularized",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002lliH2AQ",
+          "epic_name": "Felix Open Mic - Live Activity Voice",
+          "epic_name_key": "Felix Open Mic - Live Activity Voice",
+          "team": "Field Service 3x90d",
+          "owner": "Andrew Little",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix to Pilot",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix Hot Mic - Live Activity Voice",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002log92AA",
+          "epic_name": "Felix Glasses MVP",
+          "epic_name_key": "Felix Glasses MVP",
+          "team": "Field Service 3x90d",
+          "owner": "Andrew Little",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix to Pilot",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix Hot Mic - Live Activity Voice",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002mHJy2AM",
+          "epic_name": "Felix Backlog & Enhancements",
+          "epic_name_key": "Felix Backlog & Enhancements",
+          "team": "Field Service 3x90d",
+          "owner": "Andrew Little",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Project Felix to Pilot",
+          "portfolio": "FY27 FS Mobile",
+          "project": "Felix Backlog & Enhancements",
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
@@ -25543,7 +25800,7 @@
           "epic_name_key": "Intake Assistant Agent",
           "team": "NPC Asteroids",
           "owner": "Meg Gray",
-          "health": "Unknown",
+          "health": "On Track",
           "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
@@ -25975,7 +26232,7 @@
     },
     {
       "name": "Optimization Engineering",
-      "epic_count": 40,
+      "epic_count": 41,
       "epics": [
         {
           "epic_id": "a3QEE000002GVrV2AW",
@@ -26365,7 +26622,7 @@
           "epic_name_key": "266 WFS - Optimization hub - add missing KPIs",
           "team": "Optimization Engineering",
           "owner": "Dori Nahmias",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -26494,6 +26751,25 @@
           "portfolio": "FY27 FS S&O",
           "project": "[266] S&O Trust: Infrastructure / DevOps Support",
           "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002lkkb2AA",
+          "epic_name": "SFS [Infra] HAMS and HARR reviews related work items",
+          "epic_name_key": "SFS [Infra] HAMS and HARR reviews related work items",
+          "team": "Optimization Engineering",
+          "owner": "Lahiru Gallege",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Trust",
+          "portfolio": "FY27 FS S&O",
+          "project": "[266] S&O Trust: Infrastructure / DevOps Support",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -28108,7 +28384,7 @@
     },
     {
       "name": "SFS Core Scheduler",
-      "epic_count": 44,
+      "epic_count": 45,
       "epics": [
         {
           "epic_id": "a3QEE000002MYBZ2A4",
@@ -28615,7 +28891,7 @@
           "epic_name_key": "WFS - 266 - RSO: Field set for keep scheduled",
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -28634,7 +28910,7 @@
           "epic_name_key": "WFS - 266 - RSO: Show results Activity Tracker",
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
-          "health": "On Track",
+          "health": "Watch",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -28754,6 +29030,24 @@
           "project": "266 WFS Operations Console",
           "issues": [
             "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002hVNZ2A2",
+          "epic_name": "WFS - 266 - Actions limited by Status Transition in the Console",
+          "epic_name_key": "WFS - 266 - Actions limited by Status Transition in the Console",
+          "team": "SFS Core Scheduler",
+          "owner": "Limor Rohald",
+          "health": "Not Started",
+          "scheduled_build": "266",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Operations Console",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Operations Console",
+          "issues": [
             "missing_priority",
             "missing_planned_release"
           ]
@@ -31173,7 +31467,7 @@
           "epic_name_key": "[262][SFS MCX][Data Capture] Lookup Component Enhancements",
           "team": "SFS Mobile Core Experience",
           "owner": "Gilad Katz",
-          "health": "Not Started",
+          "health": "Unknown",
           "scheduled_build": "262",
           "priority": "-",
           "story_points": 0,
@@ -31228,7 +31522,7 @@
           "team": "SFS Mobile Core Experience",
           "owner": "Adi Sharet",
           "health": "On Track",
-          "scheduled_build": "262",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "262 Field Service: Customer Adoption",

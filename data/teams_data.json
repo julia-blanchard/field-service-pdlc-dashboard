@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T21:36:21.830762",
+  "last_updated": "2026-10-24T09:20:41.318219",
   "teams": [
     {
       "name": "FSE - Core",
@@ -1104,11 +1104,11 @@
       "september_committed": 82.5,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 94.5,
+      "october_committed": 93.5,
       "october_work_items": 38,
       "october_committed_by_program": {
-        "Unmapped": 80.5,
-        "[266] S&O Trust": 14.0
+        "Unmapped": 81.5,
+        "[266] S&O Trust": 12.0
       },
       "august_delivered": 173.5,
       "august_delivered_by_program": {
@@ -1205,10 +1205,10 @@
       "september_committed": 106,
       "september_work_items": 93,
       "october_capacity_limit": 176.0,
-      "october_committed": 126,
-      "october_work_items": 56,
+      "october_committed": 122,
+      "october_work_items": 52,
       "october_committed_by_program": {
-        "Unmapped": 29.0,
+        "Unmapped": 25.0,
         "[266] S&O Trust": 48.0,
         "[266] S&O Optimization Platform": 24.0,
         "[266] S&O Dispatch Agent": 25.0

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T10:34:19.590303",
+  "last_updated": "2026-10-25T15:21:50.439715",
   "teams": [
     {
       "name": "FSE - Core",
@@ -94,10 +94,10 @@
       "september_committed": 117,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 164,
-      "october_work_items": 56,
+      "october_committed": 167,
+      "october_work_items": 57,
       "october_committed_by_program": {
-        "Unmapped": 52.0,
+        "Unmapped": 55.0,
         "264 Scheduling Flows": 6.0,
         "[266] Assets": 52.0,
         "266 WFS Onsite, Infield, Hybrid Scheduling": 54.0
@@ -675,10 +675,10 @@
       "september_committed": 116,
       "september_work_items": 52,
       "october_capacity_limit": 158.4,
-      "october_committed": 68,
-      "october_work_items": 17,
+      "october_committed": 70,
+      "october_work_items": 18,
       "october_committed_by_program": {
-        "Unmapped": 68.0
+        "Unmapped": 70.0
       },
       "august_delivered": 167,
       "august_delivered_by_program": {
@@ -770,13 +770,13 @@
       "september_committed": 58,
       "september_work_items": 11,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 90,
-      "october_work_items": 27,
+      "october_committed": 91,
+      "october_work_items": 28,
       "october_committed_by_program": {
         "[266] S&O Trust": 31.0,
         "FS 264: S&O: Agentic S&O": 0.0,
         "[266] S&O Optimization Platform": 19.0,
-        "Unmapped": 35.0,
+        "Unmapped": 36.0,
         "FS 264: S&O Trust": 5.0
       },
       "august_delivered": 23,
@@ -1660,11 +1660,11 @@
       "september_committed": 48,
       "september_work_items": 64,
       "october_capacity_limit": 140.8,
-      "october_committed": 255,
-      "october_work_items": 83,
+      "october_committed": 250,
+      "october_work_items": 81,
       "october_committed_by_program": {
-        "Unmapped": 181.0,
-        "[266] Mobile Trust": 20.0,
+        "Unmapped": 178.0,
+        "[266] Mobile Trust": 18.0,
         "262 Field Service: Customer Adoption": 20.0,
         "264 Field Service: Workforce Scheduling on Mobile": 12.0,
         "266 GovCloud Compliance": 1.0,

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T15:56:32.928815",
+  "last_updated": "2026-10-27T10:09:42.785375",
   "teams": [
     {
       "name": "FSE - Core",
@@ -94,13 +94,13 @@
       "september_committed": 117,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 152,
-      "october_work_items": 51,
+      "october_committed": 160,
+      "october_work_items": 54,
       "october_committed_by_program": {
-        "Unmapped": 47.0,
+        "Unmapped": 48.0,
         "264 Scheduling Flows": 3.0,
-        "[266] Assets": 52.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 50.0
+        "[266] Assets": 62.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 47.0
       },
       "august_delivered": 286,
       "august_delivered_by_program": {
@@ -108,11 +108,11 @@
         "264 Scheduling Flows": 200.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 59,
-      "november_work_items": 15,
+      "november_committed": 55,
+      "november_work_items": 17,
       "november_committed_by_program": {
         "Unmapped": 10.0,
-        "[266] Assets": 49.0
+        "[266] Assets": 45.0
       },
       "september_delivered": 364,
       "september_delivered_by_program": {
@@ -245,11 +245,11 @@
       "september_committed": 76,
       "september_work_items": 73,
       "october_capacity_limit": 158.4,
-      "october_committed": 114,
-      "october_work_items": 41,
+      "october_committed": 110,
+      "october_work_items": 40,
       "october_committed_by_program": {
-        "Unmapped": 57.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 57.0
+        "Unmapped": 56.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 54.0
       },
       "august_delivered": 168,
       "august_delivered_by_program": {
@@ -327,10 +327,10 @@
       "september_committed": 51,
       "september_work_items": 102,
       "october_capacity_limit": 88.0,
-      "october_committed": 213,
-      "october_work_items": 61,
+      "october_committed": 215,
+      "october_work_items": 60,
       "october_committed_by_program": {
-        "Unmapped": 213.0
+        "Unmapped": 215.0
       },
       "august_delivered": 200,
       "august_delivered_by_program": {
@@ -509,10 +509,10 @@
       "september_committed": 57,
       "september_work_items": 35,
       "october_capacity_limit": 176.0,
-      "october_committed": 330,
-      "october_work_items": 76,
+      "october_committed": 322,
+      "october_work_items": 73,
       "october_committed_by_program": {
-        "Unmapped": 330.0
+        "Unmapped": 322.0
       },
       "august_delivered": 72,
       "august_delivered_by_program": {
@@ -675,10 +675,10 @@
       "september_committed": 116,
       "september_work_items": 52,
       "october_capacity_limit": 158.4,
-      "october_committed": 82,
-      "october_work_items": 23,
+      "october_committed": 75,
+      "october_work_items": 20,
       "october_committed_by_program": {
-        "Unmapped": 82.0
+        "Unmapped": 75.0
       },
       "august_delivered": 167,
       "august_delivered_by_program": {
@@ -1110,11 +1110,11 @@
       "september_committed": 82.5,
       "september_work_items": 130,
       "october_capacity_limit": 158.4,
-      "october_committed": 121.0,
-      "october_work_items": 60,
+      "october_committed": 127.5,
+      "october_work_items": 66,
       "october_committed_by_program": {
-        "Unmapped": 104.0,
-        "[266] S&O Trust": 15.0,
+        "Unmapped": 112.0,
+        "[266] S&O Trust": 13.5,
         "FS 264: S&O Trust": 2.0
       },
       "august_delivered": 173.5,
@@ -1124,10 +1124,10 @@
         "[266] S&O Trust": 8.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 7,
-      "november_work_items": 3,
+      "november_committed": 9,
+      "november_work_items": 4,
       "november_committed_by_program": {
-        "Unmapped": 4.0,
+        "Unmapped": 6.0,
         "FS 264: S&O Trust": 3.0
       },
       "september_delivered": 182.5,
@@ -1384,12 +1384,12 @@
       "september_committed": 103,
       "september_work_items": 62,
       "october_capacity_limit": 193.60000000000002,
-      "october_committed": 149,
-      "october_work_items": 61,
+      "october_committed": 127,
+      "october_work_items": 56,
       "october_committed_by_program": {
-        "Unmapped": 13.0,
-        "Salesforce Field Service 258: Trust": 53.0,
-        "266 WFS Operations Console": 83.0
+        "Unmapped": 12.0,
+        "Salesforce Field Service 258: Trust": 58.0,
+        "266 WFS Operations Console": 57.0
       },
       "august_delivered": 130,
       "august_delivered_by_program": {
@@ -1473,12 +1473,12 @@
       "september_committed": 71,
       "september_work_items": 85,
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 62,
-      "october_work_items": 36,
+      "october_committed": 69,
+      "october_work_items": 39,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 12.0,
-        "[266] Mobile AI & Voice to Form": 6.0,
-        "Unmapped": 43.0,
+        "[266] Mobile AI & Voice to Form": 9.0,
+        "[266] Mobile Trust": 11.0,
+        "Unmapped": 48.0,
         "[266] Quality Automation Uplift": 1.0
       },
       "august_delivered": 150,
@@ -1569,11 +1569,11 @@
       "september_committed": 137,
       "september_work_items": 131,
       "october_capacity_limit": 140.8,
-      "october_committed": 97,
-      "october_work_items": 47,
+      "october_committed": 101,
+      "october_work_items": 49,
       "october_committed_by_program": {
-        "Unmapped": 54.0,
-        "[266] Mobile Trust": 31.0,
+        "Unmapped": 57.0,
+        "[266] Mobile Trust": 32.0,
         "[266] Quality Automation Uplift": 10.0,
         "264 Field Service: Customer Trust": 2.0
       },
@@ -1664,10 +1664,10 @@
       "september_committed": 48,
       "september_work_items": 64,
       "october_capacity_limit": 140.8,
-      "october_committed": 256,
-      "october_work_items": 86,
+      "october_committed": 351,
+      "october_work_items": 109,
       "october_committed_by_program": {
-        "Unmapped": 184.0,
+        "Unmapped": 279.0,
         "[266] Mobile Trust": 18.0,
         "262 Field Service: Customer Adoption": 20.0,
         "264 Field Service: Workforce Scheduling on Mobile": 12.0,
@@ -1730,21 +1730,21 @@
         "264 Field Service: Workforce Scheduling on Mobile": 14.0
       },
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 153,
-      "october_work_items": 52,
+      "october_committed": 155,
+      "october_work_items": 53,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 25.0,
         "[266] Guided Experience": 95.0,
-        "Unmapped": 22.0,
+        "Unmapped": 24.0,
+        "[266] Mobile Trust": 25.0,
         "264 Field Service: Workforce Scheduling on Mobile": 10.0,
         "262 Field Service Trust": 1.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 38,
-      "november_work_items": 19,
+      "november_committed": 36,
+      "november_work_items": 18,
       "november_committed_by_program": {
         "[266] Guided Experience": 25.0,
-        "Unmapped": 12.0,
+        "Unmapped": 10.0,
         "[266] Mobile Trust": 1.0
       },
       "september_delivered": 290,
@@ -1818,11 +1818,11 @@
       "september_committed": 42,
       "september_work_items": 81,
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 61,
-      "october_work_items": 22,
+      "october_committed": 56,
+      "october_work_items": 21,
       "october_committed_by_program": {
         "264 Field Service: Customer Trust": 25.0,
-        "Unmapped": 25.0,
+        "Unmapped": 20.0,
         "[266] Mobile Trust": 9.0,
         "[266] Quality Automation Uplift": 2.0
       },
@@ -1963,13 +1963,13 @@
       "september_committed": 68,
       "september_work_items": 67,
       "october_capacity_limit": 140.8,
-      "october_committed": 110,
-      "october_work_items": 44,
+      "october_committed": 109,
+      "october_work_items": 46,
       "october_committed_by_program": {
-        "Unmapped": 58.0,
-        "[266] Mobile Trust": 23.0,
+        "Unmapped": 55.0,
+        "[266] Mobile Trust": 24.0,
         "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 17.0,
-        "[266] Low Connectivity and Performance": 12.0
+        "[266] Low Connectivity and Performance": 13.0
       },
       "august_delivered": 171,
       "august_delivered_by_program": {
@@ -2111,14 +2111,14 @@
       "september_committed": 123,
       "september_work_items": 102,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 345,
-      "october_work_items": 118,
+      "october_committed": 331,
+      "october_work_items": 112,
       "october_committed_by_program": {
-        "Unmapped": 191.0,
+        "Unmapped": 180.0,
         "[266] Mobile Trust": 58.0,
-        "Performance Priming 100% Adoption": 62.0,
+        "Performance Priming 100% Adoption": 63.0,
         "[266] Quality Automation Uplift": 26.0,
-        "264 Field Service: Workforce Scheduling on Mobile": 8.0
+        "264 Field Service: Workforce Scheduling on Mobile": 4.0
       },
       "august_delivered": 147,
       "august_delivered_by_program": {
@@ -2128,10 +2128,10 @@
         "[264] Field Service: Headless (aka Codey)": 8.0
       },
       "november_capacity_limit": 123.20000000000002,
-      "november_committed": 26,
-      "november_work_items": 11,
+      "november_committed": 31,
+      "november_work_items": 12,
       "november_committed_by_program": {
-        "Unmapped": 3.0,
+        "Unmapped": 8.0,
         "Performance Priming 100% Adoption": 12.0,
         "[266] Mobile Trust": 11.0
       },
@@ -2199,10 +2199,10 @@
       "september_committed": 13,
       "september_work_items": 9,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 15,
-      "october_work_items": 5,
+      "october_committed": 10,
+      "october_work_items": 4,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 14.0,
+        "[266] Mobile Trust": 9.0,
         "Unmapped": 1.0
       },
       "august_delivered": 22,
@@ -2279,7 +2279,7 @@
       "september_work_items": 32,
       "october_capacity_limit": 52.80000000000001,
       "october_committed": 326,
-      "october_work_items": 76,
+      "october_work_items": 75,
       "october_committed_by_program": {
         "Unmapped": 320.0,
         "[264] Unified Workforce Management (UWM)": 6.0

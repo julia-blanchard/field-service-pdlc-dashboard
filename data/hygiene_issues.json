@@ -5,7 +5,7 @@
     "programs_affected": 71,
     "issue_breakdown": {
       "missing_scheduled_build": 255,
-      "missing_priority": 559,
+      "missing_priority": 554,
       "missing_owner": 0,
       "blocked_no_comments": 0,
       "missing_planned_release": 906
@@ -8385,13 +8385,12 @@
       "owner": "Meg Gray",
       "health": "On Track",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 9,
       "story_points": 0,
       "program": "Nonprofit Impact",
       "portfolio": "Industries Cloud",
       "project": "Program Management",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -8403,13 +8402,12 @@
       "owner": "Sean Finerty",
       "health": "On Track",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 4,
       "story_points": 0,
       "program": "Nonprofit Impact",
       "portfolio": "Industries Cloud",
       "project": "Program Management",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -8421,13 +8419,12 @@
       "owner": "Sean Finerty",
       "health": "On Track",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 4,
       "story_points": 0,
       "program": "Nonprofit Impact",
       "portfolio": "Industries Cloud",
       "project": "Program Management",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -8439,13 +8436,12 @@
       "owner": "Sean Finerty",
       "health": "On Track",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 4,
       "story_points": 0,
       "program": "Nonprofit Impact",
       "portfolio": "Industries Cloud",
       "project": "Program Management",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -8531,13 +8527,12 @@
       "owner": "Sean Finerty",
       "health": "On Track",
       "scheduled_build": "266",
-      "priority": "-",
+      "priority": 7,
       "story_points": 0,
       "program": "Nonprofit Impact",
       "portfolio": "Industries Cloud",
       "project": "Program Management",
       "issues": [
-        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -12469,7 +12464,7 @@
       "epic_name_key": "WFS - 266 - Asset capabilities in WFS",
       "team": "FSL - Asset - 360",
       "owner": "Sri Ram Bathina",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "264.11",
       "priority": "-",
       "story_points": 0,
@@ -15865,7 +15860,7 @@
       "epic_name_key": "266 SFS Mobile Platform DX - iOS Platform Support",
       "team": "SFS Mobile Platform DX",
       "owner": "Riley MacDonald",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -18823,7 +18818,7 @@
           "epic_name_key": "WFS - 266 - Asset capabilities in WFS",
           "team": "FSL - Asset - 360",
           "owner": "Sri Ram Bathina",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "264.11",
           "priority": "-",
           "story_points": 0,
@@ -25986,13 +25981,12 @@
           "owner": "Meg Gray",
           "health": "On Track",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 9,
           "story_points": 0,
           "program": "Nonprofit Impact",
           "portfolio": "Industries Cloud",
           "project": "Program Management",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -26004,13 +25998,12 @@
           "owner": "Sean Finerty",
           "health": "On Track",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 4,
           "story_points": 0,
           "program": "Nonprofit Impact",
           "portfolio": "Industries Cloud",
           "project": "Program Management",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -26022,13 +26015,12 @@
           "owner": "Sean Finerty",
           "health": "On Track",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 4,
           "story_points": 0,
           "program": "Nonprofit Impact",
           "portfolio": "Industries Cloud",
           "project": "Program Management",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -26040,13 +26032,12 @@
           "owner": "Sean Finerty",
           "health": "On Track",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 4,
           "story_points": 0,
           "program": "Nonprofit Impact",
           "portfolio": "Industries Cloud",
           "project": "Program Management",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         },
@@ -26132,13 +26123,12 @@
           "owner": "Sean Finerty",
           "health": "On Track",
           "scheduled_build": "266",
-          "priority": "-",
+          "priority": 7,
           "story_points": 0,
           "program": "Nonprofit Impact",
           "portfolio": "Industries Cloud",
           "project": "Program Management",
           "issues": [
-            "missing_priority",
             "missing_planned_release"
           ]
         }
@@ -33371,7 +33361,7 @@
           "epic_name_key": "266 SFS Mobile Platform DX - iOS Platform Support",
           "team": "SFS Mobile Platform DX",
           "owner": "Riley MacDonald",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,

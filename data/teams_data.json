@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T15:01:25.721844",
+  "last_updated": "2026-10-31T10:38:51.960755",
   "teams": [
     {
       "name": "FSE - Core",
@@ -50,7 +50,6 @@
       "non_filled": 0,
       "total": 9,
       "portfolios": [
-        "262 Field Service Foundations",
         "264 Field Service Workforce Scheduling",
         "FY27 FS Foundations",
         "FY27 FS Workforce Scheduling"
@@ -200,7 +199,6 @@
       "non_filled": 0,
       "total": 9,
       "portfolios": [
-        "262 Field Service Unified Scheduling",
         "264 Field Service Workforce Scheduling",
         "FY27 FS Workforce Scheduling"
       ],
@@ -284,9 +282,7 @@
       "non_filled": 0,
       "total": 5,
       "portfolios": [
-        "FY27 SC M4 UWM",
-        "FY27 SC M5 AFCC Voice",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "FY27 SC M4 UWM"
       ],
       "engineering_manager": "Pei Chu",
       "product_owner": "Tushar Sharma",
@@ -334,10 +330,10 @@
       "september_committed": 51,
       "september_work_items": 102,
       "october_capacity_limit": 88.0,
-      "october_committed": 171,
-      "october_work_items": 45,
+      "october_committed": 163,
+      "october_work_items": 43,
       "october_committed_by_program": {
-        "Unmapped": 171.0
+        "Unmapped": 163.0
       },
       "august_delivered": 200,
       "august_delivered_by_program": {
@@ -368,13 +364,10 @@
       "non_filled": 0,
       "total": 7,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O",
         "FY27 FS Trust",
-        "FY27 FS Workforce Scheduling",
-        "Field Service 260 Trust",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Elhanan Rosental",
       "product_owner": "Niv Garber",
@@ -464,10 +457,8 @@
       "non_filled": 0,
       "total": 10,
       "portfolios": [
-        "262 Field Service Foundations",
         "264 Field Service Foundations",
-        "FY27 SC M4 UWM",
-        "Field Service 260 Trust"
+        "FY27 SC M4 UWM"
       ],
       "engineering_manager": "Vinay Bayya",
       "product_owner": "Kara Carreri",
@@ -552,11 +543,7 @@
       "non_filled": 0,
       "total": 7,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
-        "FY27 FS S&O",
-        "Field Service 260 Scheduling & Optimization Pillar",
-        "Field Service 260 Trust",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "FY27 FS S&O"
       ],
       "engineering_manager": "Lilach Talbi",
       "product_owner": "Yulia Libster",
@@ -634,9 +621,7 @@
       "portfolios": [
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O",
-        "FY27 SC M4 UWM",
-        "FY27 SC M5 AFCC Voice",
-        "Field Service 260 Trust"
+        "FY27 SC M4 UWM"
       ],
       "engineering_manager": "Eviatar Yosef",
       "product_owner": "Itay Sagiv",
@@ -712,12 +697,9 @@
       "non_filled": 0,
       "total": 7,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "264 Field Service Workforce Scheduling",
-        "FY27 FS S&O",
-        "Field Service 260 Scheduling & Optimization Pillar",
-        "Field Service 260 Trust"
+        "FY27 FS S&O"
       ],
       "engineering_manager": "Yonatan Bar-Yehuda",
       "product_owner": "Dori Nahmias",
@@ -821,13 +803,10 @@
       "non_filled": 0,
       "total": 7,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O",
         "FY27 FS Trust",
-        "FY27 FS Workforce Scheduling",
-        "FY27 SC M1 Trust",
-        "Field Service 260 Trust"
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Shay Gozansky",
       "product_owner": "Niv Garber",
@@ -910,13 +889,10 @@
       "non_filled": 0,
       "total": 9,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "264 Field Service Workforce Scheduling",
         "FY27 FS Trust",
-        "FY27 FS Workforce Scheduling",
-        "FY27 SC M1 Trust",
-        "Field Service 260 Trust"
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Gal Shalom",
       "product_owner": "Dori Nahmias",
@@ -1014,7 +990,6 @@
       "non_filled": 0,
       "total": 1,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O"
       ],
@@ -1053,8 +1028,7 @@
       "september_delivered_by_program": {
         "[266] S&O Scheduling Console": 142.5,
         "FS 264: S&O: Agentic S&O": 18.0,
-        "Unmapped": 18.0,
-        "FS 262: S&O: Dispatch Experience 2.0": 3.0
+        "Unmapped": 21.0
       },
       "december_capacity_limit": 17.6,
       "december_committed": 0,
@@ -1067,11 +1041,9 @@
       "non_filled": 0,
       "total": 9,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O",
-        "FY27 FS Trust",
-        "Field Service 260 Trust"
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Ankur Singh",
       "product_owner": "Yaron Telem",
@@ -1154,14 +1126,11 @@
       "non_filled": 0,
       "total": 10,
       "portfolios": [
-        "262 Field Service Scheduling & Optimization",
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O",
         "FY27 FS Trust",
         "FY27 FS Workforce Scheduling",
-        "FY27 SC M4 UWM",
-        "FY27 SC M5 AFCC Voice",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "FY27 SC M4 UWM"
       ],
       "engineering_manager": "Mor Cohen",
       "product_owner": "Dori Nahmias",
@@ -1219,10 +1188,10 @@
       "september_committed": 106,
       "september_work_items": 93,
       "october_capacity_limit": 176.0,
-      "october_committed": 136,
+      "october_committed": 135,
       "october_work_items": 60,
       "october_committed_by_program": {
-        "[266] S&O Trust": 57.0,
+        "[266] S&O Trust": 56.0,
         "Unmapped": 20.0,
         "[266] S&O Dispatch Agent": 25.0,
         "[266] S&O Optimization Platform": 34.0
@@ -1268,8 +1237,7 @@
       "total": 3,
       "portfolios": [
         "FY27 FS S&O",
-        "FY27 FS Trust",
-        "Field Service 260 Trust"
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Yariv Finkelshtein",
       "product_owner": "Yariv Finkelshtein",
@@ -1340,10 +1308,8 @@
       "non_filled": 0,
       "total": 11,
       "portfolios": [
-        "262 Field Service Unified Scheduling",
         "264 Field Service Workforce Scheduling",
-        "FY27 FS Workforce Scheduling",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Kritica Mantri",
       "product_owner": "Neerja Rewal",
@@ -1394,8 +1360,7 @@
       "october_committed": 148,
       "october_work_items": 61,
       "october_committed_by_program": {
-        "Salesforce Field Service 258: Trust": 55.0,
-        "Unmapped": 9.0,
+        "Unmapped": 64.0,
         "266 WFS Operations Console": 84.0
       },
       "august_delivered": 130,
@@ -1410,8 +1375,7 @@
       "november_committed_by_program": {},
       "september_delivered": 135,
       "september_delivered_by_program": {
-        "Unmapped": 26.0,
-        "Salesforce Field Service 258: Trust": 43.0,
+        "Unmapped": 69.0,
         "266 WFS Operations Console": 64.0,
         "264 Operations Console": 2.0
       },
@@ -1426,7 +1390,6 @@
       "non_filled": 0,
       "total": 6,
       "portfolios": [
-        "262 Field Service Mobile",
         "264 Field Service Mobile",
         "FY27 FS Mobile",
         "FY27 FS Trust"
@@ -1480,12 +1443,13 @@
       "september_committed": 71,
       "september_work_items": 85,
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 58,
-      "october_work_items": 29,
+      "october_committed": 53,
+      "october_work_items": 24,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 10.0,
+        "[266] Mobile Trust": 12.0,
         "[266] Mobile AI & Voice to Form": 2.0,
-        "Unmapped": 45.0,
+        "[266] Guided Experience": 33.0,
+        "Unmapped": 5.0,
         "[266] Quality Automation Uplift": 1.0
       },
       "august_delivered": 150,
@@ -1498,19 +1462,19 @@
         "[264] Field Service: Headless (aka Codey)": 1.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 5,
-      "november_work_items": 3,
+      "november_committed": 9,
+      "november_work_items": 5,
       "november_committed_by_program": {
-        "[266] Mobile Trust": 1.0,
-        "Unmapped": 2.0,
-        "[266] Mobile AI & Voice to Form": 2.0
+        "[266] Mobile Trust": 3.0,
+        "[266] Mobile AI & Voice to Form": 4.0,
+        "Unmapped": 2.0
       },
       "september_delivered": 113,
       "september_delivered_by_program": {
         "[266] Mobile Trust": 44.0,
         "[266] Mobile AI & Voice to Form": 16.0,
         "[266] Quality Automation Uplift": 48.0,
-        "Unmapped": 5.0
+        "[266] Guided Experience": 5.0
       },
       "december_capacity_limit": 105.60000000000002,
       "december_committed": 0,
@@ -1523,7 +1487,6 @@
       "non_filled": 0,
       "total": 8,
       "portfolios": [
-        "262 Field Service Mobile",
         "264 Field Service Mobile",
         "FY27 FS Mobile",
         "FY27 FS Trust"
@@ -1613,8 +1576,6 @@
       "non_filled": 0,
       "total": 8,
       "portfolios": [
-        "262 Field Service Mobile",
-        "262 Field Service Unified Scheduling",
         "264 Field Service Foundations",
         "264 Field Service Mobile",
         "264 Field Service Workforce Scheduling",
@@ -1675,9 +1636,8 @@
       "october_committed": 364,
       "october_work_items": 126,
       "october_committed_by_program": {
-        "Unmapped": 292.0,
+        "Unmapped": 312.0,
         "[266] Mobile Trust": 18.0,
-        "262 Field Service: Customer Adoption": 20.0,
         "264 Field Service: Workforce Scheduling on Mobile": 12.0,
         "266 GovCloud Compliance": 1.0,
         "[264] Field Service: Headless (aka Codey)": 21.0
@@ -1714,11 +1674,9 @@
       "non_filled": 0,
       "total": 6,
       "portfolios": [
-        "262 Field Service Unified Scheduling",
         "264 Field Service Mobile",
         "FY27 FS Mobile",
-        "FY27 FS Trust",
-        "FY27 SC M1 Trust"
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Steve Thistle",
       "product_owner": "Will Carpenter",
@@ -1738,27 +1696,26 @@
         "264 Field Service: Workforce Scheduling on Mobile": 14.0
       },
       "october_capacity_limit": 105.60000000000002,
-      "october_committed": 91,
-      "october_work_items": 31,
+      "october_committed": 78,
+      "october_work_items": 28,
       "october_committed_by_program": {
+        "[266] Guided Experience": 43.0,
         "Unmapped": 13.0,
-        "[266] Guided Experience": 56.0,
         "264 Field Service: Workforce Scheduling on Mobile": 10.0,
         "262 Field Service Trust": 1.0,
         "[266] Mobile Trust": 11.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 102,
+      "november_committed": 104,
       "november_work_items": 47,
       "november_committed_by_program": {
         "Unmapped": 24.0,
-        "[266] Mobile Trust": 15.0,
-        "[266] Guided Experience": 63.0
+        "[266] Guided Experience": 65.0,
+        "[266] Mobile Trust": 15.0
       },
       "september_delivered": 290,
       "september_delivered_by_program": {
-        "Unmapped": 69.0,
-        "FS 262: Unified: Mobile for Industries (AGX)": 1.0,
+        "Unmapped": 70.0,
         "264 Field Service: Workforce Scheduling on Mobile": 168.0,
         "264 Field Service: KONE": 3.0,
         "262 Field Service Trust": 5.0,
@@ -1776,7 +1733,6 @@
       "non_filled": 0,
       "total": 6,
       "portfolios": [
-        "262 Field Service Mobile",
         "264 Field Service Mobile",
         "FY27 FS Mobile",
         "FY27 FS Trust"
@@ -1851,9 +1807,8 @@
       "september_delivered": 181,
       "september_delivered_by_program": {
         "264 Field Service: Customer Trust": 69.0,
-        "Unmapped": 30.0,
+        "Unmapped": 31.0,
         "[266] Mobile Trust": 36.0,
-        "262 Field Service: Native GIS": 1.0,
         "264 Field Service Trust": 1.0,
         "[266] Quality Automation Uplift": 40.0,
         "264 Field Service: Workforce Scheduling on Mobile": 4.0
@@ -1869,8 +1824,7 @@
       "non_filled": 0,
       "total": 6,
       "portfolios": [
-        "262 Field Service Mobile",
-        "Field Service 260 Mobile Pillar"
+        "264 Field Service Mobile"
       ],
       "engineering_manager": "Raghav Abboy",
       "product_owner": "Nitasha Walia",
@@ -1923,10 +1877,8 @@
       "non_filled": 0,
       "total": 8,
       "portfolios": [
-        "262 Field Service Mobile",
         "FY27 FS Mobile",
-        "FY27 FS Trust",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Andrew Shand",
       "product_owner": "Will Carpenter",
@@ -1985,18 +1937,17 @@
         "[266] Quality Automation Uplift": 13.0
       },
       "november_capacity_limit": 140.8,
-      "november_committed": 15,
-      "november_work_items": 10,
+      "november_committed": 16,
+      "november_work_items": 11,
       "november_committed_by_program": {
         "Unmapped": 7.0,
-        "[266] Mobile Trust": 1.0,
+        "[266] Mobile Trust": 2.0,
         "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 7.0
       },
       "september_delivered": 134,
       "september_delivered_by_program": {
-        "262 Field Service: Mobile Worker Satisfaction": 6.0,
+        "Unmapped": 67.0,
         "[266] Mobile Trust": 62.0,
-        "Unmapped": 61.0,
         "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 1.0,
         "[266] Quality Automation Uplift": 4.0
       },
@@ -2011,7 +1962,7 @@
       "non_filled": 0,
       "total": 2,
       "portfolios": [
-        "Unknown"
+        "264 Field Service Mobile"
       ],
       "engineering_manager": "Subra Vadali",
       "product_owner": "Ray Finn",
@@ -2066,12 +2017,10 @@
       "non_filled": 0,
       "total": 7,
       "portfolios": [
-        "262 Field Service Mobile",
         "264 Field Service Foundations",
         "264 Field Service Mobile",
         "FY27 FS Mobile",
-        "FY27 FS Trust",
-        "Field Service 260 Mobile Pillar"
+        "FY27 FS Trust"
       ],
       "engineering_manager": "Raghav Abboy",
       "product_owner": "Tyler Schott",
@@ -2119,11 +2068,11 @@
       "september_committed": 123,
       "september_work_items": 102,
       "october_capacity_limit": 123.20000000000002,
-      "october_committed": 316,
-      "october_work_items": 97,
+      "october_committed": 315,
+      "october_work_items": 96,
       "october_committed_by_program": {
         "Performance Priming 100% Adoption": 63.0,
-        "Unmapped": 163.0,
+        "Unmapped": 162.0,
         "[266] Mobile Trust": 65.0,
         "[266] Quality Automation Uplift": 21.0,
         "264 Field Service: Workforce Scheduling on Mobile": 4.0
@@ -2136,11 +2085,11 @@
         "[264] Field Service: Headless (aka Codey)": 8.0
       },
       "november_capacity_limit": 123.20000000000002,
-      "november_committed": 55,
-      "november_work_items": 22,
+      "november_committed": 56,
+      "november_work_items": 23,
       "november_committed_by_program": {
         "Performance Priming 100% Adoption": 21.0,
-        "Unmapped": 21.0,
+        "Unmapped": 22.0,
         "[266] Mobile Trust": 8.0,
         "[266] Quality Automation Uplift": 5.0
       },
@@ -2163,10 +2112,8 @@
       "non_filled": 0,
       "total": 3,
       "portfolios": [
-        "262 Field Service Foundations",
         "264 Field Service Foundations",
-        "FY27 FS Mobile",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "FY27 FS Mobile"
       ],
       "engineering_manager": "Pei Chu",
       "product_owner": "Shilpa Ramaswamy",
@@ -2208,10 +2155,10 @@
       "september_committed": 13,
       "september_work_items": 9,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 5,
-      "october_work_items": 3,
+      "october_committed": 2,
+      "october_work_items": 2,
       "october_committed_by_program": {
-        "[266] Mobile Trust": 4.0,
+        "[266] Mobile Trust": 1.0,
         "Unmapped": 1.0
       },
       "august_delivered": 22,
@@ -2242,8 +2189,7 @@
       "non_filled": 0,
       "total": 3,
       "portfolios": [
-        "FY27 SC M4 UWM",
-        "FY27 SC M5 AFCC Voice"
+        "FY27 SC M4 UWM"
       ],
       "engineering_manager": "Vinay Bayya",
       "product_owner": "Harshitha Gadam",
@@ -2287,10 +2233,10 @@
       "september_committed": 39,
       "september_work_items": 32,
       "october_capacity_limit": 52.80000000000001,
-      "october_committed": 318,
-      "october_work_items": 73,
+      "october_committed": 286,
+      "october_work_items": 64,
       "october_committed_by_program": {
-        "Unmapped": 312.0,
+        "Unmapped": 280.0,
         "[264] Unified Workforce Management (UWM)": 6.0
       },
       "august_delivered": 133,
@@ -2300,10 +2246,10 @@
         "[266] Unified Workforce Management (UWM)": 21.0
       },
       "november_capacity_limit": 52.80000000000001,
-      "november_committed": 16,
-      "november_work_items": 5,
+      "november_committed": 45,
+      "november_work_items": 12,
       "november_committed_by_program": {
-        "Unmapped": 16.0
+        "Unmapped": 45.0
       },
       "september_delivered": 113,
       "september_delivered_by_program": {
@@ -2323,8 +2269,7 @@
       "non_filled": 0,
       "total": 2,
       "portfolios": [
-        "Field Service 260 Trust",
-        "Salesforce Field Service 258 Theme:  Trust"
+        "264 Field Service Foundations"
       ],
       "engineering_manager": "Yariv Finkelshtein",
       "product_owner": "Yaron Telem",

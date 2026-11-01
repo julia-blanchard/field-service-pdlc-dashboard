@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T09:03:08.912485",
+  "last_updated": "2026-11-01T14:00:47.796458",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -3530,7 +3530,7 @@
       "health": "Completed",
       "health_status": "Completed",
       "program_manager": "",
-      "target_release": "264",
+      "target_release": "",
       "projects": [
         {
           "name": "[264] Mobile Worker Experience",
@@ -5913,7 +5913,7 @@
       "health": "Unknown",
       "health_status": "Unknown",
       "program_manager": "",
-      "target_release": "262",
+      "target_release": "",
       "projects": [
         {
           "name": "[262] All Clouds (SFS) - Trust: Application Production Support",
@@ -6100,7 +6100,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -6819,7 +6819,7 @@
       "health": "Unknown",
       "health_status": "Unknown",
       "program_manager": "",
-      "target_release": "262",
+      "target_release": "",
       "projects": [
         {
           "name": "[262] WFM Worker Engagement Experience",
@@ -8052,7 +8052,7 @@
       "health": "Unknown",
       "health_status": "Unknown",
       "program_manager": "",
-      "target_release": "260",
+      "target_release": "",
       "projects": [
         {
           "name": "FS 260: Mobile: GA Scaling",
@@ -8697,7 +8697,7 @@
       "health": "Unknown",
       "health_status": "Unknown",
       "program_manager": "",
-      "target_release": "262",
+      "target_release": "",
       "projects": [
         {
           "name": "[262] All Clouds - Trust: Scale",
@@ -8779,7 +8779,7 @@
               "team": "Conversation Connect",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -13823,7 +13823,7 @@
       "health": "Unknown",
       "health_status": "Unknown",
       "program_manager": "",
-      "target_release": "264",
+      "target_release": "",
       "projects": [
         {
           "name": "[264] All Clouds (SFS) - Trust: Application Production Support",
@@ -14026,7 +14026,7 @@
       "health": "Unknown",
       "health_status": "Unknown",
       "program_manager": "",
-      "target_release": "264",
+      "target_release": "",
       "projects": [
         {
           "name": "264 Field Service: AI & Agentforce GovCloud Compliance",
@@ -14256,7 +14256,7 @@
       "health": "Unknown",
       "health_status": "Canceled",
       "program_manager": "Scott Andrus",
-      "target_release": "264",
+      "target_release": "",
       "projects": [
         {
           "name": "[264] Planning: 15min Intervals",
@@ -14371,7 +14371,7 @@
       "health": "Unknown",
       "health_status": "Canceled",
       "program_manager": "Scott Andrus",
-      "target_release": "264",
+      "target_release": "",
       "projects": [
         {
           "name": "[264] Short Horizon Planning: Shifts Container",
@@ -17086,7 +17086,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -20390,7 +20390,7 @@
       "health": "Watch",
       "health_status": "Watch",
       "program_manager": "Scott Andrus",
-      "target_release": "266",
+      "target_release": "",
       "projects": [
         {
           "name": "[266] SBOM (Service Bill of Materials)",
@@ -20605,7 +20605,7 @@
       "health": "Watch",
       "health_status": "Watch",
       "program_manager": "Scott Andrus",
-      "target_release": "266",
+      "target_release": "",
       "projects": [
         {
           "name": "Asset Hierarchy Enhancements",

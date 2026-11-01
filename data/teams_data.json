@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T12:06:15.653606",
+  "last_updated": "2026-11-01T17:53:31.948040",
   "teams": [
     {
       "name": "FSE - Core",
@@ -9,8 +9,8 @@
       "portfolios": [
         "264 Field Service Foundations"
       ],
-      "engineering_manager": "Yehudit Dermer",
-      "product_owner": "Gila Anidjar",
+      "engineering_manager": "",
+      "product_owner": "",
       "august_capacity_limit": 17.6,
       "august_delivered": 13,
       "august_work_items": 6,
@@ -63,8 +63,8 @@
         "FY27 FS Foundations",
         "FY27 FS Workforce Scheduling"
       ],
-      "engineering_manager": "Sri Ram Bathina",
-      "product_owner": "Nishant Sharma",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 209.0,
       "work_items_closed_june": 46,
       "capacity_committed_july": 198.0,
@@ -157,8 +157,8 @@
       "portfolios": [
         "264 Field Service Workforce Scheduling"
       ],
-      "engineering_manager": "Anand Komarraju",
-      "product_owner": "Limor Rohald",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 49.0,
       "work_items_closed_june": 13,
       "capacity_committed_july": 70.0,
@@ -229,8 +229,8 @@
         "264 Field Service Workforce Scheduling",
         "FY27 FS Workforce Scheduling"
       ],
-      "engineering_manager": "Siddharth Mathur",
-      "product_owner": "Neerja Rewal",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 447.0,
       "work_items_closed_june": 23,
       "capacity_committed_july": 150.0,
@@ -287,11 +287,11 @@
         "[264] Field Service: Headless (aka Codey)": 1.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 38,
-      "november_work_items": 14,
+      "november_committed": 46,
+      "november_work_items": 21,
       "november_committed_by_program": {
         "Unmapped": 13.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 25.0
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 33.0
       },
       "september_delivered": 171,
       "september_delivered_by_program": {
@@ -322,8 +322,8 @@
         "FY27 SC M5 AFCC Voice",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Pei Chu",
-      "product_owner": "Tushar Sharma",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 224.0,
       "work_items_closed_june": 74,
       "capacity_committed_july": 168.0,
@@ -418,8 +418,8 @@
         "Field Service 260 Trust",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Elhanan Rosental",
-      "product_owner": "Niv Garber",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 133.0,
       "work_items_closed_june": 90,
       "capacity_committed_july": 102.0,
@@ -523,8 +523,8 @@
         "FY27 SC M4 UWM",
         "Field Service 260 Trust"
       ],
-      "engineering_manager": "Vinay Bayya",
-      "product_owner": "Kara Carreri",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 136.0,
       "work_items_closed_june": 51,
       "capacity_committed_july": 162.0,
@@ -620,8 +620,8 @@
         "Field Service 260 Trust",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Lilach Talbi",
-      "product_owner": "Yulia Libster",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 138.0,
       "work_items_closed_june": 42,
       "capacity_committed_july": 50.0,
@@ -708,8 +708,8 @@
         "FY27 SC M5 AFCC Voice",
         "Field Service 260 Trust"
       ],
-      "engineering_manager": "Eviatar Yosef",
-      "product_owner": "Itay Sagiv",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 462.0,
       "work_items_closed_june": 111,
       "capacity_committed_july": 237.0,
@@ -797,8 +797,8 @@
         "Field Service 260 Scheduling & Optimization Pillar",
         "Field Service 260 Trust"
       ],
-      "engineering_manager": "Yonatan Bar-Yehuda",
-      "product_owner": "Dori Nahmias",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 207.0,
       "work_items_closed_june": 68,
       "capacity_committed_july": 143.0,
@@ -920,8 +920,8 @@
         "FY27 SC M1 Trust",
         "Field Service 260 Trust"
       ],
-      "engineering_manager": "Shay Gozansky",
-      "product_owner": "Niv Garber",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 446.0,
       "work_items_closed_june": 142,
       "capacity_committed_july": 219.0,
@@ -1020,8 +1020,8 @@
         "FY27 SC M1 Trust",
         "Field Service 260 Trust"
       ],
-      "engineering_manager": "Gal Shalom",
-      "product_owner": "Dori Nahmias",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 215.0,
       "work_items_closed_june": 54,
       "capacity_committed_july": 182.0,
@@ -1136,8 +1136,8 @@
         "264 Field Service Scheduling & Optimization",
         "FY27 FS S&O"
       ],
-      "engineering_manager": "Gila Anidjar",
-      "product_owner": "Yulia Libster",
+      "engineering_manager": "",
+      "product_owner": "",
       "august_capacity_limit": 17.6,
       "august_delivered": 143,
       "august_work_items": 85,
@@ -1201,8 +1201,8 @@
         "FY27 FS Trust",
         "Field Service 260 Trust"
       ],
-      "engineering_manager": "Ankur Singh",
-      "product_owner": "Yaron Telem",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 218.5,
       "work_items_closed_june": 156,
       "capacity_committed_july": 118.5,
@@ -1301,8 +1301,8 @@
         "FY27 SC M5 AFCC Voice",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Mor Cohen",
-      "product_owner": "Dori Nahmias",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 305.0,
       "work_items_closed_june": 138,
       "capacity_committed_july": 201.0,
@@ -1420,8 +1420,8 @@
         "FY27 FS Trust",
         "Field Service 260 Trust"
       ],
-      "engineering_manager": "Yariv Finkelshtein",
-      "product_owner": "Yariv Finkelshtein",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 125.0,
       "work_items_closed_june": 98,
       "capacity_committed_july": 87.0,
@@ -1503,8 +1503,8 @@
         "FY27 FS Workforce Scheduling",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Kritica Mantri",
-      "product_owner": "Neerja Rewal",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 264.0,
       "work_items_closed_june": 69,
       "capacity_committed_july": 130.0,
@@ -1599,8 +1599,8 @@
         "FY27 FS Mobile",
         "FY27 FS Trust"
       ],
-      "engineering_manager": "Paul Chan",
-      "product_owner": "Nitasha Walia",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 177.0,
       "work_items_closed_june": 89,
       "capacity_committed_july": 93.0,
@@ -1707,8 +1707,8 @@
         "FY27 FS Mobile",
         "FY27 FS Trust"
       ],
-      "engineering_manager": "Sandeep Agrawal",
-      "product_owner": "Sharon Adler",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 258.0,
       "work_items_closed_june": 80,
       "capacity_committed_july": 176.0,
@@ -1810,8 +1810,8 @@
         "FY27 FS Mobile",
         "FY27 FS Trust"
       ],
-      "engineering_manager": "Adi Sharet",
-      "product_owner": "Kevin Ota",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 117.0,
       "work_items_closed_june": 34,
       "capacity_committed_july": 185.0,
@@ -1921,8 +1921,8 @@
         "FY27 FS Trust",
         "FY27 SC M1 Trust"
       ],
-      "engineering_manager": "Steve Thistle",
-      "product_owner": "Will Carpenter",
+      "engineering_manager": "",
+      "product_owner": "",
       "august_capacity_limit": 105.60000000000002,
       "august_delivered": 66,
       "august_work_items": 30,
@@ -1993,8 +1993,8 @@
         "FY27 FS Mobile",
         "FY27 FS Trust"
       ],
-      "engineering_manager": "Yoni Moseri",
-      "product_owner": "Sharon Adler",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 184.0,
       "work_items_closed_june": 66,
       "capacity_committed_july": 93.0,
@@ -2052,12 +2052,12 @@
         "264 Field Service Trust": 45.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 45,
-      "november_work_items": 15,
+      "november_committed": 55,
+      "november_work_items": 17,
       "november_committed_by_program": {
         "[266] Mobile Trust": 5.0,
         "264 Field Service: Customer Trust": 11.0,
-        "Unmapped": 26.0,
+        "Unmapped": 36.0,
         "[266] Quality Automation Uplift": 3.0
       },
       "september_delivered": 181,
@@ -2096,8 +2096,8 @@
         "262 Field Service Mobile",
         "Field Service 260 Mobile Pillar"
       ],
-      "engineering_manager": "Raghav Abboy",
-      "product_owner": "Nitasha Walia",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 0,
       "work_items_closed_june": 0,
       "capacity_committed_july": 0,
@@ -2158,8 +2158,8 @@
         "FY27 FS Trust",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Andrew Shand",
-      "product_owner": "Will Carpenter",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 172.0,
       "work_items_closed_june": 46,
       "capacity_committed_july": 118.0,
@@ -2255,8 +2255,8 @@
       "portfolios": [
         "Unknown"
       ],
-      "engineering_manager": "Subra Vadali",
-      "product_owner": "Ray Finn",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 0,
       "work_items_closed_june": 0,
       "capacity_committed_july": 3.0,
@@ -2321,8 +2321,8 @@
         "FY27 FS Trust",
         "Field Service 260 Mobile Pillar"
       ],
-      "engineering_manager": "Raghav Abboy",
-      "product_owner": "Tyler Schott",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 187.0,
       "work_items_closed_june": 64,
       "capacity_committed_july": 155.0,
@@ -2428,8 +2428,8 @@
         "FY27 FS Mobile",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Pei Chu",
-      "product_owner": "Shilpa Ramaswamy",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 22.0,
       "work_items_closed_june": 11,
       "capacity_committed_july": 35.0,
@@ -2515,8 +2515,8 @@
         "FY27 SC M4 UWM",
         "FY27 SC M5 AFCC Voice"
       ],
-      "engineering_manager": "Vinay Bayya",
-      "product_owner": "Harshitha Gadam",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 200.0,
       "work_items_closed_june": 64,
       "capacity_committed_july": 73.0,
@@ -2605,8 +2605,8 @@
         "Field Service 260 Trust",
         "Salesforce Field Service 258 Theme:  Trust"
       ],
-      "engineering_manager": "Yariv Finkelshtein",
-      "product_owner": "Yaron Telem",
+      "engineering_manager": "",
+      "product_owner": "",
       "capacity_delivered_june": 5.0,
       "work_items_closed_june": 3,
       "capacity_committed_july": 0,

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T14:08:13.172288",
+  "last_updated": "2026-11-01T09:03:08.912485",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -16,7 +16,7 @@
           "product_owner": "",
           "dev_lead": "Vinay Bayya",
           "target": null,
-          "last_modified": "2026-10-31",
+          "last_modified": "2026-11-01",
           "health_status": "Completed",
           "epics": [
             {
@@ -30,7 +30,7 @@
               "team": "FSL - Operations - Intelligence",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -973,7 +973,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "FS MCX August September October Work",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1456,7 +1456,7 @@
               "team": "SFS Mobile Location and DC",
               "scheduled_build": "-",
               "planned_release": "266 SFS Mobile Location and DC - Release Planner",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1762,7 +1762,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "264",
               "planned_release": "264 Scheduling Intelligence",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1830,7 +1830,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-10-29",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1872,7 +1872,7 @@
           "product_owner": "",
           "dev_lead": "Bhuvnesh Mehra",
           "target": null,
-          "last_modified": "2026-10-30",
+          "last_modified": "2026-11-01",
           "health_status": "Completed",
           "epics": [
             {
@@ -1886,7 +1886,7 @@
               "team": "MomentumForce",
               "scheduled_build": "264",
               "planned_release": "264 MomentumForce",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-08-14",
@@ -1920,7 +1920,7 @@
               "team": "MomentumForce",
               "scheduled_build": "264",
               "planned_release": "264 MomentumForce",
-              "last_modified": "2026-10-28",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-08-14",
@@ -2187,7 +2187,7 @@
           "product_owner": "Yulia Libster",
           "dev_lead": "Avi Inbar",
           "target": null,
-          "last_modified": "2026-10-30",
+          "last_modified": "2026-11-01",
           "health_status": "Completed",
           "epics": [
             {
@@ -2201,7 +2201,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "262.8",
               "planned_release": "SFS Resource 264 FSL - Foundation - Corecodiles",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -4553,7 +4553,7 @@
               "team": "FSL - Resource - Scheduling Hawks",
               "scheduled_build": "264",
               "planned_release": "FSL - Resource - Scheduling Hawks - 264 Planned Release",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -5644,7 +5644,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -8779,7 +8779,7 @@
               "team": "Conversation Connect",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-10-31",
               "loc": "",
               "path_to_green": ""
             },
@@ -13642,7 +13642,7 @@
               "team": "Missionforce-Vikings",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -13732,7 +13732,7 @@
               "team": "Missionforce-Rangers",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -13881,7 +13881,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -14842,7 +14842,7 @@
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -15104,7 +15104,7 @@
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -15145,7 +15145,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -15160,7 +15160,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -15325,7 +15325,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -15857,7 +15857,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -16199,7 +16199,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -16304,7 +16304,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -16319,7 +16319,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -16667,7 +16667,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -16697,7 +16697,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -16727,7 +16727,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -16959,7 +16959,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -16989,7 +16989,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17019,7 +17019,7 @@
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17060,7 +17060,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-10-31",
               "loc": "",
               "path_to_green": ""
             }
@@ -17096,12 +17096,12 @@
               "priority": 300,
               "health": "On Track",
               "health_status": "On Track",
-              "health_comments": "13/10/26\r\nWaiting for Orgfarm team to add the feature\r\n19/10/26\r\nOrgfarm team are planning to support the feature by Sprint 11b.\r\n25/10/26\r\nOrgfarm team are planning to support the feature by Sprint 11b.",
+              "health_comments": "01/11/26\r\nNo changes- Still waiting\r\n13/10/26\r\nWaiting for Orgfarm team to add the feature\r\n19/10/26\r\nOrgfarm team are planning to support the feature by Sprint 11b.\r\n25/10/26\r\nOrgfarm team are planning to support the feature by Sprint 11b.",
               "owner": "Sara Amar",
               "team": "QuantumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17116,7 +17116,7 @@
               "team": "QuantumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17131,7 +17131,7 @@
               "team": "QuantumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -17157,7 +17157,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17380,7 +17380,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17440,7 +17440,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17530,7 +17530,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17560,7 +17560,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17721,7 +17721,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17736,7 +17736,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -17838,7 +17838,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-20",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -18133,7 +18133,7 @@
               "team": "Field Service 3x90d",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             }
@@ -19043,7 +19043,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-31",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -19234,7 +19234,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-30",
+              "last_modified": "2026-11-01",
               "loc": "",
               "path_to_green": ""
             },
@@ -20642,10 +20642,10 @@
     }
   ],
   "epic_no_sprint_stats": {
-    "on_track": 30,
+    "on_track": 29,
     "watch": 3,
     "blocked": 0,
-    "not_started": 128
+    "not_started": 127
   },
-  "total_epics_no_sprint": 161
+  "total_epics_no_sprint": 159
 }

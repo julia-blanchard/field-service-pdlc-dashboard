@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03T14:29:12.467893",
+  "last_updated": "2026-11-04T09:03:32.161239",
   "programs": [
     {
       "name": "[264] Mobile Insights GA",
@@ -148,7 +148,7 @@
               "team": "SFS Setup Experience",
               "scheduled_build": "-",
               "planned_release": "264",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -315,7 +315,7 @@
           "product_owner": "",
           "dev_lead": "Raghav Abboy",
           "target": null,
-          "last_modified": "2026-11-03",
+          "last_modified": "2026-11-04",
           "health_status": "On Track",
           "epics": [
             {
@@ -329,7 +329,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -448,7 +448,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "262",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -499,7 +499,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -629,7 +629,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "-",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -849,7 +849,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "264",
               "planned_release": "264 - SFS Mobile AGX - Workforce Scheduling GA - iOS, Setup",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -956,7 +956,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "264",
               "planned_release": "264 SFS Mobile Assets Planned release",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1456,7 +1456,7 @@
               "team": "SFS Mobile Location and DC",
               "scheduled_build": "-",
               "planned_release": "266 SFS Mobile Location and DC - Release Planner",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1601,7 +1601,7 @@
           "product_owner": "",
           "dev_lead": "Shay Gozansky",
           "target": null,
-          "last_modified": "2026-11-03",
+          "last_modified": "2026-11-04",
           "health_status": "Completed",
           "epics": [
             {
@@ -1615,7 +1615,7 @@
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264",
               "planned_release": "FSL - Resource - Scheduling Orcas - 264 Planned Release",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -1872,7 +1872,7 @@
           "product_owner": "",
           "dev_lead": "Bhuvnesh Mehra",
           "target": null,
-          "last_modified": "2026-11-03",
+          "last_modified": "2026-11-04",
           "health_status": "Completed",
           "epics": [
             {
@@ -1886,7 +1886,7 @@
               "team": "MomentumForce",
               "scheduled_build": "264",
               "planned_release": "264 MomentumForce",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-08-14",
@@ -1937,7 +1937,7 @@
               "team": "MomentumForce",
               "scheduled_build": "264",
               "planned_release": "264 MomentumForce",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udd34 Below the Line",
               "path_to_green": "-",
               "end_date": "2026-08-14",
@@ -2106,7 +2106,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "264 FSL Resource Scheduling Platform",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2740,7 +2740,7 @@
               "team": "FSL - Core - Foundations",
               "scheduled_build": "264",
               "planned_release": "-",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2830,7 +2830,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -2864,7 +2864,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "-",
               "planned_release": "FSL - Asset 360 - 264",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3074,6 +3074,23 @@
               "scheduled_build": "264",
               "planned_release": "264 SFS Core Scheduler Release",
               "last_modified": "2026-09-30",
+              "loc": "\ud83d\udfe2 Above the Line",
+              "path_to_green": "-",
+              "end_date": null,
+              "t_shirt_size": null
+            },
+            {
+              "name": "264.12: PSS-FS: Operations Console: Push Service for Activity Tracker",
+              "id": "a3QEE000002jY7d2AE",
+              "priority": "-",
+              "health": "On Track",
+              "health_status": "On Track",
+              "health_comments": "[21 Oct] SSR entity changes pushed in 264 patch (264.12), pending Development in progress. \r\nThe epic is dependent on CDC onboarding of SSR entity. CDC changes are pushed in 264. It depends on patch deployment scheduler (264.12) to commit the change to 2...",
+              "owner": "Josson Thoppil",
+              "team": "SFS Core Scheduler",
+              "scheduled_build": "264.12",
+              "planned_release": "264 SFS Core Scheduler Release",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -3756,7 +3773,7 @@
               "team": "SFS - WFM - Worker - Experience",
               "scheduled_build": "266",
               "planned_release": "264 Release- SFS - WFM - Worker - Experience",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -4943,7 +4960,7 @@
               "team": "Team-WFM-Workloads-Forecasting",
               "scheduled_build": "264",
               "planned_release": "SC 264 Release - Team-WFM-Workloads-Forecasting",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "\ud83d\udfe2 Above the Line",
               "path_to_green": "-",
               "end_date": null,
@@ -7864,7 +7881,7 @@
               "team": "Sales Cloud Pegasus",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -7879,7 +7896,7 @@
               "team": "Sales Cloud Hercules",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -7894,7 +7911,7 @@
               "team": "Sales Cloud Pegasus",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -7909,7 +7926,7 @@
               "team": "Sales Cloud Hercules",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -9169,7 +9186,7 @@
               "team": "Perf Eng - Service Cloud",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -9229,7 +9246,7 @@
               "team": "Perf Eng - Service Cloud",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-09-17",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -9289,7 +9306,7 @@
               "team": "Messaging Channels and Features",
               "scheduled_build": "262",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -10515,7 +10532,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -10560,7 +10577,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -10575,7 +10592,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -10650,7 +10667,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -10665,14 +10682,14 @@
               "team": "NPC Asteroids",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
             {
               "name": "Program Recommendation for Participant Outcomes",
               "id": "a3QEE000002ngZd2AI",
-              "priority": "-",
+              "priority": 20,
               "health": "Not Started",
               "health_status": "Not Started",
               "health_comments": "",
@@ -10680,7 +10697,7 @@
               "team": "NPC Asteroids",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -11273,7 +11290,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "262.13",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -11419,7 +11436,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "262.13",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -12249,7 +12266,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -12339,7 +12356,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -13126,7 +13143,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -13156,7 +13173,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -13201,7 +13218,7 @@
               "team": "Messaging Core - Digital Engagement",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -13216,7 +13233,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -13433,7 +13450,7 @@
               "team": "FSL - Foundation - Atlas",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -13896,7 +13913,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14144,7 +14161,7 @@
               "team": "-",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-19",
+              "last_modified": "2026-11-03",
               "loc": "",
               "path_to_green": ""
             }
@@ -14535,7 +14552,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266",
-          "last_modified": "2026-11-02",
+          "last_modified": "2026-11-04",
           "health_status": "Watch",
           "epics": [
             {
@@ -14549,7 +14566,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "264.7",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14564,7 +14581,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14587,14 +14604,14 @@
               "name": "WFS - 266 - RSO: Show results Activity Tracker",
               "id": "a3QEE000002hVCH2A2",
               "priority": "-",
-              "health": "Watch",
-              "health_status": "Watch",
-              "health_comments": "28 Oct- Same blockers as last time. Also at Risk due to Schema freeze approaching. Details at : https://salesforce-internal.slack.com/archives/C09T8H26SJ3/p1792145400851299\r\n21-Oct: Spike identified gaps in the entities that are required for this epic. The scope is larger and needs cross team work (Field & Console) to commit to this. \r\n12th Oct: We have started the epic in current 10b sprint. There are few open questions (not blocker) with PM, which we are following up.",
+              "health": "Blocked",
+              "health_status": "Blocked",
+              "health_comments": "Nov 4: Since tomorrow is schema freeze and without entity changes required  from in-field team this epic can't be delivered. Hence the execution is blocked.\r\nDetails at : https://salesforce-internal.slack.com/archives/C09T8H26SJ3/p1792145400851299\r\n28 Oct- Same blockers as last time. Also at Risk due to Schema freeze approaching. Details at : https://salesforce-internal.slack.com/archives/C09T8H26SJ3/p1792145400851299\r\n21-Oct: Spike identified gaps in the entities that are required for this epic. The scope is larger and needs cross team work (Field & Console) to commit to this. \r\n12th Oct: We have started the epic in current 10b sprint. There are few open questions (not blocker) with PM, which we are following up.",
               "owner": "Limor Rohald",
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-28",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14609,7 +14626,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14624,7 +14641,7 @@
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-13",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14632,14 +14649,14 @@
               "name": "WFS - 266 - Run In-Day & Global Optimization",
               "id": "a3QEE000002hVH72AM",
               "priority": "-",
-              "health": "On Track",
-              "health_status": "On Track",
-              "health_comments": "[21-Oct] Development is in progress.\r\n12th Oct: We have started the epic in current 10b sprint. There are few open questions (not blocker) with PM, which we are following up.",
+              "health": "Watch",
+              "health_status": "Watch",
+              "health_comments": "[Nov 4] Cancel /Abort is still to be finalised from the delivering team, they would deliver it post FF, but no ETA has been communicated. The experience would be incomplete without these. \r\n[21-Oct] Development is in progress.\r\n12th Oct: We have started the epic in current 10b sprint. There are few open questions (not blocker) with PM, which we are following up.",
               "owner": "Limor Rohald",
               "team": "SFS Core Scheduler",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14647,14 +14664,14 @@
               "name": "WFS - 266 - Resource relocation visibility",
               "id": "a3QEE000002hVIj2AM",
               "priority": "-",
-              "health": "On Track",
-              "health_status": "On Track",
-              "health_comments": "[28 -Oct] Dev is in progress. Some open comments on PRD for product to review.\r\n[21-Oct] Development is in progress.\r\n12th Oct: We have started on the Epic, there are couple of open questions (not blocker), which we are following up with PMs.",
+              "health": "Watch",
+              "health_status": "Watch",
+              "health_comments": "[Nov 4] Most of the development that was planned is completed.\r\nAdditional efforts: Working with PM to assess the impact on onsite behaviour since onsite is in the scope of the feature. This might require additional conversations and additional efforts post FF. The additional efforts are outside the scope of original PRD.\r\n[28 -Oct] Dev is in progress. Some open comments on PRD for product to review.\r\n[21-Oct] Development is in progress.\r\n12th Oct: We have started on the Epic, there are couple of open questions (not blocker), which we are following up with PMs.",
               "owner": "Limor Rohald",
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14662,14 +14679,14 @@
               "name": "WFS - 266 - In-jeopardy indication",
               "id": "a3QEE000002hVLx2AM",
               "priority": "-",
-              "health": "Not Started",
-              "health_status": "Not Started",
-              "health_comments": "[21-Oct] Yet to start.",
+              "health": "On Track",
+              "health_status": "On Track",
+              "health_comments": "[4 Nov] Development is in progress. No risk.\r\n[21-Oct] Yet to start.",
               "owner": "Limor Rohald",
               "team": "SFS Core Scheduler",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14685,21 +14702,6 @@
               "scheduled_build": "266",
               "planned_release": "",
               "last_modified": "2026-10-28",
-              "loc": "",
-              "path_to_green": ""
-            },
-            {
-              "name": "266: PSS-FS: Operations Console: Push Service for Activity Tracker",
-              "id": "a3QEE000002jY7d2AE",
-              "priority": "-",
-              "health": "On Track",
-              "health_status": "On Track",
-              "health_comments": "[21 Oct] SSR entity changes pushed in 264 patch (264.12), pending Development in progress. \r\nThe epic is dependent on CDC onboarding of SSR entity. CDC changes are pushed in 264. It depends on patch deployment scheduler (264.12) to commit the change to 264. The development is in progress for 266.",
-              "owner": "Josson Thoppil",
-              "team": "SFS Core Scheduler",
-              "scheduled_build": "266",
-              "planned_release": "",
-              "last_modified": "2026-11-03",
               "loc": "",
               "path_to_green": ""
             }
@@ -14723,7 +14725,7 @@
           "product_owner": "Niv Garber",
           "dev_lead": "",
           "target": "264.11",
-          "last_modified": "2026-10-14",
+          "last_modified": "2026-11-04",
           "health_status": "Watch",
           "epics": [
             {
@@ -14737,7 +14739,7 @@
               "team": "FSL - Resource - Scheduling Orcas",
               "scheduled_build": "264.11",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14764,7 +14766,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "266.6",
-          "last_modified": "2026-10-28",
+          "last_modified": "2026-11-04",
           "health_status": "On Track",
           "epics": [
             {
@@ -14808,7 +14810,7 @@
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14823,7 +14825,7 @@
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "264.12",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14853,7 +14855,7 @@
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -14865,7 +14867,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "268",
-          "last_modified": "2026-11-02",
+          "last_modified": "2026-11-04",
           "health_status": "Watch",
           "epics": [
             {
@@ -14879,7 +14881,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14939,7 +14941,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -14954,7 +14956,7 @@
               "team": "FSL - Foundation - Apps",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -14966,7 +14968,7 @@
           "product_owner": "",
           "dev_lead": "",
           "target": "268",
-          "last_modified": "2026-11-02",
+          "last_modified": "2026-11-04",
           "health_status": "On Track",
           "epics": [
             {
@@ -14980,7 +14982,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -15130,7 +15132,7 @@
               "team": "FSL - Resource - Scheduling Platform",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -15810,7 +15812,7 @@
           ]
         }
       ],
-      "health_comments": "[Oct 28]\nHXL update: Work Paused - \nScheduling agent - ASA - not supported by infrastructure - Work Paused, Employee Agent - Wasn\u2019t in scope - need to approve the work\nHelp Agent: \nWe got positive feedback from Harish. \nPlan next: Integration with Help agent - Service cloud needs to set a kickoff, How can we connect to the help agent competitors.\n\n[Oct 20]\nHXL update: Scheduling agent - ASA - not supported by infrastructure - Work Paused, Employee Agent - Wasn\u2019t in scope - need to approve the work\nHelp Agent: Last week metting with Harish - Good vibes. Plan next: Integration with Help agent - Service cloud needs to set a kickoff, How can we connect to the help agent competitors.\n\n[Oct 6] Focusing on adoption & Scale"
+      "health_comments": "[Nov 4]\nWork paused. Due to recent changes, doing exploration & POCs to decide how to move forward\n\n[Oct 28]\nHXL update: Work Paused - \nScheduling agent - ASA - not supported by infrastructure - Work Paused, Employee Agent - Wasn\u2019t in scope - need to approve the work\nHelp Agent: \nWe got positive feedback from Harish. \nPlan next: Integration with Help agent - Service cloud needs to set a kickoff, How can we connect to the help agent competitors.\n\n[Oct 20]\nHXL update: Scheduling agent - ASA - not supported by infrastructure - Work Paused, Employee Agent - Wasn\u2019t in scope - need to approve the work\nHelp Agent: Last week metting with Harish - Good vibes. Plan next: Integration with Help agent - Service cloud needs to set a kickoff, How can we connect to the help agent competitors.\n\n[Oct 6] Focusing on adoption & Scale"
     },
     {
       "name": "[266] S&O Dispatch Agent",
@@ -15937,7 +15939,7 @@
               "team": "FSL - Foundation - Corecodiles",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -16016,7 +16018,7 @@
           "epics": []
         }
       ],
-      "health_comments": "[Oct 28]\nTransparency Pilot: \nWorking actively with Awaze (currently onboarding and has a workshop this week, with feedback due next week.)\nPfP and IBM are on hold (PfP is waiting on license signature, IBM on UPRA sign-off and DC2 testing). \nNew pipeline: a Grout Guys meeting on Nov 3, then an Equans kickoff the week after.\nExecution Update:\nDev team is continuing to work on bugs P2 and P3. \nSupporting Awaze customer with onboarding to the pilot.\nFinalizing performance tests\n\nEngine Optimization Transparency ENG Research:\nWe did a very high level POC on fetching the data required for the analysis from the optimization process on run time. \nWe are now reviewing more patterns as part of the 268 planning\n\n[Oct 20]\nTransparency Pilot Status:\n1. PfP - On Hold- The customer\u2019s earlier AF4FS licenses may have lapsed. AE have asked for signature on the Agentforce for Field Service licenses by 27th October.\n2. IBM - On Hold - UPRA signoff pending + Currently testing DC2 in order to be able to onboard later to the Explainability pilot\n3. Awaze - Kickoff today\n\nDev Status:\nWorking on Bugs from Blitz, and a design to support complex work and ranking of qualified resources for better results.\nWorking on performance tests\n\n[Oct 14]\nPilot kickoff has started\n[Oct 5] \nPilot Release of Transparency is out in patch 246.7 October release.\nWe are gradually kicking off the pilot with 6 customers starting next week.\nTransparency phase 2 is in progress, starting with research on transparency of Engine optimization."
+      "health_comments": "[Nov 4]\nPilot Status:\nIBM - Started the work on Scheduling console. \nP4P Blocked - due to lack of SKU - WIP\nAwaze - kicked off. Pending their first feedback\nGrout Guys - Checking if they would like to join the pilot\nWorking on pipeline - Equans - (Trying to scheduled for Next week), Eco Lab\n\n\n[Oct 28]\nTransparency Pilot: \nWorking actively with Awaze (currently onboarding and has a workshop this week, with feedback due next week.)\nPfP and IBM are on hold (PfP is waiting on license signature, IBM on UPRA sign-off and DC2 testing). \nNew pipeline: a Grout Guys meeting on Nov 3, then an Equans kickoff the week after.\nExecution Update:\nDev team is continuing to work on bugs P2 and P3. \nSupporting Awaze customer with onboarding to the pilot.\nFinalizing performance tests\n\nEngine Optimization Transparency ENG Research:\nWe did a very high level POC on fetching the data required for the analysis from the optimization process on run time. \nWe are now reviewing more patterns as part of the 268 planning\n\n[Oct 20]\nTransparency Pilot Status:\n1. PfP - On Hold- The customer\u2019s earlier AF4FS licenses may have lapsed. AE have asked for signature on the Agentforce for Field Service licenses by 27th October.\n2. IBM - On Hold - UPRA signoff pending + Currently testing DC2 in order to be able to onboard later to the Explainability pilot\n3. Awaze - Kickoff today\n\nDev Status:\nWorking on Bugs from Blitz, and a design to support complex work and ranking of qualified resources for better results.\nWorking on performance tests\n\n[Oct 14]\nPilot kickoff has started\n[Oct 5] \nPilot Release of Transparency is out in patch 246.7 October release.\nWe are gradually kicking off the pilot with 6 customers starting next week.\nTransparency phase 2 is in progress, starting with research on transparency of Engine optimization."
     },
     {
       "name": "[266] S&O Scheduling Console",
@@ -16167,7 +16169,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.3",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -16234,7 +16236,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264.3",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -16676,7 +16678,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -16732,7 +16734,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "264",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -16747,7 +16749,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -16777,7 +16779,7 @@
               "team": "FSL - Talpiot - Dispatch Console",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -16807,7 +16809,7 @@
               "team": "FSL - Resource - Dispatch Console",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -16865,7 +16867,7 @@
           ]
         }
       ],
-      "health_comments": "[Oct 25]\nWeekly adoption update (Funnel: https://git.soma.salesforce.com/pages/nsharon/dc2-adoption-funnel/)\nThe trend keeps going up!\nDC2 users in production (14-day): +28% = 1777 users\nStage 4, evaluating in production: +68% = 369 accounts\nStage 5, actively migrating (at least one user with 10% DC2 usage): +42% = 202 accounts\nStage 7, fully migrated: +15% = 30 accounts\n\nMuch of this growth comes from the new DC1 banner, which reached production and sandboxes last week. \nBanner analysis:\n1,164 accounts have interacted with the banner. 339 (29%) clicked one of the three options (went to Setup, Tried it, Watched video). \n825 dismissed it.\nOf 189 Stage 0 (Unaware) that clicked, 107 moved up at least one stage.\nAmong all 339 who clicked, 51% moved up at least one stage. Among those who only dismissed, it was 5%.\n\nCSG Outreach:\nwill resume outreach to AEs and customers next week.\n\nExecution:\n Next November monthly release is on track.\nScope:\n- Search by Lookup Fields: Solve the top customer complaint by enabling search across lookup relationships.\n- Skills Filter Dropdown: Improve the skills selection experience\n- Enhanced Gantt Search \n- FC - WHY - Improve the explanation quality & performance\n\n[Oct 20]\nOn track with the 264\u2013266 monthly releases.\nAdoption Trends:\n  Monthly trend (Aug \u2192 Sep \u2192 Oct)\n  - Fully Migrated Accounts: 9 \u2192 14 \u2192 16\n  - Mostly Migrated Accounts: 11 \u2192 25 \u2192 29\n  - Actively Evaluated (testing in Prod): 44 \u2192 97 \u2192 120\n  - Scheduling Console Users: 316 \u2192 642 \u2192 972\n\ud83d\ude80 Actions Being Taken\n\n 1. Customer outreach\n- About 100 accounts that tried the new console and dropped were contacted through CSG. 53 responded positively and are receiving enablement sessions.\n- About 200 new implementations launch in October, and the plan is to convert new accounts that are on the classic console.\n2. Admin awareness\n- In-app campaigns target the 17% admin awareness gap.\n- The Yukon campaign got a 63% view rate and a 9% click rate.\n- A DC1 banner launches in October. 48 Customers clicked the DC1 banner in the first day in sandbox\n3. Classic Dispatch sunset (FY28)\n- A structured roadmap is being formulated through the FY28 V2MOM plan.\n-----------------------------------------------------------------------------\n [Oct 14]\nStarting with the 264 Winter '27 release, Scheduling Console is the default console for new Field Service customers. It supports both ES&O and LS.\nCurrent focus: Closing remaining DC1 main parity gaps and delivering adoption blockers/accelerators.\nCustomer adoption:\nThe outreach plan built with CSG is in motion targeting for signature & premier customers:\n- Customers who tried the new console with no known blockers are already engaged.\n- Customers in implementation stage but using DC1 are being contacted.\nThe PM & UX & Eng team is working on 5 potential customer success stories for this month along with month over month plan.\nEnablement: \n- Enablement Session with EMEA EAs (Oct 7) 15 AEs total\n- Webinar with EMEA customers (Oct 21) 20 customers total \n- We're adding a banner to DC1 to drive admin awerness. \n- The first Scheduling Console Trailhead badge is live.\nMitigated Risk \u2013 CX shortage: Emma was recently assigned (40%). She'll start with release notes, then close gaps in the 264 Help content."
+      "health_comments": "[Nov 4]\nPatch 264.11 Released with new features unblocking customers towards migration:\nSearch by Lookup Fields: Solve the top customer complaint by enabling search across lookup relationships.\nSkills Filter Dropdown: Improve the skills selection experience\nEnhanced Gantt Search \nFind Candidate - WHY - Improve the explanation quality & performance\n\n\n[Oct 25]\nWeekly adoption update (Funnel: https://git.soma.salesforce.com/pages/nsharon/dc2-adoption-funnel/)\nThe trend keeps going up!\nDC2 users in production (14-day): +28% = 1777 users\nStage 4, evaluating in production: +68% = 369 accounts\nStage 5, actively migrating (at least one user with 10% DC2 usage): +42% = 202 accounts\nStage 7, fully migrated: +15% = 30 accounts\n\nMuch of this growth comes from the new DC1 banner, which reached production and sandboxes last week. \nBanner analysis:\n1,164 accounts have interacted with the banner. 339 (29%) clicked one of the three options (went to Setup, Tried it, Watched video). \n825 dismissed it.\nOf 189 Stage 0 (Unaware) that clicked, 107 moved up at least one stage.\nAmong all 339 who clicked, 51% moved up at least one stage. Among those who only dismissed, it was 5%.\n\nCSG Outreach:\nwill resume outreach to AEs and customers next week.\n\nExecution:\n Next November monthly release is on track.\nScope:\n- Search by Lookup Fields: Solve the top customer complaint by enabling search across lookup relationships.\n- Skills Filter Dropdown: Improve the skills selection experience\n- Enhanced Gantt Search \n- FC - WHY - Improve the explanation quality & performance\n\n[Oct 20]\nOn track with the 264\u2013266 monthly releases.\nAdoption Trends:\n  Monthly trend (Aug \u2192 Sep \u2192 Oct)\n  - Fully Migrated Accounts: 9 \u2192 14 \u2192 16\n  - Mostly Migrated Accounts: 11 \u2192 25 \u2192 29\n  - Actively Evaluated (testing in Prod): 44 \u2192 97 \u2192 120\n  - Scheduling Console Users: 316 \u2192 642 \u2192 972\n\ud83d\ude80 Actions Being Taken\n\n 1. Customer outreach\n- About 100 accounts that tried the new console and dropped were contacted through CSG. 53 responded positively and are receiving enablement sessions.\n- About 200 new implementations launch in October, and the plan is to convert new accounts that are on the classic console.\n2. Admin awareness\n- In-app campaigns target the 17% admin awareness gap.\n- The Yukon campaign got a 63% view rate and a 9% click rate.\n- A DC1 banner launches in October. 48 Customers clicked the DC1 banner in the first day in sandbox\n3. Classic Dispatch sunset (FY28)\n- A structured roadmap is being formulated through the FY28 V2MOM plan.\n-----------------------------------------------------------------------------\n [Oct 14]\nStarting with the 264 Winter '27 release, Scheduling Console is the default console for new Field Service customers. It supports both ES&O and LS.\nCurrent focus: Closing remaining DC1 main parity gaps and delivering adoption blockers/accelerators.\nCustomer adoption:\nThe outreach plan built with CSG is in motion targeting for signature & premier customers:\n- Customers who tried the new console with no known blockers are already engaged.\n- Customers in implementation stage but using DC1 are being contacted.\nThe PM & UX & Eng team is working on 5 potential customer success stories for this month along with month over month plan.\nEnablement: \n- Enablement Session with EMEA EAs (Oct 7) 15 AEs total\n- Webinar with EMEA customers (Oct 21) 20 customers total \n- We're adding a banner to DC1 to drive admin awerness. \n- The first Scheduling Console Trailhead badge is live.\nMitigated Risk \u2013 CX shortage: Emma was recently assigned (40%). She'll start with release notes, then close gaps in the 264 Help content."
     },
     {
       "name": "[266] S&O Customer Success",
@@ -16926,7 +16928,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -16948,7 +16950,7 @@
           ]
         }
       ],
-      "health_comments": "[Oct 28]\nCustomers hot issues:\n\nExecution:\n266 Planned features:\n- On Track (TK/Senske) Meaningful error for \"Entity is deleted\"\n- On Track - Light API\n- Recently Released - RVA Complex Work: Completed  (MP Patch 264.5)\n\n[Oct 20]\nCustomers hot issues:\n\nComgas \u2013 slow in-day optimization (Amber)\nMedian run is 14s, but some runs take 4\u201315 min. The causes are the optimizer over-running, the customer\u2019s automation slowing saves, and queueing.\nThe 3-min runtime cap saved about 2 min per run in QA. Occasional runs over 5 min are still possible.\nNext: Follow-up call with Comgas this week. Quantify how much of the save time comes from their automation.\n\n\nMagdalene \u2013 optimization failures and rule breaks (Red)\nTwo service-side bugs; the fix is expected in the next patch but isn\u2019t confirmed. The customer is on a 20-day workaround.\nThe customer is frustrated by slow responses, and Support ownership changed several times.\nNext: Patch deployment is today. Support assigned a single Support owner.\n\nYPF \u2013 Bring Your Own Map (Amber, strategic)\nYPF wants to upload its own maps and wants HERE to own the liability. We don\u2019t support this, and it isn\u2019t planned for 268.\nAt stake: about $1.14M a year in Field Service (about 25% of its Salesforce spend), a $403.7K open deal closing Jan 2027, and about 7x growth potential.\nNext: Assess technical, commercial and legal ownership.\n\n[Oct 14]\nCustomers hot escalations:\nFluvius (+Stedin) >> push_service at scale ; after traveling to customer site we have good news: The Live-Update issue is now fully resolved! \nThere are some other few DC2 gaps that needs to be closed in order for them to move to DC2.\nSenske - Get Candidates and Schedule fail above the 5K appointment limit (2.6% of September GC calls). Best option so far: the service splits the request. Options doc in progress. \n\n\n[Oct 6] On track with \n- (TK/Senske) Meaningful error for \"Entity is deleted\"\n- RSO - support 24/7 mode\n- RVA Complex Work\n\nWork staring this week:\n- Light API - scheduling APIs, such as Appointment Booking and GetCandidates, run without a Service Appointment saved in the database."
+      "health_comments": "[Nov 4]\n(TK/Senske) Meaningful error for \u201cEntity is deleted\u201d - dev complete\nLight API - dev in progress\n\n\n[Oct 28]\nCustomers hot issues:\n\nExecution:\n266 Planned features:\n- On Track (TK/Senske) Meaningful error for \"Entity is deleted\"\n- On Track - Light API\n- Recently Released - RVA Complex Work: Completed  (MP Patch 264.5)\n\n[Oct 20]\nCustomers hot issues:\n\nComgas \u2013 slow in-day optimization (Amber)\nMedian run is 14s, but some runs take 4\u201315 min. The causes are the optimizer over-running, the customer\u2019s automation slowing saves, and queueing.\nThe 3-min runtime cap saved about 2 min per run in QA. Occasional runs over 5 min are still possible.\nNext: Follow-up call with Comgas this week. Quantify how much of the save time comes from their automation.\n\n\nMagdalene \u2013 optimization failures and rule breaks (Red)\nTwo service-side bugs; the fix is expected in the next patch but isn\u2019t confirmed. The customer is on a 20-day workaround.\nThe customer is frustrated by slow responses, and Support ownership changed several times.\nNext: Patch deployment is today. Support assigned a single Support owner.\n\nYPF \u2013 Bring Your Own Map (Amber, strategic)\nYPF wants to upload its own maps and wants HERE to own the liability. We don\u2019t support this, and it isn\u2019t planned for 268.\nAt stake: about $1.14M a year in Field Service (about 25% of its Salesforce spend), a $403.7K open deal closing Jan 2027, and about 7x growth potential.\nNext: Assess technical, commercial and legal ownership.\n\n[Oct 14]\nCustomers hot escalations:\nFluvius (+Stedin) >> push_service at scale ; after traveling to customer site we have good news: The Live-Update issue is now fully resolved! \nThere are some other few DC2 gaps that needs to be closed in order for them to move to DC2.\nSenske - Get Candidates and Schedule fail above the 5K appointment limit (2.6% of September GC calls). Best option so far: the service splits the request. Options doc in progress. \n\n\n[Oct 6] On track with \n- (TK/Senske) Meaningful error for \"Entity is deleted\"\n- RSO - support 24/7 mode\n- RVA Complex Work\n\nWork staring this week:\n- Light API - scheduling APIs, such as Appointment Booking and GetCandidates, run without a Service Appointment saved in the database."
     },
     {
       "name": "[266] S&O Trust",
@@ -16979,7 +16981,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17024,7 +17026,7 @@
               "team": "SynergyForce Dev",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17039,7 +17041,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17166,7 +17168,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17211,7 +17213,7 @@
               "team": "QuantumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17267,7 +17269,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17312,7 +17314,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17327,7 +17329,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17342,7 +17344,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17357,7 +17359,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17372,7 +17374,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17387,7 +17389,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17458,7 +17460,7 @@
               "team": "MomentumForce",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17535,7 +17537,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17565,7 +17567,7 @@
               "team": "SynergyForce Dev",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17640,7 +17642,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17655,7 +17657,7 @@
               "team": "Optimization Engineering",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17715,7 +17717,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -17760,7 +17762,7 @@
               "team": "FSL - Resource - Scheduling Intelligence",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -18000,7 +18002,7 @@
           ]
         }
       ],
-      "health_comments": "[Oct 28]\nOptimization Benchmarking (On Track)\nWe are moving forward with the internal benchmark. \nWe are completing Home Services and moving to the next industry (property management).\nWe invested time in building a tool that extracts the relevant data. This tool is the platform for this initiative.\n\nS&O Usage & Adoption Dashboard (On Track)\nWe are done with all the requirements for 266.\n\ud83d\udd17 https://git.soma.salesforce.com/pages/fwe/o2-all-customers-telemetry/\n\n[Oct 20]\nOptimization Benchmarking (On Track)\nDone: one dashboard compares O2Engine with the market. We tested real customer requests and a Home Services case study (34 scenarios).\nIn-progress: a self-serve A/B test in the o2-x UI is in design review. It will compare any release on the same real requests.\nNow: with Product, we are choosing the next tests by industry. We are also building a self-serve test, so any release can be compared on the same real requests.\nNext: a benchmark on very large requests.\n\nS&O Usage & Adoption Dashboard (On Track)\nDone: the all-customers dashboard is live, with an executive summary, trends, a per-customer drilldown and a monthly view. The numbers were validated twice with PFT, and service appointment counts are added.\nNext: monthly ESO metrics in code (not started)\n\n[Oct 14] Scope for 266:\n- Optimization Benchmarking - On Track\n- S&O Usage & Adoption Dashboard - On Track"
+      "health_comments": "[Nov 4]\nOptimization Benchmarking (On Track)\nWe are moving forward with the internal benchmark. \nWe are completing Home Services and moving to the next industry (property management).\n\n[Oct 28]\nOptimization Benchmarking (On Track)\nWe are moving forward with the internal benchmark. \nWe are completing Home Services and moving to the next industry (property management).\nWe invested time in building a tool that extracts the relevant data. This tool is the platform for this initiative.\n\nS&O Usage & Adoption Dashboard (On Track)\nWe are done with all the requirements for 266.\n\ud83d\udd17 https://git.soma.salesforce.com/pages/fwe/o2-all-customers-telemetry/\n\n[Oct 20]\nOptimization Benchmarking (On Track)\nDone: one dashboard compares O2Engine with the market. We tested real customer requests and a Home Services case study (34 scenarios).\nIn-progress: a self-serve A/B test in the o2-x UI is in design review. It will compare any release on the same real requests.\nNow: with Product, we are choosing the next tests by industry. We are also building a self-serve test, so any release can be compared on the same real requests.\nNext: a benchmark on very large requests.\n\nS&O Usage & Adoption Dashboard (On Track)\nDone: the all-customers dashboard is live, with an executive summary, trends, a per-customer drilldown and a monthly view. The numbers were validated twice with PFT, and service appointment counts are added.\nNext: monthly ESO metrics in code (not started)\n\n[Oct 14] Scope for 266:\n- Optimization Benchmarking - On Track\n- S&O Usage & Adoption Dashboard - On Track"
     },
     {
       "name": "[266] Project Felix to Pilot",
@@ -18461,7 +18463,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -18622,7 +18624,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-10-06",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -18682,7 +18684,7 @@
               "team": "Shared Q4 (Perf) & CTS - AI Cloud",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-02",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -18772,7 +18774,7 @@
               "team": "Shared Q4 (Perf) & CTS - AI Cloud",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-17",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -18917,7 +18919,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -18932,7 +18934,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -18947,7 +18949,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -18992,7 +18994,7 @@
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19052,7 +19054,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19168,7 +19170,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19198,7 +19200,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19213,7 +19215,7 @@
               "team": "SFS Frontline AI",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19243,7 +19245,7 @@
               "team": "SFS Setup Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19273,7 +19275,7 @@
               "team": "SFS Mobile GX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19288,7 +19290,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-10-23",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -19329,7 +19331,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19374,7 +19376,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19389,7 +19391,7 @@
               "team": "SFS Mobile Core Experience",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19464,7 +19466,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -19610,7 +19612,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -19726,7 +19728,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -19960,7 +19962,7 @@
               "team": "SFS Mobile Services",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -20238,14 +20240,14 @@
               "name": "[266] [SFS Mobile Assets] Record Edit Maestro automation coverage",
               "id": "a3QEE000002k51x2AA",
               "priority": "-",
-              "health": "Not Started",
-              "health_status": "Not Started",
+              "health": "On Track",
+              "health_status": "On Track",
               "health_comments": "",
               "owner": "Sandeep Agrawal",
               "team": "SFS Mobile Assets",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -20364,7 +20366,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -20410,7 +20412,7 @@
               "team": "SFS Mobile Platform DX",
               "scheduled_build": "-",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             }
@@ -20567,7 +20569,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -20582,7 +20584,7 @@
               "team": "FSL - Asset - 360",
               "scheduled_build": "266",
               "planned_release": "",
-              "last_modified": "2026-11-03",
+              "last_modified": "2026-11-04",
               "loc": "",
               "path_to_green": ""
             },
@@ -20690,7 +20692,7 @@
           ]
         }
       ],
-      "health_comments": "[Oct 27]\r\nSBOM (Service Bill of Materials): 4 of 5 assets team workstreams are in progress and on track. Mobile UX reviewed with @Kevin 10/27 feedback provided along with approval for engineering to move forward. UX review of finalized mocks with Mobile Engineering occurring 10/28. Mobile team started design and spiking for UI components (Service parts list and request pats modal). \r\nRISK: Mobile Engineering previously waiting for recently finalized UX mocks. Currently starting full design, effort estimates, and execution. Risk to original 266 delivery timeline, patch release more likely. Once effort estimates are finalized (early week of Nov 2) team will have clear picture of delivery timeline.\r\n\r\nAsset-Centric Dispatch View: Completed Field Service Leadership review. Decision to put next phase of detailed planning and funding for the initiative on hold pending a broader strategic review of release priorities for FY28 targeting mid-December.\r\n\r\n\r\n[Oct 20]\r\nSBOM (Service Bill of Materials): 4 of 5 workstreams started with assets team and are on track. Mobile team spun up and working through requirements with PM and UX.\r\nRISK: UX mocks pending finalization. UX resources were delayed being assigned to initiative. If Ux mocks not finalized by end of next week day for day timeline slip will occur.\r\n\r\nAsset-Centric Dispatch View: PBD & Prototype, ready for Field Service Leadership review & decisions to fund the program. Review scheduled for Oct 26.\r\n\r\n\r\n[10/13]\r\nSBOM (Service Bill of Materials): 2 work streams started with assets team. Both on track. Mobile team spun up and working through requirements with PM and UX.\r\nRISK: UX mocks pending finalization. UX resources were delayed being assigned to initiative. \r\n\r\nAsset-Centric Dispatch View: PBD, Prototype, and Customer Research reviewed 10/13 with program sponsor. PBD and Prototype updates requested based on latest discussion. ETA: 10/19\r\n\r\n\r\n9/22:\r\nAsset-Centric Dispatch View: PBD and Prototype complete. Product team working on collecting initial customer feedback on use cases. ETA pending PM.\r\n\r\nSBOM (Service Bill of Materials): Kicking off. Requirements reviewed, Engineering decomposing into epics/work items with sizing. ETA 9/25."
+      "health_comments": "[Nov 3]\r\nSBOM (Service Bill of Materials): 4 of 4 assets team workstreams are in progress and on track. One workstream determined not required for launch and moved to 268. Mobile requirements & Mocks complete, and reviewed with engineering team. HLD draft is in progress. Work breakdown and sizing complete. GUS updates in progress targeting end of week 11/6. Development has started on iOS and Android for the Serviceable Parts List workstream.\r\nRisk: New fields required to be added to PRM entity for Asset Hierarchy Explainer. TD opened with Finance cloud and is currently pending acceptance. Engineering teams in active discussion for alignment, commitment pending. If no alignment by 11/6 team will escalate. \r\n\r\n\r\n[Oct 27]\r\nSBOM (Service Bill of Materials): 4 of 5 assets team workstreams are in progress and on track. Mobile UX reviewed with @Kevin 10/27 feedback provided along with approval for engineering to move forward. UX review of finalized mocks with Mobile Engineering occurring 10/28. Mobile team started design and spiking for UI components (Service parts list and request pats modal). \r\nRISK: Mobile Engineering previously waiting for recently finalized UX mocks. Currently starting full design, effort estimates, and execution. Risk to original 266 delivery timeline, patch release more likely. Once effort estimates are finalized (early week of Nov 2) team will have clear picture of delivery timeline.\r\n\r\nAsset-Centric Dispatch View: Completed Field Service Leadership review. Decision to put next phase of detailed planning and funding for the initiative on hold pending a broader strategic review of release priorities for FY28 targeting mid-December.\r\n\r\n\r\n[Oct 20]\r\nSBOM (Service Bill of Materials): 4 of 5 workstreams started with assets team and are on track. Mobile team spun up and working through requirements with PM and UX.\r\nRISK: UX mocks pending finalization. UX resources were delayed being assigned to initiative. If Ux mocks not finalized by end of next week day for day timeline slip will occur.\r\n\r\nAsset-Centric Dispatch View: PBD & Prototype, ready for Field Service Leadership review & decisions to fund the program. Review scheduled for Oct 26.\r\n\r\n\r\n[10/13]\r\nSBOM (Service Bill of Materials): 2 work streams started with assets team. Both on track. Mobile team spun up and working through requirements with PM and UX.\r\nRISK: UX mocks pending finalization. UX resources were delayed being assigned to initiative. \r\n\r\nAsset-Centric Dispatch View: PBD, Prototype, and Customer Research reviewed 10/13 with program sponsor. PBD and Prototype updates requested based on latest discussion. ETA: 10/19\r\n\r\n\r\n9/22:\r\nAsset-Centric Dispatch View: PBD and Prototype complete. Product team working on collecting initial customer feedback on use cases. ETA pending PM.\r\n\r\nSBOM (Service Bill of Materials): Kicking off. Requirements reviewed, Engineering decomposing into epics/work items with sizing. ETA 9/25."
     },
     {
       "name": "[266] Foundations Trust",
@@ -20797,10 +20799,10 @@
     }
   ],
   "epic_no_sprint_stats": {
-    "on_track": 26,
-    "watch": 3,
-    "blocked": 0,
+    "on_track": 25,
+    "watch": 2,
+    "blocked": 1,
     "not_started": 124
   },
-  "total_epics_no_sprint": 153
+  "total_epics_no_sprint": 152
 }

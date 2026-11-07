@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 996,
+    "total_epics_needing_attention": 1002,
     "teams_affected": 78,
     "programs_affected": 73,
     "issue_breakdown": {
-      "missing_scheduled_build": 257,
-      "missing_priority": 557,
+      "missing_scheduled_build": 261,
+      "missing_priority": 563,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 914
+      "missing_planned_release": 920
     }
   },
   "epics": [
@@ -8086,6 +8086,25 @@
       ]
     },
     {
+      "epic_id": "a3QEE000001i5JZ2AY",
+      "epic_name": "Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+      "epic_name_key": "Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+      "team": "NPC Asteroids",
+      "owner": "Meg Gray",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "Nonprofit Impact",
+      "portfolio": "Industries Cloud",
+      "project": "Program Management",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000001i9VF2AY",
       "epic_name": "Duplicate: Intake Experience",
       "epic_name_key": "Duplicate: Intake Experience",
@@ -8538,8 +8557,8 @@
     },
     {
       "epic_id": "a3QEE000002ft4D2AQ",
-      "epic_name": "266: Programs Click Tax & Adoption",
-      "epic_name_key": "266: Programs Click Tax & Adoption",
+      "epic_name": "266: Programs Click Tax & Adoption Pt 1 - Add Participant Improvements",
+      "epic_name_key": "266: Programs Click Tax & Adoption Pt 1 - Add Participant Improvements",
       "team": "NPC Asteroids",
       "owner": "Sean Finerty",
       "health": "On Track",
@@ -8568,6 +8587,99 @@
       "project": "Program Management",
       "issues": [
         "missing_scheduled_build",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002o6kD2AQ",
+      "epic_name": "268: Programs Click Tax & Adoption Pt 2 - Client Note & Sharing Rules Updates",
+      "epic_name_key": "268: Programs Click Tax & Adoption Pt 2 - Client Note & Sharing Rules Updates",
+      "team": "NPC Asteroids",
+      "owner": "Sean Finerty",
+      "health": "Not Started",
+      "scheduled_build": "268",
+      "priority": "-",
+      "story_points": 0,
+      "program": "Nonprofit Impact",
+      "portfolio": "Industries Cloud",
+      "project": "Program Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002o6lp2AA",
+      "epic_name": "268: Headless Programs Setup",
+      "epic_name_key": "268: Headless Programs Setup",
+      "team": "NPC Asteroids",
+      "owner": "Sean Finerty",
+      "health": "Not Started",
+      "scheduled_build": "268",
+      "priority": "-",
+      "story_points": 0,
+      "program": "Nonprofit Impact",
+      "portfolio": "Industries Cloud",
+      "project": "Program Management",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002o6tt2AA",
+      "epic_name": "Care Plan Usability & Configurability",
+      "epic_name_key": "Care Plan Usability & Configurability",
+      "team": "NPC Asteroids",
+      "owner": "Sean Finerty",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "Nonprofit Impact",
+      "portfolio": "Industries Cloud",
+      "project": "Program Management",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002o6vV2AQ",
+      "epic_name": "Intake Agent Adoption Feedback",
+      "epic_name_key": "Intake Agent Adoption Feedback",
+      "team": "NPC Asteroids",
+      "owner": "Sean Finerty",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "Nonprofit Impact",
+      "portfolio": "Industries Cloud",
+      "project": "Program Management",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002o6x72AA",
+      "epic_name": "NPC Programs Scheduling Reuse",
+      "epic_name_key": "NPC Programs Scheduling Reuse",
+      "team": "NPC Asteroids",
+      "owner": "Sean Finerty",
+      "health": "Not Started",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "Nonprofit Impact",
+      "portfolio": "Industries Cloud",
+      "project": "Program Management",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
         "missing_planned_release"
       ]
     },
@@ -25594,7 +25706,7 @@
     },
     {
       "name": "NPC Asteroids",
-      "epic_count": 45,
+      "epic_count": 51,
       "epics": [
         {
           "epic_id": "a3QEE000000pBFx2AM",
@@ -25998,6 +26110,25 @@
           ]
         },
         {
+          "epic_id": "a3QEE000001i5JZ2AY",
+          "epic_name": "Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+          "epic_name_key": "Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+          "team": "NPC Asteroids",
+          "owner": "Meg Gray",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "Nonprofit Impact",
+          "portfolio": "Industries Cloud",
+          "project": "Program Management",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
           "epic_id": "a3QEE000001i9VF2AY",
           "epic_name": "Duplicate: Intake Experience",
           "epic_name_key": "Duplicate: Intake Experience",
@@ -26378,8 +26509,8 @@
         },
         {
           "epic_id": "a3QEE000002ft4D2AQ",
-          "epic_name": "266: Programs Click Tax & Adoption",
-          "epic_name_key": "266: Programs Click Tax & Adoption",
+          "epic_name": "266: Programs Click Tax & Adoption Pt 1 - Add Participant Improvements",
+          "epic_name_key": "266: Programs Click Tax & Adoption Pt 1 - Add Participant Improvements",
           "team": "NPC Asteroids",
           "owner": "Sean Finerty",
           "health": "On Track",
@@ -26408,6 +26539,99 @@
           "project": "Program Management",
           "issues": [
             "missing_scheduled_build",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002o6kD2AQ",
+          "epic_name": "268: Programs Click Tax & Adoption Pt 2 - Client Note & Sharing Rules Updates",
+          "epic_name_key": "268: Programs Click Tax & Adoption Pt 2 - Client Note & Sharing Rules Updates",
+          "team": "NPC Asteroids",
+          "owner": "Sean Finerty",
+          "health": "Not Started",
+          "scheduled_build": "268",
+          "priority": "-",
+          "story_points": 0,
+          "program": "Nonprofit Impact",
+          "portfolio": "Industries Cloud",
+          "project": "Program Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002o6lp2AA",
+          "epic_name": "268: Headless Programs Setup",
+          "epic_name_key": "268: Headless Programs Setup",
+          "team": "NPC Asteroids",
+          "owner": "Sean Finerty",
+          "health": "Not Started",
+          "scheduled_build": "268",
+          "priority": "-",
+          "story_points": 0,
+          "program": "Nonprofit Impact",
+          "portfolio": "Industries Cloud",
+          "project": "Program Management",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002o6tt2AA",
+          "epic_name": "Care Plan Usability & Configurability",
+          "epic_name_key": "Care Plan Usability & Configurability",
+          "team": "NPC Asteroids",
+          "owner": "Sean Finerty",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "Nonprofit Impact",
+          "portfolio": "Industries Cloud",
+          "project": "Program Management",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002o6vV2AQ",
+          "epic_name": "Intake Agent Adoption Feedback",
+          "epic_name_key": "Intake Agent Adoption Feedback",
+          "team": "NPC Asteroids",
+          "owner": "Sean Finerty",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "Nonprofit Impact",
+          "portfolio": "Industries Cloud",
+          "project": "Program Management",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002o6x72AA",
+          "epic_name": "NPC Programs Scheduling Reuse",
+          "epic_name_key": "NPC Programs Scheduling Reuse",
+          "team": "NPC Asteroids",
+          "owner": "Sean Finerty",
+          "health": "Not Started",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "Nonprofit Impact",
+          "portfolio": "Industries Cloud",
+          "project": "Program Management",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
             "missing_planned_release"
           ]
         }

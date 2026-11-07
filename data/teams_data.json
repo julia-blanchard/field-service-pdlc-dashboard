@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06T18:54:40.368747",
+  "last_updated": "2026-11-07T11:48:38.526929",
   "teams": [
     {
       "name": "FSE - Core",
@@ -383,10 +383,10 @@
         "[264] Unified Workforce Management (UWM)": 13.0
       },
       "november_capacity_limit": 88.0,
-      "november_committed": 131,
-      "november_work_items": 43,
+      "november_committed": 128,
+      "november_work_items": 42,
       "november_committed_by_program": {
-        "Unmapped": 131.0
+        "Unmapped": 128.0
       },
       "september_delivered": 260,
       "september_delivered_by_program": {
@@ -586,10 +586,10 @@
         "[264] Field Service: Headless (aka Codey)": 3.0
       },
       "november_capacity_limit": 176.0,
-      "november_committed": 78,
-      "november_work_items": 20,
+      "november_committed": 73,
+      "november_work_items": 19,
       "november_committed_by_program": {
-        "Unmapped": 75.0,
+        "Unmapped": 70.0,
         "[264] Mobile Insights GA": 3.0
       },
       "september_delivered": 107,
@@ -1264,11 +1264,11 @@
         "[266] S&O Trust": 8.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 26,
-      "november_work_items": 8,
+      "november_committed": 27,
+      "november_work_items": 9,
       "november_committed_by_program": {
         "Unmapped": 11.0,
-        "[266] S&O Trust": 12.0,
+        "[266] S&O Trust": 13.0,
         "FS 264: S&O Trust": 3.0
       },
       "september_delivered": 182.5,
@@ -2066,12 +2066,12 @@
         "264 Field Service Trust": 45.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 60,
-      "november_work_items": 20,
+      "november_committed": 55,
+      "november_work_items": 19,
       "november_committed_by_program": {
         "[266] Mobile Trust": 5.0,
         "264 Field Service: Customer Trust": 21.0,
-        "Unmapped": 31.0,
+        "Unmapped": 26.0,
         "[266] Quality Automation Uplift": 3.0
       },
       "september_delivered": 181,
@@ -2399,10 +2399,10 @@
         "[264] Field Service: Headless (aka Codey)": 8.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 128,
-      "november_work_items": 57,
+      "november_committed": 134,
+      "november_work_items": 63,
       "november_committed_by_program": {
-        "Unmapped": 67.0,
+        "Unmapped": 73.0,
         "[266] Mobile Trust": 14.0,
         "Performance Priming 100% Adoption": 31.0,
         "[266] Quality Automation Uplift": 16.0
@@ -2587,10 +2587,10 @@
         "[266] Unified Workforce Management (UWM)": 21.0
       },
       "november_capacity_limit": 52.80000000000001,
-      "november_committed": 82,
-      "november_work_items": 22,
+      "november_committed": 79,
+      "november_work_items": 21,
       "november_committed_by_program": {
-        "Unmapped": 79.0,
+        "Unmapped": 76.0,
         "[264] Unified Workforce Management (UWM)": 3.0
       },
       "september_delivered": 113,

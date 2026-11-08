@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 1002,
+    "total_epics_needing_attention": 1003,
     "teams_affected": 78,
     "programs_affected": 73,
     "issue_breakdown": {
       "missing_scheduled_build": 261,
-      "missing_priority": 563,
+      "missing_priority": 564,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 920
+      "missing_planned_release": 921
     }
   },
   "epics": [
@@ -13983,6 +13983,24 @@
       ]
     },
     {
+      "epic_id": "a3QEE000002o98b2AA",
+      "epic_name": "[266][Scheduling Console] Custom Actions Enhancments",
+      "epic_name_key": "[266][Scheduling Console] Custom Actions Enhancments",
+      "team": "FSL - Talpiot - Dispatch Console",
+      "owner": "Gila Anidjar",
+      "health": "On Track",
+      "scheduled_build": "266",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] S&O Scheduling Console",
+      "portfolio": "FY27 FS S&O",
+      "project": "S&O Scheduling Console - Gantt & List Capabilities",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
       "epic_id": "a3QEE000002Ssif2AC",
       "epic_name": "[264.4][Scheduling Console] D&D Scheduled appointments from list",
       "epic_name_key": "[264.4][Scheduling Console] D&D Scheduled appointments from list",
@@ -23421,7 +23439,7 @@
     },
     {
       "name": "FSL - Talpiot - Dispatch Console",
-      "epic_count": 42,
+      "epic_count": 43,
       "epics": [
         {
           "epic_id": "a3QEE000002NSAX2A4",
@@ -24041,6 +24059,24 @@
           "owner": "Gila Anidjar",
           "health": "On Track",
           "scheduled_build": "264.7",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] S&O Scheduling Console",
+          "portfolio": "FY27 FS S&O",
+          "project": "S&O Scheduling Console - Gantt & List Capabilities",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002o98b2AA",
+          "epic_name": "[266][Scheduling Console] Custom Actions Enhancments",
+          "epic_name_key": "[266][Scheduling Console] Custom Actions Enhancments",
+          "team": "FSL - Talpiot - Dispatch Console",
+          "owner": "Gila Anidjar",
+          "health": "On Track",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "[266] S&O Scheduling Console",

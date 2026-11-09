@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T10:56:35.927888",
+  "last_updated": "2026-11-09T15:09:46.557316",
   "teams": [
     {
       "name": "FSE - Core",
@@ -120,10 +120,10 @@
         "264 Scheduling Flows": 200.0
       },
       "november_capacity_limit": 140.8,
-      "november_committed": 190,
-      "november_work_items": 55,
+      "november_committed": 191,
+      "november_work_items": 56,
       "november_committed_by_program": {
-        "Unmapped": 42.0,
+        "Unmapped": 43.0,
         "264 Scheduling Flows": 10.0,
         "[266] Assets": 84.0,
         "266 WFS Onsite, Infield, Hybrid Scheduling": 54.0
@@ -289,10 +289,10 @@
         "[264] Field Service: Headless (aka Codey)": 1.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 135,
+      "november_committed": 136,
       "november_work_items": 49,
       "november_committed_by_program": {
-        "Unmapped": 42.0,
+        "Unmapped": 43.0,
         "266 WFS Onsite, Infield, Hybrid Scheduling": 93.0
       },
       "september_delivered": 171,
@@ -326,7 +326,7 @@
         "Salesforce Field Service 258 Theme:  Trust"
       ],
       "engineering_manager": "Pei Chu",
-      "product_owner": "Tushar Sharma",
+      "product_owner": "Kara Carreri",
       "capacity_delivered_june": 224.0,
       "work_items_closed_june": 74,
       "capacity_committed_july": 168.0,
@@ -383,10 +383,10 @@
         "[264] Unified Workforce Management (UWM)": 13.0
       },
       "november_capacity_limit": 88.0,
-      "november_committed": 128,
-      "november_work_items": 42,
+      "november_committed": 130,
+      "november_work_items": 43,
       "november_committed_by_program": {
-        "Unmapped": 128.0
+        "Unmapped": 130.0
       },
       "september_delivered": 260,
       "september_delivered_by_program": {
@@ -586,10 +586,10 @@
         "[264] Field Service: Headless (aka Codey)": 3.0
       },
       "november_capacity_limit": 176.0,
-      "november_committed": 73,
-      "november_work_items": 19,
+      "november_committed": 68,
+      "november_work_items": 18,
       "november_committed_by_program": {
-        "Unmapped": 73.0
+        "Unmapped": 68.0
       },
       "september_delivered": 107,
       "september_delivered_by_program": {
@@ -876,12 +876,13 @@
         "Unmapped": 11.0
       },
       "november_capacity_limit": 123.20000000000002,
-      "november_committed": 121,
-      "november_work_items": 30,
+      "november_committed": 124,
+      "november_work_items": 31,
       "november_committed_by_program": {
         "[266] S&O Trust": 33.0,
         "[266] S&O Optimization Platform": 48.0,
-        "Unmapped": 40.0
+        "Unmapped": 40.0,
+        "FS 264: S&O Trust": 3.0
       },
       "september_delivered": 30,
       "september_delivered_by_program": {
@@ -1096,10 +1097,10 @@
         "264 Field Service Trust": 1.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 136,
-      "november_work_items": 40,
+      "november_committed": 135,
+      "november_work_items": 39,
       "november_committed_by_program": {
-        "Unmapped": 111.0,
+        "Unmapped": 110.0,
         "266 WFS Onsite, Infield, Hybrid Scheduling": 21.0,
         "FS 264: S&O Trust": 2.0,
         "264 Field Service Trust": 2.0
@@ -1606,7 +1607,8 @@
         "262 Field Service Mobile",
         "264 Field Service Mobile",
         "FY27 FS Mobile",
-        "FY27 FS Trust"
+        "FY27 FS Trust",
+        "FY27 FS Workforce Scheduling"
       ],
       "engineering_manager": "Paul Chan",
       "product_owner": "Nitasha Walia",
@@ -1675,12 +1677,12 @@
         "[264] Field Service: Headless (aka Codey)": 1.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 75,
-      "november_work_items": 40,
+      "november_committed": 79,
+      "november_work_items": 42,
       "november_committed_by_program": {
         "[266] Mobile Trust": 15.0,
         "[266] Mobile AI & Voice to Form": 4.0,
-        "Unmapped": 46.0,
+        "Unmapped": 50.0,
         "[266] Guided Experience": 9.0,
         "[266] Quality Automation Uplift": 1.0
       },
@@ -1896,10 +1898,10 @@
         "[264] Field Service: Headless (aka Codey)": 1.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 67,
-      "november_work_items": 23,
+      "november_committed": 70,
+      "november_work_items": 25,
       "november_committed_by_program": {
-        "Unmapped": 49.0,
+        "Unmapped": 52.0,
         "[266] Mobile Trust": 11.0,
         "264 Field Service: Workforce Scheduling on Mobile": 3.0,
         "[266] Guided Experience": 3.0,
@@ -1940,6 +1942,7 @@
         "264 Field Service Mobile",
         "FY27 FS Mobile",
         "FY27 FS Trust",
+        "FY27 FS Workforce Scheduling",
         "FY27 SC M1 Trust"
       ],
       "engineering_manager": "Steve Thistle",
@@ -1969,12 +1972,12 @@
         "[266] Mobile Trust": 11.0
       },
       "november_capacity_limit": 123.20000000000002,
-      "november_committed": 151,
-      "november_work_items": 58,
+      "november_committed": 147,
+      "november_work_items": 55,
       "november_committed_by_program": {
-        "Unmapped": 39.0,
-        "[266] Guided Experience": 87.0,
-        "[266] Mobile Trust": 15.0,
+        "Unmapped": 38.0,
+        "[266] Guided Experience": 85.0,
+        "[266] Mobile Trust": 14.0,
         "264 Field Service: Workforce Scheduling on Mobile": 10.0
       },
       "september_delivered": 290,
@@ -2237,13 +2240,13 @@
         "[266] Quality Automation Uplift": 13.0
       },
       "november_capacity_limit": 140.8,
-      "november_committed": 112,
-      "november_work_items": 47,
+      "november_committed": 116,
+      "november_work_items": 49,
       "november_committed_by_program": {
-        "[266] Mobile Trust": 77.0,
         "Unmapped": 23.0,
+        "[266] Mobile Trust": 80.0,
         "[266] Low Connectivity and Performance": 5.0,
-        "[266] Quality Automation Uplift": 1.0,
+        "[266] Quality Automation Uplift": 2.0,
         "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 6.0
       },
       "september_delivered": 134,
@@ -2408,11 +2411,11 @@
         "[264] Field Service: Headless (aka Codey)": 8.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 134,
-      "november_work_items": 64,
+      "november_committed": 130,
+      "november_work_items": 62,
       "november_committed_by_program": {
-        "Unmapped": 71.0,
-        "[266] Mobile Trust": 16.0,
+        "Unmapped": 68.0,
+        "[266] Mobile Trust": 15.0,
         "Performance Priming 100% Adoption": 31.0,
         "[266] Quality Automation Uplift": 16.0
       },
@@ -2596,10 +2599,10 @@
         "[266] Unified Workforce Management (UWM)": 21.0
       },
       "november_capacity_limit": 52.80000000000001,
-      "november_committed": 79,
-      "november_work_items": 21,
+      "november_committed": 89,
+      "november_work_items": 23,
       "november_committed_by_program": {
-        "Unmapped": 76.0,
+        "Unmapped": 86.0,
         "[264] Unified Workforce Management (UWM)": 3.0
       },
       "september_delivered": 113,

@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 1004,
+    "total_epics_needing_attention": 1032,
     "teams_affected": 78,
-    "programs_affected": 73,
+    "programs_affected": 74,
     "issue_breakdown": {
       "missing_scheduled_build": 260,
       "missing_priority": 564,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 922
+      "missing_planned_release": 962
     }
   },
   "epics": [
@@ -834,7 +834,7 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002IApN2AW",
+      "epic_id": "",
       "epic_name": "[264]  SFS Android crash fixes and Improve stability",
       "epic_name_key": "[264]  SFS Android crash fixes and Improve stability",
       "team": "SFS Mobile Assets",
@@ -848,11 +848,12 @@
       "project": "264 Mobile Stability",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002IAqz2AG",
+      "epic_id": "",
       "epic_name": "[264]  SFS IOS crash and FOOM fixes and Improve stability",
       "epic_name_key": "[264]  SFS IOS crash and FOOM fixes and Improve stability",
       "team": "SFS Mobile Assets",
@@ -866,11 +867,12 @@
       "project": "264 Mobile Stability",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000001feQj2AI",
+      "epic_id": "",
       "epic_name": "[SFS Mobile] Crash bugs",
       "epic_name_key": "[SFS Mobile] Crash bugs",
       "team": "SFS Mobile Assets",
@@ -889,7 +891,7 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002Krev2AC",
+      "epic_id": "",
       "epic_name": "264 SFS Frontline AI - [Accessibility] Accessibility Audit",
       "epic_name_key": "264 SFS Frontline AI - [Accessibility] Accessibility Audit",
       "team": "SFS Frontline AI",
@@ -902,11 +904,12 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build"
+        "missing_scheduled_build",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002Cg7B2AS",
+      "epic_id": "",
       "epic_name": "264 SFS Frontline AI - [M2.7] Observability Excellence",
       "epic_name_key": "264 SFS Frontline AI - [M2.7] Observability Excellence",
       "team": "SFS Frontline AI",
@@ -919,11 +922,29 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build"
+        "missing_scheduled_build",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002V9In2AK",
+      "epic_id": "",
+      "epic_name": "264 SFS Frontline AI - Agentforce Voice (Pilot Support)",
+      "epic_name_key": "264 SFS Frontline AI - Agentforce Voice (Pilot Support)",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "75",
+      "story_points": 0,
+      "program": "264 Field Service: Mobile Agentic AI",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
       "epic_name": "264 SFS Frontline AI - Automation Improvement",
       "epic_name_key": "264 SFS Frontline AI - Automation Improvement",
       "team": "SFS Frontline AI",
@@ -941,7 +962,7 @@
       ]
     },
     {
-      "epic_id": "a3QEE0000022CFF2A2",
+      "epic_id": "",
       "epic_name": "264 SFS Frontline AI - MVP Enhancement",
       "epic_name_key": "264 SFS Frontline AI - MVP Enhancement",
       "team": "SFS Frontline AI",
@@ -954,11 +975,12 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
       "issues": [
-        "missing_scheduled_build"
+        "missing_scheduled_build",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002CjbJ2AS",
+      "epic_id": "",
       "epic_name": "264 SFS Frontline AI - PWB via Agentforce",
       "epic_name_key": "264 SFS Frontline AI - PWB via Agentforce",
       "team": "SFS Frontline AI",
@@ -975,7 +997,24 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002Cjcv2AC",
+      "epic_id": "",
+      "epic_name": "264 SFS Frontline AI - V2F Legal Disclaimer for first time user",
+      "epic_name_key": "264 SFS Frontline AI - V2F Legal Disclaimer for first time user",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "35",
+      "story_points": 0,
+      "program": "264 Field Service: Mobile Agentic AI",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
       "epic_name": "264 SFS Frontline AI - V2F via Agentforce",
       "epic_name_key": "264 SFS Frontline AI - V2F via Agentforce",
       "team": "SFS Frontline AI",
@@ -992,7 +1031,143 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002K4mH2AS",
+      "epic_id": "",
+      "epic_name": "264 SFS Frontline AI - Voice to Form: Support for Dynamic Forms",
+      "epic_name_key": "264 SFS Frontline AI - Voice to Form: Support for Dynamic Forms",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "43",
+      "story_points": 0,
+      "program": "264 Field Service: Mobile Agentic AI",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "264 SFS Frontline AI - Voice to Form (Spanish & French)",
+      "epic_name_key": "264 SFS Frontline AI - Voice to Form (Spanish & French)",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "50",
+      "story_points": 0,
+      "program": "264 Field Service: Mobile Agentic AI",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "264 SFS Frontline AI - Voice to Form Instrumentation",
+      "epic_name_key": "264 SFS Frontline AI - Voice to Form Instrumentation",
+      "team": "SFS Frontline AI",
+      "owner": "Nitasha Walia",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "80",
+      "story_points": 0,
+      "program": "264 Field Service: Mobile Agentic AI",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "264 SFS Frontline AI - Voice to Form Offline Pilot",
+      "epic_name_key": "264 SFS Frontline AI - Voice to Form Offline Pilot",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "37",
+      "story_points": 0,
+      "program": "264 Field Service: Mobile Agentic AI",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "264 SFS Frontline AI - Voice To Form UX Enhancements",
+      "epic_name_key": "264 SFS Frontline AI - Voice To Form UX Enhancements",
+      "team": "SFS Frontline AI",
+      "owner": "Paul Chan",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "57",
+      "story_points": 0,
+      "program": "264 Field Service: Mobile Agentic AI",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "264 - SFS Mobile - C&S - Data SDK Support",
+      "epic_name_key": "264 - SFS Mobile - C&S - Data SDK Support",
+      "team": "SFS Mobile GX",
+      "owner": "Steve Thistle",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "2",
+      "story_points": 0,
+      "program": "264 Field Service: KONE",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 KONE: Phase 1",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "264 - SFS Mobile - C&S - Data SDK Support(Internal Trust)",
+      "epic_name_key": "264 - SFS Mobile - C&S - Data SDK Support(Internal Trust)",
+      "team": "SFS Mobile GX",
+      "owner": "Steve Thistle",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "2",
+      "story_points": 0,
+      "program": "264 Field Service: KONE",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 KONE: Phase 1",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "264 - SFS Mobile - C&S - Data SDK Support(LDS optimations/Direct to LDS)",
+      "epic_name_key": "264 - SFS Mobile - C&S - Data SDK Support(LDS optimations/Direct to LDS)",
+      "team": "SFS Mobile GX",
+      "owner": "Steve Thistle",
+      "health": "Unknown",
+      "scheduled_build": "264",
+      "priority": "2",
+      "story_points": 0,
+      "program": "264 Field Service: KONE",
+      "portfolio": "264 Field Service Mobile",
+      "project": "264 KONE: Phase 1",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
       "epic_name": "[264][SFS MCX][Native GIS] Work Order Related List Layer (GA Enhancement)",
       "epic_name_key": "[264][SFS MCX][Native GIS] Work Order Related List Layer (GA Enhancement)",
       "team": "SFS Mobile Core Experience",
@@ -1005,11 +1180,12 @@
       "portfolio": "264 Field Service Mobile",
       "project": "264 Customer Enhancements",
       "issues": [
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002gCej2AE",
+      "epic_id": "",
       "epic_name": "[266][SFS LC&DC Mobile] GIS Enhancements",
       "epic_name_key": "[266][SFS LC&DC Mobile] GIS Enhancements",
       "team": "SFS Mobile Location and DC",
@@ -1023,11 +1199,12 @@
       "project": "264 Customer Enhancements",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002KmKH2A0",
+      "epic_id": "",
       "epic_name": "[Android] Priority Notifications",
       "epic_name_key": "[Android] Priority Notifications",
       "team": "SFS Mobile Assets",
@@ -1046,7 +1223,7 @@
       ]
     },
     {
-      "epic_id": "a3QAH00000006R82AI",
+      "epic_id": "",
       "epic_name": "236 SFS Mobile - [Feature] Automatic Status change BETA",
       "epic_name_key": "236 SFS Mobile - [Feature] Automatic Status change BETA",
       "team": "SFS Mobile Location and DC",
@@ -1063,7 +1240,7 @@
       ]
     },
     {
-      "epic_id": "a3QEE00000048YT2AY",
+      "epic_id": "",
       "epic_name": "238 SFS Mobile - [Feature] ASC GA - Bottom Sheet UI Updates",
       "epic_name_key": "238 SFS Mobile - [Feature] ASC GA - Bottom Sheet UI Updates",
       "team": "SFS Mobile Location and DC",
@@ -1080,7 +1257,7 @@
       ]
     },
     {
-      "epic_id": "a3QB00000009GM9MAM",
+      "epic_id": "",
       "epic_name": "238 SFS Mobile - [Feature] Automatic Status change GA - Analytics & logs",
       "epic_name_key": "238 SFS Mobile - [Feature] Automatic Status change GA - Analytics & logs",
       "team": "SFS Mobile Location and DC",
@@ -1097,7 +1274,7 @@
       ]
     },
     {
-      "epic_id": "a3QEE0000000pqX2AQ",
+      "epic_id": "",
       "epic_name": "238 SFS Mobile - [Feature] Automatic Status change GA - New Modes",
       "epic_name_key": "238 SFS Mobile - [Feature] Automatic Status change GA - New Modes",
       "team": "SFS Mobile Location and DC",
@@ -1114,7 +1291,7 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002VUtV2AW",
+      "epic_id": "",
       "epic_name": "Core: Emergency-Dispatch Notification tier signal (264, Android + iOS)",
       "epic_name_key": "Core: Emergency-Dispatch Notification tier signal (264, Android + iOS)",
       "team": "SFS Mobile Core Experience",
@@ -1128,11 +1305,12 @@
       "project": "264 Customer Enhancements",
       "issues": [
         "missing_scheduled_build",
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002JcBh2AK",
+      "epic_id": "",
       "epic_name": "Enable Arabic Translations in Field Service Mobile",
       "epic_name_key": "Enable Arabic Translations in Field Service Mobile",
       "team": "SFS Mobile Location and DC",
@@ -1151,7 +1329,41 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002LcIr2AK",
+      "epic_id": "",
+      "epic_name": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
+      "epic_name_key": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
+      "team": "FSL - Resource - Scheduling Orcas",
+      "owner": "Shay Gozansky",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "15",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "[264] SFS Orcas General trust",
+      "epic_name_key": "[264] SFS Orcas General trust",
+      "team": "FSL - Resource - Scheduling Orcas",
+      "owner": "Shay Gozansky",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "5",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
       "epic_name": "[264][SFS][LS] Send error back to service if fetching a file fails",
       "epic_name_key": "[264][SFS][LS] Send error back to service if fetching a file fails",
       "team": "FSL - Resource - Scheduling Intelligence",
@@ -1164,11 +1376,12 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Application Production Support",
       "issues": [
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002LcKT2A0",
+      "epic_id": "",
       "epic_name": "[264][SFS][O2] Inherit FIT tests",
       "epic_name_key": "[264][SFS][O2] Inherit FIT tests",
       "team": "FSL - Resource - Scheduling Intelligence",
@@ -1181,11 +1394,97 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Application Production Support",
       "issues": [
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002OmK52AK",
+      "epic_id": "",
+      "epic_name": "[264] SFS [AF] [Trust] Adoption",
+      "epic_name_key": "[264] SFS [AF] [Trust] Adoption",
+      "team": "FSL - Foundation - Corecodiles",
+      "owner": "Avi Inbar",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "48",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "[264] SFS [ESO] [TRUST] Serivce Support",
+      "epic_name_key": "[264] SFS [ESO] [TRUST] Serivce Support",
+      "team": "FSL - Foundation - Corecodiles",
+      "owner": "Avi Inbar",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "1",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
+      "epic_name_key": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
+      "team": "FSL - Foundation - Corecodiles",
+      "owner": "Avi Inbar",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "30",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
+      "epic_name_key": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
+      "team": "FSL - Foundation - Corecodiles",
+      "owner": "Avi Inbar",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "5",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* [264][Trust][Scheduling Intelligence]",
+      "epic_name_key": "* [264][Trust][Scheduling Intelligence]",
+      "team": "FSL - Resource - Scheduling Intelligence",
+      "owner": "Yonatan Bar-Yehuda",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "1",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
       "epic_name": "* [264][Trust] Improve Heap-Size Pagination Tuning",
       "epic_name_key": "* [264][Trust] Improve Heap-Size Pagination Tuning",
       "team": "FSL - Resource - Scheduling Intelligence",
@@ -1198,11 +1497,199 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Application Production Support",
       "issues": [
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
-      "epic_id": "a3QEE000002LcNh2AK",
+      "epic_id": "",
+      "epic_name": "*[8.3.1][264] Hackathon/Demo Days",
+      "epic_name_key": "*[8.3.1][264] Hackathon/Demo Days",
+      "team": "MomentumForce",
+      "owner": "Bhuvnesh Mehra",
+      "health": "Unknown",
+      "scheduled_build": "264",
+      "priority": "590",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* 264 SFS [Trust] - On call duty",
+      "epic_name_key": "* 264 SFS [Trust] - On call duty",
+      "team": "FSL - Resource - Scheduling Platform",
+      "owner": "Orelie Fridler",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "10",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* 264 SFS [Trust] - Patch and Merge",
+      "epic_name_key": "* 264 SFS [Trust] - Patch and Merge",
+      "team": "FSL - Resource - Scheduling Platform",
+      "owner": "Lev Gorelik",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "15",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* 264 SFS [Trust] - Zero Incidents initiative",
+      "epic_name_key": "* 264 SFS [Trust] - Zero Incidents initiative",
+      "team": "FSL - Resource - Scheduling Platform",
+      "owner": "Ohad Barak",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "25",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Availability",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
+      "epic_name_key": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
+      "team": "MomentumForce",
+      "owner": "Bhuvnesh Mehra",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "280",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* [1.16.5][264][PBS] Daily On-Call Support",
+      "epic_name_key": "* [1.16.5][264][PBS] Daily On-Call Support",
+      "team": "MomentumForce",
+      "owner": "Bhuvnesh Mehra",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "540",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* [1.16.5][264][PBS] Infrastructure Maintenance",
+      "epic_name_key": "* [1.16.5][264][PBS] Infrastructure Maintenance",
+      "team": "MomentumForce",
+      "owner": "Bhuvnesh Mehra",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "120",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
+      "epic_name_key": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
+      "team": "MomentumForce",
+      "owner": "Bhuvnesh Mehra",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "100",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* [1.16.5][264][SFS] Daily On-Call Support",
+      "epic_name_key": "* [1.16.5][264][SFS] Daily On-Call Support",
+      "team": "MomentumForce",
+      "owner": "Bhuvnesh Mehra",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "600",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
+      "epic_name_key": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
+      "team": "FSL - Resource - Scheduling Platform",
+      "owner": "Ohad Barak",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "20",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
+      "epic_name": "* 264 SFS [Trust] - Technical Debt",
+      "epic_name_key": "* 264 SFS [Trust] - Technical Debt",
+      "team": "FSL - Resource - Scheduling Platform",
+      "owner": "Orelie Fridler",
+      "health": "Completed",
+      "scheduled_build": "264",
+      "priority": "45",
+      "story_points": 0,
+      "program": "FS 264: S&O Trust",
+      "portfolio": "264 Field Service Scheduling & Optimization",
+      "project": "FS 264: S&O Trust: Modernize and Simplify the Technology Stack",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "",
       "epic_name": "[264][SFS][LS] PFT for MP\\LS",
       "epic_name_key": "[264][SFS][LS] PFT for MP\\LS",
       "team": "FSL - Resource - Scheduling Intelligence",
@@ -1215,7 +1702,8 @@
       "portfolio": "264 Field Service Scheduling & Optimization",
       "project": "FS 264: S&O Trust: Observability",
       "issues": [
-        "missing_priority"
+        "missing_priority",
+        "missing_planned_release"
       ]
     },
     {
@@ -19973,8 +20461,76 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 22,
+      "epic_count": 26,
       "epics": [
+        {
+          "epic_id": "",
+          "epic_name": "[264] SFS [AF] [Trust] Adoption",
+          "epic_name_key": "[264] SFS [AF] [Trust] Adoption",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Avi Inbar",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "48",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "[264] SFS [ESO] [TRUST] Serivce Support",
+          "epic_name_key": "[264] SFS [ESO] [TRUST] Serivce Support",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Avi Inbar",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "1",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
+          "epic_name_key": "[264] SFS [TRUST] Test UI Supervisor view - 1st time",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Avi Inbar",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "30",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
+          "epic_name_key": "[264] SFS [TRUST] Work capacity tokens and enhancement of groupIDs",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Avi Inbar",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "5",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
         {
           "epic_id": "a3QEE000002GSNN2A4",
           "epic_name": "[264] SFS [AF] Agentforce scheduling  - Fill Gaps (Stretch Demo)",
@@ -21687,10 +22243,10 @@
     },
     {
       "name": "FSL - Resource - Scheduling Intelligence",
-      "epic_count": 43,
+      "epic_count": 44,
       "epics": [
         {
-          "epic_id": "a3QEE000002LcIr2AK",
+          "epic_id": "",
           "epic_name": "[264][SFS][LS] Send error back to service if fetching a file fails",
           "epic_name_key": "[264][SFS][LS] Send error back to service if fetching a file fails",
           "team": "FSL - Resource - Scheduling Intelligence",
@@ -21703,11 +22259,12 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Application Production Support",
           "issues": [
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002LcKT2A0",
+          "epic_id": "",
           "epic_name": "[264][SFS][O2] Inherit FIT tests",
           "epic_name_key": "[264][SFS][O2] Inherit FIT tests",
           "team": "FSL - Resource - Scheduling Intelligence",
@@ -21720,11 +22277,29 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Application Production Support",
           "issues": [
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002OmK52AK",
+          "epic_id": "",
+          "epic_name": "* [264][Trust][Scheduling Intelligence]",
+          "epic_name_key": "* [264][Trust][Scheduling Intelligence]",
+          "team": "FSL - Resource - Scheduling Intelligence",
+          "owner": "Yonatan Bar-Yehuda",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "1",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
           "epic_name": "* [264][Trust] Improve Heap-Size Pagination Tuning",
           "epic_name_key": "* [264][Trust] Improve Heap-Size Pagination Tuning",
           "team": "FSL - Resource - Scheduling Intelligence",
@@ -21737,11 +22312,12 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Application Production Support",
           "issues": [
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002LcNh2AK",
+          "epic_id": "",
           "epic_name": "[264][SFS][LS] PFT for MP\\LS",
           "epic_name_key": "[264][SFS][LS] PFT for MP\\LS",
           "team": "FSL - Resource - Scheduling Intelligence",
@@ -21754,7 +22330,8 @@
           "portfolio": "264 Field Service Scheduling & Optimization",
           "project": "FS 264: S&O Trust: Observability",
           "issues": [
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
@@ -22461,8 +23038,42 @@
     },
     {
       "name": "FSL - Resource - Scheduling Orcas",
-      "epic_count": 27,
+      "epic_count": 29,
       "epics": [
+        {
+          "epic_id": "",
+          "epic_name": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
+          "epic_name_key": "[264] SFS [AF] Agentforce Scheduling/Employee agent trust",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Shay Gozansky",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "15",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "[264] SFS Orcas General trust",
+          "epic_name_key": "[264] SFS Orcas General trust",
+          "team": "FSL - Resource - Scheduling Orcas",
+          "owner": "Shay Gozansky",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "5",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Accessibility, Quality and Performance",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
         {
           "epic_id": "a3QEE000001rUQn2AM",
           "epic_name": "[260] SFS [AF] [Trust]  General",
@@ -22926,8 +23537,93 @@
     },
     {
       "name": "FSL - Resource - Scheduling Platform",
-      "epic_count": 29,
+      "epic_count": 34,
       "epics": [
+        {
+          "epic_id": "",
+          "epic_name": "* 264 SFS [Trust] - On call duty",
+          "epic_name_key": "* 264 SFS [Trust] - On call duty",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Orelie Fridler",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "10",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* 264 SFS [Trust] - Patch and Merge",
+          "epic_name_key": "* 264 SFS [Trust] - Patch and Merge",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Lev Gorelik",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "15",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* 264 SFS [Trust] - Zero Incidents initiative",
+          "epic_name_key": "* 264 SFS [Trust] - Zero Incidents initiative",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Ohad Barak",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "25",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Availability",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
+          "epic_name_key": "* 264 SFS [Trust] - O2 services ongoing DevOps work",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Ohad Barak",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "20",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* 264 SFS [Trust] - Technical Debt",
+          "epic_name_key": "* 264 SFS [Trust] - Technical Debt",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Orelie Fridler",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "45",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Modernize and Simplify the Technology Stack",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
         {
           "epic_id": "a3QEE000001ofqb2AA",
           "epic_name": "* 260 SFS [Trust]  - On call duty",
@@ -25326,8 +26022,110 @@
     },
     {
       "name": "MomentumForce",
-      "epic_count": 25,
+      "epic_count": 31,
       "epics": [
+        {
+          "epic_id": "",
+          "epic_name": "*[8.3.1][264] Hackathon/Demo Days",
+          "epic_name_key": "*[8.3.1][264] Hackathon/Demo Days",
+          "team": "MomentumForce",
+          "owner": "Bhuvnesh Mehra",
+          "health": "Unknown",
+          "scheduled_build": "264",
+          "priority": "590",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
+          "epic_name_key": "*[1.16.11][264] SFS: 3PP bug fixes and Service Deployments",
+          "team": "MomentumForce",
+          "owner": "Bhuvnesh Mehra",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "280",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* [1.16.5][264][PBS] Daily On-Call Support",
+          "epic_name_key": "* [1.16.5][264][PBS] Daily On-Call Support",
+          "team": "MomentumForce",
+          "owner": "Bhuvnesh Mehra",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "540",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* [1.16.5][264][PBS] Infrastructure Maintenance",
+          "epic_name_key": "* [1.16.5][264][PBS] Infrastructure Maintenance",
+          "team": "MomentumForce",
+          "owner": "Bhuvnesh Mehra",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "120",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
+          "epic_name_key": "* [1.16.5][264][SFS][FSL][FSE] Infrastructure Maintenance",
+          "team": "MomentumForce",
+          "owner": "Bhuvnesh Mehra",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "100",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "* [1.16.5][264][SFS] Daily On-Call Support",
+          "epic_name_key": "* [1.16.5][264][SFS] Daily On-Call Support",
+          "team": "MomentumForce",
+          "owner": "Bhuvnesh Mehra",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "600",
+          "story_points": 0,
+          "program": "FS 264: S&O Trust",
+          "portfolio": "264 Field Service Scheduling & Optimization",
+          "project": "FS 264: S&O Trust: Infrastructure / Dev Ops Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
         {
           "epic_id": "a3QEE000001otOv2AI",
           "epic_name": "*[8.3.1][260] Hackathon/Demo Days Winter 2025",
@@ -29945,10 +30743,10 @@
     },
     {
       "name": "SFS Frontline AI",
-      "epic_count": 79,
+      "epic_count": 86,
       "epics": [
         {
-          "epic_id": "a3QEE000002Krev2AC",
+          "epic_id": "",
           "epic_name": "264 SFS Frontline AI - [Accessibility] Accessibility Audit",
           "epic_name_key": "264 SFS Frontline AI - [Accessibility] Accessibility Audit",
           "team": "SFS Frontline AI",
@@ -29961,11 +30759,12 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build"
+            "missing_scheduled_build",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002Cg7B2AS",
+          "epic_id": "",
           "epic_name": "264 SFS Frontline AI - [M2.7] Observability Excellence",
           "epic_name_key": "264 SFS Frontline AI - [M2.7] Observability Excellence",
           "team": "SFS Frontline AI",
@@ -29978,11 +30777,29 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build"
+            "missing_scheduled_build",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002V9In2AK",
+          "epic_id": "",
+          "epic_name": "264 SFS Frontline AI - Agentforce Voice (Pilot Support)",
+          "epic_name_key": "264 SFS Frontline AI - Agentforce Voice (Pilot Support)",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "75",
+          "story_points": 0,
+          "program": "264 Field Service: Mobile Agentic AI",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
           "epic_name": "264 SFS Frontline AI - Automation Improvement",
           "epic_name_key": "264 SFS Frontline AI - Automation Improvement",
           "team": "SFS Frontline AI",
@@ -30000,7 +30817,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE0000022CFF2A2",
+          "epic_id": "",
           "epic_name": "264 SFS Frontline AI - MVP Enhancement",
           "epic_name_key": "264 SFS Frontline AI - MVP Enhancement",
           "team": "SFS Frontline AI",
@@ -30013,11 +30830,12 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
           "issues": [
-            "missing_scheduled_build"
+            "missing_scheduled_build",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002CjbJ2AS",
+          "epic_id": "",
           "epic_name": "264 SFS Frontline AI - PWB via Agentforce",
           "epic_name_key": "264 SFS Frontline AI - PWB via Agentforce",
           "team": "SFS Frontline AI",
@@ -30034,7 +30852,24 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002Cjcv2AC",
+          "epic_id": "",
+          "epic_name": "264 SFS Frontline AI - V2F Legal Disclaimer for first time user",
+          "epic_name_key": "264 SFS Frontline AI - V2F Legal Disclaimer for first time user",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "35",
+          "story_points": 0,
+          "program": "264 Field Service: Mobile Agentic AI",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
           "epic_name": "264 SFS Frontline AI - V2F via Agentforce",
           "epic_name_key": "264 SFS Frontline AI - V2F via Agentforce",
           "team": "SFS Frontline AI",
@@ -30042,6 +30877,91 @@
           "health": "Unknown",
           "scheduled_build": "264",
           "priority": "110",
+          "story_points": 0,
+          "program": "264 Field Service: Mobile Agentic AI",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 SFS Frontline AI - Voice to Form: Support for Dynamic Forms",
+          "epic_name_key": "264 SFS Frontline AI - Voice to Form: Support for Dynamic Forms",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "43",
+          "story_points": 0,
+          "program": "264 Field Service: Mobile Agentic AI",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 SFS Frontline AI - Voice to Form (Spanish & French)",
+          "epic_name_key": "264 SFS Frontline AI - Voice to Form (Spanish & French)",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "50",
+          "story_points": 0,
+          "program": "264 Field Service: Mobile Agentic AI",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 SFS Frontline AI - Voice to Form Instrumentation",
+          "epic_name_key": "264 SFS Frontline AI - Voice to Form Instrumentation",
+          "team": "SFS Frontline AI",
+          "owner": "Nitasha Walia",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "80",
+          "story_points": 0,
+          "program": "264 Field Service: Mobile Agentic AI",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 SFS Frontline AI - Voice to Form Offline Pilot",
+          "epic_name_key": "264 SFS Frontline AI - Voice to Form Offline Pilot",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "37",
+          "story_points": 0,
+          "program": "264 Field Service: Mobile Agentic AI",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 Mobile AI/Agentforce: PWB & Voice to Form",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 SFS Frontline AI - Voice To Form UX Enhancements",
+          "epic_name_key": "264 SFS Frontline AI - Voice To Form UX Enhancements",
+          "team": "SFS Frontline AI",
+          "owner": "Paul Chan",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "57",
           "story_points": 0,
           "program": "264 Field Service: Mobile Agentic AI",
           "portfolio": "264 Field Service Mobile",
@@ -31674,7 +32594,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002IApN2AW",
+          "epic_id": "",
           "epic_name": "[264]  SFS Android crash fixes and Improve stability",
           "epic_name_key": "[264]  SFS Android crash fixes and Improve stability",
           "team": "SFS Mobile Assets",
@@ -31688,11 +32608,12 @@
           "project": "264 Mobile Stability",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002IAqz2AG",
+          "epic_id": "",
           "epic_name": "[264]  SFS IOS crash and FOOM fixes and Improve stability",
           "epic_name_key": "[264]  SFS IOS crash and FOOM fixes and Improve stability",
           "team": "SFS Mobile Assets",
@@ -31706,11 +32627,12 @@
           "project": "264 Mobile Stability",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000001feQj2AI",
+          "epic_id": "",
           "epic_name": "[SFS Mobile] Crash bugs",
           "epic_name_key": "[SFS Mobile] Crash bugs",
           "team": "SFS Mobile Assets",
@@ -31729,7 +32651,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002KmKH2A0",
+          "epic_id": "",
           "epic_name": "[Android] Priority Notifications",
           "epic_name_key": "[Android] Priority Notifications",
           "team": "SFS Mobile Assets",
@@ -32083,7 +33005,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002K4mH2AS",
+          "epic_id": "",
           "epic_name": "[264][SFS MCX][Native GIS] Work Order Related List Layer (GA Enhancement)",
           "epic_name_key": "[264][SFS MCX][Native GIS] Work Order Related List Layer (GA Enhancement)",
           "team": "SFS Mobile Core Experience",
@@ -32096,11 +33018,12 @@
           "portfolio": "264 Field Service Mobile",
           "project": "264 Customer Enhancements",
           "issues": [
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QEE000002VUtV2AW",
+          "epic_id": "",
           "epic_name": "Core: Emergency-Dispatch Notification tier signal (264, Android + iOS)",
           "epic_name_key": "Core: Emergency-Dispatch Notification tier signal (264, Android + iOS)",
           "team": "SFS Mobile Core Experience",
@@ -32114,7 +33037,8 @@
           "project": "264 Customer Enhancements",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
@@ -32498,7 +33422,7 @@
     },
     {
       "name": "SFS Mobile GX",
-      "epic_count": 37,
+      "epic_count": 40,
       "epics": [
         {
           "epic_id": "a3QEE000002O3YH2A0",
@@ -32774,6 +33698,57 @@
           "project": "264 Push Notification Enhancements",
           "issues": [
             "missing_priority"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 - SFS Mobile - C&S - Data SDK Support",
+          "epic_name_key": "264 - SFS Mobile - C&S - Data SDK Support",
+          "team": "SFS Mobile GX",
+          "owner": "Steve Thistle",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "2",
+          "story_points": 0,
+          "program": "264 Field Service: KONE",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 KONE: Phase 1",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 - SFS Mobile - C&S - Data SDK Support(Internal Trust)",
+          "epic_name_key": "264 - SFS Mobile - C&S - Data SDK Support(Internal Trust)",
+          "team": "SFS Mobile GX",
+          "owner": "Steve Thistle",
+          "health": "Completed",
+          "scheduled_build": "264",
+          "priority": "2",
+          "story_points": 0,
+          "program": "264 Field Service: KONE",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 KONE: Phase 1",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "",
+          "epic_name": "264 - SFS Mobile - C&S - Data SDK Support(LDS optimations/Direct to LDS)",
+          "epic_name_key": "264 - SFS Mobile - C&S - Data SDK Support(LDS optimations/Direct to LDS)",
+          "team": "SFS Mobile GX",
+          "owner": "Steve Thistle",
+          "health": "Unknown",
+          "scheduled_build": "264",
+          "priority": "2",
+          "story_points": 0,
+          "program": "264 Field Service: KONE",
+          "portfolio": "264 Field Service Mobile",
+          "project": "264 KONE: Phase 1",
+          "issues": [
+            "missing_planned_release"
           ]
         },
         {
@@ -33215,7 +34190,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002gCej2AE",
+          "epic_id": "",
           "epic_name": "[266][SFS LC&DC Mobile] GIS Enhancements",
           "epic_name_key": "[266][SFS LC&DC Mobile] GIS Enhancements",
           "team": "SFS Mobile Location and DC",
@@ -33229,11 +34204,12 @@
           "project": "264 Customer Enhancements",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority"
+            "missing_priority",
+            "missing_planned_release"
           ]
         },
         {
-          "epic_id": "a3QAH00000006R82AI",
+          "epic_id": "",
           "epic_name": "236 SFS Mobile - [Feature] Automatic Status change BETA",
           "epic_name_key": "236 SFS Mobile - [Feature] Automatic Status change BETA",
           "team": "SFS Mobile Location and DC",
@@ -33250,7 +34226,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE00000048YT2AY",
+          "epic_id": "",
           "epic_name": "238 SFS Mobile - [Feature] ASC GA - Bottom Sheet UI Updates",
           "epic_name_key": "238 SFS Mobile - [Feature] ASC GA - Bottom Sheet UI Updates",
           "team": "SFS Mobile Location and DC",
@@ -33267,7 +34243,7 @@
           ]
         },
         {
-          "epic_id": "a3QB00000009GM9MAM",
+          "epic_id": "",
           "epic_name": "238 SFS Mobile - [Feature] Automatic Status change GA - Analytics & logs",
           "epic_name_key": "238 SFS Mobile - [Feature] Automatic Status change GA - Analytics & logs",
           "team": "SFS Mobile Location and DC",
@@ -33284,7 +34260,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE0000000pqX2AQ",
+          "epic_id": "",
           "epic_name": "238 SFS Mobile - [Feature] Automatic Status change GA - New Modes",
           "epic_name_key": "238 SFS Mobile - [Feature] Automatic Status change GA - New Modes",
           "team": "SFS Mobile Location and DC",
@@ -33301,7 +34277,7 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002JcBh2AK",
+          "epic_id": "",
           "epic_name": "Enable Arabic Translations in Field Service Mobile",
           "epic_name_key": "Enable Arabic Translations in Field Service Mobile",
           "team": "SFS Mobile Location and DC",

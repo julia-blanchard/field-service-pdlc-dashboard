@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 1003,
+    "total_epics_needing_attention": 1004,
     "teams_affected": 78,
     "programs_affected": 73,
     "issue_breakdown": {
-      "missing_scheduled_build": 261,
+      "missing_scheduled_build": 260,
       "missing_priority": 564,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 921
+      "missing_planned_release": 922
     }
   },
   "epics": [
@@ -11041,8 +11041,25 @@
       "epic_name_key": "266 SFS Core Scheduler - Security",
       "team": "SFS Core Scheduler",
       "owner": "Kritica Mantri",
-      "health": "Not Started",
+      "health": "On Track",
       "scheduled_build": "266",
+      "priority": 5,
+      "story_points": 0,
+      "program": "Salesforce Field Service 258: Trust",
+      "portfolio": "Salesforce Field Service 258 Theme:  Trust",
+      "project": "All Clouds - Trust: Application Production Support",
+      "issues": [
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002oJXl2AM",
+      "epic_name": "268 SFS Core Scheduler - Security",
+      "epic_name_key": "268 SFS Core Scheduler - Security",
+      "team": "SFS Core Scheduler",
+      "owner": "Kritica Mantri",
+      "health": "On Track",
+      "scheduled_build": "268",
       "priority": 5,
       "story_points": 0,
       "program": "Salesforce Field Service 258: Trust",
@@ -12125,14 +12142,13 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Watch",
-      "scheduled_build": "-",
+      "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
       "portfolio": "FY27 FS Workforce Scheduling",
       "project": "266 WFS Operations Console",
       "issues": [
-        "missing_scheduled_build",
         "missing_priority",
         "missing_planned_release"
       ]
@@ -15983,7 +15999,7 @@
       "epic_name_key": "266 SFS Frontline AI - [1][Adoption] PWB Readout",
       "team": "SFS Frontline AI",
       "owner": "Sindhu Sree Aita",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": 25,
       "story_points": 0,
@@ -29120,7 +29136,7 @@
     },
     {
       "name": "SFS Core Scheduler",
-      "epic_count": 45,
+      "epic_count": 46,
       "epics": [
         {
           "epic_id": "a3QEE000002MYBZ2A4",
@@ -29522,8 +29538,25 @@
           "epic_name_key": "266 SFS Core Scheduler - Security",
           "team": "SFS Core Scheduler",
           "owner": "Kritica Mantri",
-          "health": "Not Started",
+          "health": "On Track",
           "scheduled_build": "266",
+          "priority": 5,
+          "story_points": 0,
+          "program": "Salesforce Field Service 258: Trust",
+          "portfolio": "Salesforce Field Service 258 Theme:  Trust",
+          "project": "All Clouds - Trust: Application Production Support",
+          "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002oJXl2AM",
+          "epic_name": "268 SFS Core Scheduler - Security",
+          "epic_name_key": "268 SFS Core Scheduler - Security",
+          "team": "SFS Core Scheduler",
+          "owner": "Kritica Mantri",
+          "health": "On Track",
+          "scheduled_build": "268",
           "priority": 5,
           "story_points": 0,
           "program": "Salesforce Field Service 258: Trust",
@@ -29699,14 +29732,13 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Watch",
-          "scheduled_build": "-",
+          "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Operations Console",
           "issues": [
-            "missing_scheduled_build",
             "missing_priority",
             "missing_planned_release"
           ]
@@ -30728,7 +30760,7 @@
           "epic_name_key": "266 SFS Frontline AI - [1][Adoption] PWB Readout",
           "team": "SFS Frontline AI",
           "owner": "Sindhu Sree Aita",
-          "health": "Not Started",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": 25,
           "story_points": 0,

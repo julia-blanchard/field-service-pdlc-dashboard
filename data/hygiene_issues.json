@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 1004,
+    "total_epics_needing_attention": 994,
     "teams_affected": 78,
-    "programs_affected": 73,
+    "programs_affected": 72,
     "issue_breakdown": {
       "missing_scheduled_build": 260,
-      "missing_priority": 564,
+      "missing_priority": 554,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 922
+      "missing_planned_release": 912
     }
   },
   "epics": [
@@ -12836,171 +12836,9 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002hV942AE",
-      "epic_name": "WFS - 268 - Open map in a separate tab",
-      "epic_name_key": "WFS - 268 - Open map in a separate tab",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hVKL2A2",
-      "epic_name": "WFS - 268 - Multi-Routes on the map",
-      "epic_name_key": "WFS - 268 - Multi-Routes on the map",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hVPB2A2",
-      "epic_name": "WFS - 268 - Polygons creation",
-      "epic_name_key": "WFS - 268 - Polygons creation",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hVQn2AM",
-      "epic_name": "WFS - 268 - Open SA details in side panel",
-      "epic_name_key": "WFS - 268 - Open SA details in side panel",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hVSP2A2",
-      "epic_name": "WFS - 268 - Field Scheduling Bulk Schedule / Reschedule",
-      "epic_name_key": "WFS - 268 - Field Scheduling Bulk Schedule / Reschedule",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hVU12AM",
-      "epic_name": "WFS - 268 - Custom Actions",
-      "epic_name_key": "WFS - 268 - Custom Actions",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hVVd2AM",
-      "epic_name": "WFS - 268 - Bulk actions",
-      "epic_name_key": "WFS - 268 - Bulk actions",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hVXF2A2",
-      "epic_name": "WFS - 268 - Customer Outreach agentic action",
-      "epic_name_key": "WFS - 268 - Customer Outreach agentic action",
-      "team": "SFS Core Scheduler",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Operations Console",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Operations Console",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hV7R2AU",
-      "epic_name": "WFS - 268 - Field Scheduling  Block time before/after SA",
-      "epic_name_key": "WFS - 268 - Field Scheduling  Block time before/after SA",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Limor Rohald",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Infield Scheduling",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
       "epic_id": "a3QEE000002hW1t2AE",
-      "epic_name": "268 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
-      "epic_name_key": "268 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
+      "epic_name": "268 WFS - Automatically dispatch appointments (Scheduled jobs - Auto Dispatch)",
+      "epic_name_key": "268 WFS - Automatically dispatch appointments (Scheduled jobs - Auto Dispatch)",
       "team": "FSL - Foundation - Corecodiles",
       "owner": "Dori Nahmias",
       "health": "Unknown",
@@ -13016,28 +12854,10 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002hWEn2AM",
-      "epic_name": "268 WFS - Optimization hub redesign",
-      "epic_name_key": "268 WFS - Optimization hub redesign",
-      "team": "FSL - Resource - Scheduling Platform",
-      "owner": "Dori Nahmias",
-      "health": "Not Started",
-      "scheduled_build": "268",
-      "priority": "-",
-      "story_points": 0,
-      "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
-      "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Infield Scheduling",
-      "issues": [
-        "missing_priority",
-        "missing_planned_release"
-      ]
-    },
-    {
-      "epic_id": "a3QEE000002hhOj2AI",
-      "epic_name": "WFS - 266 - Availability config (OH / Shifts / Union / Intersection)",
-      "epic_name_key": "WFS - 266 - Availability config (OH / Shifts / Union / Intersection)",
-      "team": "FSL - Asset - 360",
+      "epic_id": "a3QEE000002oTH02AM",
+      "epic_name": "268 WFS - Automatic Optimization triggering (Scheduled jobs)",
+      "epic_name_key": "268 WFS - Automatic Optimization triggering (Scheduled jobs)",
+      "team": "FSL - Foundation - Corecodiles",
       "owner": "Limor Rohald",
       "health": "Not Started",
       "scheduled_build": "268",
@@ -13045,7 +12865,7 @@
       "story_points": 0,
       "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
       "portfolio": "FY27 FS Workforce Scheduling",
-      "project": "268 WFS Infield and Onsite Hybrid Scheduling",
+      "project": "268 WFS Infield Scheduling",
       "issues": [
         "missing_priority",
         "missing_planned_release"
@@ -13070,11 +12890,11 @@
       ]
     },
     {
-      "epic_id": "a3QEE000002ihuX2AQ",
-      "epic_name": "WFS - 268 - Count rule",
-      "epic_name_key": "WFS - 268 - Count rule",
-      "team": "-",
-      "owner": "Itay Sagiv",
+      "epic_id": "a3QEE000002oTSH2A2",
+      "epic_name": "WFS - 268 - Free/Busy Availability API",
+      "epic_name_key": "WFS - 268 - Free/Busy Availability API",
+      "team": "SFS Core Scheduler",
+      "owner": "Limor Rohald",
       "health": "Not Started",
       "scheduled_build": "268",
       "priority": "-",
@@ -17826,7 +17646,7 @@
   "by_team": [
     {
       "name": "-",
-      "epic_count": 30,
+      "epic_count": 29,
       "epics": [
         {
           "epic_id": "a3QEE000002f0692AA",
@@ -18213,24 +18033,6 @@
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "S&O Workforce Scheduling - Unified Agent [Parity]",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002ihuX2AQ",
-          "epic_name": "WFS - 268 - Count rule",
-          "epic_name_key": "WFS - 268 - Count rule",
-          "team": "-",
-          "owner": "Itay Sagiv",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Infield and Onsite Hybrid Scheduling",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -18728,7 +18530,7 @@
     },
     {
       "name": "FSL - Asset - 360",
-      "epic_count": 28,
+      "epic_count": 27,
       "epics": [
         {
           "epic_id": "a3QEE000002aqi52AA",
@@ -19110,24 +18912,6 @@
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
           "project": "266 WFS Infield & Onsite Hybrid",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hhOj2AI",
-          "epic_name": "WFS - 266 - Availability config (OH / Shifts / Union / Intersection)",
-          "epic_name_key": "WFS - 266 - Availability config (OH / Shifts / Union / Intersection)",
-          "team": "FSL - Asset - 360",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Infield and Onsite Hybrid Scheduling",
           "issues": [
             "missing_priority",
             "missing_planned_release"
@@ -19973,7 +19757,7 @@
     },
     {
       "name": "FSL - Foundation - Corecodiles",
-      "epic_count": 22,
+      "epic_count": 23,
       "epics": [
         {
           "epic_id": "a3QEE000002GSNN2A4",
@@ -20254,11 +20038,29 @@
         },
         {
           "epic_id": "a3QEE000002hW1t2AE",
-          "epic_name": "268 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
-          "epic_name_key": "268 WFS - Automatically dispatch appointments (drip feed, scheduled jobs etc)",
+          "epic_name": "268 WFS - Automatically dispatch appointments (Scheduled jobs - Auto Dispatch)",
+          "epic_name_key": "268 WFS - Automatically dispatch appointments (Scheduled jobs - Auto Dispatch)",
           "team": "FSL - Foundation - Corecodiles",
           "owner": "Dori Nahmias",
           "health": "Unknown",
+          "scheduled_build": "268",
+          "priority": "-",
+          "story_points": 0,
+          "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "268 WFS Infield Scheduling",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002oTH02AM",
+          "epic_name": "268 WFS - Automatic Optimization triggering (Scheduled jobs)",
+          "epic_name_key": "268 WFS - Automatic Optimization triggering (Scheduled jobs)",
+          "team": "FSL - Foundation - Corecodiles",
+          "owner": "Limor Rohald",
+          "health": "Not Started",
           "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
@@ -22926,7 +22728,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Platform",
-      "epic_count": 29,
+      "epic_count": 27,
       "epics": [
         {
           "epic_id": "a3QEE000001ofqb2AA",
@@ -23411,42 +23213,6 @@
           "project": "266 WFS Infield",
           "issues": [
             "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hV7R2AU",
-          "epic_name": "WFS - 268 - Field Scheduling  Block time before/after SA",
-          "epic_name_key": "WFS - 268 - Field Scheduling  Block time before/after SA",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Infield Scheduling",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hWEn2AM",
-          "epic_name": "268 WFS - Optimization hub redesign",
-          "epic_name_key": "268 WFS - Optimization hub redesign",
-          "team": "FSL - Resource - Scheduling Platform",
-          "owner": "Dori Nahmias",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Infield Scheduling",
-          "issues": [
             "missing_priority",
             "missing_planned_release"
           ]
@@ -29136,7 +28902,7 @@
     },
     {
       "name": "SFS Core Scheduler",
-      "epic_count": 46,
+      "epic_count": 39,
       "epics": [
         {
           "epic_id": "a3QEE000002MYBZ2A4",
@@ -29798,144 +29564,18 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002hV942AE",
-          "epic_name": "WFS - 268 - Open map in a separate tab",
-          "epic_name_key": "WFS - 268 - Open map in a separate tab",
+          "epic_id": "a3QEE000002oTSH2A2",
+          "epic_name": "WFS - 268 - Free/Busy Availability API",
+          "epic_name_key": "WFS - 268 - Free/Busy Availability API",
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Not Started",
           "scheduled_build": "268",
           "priority": "-",
           "story_points": 0,
-          "program": "268 WFS Operations Console",
+          "program": "268 WFS Onsite, Infield, Hybrid Scheduling",
           "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVKL2A2",
-          "epic_name": "WFS - 268 - Multi-Routes on the map",
-          "epic_name_key": "WFS - 268 - Multi-Routes on the map",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVPB2A2",
-          "epic_name": "WFS - 268 - Polygons creation",
-          "epic_name_key": "WFS - 268 - Polygons creation",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVQn2AM",
-          "epic_name": "WFS - 268 - Open SA details in side panel",
-          "epic_name_key": "WFS - 268 - Open SA details in side panel",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVSP2A2",
-          "epic_name": "WFS - 268 - Field Scheduling Bulk Schedule / Reschedule",
-          "epic_name_key": "WFS - 268 - Field Scheduling Bulk Schedule / Reschedule",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVU12AM",
-          "epic_name": "WFS - 268 - Custom Actions",
-          "epic_name_key": "WFS - 268 - Custom Actions",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVVd2AM",
-          "epic_name": "WFS - 268 - Bulk actions",
-          "epic_name_key": "WFS - 268 - Bulk actions",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
-          "issues": [
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
-          "epic_id": "a3QEE000002hVXF2A2",
-          "epic_name": "WFS - 268 - Customer Outreach agentic action",
-          "epic_name_key": "WFS - 268 - Customer Outreach agentic action",
-          "team": "SFS Core Scheduler",
-          "owner": "Limor Rohald",
-          "health": "Not Started",
-          "scheduled_build": "268",
-          "priority": "-",
-          "story_points": 0,
-          "program": "268 WFS Operations Console",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "268 WFS Operations Console",
+          "project": "268 WFS Infield and Onsite Hybrid Scheduling",
           "issues": [
             "missing_priority",
             "missing_planned_release"

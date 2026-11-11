@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11T10:22:00.907206",
+  "last_updated": "2026-11-11T15:01:10.681214",
   "teams": [
     {
       "name": "FSE - Core",
@@ -120,13 +120,13 @@
         "264 Scheduling Flows": 200.0
       },
       "november_capacity_limit": 140.8,
-      "november_committed": 196,
-      "november_work_items": 58,
+      "november_committed": 206,
+      "november_work_items": 60,
       "november_committed_by_program": {
-        "Unmapped": 40.0,
+        "Unmapped": 47.0,
         "264 Scheduling Flows": 10.0,
         "[266] Assets": 89.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 57.0
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 60.0
       },
       "september_delivered": 364,
       "september_delivered_by_program": {
@@ -383,10 +383,10 @@
         "[264] Unified Workforce Management (UWM)": 13.0
       },
       "november_capacity_limit": 88.0,
-      "november_committed": 123,
-      "november_work_items": 41,
+      "november_committed": 147,
+      "november_work_items": 51,
       "november_committed_by_program": {
-        "Unmapped": 123.0
+        "Unmapped": 147.0
       },
       "september_delivered": 260,
       "september_delivered_by_program": {
@@ -586,10 +586,10 @@
         "[264] Field Service: Headless (aka Codey)": 3.0
       },
       "november_capacity_limit": 176.0,
-      "november_committed": 66,
-      "november_work_items": 18,
+      "november_committed": 69,
+      "november_work_items": 19,
       "november_committed_by_program": {
-        "Unmapped": 66.0
+        "Unmapped": 69.0
       },
       "september_delivered": 107,
       "september_delivered_by_program": {
@@ -1096,11 +1096,11 @@
         "264 Field Service Trust": 1.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 148,
+      "november_committed": 145,
       "november_work_items": 43,
       "november_committed_by_program": {
         "Unmapped": 115.0,
-        "266 WFS Onsite, Infield, Hybrid Scheduling": 31.0,
+        "266 WFS Onsite, Infield, Hybrid Scheduling": 28.0,
         "264 Field Service Trust": 2.0
       },
       "september_delivered": 146,
@@ -1679,11 +1679,11 @@
         "[264] Field Service: Headless (aka Codey)": 1.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 81,
-      "november_work_items": 43,
+      "november_committed": 76,
+      "november_work_items": 42,
       "november_committed_by_program": {
         "[266] Mobile Trust": 17.0,
-        "Unmapped": 52.0,
+        "Unmapped": 47.0,
         "[266] Guided Experience": 9.0,
         "[266] Quality Automation Uplift": 1.0,
         "[266] Mobile AI & Voice to Form": 2.0
@@ -1786,10 +1786,10 @@
         "264 Field Service: Workforce Scheduling on Mobile": 10.0
       },
       "november_capacity_limit": 140.8,
-      "november_committed": 72,
-      "november_work_items": 31,
+      "november_committed": 75,
+      "november_work_items": 32,
       "november_committed_by_program": {
-        "Unmapped": 58.0,
+        "Unmapped": 61.0,
         "[266] Mobile Trust": 6.0,
         "[266] Quality Automation Uplift": 8.0
       },
@@ -1975,11 +1975,11 @@
       },
       "november_capacity_limit": 123.20000000000002,
       "november_committed": 131,
-      "november_work_items": 49,
+      "november_work_items": 48,
       "november_committed_by_program": {
-        "Unmapped": 40.0,
-        "[266] Guided Experience": 68.0,
-        "[266] Mobile Trust": 13.0,
+        "Unmapped": 38.0,
+        "[266] Guided Experience": 71.0,
+        "[266] Mobile Trust": 12.0,
         "264 Field Service: Workforce Scheduling on Mobile": 10.0
       },
       "september_delivered": 290,
@@ -2078,10 +2078,10 @@
         "264 Field Service Trust": 45.0
       },
       "november_capacity_limit": 105.60000000000002,
-      "november_committed": 43,
-      "november_work_items": 14,
+      "november_committed": 44,
+      "november_work_items": 15,
       "november_committed_by_program": {
-        "Unmapped": 26.0,
+        "Unmapped": 27.0,
         "[266] Mobile Trust": 10.0,
         "262 Field Service Trust": 2.0,
         "[266] Quality Automation Uplift": 3.0,
@@ -2242,11 +2242,11 @@
         "[266] Quality Automation Uplift": 13.0
       },
       "november_capacity_limit": 140.8,
-      "november_committed": 108,
-      "november_work_items": 44,
+      "november_committed": 105,
+      "november_work_items": 43,
       "november_committed_by_program": {
         "[266] Low Connectivity and Performance": 5.0,
-        "Unmapped": 21.0,
+        "Unmapped": 18.0,
         "[266] Mobile Trust": 78.0,
         "[266] Quality Automation Uplift": 1.0,
         "[266] Guardian Authentication: RTR Enforced and Legacy Auth Removed": 3.0
@@ -2416,8 +2416,8 @@
       "november_committed": 152,
       "november_work_items": 72,
       "november_committed_by_program": {
-        "Unmapped": 76.0,
-        "[266] Mobile Trust": 19.0,
+        "Unmapped": 75.0,
+        "[266] Mobile Trust": 20.0,
         "Performance Priming 100% Adoption": 41.0,
         "[266] Quality Automation Uplift": 16.0
       },

@@ -12320,7 +12320,7 @@
       "team": "FSL - Asset - 360",
       "owner": "Limor Rohald",
       "health": "On Track",
-      "scheduled_build": "266.6",
+      "scheduled_build": "266.2",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
@@ -12389,9 +12389,9 @@
       "epic_id": "a3QEE000002k6CX2AY",
       "epic_name": "WFS - 266 - Default Operating Hours support",
       "epic_name_key": "WFS - 266 - Default Operating Hours support",
-      "team": "FSL - Asset - 360",
+      "team": "FSL - Resource - Scheduling Platform",
       "owner": "Sri Ram Bathina",
-      "health": "Not Started",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -12429,7 +12429,7 @@
       "team": "FSL - Asset - 360",
       "owner": "Neerja Rewal",
       "health": "On Track",
-      "scheduled_build": "266",
+      "scheduled_build": "266.2",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
@@ -17555,8 +17555,8 @@
       "epic_name_key": "[SBOM] Suggest Products Required",
       "team": "FSL - Asset - 360",
       "owner": "Nishant Sharma",
-      "health": "Watch",
-      "scheduled_build": "268",
+      "health": "On Track",
+      "scheduled_build": "266.2",
       "priority": "-",
       "story_points": 0,
       "program": "[266] Assets",
@@ -18530,7 +18530,7 @@
     },
     {
       "name": "FSL - Asset - 360",
-      "epic_count": 27,
+      "epic_count": 26,
       "epics": [
         {
           "epic_id": "a3QEE000002aqi52AA",
@@ -18833,7 +18833,7 @@
           "team": "FSL - Asset - 360",
           "owner": "Limor Rohald",
           "health": "On Track",
-          "scheduled_build": "266.6",
+          "scheduled_build": "266.2",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
@@ -18863,25 +18863,6 @@
           ]
         },
         {
-          "epic_id": "a3QEE000002k6CX2AY",
-          "epic_name": "WFS - 266 - Default Operating Hours support",
-          "epic_name_key": "WFS - 266 - Default Operating Hours support",
-          "team": "FSL - Asset - 360",
-          "owner": "Sri Ram Bathina",
-          "health": "Not Started",
-          "scheduled_build": "-",
-          "priority": "-",
-          "story_points": 0,
-          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
-          "portfolio": "FY27 FS Workforce Scheduling",
-          "project": "266 WFS Infield & Onsite Hybrid",
-          "issues": [
-            "missing_scheduled_build",
-            "missing_priority",
-            "missing_planned_release"
-          ]
-        },
-        {
           "epic_id": "a3QEE000002k6Fl2AI",
           "epic_name": "WFS - 266 - Asset capabilities in WFS",
           "epic_name_key": "WFS - 266 - Asset capabilities in WFS",
@@ -18906,7 +18887,7 @@
           "team": "FSL - Asset - 360",
           "owner": "Neerja Rewal",
           "health": "On Track",
-          "scheduled_build": "266",
+          "scheduled_build": "266.2",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
@@ -18977,8 +18958,8 @@
           "epic_name_key": "[SBOM] Suggest Products Required",
           "team": "FSL - Asset - 360",
           "owner": "Nishant Sharma",
-          "health": "Watch",
-          "scheduled_build": "268",
+          "health": "On Track",
+          "scheduled_build": "266.2",
           "priority": "-",
           "story_points": 0,
           "program": "[266] Assets",
@@ -22728,7 +22709,7 @@
     },
     {
       "name": "FSL - Resource - Scheduling Platform",
-      "epic_count": 27,
+      "epic_count": 28,
       "epics": [
         {
           "epic_id": "a3QEE000001ofqb2AA",
@@ -23083,6 +23064,25 @@
           "portfolio": "FY27 FS Trust",
           "project": "[264] All Clouds (SFS) - Trust: Developer Experience & DoD Debt",
           "issues": [
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002k6CX2AY",
+          "epic_name": "WFS - 266 - Default Operating Hours support",
+          "epic_name_key": "WFS - 266 - Default Operating Hours support",
+          "team": "FSL - Resource - Scheduling Platform",
+          "owner": "Sri Ram Bathina",
+          "health": "Completed",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Onsite, Infield, Hybrid Scheduling",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Infield & Onsite Hybrid",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
             "missing_planned_release"
           ]
         },

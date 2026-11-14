@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T10:39:40.387072",
+  "last_updated": "2026-11-14T18:02:44.387029",
   "teams": [
     {
       "name": "FSE - Core",
@@ -767,10 +767,10 @@
         "[264] Unified Workforce Management (UWM)": 21.0
       },
       "november_capacity_limit": 158.4,
-      "november_committed": 77,
-      "november_work_items": 13,
+      "november_committed": 75,
+      "november_work_items": 12,
       "november_committed_by_program": {
-        "Unmapped": 77.0
+        "Unmapped": 75.0
       },
       "september_delivered": 149,
       "september_delivered_by_program": {
@@ -1788,11 +1788,11 @@
         "264 Field Service: Workforce Scheduling on Mobile": 10.0
       },
       "november_capacity_limit": 140.8,
-      "november_committed": 71,
-      "november_work_items": 31,
+      "november_committed": 72,
+      "november_work_items": 32,
       "november_committed_by_program": {
         "Unmapped": 55.0,
-        "[266] Mobile Trust": 8.0,
+        "[266] Mobile Trust": 9.0,
         "[266] Quality Automation Uplift": 8.0
       },
       "september_delivered": 279,

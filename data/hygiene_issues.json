@@ -1,14 +1,14 @@
 {
   "summary": {
-    "total_epics_needing_attention": 994,
+    "total_epics_needing_attention": 996,
     "teams_affected": 78,
-    "programs_affected": 72,
+    "programs_affected": 73,
     "issue_breakdown": {
-      "missing_scheduled_build": 258,
-      "missing_priority": 554,
+      "missing_scheduled_build": 259,
+      "missing_priority": 556,
       "missing_owner": 0,
       "blocked_no_comments": 0,
-      "missing_planned_release": 918
+      "missing_planned_release": 920
     }
   },
   "epics": [
@@ -7948,8 +7948,8 @@
     },
     {
       "epic_id": "a3QEE000001i5JZ2AY",
-      "epic_name": "268: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
-      "epic_name_key": "268: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+      "epic_name": "268 Stretch: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+      "epic_name_key": "268 Stretch: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
       "team": "NPC Asteroids",
       "owner": "Meg Gray",
       "health": "Not Started",
@@ -8488,8 +8488,8 @@
     },
     {
       "epic_id": "a3QEE000002o6tt2AA",
-      "epic_name": "Care Plan Usability & Configurability",
-      "epic_name_key": "Care Plan Usability & Configurability",
+      "epic_name": "268 Stretch: Care Plan Usability & Configurability",
+      "epic_name_key": "268 Stretch: Care Plan Usability & Configurability",
       "team": "NPC Asteroids",
       "owner": "Sean Finerty",
       "health": "Not Started",
@@ -11948,7 +11948,7 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Blocked",
-      "scheduled_build": "266",
+      "scheduled_build": "266.14",
       "priority": "-",
       "story_points": 0,
       "program": "266 WFS Operations Console",
@@ -12056,6 +12056,24 @@
       "team": "SFS Core Scheduler",
       "owner": "Limor Rohald",
       "health": "Blocked",
+      "scheduled_build": "268",
+      "priority": "-",
+      "story_points": 0,
+      "program": "266 WFS Operations Console",
+      "portfolio": "FY27 FS Workforce Scheduling",
+      "project": "266 WFS Operations Console",
+      "issues": [
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002pUHR2A2",
+      "epic_name": "266 WFS Operations Console- Complex/Multi-Stage Work",
+      "epic_name_key": "266 WFS Operations Console- Complex/Multi-Stage Work",
+      "team": "SFS Core Scheduler",
+      "owner": "Kritica Mantri",
+      "health": "Not Started",
       "scheduled_build": "266",
       "priority": "-",
       "story_points": 0,
@@ -12529,7 +12547,7 @@
       "epic_name_key": "266 WFS - Complex/Multi-Stage Work",
       "team": "FSL - Resource - Scheduling Platform",
       "owner": "Limor Rohald",
-      "health": "On Track",
+      "health": "Completed",
       "scheduled_build": "-",
       "priority": "-",
       "story_points": 0,
@@ -17514,6 +17532,25 @@
       "program": "[266] Assets",
       "portfolio": "FY27 FS Foundations",
       "project": "[266] Asset-Centric Dispatch View (Research)",
+      "issues": [
+        "missing_scheduled_build",
+        "missing_priority",
+        "missing_planned_release"
+      ]
+    },
+    {
+      "epic_id": "a3QEE000002lqJl2AI",
+      "epic_name": "[266] [SFS Mobile Assets] Service BOM - View Parts and product request",
+      "epic_name_key": "[266] [SFS Mobile Assets] Service BOM - View Parts and product request",
+      "team": "SFS Mobile Assets",
+      "owner": "Sandeep Agrawal",
+      "health": "On Track",
+      "scheduled_build": "-",
+      "priority": "-",
+      "story_points": 0,
+      "program": "[266] Service BOM in Field Service Mobile",
+      "portfolio": "FY27 FS Foundations",
+      "project": "Asset Hierarchy Explainer",
       "issues": [
         "missing_scheduled_build",
         "missing_priority",
@@ -23226,7 +23263,7 @@
           "epic_name_key": "266 WFS - Complex/Multi-Stage Work",
           "team": "FSL - Resource - Scheduling Platform",
           "owner": "Limor Rohald",
-          "health": "On Track",
+          "health": "Completed",
           "scheduled_build": "-",
           "priority": "-",
           "story_points": 0,
@@ -25951,8 +25988,8 @@
         },
         {
           "epic_id": "a3QEE000001i5JZ2AY",
-          "epic_name": "268: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
-          "epic_name_key": "268: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+          "epic_name": "268 Stretch: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
+          "epic_name_key": "268 Stretch: Participant Mgmt Agent - Proactive Notes & Adoption Feedback",
           "team": "NPC Asteroids",
           "owner": "Meg Gray",
           "health": "Not Started",
@@ -26419,8 +26456,8 @@
         },
         {
           "epic_id": "a3QEE000002o6tt2AA",
-          "epic_name": "Care Plan Usability & Configurability",
-          "epic_name_key": "Care Plan Usability & Configurability",
+          "epic_name": "268 Stretch: Care Plan Usability & Configurability",
+          "epic_name_key": "268 Stretch: Care Plan Usability & Configurability",
           "team": "NPC Asteroids",
           "owner": "Sean Finerty",
           "health": "Not Started",
@@ -28923,7 +28960,7 @@
     },
     {
       "name": "SFS Core Scheduler",
-      "epic_count": 39,
+      "epic_count": 40,
       "epics": [
         {
           "epic_id": "a3QEE000002MYBZ2A4",
@@ -29465,7 +29502,7 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Blocked",
-          "scheduled_build": "266",
+          "scheduled_build": "266.14",
           "priority": "-",
           "story_points": 0,
           "program": "266 WFS Operations Console",
@@ -29573,6 +29610,24 @@
           "team": "SFS Core Scheduler",
           "owner": "Limor Rohald",
           "health": "Blocked",
+          "scheduled_build": "268",
+          "priority": "-",
+          "story_points": 0,
+          "program": "266 WFS Operations Console",
+          "portfolio": "FY27 FS Workforce Scheduling",
+          "project": "266 WFS Operations Console",
+          "issues": [
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002pUHR2A2",
+          "epic_name": "266 WFS Operations Console- Complex/Multi-Stage Work",
+          "epic_name_key": "266 WFS Operations Console- Complex/Multi-Stage Work",
+          "team": "SFS Core Scheduler",
+          "owner": "Kritica Mantri",
+          "health": "Not Started",
           "scheduled_build": "266",
           "priority": "-",
           "story_points": 0,
@@ -31166,7 +31221,7 @@
     },
     {
       "name": "SFS Mobile Assets",
-      "epic_count": 24,
+      "epic_count": 25,
       "epics": [
         {
           "epic_id": "a3QEE000001e1w52AA",
@@ -31610,6 +31665,25 @@
           "program": "[266] Quality Automation Uplift",
           "portfolio": "FY27 FS Mobile",
           "project": "[266] Quality Automation Uplift: Regression Automation",
+          "issues": [
+            "missing_scheduled_build",
+            "missing_priority",
+            "missing_planned_release"
+          ]
+        },
+        {
+          "epic_id": "a3QEE000002lqJl2AI",
+          "epic_name": "[266] [SFS Mobile Assets] Service BOM - View Parts and product request",
+          "epic_name_key": "[266] [SFS Mobile Assets] Service BOM - View Parts and product request",
+          "team": "SFS Mobile Assets",
+          "owner": "Sandeep Agrawal",
+          "health": "On Track",
+          "scheduled_build": "-",
+          "priority": "-",
+          "story_points": 0,
+          "program": "[266] Service BOM in Field Service Mobile",
+          "portfolio": "FY27 FS Foundations",
+          "project": "Asset Hierarchy Explainer",
           "issues": [
             "missing_scheduled_build",
             "missing_priority",
